@@ -33,6 +33,12 @@ const sources = [
   }
 ]
 
+const sourceWebUrls = {
+  agents: 'https://github.com/lennonli/licheng-AGENTS.md',
+  skills: 'https://github.com/lennonli/licheng-skills',
+  tutorials: 'https://github.com/lennonli/licheng-AI-tutorials'
+}
+
 function sh(cmd, args, cwd = root) {
   execFileSync(cmd, args, { cwd, stdio: 'inherit' })
 }
@@ -59,6 +65,22 @@ function backButton(fallback) {
   return `<BackButton fallback="${fallback}" />\n\n`
 }
 
+function encodeGitHubPath(relativePath) {
+  return relativePath
+    .split('/')
+    .filter(Boolean)
+    .map((part) => encodeURIComponent(part))
+    .join('/')
+}
+
+function githubBlobUrl(repoWebUrl, relativePath) {
+  return `${repoWebUrl}/blob/main/${encodeGitHubPath(relativePath)}`
+}
+
+function articleTools(githubUrl) {
+  return `<ArticleTools github-url="${githubUrl}" />\n\n`
+}
+
 function withBackButton(markdown, fallback) {
   if (markdown.includes('<BackButton ')) return markdown
   if (!markdown.startsWith('---\n')) return `${backButton(fallback)}${markdown}`
@@ -69,11 +91,33 @@ function withBackButton(markdown, fallback) {
   return `${markdown.slice(0, frontmatterEnd)}\n\n${backButton(fallback)}${markdown.slice(frontmatterEnd).trimStart()}`
 }
 
-function addBackButtonsToMarkdownFiles(dir, fallback) {
+function withArticleTools(markdown, githubUrl) {
+  if (markdown.includes('<ArticleTools ')) return markdown
+
+  const backButtonMatch = markdown.match(/<BackButton [^\n]+\/>\n*/)
+  if (backButtonMatch && backButtonMatch.index !== undefined) {
+    const insertAt = backButtonMatch.index + backButtonMatch[0].length
+    return `${markdown.slice(0, insertAt)}\n${articleTools(githubUrl)}${markdown.slice(insertAt).trimStart()}`
+  }
+
+  if (!markdown.startsWith('---\n')) return `${articleTools(githubUrl)}${markdown}`
+
+  const end = markdown.indexOf('\n---', 4)
+  if (end === -1) return `${articleTools(githubUrl)}${markdown}`
+  const frontmatterEnd = end + 4
+  return `${markdown.slice(0, frontmatterEnd)}\n\n${articleTools(githubUrl)}${markdown.slice(frontmatterEnd).trimStart()}`
+}
+
+function withArticleChrome(markdown, fallback, githubUrl) {
+  return withArticleTools(withBackButton(markdown, fallback), githubUrl)
+}
+
+function addArticleChromeToMarkdownFiles(dir, fallback, repoWebUrl, sourcePrefix = '') {
   for (const name of readDirSafe(dir).sort()) {
     if (!name.endsWith('.md') || name === 'index.md') continue
     const file = path.join(dir, name)
-    writeFileSync(file, withBackButton(readFileSync(file, 'utf8'), fallback))
+    const sourcePath = sourcePrefix ? `${sourcePrefix}/${name}` : name
+    writeFileSync(file, withArticleChrome(readFileSync(file, 'utf8'), fallback, githubBlobUrl(repoWebUrl, sourcePath)))
   }
 }
 
@@ -431,7 +475,7 @@ const agentsSrc = path.join(cacheDir, 'agents')
 const agentsDest = path.join(siteDir, 'agents')
 ensureDir(agentsDest)
 copyMarkdownFiles(agentsSrc, agentsDest)
-addBackButtonsToMarkdownFiles(agentsDest, '/agents/')
+addArticleChromeToMarkdownFiles(agentsDest, '/agents/', sourceWebUrls.agents)
 
 let agentsIndex = `${backButton('/')}# 智能体通用指令和项目指令
 
@@ -482,7 +526,7 @@ const skillItems = []
 for (const dir of skillDirs) {
   const skillMd = stripYamlFrontmatter(readFileSync(path.join(skillsSrc, dir, 'SKILL.md'), 'utf8'))
   const skillKey = `skills/${dir}`
-  const page = `${backButton('/skills/')}# ${displayTitle(skillKey, dir, skillMd)}
+  const page = `${backButton('/skills/')}${articleTools(githubBlobUrl(sourceWebUrls.skills, `${dir}/SKILL.md`))}# ${displayTitle(skillKey, dir, skillMd)}
 
 来源目录：\`${dir}/SKILL.md\`
 
@@ -511,7 +555,7 @@ ensureDir(tutorialsDest)
 
 if (existsSync(path.join(tutorialsSrc, 'docs'))) {
   copyMarkdownFiles(path.join(tutorialsSrc, 'docs'), tutorialsDest)
-  addBackButtonsToMarkdownFiles(tutorialsDest, '/tutorials/')
+  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.tutorials, 'docs')
 }
 if (existsSync(path.join(tutorialsSrc, 'assets'))) {
   cpSync(path.join(tutorialsSrc, 'assets'), path.join(siteDir, 'assets'), { recursive: true })

@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
+import ArticleTools from './ArticleTools.vue'
 import BackButton from './BackButton.vue'
 import BackToTopButton from './BackToTopButton.vue'
 import HomeSearchBox from './HomeSearchBox.vue'
@@ -13,6 +14,7 @@ export default {
     })
   },
   enhanceApp({ app }) {
+    app.component('ArticleTools', ArticleTools)
     app.component('BackButton', BackButton)
     app.component('HomeSearchBox', HomeSearchBox)
   }
