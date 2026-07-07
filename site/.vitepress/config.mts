@@ -11,6 +11,8 @@ export default defineConfig({
   themeConfig: {
     aside: false,
     outline: false,
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '目录',
     search: {
       provider: 'local'
     },
