@@ -96,6 +96,7 @@ function stripYamlFrontmatter(markdown) {
 const titleOverrides = new Map([
   ['agents/README.md', '仓库说明与使用建议'],
   ['agents/合同审查和起草.md', '合同审查和起草指令'],
+  ['agents/股改文件起草.md', '股改文件起草指令'],
   ['agents/法律PPT设计.md', '法律 PPT 设计指令'],
   ['skills/cnipa-patent-evidence-archive', 'CNIPA 专利证据归档'],
   ['skills/cnipa-trademark-evidence-archive', 'CNIPA 商标证据归档'],
@@ -108,6 +109,7 @@ const titleOverrides = new Map([
 const summaryOverrides = new Map([
   ['agents/README.md', '说明 AGENTS 指令仓库的用途、文件组成、叠加使用建议和维护规则，适合先判断应使用哪一类项目指令。'],
   ['agents/合同审查和起草.md', '规定合同审查、风险分级、缺失条款补充、法律文件起草、修订模式、签署页和版本命名等合同类任务的工作规则。'],
+  ['agents/股改文件起草.md', '用于有限公司整体变更为股份有限公司的股改文件起草与复核，覆盖参考案例改造、资料填报、文件清单、特殊治理结构适配、一致性检查、模板残留清理、待补信息汇总和签署条件判断。'],
   ['agents/法律PPT设计.md', '规定法律培训、项目汇报和专业服务 PPT 的视觉风格、版式层级、字体字号、信息呈现方式以及既有 PPT 修改边界。'],
   ['agents/法律业务通用指令.md', '沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。'],
   ['agents/法律尽调报告提示词.md', '沉淀法律尽职调查报告提示词，当前重点覆盖股权历史沿革章节，适合指导工商内档核查、股权变动底稿拆分、历史沿革初稿起草和补充材料清单整理。'],
