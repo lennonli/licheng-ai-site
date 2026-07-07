@@ -1,0 +1,37 @@
+:root {
+  --vp-c-brand-1: #1d4ed8;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #60a5fa;
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --vp-font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.VPDoc .content {
+  max-width: 920px;
+}
+
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.85;
+}
+
+.vp-doc h1 {
+  letter-spacing: 0;
+}
+
+.vp-doc h2 {
+  margin-top: 36px;
+}
+
+.vp-doc table {
+  font-size: 14px;
+}
+
+.vp-doc img {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+}
+
+.vp-doc code {
+  word-break: break-word;
+}

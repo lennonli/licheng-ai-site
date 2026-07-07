@@ -1,0 +1,16 @@
+{
+  "name": "licheng-ai-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-content.mjs",
+    "dev": "npm run sync && vitepress dev site --host 127.0.0.1",
+    "build": "npm run sync && vitepress build site",
+    "preview": "vitepress preview site --host 127.0.0.1",
+    "deploy": "npm run build && wrangler pages deploy site/.vitepress/dist --project-name=licheng-ai-site --branch=main"
+  },
+  "devDependencies": {
+    "vitepress": "latest",
+    "wrangler": "latest"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.vitepress/cache/
+.vitepress/dist/
+site/.vitepress/cache/
+site/.vitepress/dist/
+site/agents/
+site/skills/
+site/tutorials/
+site/assets/
+.cache/
+.DS_Store
+*.log
