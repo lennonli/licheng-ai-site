@@ -23,6 +23,11 @@
   max-width: 880px !important;
 }
 
+.VPNavBarTitle .logo {
+  width: 74px;
+  height: auto;
+}
+
 .vp-doc :where(h2, h3, h4) {
   scroll-margin-top: 96px;
 }

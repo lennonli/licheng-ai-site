@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="LC-AI">
+  <style>
+    .letter {
+      font-family: "Avenir Next", "Nunito Sans", "Arial Rounded MT Bold", Arial, sans-serif;
+      font-weight: 800;
+    }
+  </style>
+  <rect x="36" y="36" width="440" height="440" rx="108" fill="#ffffff"/>
+  <rect x="36" y="36" width="440" height="440" rx="108" fill="none" stroke="#e8eaed" stroke-width="18"/>
+  <text class="letter" x="88" y="292" font-size="196" fill="#4285f4">L</text>
+  <text class="letter" x="210" y="292" font-size="196" fill="#ea4335">C</text>
+  <text class="letter" x="148" y="382" font-size="106" fill="#fbbc05">A</text>
+  <text class="letter" x="256" y="382" font-size="106" fill="#34a853">I</text>
+</svg>

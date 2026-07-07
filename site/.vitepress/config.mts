@@ -8,7 +8,17 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: true,
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+    ['meta', { property: 'og:title', content: '李成律师法律AI工作站' }],
+    ['meta', { property: 'og:description', content: '智能体指令、法律业务技能与 AI 工具教程。' }],
+    ['meta', { property: 'og:image', content: 'https://ai.licheng.uk/og-image.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: 'https://ai.licheng.uk/og-image.png' }]
+  ],
   themeConfig: {
+    logo: '/logo.svg',
     aside: false,
     outline: false,
     returnToTopLabel: '回到顶部',

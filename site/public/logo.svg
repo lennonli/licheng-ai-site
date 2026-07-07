@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="56" viewBox="0 0 168 56" role="img" aria-label="LC-AI">
+  <style>
+    .mark {
+      font-family: "Avenir Next", "Nunito Sans", "Arial Rounded MT Bold", Arial, sans-serif;
+      font-size: 39px;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+  </style>
+  <text class="mark" x="3" y="41" fill="#4285f4">L</text>
+  <text class="mark" x="29" y="41" fill="#ea4335">C</text>
+  <text class="mark" x="61" y="41" fill="#fbbc05">-</text>
+  <text class="mark" x="82" y="41" fill="#4285f4">A</text>
+  <text class="mark" x="114" y="41" fill="#34a853">I</text>
+</svg>
