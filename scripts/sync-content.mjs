@@ -55,6 +55,28 @@ function copyMarkdownFiles(src, dest) {
   }
 }
 
+function backButton(fallback) {
+  return `<BackButton fallback="${fallback}" />\n\n`
+}
+
+function withBackButton(markdown, fallback) {
+  if (markdown.includes('<BackButton ')) return markdown
+  if (!markdown.startsWith('---\n')) return `${backButton(fallback)}${markdown}`
+
+  const end = markdown.indexOf('\n---', 4)
+  if (end === -1) return `${backButton(fallback)}${markdown}`
+  const frontmatterEnd = end + 4
+  return `${markdown.slice(0, frontmatterEnd)}\n\n${backButton(fallback)}${markdown.slice(frontmatterEnd).trimStart()}`
+}
+
+function addBackButtonsToMarkdownFiles(dir, fallback) {
+  for (const name of readDirSafe(dir).sort()) {
+    if (!name.endsWith('.md') || name === 'index.md') continue
+    const file = path.join(dir, name)
+    writeFileSync(file, withBackButton(readFileSync(file, 'utf8'), fallback))
+  }
+}
+
 function listSkillDirs(src) {
   return readDirSafe(src)
     .filter((name) => {
@@ -216,6 +238,7 @@ const agentsSrc = path.join(cacheDir, 'agents')
 const agentsDest = path.join(siteDir, 'agents')
 ensureDir(agentsDest)
 copyMarkdownFiles(agentsSrc, agentsDest)
+addBackButtonsToMarkdownFiles(agentsDest, '/agents/')
 
 let agentsIndex = `# 智能体通用指令和项目指令
 
@@ -253,7 +276,7 @@ const skillItems = []
 for (const dir of skillDirs) {
   const skillMd = stripYamlFrontmatter(readFileSync(path.join(skillsSrc, dir, 'SKILL.md'), 'utf8'))
   const skillKey = `skills/${dir}`
-  const page = `# ${displayTitle(skillKey, dir, skillMd)}
+  const page = `${backButton('/skills/')}# ${displayTitle(skillKey, dir, skillMd)}
 
 来源目录：\`${dir}/SKILL.md\`
 
@@ -275,6 +298,7 @@ ensureDir(tutorialsDest)
 
 if (existsSync(path.join(tutorialsSrc, 'docs'))) {
   copyMarkdownFiles(path.join(tutorialsSrc, 'docs'), tutorialsDest)
+  addBackButtonsToMarkdownFiles(tutorialsDest, '/tutorials/')
 }
 if (existsSync(path.join(tutorialsSrc, 'assets'))) {
   cpSync(path.join(tutorialsSrc, 'assets'), path.join(siteDir, 'assets'), { recursive: true })

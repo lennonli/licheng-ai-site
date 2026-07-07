@@ -41,6 +41,30 @@
   word-break: break-word;
 }
 
+.vp-doc .back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 24px;
+  padding: 8px 13px;
+  color: var(--lc-c-ink);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+  background: rgba(251, 250, 247, 0.86);
+  border: 1px solid rgba(32, 36, 44, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(32, 36, 44, 0.05);
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.vp-doc .back-button:hover {
+  border-color: rgba(154, 106, 47, 0.36);
+  box-shadow: 0 12px 24px rgba(32, 36, 44, 0.08);
+  transform: translateY(-1px);
+}
+
 .VPNav {
   border-bottom: 1px solid rgba(32, 36, 44, 0.08);
 }
