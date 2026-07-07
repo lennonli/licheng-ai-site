@@ -89,7 +89,7 @@ for (const dir of ['agents', 'skills', 'tutorials', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 
-writeFileSync(path.join(siteDir, 'index.md'), `# 李成律师 AI 教程
+writeFileSync(path.join(siteDir, 'index.md'), `# 李成律师法律AI工作站
 
 这里汇总展示三个 GitHub 仓库的内容：
 

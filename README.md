@@ -1,6 +1,6 @@
 # licheng-ai-site
 
-李成律师 AI 教程网站源码。
+李成律师法律AI工作站网站源码。
 
 ## 内容来源
 
@@ -26,4 +26,3 @@ npm run build
 ```bash
 npm run deploy
 ```
-

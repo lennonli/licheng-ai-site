@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '李成律师 AI 教程',
+  title: '李成律师法律AI工作站',
   description: 'Codex、法律工作流、Agent 指令、Skills 与工具教程',
   cleanUrls: true,
   lastUpdated: true,
