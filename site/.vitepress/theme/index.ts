@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import BackButton from './BackButton.vue'
 import BackToTopButton from './BackToTopButton.vue'
+import HomeSearchBox from './HomeSearchBox.vue'
 import './custom.css'
 
 export default {
@@ -13,5 +14,6 @@ export default {
   },
   enhanceApp({ app }) {
     app.component('BackButton', BackButton)
+    app.component('HomeSearchBox', HomeSearchBox)
   }
 }

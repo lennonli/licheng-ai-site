@@ -4,6 +4,8 @@
   <p class="home-intro">面向中国法律服务场景，集中整理智能体指令、法律业务技能与 AI 工具教程。</p>
 </section>
 
+<HomeSearchBox />
+
 <section class="home-grid" aria-label="内容入口">
   <a class="home-card" href="/agents/">
     <span class="home-card-index">01</span>
