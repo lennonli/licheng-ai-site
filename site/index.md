@@ -20,4 +20,9 @@
     <span class="home-card-title">AI智能体安装、环境配置、各种技巧等教程</span>
     <span class="home-card-desc">覆盖 Codex 环境搭建、系统依赖、代理配置与日常使用技巧。</span>
   </a>
+  <a class="home-card" href="/latest/">
+    <span class="home-card-index">04</span>
+    <span class="home-card-title">最新文章</span>
+    <span class="home-card-desc">按更新日期倒序展示已经上传或更新的文章，直接跳转到具体页面。</span>
+  </a>
 </section>

@@ -18,6 +18,7 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
+      { text: '最新文章', link: '/latest/' },
       { text: 'AGENTS 指令', link: '/agents/' },
       { text: 'Skill 技能', link: '/skills/' },
       { text: 'AI 教程', link: '/tutorials/' },

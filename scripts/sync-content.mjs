@@ -281,6 +281,52 @@ ${items
 `
 }
 
+function gitText(args, cwd) {
+  return execFileSync('git', args, { cwd, encoding: 'utf8' }).trim()
+}
+
+function gitLastUpdated(repoDir, relativePath) {
+  try {
+    const lastCommitDate = gitText(['log', '-1', '--format=%cI', '--', relativePath], repoDir)
+    if (lastCommitDate) return lastCommitDate
+  } catch {
+    // Fall back to the repository head date when a path has no dedicated history.
+  }
+
+  try {
+    return gitText(['log', '-1', '--format=%cI'], repoDir)
+  } catch {
+    return new Date().toISOString()
+  }
+}
+
+function formatDate(isoDate) {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(new Date(isoDate))
+}
+
+function latestArticleList(items) {
+  return `<div class="latest-article-list">
+${items
+    .map(
+      (item) => `  <a class="latest-article" href="${item.href}">
+    <span class="latest-article-meta">
+      <span>${escapeHtml(item.section)}</span>
+      <time datetime="${escapeHtml(item.updatedAt)}">更新日期：${escapeHtml(formatDate(item.updatedAt))}</time>
+    </span>
+    <span class="latest-article-title">${escapeHtml(item.title)}</span>
+    <span class="latest-article-desc">${escapeHtml(item.summary)}</span>
+  </a>`
+    )
+    .join('\n')}
+</div>
+`
+}
+
 function buildSectionSidebar({ section, indexText, destDir }) {
   const sidebar = {}
 
@@ -326,7 +372,8 @@ function writeGeneratedSidebar() {
       section: 'tutorials',
       indexText: 'AI 教程',
       destDir: tutorialsDest
-    })
+    }),
+    '/latest/': [{ text: '最新文章', link: '/latest/' }]
   }
 
   writeFileSync(
@@ -339,7 +386,7 @@ rmSync(cacheDir, { recursive: true, force: true })
 ensureDir(cacheDir)
 
 for (const source of sources) {
-  sh('git', ['clone', '--depth=1', source.repo, path.join(cacheDir, source.key)])
+  sh('git', ['clone', source.repo, path.join(cacheDir, source.key)])
 }
 
 for (const dir of ['agents', 'skills', 'tutorials', 'assets']) {
@@ -368,8 +415,15 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">AI智能体安装、环境配置、各种技巧等教程</span>
     <span class="home-card-desc">覆盖 Codex 环境搭建、系统依赖、代理配置与日常使用技巧。</span>
   </a>
+  <a class="home-card" href="/latest/">
+    <span class="home-card-index">04</span>
+    <span class="home-card-title">最新文章</span>
+    <span class="home-card-desc">按更新日期倒序展示已经上传或更新的文章，直接跳转到具体页面。</span>
+  </a>
 </section>
 `)
+
+const latestArticles = []
 
 const agentsSrc = path.join(cacheDir, 'agents')
 const agentsDest = path.join(siteDir, 'agents')
@@ -396,6 +450,15 @@ for (const name of readDirSafe(agentsDest).sort()) {
     title: displayTitle(key, name, markdown),
     summary: summarizeMarkdown(key, markdown)
   })
+  if (name !== 'README.md') {
+    latestArticles.push({
+      href: `/agents/${name.replace(/\.md$/, '')}`,
+      title: displayTitle(key, name, markdown),
+      summary: summarizeMarkdown(key, markdown),
+      section: '智能体指令',
+      updatedAt: gitLastUpdated(agentsSrc, name)
+    })
+  }
 }
 agentsIndex += indexCardList(agentItems)
 writeFileSync(path.join(agentsDest, 'index.md'), agentsIndex)
@@ -428,6 +491,13 @@ ${removeLeadingH1(skillMd)}
     href: `/skills/${dir}`,
     title: displayTitle(skillKey, dir, skillMd),
     summary: summarizeMarkdown(skillKey, skillMd)
+  })
+  latestArticles.push({
+    href: `/skills/${dir}`,
+    title: displayTitle(skillKey, dir, skillMd),
+    summary: summarizeMarkdown(skillKey, skillMd),
+    section: '法律业务 Skill',
+    updatedAt: gitLastUpdated(skillsSrc, path.join(dir, 'SKILL.md'))
   })
 }
 skillsIndex += indexCardList(skillItems)
@@ -464,9 +534,32 @@ for (const name of readDirSafe(tutorialsDest).sort()) {
     title: displayTitle(key, name, markdown),
     summary: summarizeMarkdown(key, markdown)
   })
+  latestArticles.push({
+    href: `/tutorials/${name.replace(/\.md$/, '')}`,
+    title: displayTitle(key, name, markdown),
+    summary: summarizeMarkdown(key, markdown),
+    section: 'AI 教程',
+    updatedAt: gitLastUpdated(tutorialsSrc, path.join('docs', name))
+  })
 }
 tutorialsIndex += indexCardList(tutorialItems)
 writeFileSync(path.join(tutorialsDest, 'index.md'), tutorialsIndex)
+
+latestArticles.sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
+
+const latestDest = path.join(siteDir, 'latest')
+ensureDir(latestDest)
+writeFileSync(
+  path.join(latestDest, 'index.md'),
+  `${backButton('/')}# 最新文章
+
+<p class="section-lead">这里按更新日期从新到旧展示已经上传或更新的文章。文章正文不在本页重复撰写，点击标题即可进入具体页面。</p>
+
+<p class="source-link">本页更新日期：${formatDate(new Date().toISOString())}</p>
+
+${latestArticleList(latestArticles)}
+`
+)
 
 writeGeneratedSidebar()
 

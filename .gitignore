@@ -4,6 +4,7 @@ node_modules/
 site/.vitepress/cache/
 site/.vitepress/dist/
 site/agents/
+site/latest/
 site/skills/
 site/tutorials/
 site/assets/

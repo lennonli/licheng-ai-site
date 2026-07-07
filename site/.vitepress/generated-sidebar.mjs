@@ -448,6 +448,185 @@ export const generatedSidebar = {
       "link": "/skills/"
     }
   ],
+  "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "Claude App 与 Codex App 通过 CC Switch 接入国产大模型教程",
+      "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "1. 工具与下载链接",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_1-工具与下载链接"
+        },
+        {
+          "text": "2. 原理：为什么 Claude App 和 Codex App 的配置方式不一样",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_2-原理-为什么-claude-app-和-codex-app-的配置方式不一样"
+        },
+        {
+          "text": "3. 安装准备",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_3-安装准备",
+          "items": [
+            {
+              "text": "3.1 macOS",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_3-1-macos"
+            },
+            {
+              "text": "3.2 Windows",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_3-2-windows"
+            }
+          ]
+        },
+        {
+          "text": "4. CC Switch 基本界面",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_4-cc-switch-基本界面"
+        },
+        {
+          "text": "5. Claude App 接入 DeepSeek",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_5-claude-app-接入-deepseek",
+          "items": [
+            {
+              "text": "5.1 操作步骤",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_5-1-操作步骤"
+            },
+            {
+              "text": "5.2 判断是否接入成功",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_5-2-判断是否接入成功"
+            },
+            {
+              "text": "5.3 常见问题",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_5-3-常见问题"
+            }
+          ]
+        },
+        {
+          "text": "6. Claude App 接入智谱 GLM Coding Plan / 智谱 API",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_6-claude-app-接入智谱-glm-coding-plan-智谱-api",
+          "items": [
+            {
+              "text": "6.1 中国大陆站 GLM Coding Plan",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_6-1-中国大陆站-glm-coding-plan"
+            },
+            {
+              "text": "6.2 Z.AI 国际站 GLM Coding Plan",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_6-2-z-ai-国际站-glm-coding-plan"
+            },
+            {
+              "text": "6.3 操作步骤",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_6-3-操作步骤"
+            }
+          ]
+        },
+        {
+          "text": "7. Codex App 接入 DeepSeek",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_7-codex-app-接入-deepseek",
+          "items": [
+            {
+              "text": "7.1 第一次启动 Codex App",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_7-1-第一次启动-codex-app"
+            },
+            {
+              "text": "7.2 在 CC Switch 添加 DeepSeek Codex 供应商",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_7-2-在-cc-switch-添加-deepseek-codex-供应商"
+            },
+            {
+              "text": "7.3 开启 Local Routing",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_7-3-开启-local-routing"
+            },
+            {
+              "text": "7.4 验证",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_7-4-验证"
+            }
+          ]
+        },
+        {
+          "text": "8. Codex App 接入智谱 GLM Coding Plan / 智谱 API",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_8-codex-app-接入智谱-glm-coding-plan-智谱-api",
+          "items": [
+            {
+              "text": "8.1 中国大陆站",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_8-1-中国大陆站"
+            },
+            {
+              "text": "8.2 Z.AI 国际站",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_8-2-z-ai-国际站"
+            },
+            {
+              "text": "8.3 操作步骤",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_8-3-操作步骤"
+            }
+          ]
+        },
+        {
+          "text": "9. macOS 与 Windows 的差异",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_9-macos-与-windows-的差异"
+        },
+        {
+          "text": "10. 常见报错与处理",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_10-常见报错与处理",
+          "items": [
+            {
+              "text": "10.1 Codex 报 404：找不到 /responses",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_10-1-codex-报-404-找不到-responses"
+            },
+            {
+              "text": "10.2 DeepSeek 上游报 404",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_10-2-deepseek-上游报-404"
+            },
+            {
+              "text": "10.3 Codex App 看不到自定义模型",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_10-3-codex-app-看不到自定义模型"
+            },
+            {
+              "text": "10.4 Claude App 重启后仍没有变化",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_10-4-claude-app-重启后仍没有变化"
+            },
+            {
+              "text": "10.5 401 / Unauthorized",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_10-5-401-unauthorized"
+            }
+          ]
+        },
+        {
+          "text": "11. 推荐配置选择",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_11-推荐配置选择",
+          "items": [
+            {
+              "text": "11.1 Claude App",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_11-1-claude-app"
+            },
+            {
+              "text": "11.2 Codex App",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_11-2-codex-app"
+            }
+          ]
+        },
+        {
+          "text": "12. 安全与合规提示",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_12-安全与合规提示"
+        },
+        {
+          "text": "13. 一页版流程",
+          "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#_13-一页版流程",
+          "items": [
+            {
+              "text": "Claude App + DeepSeek / 智谱",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#claude-app-deepseek-智谱"
+            },
+            {
+              "text": "Codex App + DeepSeek / 智谱",
+              "link": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1#codex-app-deepseek-智谱"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "/tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1": [
     {
       "text": "返回栏目列表",
@@ -945,6 +1124,12 @@ export const generatedSidebar = {
     {
       "text": "AI 教程",
       "link": "/tutorials/"
+    }
+  ],
+  "/latest/": [
+    {
+      "text": "最新文章",
+      "link": "/latest/"
     }
   ]
 }

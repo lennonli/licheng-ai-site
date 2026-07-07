@@ -270,7 +270,7 @@
 
 .vp-doc .home-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin-top: 28px;
 }
@@ -350,6 +350,57 @@
 }
 
 .vp-doc .index-card-desc {
+  display: block;
+  margin-top: 8px;
+  color: var(--lc-c-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.vp-doc .latest-article-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.vp-doc .latest-article {
+  display: block;
+  padding: 20px 22px;
+  color: var(--lc-c-ink);
+  text-decoration: none;
+  background: rgba(251, 250, 247, 0.72);
+  border: 1px solid rgba(32, 36, 44, 0.1);
+  border-radius: 8px;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.vp-doc .latest-article:hover {
+  border-color: rgba(49, 95, 114, 0.34);
+  box-shadow: 0 12px 28px rgba(32, 36, 44, 0.08);
+  transform: translateY(-1px);
+}
+
+.vp-doc .latest-article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--lc-c-accent);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.vp-doc .latest-article-title {
+  display: block;
+  color: var(--lc-c-ink);
+  font-size: 18px;
+  font-weight: 740;
+  line-height: 1.45;
+}
+
+.vp-doc .latest-article-desc {
   display: block;
   margin-top: 8px;
   color: var(--lc-c-muted);
