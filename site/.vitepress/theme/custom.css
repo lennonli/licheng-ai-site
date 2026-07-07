@@ -147,6 +147,45 @@
   line-height: 1.75;
 }
 
+.vp-doc .index-card-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.vp-doc .index-card {
+  display: block;
+  padding: 20px 22px;
+  color: var(--lc-c-ink);
+  text-decoration: none;
+  background: rgba(251, 250, 247, 0.72);
+  border: 1px solid rgba(32, 36, 44, 0.1);
+  border-radius: 8px;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.vp-doc .index-card:hover {
+  border-color: rgba(49, 95, 114, 0.34);
+  box-shadow: 0 12px 28px rgba(32, 36, 44, 0.08);
+  transform: translateY(-1px);
+}
+
+.vp-doc .index-card-title {
+  display: block;
+  color: var(--lc-c-ink);
+  font-size: 18px;
+  font-weight: 740;
+  line-height: 1.45;
+}
+
+.vp-doc .index-card-desc {
+  display: block;
+  margin-top: 8px;
+  color: var(--lc-c-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
 @media (max-width: 960px) {
   .vp-doc .home-grid {
     grid-template-columns: 1fr;

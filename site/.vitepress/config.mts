@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  lang: 'zh-CN',
   title: '李成律师法律AI工作站',
   description: 'Codex、法律工作流、Agent 指令、Skills 与工具教程',
   cleanUrls: true,
@@ -12,8 +13,8 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: 'AGENTS', link: '/agents/' },
-      { text: 'Skills', link: '/skills/' },
+      { text: 'AGENTS 指令', link: '/agents/' },
+      { text: 'Skill 技能', link: '/skills/' },
       { text: 'AI 教程', link: '/tutorials/' },
       { text: 'GitHub', link: 'https://github.com/lennonli' }
     ],
@@ -22,7 +23,7 @@ export default defineConfig({
         { text: 'AGENTS 指令', link: '/agents/' }
       ],
       '/skills/': [
-        { text: 'Skills 总览', link: '/skills/' }
+        { text: 'Skill 技能总览', link: '/skills/' }
       ],
       '/tutorials/': [
         { text: 'AI 教程总览', link: '/tutorials/' }
