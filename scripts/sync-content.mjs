@@ -240,9 +240,11 @@ ensureDir(agentsDest)
 copyMarkdownFiles(agentsSrc, agentsDest)
 addBackButtonsToMarkdownFiles(agentsDest, '/agents/')
 
-let agentsIndex = `# 智能体通用指令和项目指令
+let agentsIndex = `${backButton('/')}# 智能体通用指令和项目指令
 
-来源仓库：<https://github.com/lennonli/licheng-AGENTS.md>
+<p class="section-lead">这里集中展示可复用的智能体通用规则和法律项目指令，适合在开始具体任务前先选择合适的工作规范。</p>
+
+<p class="source-link">来源仓库：<a href="https://github.com/lennonli/licheng-AGENTS.md" target="_blank" rel="noreferrer">lennonli/licheng-AGENTS.md</a></p>
 
 ## 文档列表
 
@@ -265,9 +267,11 @@ const skillsSrc = path.join(cacheDir, 'skills')
 const skillsDest = path.join(siteDir, 'skills')
 ensureDir(skillsDest)
 const skillDirs = listSkillDirs(skillsSrc)
-let skillsIndex = `# 法律业务 Skill 技能
+let skillsIndex = `${backButton('/')}# 法律业务 Skill 技能
 
-来源仓库：<https://github.com/lennonli/licheng-skills>
+<p class="section-lead">这里汇总法律业务中可以复用的 Skill，覆盖证据归档、网络核查和常见实务自动化流程。</p>
+
+<p class="source-link">来源仓库：<a href="https://github.com/lennonli/licheng-skills" target="_blank" rel="noreferrer">lennonli/licheng-skills</a></p>
 
 ## Skill 列表
 
@@ -304,9 +308,11 @@ if (existsSync(path.join(tutorialsSrc, 'assets'))) {
   cpSync(path.join(tutorialsSrc, 'assets'), path.join(siteDir, 'assets'), { recursive: true })
 }
 
-let tutorialsIndex = `# AI 教程
+let tutorialsIndex = `${backButton('/')}# AI 教程
 
-来源仓库：<https://github.com/lennonli/licheng-AI-tutorials>
+<p class="section-lead">这里整理 AI 智能体安装、法律工作流环境配置和日常使用技巧，方便按平台和工具场景快速查找。</p>
+
+<p class="source-link">来源仓库：<a href="https://github.com/lennonli/licheng-AI-tutorials" target="_blank" rel="noreferrer">lennonli/licheng-AI-tutorials</a></p>
 
 ## 教程列表
 

@@ -65,6 +65,29 @@
   transform: translateY(-1px);
 }
 
+.vp-doc .section-lead {
+  max-width: 760px;
+  margin: 12px 0 12px;
+  color: var(--lc-c-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.vp-doc .source-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0 18px;
+  padding: 8px 12px;
+  color: var(--lc-c-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  background: rgba(251, 250, 247, 0.72);
+  border: 1px solid rgba(32, 36, 44, 0.08);
+  border-radius: 8px;
+}
+
 .VPNav {
   border-bottom: 1px solid rgba(32, 36, 44, 0.08);
 }
