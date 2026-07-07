@@ -118,6 +118,22 @@ const summaryOverrides = new Map([
   ['tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1.md', '面向全新 Windows 和刚安装 Codex 的法律工作环境，覆盖 PowerShell、winget、Office/PDF/OCR、WSL2 和法律文档处理依赖。']
 ])
 
+const headingTitleOverrides = new Map([
+  ['Goal', '目标'],
+  ['Inputs', '输入信息'],
+  ['Workflow', '工作流程'],
+  ['Practical Notes', '实务注意事项'],
+  ['Scripted Chrome Path', 'Chrome 自动化路径'],
+  ['Lessons From Failed Runs', '失败运行经验'],
+  ['When To Use', '适用场景'],
+  ['Setup', '安装与准备'],
+  ['Main Command', '主要命令'],
+  ['Supported Platforms', '支持的平台'],
+  ['Recommended Legal Workflow', '推荐法律工作流程'],
+  ['Platform Notes', '平台注意事项'],
+  ['Safety And Evidence Handling', '安全与证据处理']
+])
+
 function pageTitleFromFilename(name) {
   return name
     .replace(/-ABL-\d{8}-V\d+\.md$/, '')
@@ -184,6 +200,69 @@ function summarizeMarkdown(key, markdown) {
   return summary.length > 120 ? `${summary.slice(0, 118)}……` : summary
 }
 
+function headingText(markdownHeading) {
+  return cleanSummaryText(
+    markdownHeading
+      .replace(/#+$/, '')
+      .replace(/<[^>]+>/g, '')
+      .replace(/\{#[^}]+}/g, '')
+  )
+}
+
+function slugifyHeading(text) {
+  let slug = text
+    .trim()
+    .toLowerCase()
+    .replace(/&[a-z]+;/g, '')
+    .replace(/[^\p{Letter}\p{Number}_-]+/gu, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
+
+  if (/^\d/.test(slug)) slug = `_${slug}`
+  return slug || 'section'
+}
+
+function uniqueSlug(base, seen) {
+  const count = seen.get(base) || 0
+  seen.set(base, count + 1)
+  return count === 0 ? base : `${base}-${count}`
+}
+
+function pageHeadings(markdown, pageLink) {
+  const seen = new Map()
+  const items = []
+  let currentSecondLevel = null
+
+  for (const rawLine of stripYamlFrontmatter(markdown).split('\n')) {
+    const match = rawLine.match(/^(#{2,3})\s+(.+)$/)
+    if (!match) continue
+
+    const level = match[1].length
+    const originalText = headingText(match[2])
+    if (!originalText) continue
+
+    const item = {
+      text: headingTitleOverrides.get(originalText) || originalText,
+      link: `${pageLink}#${uniqueSlug(slugifyHeading(originalText), seen)}`
+    }
+
+    if (level === 2) {
+      items.push(item)
+      currentSecondLevel = item
+      continue
+    }
+
+    if (currentSecondLevel) {
+      currentSecondLevel.items ||= []
+      currentSecondLevel.items.push(item)
+    } else {
+      items.push(item)
+    }
+  }
+
+  return items
+}
+
 function indexCardList(items) {
   return `<div class="index-card-list">
 ${items
@@ -196,6 +275,60 @@ ${items
     .join('\n')}
 </div>
 `
+}
+
+function buildSectionSidebar({ section, indexText, destDir }) {
+  const sidebar = {}
+
+  for (const name of readDirSafe(destDir).sort()) {
+    if (!name.endsWith('.md') || name === 'index.md') continue
+
+    const file = path.join(destDir, name)
+    const markdown = readFileSync(file, 'utf8')
+    const pageName = name.replace(/\.md$/, '')
+    const pageLink = `/${section}/${pageName}`
+    const key = `${section}/${name}`
+    const title = displayTitle(key, name, markdown)
+    const headings = pageHeadings(markdown, pageLink)
+
+    sidebar[pageLink] = [
+      { text: '返回栏目列表', link: `/${section}/` },
+      { text: title, link: pageLink },
+      {
+        text: '本页目录',
+        items: headings.length > 0 ? headings : [{ text: title, link: pageLink }]
+      }
+    ]
+  }
+
+  sidebar[`/${section}/`] = [{ text: indexText, link: `/${section}/` }]
+
+  return sidebar
+}
+
+function writeGeneratedSidebar() {
+  const sidebar = {
+    ...buildSectionSidebar({
+      section: 'agents',
+      indexText: '智能体通用指令和项目指令',
+      destDir: agentsDest
+    }),
+    ...buildSectionSidebar({
+      section: 'skills',
+      indexText: '法律业务 Skill 技能',
+      destDir: skillsDest
+    }),
+    ...buildSectionSidebar({
+      section: 'tutorials',
+      indexText: 'AI 教程',
+      destDir: tutorialsDest
+    })
+  }
+
+  writeFileSync(
+    path.join(siteDir, '.vitepress', 'generated-sidebar.mjs'),
+    `export const generatedSidebar = ${JSON.stringify(sidebar, null, 2)}\n`
+  )
 }
 
 rmSync(cacheDir, { recursive: true, force: true })
@@ -330,5 +463,7 @@ for (const name of readDirSafe(tutorialsDest).sort()) {
 }
 tutorialsIndex += indexCardList(tutorialItems)
 writeFileSync(path.join(tutorialsDest, 'index.md'), tutorialsIndex)
+
+writeGeneratedSidebar()
 
 console.log('Content synced.')

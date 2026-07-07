@@ -15,6 +15,18 @@
   max-width: 920px;
 }
 
+.VPDoc:not(:has(.home-hero)) .container {
+  max-width: 1120px !important;
+}
+
+.VPDoc:not(:has(.home-hero)) .content-container {
+  max-width: 880px !important;
+}
+
+.vp-doc :where(h2, h3, h4) {
+  scroll-margin-top: 96px;
+}
+
 .vp-doc p,
 .vp-doc li {
   line-height: 1.85;
@@ -95,6 +107,73 @@
 .VPNavBarTitle .title span {
   color: var(--lc-c-ink);
   font-weight: 750;
+}
+
+.VPDocAside {
+  display: none !important;
+}
+
+.VPSidebar {
+  background: linear-gradient(180deg, rgba(251, 250, 247, 0.95), rgba(246, 248, 250, 0.95));
+  border-right: 1px solid rgba(32, 36, 44, 0.08);
+}
+
+.VPSidebar .curtain {
+  background: transparent;
+}
+
+.VPSidebar .nav {
+  padding-top: 18px;
+}
+
+.VPSidebarItem.level-0 {
+  padding-bottom: 14px !important;
+}
+
+.VPSidebarItem.level-0 + .VPSidebarItem.level-0 {
+  margin-top: 10px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(32, 36, 44, 0.08);
+}
+
+.VPSidebarItem.level-0 > .item > .link > .text,
+.VPSidebarItem.level-0 > .item > .text {
+  color: var(--lc-c-ink) !important;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.VPSidebarItem.level-0:nth-child(3) > .item > .text {
+  color: var(--lc-c-accent) !important;
+  font-size: 13px;
+}
+
+.VPSidebarItem.level-1 .text {
+  line-height: 22px;
+}
+
+.VPSidebarItem.level-2 .text {
+  color: var(--lc-c-muted) !important;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.VPSidebarItem.is-active > .item .link > .text,
+.VPSidebarItem.has-active > .item .link > .text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.VPSidebarItem .items {
+  border-left: 1px solid rgba(49, 95, 114, 0.14);
+}
+
+.VPSidebarItem.level-0 > .items {
+  margin-top: 6px;
+}
+
+.VPSidebarItem.level-1 > .items {
+  margin-left: 7px;
+  padding-left: 11px;
 }
 
 .VPDoc:has(.home-hero) .container {

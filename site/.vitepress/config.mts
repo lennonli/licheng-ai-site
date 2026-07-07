@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { generatedSidebar } from './generated-sidebar.mjs'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -8,6 +9,8 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: true,
   themeConfig: {
+    aside: false,
+    outline: false,
     search: {
       provider: 'local'
     },
@@ -18,17 +21,7 @@ export default defineConfig({
       { text: 'AI 教程', link: '/tutorials/' },
       { text: 'GitHub', link: 'https://github.com/lennonli' }
     ],
-    sidebar: {
-      '/agents/': [
-        { text: 'AGENTS 指令', link: '/agents/' }
-      ],
-      '/skills/': [
-        { text: 'Skill 技能总览', link: '/skills/' }
-      ],
-      '/tutorials/': [
-        { text: 'AI 教程总览', link: '/tutorials/' }
-      ]
-    },
+    sidebar: generatedSidebar,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lennonli' }
     ],
