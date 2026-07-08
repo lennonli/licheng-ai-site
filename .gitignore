@@ -9,5 +9,6 @@ site/skills/
 site/tutorials/
 site/assets/
 .cache/
+.wrangler/
 .DS_Store
 *.log

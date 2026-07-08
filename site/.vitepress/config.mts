@@ -24,7 +24,13 @@ export default defineConfig({
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '目录',
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        _render(src, env, md) {
+          if (env.path?.includes('__analytics-licheng-20260708')) return ''
+          return md.render(src, env)
+        }
+      }
     },
     nav: [
       { text: '首页', link: '/' },

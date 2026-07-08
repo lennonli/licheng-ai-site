@@ -18,6 +18,9 @@ jobs:
     env:
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      ANALYTICS_ACCESS_KEY: ${{ secrets.ANALYTICS_ACCESS_KEY }}
+      CLOUDFLARE_ZONE_ID: 72900f423030570e3c629e54613716e6
+      ANALYTICS_HOST: ai.licheng.uk
     steps:
       - name: Checkout website repo
         uses: actions/checkout@v6
@@ -36,6 +39,14 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      - name: Configure analytics runtime secrets
+        if: ${{ env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != '' && env.ANALYTICS_ACCESS_KEY != '' }}
+        run: |
+          printf '%s' "$ANALYTICS_ACCESS_KEY" | npx wrangler pages secret put ANALYTICS_ACCESS_KEY --project-name=licheng-ai-site
+          printf '%s' "$CLOUDFLARE_API_TOKEN" | npx wrangler pages secret put CLOUDFLARE_API_TOKEN --project-name=licheng-ai-site
+          printf '%s' "$CLOUDFLARE_ZONE_ID" | npx wrangler pages secret put CLOUDFLARE_ZONE_ID --project-name=licheng-ai-site
+          printf '%s' "$ANALYTICS_HOST" | npx wrangler pages secret put ANALYTICS_HOST --project-name=licheng-ai-site
 
       - name: Deploy to Cloudflare Pages
         if: ${{ env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != '' }}
