@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>访问数据与内容分析</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14231b;
+      --muted: #5e6f64;
+      --line: rgba(20, 35, 27, 0.12);
+      --paper: rgba(255, 255, 255, 0.82);
+      --paper-strong: #ffffff;
+      --lime: #9fe870;
+      --green: #0e6f3f;
+      --green-soft: rgba(14, 111, 63, 0.12);
+      --shadow: 0 18px 54px rgba(20, 35, 27, 0.09);
+      --shadow-soft: 0 12px 34px rgba(20, 35, 27, 0.06);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 0%, rgba(159, 232, 112, 0.26), transparent 26rem),
+        linear-gradient(180deg, #fbfdf8 0%, #f3f7ef 100%);
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 44px 0 72px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 24px;
+      padding: 34px;
+      background:
+        linear-gradient(145deg, rgba(159, 232, 112, 0.82), rgba(255, 255, 255, 0.9) 58%, rgba(223, 247, 208, 0.72)),
+        var(--paper-strong);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      margin: 0 0 14px;
+      padding: 7px 12px;
+      color: #14231b;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.3;
+      text-transform: uppercase;
+      background: var(--lime);
+      border-radius: 999px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .hero p:not(.eyebrow) {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .range {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .range button,
+    .auth button {
+      min-height: 40px;
+      padding: 9px 15px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.66);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      transition:
+        background 160ms ease,
+        box-shadow 160ms ease,
+        transform 160ms ease;
+    }
+
+    .range button.active,
+    .range button:hover,
+    .auth button {
+      color: #14231b;
+      background: var(--lime);
+    }
+
+    .range button:hover,
+    .auth button:hover {
+      box-shadow: var(--shadow-soft);
+      transform: translateY(-1px);
+    }
+
+    .auth {
+      margin-bottom: 22px;
+      padding: 18px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .auth label {
+      display: block;
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .auth-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+    }
+
+    .auth input {
+      width: 100%;
+      min-height: 44px;
+      padding: 10px 14px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      outline: none;
+    }
+
+    .auth input:focus {
+      border-color: rgba(14, 111, 63, 0.36);
+      box-shadow: 0 0 0 3px rgba(159, 232, 112, 0.28);
+    }
+
+    .status {
+      margin: 10px 0 0;
+      color: #b42318;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .dashboard {
+      display: none;
+      gap: 18px;
+    }
+
+    .dashboard.visible {
+      display: grid;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .meta span {
+      padding: 7px 11px;
+      background: rgba(255, 255, 255, 0.58);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .kpis article,
+    .panel {
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .kpis article {
+      display: flex;
+      min-height: 150px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px;
+    }
+
+    .kpis span,
+    .kpis small {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 720;
+    }
+
+    .kpis strong {
+      color: var(--ink);
+      font-size: 32px;
+      font-weight: 850;
+      line-height: 1.15;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .panel {
+      padding: 22px;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .panel-head {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .panel-head span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .bars {
+      display: grid;
+      min-height: 220px;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(28px, 1fr);
+      gap: 8px;
+      align-items: end;
+      padding-top: 10px;
+      overflow-x: auto;
+    }
+
+    .bar-cell {
+      display: grid;
+      min-width: 28px;
+      height: 210px;
+      grid-template-rows: 1fr auto;
+      gap: 8px;
+      align-items: end;
+    }
+
+    .bar {
+      display: block;
+      width: 100%;
+      min-height: 8px;
+      background: linear-gradient(180deg, var(--lime), #62d84e);
+      border-radius: 999px 999px 4px 4px;
+    }
+
+    .bar-cell small {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list li {
+      display: grid;
+      gap: 8px;
+      color: var(--ink);
+    }
+
+    .list-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .list-row span {
+      overflow: hidden;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 760;
+      line-height: 1.45;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .list-row strong {
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .list-bar {
+      display: block;
+      height: 8px;
+      overflow: hidden;
+      background: rgba(20, 35, 27, 0.08);
+      border-radius: 999px;
+    }
+
+    .list-bar span {
+      display: block;
+      height: 100%;
+      background: var(--lime);
+      border-radius: inherit;
+    }
+
+    .empty {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 960px) {
+      .hero,
+      .kpis,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .range {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 28px, 1180px);
+        padding: 22px 0 52px;
+      }
+
+      .hero {
+        padding: 24px;
+        border-radius: 24px;
+      }
+
+      .auth-row {
+        grid-template-columns: 1fr;
+      }
+
+      .auth button {
+        width: 100%;
+      }
+
+      .panel-head {
+        display: grid;
+      }
+
+      .list-row span {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero" aria-label="站点访问统计">
+      <div>
+        <p class="eyebrow">Private analytics</p>
+        <h1>访问数据与内容分析</h1>
+        <p id="range-label">统计范围：24 小时 · 数据源：Cloudflare 边缘请求日志</p>
+      </div>
+      <div class="range" aria-label="时间范围">
+        <button type="button" data-range="1">1 小时</button>
+        <button type="button" data-range="6">6 小时</button>
+        <button type="button" data-range="12">12 小时</button>
+        <button type="button" data-range="24" class="active">24 小时</button>
+      </div>
+    </section>
+
+    <form class="auth" id="auth-form">
+      <label for="analytics-key">访问口令</label>
+      <div class="auth-row">
+        <input id="analytics-key" type="password" autocomplete="current-password" placeholder="输入统计页口令">
+        <button type="submit" id="load-button">查看数据</button>
+      </div>
+      <p class="status" id="status" role="status"></p>
+    </form>
+
+    <section class="dashboard" id="dashboard" aria-label="访问统计仪表盘">
+      <div class="meta" id="meta"></div>
+
+      <section class="kpis" aria-label="核心指标">
+        <article>
+          <span>请求数</span>
+          <strong id="kpi-requests">-</strong>
+          <small>包含页面、资源与接口请求</small>
+        </article>
+        <article>
+          <span>访问次数</span>
+          <strong id="kpi-visits">-</strong>
+          <small>Cloudflare visits 口径</small>
+        </article>
+        <article>
+          <span>响应流量</span>
+          <strong id="kpi-response">-</strong>
+          <small>边缘节点响应字节数</small>
+        </article>
+        <article>
+          <span>缓存命中</span>
+          <strong id="kpi-cache">-</strong>
+          <small>Hit / Stale / Revalidated</small>
+        </article>
+      </section>
+
+      <section class="panel wide">
+        <div class="panel-head">
+          <h2>小时趋势</h2>
+          <span id="timeline-range">-</span>
+        </div>
+        <div class="bars" id="timeline" aria-label="小时请求趋势"></div>
+      </section>
+
+      <div class="grid">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>热门页面</h2>
+            <span>过滤静态资源</span>
+          </div>
+          <ol class="list" id="top-pages"></ol>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>访问来源地区</h2>
+            <span>按请求数排序</span>
+          </div>
+          <ol class="list" id="countries"></ol>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>设备类型</h2>
+            <span>桌面 / 移动 / 平板</span>
+          </div>
+          <ol class="list" id="devices"></ol>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>浏览器</h2>
+            <span>按 User-Agent 聚合</span>
+          </div>
+          <ol class="list" id="browsers"></ol>
+        </section>
+      </div>
+
+      <section class="panel wide">
+        <div class="panel-head">
+          <h2>原始热门路径</h2>
+          <span>包含资源请求，用于排查异常流量</span>
+        </div>
+        <ol class="list" id="raw-paths"></ol>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const storageKey = 'lc-analytics-access-key'
+    const rangeButtons = Array.from(document.querySelectorAll('[data-range]'))
+    const rangeLabel = document.querySelector('#range-label')
+    const form = document.querySelector('#auth-form')
+    const accessKeyInput = document.querySelector('#analytics-key')
+    const loadButton = document.querySelector('#load-button')
+    const status = document.querySelector('#status')
+    const dashboard = document.querySelector('#dashboard')
+    let rangeHours = 24
+
+    accessKeyInput.value = sessionStorage.getItem(storageKey) || ''
+
+    rangeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        rangeHours = Number(button.dataset.range || 24)
+        rangeButtons.forEach((item) => item.classList.toggle('active', item === button))
+        rangeLabel.textContent = `统计范围：${rangeHours} 小时 · 数据源：Cloudflare 边缘请求日志`
+        if (dashboard.classList.contains('visible') && accessKeyInput.value.trim()) {
+          loadAnalytics()
+        }
+      })
+    })
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault()
+      loadAnalytics()
+    })
+
+    if (accessKeyInput.value.trim()) {
+      loadAnalytics()
+    }
+
+    async function loadAnalytics() {
+      const accessKey = accessKeyInput.value.trim()
+      if (!accessKey) {
+        showStatus('请输入访问口令。')
+        return
+      }
+
+      loadButton.disabled = true
+      loadButton.textContent = '加载中'
+      showStatus('')
+
+      try {
+        const response = await fetch('/api/site-analytics', {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json',
+            'x-analytics-key': accessKey
+          },
+          body: JSON.stringify({ rangeHours })
+        })
+        const data = await response.json()
+        if (!response.ok || data.error) {
+          dashboard.classList.remove('visible')
+          showStatus(data.error || '数据加载失败。')
+          return
+        }
+        sessionStorage.setItem(storageKey, accessKey)
+        renderDashboard(data)
+        showStatus('')
+      } catch (error) {
+        dashboard.classList.remove('visible')
+        showStatus(error instanceof Error ? error.message : '数据加载失败。')
+      } finally {
+        loadButton.disabled = false
+        loadButton.textContent = '查看数据'
+      }
+    }
+
+    function renderDashboard(data) {
+      dashboard.classList.add('visible')
+      document.querySelector('#meta').innerHTML = [
+        `站点：${escapeHtml(data.meta?.host || '-')}`,
+        `生成时间：${escapeHtml(formatDateTime(data.meta?.generatedAt))}`
+      ].map((item) => `<span>${item}</span>`).join('')
+      document.querySelector('#kpi-requests').textContent = formatNumber(data.totals?.requests)
+      document.querySelector('#kpi-visits').textContent = formatNumber(data.totals?.visits)
+      document.querySelector('#kpi-response').textContent = formatBytes(data.totals?.responseBytes)
+      document.querySelector('#kpi-cache').textContent = formatPercent(data.totals?.cacheRatio)
+      document.querySelector('#timeline-range').textContent = `${formatDateTime(data.meta?.start)} 至 ${formatDateTime(data.meta?.end)}`
+      renderTimeline(data.timeline || [])
+      renderList('#top-pages', data.topPages || [], 'visits', '暂无页面访问数据')
+      renderList('#countries', data.byCountry || [], 'count', '暂无地区数据')
+      renderList('#devices', data.byDevice || [], 'count', '暂无设备数据')
+      renderList('#browsers', data.byBrowser || [], 'count', '暂无浏览器数据')
+      renderList('#raw-paths', data.topPathsRaw || [], 'count', '暂无路径数据')
+    }
+
+    function renderTimeline(items) {
+      const target = document.querySelector('#timeline')
+      const max = Math.max(...items.map((item) => item.requests || 0), 1)
+      target.innerHTML = items.map((item) => {
+        const height = Math.max(8, Math.round(((item.requests || 0) / max) * 100))
+        return `<div class="bar-cell">
+          <span class="bar" style="height:${height}%" title="${escapeHtml(formatHour(item.time))} · ${escapeHtml(formatNumber(item.requests))} 次请求"></span>
+          <small>${escapeHtml(formatHour(item.time))}</small>
+        </div>`
+      }).join('')
+    }
+
+    function renderList(selector, items, metric, emptyText) {
+      const target = document.querySelector(selector)
+      if (!items.length) {
+        target.innerHTML = `<p class="empty">${escapeHtml(emptyText)}</p>`
+        return
+      }
+      const values = items.map((item) => metric === 'visits' ? item.visits || item.count || 0 : item.count || 0)
+      const max = Math.max(...values, 1)
+      target.innerHTML = items.map((item, index) => {
+        const value = values[index]
+        const width = Math.max(4, Math.round((value / max) * 100))
+        return `<li>
+          <div class="list-row">
+            <span title="${escapeHtml(item.label || 'Unknown')}">${escapeHtml(item.label || 'Unknown')}</span>
+            <strong>${escapeHtml(formatNumber(value))}</strong>
+          </div>
+          <span class="list-bar"><span style="width:${width}%"></span></span>
+        </li>`
+      }).join('')
+    }
+
+    function showStatus(message) {
+      status.textContent = message
+    }
+
+    function formatNumber(value = 0) {
+      return new Intl.NumberFormat('zh-CN').format(value || 0)
+    }
+
+    function formatPercent(value = 0) {
+      return `${Math.round((value || 0) * 100)}%`
+    }
+
+    function formatBytes(value = 0) {
+      if (!value || value < 1024) return `${value || 0} B`
+      const units = ['KB', 'MB', 'GB', 'TB']
+      let amount = value / 1024
+      let index = 0
+      while (amount >= 1024 && index < units.length - 1) {
+        amount /= 1024
+        index += 1
+      }
+      return `${amount.toFixed(amount >= 10 ? 1 : 2)} ${units[index]}`
+    }
+
+    function formatDateTime(value) {
+      if (!value) return '-'
+      return new Intl.DateTimeFormat('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+      }).format(new Date(value))
+    }
+
+    function formatHour(value) {
+      if (!value) return '-'
+      return new Intl.DateTimeFormat('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+        hour: '2-digit'
+      }).format(new Date(value))
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;')
+    }
+  </script>
+</body>
+</html>

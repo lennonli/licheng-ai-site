@@ -1,6 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
-import AnalyticsDashboard from './AnalyticsDashboard.vue'
 import ArticleTools from './ArticleTools.vue'
 import BackButton from './BackButton.vue'
 import BackToTopButton from './BackToTopButton.vue'
@@ -15,7 +14,6 @@ export default {
     })
   },
   enhanceApp({ app }) {
-    app.component('AnalyticsDashboard', AnalyticsDashboard)
     app.component('ArticleTools', ArticleTools)
     app.component('BackButton', BackButton)
     app.component('HomeSearchBox', HomeSearchBox)
