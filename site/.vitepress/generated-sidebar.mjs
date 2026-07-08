@@ -730,6 +730,71 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "macOS Codex 跳过登录页面教程（使用第三方模型）",
+      "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、适用场景",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#一-适用场景"
+        },
+        {
+          "text": "二、问题原因",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#二-问题原因"
+        },
+        {
+          "text": "三、操作步骤",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#三-操作步骤",
+          "items": [
+            {
+              "text": "步骤 1：完全退出 Codex",
+              "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#步骤-1-完全退出-codex"
+            },
+            {
+              "text": "步骤 2：备份现有配置（强烈建议）",
+              "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#步骤-2-备份现有配置-强烈建议"
+            },
+            {
+              "text": "步骤 3：修改 config.toml",
+              "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#步骤-3-修改-config-toml"
+            },
+            {
+              "text": "步骤 4：重置 auth.json",
+              "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#步骤-4-重置-auth-json"
+            },
+            {
+              "text": "步骤 5：重新启动 Codex",
+              "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#步骤-5-重新启动-codex"
+            }
+          ]
+        },
+        {
+          "text": "四、验证是否生效",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#四-验证是否生效"
+        },
+        {
+          "text": "五、常见问题排查",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#五-常见问题排查"
+        },
+        {
+          "text": "六、一键脚本（可选）",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#六-一键脚本-可选"
+        },
+        {
+          "text": "七、注意事项",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#七-注意事项"
+        }
+      ]
+    }
+  ],
   "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1": [
     {
       "text": "返回栏目列表",

@@ -61,6 +61,23 @@ function copyMarkdownFiles(src, dest) {
   }
 }
 
+function copyTutorialHtmlFiles(src, dest) {
+  const copied = []
+  ensureDir(dest)
+  for (const name of readDirSafe(src).sort()) {
+    const from = path.join(src, name)
+    if (!statSync(from).isFile()) continue
+    if (!name.endsWith('.html')) continue
+
+    const slug = name.replace(/\.html$/, '')
+    const pageDir = path.join(dest, slug)
+    ensureDir(pageDir)
+    cpSync(from, path.join(pageDir, 'index.html'))
+    copied.push({ name, slug })
+  }
+  return copied
+}
+
 function backButton(fallback) {
   return `<BackButton fallback="${fallback}" />\n\n`
 }
@@ -146,6 +163,8 @@ const titleOverrides = new Map([
   ['skills/cnipa-trademark-evidence-archive', 'CNIPA 商标证据归档'],
   ['skills/network-check-v3', '中国企业网络核查'],
   ['tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1.md', 'macOS + Codex 法律工作流环境安装教程'],
+  ['tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1.html', '智能体指令体系、工具选择培训讲义（HTML 翻页版）'],
+  ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2.html', '梯子使用全教程 HTML 自包含版'],
   ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1.md', '代理工具全平台使用教程'],
   ['tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1.md', 'Windows + Codex 法律工作流环境安装教程']
 ])
@@ -161,6 +180,8 @@ const summaryOverrides = new Map([
   ['skills/cnipa-trademark-evidence-archive', '用于从 CNIPA 商标网上检索系统归档商标详情页和商标流程页，适合商标核查、知识产权尽调和证据留存。'],
   ['skills/network-check-v3', '用于中国企业主体和风险网络核查，批量检索信用、处罚、失信、监管和公开网页信息，并保存可追溯的 PDF 证据文件。'],
   ['tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1.md', '面向全新 macOS 和刚安装 Codex 的法律工作环境，覆盖 Homebrew、文档处理、PDF/OCR、Python 虚拟环境和 Codex 配置。'],
+  ['tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1.html', '面向律师团队的 AI Agent 培训讲义，覆盖大模型与 Agent 区分、指令体系、Codex 工具、Skill/MCP/Plugin、客户秘密保护和团队落地。'],
+  ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2.html', '代理工具全平台教程的自包含 HTML 版本，适合单文件保存和离线阅读。'],
   ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1.md', '覆盖 macOS、Windows、Android 和 iOS 的代理客户端安装、订阅导入、模式选择、验证排错和法律工作中的安全注意事项。'],
   ['tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1.md', '面向全新 Windows 和刚安装 Codex 的法律工作环境，覆盖 PowerShell、winget、Office/PDF/OCR、WSL2 和法律文档处理依赖。']
 ])
@@ -183,8 +204,8 @@ const headingTitleOverrides = new Map([
 
 function pageTitleFromFilename(name) {
   return name
-    .replace(/-ABL-\d{8}-V\d+\.md$/, '')
-    .replace(/\.md$/, '')
+    .replace(/-ABL-\d{8}-V\d+\.(md|html)$/, '')
+    .replace(/\.(md|html)$/, '')
     .replace(/-/g, ' ')
 }
 
@@ -246,6 +267,42 @@ function summarizeMarkdown(key, markdown) {
   const summary = candidates.join('；')
   if (!summary) return '汇总该主题下的关键规则、使用场景和操作步骤，便于进入正文前快速判断是否适用。'
   return summary.length > 120 ? `${summary.slice(0, 118)}……` : summary
+}
+
+function stripHtmlTags(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function htmlTitle(html) {
+  const match = html.match(/<title>([\s\S]*?)<\/title>/i)
+  if (!match) return ''
+  return stripHtmlTags(match[1]).replace(/\s*\|\s*李成律师法律AI工作站$/, '').trim()
+}
+
+function displayHtmlTitle(key, fallbackName, html = '') {
+  if (titleOverrides.has(key)) return titleOverrides.get(key)
+  return htmlTitle(html) || pageTitleFromFilename(fallbackName)
+}
+
+function summarizeHtml(key, html) {
+  if (summaryOverrides.has(key)) return summaryOverrides.get(key)
+
+  const meta = html.match(/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i)
+  if (meta?.[1]) return cleanSummaryText(stripHtmlTags(meta[1]))
+
+  const bodyText = stripHtmlTags(html)
+  return bodyText.length > 120 ? `${bodyText.slice(0, 118)}……` : bodyText || '以 HTML 页面形式呈现该主题内容，适合直接打开阅读或演示。'
 }
 
 function headingText(markdownHeading) {
@@ -436,6 +493,7 @@ for (const source of sources) {
 for (const dir of ['agents', 'skills', 'tutorials', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
+rmSync(path.join(siteDir, 'public', 'tutorials'), { recursive: true, force: true })
 
 writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
   <div class="home-hero-copy">
@@ -566,10 +624,13 @@ writeFileSync(path.join(skillsDest, 'index.md'), skillsIndex)
 
 const tutorialsSrc = path.join(cacheDir, 'tutorials')
 const tutorialsDest = path.join(siteDir, 'tutorials')
+const tutorialsPublicDest = path.join(siteDir, 'public', 'tutorials')
 ensureDir(tutorialsDest)
+let tutorialHtmlFiles = []
 
 if (existsSync(path.join(tutorialsSrc, 'docs'))) {
   copyMarkdownFiles(path.join(tutorialsSrc, 'docs'), tutorialsDest)
+  tutorialHtmlFiles = copyTutorialHtmlFiles(path.join(tutorialsSrc, 'docs'), tutorialsPublicDest)
   addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.tutorials, 'docs')
 }
 if (existsSync(path.join(tutorialsSrc, 'assets'))) {
@@ -599,6 +660,24 @@ for (const name of readDirSafe(tutorialsDest).sort()) {
     href: `/tutorials/${name.replace(/\.md$/, '')}`,
     title: displayTitle(key, name, markdown),
     summary: summarizeMarkdown(key, markdown),
+    section: 'AI 教程',
+    updatedAt: gitLastUpdated(tutorialsSrc, path.join('docs', name))
+  })
+}
+for (const { name, slug } of tutorialHtmlFiles) {
+  const html = readFileSync(path.join(tutorialsSrc, 'docs', name), 'utf8')
+  const key = `tutorials/${name}`
+  const title = displayHtmlTitle(key, name, html)
+  const summary = summarizeHtml(key, html)
+  tutorialItems.push({
+    href: `/tutorials/${slug}/`,
+    title,
+    summary
+  })
+  latestArticles.push({
+    href: `/tutorials/${slug}/`,
+    title,
+    summary,
     section: 'AI 教程',
     updatedAt: gitLastUpdated(tutorialsSrc, path.join('docs', name))
   })
