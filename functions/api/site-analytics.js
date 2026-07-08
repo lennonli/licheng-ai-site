@@ -33,7 +33,7 @@ export async function onRequest(context) {
   const start = new Date(now.getTime() - Math.min(rangeHours, MAX_HOURS) * 60 * 60 * 1000).toISOString()
 
   const payload = await queryCloudflareAnalytics({
-    apiToken: env.CLOUDFLARE_API_TOKEN,
+    apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN || env.CLOUDFLARE_API_TOKEN,
     zoneId: env.CLOUDFLARE_ZONE_ID,
     host,
     start,
@@ -211,7 +211,9 @@ function isLikelyPagePath(path) {
 function missingConfig(env) {
   const missing = []
   if (!env.ANALYTICS_ACCESS_KEY) missing.push('ANALYTICS_ACCESS_KEY')
-  if (!env.CLOUDFLARE_API_TOKEN) missing.push('CLOUDFLARE_API_TOKEN')
+  if (!env.CLOUDFLARE_ANALYTICS_API_TOKEN && !env.CLOUDFLARE_API_TOKEN) {
+    missing.push('CLOUDFLARE_ANALYTICS_API_TOKEN')
+  }
   if (!env.CLOUDFLARE_ZONE_ID) missing.push('CLOUDFLARE_ZONE_ID')
   return missing.length ? `Missing runtime secrets: ${missing.join(', ')}` : ''
 }
