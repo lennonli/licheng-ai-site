@@ -1,15 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="168" height="56" viewBox="0 0 168 56" role="img" aria-label="LC-AI">
-  <style>
-    .mark {
-      font-family: "Avenir Next", "Nunito Sans", "Arial Rounded MT Bold", Arial, sans-serif;
-      font-size: 39px;
-      font-weight: 800;
-      letter-spacing: -2px;
-    }
-  </style>
-  <text class="mark" x="3" y="41" fill="#4285f4">L</text>
-  <text class="mark" x="29" y="41" fill="#ea4335">C</text>
-  <text class="mark" x="61" y="41" fill="#fbbc05">-</text>
-  <text class="mark" x="82" y="41" fill="#4285f4">A</text>
-  <text class="mark" x="114" y="41" fill="#34a853">I</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="LC-AI">
+  <defs>
+    <linearGradient id="bg" x1="74" y1="62" x2="438" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9F59A"/>
+      <stop offset="1" stop-color="#9FE870"/>
+    </linearGradient>
+    <style>
+      .letter {
+        font-family: "Avenir Next", "Inter", "PingFang SC", Arial, sans-serif;
+        font-weight: 850;
+        letter-spacing: -8px;
+      }
+      .small {
+        font-family: "Avenir Next", "Inter", "PingFang SC", Arial, sans-serif;
+        font-weight: 850;
+        letter-spacing: -3px;
+      }
+    </style>
+  </defs>
+  <rect x="44" y="44" width="424" height="424" rx="118" fill="url(#bg)"/>
+  <rect x="44" y="44" width="424" height="424" rx="118" fill="none" stroke="#14231B" stroke-opacity="0.10" stroke-width="14"/>
+  <circle cx="378" cy="134" r="28" fill="#14231B" opacity="0.12"/>
+  <text class="letter" x="96" y="270" font-size="174" fill="#14231B">LC</text>
+  <text class="small" x="156" y="374" font-size="88" fill="#14231B">AI</text>
 </svg>

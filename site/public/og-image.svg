@@ -1,51 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="李成律师法律AI工作站">
   <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F7EF"/>
+      <stop offset="1" stop-color="#EAF2E2"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="104" y1="120" x2="386" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9F59A"/>
+      <stop offset="1" stop-color="#9FE870"/>
+    </linearGradient>
     <style>
-      .wordmark {
-        font-family: "Avenir Next", "Nunito Sans", "Arial Rounded MT Bold", Arial, sans-serif;
-        font-size: 96px;
-        font-weight: 800;
-        letter-spacing: -5px;
+      .logo {
+        fill: #14231B;
+        font-family: "Avenir Next", "Inter", "PingFang SC", Arial, sans-serif;
+        font-weight: 850;
+        letter-spacing: -8px;
       }
       .title {
-        fill: #202124;
+        fill: #14231B;
         font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
         font-size: 58px;
-        font-weight: 800;
+        font-weight: 850;
       }
       .intro {
-        fill: #5f6368;
+        fill: #59645C;
         font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
-        font-size: 26px;
+        font-size: 27px;
       }
       .eyebrow {
-        fill: #5f6368;
+        fill: #163B2B;
         font-family: "Avenir Next", "Inter", sans-serif;
         font-size: 18px;
-        font-weight: 760;
+        font-weight: 820;
         letter-spacing: 2px;
+      }
+      .pill {
+        fill: #14231B;
+        font-family: "Avenir Next", "Inter", sans-serif;
+        font-size: 19px;
+        font-weight: 800;
       }
     </style>
   </defs>
-  <rect width="1200" height="630" fill="#ffffff"/>
-  <rect x="62" y="68" width="1076" height="494" rx="34" fill="#ffffff" stroke="#e8eaed" stroke-width="2"/>
-  <g transform="translate(116 140)">
-    <rect x="0" y="0" width="300" height="300" rx="76" fill="#ffffff" stroke="#e8eaed" stroke-width="10"/>
-    <text x="52" y="166" class="wordmark" fill="#4285f4">L</text>
-    <text x="113" y="166" class="wordmark" fill="#ea4335">C</text>
-    <text x="84" y="234" class="wordmark" font-size="56" fill="#fbbc05">A</text>
-    <text x="151" y="234" class="wordmark" font-size="56" fill="#34a853">I</text>
+  <rect width="1200" height="630" fill="url(#page)"/>
+  <circle cx="1020" cy="104" r="116" fill="#9FE870" opacity="0.26"/>
+  <circle cx="104" cy="562" r="140" fill="#7FD4CE" opacity="0.18"/>
+  <rect x="62" y="68" width="1076" height="494" rx="46" fill="#FFFFFF" fill-opacity="0.72" stroke="#14231B" stroke-opacity="0.10" stroke-width="2"/>
+  <g transform="translate(118 146)">
+    <rect x="0" y="0" width="284" height="284" rx="78" fill="url(#mark)"/>
+    <circle cx="218" cy="74" r="19" fill="#14231B" opacity="0.12"/>
+    <text x="52" y="156" class="logo" font-size="112">LC</text>
+    <text x="90" y="232" class="logo" font-size="62" letter-spacing="-3">AI</text>
   </g>
-  <g transform="translate(495 178)">
-    <text x="0" y="0" class="eyebrow">LC-AI LEGAL WORKSPACE</text>
-    <text x="0" y="86" class="title">李成律师法律AI工作站</text>
+  <g transform="translate(486 176)">
+    <rect x="0" y="-34" width="248" height="42" rx="21" fill="#9FE870"/>
+    <text x="20" y="-7" class="eyebrow">LC-AI WORKSPACE</text>
+    <text x="0" y="82" class="title">李成律师法律AI工作站</text>
     <text x="0" y="148" class="intro">智能体指令、法律业务技能与 AI 工具教程</text>
-    <text x="0" y="202" class="intro">面向中国法律服务场景的可复用知识库</text>
-    <g transform="translate(0 252)">
-      <circle cx="10" cy="10" r="10" fill="#4285f4"/>
-      <circle cx="52" cy="10" r="10" fill="#ea4335"/>
-      <circle cx="94" cy="10" r="10" fill="#fbbc05"/>
-      <circle cx="136" cy="10" r="10" fill="#34a853"/>
+    <text x="0" y="204" class="intro">面向中国法律服务场景的可复用知识库</text>
+    <g transform="translate(0 266)">
+      <rect x="0" y="0" width="118" height="40" rx="20" fill="#9FE870"/>
+      <text x="22" y="27" class="pill">Agents</text>
+      <rect x="136" y="0" width="102" height="40" rx="20" fill="#DFF7D0"/>
+      <text x="158" y="27" class="pill">Skills</text>
+      <rect x="256" y="0" width="142" height="40" rx="20" fill="#F2B84B" fill-opacity="0.46"/>
+      <text x="278" y="27" class="pill">Tutorials</text>
     </g>
   </g>
 </svg>
