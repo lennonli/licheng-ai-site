@@ -627,6 +627,117 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "法律工作如何选择AI智能体（2026年7月）",
+      "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、不同智能体的具体使用建议",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#一-不同智能体的具体使用建议"
+        },
+        {
+          "text": "二、按照法律业务分类的智能体选择表",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#二-按照法律业务分类的智能体选择表"
+        },
+        {
+          "text": "三、不要按产品选AI，要按任务选AI",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-不要按产品选ai-要按任务选ai",
+          "items": [
+            {
+              "text": "（一）简明分工",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#一-简明分工"
+            },
+            {
+              "text": "（二）选择公式",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#二-选择公式"
+            },
+            {
+              "text": "（三）中国大陆法律用户的可用性与文档写作替代方案",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-中国大陆法律用户的可用性与文档写作替代方案"
+            }
+          ]
+        },
+        {
+          "text": "四、诉讼业务实操：不同环节用不同智能体",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#四-诉讼业务实操-不同环节用不同智能体",
+          "items": [
+            {
+              "text": "（一）案情初步梳理",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#一-案情初步梳理"
+            },
+            {
+              "text": "（二）证据目录制作",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#二-证据目录制作"
+            },
+            {
+              "text": "（三）起诉状、答辩状、仲裁申请书",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-起诉状-答辩状-仲裁申请书"
+            },
+            {
+              "text": "（四）质证意见",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#四-质证意见"
+            },
+            {
+              "text": "（五）庭审准备和攻防推演",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#五-庭审准备和攻防推演"
+            }
+          ]
+        },
+        {
+          "text": "五、非诉业务实操：AI适合做底稿、清单、初稿和风险归纳",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#五-非诉业务实操-ai适合做底稿-清单-初稿和风险归纳",
+          "items": [
+            {
+              "text": "（一）文档写作与报告起草",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#一-文档写作与报告起草"
+            },
+            {
+              "text": "（二）合同审查",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#二-合同审查"
+            },
+            {
+              "text": "（三）法律尽调",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-法律尽调"
+            },
+            {
+              "text": "（四）法律检索和法律备忘录",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#四-法律检索和法律备忘录"
+            },
+            {
+              "text": "（五）投融资、并购、股改、基金专项",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#五-投融资-并购-股改-基金专项"
+            }
+          ]
+        },
+        {
+          "text": "六、行政类法律相关业务实操：优先交给办公智能体和编码智能体",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#六-行政类法律相关业务实操-优先交给办公智能体和编码智能体",
+          "items": [
+            {
+              "text": "（一）发票整理",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#一-发票整理"
+            },
+            {
+              "text": "（二）投标文件制作",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#二-投标文件制作"
+            },
+            {
+              "text": "（三）文件归档和项目底稿",
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-文件归档和项目底稿"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "/tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1": [
     {
       "text": "返回栏目列表",
@@ -791,6 +902,45 @@ export const generatedSidebar = {
         {
           "text": "七、注意事项",
           "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#七-注意事项"
+        }
+      ]
+    }
+  ],
+  "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "新建VPS后opencode 安装与远程 Web UI 配置教程",
+      "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、安装 opencode",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#一-安装-opencode"
+        },
+        {
+          "text": "二、处理 xdg-open 报错",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#二-处理-xdg-open-报错"
+        },
+        {
+          "text": "三、启动 Web UI",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#三-启动-web-ui"
+        },
+        {
+          "text": "四、开放端口",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#四-开放端口"
+        },
+        {
+          "text": "五、常用管理命令",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#五-常用管理命令"
+        },
+        {
+          "text": "六、安全建议",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#六-安全建议"
         }
       ]
     }

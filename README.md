@@ -7,6 +7,7 @@
 - <https://github.com/lennonli/licheng-AGENTS.md>
 - <https://github.com/lennonli/licheng-skills>
 - <https://github.com/lennonli/licheng-AI-tutorials>
+- `content/tutorials/`：本站仓库维护的补充教程
 
 ## 本地运行
 

@@ -19,28 +19,43 @@ const sources = [
   {
     key: 'agents',
     name: 'AGENTS 指令',
-    repo: 'https://github.com/lennonli/licheng-AGENTS.md.git'
+    repo: 'https://github.com/lennonli/licheng-AGENTS.md.git',
+    localRepo: path.resolve(root, '..', 'licheng-AGENTS.md')
   },
   {
     key: 'skills',
     name: 'Agent Skills',
-    repo: 'https://github.com/lennonli/licheng-skills.git'
+    repo: 'https://github.com/lennonli/licheng-skills.git',
+    localRepo: path.resolve(root, '..', 'licheng-skills')
   },
   {
     key: 'tutorials',
     name: 'AI 教程',
-    repo: 'https://github.com/lennonli/licheng-AI-tutorials.git'
+    repo: 'https://github.com/lennonli/licheng-AI-tutorials.git',
+    localRepo: path.resolve(root, '..', 'licheng-AI-tutorials')
   }
 ]
 
 const sourceWebUrls = {
   agents: 'https://github.com/lennonli/licheng-AGENTS.md',
   skills: 'https://github.com/lennonli/licheng-skills',
-  tutorials: 'https://github.com/lennonli/licheng-AI-tutorials'
+  tutorials: 'https://github.com/lennonli/licheng-AI-tutorials',
+  site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
 function sh(cmd, args, cwd = root) {
   execFileSync(cmd, args, { cwd, stdio: 'inherit' })
+}
+
+function syncSourceRepo(source) {
+  const dest = path.join(cacheDir, source.key)
+  if (source.localRepo && existsSync(path.join(source.localRepo, '.git'))) {
+    console.log(`Using local source repo for ${source.key}: ${source.localRepo}`)
+    sh('git', ['clone', '--depth=1', source.localRepo, dest])
+    return
+  }
+
+  sh('git', ['clone', '--depth=1', source.repo, dest])
 }
 
 function ensureDir(dir) {
@@ -487,7 +502,7 @@ rmSync(cacheDir, { recursive: true, force: true })
 ensureDir(cacheDir)
 
 for (const source of sources) {
-  sh('git', ['clone', '--depth=1', source.repo, path.join(cacheDir, source.key)])
+  syncSourceRepo(source)
 }
 
 for (const dir of ['agents', 'skills', 'tutorials', 'assets']) {
@@ -623,25 +638,45 @@ skillsIndex += indexCardList(skillItems)
 writeFileSync(path.join(skillsDest, 'index.md'), skillsIndex)
 
 const tutorialsSrc = path.join(cacheDir, 'tutorials')
+const localTutorialsSrc = path.join(root, 'content', 'tutorials')
 const tutorialsDest = path.join(siteDir, 'tutorials')
 const tutorialsPublicDest = path.join(siteDir, 'public', 'tutorials')
 ensureDir(tutorialsDest)
 let tutorialHtmlFiles = []
+const tutorialMarkdownSources = new Map()
 
 if (existsSync(path.join(tutorialsSrc, 'docs'))) {
   copyMarkdownFiles(path.join(tutorialsSrc, 'docs'), tutorialsDest)
   tutorialHtmlFiles = copyTutorialHtmlFiles(path.join(tutorialsSrc, 'docs'), tutorialsPublicDest)
   addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.tutorials, 'docs')
+  for (const name of readDirSafe(path.join(tutorialsSrc, 'docs')).sort()) {
+    if (!name.endsWith('.md')) continue
+    tutorialMarkdownSources.set(name, {
+      repoDir: tutorialsSrc,
+      relativePath: path.join('docs', name)
+    })
+  }
 }
 if (existsSync(path.join(tutorialsSrc, 'assets'))) {
   cpSync(path.join(tutorialsSrc, 'assets'), path.join(siteDir, 'assets'), { recursive: true })
+}
+if (existsSync(localTutorialsSrc)) {
+  copyMarkdownFiles(localTutorialsSrc, tutorialsDest)
+  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.site, 'content/tutorials')
+  for (const name of readDirSafe(localTutorialsSrc).sort()) {
+    if (!name.endsWith('.md')) continue
+    tutorialMarkdownSources.set(name, {
+      repoDir: root,
+      relativePath: path.join('content', 'tutorials', name)
+    })
+  }
 }
 
 let tutorialsIndex = `${backButton('/')}# AI 教程
 
 <p class="section-lead">这里整理 AI 智能体安装、法律工作流环境配置和日常使用技巧，方便按平台和工具场景快速查找。</p>
 
-<p class="source-link">来源仓库：<a href="https://github.com/lennonli/licheng-AI-tutorials" target="_blank" rel="noreferrer">lennonli/licheng-AI-tutorials</a></p>
+<p class="source-link">来源仓库：<a href="https://github.com/lennonli/licheng-AI-tutorials" target="_blank" rel="noreferrer">lennonli/licheng-AI-tutorials</a>；本站补充教程：<a href="https://github.com/lennonli/licheng-ai-site/tree/main/content/tutorials" target="_blank" rel="noreferrer">lennonli/licheng-ai-site</a></p>
 
 ## 教程列表
 
@@ -651,6 +686,10 @@ for (const name of readDirSafe(tutorialsDest).sort()) {
   if (!name.endsWith('.md') || name === 'index.md') continue
   const markdown = readFileSync(path.join(tutorialsDest, name), 'utf8')
   const key = `tutorials/${name}`
+  const source = tutorialMarkdownSources.get(name) || {
+    repoDir: tutorialsSrc,
+    relativePath: path.join('docs', name)
+  }
   tutorialItems.push({
     href: `/tutorials/${name.replace(/\.md$/, '')}`,
     title: displayTitle(key, name, markdown),
@@ -661,7 +700,7 @@ for (const name of readDirSafe(tutorialsDest).sort()) {
     title: displayTitle(key, name, markdown),
     summary: summarizeMarkdown(key, markdown),
     section: 'AI 教程',
-    updatedAt: gitLastUpdated(tutorialsSrc, path.join('docs', name))
+    updatedAt: gitLastUpdated(source.repoDir, source.relativePath)
   })
 }
 for (const { name, slug } of tutorialHtmlFiles) {
