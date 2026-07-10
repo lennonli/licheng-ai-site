@@ -328,6 +328,183 @@ body {
   pointer-events: none;
 }
 
+.vp-doc .article-share-panel {
+  width: 100%;
+  margin-top: 4px;
+  padding: 18px;
+  background: var(--lc-c-paper);
+  border: 1px solid var(--lc-c-line);
+  border-radius: 20px;
+  box-shadow: var(--lc-shadow-soft);
+}
+
+.vp-doc .article-share-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.vp-doc .article-share-title,
+.vp-doc .article-share-subtitle,
+.vp-doc .article-share-wechat p {
+  margin: 0;
+}
+
+.vp-doc .article-share-title {
+  color: var(--lc-c-ink);
+  font-size: 18px;
+  font-weight: 820;
+  line-height: 1.35;
+}
+
+.vp-doc .article-share-subtitle {
+  margin-top: 4px;
+  color: var(--lc-c-muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.vp-doc .article-share-close {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--lc-c-muted);
+  font: inherit;
+  font-size: 24px;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid var(--lc-c-line);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.vp-doc .article-share-close:hover,
+.vp-doc .article-share-close:focus-visible {
+  color: #14231b;
+  background: var(--lc-c-lime);
+}
+
+.vp-doc .article-share-content {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.85fr) minmax(280px, 1.4fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.vp-doc .article-share-wechat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  background: rgba(159, 232, 112, 0.12);
+  border: 1px solid rgba(14, 111, 63, 0.14);
+  border-radius: 16px;
+}
+
+.vp-doc .article-share-qr-frame {
+  display: flex;
+  width: 104px;
+  height: 104px;
+  flex: 0 0 104px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  overflow: hidden;
+  color: var(--lc-c-muted);
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--lc-c-line);
+  border-radius: 12px;
+}
+
+.vp-doc .article-share-qr-frame img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.vp-doc .article-share-qr-status {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.vp-doc .article-share-wechat strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--lc-c-ink);
+  font-size: 16px;
+}
+
+.vp-doc .article-share-wechat p {
+  color: var(--lc-c-muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.vp-doc .article-share-actions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.vp-doc .article-share-action {
+  display: flex;
+  min-width: 0;
+  min-height: 72px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 6px;
+  color: var(--lc-c-ink);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid var(--lc-c-line);
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.dark .vp-doc .article-share-action {
+  background: rgba(23, 32, 24, 0.68);
+}
+
+.vp-doc .article-share-action > span:first-child {
+  display: inline-flex;
+  min-width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  color: var(--vp-c-brand-1);
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.vp-doc .article-share-action:hover,
+.vp-doc .article-share-action:focus-visible {
+  color: #14231b;
+  background: var(--lc-c-lime);
+  border-color: rgba(20, 35, 27, 0.16);
+}
+
+.vp-doc .article-share-action:hover > span:first-child,
+.vp-doc .article-share-action:focus-visible > span:first-child {
+  color: #14231b;
+}
+
 .vp-doc .article-updated {
   margin: 2px 4px 0;
   color: var(--lc-c-muted);
@@ -1381,6 +1558,22 @@ body {
 
   .vp-doc .article-tools {
     border-radius: 20px;
+  }
+
+  .vp-doc .article-share-panel {
+    padding: 16px;
+  }
+
+  .vp-doc .article-share-content {
+    grid-template-columns: 1fr;
+  }
+
+  .vp-doc .article-share-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vp-doc .article-share-wechat {
+    align-items: flex-start;
   }
 
   .vp-doc .back-button,

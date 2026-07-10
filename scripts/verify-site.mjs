@@ -4,6 +4,7 @@ import path from 'node:path'
 const root = process.cwd()
 const dist = path.join(root, 'site', '.vitepress', 'dist')
 const failures = []
+const articleToolsSource = readFileSync(path.join(root, 'site', '.vitepress', 'theme', 'ArticleTools.vue'), 'utf8')
 
 function walk(dir) {
   return readdirSync(dir).flatMap((name) => {
@@ -89,6 +90,11 @@ const articleFiles = htmlFiles.filter((file) => /\/(agents|skills|tutorials)\/.+
 for (const file of articleFiles) {
   const html = readFileSync(file, 'utf8')
   if (!html.includes('article-updated')) fail(`${routeFor(file)}: update date missing`)
+  if (!html.includes('分享文章')) fail(`${routeFor(file)}: share button missing`)
+}
+
+for (const required of ['article-share-panel', '微信', 'twitter.com/intent/tweet', 'service.weibo.com', 'facebook.com/sharer', '复制链接']) {
+  if (!articleToolsSource.includes(required)) fail(`Article share implementation is missing ${required}`)
 }
 
 const htmlTutorialWrappers = articleFiles.filter((file) => readFileSync(file, 'utf8').includes('html-tutorial-frame'))
