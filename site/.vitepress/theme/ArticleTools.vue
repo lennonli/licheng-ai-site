@@ -22,10 +22,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps<{
+const props = defineProps<{
   githubUrl: string
   updatedAt?: string
   immersiveUrl?: string
+  copyUrl?: string
 }>()
 
 const copyLabel = ref('复制全文')
@@ -38,21 +39,20 @@ async function copyArticle() {
   const clone = article.cloneNode(true)
   if (!(clone instanceof HTMLElement)) return
 
-  clone.querySelectorAll('.back-button, .article-tools, .header-anchor, .html-tutorial-copy-source, button, iframe').forEach((node) => node.remove())
+  clone.querySelectorAll('.back-button, .article-tools, .header-anchor, button, iframe').forEach((node) => node.remove())
   clone.querySelectorAll('img').forEach((image) => {
     const replacement = document.createElement('span')
     replacement.textContent = image.getAttribute('alt') || ''
     image.replaceWith(replacement)
   })
-  const immersiveText = article.querySelector<HTMLElement>('.html-tutorial-copy-source')?.textContent?.trim() || ''
-  const text = [clone.innerText.trim(), immersiveText]
-    .filter(Boolean)
-    .join('\n\n')
-    .replace(/\n{3,}/g, '\n\n')
-    .replace(/[ \t]+\n/g, '\n')
-    .trim()
-
   try {
+    const immersiveText = props.copyUrl ? await fetchCopyText(props.copyUrl) : ''
+    const text = [clone.innerText.trim(), immersiveText]
+      .filter(Boolean)
+      .join('\n\n')
+      .replace(/\n{3,}/g, '\n\n')
+      .replace(/[ \t]+\n/g, '\n')
+      .trim()
     await writeClipboardText(text)
     copyLabel.value = '已复制'
   } catch {
@@ -63,6 +63,12 @@ async function copyArticle() {
   resetTimer = window.setTimeout(() => {
     copyLabel.value = '复制全文'
   }, 1600)
+}
+
+async function fetchCopyText(url: string) {
+  const response = await fetch(url, { credentials: 'same-origin' })
+  if (!response.ok) throw new Error(`Copy source responded with ${response.status}`)
+  return (await response.text()).trim()
 }
 
 async function writeClipboardText(text: string) {

@@ -148,10 +148,11 @@ function githubBlobUrl(repoWebUrl, relativePath) {
   return `${repoWebUrl}/blob/main/${encodeGitHubPath(relativePath)}`
 }
 
-function articleTools(githubUrl, updatedAt = '', immersiveUrl = '') {
+function articleTools(githubUrl, updatedAt = '', immersiveUrl = '', copyUrl = '') {
   const updated = updatedAt ? ` updated-at="${formatDate(updatedAt)}"` : ''
   const immersive = immersiveUrl ? ` immersive-url="${immersiveUrl}"` : ''
-  return `<ArticleTools github-url="${githubUrl}"${updated}${immersive} />\n\n`
+  const copy = copyUrl ? ` copy-url="${copyUrl}"` : ''
+  return `<ArticleTools github-url="${githubUrl}"${updated}${immersive}${copy} />\n\n`
 }
 
 function withBackButton(markdown, fallback) {
@@ -164,25 +165,25 @@ function withBackButton(markdown, fallback) {
   return `${markdown.slice(0, frontmatterEnd)}\n\n${backButton(fallback)}${markdown.slice(frontmatterEnd).trimStart()}`
 }
 
-function withArticleTools(markdown, githubUrl, updatedAt = '', immersiveUrl = '') {
+function withArticleTools(markdown, githubUrl, updatedAt = '', immersiveUrl = '', copyUrl = '') {
   if (markdown.includes('<ArticleTools ')) return markdown
 
   const backButtonMatch = markdown.match(/<BackButton [^\n]+\/>\n*/)
   if (backButtonMatch && backButtonMatch.index !== undefined) {
     const insertAt = backButtonMatch.index + backButtonMatch[0].length
-    return `${markdown.slice(0, insertAt)}\n${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown.slice(insertAt).trimStart()}`
+    return `${markdown.slice(0, insertAt)}\n${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown.slice(insertAt).trimStart()}`
   }
 
-  if (!markdown.startsWith('---\n')) return `${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown}`
+  if (!markdown.startsWith('---\n')) return `${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown}`
 
   const end = markdown.indexOf('\n---', 4)
-  if (end === -1) return `${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown}`
+  if (end === -1) return `${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown}`
   const frontmatterEnd = end + 4
-  return `${markdown.slice(0, frontmatterEnd)}\n\n${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown.slice(frontmatterEnd).trimStart()}`
+  return `${markdown.slice(0, frontmatterEnd)}\n\n${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown.slice(frontmatterEnd).trimStart()}`
 }
 
-function withArticleChrome(markdown, fallback, githubUrl, updatedAt = '', immersiveUrl = '') {
-  return withArticleTools(withBackButton(markdown, fallback), githubUrl, updatedAt, immersiveUrl)
+function withArticleChrome(markdown, fallback, githubUrl, updatedAt = '', immersiveUrl = '', copyUrl = '') {
+  return withArticleTools(withBackButton(markdown, fallback), githubUrl, updatedAt, immersiveUrl, copyUrl)
 }
 
 function addArticleChromeToMarkdownFiles(dir, fallback, repoWebUrl, repoDir, sourcePrefix = '') {
@@ -393,9 +394,8 @@ function htmlHeadingIndex(html) {
   return headings
 }
 
-function htmlTutorialWrapper({ title, summary, immersiveUrl, githubUrl, updatedAt, html }) {
+function htmlTutorialWrapper({ title, summary, immersiveUrl, copyUrl, githubUrl, updatedAt, html }) {
   const index = htmlHeadingIndex(html)
-  const copyText = htmlToCopyText(html)
   const indexMarkdown = index.length
     ? `## 内容索引\n\n${index.map((item) => `- ${item}`).join('\n')}\n\n`
     : ''
@@ -407,10 +407,8 @@ ${summary}
 
 <iframe class="html-tutorial-frame" src="${immersiveUrl}" title="${escapeHtml(title)}沉浸版" loading="lazy"></iframe>
 
-<textarea class="html-tutorial-copy-source" hidden readonly aria-hidden="true">${escapeHtml(copyText)}</textarea>
-
 ${indexMarkdown}`
-  return withArticleChrome(body, '/tutorials/', githubUrl, updatedAt, immersiveUrl)
+  return withArticleChrome(body, '/tutorials/', githubUrl, updatedAt, immersiveUrl, copyUrl)
 }
 
 function pngDimensions(file) {
@@ -646,6 +644,7 @@ for (const dir of ['agents', 'skills', 'tutorials', 'assets']) {
 }
 rmSync(path.join(siteDir, 'public', 'tutorials'), { recursive: true, force: true })
 rmSync(path.join(siteDir, 'public', 'tutorial-views'), { recursive: true, force: true })
+rmSync(path.join(siteDir, 'public', 'tutorial-copy'), { recursive: true, force: true })
 
 writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
   <div class="home-hero-copy">
@@ -779,7 +778,9 @@ const tutorialsSrc = path.join(cacheDir, 'tutorials')
 const localTutorialsSrc = path.join(root, 'content', 'tutorials')
 const tutorialsDest = path.join(siteDir, 'tutorials')
 const tutorialViewsDest = path.join(siteDir, 'public', 'tutorial-views')
+const tutorialCopyDest = path.join(siteDir, 'public', 'tutorial-copy')
 ensureDir(tutorialsDest)
+ensureDir(tutorialCopyDest)
 let tutorialHtmlFiles = []
 const tutorialMarkdownSources = new Map()
 
@@ -818,11 +819,13 @@ for (const { name, slug } of tutorialHtmlFiles) {
   const summary = summarizeHtml(key, html)
   const updatedAt = gitLastUpdated(tutorialsSrc, sourcePath)
   const immersiveUrl = `/tutorial-views/${slug}/`
+  const copyUrl = `/tutorial-copy/${slug}.txt`
   const githubUrl = githubBlobUrl(sourceWebUrls.tutorials, sourcePath)
   const wrapperName = `${slug}.md`
+  writeFileSync(path.join(tutorialCopyDest, `${slug}.txt`), `${htmlToCopyText(html)}\n`)
   writeFileSync(
     path.join(tutorialsDest, wrapperName),
-    htmlTutorialWrapper({ title, summary, immersiveUrl, githubUrl, updatedAt, html })
+    htmlTutorialWrapper({ title, summary, immersiveUrl, copyUrl, githubUrl, updatedAt, html })
   )
   tutorialMarkdownSources.set(wrapperName, { repoDir: tutorialsSrc, relativePath: sourcePath })
 }

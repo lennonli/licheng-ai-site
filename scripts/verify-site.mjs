@@ -93,8 +93,10 @@ for (const file of articleFiles) {
 
 const htmlTutorialWrappers = articleFiles.filter((file) => readFileSync(file, 'utf8').includes('html-tutorial-frame'))
 for (const file of htmlTutorialWrappers) {
-  const html = readFileSync(file, 'utf8')
-  if (!html.includes('html-tutorial-copy-source')) fail(`${routeFor(file)}: HTML tutorial copy source missing`)
+  const slug = path.basename(file, '.html')
+  const copyFile = path.join(dist, 'tutorial-copy', `${slug}.txt`)
+  if (!existsSync(copyFile)) fail(`${routeFor(file)}: HTML tutorial copy source missing`)
+  else if (readFileSync(copyFile, 'utf8').trim().length < 1000) fail(`${routeFor(file)}: HTML tutorial copy source is incomplete`)
 }
 
 for (const required of ['sitemap.xml', 'feed.xml', 'robots.txt', '_headers', 'source-manifest.json']) {
