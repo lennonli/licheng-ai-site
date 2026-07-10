@@ -39,7 +39,9 @@ jobs:
           agents_sha=$(git ls-remote https://github.com/lennonli/licheng-AGENTS.md.git refs/heads/main | cut -f1)
           skills_sha=$(git ls-remote https://github.com/lennonli/licheng-skills.git refs/heads/main | cut -f1)
           tutorials_sha=$(git ls-remote https://github.com/lennonli/licheng-AI-tutorials.git refs/heads/main | cut -f1)
-          test -n "$agents_sha" && test -n "$skills_sha" && test -n "$tutorials_sha"
+          test -n "$agents_sha"
+          test -n "$skills_sha"
+          test -n "$tutorials_sha"
           echo "SOURCE_AGENTS_SHA=$agents_sha" >> "$GITHUB_ENV"
           echo "SOURCE_SKILLS_SHA=$skills_sha" >> "$GITHUB_ENV"
           echo "SOURCE_TUTORIALS_SHA=$tutorials_sha" >> "$GITHUB_ENV"
