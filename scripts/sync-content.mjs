@@ -341,6 +341,26 @@ function stripHtmlTags(html) {
     .trim()
 }
 
+function htmlToCopyText(html) {
+  return html
+    .replace(/<(script|style|noscript|svg)\b[\s\S]*?<\/\1>/gi, '')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/(h[1-6]|p|li|tr|div|section|article|header|footer|figure|figcaption|blockquote)>/gi, '\n')
+    .replace(/<\/(th|td)>/gi, '\t')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&#x27;/g, "'")
+    .replace(/[ \t]+\n/g, '\n')
+    .replace(/\n[ \t]+/g, '\n')
+    .replace(/[ \t]{2,}/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim()
+}
+
 function htmlTitle(html) {
   const match = html.match(/<title>([\s\S]*?)<\/title>/i)
   if (!match) return ''
@@ -375,6 +395,7 @@ function htmlHeadingIndex(html) {
 
 function htmlTutorialWrapper({ title, summary, immersiveUrl, githubUrl, updatedAt, html }) {
   const index = htmlHeadingIndex(html)
+  const copyText = htmlToCopyText(html)
   const indexMarkdown = index.length
     ? `## 内容索引\n\n${index.map((item) => `- ${item}`).join('\n')}\n\n`
     : ''
@@ -385,6 +406,8 @@ ${summary}
 <p class="immersive-link"><a href="${immersiveUrl}" target="_blank" rel="noreferrer">在新窗口打开沉浸版</a></p>
 
 <iframe class="html-tutorial-frame" src="${immersiveUrl}" title="${escapeHtml(title)}沉浸版" loading="lazy"></iframe>
+
+<textarea class="html-tutorial-copy-source" hidden readonly aria-hidden="true">${escapeHtml(copyText)}</textarea>
 
 ${indexMarkdown}`
   return withArticleChrome(body, '/tutorials/', githubUrl, updatedAt, immersiveUrl)

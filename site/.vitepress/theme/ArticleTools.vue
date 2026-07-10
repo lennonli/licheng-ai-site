@@ -38,14 +38,13 @@ async function copyArticle() {
   const clone = article.cloneNode(true)
   if (!(clone instanceof HTMLElement)) return
 
-  clone.querySelectorAll('.back-button, .article-tools, .header-anchor, button, iframe').forEach((node) => node.remove())
+  clone.querySelectorAll('.back-button, .article-tools, .header-anchor, .html-tutorial-copy-source, button, iframe').forEach((node) => node.remove())
   clone.querySelectorAll('img').forEach((image) => {
     const replacement = document.createElement('span')
     replacement.textContent = image.getAttribute('alt') || ''
     image.replaceWith(replacement)
   })
-  const iframe = article.querySelector<HTMLIFrameElement>('.html-tutorial-frame')
-  const immersiveText = iframe?.contentDocument?.body?.innerText?.trim() || ''
+  const immersiveText = article.querySelector<HTMLElement>('.html-tutorial-copy-source')?.textContent?.trim() || ''
   const text = [clone.innerText.trim(), immersiveText]
     .filter(Boolean)
     .join('\n\n')

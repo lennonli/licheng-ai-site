@@ -91,6 +91,12 @@ for (const file of articleFiles) {
   if (!html.includes('article-updated')) fail(`${routeFor(file)}: update date missing`)
 }
 
+const htmlTutorialWrappers = articleFiles.filter((file) => readFileSync(file, 'utf8').includes('html-tutorial-frame'))
+for (const file of htmlTutorialWrappers) {
+  const html = readFileSync(file, 'utf8')
+  if (!html.includes('html-tutorial-copy-source')) fail(`${routeFor(file)}: HTML tutorial copy source missing`)
+}
+
 for (const required of ['sitemap.xml', 'feed.xml', 'robots.txt', '_headers', 'source-manifest.json']) {
   if (!existsSync(path.join(dist, required))) fail(`Missing ${required}`)
 }
