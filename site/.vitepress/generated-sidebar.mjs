@@ -776,6 +776,65 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "法律业务 Skill 制作教程：两种主要方案",
+      "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、什么是法律业务 Skill",
+          "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#一、什么是法律业务-skill"
+        },
+        {
+          "text": "二、方案一：完整运行一次业务流程，再由 AI 总结生成 Skill",
+          "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#二、方案一-完整运行一次业务流程-再由-ai-总结生成-skill",
+          "items": [
+            {
+              "text": "（一）适用情况",
+              "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#一-适用情况"
+            },
+            {
+              "text": "（二）操作步骤",
+              "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#二-操作步骤"
+            }
+          ]
+        },
+        {
+          "text": "三、方案二：使用 Record & Replay 录制工作流，再生成 Skill",
+          "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#三、方案二-使用-record-replay-录制工作流-再生成-skill",
+          "items": [
+            {
+              "text": "（一）适用情况",
+              "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#一-适用情况-1"
+            },
+            {
+              "text": "（二）操作步骤",
+              "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#二-操作步骤-1"
+            }
+          ]
+        },
+        {
+          "text": "四、两种制作方案对比",
+          "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#四、两种制作方案对比"
+        },
+        {
+          "text": "五、并非所有法律工作都适合制作 Skill",
+          "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#五、并非所有法律工作都适合制作-skill"
+        },
+        {
+          "text": "六、法律业务 Skill 的基本质量标准",
+          "link": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1#六、法律业务-skill-的基本质量标准"
+        }
+      ]
+    }
+  ],
   "/tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1": [
     {
       "text": "返回栏目列表",
