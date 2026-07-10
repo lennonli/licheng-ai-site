@@ -58,15 +58,15 @@ jobs:
           test -n "$CLOUDFLARE_API_TOKEN"
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        with:
-          apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy site/.vitepress/dist --project-name=licheng-ai-site --branch=main
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx wrangler pages deploy site/.vitepress/dist \
+            --project-name=licheng-ai-site \
+            --branch=main \
+            --commit-hash="$GITHUB_SHA" \
+            --commit-dirty=false
 
       - name: Verify public site
         run: |
