@@ -355,6 +355,7 @@ function htmlToCopyText(html) {
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
     .replace(/&#39;|&#x27;/g, "'")
+    .replace(/<\/?[a-z][^>]*>/gi, ' ')
     .replace(/[ \t]+\n/g, '\n')
     .replace(/\n[ \t]+/g, '\n')
     .replace(/[ \t]{2,}/g, ' ')

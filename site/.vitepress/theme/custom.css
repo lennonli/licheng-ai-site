@@ -261,6 +261,12 @@ body {
   background: rgba(23, 32, 24, 0.72);
 }
 
+.vp-doc .article-tool-button:disabled {
+  opacity: 0.55;
+  cursor: progress;
+  transform: none;
+}
+
 .vp-doc .back-button {
   margin: 0 0 22px;
 }
@@ -311,6 +317,15 @@ body {
   font-size: 13px;
   line-height: 1.62;
   overflow-wrap: anywhere;
+}
+
+.vp-doc .article-copy-buffer {
+  position: fixed;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .vp-doc .article-updated {
