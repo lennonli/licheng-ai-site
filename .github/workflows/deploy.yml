@@ -7,27 +7,26 @@ on:
   repository_dispatch:
     types: [source-updated]
   schedule:
-    - cron: '17 * * * *'
+    - cron: '17 2 * * *'
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: production
     permissions:
       contents: read
       deployments: write
-    env:
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ANALYTICS_API_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_API_TOKEN }}
-      ANALYTICS_ACCESS_KEY: ${{ secrets.ANALYTICS_ACCESS_KEY }}
-      CLOUDFLARE_ZONE_ID: 72900f423030570e3c629e54613716e6
-      ANALYTICS_HOST: ai.licheng.uk
     steps:
       - name: Checkout website repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
           node-version: 22
           cache: npm
@@ -35,30 +34,64 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Sync content
-        run: npm run sync
-
-      - name: Build site
-        run: npm run build
-
-      - name: Configure analytics runtime secrets
-        if: ${{ env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != '' && env.ANALYTICS_ACCESS_KEY != '' && env.CLOUDFLARE_ANALYTICS_API_TOKEN != '' }}
+      - name: Resolve source revisions
         run: |
-          printf '%s' "$ANALYTICS_ACCESS_KEY" | npx wrangler pages secret put ANALYTICS_ACCESS_KEY --project-name=licheng-ai-site
-          printf '%s' "$CLOUDFLARE_ANALYTICS_API_TOKEN" | npx wrangler pages secret put CLOUDFLARE_ANALYTICS_API_TOKEN --project-name=licheng-ai-site
-          printf '%s' "$CLOUDFLARE_ZONE_ID" | npx wrangler pages secret put CLOUDFLARE_ZONE_ID --project-name=licheng-ai-site
-          printf '%s' "$ANALYTICS_HOST" | npx wrangler pages secret put ANALYTICS_HOST --project-name=licheng-ai-site
+          agents_sha=$(git ls-remote https://github.com/lennonli/licheng-AGENTS.md.git refs/heads/main | cut -f1)
+          skills_sha=$(git ls-remote https://github.com/lennonli/licheng-skills.git refs/heads/main | cut -f1)
+          tutorials_sha=$(git ls-remote https://github.com/lennonli/licheng-AI-tutorials.git refs/heads/main | cut -f1)
+          test -n "$agents_sha" && test -n "$skills_sha" && test -n "$tutorials_sha"
+          echo "SOURCE_AGENTS_SHA=$agents_sha" >> "$GITHUB_ENV"
+          echo "SOURCE_SKILLS_SHA=$skills_sha" >> "$GITHUB_ENV"
+          echo "SOURCE_TUTORIALS_SHA=$tutorials_sha" >> "$GITHUB_ENV"
+
+      - name: Build and test site
+        run: npm test
+
+      - name: Validate deploy configuration
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          test -n "$CLOUDFLARE_ACCOUNT_ID"
+          test -n "$CLOUDFLARE_API_TOKEN"
 
       - name: Deploy to Cloudflare Pages
-        if: ${{ env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != '' }}
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         with:
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy site/.vitepress/dist --project-name=licheng-ai-site --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Skip deploy notice
-        if: ${{ env.CLOUDFLARE_ACCOUNT_ID == '' || env.CLOUDFLARE_API_TOKEN == '' }}
+      - name: Verify public site
         run: |
-          echo "Cloudflare deploy skipped because CLOUDFLARE_ACCOUNT_ID or CLOUDFLARE_API_TOKEN is missing."
+          for attempt in $(seq 1 12); do
+            home=$(curl --fail --silent --show-error https://ai.licheng.uk/ || true)
+            if printf '%s' "$home" | grep -q '李成律师法律AI工作站' \
+              && curl --fail --silent --show-error https://ai.licheng.uk/latest/ >/dev/null \
+              && curl --fail --silent --show-error https://ai.licheng.uk/sitemap.xml >/dev/null \
+              && curl --fail --silent --show-error https://ai.licheng.uk/feed.xml >/dev/null \
+              && curl --fail --silent --show-error https://ai.licheng.uk/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1 >/dev/null; then
+              exit 0
+            fi
+            sleep 10
+          done
+          echo 'Public site verification failed after deployment.' >&2
+          exit 1
+
+      - name: Retain only the three newest Pages deployments
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          for round in $(seq 1 10); do
+            npx wrangler pages deployment list --project-name=licheng-ai-site --json > deployments.json
+            node --input-type=module -e "import fs from 'node:fs'; const rows=JSON.parse(fs.readFileSync('deployments.json','utf8')); for (const row of rows.slice(3)) console.log(row.Id ?? row.id)" > old-deployments.txt
+            test -s old-deployments.txt || break
+            while IFS= read -r deployment_id; do
+              test -z "$deployment_id" || npx wrangler pages deployment delete "$deployment_id" --project-name=licheng-ai-site --force
+            done < old-deployments.txt
+          done

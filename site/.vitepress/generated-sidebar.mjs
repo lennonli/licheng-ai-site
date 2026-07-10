@@ -48,7 +48,7 @@ export const generatedSidebar = {
         },
         {
           "text": "一、合同审查工作流",
-          "link": "/agents/合同审查和起草#一-合同审查工作流",
+          "link": "/agents/合同审查和起草#一、合同审查工作流",
           "items": [
             {
               "text": "（一）先概述协议主要内容",
@@ -64,7 +64,7 @@ export const generatedSidebar = {
             },
             {
               "text": "（四）同步进行文字、逻辑、格式及序号校对",
-              "link": "/agents/合同审查和起草#四-同步进行文字-逻辑-格式及序号校对"
+              "link": "/agents/合同审查和起草#四-同步进行文字、逻辑、格式及序号校对"
             },
             {
               "text": "（五）最后提供给客户的简短汇报",
@@ -78,7 +78,7 @@ export const generatedSidebar = {
         },
         {
           "text": "二、法律文件起草要求",
-          "link": "/agents/合同审查和起草#二-法律文件起草要求"
+          "link": "/agents/合同审查和起草#二、法律文件起草要求"
         }
       ]
     }
@@ -97,35 +97,35 @@ export const generatedSidebar = {
       "items": [
         {
           "text": "一、适用场景",
-          "link": "/agents/法律PPT设计#一-适用场景"
+          "link": "/agents/法律PPT设计#一、适用场景"
         },
         {
           "text": "二、整体视觉风格",
-          "link": "/agents/法律PPT设计#二-整体视觉风格"
+          "link": "/agents/法律PPT设计#二、整体视觉风格"
         },
         {
           "text": "三、页面结构与版式",
-          "link": "/agents/法律PPT设计#三-页面结构与版式"
+          "link": "/agents/法律PPT设计#三、页面结构与版式"
         },
         {
           "text": "四、字体与文字排版",
-          "link": "/agents/法律PPT设计#四-字体与文字排版"
+          "link": "/agents/法律PPT设计#四、字体与文字排版"
         },
         {
           "text": "五、信息呈现方式",
-          "link": "/agents/法律PPT设计#五-信息呈现方式"
+          "link": "/agents/法律PPT设计#五、信息呈现方式"
         },
         {
           "text": "六、视觉元素使用",
-          "link": "/agents/法律PPT设计#六-视觉元素使用"
+          "link": "/agents/法律PPT设计#六、视觉元素使用"
         },
         {
           "text": "七、修改已有 PPT 的要求",
-          "link": "/agents/法律PPT设计#七-修改已有-ppt-的要求"
+          "link": "/agents/法律PPT设计#七、修改已有-ppt-的要求"
         },
         {
           "text": "八、新建 PPT 的执行流程",
-          "link": "/agents/法律PPT设计#八-新建-ppt-的执行流程"
+          "link": "/agents/法律PPT设计#八、新建-ppt-的执行流程"
         }
       ]
     }
@@ -144,35 +144,35 @@ export const generatedSidebar = {
       "items": [
         {
           "text": "一、角色定位与默认立场",
-          "link": "/agents/法律业务通用指令#一-角色定位与默认立场"
+          "link": "/agents/法律业务通用指令#一、角色定位与默认立场"
         },
         {
           "text": "二、保密与信息安全",
-          "link": "/agents/法律业务通用指令#二-保密与信息安全"
+          "link": "/agents/法律业务通用指令#二、保密与信息安全"
         },
         {
           "text": "三、语言、法域与法律依据核验",
-          "link": "/agents/法律业务通用指令#三-语言-法域与法律依据核验"
+          "link": "/agents/法律业务通用指令#三、语言、法域与法律依据核验"
         },
         {
           "text": "四、反编造红线",
-          "link": "/agents/法律业务通用指令#四-反编造红线"
+          "link": "/agents/法律业务通用指令#四、反编造红线"
         },
         {
           "text": "五、执行流程",
-          "link": "/agents/法律业务通用指令#五-执行流程"
+          "link": "/agents/法律业务通用指令#五、执行流程"
         },
         {
           "text": "六、文档修订模式",
-          "link": "/agents/法律业务通用指令#六-文档修订模式"
+          "link": "/agents/法律业务通用指令#六、文档修订模式"
         },
         {
           "text": "七、起草默认值",
-          "link": "/agents/法律业务通用指令#七-起草默认值"
+          "link": "/agents/法律业务通用指令#七、起草默认值"
         },
         {
           "text": "八、Word 文档格式要求",
-          "link": "/agents/法律业务通用指令#八-word-文档格式要求",
+          "link": "/agents/法律业务通用指令#八、word-文档格式要求",
           "items": [
             {
               "text": "（一）正文与标题",
@@ -190,23 +190,23 @@ export const generatedSidebar = {
         },
         {
           "text": "九、律所名称与署名",
-          "link": "/agents/法律业务通用指令#九-律所名称与署名"
+          "link": "/agents/法律业务通用指令#九、律所名称与署名"
         },
         {
           "text": "十、法律分析与引证",
-          "link": "/agents/法律业务通用指令#十-法律分析与引证"
+          "link": "/agents/法律业务通用指令#十、法律分析与引证"
         },
         {
           "text": "十一、跨境与外国法事项",
-          "link": "/agents/法律业务通用指令#十一-跨境与外国法事项"
+          "link": "/agents/法律业务通用指令#十一、跨境与外国法事项"
         },
         {
           "text": "十二、专业语气要求",
-          "link": "/agents/法律业务通用指令#十二-专业语气要求"
+          "link": "/agents/法律业务通用指令#十二、专业语气要求"
         },
         {
           "text": "十三、交付方式",
-          "link": "/agents/法律业务通用指令#十三-交付方式"
+          "link": "/agents/法律业务通用指令#十三、交付方式"
         }
       ]
     }
@@ -225,11 +225,11 @@ export const generatedSidebar = {
       "items": [
         {
           "text": "一、使用方式",
-          "link": "/agents/法律尽调报告提示词#一-使用方式"
+          "link": "/agents/法律尽调报告提示词#一、使用方式"
         },
         {
           "text": "二、股权历史沿革部分",
-          "link": "/agents/法律尽调报告提示词#二-股权历史沿革部分",
+          "link": "/agents/法律尽调报告提示词#二、股权历史沿革部分",
           "items": [
             {
               "text": "（一）任务目标",
@@ -263,7 +263,7 @@ export const generatedSidebar = {
         },
         {
           "text": "三、后续章节扩展格式",
-          "link": "/agents/法律尽调报告提示词#三-后续章节扩展格式"
+          "link": "/agents/法律尽调报告提示词#三、后续章节扩展格式"
         }
       ]
     }
@@ -282,43 +282,62 @@ export const generatedSidebar = {
       "items": [
         {
           "text": "一、项目输入",
-          "link": "/agents/股改文件起草#一-项目输入"
+          "link": "/agents/股改文件起草#一、项目输入"
         },
         {
           "text": "二、工作要求",
-          "link": "/agents/股改文件起草#二-工作要求"
+          "link": "/agents/股改文件起草#二、工作要求"
         },
         {
           "text": "三、股改文件范围",
-          "link": "/agents/股改文件起草#三-股改文件范围"
+          "link": "/agents/股改文件起草#三、股改文件范围"
         },
         {
           "text": "四、特殊治理结构适配",
-          "link": "/agents/股改文件起草#四-特殊治理结构适配"
+          "link": "/agents/股改文件起草#四、特殊治理结构适配"
         },
         {
           "text": "五、重点一致性检查",
-          "link": "/agents/股改文件起草#五-重点一致性检查"
+          "link": "/agents/股改文件起草#五、重点一致性检查"
         },
         {
           "text": "六、模板残留清理",
-          "link": "/agents/股改文件起草#六-模板残留清理"
+          "link": "/agents/股改文件起草#六、模板残留清理"
         },
         {
           "text": "七、格式要求",
-          "link": "/agents/股改文件起草#七-格式要求"
+          "link": "/agents/股改文件起草#七、格式要求"
         },
         {
           "text": "八、校验要求",
-          "link": "/agents/股改文件起草#八-校验要求"
+          "link": "/agents/股改文件起草#八、校验要求"
         },
         {
           "text": "九、缺失信息处理",
-          "link": "/agents/股改文件起草#九-缺失信息处理"
+          "link": "/agents/股改文件起草#九、缺失信息处理"
         },
         {
           "text": "十、最终交付",
-          "link": "/agents/股改文件起草#十-最终交付"
+          "link": "/agents/股改文件起草#十、最终交付"
+        }
+      ]
+    }
+  ],
+  "/agents/非诉业务常用提示词": [
+    {
+      "text": "返回栏目列表",
+      "link": "/agents/"
+    },
+    {
+      "text": "非诉业务常用提示词",
+      "link": "/agents/非诉业务常用提示词"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、尽调底稿文件夹制作提示词",
+          "link": "/agents/非诉业务常用提示词#一、尽调底稿文件夹制作提示词"
         }
       ]
     }
@@ -446,6 +465,25 @@ export const generatedSidebar = {
     {
       "text": "法律业务 Skill 技能",
       "link": "/skills/"
+    }
+  ],
+  "/tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "智能体指令体系、工具选择培训讲义（HTML 翻页版）",
+      "link": "/tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "内容索引",
+          "link": "/tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1#内容索引"
+        }
+      ]
     }
   ],
   "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1": [
@@ -641,15 +679,15 @@ export const generatedSidebar = {
       "items": [
         {
           "text": "一、不同智能体的具体使用建议",
-          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#一-不同智能体的具体使用建议"
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#一、不同智能体的具体使用建议"
         },
         {
           "text": "二、按照法律业务分类的智能体选择表",
-          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#二-按照法律业务分类的智能体选择表"
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#二、按照法律业务分类的智能体选择表"
         },
         {
           "text": "三、不要按产品选AI，要按任务选AI",
-          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-不要按产品选ai-要按任务选ai",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三、不要按产品选ai-要按任务选ai",
           "items": [
             {
               "text": "（一）简明分工",
@@ -667,7 +705,7 @@ export const generatedSidebar = {
         },
         {
           "text": "四、诉讼业务实操：不同环节用不同智能体",
-          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#四-诉讼业务实操-不同环节用不同智能体",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#四、诉讼业务实操-不同环节用不同智能体",
           "items": [
             {
               "text": "（一）案情初步梳理",
@@ -679,7 +717,7 @@ export const generatedSidebar = {
             },
             {
               "text": "（三）起诉状、答辩状、仲裁申请书",
-              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-起诉状-答辩状-仲裁申请书"
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#三-起诉状、答辩状、仲裁申请书"
             },
             {
               "text": "（四）质证意见",
@@ -693,7 +731,7 @@ export const generatedSidebar = {
         },
         {
           "text": "五、非诉业务实操：AI适合做底稿、清单、初稿和风险归纳",
-          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#五-非诉业务实操-ai适合做底稿-清单-初稿和风险归纳",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#五、非诉业务实操-ai适合做底稿、清单、初稿和风险归纳",
           "items": [
             {
               "text": "（一）文档写作与报告起草",
@@ -713,13 +751,13 @@ export const generatedSidebar = {
             },
             {
               "text": "（五）投融资、并购、股改、基金专项",
-              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#五-投融资-并购-股改-基金专项"
+              "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#五-投融资、并购、股改、基金专项"
             }
           ]
         },
         {
           "text": "六、行政类法律相关业务实操：优先交给办公智能体和编码智能体",
-          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#六-行政类法律相关业务实操-优先交给办公智能体和编码智能体",
+          "link": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1#六、行政类法律相关业务实操-优先交给办公智能体和编码智能体",
           "items": [
             {
               "text": "（一）发票整理",
@@ -772,7 +810,7 @@ export const generatedSidebar = {
         },
         {
           "text": "6. 安装 PDF、图片与 OCR 工具",
-          "link": "/tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1#_6-安装-pdf-图片与-ocr-工具"
+          "link": "/tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1#_6-安装-pdf、图片与-ocr-工具"
         },
         {
           "text": "7. 建立 Python 法律工作虚拟环境",
@@ -855,15 +893,15 @@ export const generatedSidebar = {
       "items": [
         {
           "text": "一、适用场景",
-          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#一-适用场景"
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#一、适用场景"
         },
         {
           "text": "二、问题原因",
-          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#二-问题原因"
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#二、问题原因"
         },
         {
           "text": "三、操作步骤",
-          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#三-操作步骤",
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#三、操作步骤",
           "items": [
             {
               "text": "步骤 1：完全退出 Codex",
@@ -889,19 +927,19 @@ export const generatedSidebar = {
         },
         {
           "text": "四、验证是否生效",
-          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#四-验证是否生效"
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#四、验证是否生效"
         },
         {
           "text": "五、常见问题排查",
-          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#五-常见问题排查"
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#五、常见问题排查"
         },
         {
           "text": "六、一键脚本（可选）",
-          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#六-一键脚本-可选"
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#六、一键脚本-可选"
         },
         {
           "text": "七、注意事项",
-          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#七-注意事项"
+          "link": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1#七、注意事项"
         }
       ]
     }
@@ -912,35 +950,39 @@ export const generatedSidebar = {
       "link": "/tutorials/"
     },
     {
-      "text": "新建VPS后opencode 安装与远程 Web UI 配置教程",
+      "text": "新建 VPS 后 OpenCode 安装与远程 Web UI 配置教程",
       "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1"
     },
     {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、安装 opencode",
-          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#一-安装-opencode"
+          "text": "一、通过服务商控制台进入 VPS",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#一、通过服务商控制台进入-vps"
         },
         {
-          "text": "二、处理 xdg-open 报错",
-          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#二-处理-xdg-open-报错"
+          "text": "二、准备 SSH Key",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#二、准备-ssh-key"
         },
         {
-          "text": "三、启动 Web UI",
-          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#三-启动-web-ui"
+          "text": "三、判断 SSH 报错阶段",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#三、判断-ssh-报错阶段"
         },
         {
-          "text": "四、开放端口",
-          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#四-开放端口"
+          "text": "四、在 VPS 内修复 SSH 服务",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#四、在-vps-内修复-ssh-服务"
         },
         {
-          "text": "五、常用管理命令",
-          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#五-常用管理命令"
+          "text": "五、安装 OpenCode",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#五、安装-opencode"
         },
         {
-          "text": "六、安全建议",
-          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#六-安全建议"
+          "text": "六、前台启动 OpenCode Web UI",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#六、前台启动-opencode-web-ui"
+        },
+        {
+          "text": "七、安全与常驻运行建议",
+          "link": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1#七、安全与常驻运行建议"
         }
       ]
     }
@@ -1159,7 +1201,7 @@ export const generatedSidebar = {
             },
             {
               "text": "11.6 政务、网银、律所 OA 异常",
-              "link": "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1#_11-6-政务-网银-律所-oa-异常"
+              "link": "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1#_11-6-政务、网银、律所-oa-异常"
             }
           ]
         },
@@ -1214,6 +1256,25 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "梯子使用全教程 HTML 自包含版",
+      "link": "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "内容索引",
+          "link": "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2#内容索引"
+        }
+      ]
+    }
+  ],
   "/tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1": [
     {
       "text": "返回栏目列表",
@@ -1248,7 +1309,7 @@ export const generatedSidebar = {
         },
         {
           "text": "6. 安装 PDF、图片与 OCR 工具",
-          "link": "/tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1#_6-安装-pdf-图片与-ocr-工具",
+          "link": "/tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1#_6-安装-pdf、图片与-ocr-工具",
           "items": [
             {
               "text": "6.1 原生 Windows 工具",

@@ -10,10 +10,13 @@ import {
   writeFileSync
 } from 'node:fs'
 import path from 'node:path'
+import { createMarkdownRenderer } from 'vitepress'
 
 const root = process.cwd()
 const cacheDir = path.join(root, '.cache', 'source-repos')
 const siteDir = path.join(root, 'site')
+const markdownRenderer = await createMarkdownRenderer(siteDir)
+const sourceRevisions = new Map()
 
 const sources = [
   {
@@ -51,11 +54,16 @@ function syncSourceRepo(source) {
   const dest = path.join(cacheDir, source.key)
   if (source.localRepo && existsSync(path.join(source.localRepo, '.git'))) {
     console.log(`Using local source repo for ${source.key}: ${source.localRepo}`)
-    sh('git', ['clone', '--depth=1', source.localRepo, dest])
-    return
+    sh('git', ['clone', source.localRepo, dest])
+  } else {
+    sh('git', ['clone', source.repo, dest])
   }
 
-  sh('git', ['clone', '--depth=1', source.repo, dest])
+  const requestedRevision = process.env[`SOURCE_${source.key.toUpperCase()}_SHA`]
+  if (requestedRevision) sh('git', ['checkout', '--detach', requestedRevision], dest)
+  const revision = gitText(['rev-parse', 'HEAD'], dest)
+  sourceRevisions.set(source.key, revision)
+  return revision
 }
 
 function ensureDir(dir) {
@@ -87,10 +95,41 @@ function copyTutorialHtmlFiles(src, dest) {
     const slug = name.replace(/\.html$/, '')
     const pageDir = path.join(dest, slug)
     ensureDir(pageDir)
-    cpSync(from, path.join(pageDir, 'index.html'))
+    const html = enrichHtmlImages(readFileSync(from, 'utf8'))
+    const robots = '<meta name="robots" content="noindex,nofollow,noarchive">'
+    const prepared = html.includes('name="robots"')
+      ? html
+      : html.replace(/<head(\s[^>]*)?>/i, (match) => `${match}\n  ${robots}`)
+    writeFileSync(path.join(pageDir, 'index.html'), prepared)
     copied.push({ name, slug })
   }
   return copied
+}
+
+function pngDimensionsFromBuffer(data) {
+  if (data.length < 24 || data.toString('ascii', 1, 4) !== 'PNG') return null
+  return { width: data.readUInt32BE(16), height: data.readUInt32BE(20) }
+}
+
+function enrichHtmlImages(html) {
+  return html.replace(/<img\b([^>]*?)>/gi, (match, attributes) => {
+    const source = attributes.match(/\bsrc=(['"])(.*?)\1/i)?.[2] || ''
+    let dimensions = null
+    const dataMatch = source.match(/^data:image\/png;base64,(.+)$/i)
+    if (dataMatch) {
+      try {
+        dimensions = pngDimensionsFromBuffer(Buffer.from(dataMatch[1], 'base64'))
+      } catch {
+        dimensions = null
+      }
+    }
+
+    const loading = /\bloading=/i.test(attributes) ? '' : ' loading="lazy"'
+    const decoding = /\bdecoding=/i.test(attributes) ? '' : ' decoding="async"'
+    const width = dimensions && !/\bwidth=/i.test(attributes) ? ` width="${dimensions.width}"` : ''
+    const height = dimensions && !/\bheight=/i.test(attributes) ? ` height="${dimensions.height}"` : ''
+    return `<img${attributes}${loading}${decoding}${width}${height}>`
+  })
 }
 
 function backButton(fallback) {
@@ -109,8 +148,10 @@ function githubBlobUrl(repoWebUrl, relativePath) {
   return `${repoWebUrl}/blob/main/${encodeGitHubPath(relativePath)}`
 }
 
-function articleTools(githubUrl) {
-  return `<ArticleTools github-url="${githubUrl}" />\n\n`
+function articleTools(githubUrl, updatedAt = '', immersiveUrl = '') {
+  const updated = updatedAt ? ` updated-at="${formatDate(updatedAt)}"` : ''
+  const immersive = immersiveUrl ? ` immersive-url="${immersiveUrl}"` : ''
+  return `<ArticleTools github-url="${githubUrl}"${updated}${immersive} />\n\n`
 }
 
 function withBackButton(markdown, fallback) {
@@ -123,33 +164,34 @@ function withBackButton(markdown, fallback) {
   return `${markdown.slice(0, frontmatterEnd)}\n\n${backButton(fallback)}${markdown.slice(frontmatterEnd).trimStart()}`
 }
 
-function withArticleTools(markdown, githubUrl) {
+function withArticleTools(markdown, githubUrl, updatedAt = '', immersiveUrl = '') {
   if (markdown.includes('<ArticleTools ')) return markdown
 
   const backButtonMatch = markdown.match(/<BackButton [^\n]+\/>\n*/)
   if (backButtonMatch && backButtonMatch.index !== undefined) {
     const insertAt = backButtonMatch.index + backButtonMatch[0].length
-    return `${markdown.slice(0, insertAt)}\n${articleTools(githubUrl)}${markdown.slice(insertAt).trimStart()}`
+    return `${markdown.slice(0, insertAt)}\n${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown.slice(insertAt).trimStart()}`
   }
 
-  if (!markdown.startsWith('---\n')) return `${articleTools(githubUrl)}${markdown}`
+  if (!markdown.startsWith('---\n')) return `${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown}`
 
   const end = markdown.indexOf('\n---', 4)
-  if (end === -1) return `${articleTools(githubUrl)}${markdown}`
+  if (end === -1) return `${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown}`
   const frontmatterEnd = end + 4
-  return `${markdown.slice(0, frontmatterEnd)}\n\n${articleTools(githubUrl)}${markdown.slice(frontmatterEnd).trimStart()}`
+  return `${markdown.slice(0, frontmatterEnd)}\n\n${articleTools(githubUrl, updatedAt, immersiveUrl)}${markdown.slice(frontmatterEnd).trimStart()}`
 }
 
-function withArticleChrome(markdown, fallback, githubUrl) {
-  return withArticleTools(withBackButton(markdown, fallback), githubUrl)
+function withArticleChrome(markdown, fallback, githubUrl, updatedAt = '', immersiveUrl = '') {
+  return withArticleTools(withBackButton(markdown, fallback), githubUrl, updatedAt, immersiveUrl)
 }
 
-function addArticleChromeToMarkdownFiles(dir, fallback, repoWebUrl, sourcePrefix = '') {
+function addArticleChromeToMarkdownFiles(dir, fallback, repoWebUrl, repoDir, sourcePrefix = '') {
   for (const name of readDirSafe(dir).sort()) {
     if (!name.endsWith('.md') || name === 'index.md') continue
     const file = path.join(dir, name)
     const sourcePath = sourcePrefix ? `${sourcePrefix}/${name}` : name
-    writeFileSync(file, withArticleChrome(readFileSync(file, 'utf8'), fallback, githubBlobUrl(repoWebUrl, sourcePath)))
+    const updatedAt = gitLastUpdated(repoDir, sourcePath)
+    writeFileSync(file, withArticleChrome(readFileSync(file, 'utf8'), fallback, githubBlobUrl(repoWebUrl, sourcePath), updatedAt))
   }
 }
 
@@ -320,6 +362,58 @@ function summarizeHtml(key, html) {
   return bodyText.length > 120 ? `${bodyText.slice(0, 118)}……` : bodyText || '以 HTML 页面形式呈现该主题内容，适合直接打开阅读或演示。'
 }
 
+function htmlHeadingIndex(html) {
+  const headings = []
+  const pattern = /<h([1-3])\b[^>]*>([\s\S]*?)<\/h\1>/gi
+  for (const match of html.matchAll(pattern)) {
+    const text = cleanSummaryText(stripHtmlTags(match[2]))
+    if (text && !headings.includes(text)) headings.push(text)
+    if (headings.length >= 80) break
+  }
+  return headings
+}
+
+function htmlTutorialWrapper({ title, summary, immersiveUrl, githubUrl, updatedAt, html }) {
+  const index = htmlHeadingIndex(html)
+  const indexMarkdown = index.length
+    ? `## 内容索引\n\n${index.map((item) => `- ${item}`).join('\n')}\n\n`
+    : ''
+  const body = `# ${title}
+
+${summary}
+
+<p class="immersive-link"><a href="${immersiveUrl}" target="_blank" rel="noreferrer">在新窗口打开沉浸版</a></p>
+
+<iframe class="html-tutorial-frame" src="${immersiveUrl}" title="${escapeHtml(title)}沉浸版" loading="lazy"></iframe>
+
+${indexMarkdown}`
+  return withArticleChrome(body, '/tutorials/', githubUrl, updatedAt, immersiveUrl)
+}
+
+function pngDimensions(file) {
+  try {
+    return pngDimensionsFromBuffer(readFileSync(file))
+  } catch {
+    return null
+  }
+}
+
+function enrichMarkdownImages(dir) {
+  for (const name of readDirSafe(dir)) {
+    if (!name.endsWith('.md')) continue
+    const file = path.join(dir, name)
+    const markdown = readFileSync(file, 'utf8')
+    const enriched = markdown.replace(/!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g, (match, alt, source) => {
+      if (/^(?:https?:|data:)/i.test(source)) return match
+      const imageFile = path.resolve(dir, decodeURIComponent(source))
+      const dimensions = pngDimensions(imageFile)
+      const size = dimensions ? ` width="${dimensions.width}" height="${dimensions.height}"` : ''
+      return `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async"${size}>`
+    })
+    if (enriched !== markdown) writeFileSync(file, enriched)
+  }
+}
+
 function headingText(markdownHeading) {
   return cleanSummaryText(
     markdownHeading
@@ -329,41 +423,31 @@ function headingText(markdownHeading) {
   )
 }
 
-function slugifyHeading(text) {
-  let slug = text
-    .trim()
-    .toLowerCase()
-    .replace(/&[a-z]+;/g, '')
-    .replace(/[^\p{Letter}\p{Number}_-]+/gu, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '')
-
-  if (/^\d/.test(slug)) slug = `_${slug}`
-  return slug || 'section'
-}
-
-function uniqueSlug(base, seen) {
-  const count = seen.get(base) || 0
-  seen.set(base, count + 1)
-  return count === 0 ? base : `${base}-${count}`
+function decodeHtmlText(value) {
+  return value
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&#x27;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&ZeroWidthSpace;|&#8203;/g, '')
 }
 
 function pageHeadings(markdown, pageLink) {
-  const seen = new Map()
   const items = []
   let currentSecondLevel = null
+  const rendered = markdownRenderer.render(stripYamlFrontmatter(markdown))
+  const headingPattern = /<h([23])\s+id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g
 
-  for (const rawLine of stripYamlFrontmatter(markdown).split('\n')) {
-    const match = rawLine.match(/^(#{2,3})\s+(.+)$/)
-    if (!match) continue
-
-    const level = match[1].length
-    const originalText = headingText(match[2])
+  for (const match of rendered.matchAll(headingPattern)) {
+    const level = Number(match[1])
+    const id = decodeHtmlText(match[2])
+    const originalText = cleanSummaryText(decodeHtmlText(match[3].replace(/<[^>]+>/g, ' ')))
     if (!originalText) continue
 
     const item = {
       text: headingTitleOverrides.get(originalText) || originalText,
-      link: `${pageLink}#${uniqueSlug(slugifyHeading(originalText), seen)}`
+      link: `${pageLink}#${id}`
     }
 
     if (level === 2) {
@@ -423,6 +507,35 @@ function formatDate(isoDate) {
     month: '2-digit',
     day: '2-digit'
   }).format(new Date(isoDate))
+}
+
+function escapeXml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+}
+
+function rssFeed(items) {
+  const entries = items.slice(0, 50).map((item) => `  <item>
+    <title>${escapeXml(item.title)}</title>
+    <link>https://ai.licheng.uk${escapeXml(item.href)}</link>
+    <guid>https://ai.licheng.uk${escapeXml(item.href)}</guid>
+    <description>${escapeXml(item.summary)}</description>
+    <pubDate>${new Date(item.updatedAt).toUTCString()}</pubDate>
+  </item>`).join('\n')
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>李成律师法律AI工作站</title>
+  <link>https://ai.licheng.uk/</link>
+  <description>智能体指令、法律业务技能与 AI 工具教程</description>
+${entries}
+</channel>
+</rss>
+`
 }
 
 function latestArticleList(items) {
@@ -509,6 +622,7 @@ for (const dir of ['agents', 'skills', 'tutorials', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'public', 'tutorials'), { recursive: true, force: true })
+rmSync(path.join(siteDir, 'public', 'tutorial-views'), { recursive: true, force: true })
 
 writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
   <div class="home-hero-copy">
@@ -563,7 +677,7 @@ const agentsSrc = path.join(cacheDir, 'agents')
 const agentsDest = path.join(siteDir, 'agents')
 ensureDir(agentsDest)
 copyMarkdownFiles(agentsSrc, agentsDest)
-addArticleChromeToMarkdownFiles(agentsDest, '/agents/', sourceWebUrls.agents)
+addArticleChromeToMarkdownFiles(agentsDest, '/agents/', sourceWebUrls.agents, agentsSrc)
 
 let agentsIndex = `${backButton('/')}# 智能体通用指令和项目指令
 
@@ -614,7 +728,8 @@ const skillItems = []
 for (const dir of skillDirs) {
   const skillMd = stripYamlFrontmatter(readFileSync(path.join(skillsSrc, dir, 'SKILL.md'), 'utf8'))
   const skillKey = `skills/${dir}`
-  const page = `${backButton('/skills/')}${articleTools(githubBlobUrl(sourceWebUrls.skills, `${dir}/SKILL.md`))}# ${displayTitle(skillKey, dir, skillMd)}
+  const skillUpdatedAt = gitLastUpdated(skillsSrc, path.join(dir, 'SKILL.md'))
+  const page = `${backButton('/skills/')}${articleTools(githubBlobUrl(sourceWebUrls.skills, `${dir}/SKILL.md`), skillUpdatedAt)}# ${displayTitle(skillKey, dir, skillMd)}
 
 来源目录：\`${dir}/SKILL.md\`
 
@@ -631,7 +746,7 @@ ${removeLeadingH1(skillMd)}
     title: displayTitle(skillKey, dir, skillMd),
     summary: summarizeMarkdown(skillKey, skillMd),
     section: '法律业务 Skill',
-    updatedAt: gitLastUpdated(skillsSrc, path.join(dir, 'SKILL.md'))
+    updatedAt: skillUpdatedAt
   })
 }
 skillsIndex += indexCardList(skillItems)
@@ -640,15 +755,15 @@ writeFileSync(path.join(skillsDest, 'index.md'), skillsIndex)
 const tutorialsSrc = path.join(cacheDir, 'tutorials')
 const localTutorialsSrc = path.join(root, 'content', 'tutorials')
 const tutorialsDest = path.join(siteDir, 'tutorials')
-const tutorialsPublicDest = path.join(siteDir, 'public', 'tutorials')
+const tutorialViewsDest = path.join(siteDir, 'public', 'tutorial-views')
 ensureDir(tutorialsDest)
 let tutorialHtmlFiles = []
 const tutorialMarkdownSources = new Map()
 
 if (existsSync(path.join(tutorialsSrc, 'docs'))) {
   copyMarkdownFiles(path.join(tutorialsSrc, 'docs'), tutorialsDest)
-  tutorialHtmlFiles = copyTutorialHtmlFiles(path.join(tutorialsSrc, 'docs'), tutorialsPublicDest)
-  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.tutorials, 'docs')
+  tutorialHtmlFiles = copyTutorialHtmlFiles(path.join(tutorialsSrc, 'docs'), tutorialViewsDest)
+  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.tutorials, tutorialsSrc, 'docs')
   for (const name of readDirSafe(path.join(tutorialsSrc, 'docs')).sort()) {
     if (!name.endsWith('.md')) continue
     tutorialMarkdownSources.set(name, {
@@ -662,7 +777,7 @@ if (existsSync(path.join(tutorialsSrc, 'assets'))) {
 }
 if (existsSync(localTutorialsSrc)) {
   copyMarkdownFiles(localTutorialsSrc, tutorialsDest)
-  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.site, 'content/tutorials')
+  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.site, root, 'content/tutorials')
   for (const name of readDirSafe(localTutorialsSrc).sort()) {
     if (!name.endsWith('.md')) continue
     tutorialMarkdownSources.set(name, {
@@ -671,6 +786,25 @@ if (existsSync(localTutorialsSrc)) {
     })
   }
 }
+
+for (const { name, slug } of tutorialHtmlFiles) {
+  const sourcePath = path.join('docs', name)
+  const html = readFileSync(path.join(tutorialsSrc, sourcePath), 'utf8')
+  const key = `tutorials/${name}`
+  const title = displayHtmlTitle(key, name, html)
+  const summary = summarizeHtml(key, html)
+  const updatedAt = gitLastUpdated(tutorialsSrc, sourcePath)
+  const immersiveUrl = `/tutorial-views/${slug}/`
+  const githubUrl = githubBlobUrl(sourceWebUrls.tutorials, sourcePath)
+  const wrapperName = `${slug}.md`
+  writeFileSync(
+    path.join(tutorialsDest, wrapperName),
+    htmlTutorialWrapper({ title, summary, immersiveUrl, githubUrl, updatedAt, html })
+  )
+  tutorialMarkdownSources.set(wrapperName, { repoDir: tutorialsSrc, relativePath: sourcePath })
+}
+
+enrichMarkdownImages(tutorialsDest)
 
 let tutorialsIndex = `${backButton('/')}# AI 教程
 
@@ -703,24 +837,6 @@ for (const name of readDirSafe(tutorialsDest).sort()) {
     updatedAt: gitLastUpdated(source.repoDir, source.relativePath)
   })
 }
-for (const { name, slug } of tutorialHtmlFiles) {
-  const html = readFileSync(path.join(tutorialsSrc, 'docs', name), 'utf8')
-  const key = `tutorials/${name}`
-  const title = displayHtmlTitle(key, name, html)
-  const summary = summarizeHtml(key, html)
-  tutorialItems.push({
-    href: `/tutorials/${slug}/`,
-    title,
-    summary
-  })
-  latestArticles.push({
-    href: `/tutorials/${slug}/`,
-    title,
-    summary,
-    section: 'AI 教程',
-    updatedAt: gitLastUpdated(tutorialsSrc, path.join('docs', name))
-  })
-}
 tutorialsIndex += indexCardList(tutorialItems)
 writeFileSync(path.join(tutorialsDest, 'index.md'), tutorialsIndex)
 
@@ -738,6 +854,12 @@ writeFileSync(
 
 ${latestArticleList(latestArticles)}
 `
+)
+
+writeFileSync(path.join(siteDir, 'public', 'feed.xml'), rssFeed(latestArticles))
+writeFileSync(
+  path.join(siteDir, 'public', 'source-manifest.json'),
+  `${JSON.stringify({ generatedAt: new Date().toISOString(), sources: Object.fromEntries(sourceRevisions) }, null, 2)}\n`
 )
 
 writeGeneratedSidebar()

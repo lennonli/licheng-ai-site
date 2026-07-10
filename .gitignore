@@ -8,6 +8,9 @@ site/latest/
 site/skills/
 site/tutorials/
 site/public/tutorials/
+site/public/tutorial-views/
+site/public/feed.xml
+site/public/source-manifest.json
 site/assets/
 .cache/
 .wrangler/

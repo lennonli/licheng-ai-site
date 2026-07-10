@@ -180,14 +180,16 @@ body {
 }
 
 .vp-doc table {
-  display: table;
+  display: block;
   width: 100%;
+  max-width: 100%;
   font-size: 14px;
   background: var(--lc-c-paper);
   border: 1px solid var(--lc-c-line);
   border-radius: 16px;
   box-shadow: var(--lc-shadow-soft);
-  overflow: hidden;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .vp-doc th {
@@ -309,6 +311,26 @@ body {
   font-size: 13px;
   line-height: 1.62;
   overflow-wrap: anywhere;
+}
+
+.vp-doc .article-updated {
+  margin: 2px 4px 0;
+  color: var(--lc-c-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.vp-doc .immersive-link {
+  margin: 18px 0;
+}
+
+.vp-doc .html-tutorial-frame {
+  width: 100%;
+  min-height: 72vh;
+  background: #fff;
+  border: 1px solid var(--lc-c-line);
+  border-radius: 20px;
+  box-shadow: var(--lc-shadow-soft);
 }
 
 .vp-doc .article-source-url a {
@@ -1320,6 +1342,12 @@ body {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1050px) {
+  .VPNavBarTitle .title span {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   body {
     background:
@@ -1445,5 +1473,20 @@ body {
 
   .analytics-list-row span {
     white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

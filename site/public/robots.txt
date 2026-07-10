@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /__analytics-licheng-20260708/
+
+Sitemap: https://ai.licheng.uk/sitemap.xml

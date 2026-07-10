@@ -26,6 +26,7 @@ onBeforeUnmount(() => {
 
 <template>
   <button
+    v-if="isVisible"
     class="back-to-top-button"
     :class="{ 'is-visible': isVisible }"
     type="button"

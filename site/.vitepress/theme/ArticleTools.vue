@@ -8,6 +8,11 @@
       <span class="article-tool-icon" aria-hidden="true">↗</span>
       <span>查看 GitHub 源文件</span>
     </a>
+    <a v-if="immersiveUrl" class="article-tool-link" :href="immersiveUrl" target="_blank" rel="noreferrer">
+      <span class="article-tool-icon" aria-hidden="true">▣</span>
+      <span>打开沉浸版</span>
+    </a>
+    <time v-if="updatedAt" class="article-updated" :datetime="updatedAt">更新日期：{{ updatedAt }}</time>
     <p class="article-source-url">
       源文件：<a :href="githubUrl" target="_blank" rel="noreferrer">{{ githubUrl }}</a>
     </p>
@@ -19,6 +24,8 @@ import { ref } from 'vue'
 
 defineProps<{
   githubUrl: string
+  updatedAt?: string
+  immersiveUrl?: string
 }>()
 
 const copyLabel = ref('复制全文')
@@ -31,17 +38,27 @@ async function copyArticle() {
   const clone = article.cloneNode(true)
   if (!(clone instanceof HTMLElement)) return
 
-  clone.querySelectorAll('.back-button, .article-tools, .header-anchor, button').forEach((node) => node.remove())
-  const text = Array.from(clone.querySelectorAll('h1, h2, h3, h4, h5, h6, p, li, pre, table'))
-    .map((node) => (node instanceof HTMLElement ? node.innerText.trim() : ''))
+  clone.querySelectorAll('.back-button, .article-tools, .header-anchor, button, iframe').forEach((node) => node.remove())
+  clone.querySelectorAll('img').forEach((image) => {
+    const replacement = document.createElement('span')
+    replacement.textContent = image.getAttribute('alt') || ''
+    image.replaceWith(replacement)
+  })
+  const iframe = article.querySelector<HTMLIFrameElement>('.html-tutorial-frame')
+  const immersiveText = iframe?.contentDocument?.body?.innerText?.trim() || ''
+  const text = [clone.innerText.trim(), immersiveText]
     .filter(Boolean)
     .join('\n\n')
     .replace(/\n{3,}/g, '\n\n')
     .replace(/[ \t]+\n/g, '\n')
     .trim()
 
-  await writeClipboardText(text)
-  copyLabel.value = '已复制'
+  try {
+    await writeClipboardText(text)
+    copyLabel.value = '已复制'
+  } catch {
+    copyLabel.value = '复制失败'
+  }
 
   window.clearTimeout(resetTimer)
   resetTimer = window.setTimeout(() => {
@@ -62,7 +79,8 @@ async function writeClipboardText(text: string) {
   textarea.style.left = '-9999px'
   document.body.appendChild(textarea)
   textarea.select()
-  document.execCommand('copy')
+  const copied = document.execCommand('copy')
   textarea.remove()
+  if (!copied) throw new Error('Clipboard copy command failed')
 }
 </script>

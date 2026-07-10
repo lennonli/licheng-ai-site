@@ -1,15 +1,22 @@
 const DEFAULT_HOST = 'ai.licheng.uk'
 const MAX_HOURS = 24
 const RANGE_OPTIONS = new Set([1, 6, 12, 24])
+const MAX_FAILED_ATTEMPTS = 5
+const ATTEMPT_WINDOW_MS = 5 * 60 * 1000
+const MAX_BODY_BYTES = 2048
+const failedAttempts = new Map()
 
 export async function onRequest(context) {
   const { request, env } = context
 
   if (request.method === 'OPTIONS') {
-    return jsonResponse({}, 204)
+    return jsonResponse({}, 204, {
+      'access-control-allow-methods': 'POST, OPTIONS',
+      'access-control-allow-headers': 'content-type, x-analytics-key'
+    })
   }
 
-  if (!['GET', 'POST'].includes(request.method)) {
+  if (request.method !== 'POST') {
     return jsonResponse({ error: 'Method not allowed' }, 405)
   }
 
@@ -18,14 +25,21 @@ export async function onRequest(context) {
     return jsonResponse({ error: configError, configured: false }, 503)
   }
 
-  const body = request.method === 'POST' ? await readJsonBody(request) : {}
-  const key = request.headers.get('x-analytics-key') || body.key || new URL(request.url).searchParams.get('key')
+  const clientId = request.headers.get('cf-connecting-ip') || 'unknown'
+  const limited = rateLimitStatus(clientId)
+  if (limited) return jsonResponse({ error: 'Too many attempts' }, 429, { 'retry-after': String(limited) })
+
+  const parsedBody = await readJsonBody(request)
+  if (parsedBody.tooLarge) return jsonResponse({ error: 'Request body too large' }, 413)
+  const body = parsedBody.data
+  const key = request.headers.get('x-analytics-key')
   if (!safeEqual(String(key || ''), String(env.ANALYTICS_ACCESS_KEY || ''))) {
+    recordFailedAttempt(clientId)
     return jsonResponse({ error: 'Unauthorized' }, 401)
   }
+  failedAttempts.delete(clientId)
 
-  const url = new URL(request.url)
-  const requestedRange = Number(body.rangeHours || url.searchParams.get('rangeHours') || 24)
+  const requestedRange = Number(body.rangeHours || 24)
   const rangeHours = RANGE_OPTIONS.has(requestedRange) ? requestedRange : 24
   const host = env.ANALYTICS_HOST || DEFAULT_HOST
   const now = new Date()
@@ -33,7 +47,7 @@ export async function onRequest(context) {
   const start = new Date(now.getTime() - Math.min(rangeHours, MAX_HOURS) * 60 * 60 * 1000).toISOString()
 
   const payload = await queryCloudflareAnalytics({
-    apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN || env.CLOUDFLARE_API_TOKEN,
+    apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN,
     zoneId: env.CLOUDFLARE_ZONE_ID,
     host,
     start,
@@ -108,31 +122,30 @@ async function queryCloudflareAnalytics({ apiToken, zoneId, host, start, end }) 
     }
   }`
 
-  const response = await fetch('https://api.cloudflare.com/client/v4/graphql', {
-    method: 'POST',
-    headers: {
-      authorization: `Bearer ${apiToken}`,
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      query,
-      variables: {
-        zoneTag: zoneId,
-        host,
-        start,
-        end
-      }
+  try {
+    const response = await fetch('https://api.cloudflare.com/client/v4/graphql', {
+      method: 'POST',
+      headers: {
+        authorization: `Bearer ${apiToken}`,
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        query,
+        variables: { zoneTag: zoneId, host, start, end }
+      })
     })
-  })
-
-  const json = await response.json()
-  if (!response.ok || json.errors) {
+    const json = await response.json()
+    if (!response.ok || json.errors) {
+      return {
+        errors: json.errors || [{ message: `Cloudflare API responded with ${response.status}` }]
+      }
+    }
+    return json.data?.viewer?.zones?.[0] || {}
+  } catch {
     return {
-      errors: json.errors || [{ message: `Cloudflare API responded with ${response.status}` }]
+      errors: [{ message: 'Cloudflare analytics service is temporarily unavailable' }]
     }
   }
-
-  return json.data?.viewer?.zones?.[0] || {}
 }
 
 function normalizeAnalytics(zoneData, meta) {
@@ -211,18 +224,20 @@ function isLikelyPagePath(path) {
 function missingConfig(env) {
   const missing = []
   if (!env.ANALYTICS_ACCESS_KEY) missing.push('ANALYTICS_ACCESS_KEY')
-  if (!env.CLOUDFLARE_ANALYTICS_API_TOKEN && !env.CLOUDFLARE_API_TOKEN) {
-    missing.push('CLOUDFLARE_ANALYTICS_API_TOKEN')
-  }
+  if (!env.CLOUDFLARE_ANALYTICS_API_TOKEN) missing.push('CLOUDFLARE_ANALYTICS_API_TOKEN')
   if (!env.CLOUDFLARE_ZONE_ID) missing.push('CLOUDFLARE_ZONE_ID')
   return missing.length ? `Missing runtime secrets: ${missing.join(', ')}` : ''
 }
 
 async function readJsonBody(request) {
   try {
-    return await request.json()
+    const text = await request.text()
+    if (new TextEncoder().encode(text).byteLength > MAX_BODY_BYTES) {
+      return { data: {}, tooLarge: true }
+    }
+    return { data: text ? JSON.parse(text) : {}, tooLarge: false }
   } catch {
-    return {}
+    return { data: {}, tooLarge: false }
   }
 }
 
@@ -235,12 +250,40 @@ function safeEqual(a, b) {
   return result === 0
 }
 
-function jsonResponse(data, status = 200) {
+function rateLimitStatus(clientId) {
+  const now = Date.now()
+  const entry = failedAttempts.get(clientId)
+  if (!entry || now - entry.startedAt >= ATTEMPT_WINDOW_MS) {
+    failedAttempts.delete(clientId)
+    return 0
+  }
+  if (entry.count < MAX_FAILED_ATTEMPTS) return 0
+  return Math.max(1, Math.ceil((ATTEMPT_WINDOW_MS - (now - entry.startedAt)) / 1000))
+}
+
+function recordFailedAttempt(clientId) {
+  const now = Date.now()
+  if (failedAttempts.size > 1000) {
+    for (const [key, value] of failedAttempts) {
+      if (now - value.startedAt >= ATTEMPT_WINDOW_MS) failedAttempts.delete(key)
+    }
+    if (failedAttempts.size > 1000) failedAttempts.delete(failedAttempts.keys().next().value)
+  }
+  const entry = failedAttempts.get(clientId)
+  if (!entry || now - entry.startedAt >= ATTEMPT_WINDOW_MS) {
+    failedAttempts.set(clientId, { count: 1, startedAt: now })
+    return
+  }
+  entry.count += 1
+}
+
+function jsonResponse(data, status = 200, extraHeaders = {}) {
   return new Response(status === 204 ? null : JSON.stringify(data), {
     status,
     headers: {
       'content-type': 'application/json; charset=utf-8',
-      'cache-control': 'no-store'
+      'cache-control': 'no-store',
+      ...extraHeaders
     }
   })
 }
