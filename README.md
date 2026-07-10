@@ -33,6 +33,8 @@ npm run deploy
 
 首次配置时，在 GitHub `production` 环境保存 `CLOUDFLARE_ACCOUNT_ID` 和最小权限的 `CLOUDFLARE_API_TOKEN`。隐藏统计页所需的 `ANALYTICS_ACCESS_KEY`、`CLOUDFLARE_ANALYTICS_API_TOKEN`、`CLOUDFLARE_ZONE_ID` 和 `ANALYTICS_HOST` 仅保存为 Cloudflare Pages 运行时 Secret，不在每次部署中重复写入。
 
+依赖统一从 npm 官方仓库安装并精确锁定版本；Dependabot 每周检查一次依赖更新，安全漏洞仍由 GitHub 安全更新机制即时处理。
+
 ## 自动验收范围
 
 - 站内页面、资源与文章目录锚点；
