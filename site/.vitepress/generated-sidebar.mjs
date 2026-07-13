@@ -665,6 +665,85 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "提示词：竞聘法律顾问·公司基本情况及法律问题初步分析报告",
+      "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、任务目标",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#一、任务目标"
+        },
+        {
+          "text": "二、输入信息（按项目替换）",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#二、输入信息-按项目替换"
+        },
+        {
+          "text": "三、工作流程（AI 应严格按此顺序执行）",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#三、工作流程-ai-应严格按此顺序执行",
+          "items": [
+            {
+              "text": "步骤 1：阅读内部资料",
+              "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#步骤-1-阅读内部资料"
+            },
+            {
+              "text": "步骤 2：检索公开信息（与步骤1并行）",
+              "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#步骤-2-检索公开信息-与步骤1并行"
+            },
+            {
+              "text": "步骤 3：梳理法律问题",
+              "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#步骤-3-梳理法律问题"
+            },
+            {
+              "text": "步骤 4：生成 Word 文档",
+              "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#步骤-4-生成-word-文档"
+            }
+          ]
+        },
+        {
+          "text": "四、关键质量要点（展示专业能力的地方）",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#四、关键质量要点-展示专业能力的地方"
+        },
+        {
+          "text": "五、常见坑与避坑指南（踩过的坑）",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#五、常见坑与避坑指南-踩过的坑"
+        },
+        {
+          "text": "六、Word 文档格式规范（律所默认）",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#六、word-文档格式规范-律所默认",
+          "items": [
+            {
+              "text": "正文与标题",
+              "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#正文与标题"
+            },
+            {
+              "text": "表格",
+              "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#表格"
+            },
+            {
+              "text": "其他",
+              "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#其他"
+            }
+          ]
+        },
+        {
+          "text": "七、可直接发送给 AI 的提示词模板",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#七、可直接发送给-ai-的提示词模板"
+        },
+        {
+          "text": "八、文件命名与版本管理",
+          "link": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1#八、文件命名与版本管理"
+        }
+      ]
+    }
+  ],
   "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1": [
     {
       "text": "返回栏目列表",
