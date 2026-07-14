@@ -5,6 +5,7 @@ const root = process.cwd()
 const dist = path.join(root, 'site', '.vitepress', 'dist')
 const failures = []
 const articleToolsSource = readFileSync(path.join(root, 'site', '.vitepress', 'theme', 'ArticleTools.vue'), 'utf8')
+const wechatQrFile = path.join(dist, 'wechat-li-cheng.jpg')
 
 function walk(dir) {
   return readdirSync(dir).flatMap((name) => {
@@ -42,6 +43,17 @@ const files = walk(dist)
 const htmlFiles = files.filter((file) => file.endsWith('.html'))
 if (htmlFiles.length < 20) fail(`Expected at least 20 HTML pages, found ${htmlFiles.length}`)
 
+if (!existsSync(wechatQrFile)) {
+  fail('WeChat QR image is missing from the build output')
+} else if (statSync(wechatQrFile).size < 50_000) {
+  fail('WeChat QR image appears incomplete')
+}
+
+const homeHtml = readFileSync(path.join(dist, 'index.html'), 'utf8')
+for (const required of ['wechat-contact', '联系李成律师', '/wechat-li-cheng.jpg', '扫码添加微信']) {
+  if (!homeHtml.includes(required)) fail(`Homepage WeChat contact section is missing ${required}`)
+}
+
 for (const file of htmlFiles) {
   const route = routeFor(file)
   const html = readFileSync(file, 'utf8')
@@ -51,6 +63,7 @@ for (const file of htmlFiles) {
   if (!isImmersive && !isPrivateUtility) {
     const h1Count = (html.match(/<h1\b/g) || []).length
     if (!isNotFound && h1Count !== 1) fail(`${route}: expected one H1, found ${h1Count}`)
+    if (!isNotFound && !html.includes('wechat-contact')) fail(`${route}: WeChat contact section missing`)
     if (!/<link rel="canonical" href="https:\/\/ai\.licheng\.uk\//.test(html)) fail(`${route}: canonical missing`)
     if (!/<meta property="og:url"/.test(html)) fail(`${route}: og:url missing`)
   }
