@@ -126,4 +126,34 @@
     </dl>
     <a class="tool-site-link" href="http://www.lvwang.org.cn/search/" target="_blank" rel="noopener noreferrer">打开 IPE 检索 ↗</a>
   </article>
+
+  <article class="tool-site-card">
+    <div class="tool-site-heading"><span class="tool-site-number">13</span><div><h2>中国商标网商标网上检索</h2><p class="tool-site-key">cnipa-trademark</p></div></div>
+    <dl class="tool-site-meta">
+      <div><dt>登录</dt><dd><span class="tool-badge">公开检索通常不需要</span></dd></div>
+      <div><dt>验证码</dt><dd><span class="tool-badge tool-badge-warn">可能出现验证码或安全验证</span></dd></div>
+      <div><dt>用途</dt><dd>按商标名称、申请人、申请号或注册号等条件核查商标申请、注册及流程信息。</dd></div>
+    </dl>
+    <a class="tool-site-link" href="https://wcjs.sbj.cnipa.gov.cn/home" target="_blank" rel="noopener noreferrer">打开商标网上检索 ↗</a>
+  </article>
+
+  <article class="tool-site-card">
+    <div class="tool-site-heading"><span class="tool-site-number">14</span><div><h2>中国专利公布公告查询</h2><p class="tool-site-key">cnipa-patent</p></div></div>
+    <dl class="tool-site-meta">
+      <div><dt>登录</dt><dd><span class="tool-badge">公开检索通常不需要</span></dd></div>
+      <div><dt>验证码</dt><dd><span class="tool-badge tool-badge-warn">可能出现验证码或安全验证</span></dd></div>
+      <div><dt>用途</dt><dd>按申请号、专利名称、申请人等条件查询中国专利公布公告及相关著录信息。</dd></div>
+    </dl>
+    <a class="tool-site-link" href="https://cpquery.cponline.cnipa.gov.cn/chinesepatent/index" target="_blank" rel="noopener noreferrer">打开专利公布公告查询 ↗</a>
+  </article>
+
+  <article class="tool-site-card">
+    <div class="tool-site-heading"><span class="tool-site-number">15</span><div><h2>工业和信息化部ICP/IP地址/域名信息备案管理系统</h2><p class="tool-site-key">miit-domain</p></div></div>
+    <dl class="tool-site-meta">
+      <div><dt>登录</dt><dd><span class="tool-badge">公开查询不需要</span></dd></div>
+      <div><dt>验证码</dt><dd><span class="tool-badge tool-badge-warn">查询时可能需要安全验证</span></dd></div>
+      <div><dt>用途</dt><dd>核查网站主办单位、域名、ICP备案号及备案状态等公开备案信息。</dd></div>
+    </dl>
+    <a class="tool-site-link" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" rel="noopener noreferrer">打开域名备案查询 ↗</a>
+  </article>
 </section>
