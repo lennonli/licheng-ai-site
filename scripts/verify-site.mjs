@@ -53,6 +53,29 @@ const homeHtml = readFileSync(path.join(dist, 'index.html'), 'utf8')
 for (const required of ['wechat-contact', '联系李成律师', '/wechat-li-cheng.jpg', '扫码添加微信']) {
   if (!homeHtml.includes(required)) fail(`Homepage WeChat contact section is missing ${required}`)
 }
+for (const required of ['/tools/', '05 / Tools', '实用工具']) {
+  if (!homeHtml.includes(required)) fail(`Homepage tools entry is missing ${required}`)
+}
+
+const toolsIndexFile = targetFile('/tools/')
+const legalToolsFile = targetFile('/tools/legal-tools')
+const networkSitesFile = targetFile('/tools/network-check-sites')
+if (!toolsIndexFile || !legalToolsFile || !networkSitesFile) {
+  fail('Practical tools pages are incomplete')
+} else {
+  const toolsIndexHtml = readFileSync(toolsIndexFile, 'utf8')
+  const legalToolsHtml = readFileSync(legalToolsFile, 'utf8')
+  const networkSitesHtml = readFileSync(networkSitesFile, 'utf8')
+  for (const required of ['/tools/legal-tools', '/tools/network-check-sites', '法律工具', '网核网站']) {
+    if (!toolsIndexHtml.includes(required)) fail(`Tools index is missing ${required}`)
+  }
+  if (!legalToolsHtml.includes('持续建设中')) fail('Legal tools page is missing its initial state')
+  const siteCardCount = (networkSitesHtml.match(/class="tool-site-card"/g) || []).length
+  if (siteCardCount !== 12) fail(`Network-check sites page expected 12 sites, found ${siteCardCount}`)
+  for (const required of ['信用中国', '中国海关企业信用信息公示平台', '中国执行信息公开网', '国家税务总局深圳市税务局', '证券期货市场失信记录查询平台', '国家市场监督管理总局行政处罚文书网', '深圳市市场监督管理局', '国家外汇管理局', '12309中国检察网', '上海证券交易所', '百度', 'IPE']) {
+    if (!networkSitesHtml.includes(required)) fail(`Network-check sites page is missing ${required}`)
+  }
+}
 
 for (const file of htmlFiles) {
   const route = routeFor(file)

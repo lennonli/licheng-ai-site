@@ -624,7 +624,12 @@ function writeGeneratedSidebar() {
       indexText: 'AI 教程',
       destDir: tutorialsDest
     }),
-    '/latest/': [{ text: '最新文章', link: '/latest/' }]
+    '/latest/': [{ text: '最新文章', link: '/latest/' }],
+    '/tools/': [
+      { text: '实用工具', link: '/tools/' },
+      { text: '法律工具', link: '/tools/legal-tools' },
+      { text: '网核网站', link: '/tools/network-check-sites' }
+    ]
   }
 
   writeFileSync(
@@ -690,6 +695,11 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-index">04 / Updates</span>
     <span class="home-card-title">最新文章</span>
     <span class="home-card-desc">按更新日期倒序展示已经上传或更新的文章，直接跳转到具体页面。</span>
+  </a>
+  <a class="home-card" href="/tools/">
+    <span class="home-card-index">05 / Tools</span>
+    <span class="home-card-title">实用工具</span>
+    <span class="home-card-desc">集中整理可直接使用的法律工具和企业网络核查网站。</span>
   </a>
 </section>
 `)
