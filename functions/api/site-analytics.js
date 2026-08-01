@@ -72,6 +72,7 @@ export async function onRequest(context) {
       configured: normalized.configured,
       generatedAt: normalized.meta?.generatedAt || new Date().toISOString(),
       rangeHours: effectiveRangeHours,
+      ...(normalized.error ? { error: normalized.error } : {}),
       // Return enough paths for the client to discard assets, landing pages,
       // and section indexes before selecting the five most-read articles.
       topPages: (normalized.topPages || []).slice(0, 25)
