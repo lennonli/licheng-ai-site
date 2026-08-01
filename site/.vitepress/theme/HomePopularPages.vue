@@ -5,7 +5,7 @@
         <p class="home-section-kicker">Most visited</p>
         <h2 id="home-popular-title">点击最多的文章</h2>
       </div>
-      <span class="home-popular-period">历史累计 · 每日更新</span>
+      <span class="home-popular-period">历史累计（可查询期间） · 每日更新</span>
     </div>
 
     <div v-if="loading" class="home-popular-state">正在读取访问数据……</div>

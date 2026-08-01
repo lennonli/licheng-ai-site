@@ -1,5 +1,7 @@
 const DEFAULT_HOST = 'ai.licheng.uk'
-const HISTORICAL_START = '2020-01-01T00:00:00.000Z'
+// Cloudflare's adaptive HTTP analytics endpoint exposes a rolling historical
+// window. Keep the public ranking on the largest reliable window for this API.
+const HISTORICAL_HOURS = 30 * 24
 const MAX_HOURS = 24
 const RANGE_OPTIONS = new Set([1, 6, 12, 24])
 const MAX_FAILED_ATTEMPTS = 5
@@ -51,12 +53,10 @@ export async function onRequest(context) {
   const end = now.toISOString()
   const requestedRange = Number(body.rangeHours || url.searchParams.get('rangeHours') || 24)
   const rangeHours = RANGE_OPTIONS.has(requestedRange) ? requestedRange : 24
-  const start = publicTopPages
-    ? HISTORICAL_START
-    : new Date(now.getTime() - Math.min(rangeHours, MAX_HOURS) * 60 * 60 * 1000).toISOString()
-  const effectiveRangeHours = publicTopPages
-    ? Math.max(1, Math.round((now.getTime() - Date.parse(HISTORICAL_START)) / (60 * 60 * 1000)))
-    : rangeHours
+  const effectiveRangeHours = publicTopPages ? HISTORICAL_HOURS : rangeHours
+  const start = new Date(
+    now.getTime() - effectiveRangeHours * 60 * 60 * 1000
+  ).toISOString()
 
   const payload = await queryCloudflareAnalytics({
     apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN,
@@ -75,7 +75,7 @@ export async function onRequest(context) {
       // Return enough paths for the client to discard assets, landing pages,
       // and section indexes before selecting the five most-read articles.
       topPages: (normalized.topPages || []).slice(0, 25)
-    }, 200, { 'cache-control': 'public, max-age=3600, s-maxage=3600' })
+    }, 200, { 'cache-control': 'public, max-age=86400, s-maxage=86400' })
   }
 
   return jsonResponse(normalized)
