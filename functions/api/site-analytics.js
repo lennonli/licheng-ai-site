@@ -1,7 +1,7 @@
 const DEFAULT_HOST = 'ai.licheng.uk'
 // Cloudflare's adaptive HTTP analytics endpoint exposes a rolling historical
 // window. Keep the public ranking on the largest reliable window for this API.
-const HISTORICAL_HOURS = 30 * 24
+const HISTORICAL_DAYS = 30
 const MAX_HOURS = 24
 const RANGE_OPTIONS = new Set([1, 6, 12, 24])
 const MAX_FAILED_ATTEMPTS = 5
@@ -53,20 +53,29 @@ export async function onRequest(context) {
   const end = now.toISOString()
   const requestedRange = Number(body.rangeHours || url.searchParams.get('rangeHours') || 24)
   const rangeHours = RANGE_OPTIONS.has(requestedRange) ? requestedRange : 24
-  const effectiveRangeHours = publicTopPages ? HISTORICAL_HOURS : rangeHours
+  const effectiveRangeHours = publicTopPages ? HISTORICAL_DAYS * 24 : rangeHours
   const start = new Date(
     now.getTime() - effectiveRangeHours * 60 * 60 * 1000
   ).toISOString()
 
-  const payload = await queryCloudflareAnalytics({
-    apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN,
-    zoneId: env.CLOUDFLARE_ZONE_ID,
-    host,
-    start,
-    end
-  })
+  const payload = publicTopPages
+    ? await queryHistoricalTopPages({
+        apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN,
+        zoneId: env.CLOUDFLARE_ZONE_ID,
+        host,
+        end
+      })
+    : await queryCloudflareAnalytics({
+        apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN,
+        zoneId: env.CLOUDFLARE_ZONE_ID,
+        host,
+        start,
+        end
+      })
 
-  const normalized = normalizeAnalytics(payload, { host, start, end, rangeHours })
+  const normalized = publicTopPages
+    ? { configured: true, meta: { generatedAt: new Date().toISOString() }, topPages: payload.topPages || [], error: payload.error }
+    : normalizeAnalytics(payload, { host, start, end, rangeHours })
   if (publicTopPages) {
     return jsonResponse({
       configured: normalized.configured,
@@ -94,7 +103,7 @@ async function queryCloudflareAnalytics({ apiToken, zoneId, host, start, end }) 
           sum { visits edgeRequestBytes edgeResponseBytes }
         }
         byPath:httpRequestsAdaptiveGroups(
-          limit:25,
+          limit:100,
           filter:{datetime_geq:$start, datetime_leq:$end, clientRequestHTTPHost:$host},
           orderBy:[count_DESC]
         ) {
@@ -170,6 +179,41 @@ async function queryCloudflareAnalytics({ apiToken, zoneId, host, start, end }) 
     return {
       errors: [{ message: 'Cloudflare analytics service is temporarily unavailable' }]
     }
+  }
+}
+
+async function queryHistoricalTopPages({ apiToken, zoneId, host, end }) {
+  const endMs = Date.parse(end)
+  const pathTotals = new Map()
+  let failedBuckets = 0
+
+  const buckets = Array.from({ length: HISTORICAL_DAYS }, (_, index) => {
+    const bucketEnd = new Date(endMs - index * 24 * 60 * 60 * 1000).toISOString()
+    const bucketStart = new Date(endMs - (index + 1) * 24 * 60 * 60 * 1000).toISOString()
+    return queryCloudflareAnalytics({ apiToken, zoneId, host, start: bucketStart, end: bucketEnd })
+  })
+
+  const responses = await Promise.all(buckets)
+  for (const response of responses) {
+    if (response.errors) {
+      failedBuckets += 1
+      continue
+    }
+    for (const item of response.byPath || []) {
+      const label = normalizeLabel(item.dimensions?.clientRequestPath)
+      const current = pathTotals.get(label) || { label, count: 0, visits: 0 }
+      current.count += item.count || 0
+      current.visits += item.sum?.visits || 0
+      pathTotals.set(label, current)
+    }
+  }
+
+  return {
+    topPages: Array.from(pathTotals.values())
+      .filter((item) => isLikelyPagePath(item.label))
+      .sort((a, b) => (b.visits - a.visits) || (b.count - a.count))
+      .slice(0, 25),
+    error: failedBuckets === HISTORICAL_DAYS ? 'Historical analytics buckets were unavailable.' : undefined
   }
 }
 
