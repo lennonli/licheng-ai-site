@@ -43,6 +43,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+    ['meta', { name: 'google-site-verification', content: 'BNCuusVXcvvzeBJVuT-kH8UNI0BpSaL7telWKvCz9ag' }],
     ['meta', { property: 'og:image', content: 'https://ai.licheng.uk/og-image.jpg' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://ai.licheng.uk/og-image.jpg' }],
