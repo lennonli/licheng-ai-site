@@ -5,7 +5,7 @@
         <p class="home-section-kicker">Most visited</p>
         <h2 id="home-popular-title">点击最多的文章</h2>
       </div>
-      <span class="home-popular-period">近24小时 · 每日更新</span>
+      <span class="home-popular-period">历史累计 · 每日更新</span>
     </div>
 
     <div v-if="loading" class="home-popular-state">正在读取访问数据……</div>
@@ -53,7 +53,7 @@ function normalizePath(value: string) {
 onMounted(async () => {
   try {
     const [analyticsResponse, indexResponse] = await Promise.all([
-      fetch('/api/site-analytics?public=top&rangeHours=24', { headers: { accept: 'application/json' } }),
+      fetch('/api/site-analytics?public=top', { headers: { accept: 'application/json' } }),
       fetch('/content-index.json', { headers: { accept: 'application/json' } })
     ])
 

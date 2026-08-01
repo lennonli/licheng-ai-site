@@ -1,4 +1,5 @@
 const DEFAULT_HOST = 'ai.licheng.uk'
+const HISTORICAL_START = '2020-01-01T00:00:00.000Z'
 const MAX_HOURS = 24
 const RANGE_OPTIONS = new Set([1, 6, 12, 24])
 const MAX_FAILED_ATTEMPTS = 5
@@ -45,12 +46,17 @@ export async function onRequest(context) {
     failedAttempts.delete(clientId)
   }
 
-  const requestedRange = Number(body.rangeHours || url.searchParams.get('rangeHours') || 24)
-  const rangeHours = RANGE_OPTIONS.has(requestedRange) ? requestedRange : 24
   const host = env.ANALYTICS_HOST || DEFAULT_HOST
   const now = new Date()
   const end = now.toISOString()
-  const start = new Date(now.getTime() - Math.min(rangeHours, MAX_HOURS) * 60 * 60 * 1000).toISOString()
+  const requestedRange = Number(body.rangeHours || url.searchParams.get('rangeHours') || 24)
+  const rangeHours = RANGE_OPTIONS.has(requestedRange) ? requestedRange : 24
+  const start = publicTopPages
+    ? HISTORICAL_START
+    : new Date(now.getTime() - Math.min(rangeHours, MAX_HOURS) * 60 * 60 * 1000).toISOString()
+  const effectiveRangeHours = publicTopPages
+    ? Math.max(1, Math.round((now.getTime() - Date.parse(HISTORICAL_START)) / (60 * 60 * 1000)))
+    : rangeHours
 
   const payload = await queryCloudflareAnalytics({
     apiToken: env.CLOUDFLARE_ANALYTICS_API_TOKEN,
@@ -65,7 +71,7 @@ export async function onRequest(context) {
     return jsonResponse({
       configured: normalized.configured,
       generatedAt: normalized.meta?.generatedAt || new Date().toISOString(),
-      rangeHours,
+      rangeHours: effectiveRangeHours,
       // Return enough paths for the client to discard assets, landing pages,
       // and section indexes before selecting the five most-read articles.
       topPages: (normalized.topPages || []).slice(0, 25)
