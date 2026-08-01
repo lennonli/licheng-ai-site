@@ -45,7 +45,13 @@ const items = ref<PopularItem[]>([])
 const loading = ref(true)
 
 function normalizePath(value: string) {
-  const path = value.split('?')[0].split('#')[0]
+  const rawPath = value.split('?')[0].split('#')[0]
+  let path = rawPath
+  try {
+    path = decodeURIComponent(rawPath)
+  } catch {
+    path = rawPath
+  }
   if (path === '/') return '/'
   return path.replace(/\/+$/, '') || '/'
 }
