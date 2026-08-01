@@ -21,6 +21,8 @@
 
 <HomeSearchBox />
 
+<HomePopularPages />
+
 <section class="home-grid" aria-label="内容入口">
   <a class="home-card" href="/agents/">
     <span class="home-card-index">01 / Agents</span>

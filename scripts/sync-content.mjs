@@ -675,6 +675,8 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
 
 <HomeSearchBox />
 
+<HomePopularPages />
+
 <section class="home-grid" aria-label="内容入口">
   <a class="home-card" href="/agents/">
     <span class="home-card-index">01 / Agents</span>
@@ -878,6 +880,11 @@ tutorialsIndex += indexCardList(tutorialItems)
 writeFileSync(path.join(tutorialsDest, 'index.md'), tutorialsIndex)
 
 latestArticles.sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
+
+writeFileSync(
+  path.join(siteDir, 'public', 'content-index.json'),
+  JSON.stringify(latestArticles.map(({ href, title, summary, section }) => ({ href, title, summary, section })), null, 2)
+)
 
 const latestDest = path.join(siteDir, 'latest')
 ensureDir(latestDest)

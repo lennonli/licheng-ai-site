@@ -16,30 +16,36 @@ export async function onRequest(context) {
     })
   }
 
-  if (request.method !== 'POST') {
+  const url = new URL(request.url)
+  const publicTopPages = request.method === 'GET' && url.searchParams.get('public') === 'top'
+
+  if (!publicTopPages && request.method !== 'POST') {
     return jsonResponse({ error: 'Method not allowed' }, 405)
   }
 
-  const configError = missingConfig(env)
+  const configError = missingConfig(env, { requireAccessKey: !publicTopPages })
   if (configError) {
     return jsonResponse({ error: configError, configured: false }, 503)
   }
 
-  const clientId = request.headers.get('cf-connecting-ip') || 'unknown'
-  const limited = rateLimitStatus(clientId)
-  if (limited) return jsonResponse({ error: 'Too many attempts' }, 429, { 'retry-after': String(limited) })
+  let body = {}
+  if (!publicTopPages) {
+    const clientId = request.headers.get('cf-connecting-ip') || 'unknown'
+    const limited = rateLimitStatus(clientId)
+    if (limited) return jsonResponse({ error: 'Too many attempts' }, 429, { 'retry-after': String(limited) })
 
-  const parsedBody = await readJsonBody(request)
-  if (parsedBody.tooLarge) return jsonResponse({ error: 'Request body too large' }, 413)
-  const body = parsedBody.data
-  const key = request.headers.get('x-analytics-key')
-  if (!safeEqual(String(key || ''), String(env.ANALYTICS_ACCESS_KEY || ''))) {
-    recordFailedAttempt(clientId)
-    return jsonResponse({ error: 'Unauthorized' }, 401)
+    const parsedBody = await readJsonBody(request)
+    if (parsedBody.tooLarge) return jsonResponse({ error: 'Request body too large' }, 413)
+    body = parsedBody.data
+    const key = request.headers.get('x-analytics-key')
+    if (!safeEqual(String(key || ''), String(env.ANALYTICS_ACCESS_KEY || ''))) {
+      recordFailedAttempt(clientId)
+      return jsonResponse({ error: 'Unauthorized' }, 401)
+    }
+    failedAttempts.delete(clientId)
   }
-  failedAttempts.delete(clientId)
 
-  const requestedRange = Number(body.rangeHours || 24)
+  const requestedRange = Number(body.rangeHours || url.searchParams.get('rangeHours') || 24)
   const rangeHours = RANGE_OPTIONS.has(requestedRange) ? requestedRange : 24
   const host = env.ANALYTICS_HOST || DEFAULT_HOST
   const now = new Date()
@@ -54,7 +60,17 @@ export async function onRequest(context) {
     end
   })
 
-  return jsonResponse(normalizeAnalytics(payload, { host, start, end, rangeHours }))
+  const normalized = normalizeAnalytics(payload, { host, start, end, rangeHours })
+  if (publicTopPages) {
+    return jsonResponse({
+      configured: normalized.configured,
+      generatedAt: normalized.meta?.generatedAt || new Date().toISOString(),
+      rangeHours,
+      topPages: (normalized.topPages || []).slice(0, 5)
+    }, 200, { 'cache-control': 'public, max-age=3600, s-maxage=3600' })
+  }
+
+  return jsonResponse(normalized)
 }
 
 async function queryCloudflareAnalytics({ apiToken, zoneId, host, start, end }) {
@@ -221,9 +237,9 @@ function isLikelyPagePath(path) {
   return true
 }
 
-function missingConfig(env) {
+function missingConfig(env, { requireAccessKey = true } = {}) {
   const missing = []
-  if (!env.ANALYTICS_ACCESS_KEY) missing.push('ANALYTICS_ACCESS_KEY')
+  if (requireAccessKey && !env.ANALYTICS_ACCESS_KEY) missing.push('ANALYTICS_ACCESS_KEY')
   if (!env.CLOUDFLARE_ANALYTICS_API_TOKEN) missing.push('CLOUDFLARE_ANALYTICS_API_TOKEN')
   if (!env.CLOUDFLARE_ZONE_ID) missing.push('CLOUDFLARE_ZONE_ID')
   return missing.length ? `Missing runtime secrets: ${missing.join(', ')}` : ''

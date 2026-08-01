@@ -4,6 +4,7 @@ import ArticleTools from './ArticleTools.vue'
 import BackButton from './BackButton.vue'
 import BackToTopButton from './BackToTopButton.vue'
 import HomeSearchBox from './HomeSearchBox.vue'
+import HomePopularPages from './HomePopularPages.vue'
 import WeChatContact from './WeChatContact.vue'
 import './custom.css'
 
@@ -18,5 +19,6 @@ export default {
     app.component('ArticleTools', ArticleTools)
     app.component('BackButton', BackButton)
     app.component('HomeSearchBox', HomeSearchBox)
+    app.component('HomePopularPages', HomePopularPages)
   }
 }
