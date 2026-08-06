@@ -503,6 +503,36 @@ ${items
 `
 }
 
+const agentCategoryOrder = [
+  '通用工作规则',
+  'IPO 尽职调查',
+  'IPO 股东出资与调查表',
+  '底稿归档与目录'
+]
+
+const agentCategoryKeywords = {
+  'IPO 股东出资与调查表': ['股东出资', '调查表', '董监高', '间接股东'],
+  '底稿归档与目录': ['工作底稿更新', '非诉业务'],
+  '通用工作规则': ['法律业务通用指令', '合同审查', '股改文件', 'PPT']
+}
+
+function agentCategoryFor(name) {
+  const base = name.replace(/\.md$/, '')
+  for (const category of agentCategoryOrder) {
+    const keywords = agentCategoryKeywords[category] || []
+    if (keywords.some((keyword) => base.includes(keyword))) return category
+  }
+  return 'IPO 尽职调查'
+}
+
+function indexCardListGrouped(groups) {
+  return groups
+    .map(({ category, items }) => `### ${category}
+
+${indexCardList(items)}`)
+    .join('\n\n')
+}
+
 function gitText(args, cwd) {
   return execFileSync('git', args, { cwd, encoding: 'utf8' }).trim()
 }
@@ -724,26 +754,44 @@ let agentsIndex = `${backButton('/')}# 智能体通用指令和项目指令
 
 `
 const agentItems = []
+const readmeItem = []
 for (const name of readDirSafe(agentsDest).sort()) {
   if (!name.endsWith('.md') || name === 'index.md') continue
   const markdown = readFileSync(path.join(agentsDest, name), 'utf8')
   const key = `agents/${name}`
-  agentItems.push({
+  const item = {
     href: `/agents/${name.replace(/\.md$/, '')}`,
     title: displayTitle(key, name, markdown),
-    summary: summarizeMarkdown(key, markdown)
-  })
-  if (name !== 'README.md') {
+    summary: summarizeMarkdown(key, markdown),
+    updatedAt: gitLastUpdated(agentsSrc, name),
+    category: agentCategoryFor(name)
+  }
+  if (name === 'README.md') {
+    readmeItem.push(item)
+  } else {
+    agentItems.push(item)
     latestArticles.push({
-      href: `/agents/${name.replace(/\.md$/, '')}`,
-      title: displayTitle(key, name, markdown),
-      summary: summarizeMarkdown(key, markdown),
+      href: item.href,
+      title: item.title,
+      summary: item.summary,
       section: '智能体指令',
-      updatedAt: gitLastUpdated(agentsSrc, name)
+      updatedAt: item.updatedAt
     })
   }
 }
-agentsIndex += indexCardList(agentItems)
+
+agentsIndex += indexCardList(readmeItem)
+
+const agentGroups = agentCategoryOrder
+  .map((category) => ({
+    category,
+    items: agentItems
+      .filter((item) => item.category === category)
+      .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+  }))
+  .filter((group) => group.items.length > 0)
+
+agentsIndex += `\n${indexCardListGrouped(agentGroups)}`
 writeFileSync(path.join(agentsDest, 'index.md'), agentsIndex)
 
 const skillsSrc = path.join(cacheDir, 'skills')
