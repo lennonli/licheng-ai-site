@@ -1,24 +1,32 @@
 {
-  "name": "licheng-ai-site",
+  "name": "licheng-ai-site-sites",
   "private": true,
   "type": "module",
   "scripts": {
     "sync": "node scripts/sync-content.mjs",
     "dev": "npm run sync && vitepress dev site --host 127.0.0.1",
-    "build": "npm run sync && vitepress build site",
-    "verify": "node scripts/verify-site.mjs",
-    "test": "npm run build && npm run verify && node --test tests/*.test.mjs",
+    "build:docs": "npm run sync && vitepress build site",
+    "build": "npm run build:docs && node scripts/prepare-sites-assets.mjs && WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
     "preview": "vitepress preview site --host 127.0.0.1",
     "deploy": "npm run build && wrangler pages deploy site/.vitepress/dist --project-name=licheng-ai-site --branch=main"
   },
-  "devDependencies": {
-    "vitepress": "1.6.4",
-    "wrangler": "4.110.0"
-  },
-  "overrides": {
-    "vite": "6.4.3"
-  },
   "dependencies": {
-    "qrcode": "1.5.4"
+    "next": "16.3.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.52.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "react-server-dom-webpack": "19.2.6",
+    "typescript": "5.9.3",
+    "vinext": "0.0.50",
+    "vite": "8.0.13",
+    "vitepress": "latest",
+    "wrangler": "4.123.0"
   }
 }
