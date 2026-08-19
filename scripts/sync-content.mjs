@@ -108,6 +108,7 @@ function copyTutorialHtmlFiles(src, dest) {
     const slug = cleanTutorialSlug(name)
     if (slug !== name.replace(/\.html$/, '')) {
       tutorialRedirects.push({ from: `/tutorial-views/${name.replace(/\.html$/, '')}/`, to: `/tutorial-views/${slug}/` })
+      tutorialRedirects.push({ from: `/tutorials/${name.replace(/\.html$/, '')}`, to: `/tutorials/${slug}` })
     }
     const pageDir = path.join(dest, slug)
     ensureDir(pageDir)
@@ -931,6 +932,7 @@ if (existsSync(localTutorialsSrc)) {
     const entry = tutorialMarkdownSources.get(name)
     tutorialMarkdownSources.delete(name)
     renameSync(path.join(tutorialsDest, name), path.join(tutorialsDest, target))
+    tutorialRedirects.push({ from: `/tutorials/${name.replace(/\.md$/, '')}`, to: `/tutorials/${slug}` })
     tutorialMarkdownSources.set(target, entry)
   }
   for (const [name, source] of tutorialMarkdownSources) {
