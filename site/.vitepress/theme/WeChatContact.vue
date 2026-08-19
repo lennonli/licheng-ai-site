@@ -13,7 +13,7 @@
         href="/wechat-li-cheng.jpg"
         target="_blank"
         rel="noopener"
-        aria-label="查看李成律师微信二维码原图"
+        aria-label="扫码添加微信，查看李成律师微信二维码原图"
       >
         <img
           src="/wechat-li-cheng.jpg"

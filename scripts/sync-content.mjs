@@ -5,6 +5,7 @@ import {
   mkdirSync,
   readdirSync,
   readFileSync,
+  renameSync,
   rmSync,
   statSync,
   writeFileSync
@@ -84,6 +85,18 @@ function copyMarkdownFiles(src, dest) {
   }
 }
 
+const tutorialRedirects = []
+
+function cleanTutorialSlug(name) {
+  return name.replace(/\.[^.]+$/, '').replace(/-ABL-\d{8}(-V(\d+))?$/, '')
+}
+
+function tutorialVersionRank(name) {
+  const version = Number(name.match(/-V(\d+)(?=\.[^.]+$)/)?.[1] || 0)
+  const date = Number(name.match(/-ABL-(\d{8})(?=-V\d+$|(?=\.[^.]+$))/)?.[1] || 0)
+  return date * 1000 + version
+}
+
 function copyTutorialHtmlFiles(src, dest) {
   const copied = []
   ensureDir(dest)
@@ -92,7 +105,10 @@ function copyTutorialHtmlFiles(src, dest) {
     if (!statSync(from).isFile()) continue
     if (!name.endsWith('.html')) continue
 
-    const slug = name.replace(/\.html$/, '')
+    const slug = cleanTutorialSlug(name)
+    if (slug !== name.replace(/\.html$/, '')) {
+      tutorialRedirects.push({ from: `/tutorial-views/${name.replace(/\.html$/, '')}/`, to: `/tutorial-views/${slug}/` })
+    }
     const pageDir = path.join(dest, slug)
     ensureDir(pageDir)
     const html = enrichHtmlImages(readFileSync(from, 'utf8'))
@@ -186,13 +202,29 @@ function withArticleChrome(markdown, fallback, githubUrl, updatedAt = '', immers
   return withArticleTools(withBackButton(markdown, fallback), githubUrl, updatedAt, immersiveUrl, copyUrl)
 }
 
+function withSeoFrontmatter(markdown, description, updatedAt) {
+  const lines = []
+  const summary = String(description || '').replace(/\s+/g, ' ').trim()
+  if (summary) lines.push(`description: ${JSON.stringify(summary)}`)
+  if (updatedAt) lines.push(`lastUpdated: ${new Date(updatedAt).toISOString()}`)
+  if (!lines.length) return markdown
+  if (markdown.startsWith('---\n')) {
+    const end = markdown.indexOf('\n---', 4)
+    if (end === -1) return markdown
+    return `${markdown.slice(0, end + 1)}${lines.join('\n')}\n${markdown.slice(end + 1)}`
+  }
+  return `---\n${lines.join('\n')}\n---\n\n${markdown}`
+}
+
 function addArticleChromeToMarkdownFiles(dir, fallback, repoWebUrl, repoDir, sourcePrefix = '') {
   for (const name of readDirSafe(dir).sort()) {
     if (!name.endsWith('.md') || name === 'index.md') continue
     const file = path.join(dir, name)
     const sourcePath = sourcePrefix ? `${sourcePrefix}/${name}` : name
     const updatedAt = gitLastUpdated(repoDir, sourcePath)
-    writeFileSync(file, withArticleChrome(readFileSync(file, 'utf8'), fallback, githubBlobUrl(repoWebUrl, sourcePath), updatedAt))
+    const markdown = readFileSync(file, 'utf8')
+    const summary = summarizeMarkdown(`${path.basename(dir)}/${name}`, markdown)
+    writeFileSync(file, withArticleChrome(withSeoFrontmatter(markdown, summary, updatedAt), fallback, githubBlobUrl(repoWebUrl, sourcePath), updatedAt))
   }
 }
 
@@ -220,11 +252,10 @@ const titleOverrides = new Map([
   ['skills/cnipa-patent-evidence-archive', 'CNIPA 专利证据归档'],
   ['skills/cnipa-trademark-evidence-archive', 'CNIPA 商标证据归档'],
   ['skills/network-check-v3', '中国企业网络核查'],
-  ['tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1.md', 'macOS + Codex 法律工作流环境安装教程'],
+  ['tutorials/macos-codex-legal-workflow-setup.md', 'macOS + Codex 法律工作流环境安装教程'],
   ['tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1.html', '智能体指令体系、工具选择培训讲义（HTML 翻页版）'],
   ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2.html', '梯子使用全教程 HTML 自包含版'],
-  ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1.md', '代理工具全平台使用教程'],
-  ['tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1.md', 'Windows + Codex 法律工作流环境安装教程']
+  ['tutorials/windows-codex-legal-workflow-setup.md', 'Windows + Codex 法律工作流环境安装教程']
 ])
 
 const summaryOverrides = new Map([
@@ -237,11 +268,10 @@ const summaryOverrides = new Map([
   ['skills/cnipa-patent-evidence-archive', '用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。'],
   ['skills/cnipa-trademark-evidence-archive', '用于从 CNIPA 商标网上检索系统归档商标详情页和商标流程页，适合商标核查、知识产权尽调和证据留存。'],
   ['skills/network-check-v3', '用于中国企业主体和风险网络核查，批量检索信用、处罚、失信、监管和公开网页信息，并保存可追溯的 PDF 证据文件。'],
-  ['tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1.md', '面向全新 macOS 和刚安装 Codex 的法律工作环境，覆盖 Homebrew、文档处理、PDF/OCR、Python 虚拟环境和 Codex 配置。'],
+  ['tutorials/macos-codex-legal-workflow-setup.md', '面向全新 macOS 和刚安装 Codex 的法律工作环境，覆盖 Homebrew、文档处理、PDF/OCR、Python 虚拟环境和 Codex 配置。'],
   ['tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1.html', '面向律师团队的 AI Agent 培训讲义，覆盖大模型与 Agent 区分、指令体系、Codex 工具、Skill/MCP/Plugin、客户秘密保护和团队落地。'],
   ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2.html', '代理工具全平台教程的自包含 HTML 版本，适合单文件保存和离线阅读。'],
-  ['tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1.md', '覆盖 macOS、Windows、Android 和 iOS 的代理客户端安装、订阅导入、模式选择、验证排错和法律工作中的安全注意事项。'],
-  ['tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1.md', '面向全新 Windows 和刚安装 Codex 的法律工作环境，覆盖 PowerShell、winget、Office/PDF/OCR、WSL2 和法律文档处理依赖。']
+  ['tutorials/windows-codex-legal-workflow-setup.md', '面向全新 Windows 和刚安装 Codex 的法律工作环境，覆盖 PowerShell、winget、Office/PDF/OCR、WSL2 和法律文档处理依赖。']
 ])
 
 const headingTitleOverrides = new Map([
@@ -409,7 +439,7 @@ ${summary}
 <iframe class="html-tutorial-frame" src="${immersiveUrl}" title="${escapeHtml(title)}沉浸版" loading="lazy"></iframe>
 
 ${indexMarkdown}`
-  return withArticleChrome(body, '/tutorials/', githubUrl, updatedAt, immersiveUrl, copyUrl)
+  return withArticleChrome(withSeoFrontmatter(body, summary, updatedAt), '/tutorials/', githubUrl, updatedAt, immersiveUrl, copyUrl)
 }
 
 function pngDimensions(file) {
@@ -848,7 +878,6 @@ const tutorialMarkdownSources = new Map()
 if (existsSync(path.join(tutorialsSrc, 'docs'))) {
   copyMarkdownFiles(path.join(tutorialsSrc, 'docs'), tutorialsDest)
   tutorialHtmlFiles = copyTutorialHtmlFiles(path.join(tutorialsSrc, 'docs'), tutorialViewsDest)
-  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.tutorials, tutorialsSrc, 'docs')
   for (const name of readDirSafe(path.join(tutorialsSrc, 'docs')).sort()) {
     if (!name.endsWith('.md')) continue
     tutorialMarkdownSources.set(name, {
@@ -862,13 +891,56 @@ if (existsSync(path.join(tutorialsSrc, 'assets'))) {
 }
 if (existsSync(localTutorialsSrc)) {
   copyMarkdownFiles(localTutorialsSrc, tutorialsDest)
-  addArticleChromeToMarkdownFiles(tutorialsDest, '/tutorials/', sourceWebUrls.site, root, 'content/tutorials')
   for (const name of readDirSafe(localTutorialsSrc).sort()) {
     if (!name.endsWith('.md')) continue
     tutorialMarkdownSources.set(name, {
       repoDir: root,
       relativePath: path.join('content', 'tutorials', name)
     })
+  }
+}
+
+// 统一清理教程文件名：去掉 -ABL-日期-V版本 内部后缀；
+// 同一基名存在多个版本时仅保留最新（HTML 沉浸版优先于同名 Markdown），旧版记录 301 跳转。
+{
+  const htmlSlugs = new Set(tutorialHtmlFiles.map((item) => item.slug))
+  const groups = new Map()
+  const dropped = []
+  for (const name of [...tutorialMarkdownSources.keys()].sort()) {
+    const slug = cleanTutorialSlug(name)
+    if (htmlSlugs.has(slug)) {
+      dropped.push(name)
+      continue
+    }
+    const prev = groups.get(slug)
+    if (!prev || tutorialVersionRank(name) > tutorialVersionRank(prev)) {
+      if (prev) dropped.push(prev)
+      groups.set(slug, name)
+    } else {
+      dropped.push(name)
+    }
+  }
+  for (const name of dropped) {
+    rmSync(path.join(tutorialsDest, name), { force: true })
+    tutorialRedirects.push({ from: `/tutorials/${name.replace(/\.md$/, '')}`, to: `/tutorials/${cleanTutorialSlug(name)}` })
+    tutorialMarkdownSources.delete(name)
+  }
+  for (const [slug, name] of groups) {
+    const target = `${slug}.md`
+    if (target === name) continue
+    const entry = tutorialMarkdownSources.get(name)
+    tutorialMarkdownSources.delete(name)
+    renameSync(path.join(tutorialsDest, name), path.join(tutorialsDest, target))
+    tutorialMarkdownSources.set(target, entry)
+  }
+  for (const [name, source] of tutorialMarkdownSources) {
+    const file = path.join(tutorialsDest, name)
+    if (!existsSync(file)) continue
+    const repoWebUrl = source.repoDir === root ? sourceWebUrls.site : sourceWebUrls.tutorials
+    const updatedAt = gitLastUpdated(source.repoDir, source.relativePath)
+    const markdown = readFileSync(file, 'utf8')
+    const summary = summarizeMarkdown(`tutorials/${name}`, markdown)
+    writeFileSync(file, withArticleChrome(withSeoFrontmatter(markdown, summary, updatedAt), '/tutorials/', githubBlobUrl(repoWebUrl, source.relativePath), updatedAt))
   }
 }
 
@@ -926,6 +998,15 @@ for (const name of readDirSafe(tutorialsDest).sort()) {
 }
 tutorialsIndex += indexCardList(tutorialItems)
 writeFileSync(path.join(tutorialsDest, 'index.md'), tutorialsIndex)
+
+if (tutorialRedirects.length) {
+  writeFileSync(
+    path.join(siteDir, 'public', '_redirects'),
+    `# 旧教程 URL（含 -ABL-日期-版本 内部后缀或已被更新版本取代）301 跳转至清理后地址\n${tutorialRedirects
+      .map((item) => `${item.from} ${item.to} 301`)
+      .join('\n')}\n`
+  )
+}
 
 latestArticles.sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
 
