@@ -37,6 +37,12 @@ const sources = [
     name: 'AI 教程',
     repo: 'https://github.com/lennonli/licheng-AI-tutorials.git',
     localRepo: path.resolve(root, '..', 'licheng-AI-tutorials')
+  },
+  {
+    key: 'kb',
+    name: 'IPO 问询案例',
+    repo: 'https://github.com/lennonli/ipo-inquiry-kb.git',
+    localRepo: path.resolve(root, '..', '19-IPO问询案例知识库')
   }
 ]
 
@@ -44,6 +50,7 @@ const sourceWebUrls = {
   agents: 'https://github.com/lennonli/licheng-AGENTS.md',
   skills: 'https://github.com/lennonli/licheng-skills',
   tutorials: 'https://github.com/lennonli/licheng-AI-tutorials',
+  kb: 'https://github.com/lennonli/ipo-inquiry-kb',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -53,11 +60,15 @@ function sh(cmd, args, cwd = root) {
 
 function syncSourceRepo(source) {
   const dest = path.join(cacheDir, source.key)
+  // GH_SOURCE_TOKEN 供 CI 克隆私有源仓库（如 ipo-inquiry-kb）时注入凭证
+  const remoteUrl = process.env.GH_SOURCE_TOKEN
+    ? source.repo.replace('https://github.com/', `https://x-access-token:${process.env.GH_SOURCE_TOKEN}@github.com/`)
+    : source.repo
   if (source.localRepo && existsSync(path.join(source.localRepo, '.git'))) {
     console.log(`Using local source repo for ${source.key}: ${source.localRepo}`)
     sh('git', ['clone', source.localRepo, dest])
   } else {
-    sh('git', ['clone', source.repo, dest])
+    sh('git', ['clone', remoteUrl, dest])
   }
 
   const requestedRevision = process.env[`SOURCE_${source.key.toUpperCase()}_SHA`]
@@ -685,6 +696,11 @@ function writeGeneratedSidebar() {
       indexText: 'AI 教程',
       destDir: tutorialsDest
     }),
+    ...buildSectionSidebar({
+      section: 'kb',
+      indexText: 'IPO与挂牌问询案例库',
+      destDir: kbDest
+    }),
     '/latest/': [{ text: '最新文章', link: '/latest/' }],
     '/tools/': [
       { text: '实用工具', link: '/tools/' },
@@ -706,7 +722,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'public', 'tutorials'), { recursive: true, force: true })
@@ -763,6 +779,11 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-index">05 / Tools</span>
     <span class="home-card-title">实用工具</span>
     <span class="home-card-desc">集中整理可直接使用的法律工具和企业网络核查网站。</span>
+  </a>
+  <a class="home-card" href="/kb/">
+    <span class="home-card-index">06 / Cases</span>
+    <span class="home-card-title">IPO与挂牌问询案例库</span>
+    <span class="home-card-desc">A股 IPO 与新三板挂牌审核问询法律问题回溯，按问询要点、回复口径与执业提示沉淀。</span>
   </a>
 </section>
 `)
@@ -1030,6 +1051,47 @@ writeFileSync(
 ${latestArticleList(latestArticles)}
 `
 )
+
+// ── IPO 与挂牌审核问询案例库（源仓库 cases/ 子目录）──────────────────────
+const kbSrc = path.join(cacheDir, 'kb')
+const kbDest = path.join(siteDir, 'kb')
+ensureDir(kbDest)
+copyMarkdownFiles(path.join(kbSrc, 'cases'), kbDest)
+addArticleChromeToMarkdownFiles(kbDest, '/kb/', sourceWebUrls.kb, kbSrc, 'cases/')
+
+const kbIndexPath = path.join(kbSrc, 'scripts', 'index.json')
+const kbEntries = existsSync(kbIndexPath) ? JSON.parse(readFileSync(kbIndexPath, 'utf8')) : []
+const kbBoardOrder = ['北交所', '科创板', '深市创业板', '沪市主板', '深市主板', '新三板']
+const kbGroups = new Map(kbBoardOrder.map((board) => [board, []]))
+for (const entry of kbEntries) {
+  const board = kbGroups.has(entry.board) ? entry.board : '其他'
+  if (!kbGroups.has(board)) kbGroups.set(board, [])
+  kbGroups.get(board).push(entry)
+}
+
+let kbIndex = `${backButton('/')}# IPO与挂牌审核问询案例库
+
+<p class="section-lead">A股 IPO 与新三板挂牌项目审核问询法律问题回溯，一司一文，沉淀"问询要点—回复与核查要点—执业提示"，办理同类项目时可直接检索论证范本与证据链思路。可用站内搜索按公司简称、代码或法律问题关键词检索。</p>
+
+<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 ${kbEntries.length} 份案例）</p>
+
+`
+
+for (const board of [...kbBoardOrder, '其他']) {
+  const rows = (kbGroups.get(board) || [])
+    .slice()
+    .sort((a, b) => (b.listing_date || '').localeCompare(a.listing_date || ''))
+  if (!rows.length) continue
+  kbIndex += `## ${board}（${rows.length}）\n\n`
+  kbIndex += indexCardList(rows.map((entry) => ({
+    href: `/kb/${entry.file.replace(/\.md$/, '')}`,
+    title: `${entry.company}${entry.code ? `（${entry.code}）` : '（在审）'}`,
+    summary: `${entry.lawyer || '律所未载明'}${entry.listing_date ? `｜${board === '新三板' ? '挂牌' : '上市'} ${entry.listing_date}` : ''}｜${(entry.tags || []).slice(0, 6).join(' / ')}`
+  })))
+  kbIndex += '\n'
+}
+
+writeFileSync(path.join(kbDest, 'index.md'), kbIndex)
 
 writeFileSync(path.join(siteDir, 'public', 'feed.xml'), rssFeed(latestArticles))
 writeFileSync(

@@ -1,5 +1,143 @@
 [
   {
+    "href": "/tutorials/ai-agent-dispatch",
+    "title": "AI智能体智能调度工作教程",
+    "summary": "AI智能体不只自己干活，还能调度其他智能体（包括更强的高级分析模型）替你干活。你不需要懂任何技术——扫描文件、比对版本、修改文档、验证结果，全部由 AI 自动完成。你只需要做两件事：把需求说清楚（下提示词），以及对 AI 交回的结论把关……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-task-handoff",
+    "title": "额度没了，赶紧换另一个有额度的 AI 续上我的任务",
+    "summary": "用 AI 干活的人多半都撞过这堵墙：一个长任务干到一半，额度用光了，或者模型开始变慢、变笨，甚至直接罢工。手上还有别家的 AI 有额度，可它对你前面聊了两小时的事一无所知。难道要把来龙去脉重新敲一遍？；不用。这篇讲一个我自己天天在用的笨……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/lawyer-mcp-setup",
+    "title": "律师 MCP 搭建实用教程",
+    "summary": "一句话总结：把法律常用的五个数据库装进 AI 客户端，装的过程全部交给 AI——您只需要拿到密钥、粘贴提示词、审查结果。；ZCode（主力）：配置在 ~/.zcode/cli/config.json，远程与本地服务器都支持，还能按领域建……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-agent-side-conversation",
+    "title": "别打断它：智能体\"辅助对话\"的律师用法",
+    "summary": "适用工具：Claude Code /btw、Codex /side、ZCode 辅助对话；你让智能体通读目标公司三年的四十份股东会、董事会决议，出一份瑕疵清单。它跑到第二十份的时候，你忽然想起一件事：前面某一份决议里，好像出现过\"委托持……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-agent-conversation-management",
+    "title": "AI 智能体对话管理实务教程",
+    "summary": "以 Claude app、Codex（ChatGPT）app 等图形界面为主，面向用智能体干活的专业人士；不管你用哪家的 app，界面差别再大，底下的机制是同一个：你的整段对话——每一条消息、它读过的每一个文件、它跑过的每一条命令的输出……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/agents/元典企业信息库股东穿透核查提示词",
+    "title": "元典企业信息库股东穿透核查提示词",
+    "summary": "你是 IPO/尽职调查项目的股东穿透核查助手。任务：对目标公司 {{目标公司全称}} 的指定机构股东 {{一级股东名单及各自持股比例}}，通过元典企业信息库逐层向下穿透全部股东结构，直至命中终止主体，输出穿透明细表和可归档的查验底稿。；……",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/tutorials/ai-agent-memory-comparison",
+    "title": "AI 智能体的记忆，到底记住了什么",
+    "summary": "用 AI 干活久了，最烦的往往不是它不够聪明，而是它不记事。；每开一个新会话，都要重新交代一遍：这个项目是什么、客户是谁、文件怎么命名、上次那个坑是怎么踩的。说完一遍，第二天再说一遍。真正把人耗掉的不是它能力不够，是这种重复。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/agents/AI-Agent辅助IPO股东穿透实操教程",
+    "title": "AI Agent辅助IPO股东穿透核查与底稿归档实操教程",
+    "summary": "以某新三板挂牌公司北交所IPO项目为样本 · AI工具：ZCode Agent ＋ 案牍AnduAI穿透报告 · 2026年8月；本教程按实际操作的时间顺序，复盘用AI Agent完成股东穿透底稿归档与资料跟踪的全流程，共十一个步骤。每……",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/法律业务通用指令",
+    "title": "法律业务通用指令",
+    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/北交所上市各主体承诺文件起草与修订提示词",
+    "title": "北交所上市各主体承诺文件起草与修订——通用提示词",
+    "summary": "用途：新项目复用。使用时将【】内容替换为该项目实际信息，其余部分可整段粘贴。；版本：V1｜生成日期：20260819",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/章程与制度体系深度审查提示词",
+    "title": "章程与公司治理制度体系深度审查提示词（复用版）",
+    "summary": "沉淀自某北交所项目（2026-08，锦天城-李成）。使用时替换【】内参数即可。；文件命名：章程与制度体系深度审查提示词-ABL-20260816-V1.md",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/股东出资流水异常情况核查提示词",
+    "title": "股东出资流水异常情况核查提示词",
+    "summary": "你是中国IPO项目法律尽调助理。请全面阅读指定文件夹内的银行流水PDF、扫描件、图片及可读取的压缩包，必要时进行OCR，并回看原图核对日期、金额、姓名和转账附言，不得仅依据汇总表或备忘录下结论。；序号｜持股平台｜股东姓名｜出资金额｜出资……",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/北交所三会文件批量起草提示词",
+    "title": "北交所三会文件批量起草——可复用提示词",
+    "summary": "适用场景：新三板挂牌公司申报北交所，需以参考公司的三会文件为模板，批量起草目标公司的整套三会文件（申报前承诺+上市后适用制度+申报审议三会文件）。；目标公司的企查查报告（企业信用报告专业版PDF）",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/董监高核心技术人员及直接股东调查表北交所口径更新提示词",
+    "title": "董监高、核心技术人员及直接股东调查表北交所口径批量更新提示词",
+    "summary": "请根据以下要求，批量更新本项目的董监高、核心技术人员及直接股东调查表。；董事、监事、高级管理人员及核心技术人员调查表；",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/IPO间接自然人股东调查表更新提示词",
+    "title": "IPO间接自然人股东调查表更新提示词（新三板转北交所适用）",
+    "summary": "仅处理\"间接股东自然人调查表\"，不得处理董监高、核心技术人员、直接股东、法人股东或其他调查表。；仅处理用户指定的文件；文件名或备注中标注\"【不用改】\"的文件保持原样。",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/IPO机构股东调查表更新提示词",
+    "title": "IPO机构股东调查表更新提示词",
+    "summary": "你正在协助中国律师处理机构股东调查表。请严格按照以下要求完成，不得擅自扩大修改范围。；以用户指定的最新调查表作为唯一修改模板，不要以旧版本覆盖最新版本。",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/董监高访谈笔录Word定稿与核查提示词",
+    "title": "北交所/IPO项目——董监高访谈笔录Word定稿与核查",
+    "summary": "新三板挂牌公司转北交所（或直接IPO）项目中，需要将工作底稿里扫描件PDF格式的董监高访谈笔录，转换为可编辑的Word定稿，完成板块适用性改造，与招股说明书交叉核验，并对接券商修订意见最终定稿。；找到工作底稿中的《董监高名单》官方文件，……",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/新三板转北交所查验计划更新提示词",
+    "title": "新三板转北交所查验计划更新提示词",
+    "summary": "你是中国大陆IPO律师文书助理。请将【项目名称】现有的新三板查验计划，参考北交所上市查验计划模板，更新为北交所上市适用版本。；原查验计划：\\[原稿DOCX路径\\]",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/IPO间接股东调查表更新提示词",
+    "title": "IPO间接股东调查表更新提示词（新三板转北交所更新调查表适用）",
+    "summary": "你是协助中国律师处理IPO法律尽调及调查表更新工作的文档助手。请根据我提供的历史调查表、企业信用报告和项目要求，整理并更新间接持股自然人股东调查表。；企业信用报告目录：【企查查报告目录】",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/IPO董监高及核心技术人员调查表更新提示词",
+    "title": "IPO董监高、核心技术人员及直接持股自然人调查表更新",
+    "summary": "你正在协助中国律师完成【项目名称】董监高、核心技术人员及直接持股自然人调查表更新工作。；根据最新企查查企业信用报告，更新调查表中的：",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/律师工作底稿更新与目录修订提示词",
+    "title": "律师工作底稿更新与目录修订——AI提示词手册",
+    "summary": "用途：新三板挂牌转北交所上市、报告期延长、底稿目录修订、同类项目比对等场景。；使用方法：复制对应提示词，将【】内替换为实际信息，发送给AI即可。",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/IPO股东出资流水及底稿归档核查提示词",
+    "title": "IPO股东出资流水及底稿归档核查提示词",
+    "summary": "你是一名协助中国律师开展 IPO 法律尽职调查、股东出资资金来源核查和底稿归档的项目助手。；本次新增资料：[PDF、图片、流水、回单或压缩包路径]",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/股东出资银行流水及间接股东核查提示词",
+    "title": "股东出资银行流水及间接股东核查提示词",
+    "summary": "你是一名协助中国律师开展IPO、挂牌、并购及其他法律尽职调查的项目助手。请在现有《股东出资账户银行流水提供期间备忘录》基础上，补充或修订间接股东出资及银行流水期间内容。；机构股东及持股平台资料：【资料目录】",
+    "section": "智能体指令"
+  },
+  {
     "href": "/agents/IPO法律尽职调查报告全流程起草提示词",
     "title": "IPO法律尽职调查报告全流程起草提示词",
     "summary": "你正在协助一名中国律师起草中国境内IPO项目法律尽职调查报告。请从客户及发行人利益出发，参照我提供的尽调报告模板，根据公司资料、工商档案、交易文件、企业信用资料及其他尽调底稿，直接完成指定章节的起草或修订。；是否需要打开WPS：【否；如……",
@@ -12,45 +150,9 @@
     "section": "智能体指令"
   },
   {
-    "href": "/agents/上市公司重大资产重组竞聘-案例检索报告-提示词模板",
-    "title": "上市公司重大资产重组竞聘——案例检索报告制作",
-    "summary": "用途：律师事务所竞聘上市公司重大资产重组项目买方/卖方律师时，一次性制作完整的案例检索报告 + 述标准备材料。；复用方法：将下方【变量替换区】的内容替换为新项目的实际信息，然后把【核心指令】整段发送给AI即可。AI会一次性产出含全部专章……",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/合同审查和起草",
-    "title": "合同审查和起草指令",
-    "summary": "规定合同审查、风险分级、缺失条款补充、法律文件起草、修订模式、签署页和版本命名等合同类任务的工作规则。",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/拟上市、挂牌企业公司基本情况及法律问题初步分析报告（竞聘法律顾问用）提示词",
-    "title": "拟上市/挂牌企业公司基本情况及法律问题初步分析报告（竞聘法律顾问用）提示词",
-    "summary": "你是上海市锦天城（深圳）律师事务所经办律师李成的法律工作助手，协助一名中国律师开展资本市场法律服务工作。用户代表的是用户客户的利益。；任务场景：用户正在竞聘某拟上市/拟挂牌企业（以下简称\"目标公司\"）的IPO/新三板挂牌/北交所上市项目……",
-    "section": "智能体指令"
-  },
-  {
     "href": "/agents/根据公开数据起草尽调报告初稿",
     "title": "根据公开数据起草尽调报告初稿",
     "summary": "始终以您最后修改的版本为唯一底稿；参照模板结构，但事实只能来自公司资料及经核验的公开信息；无法确认的内容使用【】占位，尤其不能根据单份企业报告推断关联关系、控制关系或实际控制人对外企业。；下面这版提示词已尽量压缩，可在提供模板、企业信用……",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/法律PPT设计",
-    "title": "法律 PPT 设计指令",
-    "summary": "规定法律培训、项目汇报和专业服务 PPT 的视觉风格、版式层级、字体字号、信息呈现方式以及既有 PPT 修改边界。",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/法律业务通用指令",
-    "title": "法律业务通用指令",
-    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/法律尽职调查清单起草与定稿",
-    "title": "起草并定稿法律尽职调查清单的指令",
-    "summary": "调查对象：[公司全称]，简称“[公司简称]”或“公司”。；企业信息、工商及风险核查资料：[参考资料路径]。",
     "section": "智能体指令"
   },
   {
@@ -60,15 +162,21 @@
     "section": "智能体指令"
   },
   {
-    "href": "/agents/股东出资银行流水及间接股东核查提示词",
-    "title": "股东出资银行流水及间接股东核查提示词",
-    "summary": "你是一名协助中国律师开展IPO、挂牌、并购及其他法律尽职调查的项目助手。请在现有《股东出资账户银行流水提供期间备忘录》基础上，补充或修订间接股东出资及银行流水期间内容。；机构股东及持股平台资料：【资料目录】",
+    "href": "/agents/拟上市、挂牌企业公司基本情况及法律问题初步分析报告（竞聘法律顾问用）提示词",
+    "title": "拟上市/挂牌企业公司基本情况及法律问题初步分析报告（竞聘法律顾问用）提示词",
+    "summary": "你是上海市锦天城（深圳）律师事务所经办律师李成的法律工作助手，协助一名中国律师开展资本市场法律服务工作。用户代表的是用户客户的利益。；任务场景：用户正在竞聘某拟上市/拟挂牌企业（以下简称\"目标公司\"）的IPO/新三板挂牌/北交所上市项目……",
     "section": "智能体指令"
   },
   {
-    "href": "/agents/股改文件起草",
-    "title": "股改文件起草指令",
-    "summary": "用于有限公司整体变更为股份有限公司的股改文件起草与复核，覆盖参考案例改造、资料填报、文件清单、特殊治理结构适配、一致性检查、模板残留清理、待补信息汇总和签署条件判断。",
+    "href": "/agents/上市公司重大资产重组竞聘-案例检索报告-提示词模板",
+    "title": "上市公司重大资产重组竞聘——案例检索报告制作",
+    "summary": "用途：律师事务所竞聘上市公司重大资产重组项目买方/卖方律师时，一次性制作完整的案例检索报告 + 述标准备材料。；复用方法：将下方【变量替换区】的内容替换为新项目的实际信息，然后把【核心指令】整段发送给AI即可。AI会一次性产出含全部专章……",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/法律PPT设计",
+    "title": "法律 PPT 设计指令",
+    "summary": "规定法律培训、项目汇报和专业服务 PPT 的视觉风格、版式层级、字体字号、信息呈现方式以及既有 PPT 修改边界。",
     "section": "智能体指令"
   },
   {
@@ -78,69 +186,87 @@
     "section": "智能体指令"
   },
   {
-    "href": "/tutorials/claude-codex-app-ccswitch-domestic-models-ABL-20260707-V1",
-    "title": "Claude App 与 Codex App 通过 CC Switch 接入国产大模型教程",
-    "summary": "本文不以 Claude Code CLI / Codex CLI 的日常使用为目标；但需要说明的是，Claude App / Codex App 的部分底层配置仍会复用本机配置文件，CC Switch 的作用就是用图形界面代替手动改配置……",
-    "section": "AI 教程"
+    "href": "/agents/法律尽职调查清单起草与定稿",
+    "title": "起草并定稿法律尽职调查清单的指令",
+    "summary": "调查对象：[公司全称]，简称“[公司简称]”或“公司”。；企业信息、工商及风险核查资料：[参考资料路径]。",
+    "section": "智能体指令"
   },
   {
-    "href": "/tutorials/ipo-legal-advisor-company-profile-prompt-ABL-20260713-V1",
+    "href": "/tutorials/ipo-legal-advisor-company-profile-prompt",
     "title": "提示词：竞聘法律顾问·公司基本情况及法律问题初步分析报告",
     "summary": "适用场景：竞聘拟上市/拟挂牌企业的法律顾问，需基于公开信息快速产出一份能体现专业能力的公司基本情况报告（Word），用于现场见面或竞标。；复用方法：将【目标公司】、【已知背景】、【资料位置】三处占位符替换为实际信息后，整段发送给 AI ……",
     "section": "AI 教程"
   },
   {
-    "href": "/tutorials/legal-ai-agent-selection-202607-ABL-20260708-V1",
-    "title": "法律工作如何选择AI智能体（2026年7月）",
-    "summary": "本教程面向中国法律工作场景，说明如何按任务类型选择 ChatGPT、Claude、Codex、智谱 ZCode、WorkBuddy、豆包等 AI 智能体，并给出诉讼、非诉、行政办公场景下的实操提示词模板。；注：本文主要为个人使用AI工具……",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/legal-business-skill-creation-guide-ABL-20260710-V1",
+    "href": "/tutorials/legal-business-skill-creation-guide",
     "title": "法律业务 Skill 制作教程：两种主要方案",
     "summary": "法律业务 Skill，是将律师已经验证成熟的工作方法整理为一套可被 AI 重复调用的标准化流程。它可以固化任务触发条件、输入材料、操作步骤、判断规则、输出格式、异常处理和质量检查要求，使 AI 在以后处理同类任务时，尽量按照同一套方法执……",
     "section": "AI 教程"
   },
   {
-    "href": "/tutorials/macos-codex-legal-workflow-setup-ABL-20260707-V1",
-    "title": "macOS + Codex 法律工作流环境安装教程",
-    "summary": "面向全新 macOS 和刚安装 Codex 的法律工作环境，覆盖 Homebrew、文档处理、PDF/OCR、Python 虚拟环境和 Codex 配置。",
+    "href": "/tutorials/agent-instruction-tool-selection-training",
+    "title": "智能体指令体系、工具选择培训讲义（HTML 翻页版）",
+    "summary": "面向律师团队的 AI Agent 培训讲义，覆盖大模型与 Agent 区分、指令体系、Codex 工具、Skill/MCP/Plugin、客户秘密保护和团队落地。；律师团队使用 Agent 的四个控制面",
     "section": "AI 教程"
   },
   {
-    "href": "/tutorials/macos-codex-skip-login-third-party-models-ABL-20260708-V1",
+    "href": "/tutorials/claude-codex-app-ccswitch-domestic-models",
+    "title": "Claude App 与 Codex App 通过 CC Switch 接入国产大模型教程",
+    "summary": "本文不以 Claude Code CLI / Codex CLI 的日常使用为目标；但需要说明的是，Claude App / Codex App 的部分底层配置仍会复用本机配置文件，CC Switch 的作用就是用图形界面代替手动改配置……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/new-vps-opencode-web-ui-setup",
+    "title": "新建 VPS 后 OpenCode 安装与远程 Web UI 配置教程",
+    "summary": "先登录 DMIT 客户中心，进入对应 VPS 产品详情页。通过“访问 / VNC 控制台 / 串列控制台”可直接进入服务器本地控制台；即使 SSH 暂时不通，也能继续操作 VPS。；DMIT 自动生成的 key 中，macOS 应使用 ……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/proxy-clash-verge-full-guide",
+    "title": "梯子使用全教程 HTML 自包含版",
+    "summary": "代理工具全平台教程的自包含 HTML 版本，适合单文件保存和离线阅读。；梯子使用全教程：macOS、Windows、Android、iOS",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/legal-ai-agent-selection-202607",
+    "title": "法律工作如何选择AI智能体（2026年7月）",
+    "summary": "本教程面向中国法律工作场景，说明如何按任务类型选择 ChatGPT、Claude、Codex、智谱 ZCode、WorkBuddy、豆包等 AI 智能体，并给出诉讼、非诉、行政办公场景下的实操提示词模板。；注：本文主要为个人使用AI工具……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/macos-codex-skip-login-third-party-models",
     "title": "macOS Codex 跳过登录页面教程（使用第三方模型）",
     "summary": "适用苹果电脑 macOS 系统，已在 Codex 的 config.toml 中配置了（如通过 cc-switch 配置）第三方模型（通过 experimentalbearertoken 或 envkey 调用自建/中转 API），但每……",
     "section": "AI 教程"
   },
   {
-    "href": "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V1",
-    "title": "代理工具全平台使用教程",
-    "summary": "覆盖 macOS、Windows、Android 和 iOS 的代理客户端安装、订阅导入、模式选择、验证排错和法律工作中的安全注意事项。",
+    "href": "/agents/股改文件起草",
+    "title": "股改文件起草指令",
+    "summary": "用于有限公司整体变更为股份有限公司的股改文件起草与复核，覆盖参考案例改造、资料填报、文件清单、特殊治理结构适配、一致性检查、模板残留清理、待补信息汇总和签署条件判断。",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/tutorials/macos-codex-legal-workflow-setup",
+    "title": "macOS + Codex 法律工作流环境安装教程",
+    "summary": "面向全新 macOS 和刚安装 Codex 的法律工作环境，覆盖 Homebrew、文档处理、PDF/OCR、Python 虚拟环境和 Codex 配置。",
     "section": "AI 教程"
   },
   {
-    "href": "/tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1",
+    "href": "/tutorials/windows-codex-legal-workflow-setup",
     "title": "Windows + Codex 法律工作流环境安装教程",
     "summary": "面向全新 Windows 和刚安装 Codex 的法律工作环境，覆盖 PowerShell、winget、Office/PDF/OCR、WSL2 和法律文档处理依赖。",
     "section": "AI 教程"
   },
   {
-    "href": "/tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1/",
-    "title": "智能体指令体系、工具选择培训讲义（HTML 翻页版）",
-    "summary": "面向律师团队的 AI Agent 培训讲义，覆盖大模型与 Agent 区分、指令体系、Codex 工具、Skill/MCP/Plugin、客户秘密保护和团队落地。",
-    "section": "AI 教程"
+    "href": "/agents/合同审查和起草",
+    "title": "合同审查和起草指令",
+    "summary": "规定合同审查、风险分级、缺失条款补充、法律文件起草、修订模式、签署页和版本命名等合同类任务的工作规则。",
+    "section": "智能体指令"
   },
   {
-    "href": "/tutorials/proxy-clash-verge-full-guide-ABL-20260707-V2/",
-    "title": "梯子使用全教程 HTML 自包含版",
-    "summary": "代理工具全平台教程的自包含 HTML 版本，适合单文件保存和离线阅读。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/skills/cnipa-patent-evidence-archive",
-    "title": "CNIPA 专利证据归档",
-    "summary": "用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。",
+    "href": "/skills/network-check-v3",
+    "title": "中国企业网络核查",
+    "summary": "用于中国企业主体和风险网络核查，批量检索信用、处罚、失信、监管和公开网页信息，并保存可追溯的 PDF 证据文件。",
     "section": "法律业务 Skill"
   },
   {
@@ -150,15 +276,9 @@
     "section": "法律业务 Skill"
   },
   {
-    "href": "/skills/network-check-v3",
-    "title": "中国企业网络核查",
-    "summary": "用于中国企业主体和风险网络核查，批量检索信用、处罚、失信、监管和公开网页信息，并保存可追溯的 PDF 证据文件。",
+    "href": "/skills/cnipa-patent-evidence-archive",
+    "title": "CNIPA 专利证据归档",
+    "summary": "用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。",
     "section": "法律业务 Skill"
-  },
-  {
-    "href": "/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1",
-    "title": "new vps opencode web ui setup",
-    "summary": "先登录 DMIT 客户中心，进入对应 VPS 产品详情页，通过 访问 / VNC 控制台 / 串列控制台 可以直接进入服务器本地控制台；即使 SSH 不通，也能继续操作 VPS。；DMIT 自动生成下载的 key 中，Mac 应使用 .……",
-    "section": "AI 教程"
   }
 ]

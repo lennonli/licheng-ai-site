@@ -93,6 +93,7 @@ export default defineConfig({
       { text: 'AGENTS 指令', link: '/agents/' },
       { text: 'Skill 技能', link: '/skills/' },
       { text: 'AI 教程', link: '/tutorials/' },
+      { text: '问询案例', link: '/kb/' },
       { text: '实用工具', link: '/tools/' },
       { text: 'GitHub', link: 'https://github.com/lennonli' }
     ],

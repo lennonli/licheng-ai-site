@@ -49,4 +49,9 @@
     <span class="home-card-title">实用工具</span>
     <span class="home-card-desc">集中整理可直接使用的法律工具和企业网络核查网站。</span>
   </a>
+  <a class="home-card" href="/kb/">
+    <span class="home-card-index">06 / Cases</span>
+    <span class="home-card-title">IPO与挂牌问询案例库</span>
+    <span class="home-card-desc">A股 IPO 与新三板挂牌审核问询法律问题回溯，按问询要点、回复口径与执业提示沉淀。</span>
+  </a>
 </section>
