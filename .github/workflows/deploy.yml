@@ -116,11 +116,24 @@ jobs:
           fi
           echo "TRAINING_KV binding is in place."
 
-          echo "Cleaning up test submissions..."
+          echo "Cleaning up flagged submissions (removals list + test prefix)..."
           NS_ID="$NS_ID" CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID" CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN" \
+          REMOVALS_FILE="content/training-removals.txt" \
           node --input-type=module -e "
+            import fs from 'node:fs'
             const base = 'https://api.cloudflare.com/client/v4/accounts/' + process.env.CLOUDFLARE_ACCOUNT_ID + '/storage/kv/namespaces/' + process.env.NS_ID
             const h = { Authorization: 'Bearer ' + process.env.CLOUDFLARE_API_TOKEN }
+
+            // 删除规则：[测试]前缀自动清理 + content/training-removals.txt 清单（整行精确匹配内容，或 id:编号）
+            let removals = []
+            try {
+              removals = fs.readFileSync(process.env.REMOVALS_FILE, 'utf8')
+                .split('\n').map((line) => line.trim())
+                .filter((line) => line && !line.startsWith('#'))
+            } catch { /* 清单文件不存在时仅按 [测试] 前缀清理 */ }
+            const removalIds = new Set(removals.filter((r) => r.startsWith('id:')).map((r) => r.slice(3).trim()))
+            const removalTexts = new Set(removals.filter((r) => !r.startsWith('id:')))
+
             const keysRes = await (await fetch(base + '/keys?limit=1000', { headers: h })).json()
             const names = (keysRes.result || []).map((k) => k.name).filter((n) => n.startsWith('req:'))
             let idx
@@ -130,7 +143,11 @@ jobs:
               const raw = await (await fetch(base + '/values/' + name, { headers: h })).text()
               try {
                 const row = JSON.parse(raw)
-                if (typeof row.c === 'string' && row.c.startsWith('[测试]')) removed.add(row.id)
+                const isFlagged = typeof row.c === 'string' && (
+                  row.c.startsWith('[测试]') ||
+                  removalTexts.has(row.c.trim().replace(/\s+/g, ' '))
+                )
+                if (isFlagged || removalIds.has(row.id)) removed.add(row.id)
               } catch { /* skip */ }
             }
             if (removed.size) {
@@ -138,7 +155,7 @@ jobs:
               const kept = idx.filter((id) => !removed.has(id))
               await fetch(base + '/values/idx', { method: 'PUT', headers: h, body: JSON.stringify(kept) })
             }
-            console.log('Removed ' + removed.size + ' test submission(s).')
+            console.log('Removed ' + removed.size + ' submission(s) (flagged or listed in training-removals.txt).')
           "
 
       - name: Deploy to Cloudflare Pages
