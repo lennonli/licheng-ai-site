@@ -43,6 +43,12 @@ const sources = [
     name: 'IPO 问询案例',
     repo: 'https://github.com/lennonli/ipo-inquiry-kb.git',
     localRepo: path.resolve(root, '..', '19-IPO问询案例知识库')
+  },
+  {
+    key: 'kb2025',
+    name: 'IPO 问询案例 2025',
+    repo: 'https://github.com/lennonli/ipo-inquiry-kb-2025.git',
+    localRepo: path.resolve(root, '..', '21-IPO问询案例知识库-2025')
   }
 ]
 
@@ -51,6 +57,7 @@ const sourceWebUrls = {
   skills: 'https://github.com/lennonli/licheng-skills',
   tutorials: 'https://github.com/lennonli/licheng-AI-tutorials',
   kb: 'https://github.com/lennonli/ipo-inquiry-kb',
+  kb2025: 'https://github.com/lennonli/ipo-inquiry-kb-2025',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -698,8 +705,13 @@ function writeGeneratedSidebar() {
     }),
     ...buildSectionSidebar({
       section: 'kb',
-      indexText: 'IPO与挂牌问询案例库',
+      indexText: 'IPO与挂牌问询案例库·2026',
       destDir: kbDest
+    }),
+    ...buildSectionSidebar({
+      section: 'kb2025',
+      indexText: 'IPO与挂牌问询案例库·2025',
+      destDir: kb2025Dest
     }),
     '/latest/': [{ text: '最新文章', link: '/latest/' }],
     '/tools/': [
@@ -722,7 +734,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'public', 'tutorials'), { recursive: true, force: true })
@@ -781,9 +793,14 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-desc">集中整理可直接使用的法律工具和企业网络核查网站。</span>
   </a>
   <a class="home-card" href="/kb/">
-    <span class="home-card-index">06 / Cases</span>
-    <span class="home-card-title">IPO与挂牌问询案例库</span>
-    <span class="home-card-desc">A股 IPO 与新三板挂牌审核问询法律问题回溯，按问询要点、回复口径与执业提示沉淀。</span>
+    <span class="home-card-index">06 / Cases 2026</span>
+    <span class="home-card-title">问询案例库 · 2026年度</span>
+    <span class="home-card-desc">2026 年上市/挂牌 242 家审核问询法律问题回溯，按问询要点、回复口径与执业提示沉淀。</span>
+  </a>
+  <a class="home-card" href="/kb2025/">
+    <span class="home-card-index">07 / Cases 2025</span>
+    <span class="home-card-title">问询案例库 · 2025年度</span>
+    <span class="home-card-desc">2025 年上市/挂牌 430 家审核问询法律问题回溯（3,389 个详述问题），附年度总结报告。</span>
   </a>
 </section>
 `)
@@ -1052,30 +1069,11 @@ ${latestArticleList(latestArticles)}
 `
 )
 
-// ── IPO 与挂牌审核问询案例库（源仓库 cases/ 子目录）──────────────────────
-const kbSrc = path.join(cacheDir, 'kb')
-const kbDest = path.join(siteDir, 'kb')
-ensureDir(kbDest)
-copyMarkdownFiles(path.join(kbSrc, 'cases'), kbDest)
-addArticleChromeToMarkdownFiles(kbDest, '/kb/', sourceWebUrls.kb, kbSrc, 'cases/')
-
-const kbIndexPath = path.join(kbSrc, 'scripts', 'index.json')
-const kbEntries = existsSync(kbIndexPath) ? JSON.parse(readFileSync(kbIndexPath, 'utf8')) : []
+// ── IPO 与挂牌审核问询案例库（按年度分库：2026 = /kb/，2025 = /kb2025/）──────
 const kbBoardOrder = ['北交所', '科创板', '深市创业板', '沪市主板', '深市主板', '新三板']
-const kbGroups = new Map(kbBoardOrder.map((board) => [board, []]))
-for (const entry of kbEntries) {
-  const board = kbGroups.has(entry.board) ? entry.board : '其他'
-  if (!kbGroups.has(board)) kbGroups.set(board, [])
-  kbGroups.get(board).push(entry)
-}
 
-let kbIndex = `${backButton('/')}# IPO与挂牌审核问询案例库
-
-<p class="section-lead">A股 IPO 与新三板挂牌项目审核问询法律问题回溯，一司一文，沉淀"问询要点—回复与核查要点—执业提示"，办理同类项目时可直接检索论证范本与证据链思路。可用站内搜索按公司简称、代码或法律问题关键词检索。</p>
-
-<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 ${kbEntries.length} 份案例）</p>
-
-## 如何用 AI 智能体使用本案例库
+function aiTutorialSection(base, repoUrl, exampleCase) {
+  return `## 如何用 AI 智能体使用本案例库
 
 本库是纯 Markdown 公开知识库，任何 AI 智能体都能直接消费。按场景选一种即可。
 
@@ -1083,13 +1081,13 @@ let kbIndex = `${backButton('/')}# IPO与挂牌审核问询案例库
 
 把某篇案例页网址发给支持联网读取的 AI（ChatGPT、Claude、Gemini、豆包、DeepSeek 等），让它定向提取。可直接复制的提示词：
 
-> 请阅读 https://ai.licheng.uk/kb/920079-乔路铭 一文，提取其中"股权代持"与"特殊投资条款"问题的：①问询要点；②发行人与中介机构的回复论证思路；③执业提示。用表格输出，并单独列出本案证据链构成。
+> 请阅读 https://ai.licheng.uk${base}/${exampleCase} 一文，提取其中"股权代持"与"特殊投资条款"问题的：①问询要点；②发行人与中介机构的回复论证思路；③执业提示。用表格输出，并单独列出本案证据链构成。
 
 ### 方式二：让 AI 检索整个案例库
 
 把检索需求连同库地址一起发给 AI（适合"找同类案例、对比口径"）。提示词模板：
 
-> 这是一个 IPO/挂牌审核问询法律问题案例库：https://ai.licheng.uk/kb/ （GitHub 源仓库 https://github.com/lennonli/ipo-inquiry-kb ，含 scripts/index.json 元数据索引，可按板块/法律类别/律所筛选）。请查找涉及"劳务派遣超比例"的案例，逐案输出公司、板块、问询要点、回复口径，并对比各案论证差异。
+> 这是一个 IPO/挂牌审核问询法律问题案例库：https://ai.licheng.uk${base}/ （GitHub 源仓库 ${repoUrl} ，含 scripts/index.json 元数据索引，可按板块/法律类别/律所筛选）。请查找涉及"劳务派遣超比例"的案例，逐案输出公司、板块、问询要点、回复口径，并对比各案论证差异。
 
 场景化示例：
 
@@ -1099,7 +1097,7 @@ let kbIndex = `${backButton('/')}# IPO与挂牌审核问询案例库
 
 克隆仓库后让编码代理直接检索全文与索引：
 
-> 在 ~/ipo-inquiry-kb/cases 中检索"未批先建"相关案例，输出每案的问询要点与执业提示；用 scripts/index.json 的 tags 和 board 字段先筛后查，命中案例注明文件名。
+> 在本地 clone 的案例库 cases/ 中检索"未批先建"相关案例，输出每案的问询要点与执业提示；用 scripts/index.json 的 tags 和 board 字段先筛后查，命中案例注明文件名。
 
 ### 提示词写法四个要点
 
@@ -1111,22 +1109,79 @@ let kbIndex = `${backButton('/')}# IPO与挂牌审核问询案例库
 注意：案例内容基于公开披露文件提炼，正式援引问询回复口径前请回交易所官网或见微数据核对公告原文。
 
 `
-
-for (const board of [...kbBoardOrder, '其他']) {
-  const rows = (kbGroups.get(board) || [])
-    .slice()
-    .sort((a, b) => (b.listing_date || '').localeCompare(a.listing_date || ''))
-  if (!rows.length) continue
-  kbIndex += `## ${board}（${rows.length}）\n\n`
-  kbIndex += indexCardList(rows.map((entry) => ({
-    href: `/kb/${entry.file.replace(/\.md$/, '')}`,
-    title: `${entry.company}${entry.code ? `（${entry.code}）` : '（在审）'}`,
-    summary: `${entry.lawyer || '律所未载明'}${entry.listing_date ? `｜${board === '新三板' ? '挂牌' : '上市'} ${entry.listing_date}` : ''}｜${(entry.tags || []).slice(0, 6).join(' / ')}`
-  })))
-  kbIndex += '\n'
 }
 
-writeFileSync(path.join(kbDest, 'index.md'), kbIndex)
+function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle }) {
+  const dest = path.join(siteDir, key)
+  const src = path.join(cacheDir, key)
+  ensureDir(dest)
+  copyMarkdownFiles(path.join(src, 'cases'), dest)
+  // 年度总结报告页（源仓 reports/ 下单文件）
+  const reportsDir = path.join(src, 'reports')
+  if (existsSync(reportsDir)) copyMarkdownFiles(reportsDir, dest)
+  addArticleChromeToMarkdownFiles(dest, `${base}/`, sourceWebUrls[key], src, 'cases/')
+
+  const boardGroups = new Map(kbBoardOrder.map((board) => [board, []]))
+  for (const entry of entries) {
+    const board = boardGroups.has(entry.board) ? entry.board : '其他'
+    if (!boardGroups.has(board)) boardGroups.set(board, [])
+    boardGroups.get(board).push(entry)
+  }
+
+  let indexMd = `${backButton('/')}# ${title}
+
+<p class="section-lead">${lead}</p>
+
+<p class="source-link">来源仓库：${sourceWebUrls[key].replace('https://github.com/', '')}（共 ${entries.length} 份案例）｜<a href="${base}/${annualFile.replace(/\.md$/, '')}">${annualTitle}</a></p>
+
+${aiTutorialSection(base, sourceWebUrls[key], key === 'kb' ? '920079-乔路铭' : '920116-星图测控')}
+`
+
+  for (const board of [...kbBoardOrder, '其他']) {
+    const rows = (boardGroups.get(board) || [])
+      .slice()
+      .sort((a, b) => (b.listing_date || '').localeCompare(a.listing_date || ''))
+    if (!rows.length) continue
+    indexMd += `## ${board}（${rows.length}）\n\n`
+    indexMd += indexCardList(rows.map((entry) => ({
+      href: `${base}/${entry.file.replace(/\.md$/, '')}`,
+      title: `${entry.company}${entry.code ? `（${entry.code}）` : '（在审）'}`,
+      summary: `${entry.lawyer || '律所未载明'}${entry.listing_date ? `｜${board === '新三板' ? '挂牌' : '上市'} ${entry.listing_date}` : ''}｜${(entry.tags || []).slice(0, 6).join(' / ')}`
+    })))
+    indexMd += '\n'
+  }
+
+  writeFileSync(path.join(dest, 'index.md'), indexMd)
+  return dest
+}
+
+// 2026 年度库（/kb/）
+const kbSrc = path.join(cacheDir, 'kb')
+const kbIndexPath = path.join(kbSrc, 'scripts', 'index.json')
+const kbEntries = existsSync(kbIndexPath) ? JSON.parse(readFileSync(kbIndexPath, 'utf8')) : []
+const kbDest = buildKbYear({
+  key: 'kb',
+  base: '/kb',
+  title: 'IPO与挂牌审核问询案例库 · 2026年度',
+  lead: '2026 年上市/挂牌公司审核问询法律问题回溯，一司一文，沉淀"问询要点—回复与核查要点—执业提示"，办理同类项目时可直接检索论证范本与证据链思路。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: kbEntries,
+  annualFile: '2026年度总结.md',
+  annualTitle: '📊 2026 年度总结报告'
+})
+
+// 2025 年度库（/kb2025/）
+const kb2025Src = path.join(cacheDir, 'kb2025')
+const kb2025IndexPath = path.join(kb2025Src, 'scripts', 'index.json')
+const kb2025Entries = existsSync(kb2025IndexPath) ? JSON.parse(readFileSync(kb2025IndexPath, 'utf8')) : []
+const kb2025Dest = buildKbYear({
+  key: 'kb2025',
+  base: '/kb2025',
+  title: 'IPO与挂牌审核问询案例库 · 2025年度',
+  lead: '2025 年上市/挂牌公司审核问询法律问题回溯（A股 116 家 + 新三板 314 家，详述 3,389 个法律问题），一司一文，沉淀"问询要点—回复与核查要点—执业提示"，办理同类项目时可直接检索论证范本与证据链思路。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: kb2025Entries,
+  annualFile: '2025年度总结.md',
+  annualTitle: '📊 2025 年度总结报告'
+})
 
 writeFileSync(path.join(siteDir, 'public', 'feed.xml'), rssFeed(latestArticles))
 writeFileSync(

@@ -1,5 +1,11 @@
 [
   {
+    "href": "/tutorials/listing-inquiry-annual-coldstart-prompt",
+    "title": "任务提示词：A股上市+新三板挂牌公司审核问询法律问题回溯（年度批量，冷启动可复现版）",
+    "summary": "用法：将本文件全文作为任务提示词交给具备 Bash+文件读写能力的 AI 代理（如 ZCode/Codex）。；本提示词自包含全部接口参数、坑与质量标准，无需任何预先准备的脚本。",
+    "section": "AI 教程"
+  },
+  {
     "href": "/tutorials/ai-agent-dispatch",
     "title": "AI智能体智能调度工作教程",
     "summary": "AI智能体不只自己干活，还能调度其他智能体（包括更强的高级分析模型）替你干活。你不需要懂任何技术——扫描文件、比对版本、修改文档、验证结果，全部由 AI 自动完成。你只需要做两件事：把需求说清楚（下提示词），以及对 AI 交回的结论把关……",

@@ -94,7 +94,15 @@ export default defineConfig({
       { text: 'AGENTS 指令', link: '/agents/' },
       { text: 'Skill 技能', link: '/skills/' },
       { text: 'AI 教程', link: '/tutorials/' },
-      { text: '问询案例', link: '/kb/' },
+      {
+        text: '问询案例',
+        items: [
+          { text: '2026 年度案例库', link: '/kb/' },
+          { text: '2025 年度案例库', link: '/kb2025/' },
+          { text: '2026 年度总结', link: '/kb/2026年度总结' },
+          { text: '2025 年度总结', link: '/kb2025/2025年度总结' }
+        ]
+      },
       { text: '实用工具', link: '/tools/' },
       { text: 'GitHub', link: 'https://github.com/lennonli' }
     ],
