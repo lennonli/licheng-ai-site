@@ -16,7 +16,7 @@ export default defineConfig({
   description: '李成律师（上海市锦天城（深圳）律师事务所）法律AI工作站：分享 IPO、北交所上市、尽职调查等资本市场法律业务的 AI 智能体指令、Skills 与工作流教程。',
   cleanUrls: true,
   lastUpdated: true,
-  ignoreDeadLinks: false,
+  ignoreDeadLinks: [/^\/tools\/training-request\/?$/],
   sitemap: { hostname: siteOrigin },
   transformHead({ page, title, description }) {
     const canonical = canonicalUrl(page)
