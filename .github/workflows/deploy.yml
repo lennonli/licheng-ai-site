@@ -65,34 +65,42 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
-          set -euo pipefail
           NS_NAME="licheng-training"
           API="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces"
 
-          NS_ID=$(curl --fail --silent --show-error -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$API?per_page=100" \
-            | node --input-type=module -e "
-                import fs from 'node:fs';
-                const body = JSON.parse(fs.readFileSync(0, 'utf8'));
-                const rows = Array.isArray(body.result) ? body.result : [];
-                const hit = rows.find((row) => row.title === '$NS_NAME');
-                process.stdout.write(hit ? hit.id : '');
-              " || true)
+          LIST_OUT=$(curl --silent -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$API?per_page=100")
+          LIST_CODE=$(curl --silent --output /dev/null --write-out '%{http_code}' -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$API?per_page=100")
+          if [ "$LIST_CODE" != "200" ]; then
+            echo "::warning::KV namespace list returned HTTP $LIST_OUT $LIST_CODE. Grant the deploy token 'Workers KV Storage: Edit' permission to enable the training request center."
+            exit 0
+          fi
+
+          NS_ID=$(printf '%s' "$LIST_OUT" | node --input-type=module -e "
+              import fs from 'node:fs';
+              const body = JSON.parse(fs.readFileSync(0, 'utf8'));
+              const rows = Array.isArray(body.result) ? body.result : [];
+              const hit = rows.find((row) => row.title === '$NS_NAME');
+              process.stdout.write(hit ? hit.id : '');
+            ")
 
           if [ -z "$NS_ID" ]; then
             echo "KV namespace $NS_NAME not found, creating..."
-            NS_ID=$(curl --fail --silent --show-error -X POST \
+            CREATE_OUT=$(curl --silent -X POST \
               -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
               -H 'Content-Type: application/json' \
-              "$API" --data "{\"title\":\"$NS_NAME\"}" \
-              | node --input-type=module -e "
-                  import fs from 'node:fs';
-                  const body = JSON.parse(fs.readFileSync(0, 'utf8'));
-                  if (!body.success) { console.error(JSON.stringify(body.errors || body)); process.exit(1); }
-                  process.stdout.write(body.result ? body.result.id : '');
-                ")
+              "$API" --data "{\"title\":\"$NS_NAME\"}")
+            NS_ID=$(printf '%s' "$CREATE_OUT" | node --input-type=module -e "
+                import fs from 'node:fs';
+                const body = JSON.parse(fs.readFileSync(0, 'utf8'));
+                if (!body.success) { console.error(JSON.stringify(body.errors || body)); process.exit(1); }
+                process.stdout.write(body.result ? body.result.id : '');
+              " || true)
           fi
 
-          test -n "$NS_ID" || { echo 'Failed to resolve KV namespace id.' >&2; exit 1; }
+          if [ -z "$NS_ID" ]; then
+            echo "::warning::Failed to resolve or create KV namespace. Grant 'Workers KV Storage: Edit' to the deploy token; the training center stays disabled until then."
+            exit 0
+          fi
           echo "KV namespace id: $NS_ID"
 
           HTTP_CODE=$(curl --silent --output /tmp/pages-project.json --write-out '%{http_code}' \
@@ -103,8 +111,8 @@ jobs:
             --data "{\"deployment_configs\":{\"production\":{\"kv_namespaces\":{\"TRAINING_KV\":{\"namespace_id\":\"$NS_ID\"}}},\"preview\":{\"kv_namespaces\":{\"TRAINING_KV\":{\"namespace_id\":\"$NS_ID\"}}}}}")
           if [ "$HTTP_CODE" != "200" ]; then
             cat /tmp/pages-project.json >&2
-            echo "Failed to bind KV to Pages project (HTTP $HTTP_CODE)." >&2
-            exit 1
+            echo "::warning::Failed to bind KV to Pages project (HTTP $HTTP_CODE). Training center stays disabled; check token Pages permission."
+            exit 0
           fi
           echo "TRAINING_KV binding is in place."
 
