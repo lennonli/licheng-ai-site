@@ -704,7 +704,7 @@ function writeGeneratedSidebar() {
     '/latest/': [{ text: '最新文章', link: '/latest/' }],
     '/tools/': [
       { text: '实用工具', link: '/tools/' },
-      { text: '法律工具', link: '/tools/legal-tools' },
+      { text: '培训课程表', link: '/tools/legal-tools' },
       { text: '网核网站', link: '/tools/network-check-sites' }
     ]
   }

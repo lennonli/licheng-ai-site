@@ -2725,3 +2725,72 @@ body {
   margin: 0;
   border: none;
 }
+
+/* 课程表：需求收集引导卡 */
+.lc-course-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  padding: 22px 24px;
+  border-radius: 18px;
+  border: 1.5px dashed rgba(14, 111, 63, 0.45);
+  background: linear-gradient(120deg, var(--lc-c-mint), rgba(159, 232, 112, 0.08) 65%);
+}
+
+.lc-course-cta-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #2b7a4d;
+}
+
+.dark .lc-course-cta-eyebrow {
+  color: #9fe870;
+}
+
+.lc-course-cta-copy h2 {
+  margin: 6px 0 8px;
+  font-size: 17.5px;
+  color: var(--lc-c-ink);
+}
+
+.lc-course-cta-copy p {
+  margin: 0;
+  max-width: 46em;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--lc-c-muted);
+}
+
+.lc-course-cta-btn {
+  flex: none;
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  background: linear-gradient(135deg, #0e6f3f, #139657);
+  box-shadow: 0 10px 26px rgba(14, 111, 63, 0.28);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.lc-course-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(14, 111, 63, 0.36);
+}
+
+@media (max-width: 720px) {
+  .lc-course-cta {
+    padding: 18px;
+  }
+
+  .lc-course-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

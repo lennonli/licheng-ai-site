@@ -60,6 +60,45 @@ jobs:
           test -n "$CLOUDFLARE_ACCOUNT_ID"
           test -n "$CLOUDFLARE_API_TOKEN"
 
+      - name: Provision training request KV binding
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          NS_NAME="licheng-training"
+          NS_ID=$(npx wrangler kv namespace list 2>/dev/null \
+            | node --input-type=module -e "
+                import fs from 'node:fs';
+                const rows = JSON.parse(fs.readFileSync(0, 'utf8'));
+                const hit = rows.find((row) => row.title === '$NS_NAME' || row.title.endsWith('/$NS_NAME'));
+                process.stdout.write(hit ? hit.id : '');
+              ")
+          if [ -z "$NS_ID" ]; then
+            echo "KV namespace $NS_NAME not found, creating..."
+            NS_ID=$(npx wrangler kv namespace create "$NS_NAME" 2>/dev/null \
+              | node --input-type=module -e "
+                  import fs from 'node:fs';
+                  const text = fs.readFileSync(0, 'utf8');
+                  const match = text.match(/\"id\"\s*:\s*\"([0-9a-f]{32})\"/) || text.match(/([0-9a-f]{32})/);
+                  process.stdout.write(match ? match[1] : '');
+                ")
+          fi
+          test -n "$NS_ID" || { echo 'Failed to resolve KV namespace id.' >&2; exit 1; }
+          echo "KV namespace id: $NS_ID"
+          HTTP_CODE=$(curl --silent --output /tmp/pages-project.json --write-out '%{http_code}' \
+            -X PATCH \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -H 'Content-Type: application/json' \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/licheng-ai-site" \
+            --data "{\"deployment_configs\":{\"production\":{\"kv_namespaces\":{\"TRAINING_KV\":{\"namespace_id\":\"$NS_ID\"}}},\"preview\":{\"kv_namespaces\":{\"TRAINING_KV\":{\"namespace_id\":\"$NS_ID\"}}}}}")
+          if [ "$HTTP_CODE" != "200" ]; then
+            cat /tmp/pages-project.json >&2
+            echo "Failed to bind KV to Pages project (HTTP $HTTP_CODE)." >&2
+            exit 1
+          fi
+          echo "TRAINING_KV binding is in place."
+
       - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

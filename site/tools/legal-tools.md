@@ -11,7 +11,19 @@
   </div>
 </div>
 
-<p class="section-lead">培训形式：讲解演示 + 场景工作流拆解 + 示例文件操作 ｜ 课程目标：从 AI 的执行者，转换为审核者和流程设计者。</p>
+<div class="lc-course-cta">
+  <div class="lc-course-cta-copy">
+    <span class="lc-course-cta-eyebrow">TRAINING REQUEST</span>
+    <h2>没找到想学的主题？把您的培训需求告诉我们</h2>
+    <p>课程表之外的方向、想深入的场景，都可以提交到「AI 法律培训需求收集中心」。您的需求将公开展示——提交前请先浏览已有需求，方向相近的直接补充细节即可，无需重复填写。</p>
+  </div>
+  <a class="lc-course-cta-btn" href="/tools/training-request/" target="_blank" rel="noopener">进入需求收集中心<span aria-hidden="true"> ↗</span></a>
+</div>
+
+
+<p class="section-lead">培训形式：讲解演示 + 场景工作流拆解 + 示例文件操作。</p>
+
+<p class="section-lead"><strong>课程目标：</strong>从 AI 的执行者，转换为审核者和流程设计者。</p>
 
 ## 模块一 · 基础与方法
 
