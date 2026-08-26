@@ -116,6 +116,31 @@ jobs:
           fi
           echo "TRAINING_KV binding is in place."
 
+          echo "Cleaning up test submissions..."
+          NS_ID="$NS_ID" CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID" CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN" \
+          node --input-type=module -e "
+            const base = 'https://api.cloudflare.com/client/v4/accounts/' + process.env.CLOUDFLARE_ACCOUNT_ID + '/storage/kv/namespaces/' + process.env.NS_ID
+            const h = { Authorization: 'Bearer ' + process.env.CLOUDFLARE_API_TOKEN }
+            const keysRes = await (await fetch(base + '/keys?limit=1000', { headers: h })).json()
+            const names = (keysRes.result || []).map((k) => k.name).filter((n) => n.startsWith('req:'))
+            let idx
+            try { idx = JSON.parse(await (await fetch(base + '/values/idx', { headers: h })).text() || '[]') } catch { idx = [] }
+            const removed = new Set()
+            for (const name of names) {
+              const raw = await (await fetch(base + '/values/' + name, { headers: h })).text()
+              try {
+                const row = JSON.parse(raw)
+                if (typeof row.c === 'string' && row.c.startsWith('[测试]')) removed.add(row.id)
+              } catch { /* skip */ }
+            }
+            if (removed.size) {
+              for (const id of removed) await fetch(base + '/values/req:' + id, { method: 'DELETE', headers: h })
+              const kept = idx.filter((id) => !removed.has(id))
+              await fetch(base + '/values/idx', { method: 'PUT', headers: h, body: JSON.stringify(kept) })
+            }
+            console.log('Removed ' + removed.size + ' test submission(s).')
+          "
+
       - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
