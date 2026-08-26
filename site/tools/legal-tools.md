@@ -1,10 +1,8 @@
 <BackButton fallback="/tools/" />
 
-# 法律工具
-
 <div class="lc-course-hero">
   <span class="lc-course-kicker">Legal AI Training Program</span>
-  <p class="lc-course-title">法律业务 AI 培训课程表 · 2026 秋季版</p>
+  <h1 class="lc-course-title">法律业务 AI 培训课程表 · 2026年8月</h1>
   <p class="lc-course-subtitle">面向法律业务场景的 AI 工具配置、自动化核查、合同审查、诉讼文书、台账监测、模板化成稿与交付边界培训。每门课均标注本站配套资料，课后可对照复练；课程与示例同步更新于本站 AGENTS 指令库与 AI 教程栏目。</p>
   <div class="lc-course-stats">
     <div class="lc-course-stat"><b>20</b><span>门课程</span></div>
@@ -13,7 +11,7 @@
   </div>
 </div>
 
-<p class="section-lead">培训对象：律师团队、法务部门及法律服务机构 ｜ 培训形式：讲解演示 + 场景工作流拆解 + 示例文件操作 ｜ 课程目标：从 AI 的执行者，转换为审核者和流程设计者。</p>
+<p class="section-lead">培训形式：讲解演示 + 场景工作流拆解 + 示例文件操作 ｜ 课程目标：从 AI 的执行者，转换为审核者和流程设计者。</p>
 
 ## 模块一 · 基础与方法
 
@@ -100,14 +98,61 @@
   </ul>
 </div>
 
-## 模块三 · 证券业务专项
+## 模块三 · 诉讼实战
 
 <div class="lc-course-module">
-  <div class="lc-course-module-head"><span class="lc-course-part">PART 3</span><h3>证券业务专项（IPO / 北交所 / 新三板）</h3><span class="lc-course-module-meta">5 门 · 约 80 分钟</span></div>
+  <div class="lc-course-module-head"><span class="lc-course-part">PART 3</span><h3>诉讼实战</h3><span class="lc-course-module-meta">4 门 · 约 62 分钟</span></div>
   <ul class="lc-course-list">
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">08</span><p class="lc-course-name">类案检索报告（诉讼与非诉通用）</p><span class="lc-course-time">12 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">08</span><p class="lc-course-name">诉讼证据整理与证据目录制作</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">18 分钟</span></div>
+    <ul class="lc-course-points">
+      <li>批量 OCR 识别扫描证据（本地识别优先，保密件不出机）；按证据组归类与规范命名</li>
+      <li>编制证据目录：证据名称、来源、证明目的、页码索引；证据组与事实要素对应表</li>
+      <li>双方证据交换比对表、案件事实时间轴自动抽取（借款/还款/催告/担保等关键节点）</li>
+    </ul>
+  </li>
+
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">09</span><p class="lc-course-name">起诉状、答辩状与上诉状起草</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">14 分钟</span></div>
+    <ul class="lc-course-points">
+      <li>从合同、往来函件、对账记录中提取事实要素与违约情形归纳</li>
+      <li>诉讼请求金额试算：本金 + 利息 + 违约金的分段计算表（LPR 分段计息），附计算过程备查</li>
+      <li>管辖依据核查与起诉状套打；上诉状写作要点与 15 日上诉期联动提醒（结合第 04 课定时任务）</li>
+    </ul>
+  </li>
+
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">10</span><p class="lc-course-name">举证质证意见与代理词撰写</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">14 分钟</span></div>
+    <ul class="lc-course-points">
+      <li>对方证据逐份质证意见表：真实性、合法性、关联性三性分析 + 证明力评价 + 反驳要点</li>
+      <li>己方举证说明与补强建议；类案裁判规则引入辅助论证（须回官方来源核验条文原文）</li>
+      <li>代理词框架生成：争议焦点归纳、逐项论证、结论与请求；人工把关立场性表述</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/法律业务通用指令">反编造红线与法条核验规则</a></div>
+  </li>
+
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">11</span><p class="lc-course-name">庭审提纲、庭审提醒与诉讼归档</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">16 分钟</span></div>
+    <ul class="lc-course-points">
+      <li>庭审提纲：法庭调查发问提纲（对我方/对对方）、质证预案、对方可能抗辩树与应对要点</li>
+      <li>庭前事项清单与庭审备忘模板；结案后代理人报告初稿生成</li>
+      <li>诉讼归档：判决书/裁定书识别、裁判结果结构化、执行节点跟踪；开庭日临近自动汇总提醒（定时任务实战收尾）</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tools/network-check-sites">司法公开查询入口</a></div>
+  </li>
+
+  </ul>
+</div>
+
+## 模块四 · 非诉业务专项
+
+<div class="lc-course-module">
+  <div class="lc-course-module-head"><span class="lc-course-part">PART 4</span><h3>非诉业务专项（IPO / 北交所 / 新三板）</h3><span class="lc-course-module-meta">5 门 · 约 80 分钟</span></div>
+  <ul class="lc-course-list">
+
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">类案检索报告（诉讼与非诉通用）</p><span class="lc-course-time">12 分钟</span></div>
     <ul class="lc-course-points">
       <li>诉讼类案与非诉监管案例的语义检索、关键词筛选与可引用依据整理</li>
       <li>检索报告、裁判/监管观点摘要、风险提示与项目可复用资料库</li>
@@ -117,7 +162,7 @@
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">09</span><p class="lc-course-name">IPO 反馈问题与上市公告检索</p><span class="lc-course-time">12 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">IPO 反馈问题与上市公告检索</p><span class="lc-course-time">12 分钟</span></div>
     <ul class="lc-course-points">
       <li>IPO 反馈问题、问询回复、上市公告、三会公告、重大资产重组公告检索实操</li>
       <li>监管口径摘要、公告核查表、问题清单与审核进程跟踪</li>
@@ -126,7 +171,7 @@
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">10</span><p class="lc-course-name">法律尽职调查报告与底稿实务</p><span class="lc-course-time">26 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">法律尽职调查报告与底稿实务</p><span class="lc-course-time">26 分钟</span></div>
     <ul class="lc-course-points">
       <li>底稿文件类型识别、关键信息提取、底稿索引与资料缺口清单</li>
       <li>尽调报告起草：工商内档核查、股权历史沿革梳理、申报文件与监管回复初稿</li>
@@ -136,7 +181,7 @@
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">11</span><p class="lc-course-name">股东穿透核查与出资流水专班</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">22 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">股东穿透核查与出资流水专班</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">22 分钟</span></div>
     <ul class="lc-course-points">
       <li>从零穿透：元典接口逐层穿透、终止主体判定、国有属性向上传导、覆盖率自检</li>
       <li>报告已生成场景：1,600+ 节点归档体系批量创建、17 列跟踪表、身份证 OCR 三重验算</li>
@@ -146,7 +191,7 @@
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">三会文件·承诺函·查验计划批量制作</p><span class="lc-course-time">20 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">三会文件·承诺函·查验计划批量制作</p><span class="lc-course-time">20 分钟</span></div>
     <ul class="lc-course-points">
       <li>以参考公司为模板批量起草三会文件：映射表建立、先长后短替换、零残留质检</li>
       <li>承诺函：控制表比对、签署主体口径（曾任监事人员、未成年人代签、持股平台双层承诺）、签署页技术规范</li>
@@ -158,14 +203,14 @@
   </ul>
 </div>
 
-## 模块四 · 文书成稿与人机协作
+## 模块五 · 文书成稿与人机协作
 
 <div class="lc-course-module">
-  <div class="lc-course-module-head"><span class="lc-course-part">PART 4</span><h3>文书成稿与人机协作</h3><span class="lc-course-module-meta">4 门 · 约 58 分钟</span></div>
+  <div class="lc-course-module-head"><span class="lc-course-part">PART 5</span><h3>文书成稿与人机协作</h3><span class="lc-course-module-meta">4 门 · 约 58 分钟</span></div>
   <ul class="lc-course-list">
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">模板化法律文书自动生成</p><span class="lc-course-time">14 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">模板化法律文书自动生成</p><span class="lc-course-time">14 分钟</span></div>
     <ul class="lc-course-points">
       <li>报价函、法律服务建议书、法律意见书、律师函、合同文本的字段映射与固定措辞</li>
       <li>格式规范、引用规则和输出详细程度要求；访谈笔录扫描件的 Word 定稿改造实例</li>
@@ -174,7 +219,7 @@
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">培训 PPT、投标文件与业绩材料成稿</p><span class="lc-course-time">12 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">18</span><p class="lc-course-name">培训 PPT、投标文件与业绩材料成稿</p><span class="lc-course-time">12 分钟</span></div>
     <ul class="lc-course-points">
       <li>培训 PPT、客户汇报材料、投标文件和服务方案的自动成稿</li>
       <li>历史业绩、人员履历、项目经验的一致性检查与人工润色边界</li>
@@ -183,7 +228,7 @@
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">批量格式调整、归档与交付规范</p><span class="lc-course-time">12 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">19</span><p class="lc-course-name">批量格式调整、归档与交付规范</p><span class="lc-course-time">12 分钟</span></div>
     <ul class="lc-course-points">
       <li>批量重命名、格式统一、目录编号、页眉页脚、Word/PDF 转换、表格清洗</li>
       <li>底稿目录修订手册：报告期延长覆盖时点核查、文件夹完整性比对、同类项目比对</li>
@@ -193,60 +238,13 @@
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">20 分钟</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">20</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">20 分钟</span></div>
     <ul class="lc-course-points">
       <li>调度外部智能体干活：指定高级分析模型审修订、做清洁版定稿、检查链路可用性</li>
       <li>辅助对话的正确用法：不打断长任务问出处、只回忆不检索的红线、辅助对话不作底稿</li>
       <li>跨 AI 任务接力与验收：额度用完换一家续上、让新 AI 先当验收员（左右手互搏）</li>
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/ai-agent-dispatch">智能体调度工作教程</a><a class="lc-course-link" href="/tutorials/ai-agent-side-conversation">辅助对话的律师用法</a><a class="lc-course-link" href="/tutorials/ai-task-handoff">额度没了换 AI 续任务</a></div>
-  </li>
-
-  </ul>
-</div>
-
-## 模块五 · 诉讼实战
-
-<div class="lc-course-module">
-  <div class="lc-course-module-head"><span class="lc-course-part">PART 5</span><h3>诉讼实战</h3><span class="lc-course-module-meta">4 门 · 约 62 分钟</span></div>
-  <ul class="lc-course-list">
-
-  <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">诉讼证据整理与证据目录制作</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">18 分钟</span></div>
-    <ul class="lc-course-points">
-      <li>批量 OCR 识别扫描证据（本地识别优先，保密件不出机）；按证据组归类与规范命名</li>
-      <li>编制证据目录：证据名称、来源、证明目的、页码索引；证据组与事实要素对应表</li>
-      <li>双方证据交换比对表、案件事实时间轴自动抽取（借款/还款/催告/担保等关键节点）</li>
-    </ul>
-  </li>
-
-  <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">18</span><p class="lc-course-name">起诉状、答辩状与上诉状起草</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">14 分钟</span></div>
-    <ul class="lc-course-points">
-      <li>从合同、往来函件、对账记录中提取事实要素与违约情形归纳</li>
-      <li>诉讼请求金额试算：本金 + 利息 + 违约金的分段计算表（LPR 分段计息），附计算过程备查</li>
-      <li>管辖依据核查与起诉状套打；上诉状写作要点与 15 日上诉期联动提醒（结合第 04 课定时任务）</li>
-    </ul>
-  </li>
-
-  <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">19</span><p class="lc-course-name">举证质证意见与代理词撰写</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">14 分钟</span></div>
-    <ul class="lc-course-points">
-      <li>对方证据逐份质证意见表：真实性、合法性、关联性三性分析 + 证明力评价 + 反驳要点</li>
-      <li>己方举证说明与补强建议；类案裁判规则引入辅助论证（须回官方来源核验条文原文）</li>
-      <li>代理词框架生成：争议焦点归纳、逐项论证、结论与请求；人工把关立场性表述</li>
-    </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/法律业务通用指令">反编造红线与法条核验规则</a></div>
-  </li>
-
-  <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">20</span><p class="lc-course-name">庭审提纲、庭审提醒与诉讼归档</p><span class="lc-course-badge-new">新增</span><span class="lc-course-time">16 分钟</span></div>
-    <ul class="lc-course-points">
-      <li>庭审提纲：法庭调查发问提纲（对我方/对对方）、质证预案、对方可能抗辩树与应对要点</li>
-      <li>庭前事项清单与庭审备忘模板；结案后代理人报告初稿生成</li>
-      <li>诉讼归档：判决书/裁定书识别、裁判结果结构化、执行节点跟踪；开庭日临近自动汇总提醒（定时任务实战收尾）</li>
-    </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tools/network-check-sites">司法公开查询入口</a></div>
   </li>
 
   </ul>
