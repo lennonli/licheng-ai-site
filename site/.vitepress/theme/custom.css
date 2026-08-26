@@ -2794,3 +2794,8 @@ body {
     text-align: center;
   }
 }
+
+.dark .lc-course-cta {
+  border-color: rgba(159, 232, 112, 0.35);
+  background: linear-gradient(120deg, rgba(159, 232, 112, 0.13), rgba(159, 232, 112, 0.04) 65%);
+}
