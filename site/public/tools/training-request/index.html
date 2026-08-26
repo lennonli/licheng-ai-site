@@ -112,6 +112,12 @@
 
     .privacy { margin: 12px 0 0; font-size: 12px; color: var(--muted); }
 
+    .notice {
+      margin: 0 0 14px; padding: 12px 14px; border-radius: 10px;
+      font-size: 13px; line-height: 1.7; color: #7c4a03;
+      background: rgba(242, 184, 75, 0.14); border: 1px solid rgba(194, 141, 33, 0.4);
+    }
+
     .list-head { display: flex; align-items: center; gap: 10px; margin-top: 30px; }
 
     .list-head h2 { margin: 0; font-size: 16.5px; }
@@ -180,6 +186,7 @@
     <section class="card">
       <h2>提交培训需求</h2>
       <p class="hint">建议写明：业务场景（如合同审查、尽调、诉讼文书）、期望解决的问题、您的熟练程度。请勿提交涉密信息。</p>
+      <div class="notice" id="notice" hidden>需求收集服务正在开通中，暂时无法在线提交。您可以扫描页面底部二维码，通过微信直接把需求告诉李成律师，或稍后再来提交。</div>
       <textarea id="content" maxlength="500" placeholder="例如：希望加一节课，讲如何用 AI 批量核对建设工程合同的工期与违约条款……"></textarea>
       <div class="row">
         <span class="count" id="count">0 / 500</span>
@@ -250,7 +257,10 @@
           .then(function (r) { return r.json() })
           .then(function (data) {
             if (!data.configured) {
-              $items.innerHTML = '<div class="empty">服务配置初始化中，请稍后刷新重试。</div>'
+              $items.innerHTML = '<div class="empty">需求列表暂未开通，服务正在配置中。</div>'
+              document.getElementById('notice').hidden = false
+              $submit.disabled = true
+              setStatus('需求收集服务正在开通中，暂无法提交。', 'warn')
               return
             }
             $total.textContent = '共 ' + (data.total || 0) + ' 条'
@@ -292,6 +302,9 @@
               setStatus('短时间内您已提交过相同内容，无需重复提交。', 'warn')
             } else if (res.code === 429) {
               setStatus('提交过于频繁，请几分钟后再试。', 'warn')
+            } else if (res.code === 503) {
+              setStatus('需求收集服务正在开通中，暂无法提交，请通过微信联系李成律师反馈需求。', 'warn')
+              document.getElementById('notice').hidden = false
             } else {
               setStatus((res.data && res.data.error) || '提交失败，请稍后重试。', 'err')
             }
