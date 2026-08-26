@@ -2683,3 +2683,38 @@ body {
 .lc-course-title {
   margin: 0;
 }
+
+/* 课程表：.vp-doc 作用域特异性修正 */
+.vp-doc .lc-course-title {
+  margin: 0;
+  color: #ffffff;
+}
+
+.vp-doc .lc-course-subtitle {
+  color: rgba(246, 251, 239, 0.86);
+}
+
+.vp-doc ul.lc-course-list,
+.vp-doc ul.lc-course-points {
+  list-style: none;
+  margin: 0;
+}
+
+.vp-doc ul.lc-course-list {
+  padding: 6px 0;
+}
+
+.vp-doc ul.lc-course-points {
+  padding: 0;
+  margin-top: 12px;
+}
+
+.vp-doc ul.lc-course-list > li,
+.vp-doc ul.lc-course-points > li {
+  list-style: none;
+}
+
+.vp-doc ul.lc-course-list > li::marker,
+.vp-doc ul.lc-course-points > li::marker {
+  content: none;
+}
