@@ -10,7 +10,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   <h1 class="lc-course-title">法律业务 AI 培训课程表 · 2026年8月</h1>
   <p class="lc-course-subtitle">面向法律业务场景的 AI 工具配置、自动化核查、合同审查、诉讼文书、台账监测、模板化成稿与交付边界培训。每门课均标注本站配套资料，课后可对照复练；课程与示例同步更新于本站 AGENTS 指令库与 AI 教程栏目。</p>
   <div class="lc-course-stats">
-    <div class="lc-course-stat"><b>21</b><span>门课程</span></div>
+    <div class="lc-course-stat"><b>22</b><span>门课程</span></div>
     <div class="lc-course-stat"><b>180</b><span>分钟左右 · 节奏弹性</span></div>
     <div class="lc-course-stat"><b>5</b><span>大模块 · 可拆半场</span></div>
   </div>
@@ -128,6 +128,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
       <li>编制证据目录：证据名称、来源、证明目的、页码索引；证据组与事实要素对应表</li>
       <li>双方证据交换比对表、案件事实时间轴自动抽取（借款/还款/催告/担保等关键节点）</li>
     </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/litigation-evidence-organization">诉讼证据整理教程</a></div>
   </li>
 
   <li class="lc-course-item">
@@ -137,6 +138,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
       <li>诉讼请求金额试算：本金 + 利息 + 违约金的分段计算表（LPR 分段计息），附计算过程备查</li>
       <li>管辖依据核查与起诉状套打；上诉状写作要点与 15 日上诉期联动提醒（结合第 04 课定时任务）</li>
     </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/litigation-pleadings-drafting">起诉状答辩状上诉状起草教程</a></div>
   </li>
 
   <li class="lc-course-item">
@@ -146,7 +148,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
       <li>己方举证说明与补强建议；类案裁判规则引入辅助论证（须回官方来源核验条文原文）</li>
       <li>代理词框架生成：争议焦点归纳、逐项论证、结论与请求；人工把关立场性表述</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/法律业务通用指令">反编造红线与法条核验规则</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/法律业务通用指令">反编造红线与法条核验规则</a><a class="lc-course-link" href="/tutorials/litigation-evidence-arguments">举证质证意见与代理词撰写教程</a></div>
   </li>
 
   <li class="lc-course-item">
@@ -156,7 +158,18 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
       <li>庭前事项清单与庭审备忘模板；结案后代理人报告初稿生成</li>
       <li>诉讼归档：判决书/裁定书识别、裁判结果结构化、执行节点跟踪；开庭日临近自动汇总提醒（定时任务实战收尾）</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tools/network-check-sites">司法公开查询入口</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tools/network-check-sites">司法公开查询入口</a><a class="lc-course-link" href="/tutorials/litigation-trial-outline-archiving">庭审提纲与归档教程</a></div>
+  </li>
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">AI 诉讼实战进阶工作流（五讲）</p><span class="lc-course-badge-new">新增</span></div>
+    <ul class="lc-course-points">
+      <li>AI 模拟法庭与庭审陪练：对方律师/法官双角色子代理对抗演练，庭前暴露争议焦点与证据弱点</li>
+      <li>诉讼策略与案件评估：类案裁判倾向统计、偿付能力画像、三档策略设计与保全时机判断</li>
+      <li>强制执行与财产线索：被执行人全景画像、财产线索网核留痕、执行文书模板复用起草</li>
+      <li>庭后复盘与裁判文书深读：庭审实录结构化、判决书说理链条拆解、上诉决策量化评估</li>
+      <li>AI 辅助调解与谈判：利益图谱与 BATNA 分析、三套和解方案折现对比、对手模拟两轮推演、协议起草</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/litigation-moot-court">模拟法庭陪练教程</a><a class="lc-course-link" href="/tutorials/litigation-strategy-assessment">策略评估教程</a><a class="lc-course-link" href="/tutorials/enforcement-asset-discovery">强制执行教程</a><a class="lc-course-link" href="/tutorials/post-trial-review">庭后复盘教程</a><a class="lc-course-link" href="/tutorials/mediation-negotiation">调解谈判教程</a></div>
   </li>
 
   </ul>
@@ -169,7 +182,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   <ul class="lc-course-list">
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">类案检索报告（诉讼与非诉通用）</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">类案检索报告（诉讼与非诉通用）</p></div>
     <ul class="lc-course-points">
       <li>诉讼类案与非诉监管案例的语义检索、关键词筛选与可引用依据整理</li>
       <li>检索报告、裁判/监管观点摘要、风险提示与项目可复用资料库</li>
@@ -179,7 +192,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">IPO 反馈问题与上市公告检索</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">IPO 反馈问题与上市公告检索</p></div>
     <ul class="lc-course-points">
       <li>IPO 反馈问题、问询回复、上市公告、三会公告、重大资产重组公告检索实操</li>
       <li>监管口径摘要、公告核查表、问题清单与审核进程跟踪</li>
@@ -188,7 +201,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">法律尽职调查报告与底稿实务</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">法律尽职调查报告与底稿实务</p></div>
     <ul class="lc-course-points">
       <li>底稿文件类型识别、关键信息提取、底稿索引与资料缺口清单</li>
       <li>尽调报告起草：工商内档核查、股权历史沿革梳理、申报文件与监管回复初稿</li>
@@ -198,7 +211,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">股东穿透核查与出资流水专班</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">股东穿透核查与出资流水专班</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
       <li>从零穿透：元典接口逐层穿透、终止主体判定、国有属性向上传导、覆盖率自检</li>
       <li>报告已生成场景：1,600+ 节点归档体系批量创建、17 列跟踪表、身份证 OCR 三重验算</li>
@@ -208,7 +221,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">三会文件·承诺函·查验计划批量制作</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">三会文件·承诺函·查验计划批量制作</p></div>
     <ul class="lc-course-points">
       <li>以参考公司为模板批量起草三会文件：映射表建立、先长后短替换、零残留质检</li>
       <li>承诺函：控制表比对、签署主体口径（曾任监事人员、未成年人代签、持股平台双层承诺）、签署页技术规范</li>
@@ -218,7 +231,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">网络舆情监控与定时送达</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">18</span><p class="lc-course-name">网络舆情监控与定时送达</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
       <li>定时任务监控：对目标公司设置周期性巡查（如每日/每周自动执行），无需人工盯守</li>
       <li>监控维度：新增诉讼与开庭公告、行政处罚、失信被执行等司法监管动态；审核进展与 IPO 相关负面舆情</li>
@@ -236,7 +249,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   <ul class="lc-course-list">
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">18</span><p class="lc-course-name">模板化法律文书自动生成</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">19</span><p class="lc-course-name">模板化法律文书自动生成</p></div>
     <ul class="lc-course-points">
       <li>报价函、法律服务建议书、法律意见书、律师函、合同文本的字段映射与固定措辞</li>
       <li>格式规范、引用规则和输出详细程度要求；访谈笔录扫描件的 Word 定稿改造实例</li>
@@ -245,7 +258,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">19</span><p class="lc-course-name">培训 PPT、投标文件与业绩材料成稿</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">20</span><p class="lc-course-name">培训 PPT、投标文件与业绩材料成稿</p></div>
     <ul class="lc-course-points">
       <li>培训 PPT、客户汇报材料、投标文件和服务方案的自动成稿</li>
       <li>历史业绩、人员履历、项目经验的一致性检查与人工润色边界</li>
@@ -254,7 +267,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">20</span><p class="lc-course-name">批量格式调整、归档与交付规范</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">21</span><p class="lc-course-name">批量格式调整、归档与交付规范</p></div>
     <ul class="lc-course-points">
       <li>批量重命名、格式统一、目录编号、页眉页脚、Word/PDF 转换、表格清洗</li>
       <li>底稿目录修订手册：报告期延长覆盖时点核查、文件夹完整性比对、同类项目比对</li>
@@ -264,7 +277,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">21</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">22</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
       <li>调度外部智能体干活：指定高级分析模型审修订、做清洁版定稿、检查链路可用性</li>
       <li>辅助对话的正确用法：不打断长任务问出处、只回忆不检索的红线、辅助对话不作底稿</li>
