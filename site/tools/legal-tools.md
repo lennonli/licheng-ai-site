@@ -240,6 +240,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/结案归档与知识沉淀">结案归档与知识沉淀教程</a></div>
   </li>
 
+  </ul>
 </div>
 
 ## 模块四 · 非诉业务专项
