@@ -10,7 +10,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   <h1 class="lc-course-title">法律业务 AI 培训课程表 · 2026年8月</h1>
   <p class="lc-course-subtitle">面向法律业务场景的 AI 工具配置、自动化核查、合同审查、诉讼文书、台账监测、模板化成稿与交付边界培训。每门课均标注本站配套资料，课后可对照复练；课程与示例同步更新于本站 AGENTS 指令库与 AI 教程栏目。</p>
   <div class="lc-course-stats">
-    <div class="lc-course-stat"><b>20</b><span>门课程</span></div>
+    <div class="lc-course-stat"><b>21</b><span>门课程</span></div>
     <div class="lc-course-stat"><b>180</b><span>分钟左右 · 节奏弹性</span></div>
     <div class="lc-course-stat"><b>5</b><span>大模块 · 可拆半场</span></div>
   </div>
@@ -39,7 +39,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">01</span><p class="lc-course-name">AI 工具矩阵与法律 Skills 体系</p></div>
     <ul class="lc-course-points">
-      <li>Claude、Codex、国内大模型及办公自动化工具在法律业务中的定位、优势与适用边界</li>
+      <li>Claude、Codex、Workbuddy、豆包工作等国内大模型及办公自动化工具在法律业务中的定位、优势与适用边界</li>
       <li>合同审查、网络核查、类案检索、商标台账、模板成稿等专用 Skills 的设计思路</li>
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/legal-ai-agent-selection-202607">法律工作如何选择 AI 智能体</a><a class="lc-course-link" href="/tutorials/agent-instruction-tool-selection-training">智能体指令体系培训讲义</a><a class="lc-course-link" href="/tutorials/claude-codex-app-ccswitch-domestic-models">CC Switch 接入国产模型</a></div>
@@ -217,6 +217,15 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/北交所三会文件批量起草提示词">三会文件批量起草</a><a class="lc-course-link" href="/agents/北交所上市各主体承诺文件起草与修订提示词">承诺函起草与修订</a><a class="lc-course-link" href="/agents/新三板转北交所查验计划更新提示词">查验计划更新</a><a class="lc-course-link" href="/agents/章程与制度体系深度审查提示词">章程制度深度审查</a></div>
   </li>
 
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">网络舆情监控与定时送达</p><span class="lc-course-badge-new">新增</span></div>
+    <ul class="lc-course-points">
+      <li>定时任务监控：对目标公司设置周期性巡查（如每日/每周自动执行），无需人工盯守</li>
+      <li>监控维度：新增诉讼与开庭公告、行政处罚、失信被执行等司法监管动态；审核进展与 IPO 相关负面舆情</li>
+      <li>结果送达：舆情消息通过对话和邮件自动推送，重要事项即时提醒（定时任务搭建方法见第 04 课）</li>
+    </ul>
+  </li>
+
   </ul>
 </div>
 
@@ -227,7 +236,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   <ul class="lc-course-list">
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">模板化法律文书自动生成</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">18</span><p class="lc-course-name">模板化法律文书自动生成</p></div>
     <ul class="lc-course-points">
       <li>报价函、法律服务建议书、法律意见书、律师函、合同文本的字段映射与固定措辞</li>
       <li>格式规范、引用规则和输出详细程度要求；访谈笔录扫描件的 Word 定稿改造实例</li>
@@ -236,7 +245,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">18</span><p class="lc-course-name">培训 PPT、投标文件与业绩材料成稿</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">19</span><p class="lc-course-name">培训 PPT、投标文件与业绩材料成稿</p></div>
     <ul class="lc-course-points">
       <li>培训 PPT、客户汇报材料、投标文件和服务方案的自动成稿</li>
       <li>历史业绩、人员履历、项目经验的一致性检查与人工润色边界</li>
@@ -245,7 +254,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">19</span><p class="lc-course-name">批量格式调整、归档与交付规范</p></div>
+    <div class="lc-course-row"><span class="lc-course-no">20</span><p class="lc-course-name">批量格式调整、归档与交付规范</p></div>
     <ul class="lc-course-points">
       <li>批量重命名、格式统一、目录编号、页眉页脚、Word/PDF 转换、表格清洗</li>
       <li>底稿目录修订手册：报告期延长覆盖时点核查、文件夹完整性比对、同类项目比对</li>
@@ -255,7 +264,7 @@ description: 面向法律业务场景的 AI 培训课程：工具配置、自动
   </li>
 
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">20</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">21</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
       <li>调度外部智能体干活：指定高级分析模型审修订、做清洁版定稿、检查链路可用性</li>
       <li>辅助对话的正确用法：不打断长任务问出处、只回忆不检索的红线、辅助对话不作底稿</li>
