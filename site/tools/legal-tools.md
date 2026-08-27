@@ -31,7 +31,6 @@
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 1</span><h3>基础与方法</h3></div>
   <ul class="lc-course-list">
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">01</span><p class="lc-course-name">AI 工具矩阵与法律 Skills 体系</p></div>
     <ul class="lc-course-points">
@@ -40,7 +39,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/legal-ai-agent-selection-202607">法律工作如何选择 AI 智能体</a><a class="lc-course-link" href="/tutorials/agent-instruction-tool-selection-training">智能体指令体系培训讲义</a><a class="lc-course-link" href="/tutorials/claude-codex-app-ccswitch-domestic-models">CC Switch 接入国产模型</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">02</span><p class="lc-course-name">项目配置、指令文件与记忆体系</p></div>
     <ul class="lc-course-points">
@@ -50,7 +48,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/法律业务通用指令">法律业务通用指令</a><a class="lc-course-link" href="/tutorials/ai-agent-memory-comparison">AI 智能体的记忆</a><a class="lc-course-link" href="/tutorials/ai-agent-conversation-management">对话管理实务教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">03</span><p class="lc-course-name">MCP 数据源接入与资料安全</p></div>
     <ul class="lc-course-points">
@@ -60,7 +57,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/lawyer-mcp-setup">律师 MCP 搭建实用教程</a><a class="lc-course-link" href="/agents/元典企业信息库股东穿透核查提示词">元典股东穿透核查提示词</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">04</span><p class="lc-course-name">AI 定时任务与关键期限预警</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -69,7 +65,6 @@
       <li>纪律：一个任务管一件事、任务指令写清最终动作与收件人、定期检查静默失败</li>
     </ul>
   </li>
-
   </ul>
 </div>
 
@@ -78,7 +73,6 @@
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 2</span><h3>合同与商业核查</h3></div>
   <ul class="lc-course-list">
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">05</span><p class="lc-course-name">合同审查、起草修订与 OA 流程自动审查</p></div>
     <ul class="lc-course-points">
@@ -89,7 +83,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/合同审查和起草">合同审查和起草指令</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">06</span><p class="lc-course-name">网络核查（合规）与证据留痕</p></div>
     <ul class="lc-course-points">
@@ -98,7 +91,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/network-check-v3">中国企业网络核查 Skill</a><a class="lc-course-link" href="/tools/network-check-sites">网核网站清单</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">07</span><p class="lc-course-name">知识产权核查与全球商标台账</p></div>
     <ul class="lc-course-points">
@@ -107,7 +99,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/cnipa-trademark-evidence-archive">CNIPA 商标证据归档</a><a class="lc-course-link" href="/skills/cnipa-patent-evidence-archive">CNIPA 专利证据归档</a></div>
   </li>
-
   </ul>
 </div>
 
@@ -116,7 +107,6 @@
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 3</span><h3>诉讼实战</h3></div>
   <ul class="lc-course-list">
-
     <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">08</span><p class="lc-course-name">诉讼 AI 工作总则</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -128,7 +118,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/民事诉讼AI工作总则">诉讼 AI 工作总则教程</a><a class="lc-course-link" href="/tutorials/民事诉讼AI实战系列-README">系列总览导航</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">09</span><p class="lc-course-name">诉前评估与诉讼策略</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -140,7 +129,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/诉前评估与诉讼策略">诉前评估与诉讼策略教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">10</span><p class="lc-course-name">诉讼证据整理与证据目录制作</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -152,7 +140,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/证据整理与证据目录">证据整理与证据目录教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">11</span><p class="lc-course-name">起诉状、答辩状与上诉状起草</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -164,7 +151,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/起诉状答辩状与上诉状起草">起诉状答辩状与上诉状起草教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">庭审举证与质证</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -176,7 +162,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/庭审举证与质证">庭审举证与质证教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">庭前对抗演练与庭审提纲</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -188,7 +173,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/庭前对抗演练与庭审提纲">庭前对抗演练与庭审提纲教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">代理词撰写</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -200,7 +184,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/代理词撰写">代理词撰写教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">庭后复盘与裁判文书深读</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -212,7 +195,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/庭后复盘与裁判文书深读">庭后复盘与裁判文书深读教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">强制执行与财产线索</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -224,7 +206,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/强制执行与财产线索">强制执行与财产线索教程</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">结案归档与知识沉淀</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -235,7 +216,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/结案归档与知识沉淀">结案归档与知识沉淀教程</a></div>
   </li>
-
   </ul>
 </div>
 
@@ -244,7 +224,6 @@
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 4</span><h3>非诉业务专项（IPO / 北交所 / 新三板）</h3></div>
   <ul class="lc-course-list">
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">18</span><p class="lc-course-name">类案检索报告（诉讼与非诉通用）</p></div>
     <ul class="lc-course-points">
@@ -254,7 +233,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/上市公司重大资产重组竞聘-案例检索报告-提示词模板">重组竞聘案例检索报告模板</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">19</span><p class="lc-course-name">IPO 反馈问题与上市公告检索</p></div>
     <ul class="lc-course-points">
@@ -263,7 +241,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/">AGENTS 指令库列表</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">20</span><p class="lc-course-name">法律尽职调查报告与底稿实务</p></div>
     <ul class="lc-course-points">
@@ -273,7 +250,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/IPO法律尽职调查报告全流程起草提示词">尽调报告全流程提示词</a><a class="lc-course-link" href="/agents/IPO股权历史沿革梳理与底稿归档提示词">股权历史沿革与底稿归档</a><a class="lc-course-link" href="/agents/董监高核心技术人员及直接股东调查表北交所口径更新提示词">调查表北交所口径更新</a><a class="lc-course-link" href="/agents/法律尽职调查清单起草与定稿">尽调清单起草与定稿</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">21</span><p class="lc-course-name">股东穿透核查与出资流水专班</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -283,7 +259,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/AI-Agent辅助IPO股东穿透实操教程">股东穿透实操教程</a><a class="lc-course-link" href="/agents/元典企业信息库股东穿透核查提示词">元典穿透提示词</a><a class="lc-course-link" href="/agents/股东出资流水异常情况核查提示词">出资流水异常核查</a><a class="lc-course-link" href="/agents/IPO股东出资流水及底稿归档核查提示词">出资流水归档核查</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">22</span><p class="lc-course-name">三会文件·承诺函·查验计划批量制作</p></div>
     <ul class="lc-course-points">
@@ -293,7 +268,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/北交所三会文件批量起草提示词">三会文件批量起草</a><a class="lc-course-link" href="/agents/北交所上市各主体承诺文件起草与修订提示词">承诺函起草与修订</a><a class="lc-course-link" href="/agents/新三板转北交所查验计划更新提示词">查验计划更新</a><a class="lc-course-link" href="/agents/章程与制度体系深度审查提示词">章程制度深度审查</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">23</span><p class="lc-course-name">网络舆情监控与定时送达</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -302,7 +276,6 @@
       <li>结果送达：舆情消息通过对话和邮件自动推送，重要事项即时提醒（定时任务搭建方法见第 04 课）</li>
     </ul>
   </li>
-
   </ul>
 </div>
 
@@ -311,7 +284,6 @@
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 5</span><h3>文书成稿与人机协作</h3></div>
   <ul class="lc-course-list">
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">24</span><p class="lc-course-name">模板化法律文书自动生成</p></div>
     <ul class="lc-course-points">
@@ -320,7 +292,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/非诉业务常用提示词">非诉业务常用提示词</a><a class="lc-course-link" href="/agents/董监高访谈笔录Word定稿与核查提示词">访谈笔录 Word 定稿</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">25</span><p class="lc-course-name">培训 PPT、投标文件与业绩材料成稿</p></div>
     <ul class="lc-course-points">
@@ -329,7 +300,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/法律PPT设计">法律 PPT 设计指令</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">26</span><p class="lc-course-name">批量格式调整、归档与交付规范</p></div>
     <ul class="lc-course-points">
@@ -339,7 +309,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/律师工作底稿更新与目录修订提示词">底稿更新与目录修订手册</a></div>
   </li>
-
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">27</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span></div>
     <ul class="lc-course-points">
@@ -349,7 +318,6 @@
     </ul>
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/ai-agent-dispatch">智能体调度工作教程</a><a class="lc-course-link" href="/tutorials/ai-agent-side-conversation">辅助对话的律师用法</a><a class="lc-course-link" href="/tutorials/ai-task-handoff">额度没了换 AI 续任务</a></div>
   </li>
-
   </ul>
 </div>
 
