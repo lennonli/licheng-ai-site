@@ -26,7 +26,7 @@
 
 <p class="section-lead"><strong>课程目标：</strong>从 AI 的执行者，转换为审核者和流程设计者。</p>
 
-## 模块一 · 基础与方法
+<h2>模块一 · 基础与方法</h2>
 
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 1</span><h3>基础与方法</h3></div>
@@ -73,7 +73,7 @@
   </ul>
 </div>
 
-## 模块二 · 合同与商业核查
+<h2>模块二 · 合同与商业核查</h2>
 
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 2</span><h3>合同与商业核查</h3></div>
@@ -111,7 +111,7 @@
   </ul>
 </div>
 
-## 模块三 · 诉讼实战
+<h2>模块三 · 诉讼实战</h2>
 
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 3</span><h3>诉讼实战</h3></div>
@@ -239,7 +239,7 @@
   </ul>
 </div>
 
-## 模块四 · 非诉业务专项
+<h2>模块四 · 非诉业务专项</h2>
 
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 4</span><h3>非诉业务专项（IPO / 北交所 / 新三板）</h3></div>
@@ -306,7 +306,7 @@
   </ul>
 </div>
 
-## 模块五 · 文书成稿与人机协作
+<h2>模块五 · 文书成稿与人机协作</h2>
 
 <div class="lc-course-module">
   <div class="lc-course-module-head"><span class="lc-course-part">PART 5</span><h3>文书成稿与人机协作</h3></div>
