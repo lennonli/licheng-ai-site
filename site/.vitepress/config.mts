@@ -43,6 +43,7 @@ export default defineConfig({
   head: [
     ['script', {}, `try{var k='vitepress-theme-appearance';if(!localStorage.getItem(k)){localStorage.setItem(k,'light');document.documentElement.classList.remove('dark')}}catch(e){}`],
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+    ['script', { src: '/fix-wechat-title.js' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
     ['meta', { name: 'google-site-verification', content: 'BNCuusVXcvvzeBJVuT-kH8UNI0BpSaL7telWKvCz9ag' }],
     ['meta', { property: 'og:image', content: 'https://ai.licheng.uk/og-image.jpg' }],
