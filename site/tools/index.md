@@ -20,4 +20,9 @@ description: 集中整理律师日常工作可以直接使用的法律工具和�
     <span class="utility-card-title">网核网站</span>
     <span class="utility-card-desc">整理企业信用、行政处罚、执行、税务、外汇、证券监管等网络核查入口。</span>
   </a>
+  <a class="utility-card" href="/tools/ai-directory">
+    <span class="utility-card-index">03 / AI Directory</span>
+    <span class="utility-card-title">AI 网站导航</span>
+    <span class="utility-card-desc">30 类精选 AI 领域官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP、编程与多媒体生成。</span>
+  </a>
 </section>

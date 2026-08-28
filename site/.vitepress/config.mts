@@ -105,6 +105,7 @@ export default defineConfig({
         ]
       },
       { text: '实用工具', link: '/tools/' },
+      { text: 'AI 网站导航', link: '/tools/ai-directory' },
       { text: 'GitHub', link: 'https://github.com/lennonli' }
     ],
     sidebar: generatedSidebar,

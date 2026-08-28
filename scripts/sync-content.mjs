@@ -717,7 +717,8 @@ function writeGeneratedSidebar() {
     '/tools/': [
       { text: '实用工具', link: '/tools/' },
       { text: '培训课程表', link: '/tools/legal-tools' },
-      { text: '网核网站', link: '/tools/network-check-sites' }
+      { text: '网核网站', link: '/tools/network-check-sites' },
+      { text: 'AI 网站导航', link: '/tools/ai-directory' }
     ]
   }
 
@@ -801,6 +802,11 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-index">07 / Cases 2025</span>
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年上市/挂牌 430 家审核问询法律问题回溯（3,389 个详述问题），附年度总结报告。</span>
+  </a>
+  <a class="home-card" href="/tools/ai-directory">
+    <span class="home-card-index">08 / Directory</span>
+    <span class="home-card-title">AI 网站导航</span>
+    <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
 </section>
 `)

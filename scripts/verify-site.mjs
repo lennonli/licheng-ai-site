@@ -60,7 +60,8 @@ for (const required of ['/tools/', '05 / Tools', '实用工具']) {
 const toolsIndexFile = targetFile('/tools/')
 const legalToolsFile = targetFile('/tools/legal-tools')
 const networkSitesFile = targetFile('/tools/network-check-sites')
-if (!toolsIndexFile || !legalToolsFile || !networkSitesFile) {
+const aiDirectoryFile = targetFile('/tools/ai-directory')
+if (!toolsIndexFile || !legalToolsFile || !networkSitesFile || !aiDirectoryFile) {
   fail('Practical tools pages are incomplete')
 } else {
   const toolsIndexHtml = readFileSync(toolsIndexFile, 'utf8')
@@ -69,6 +70,15 @@ if (!toolsIndexFile || !legalToolsFile || !networkSitesFile) {
   for (const required of ['/tools/legal-tools', '/tools/network-check-sites', '法律工具', '网核网站']) {
     if (!toolsIndexHtml.includes(required)) fail(`Tools index is missing ${required}`)
   }
+  const aiDirectoryHtml = readFileSync(aiDirectoryFile, 'utf8')
+  for (const required of ['/tools/legal-tools', '/tools/network-check-sites', 'AI 网站导航']) {
+    if (!toolsIndexHtml.includes(required)) fail(`Tools index is missing ${required}`)
+  }
+  for (const required of ['ChatGPT', '北大法宝', '国家法律法规数据库', '域名与安全核验重点', '维护建议']) {
+    if (!aiDirectoryHtml.includes(required)) fail(`AI directory page is missing ${required}`)
+  }
+  const directoryEntryCount = (aiDirectoryHtml.match(/^\| \*\*/gm) || []).length
+  if (directoryEntryCount < 450) fail(`AI directory page expected at least 450 entries, found ${directoryEntryCount}`)
   if (!legalToolsHtml.includes('持续建设中')) fail('Legal tools page is missing its initial state')
   const siteCardCount = (networkSitesHtml.match(/class="tool-site-card"/g) || []).length
   if (siteCardCount !== 17) fail(`Network-check sites page expected 17 sites, found ${siteCardCount}`)
