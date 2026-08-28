@@ -77,7 +77,7 @@ if (!toolsIndexFile || !legalToolsFile || !networkSitesFile || !aiDirectoryFile)
   for (const required of ['ChatGPT', '北大法宝', '国家法律法规数据库', '域名与安全核验重点', '维护建议']) {
     if (!aiDirectoryHtml.includes(required)) fail(`AI directory page is missing ${required}`)
   }
-  const directoryEntryCount = (aiDirectoryHtml.match(/^\| \*\*/gm) || []).length
+  const directoryEntryCount = (aiDirectoryHtml.match(/<strong>/g) || []).length
   if (directoryEntryCount < 450) fail(`AI directory page expected at least 450 entries, found ${directoryEntryCount}`)
   if (!legalToolsHtml.includes('持续建设中')) fail('Legal tools page is missing its initial state')
   const siteCardCount = (networkSitesHtml.match(/class="tool-site-card"/g) || []).length
