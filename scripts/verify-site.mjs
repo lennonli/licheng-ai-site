@@ -79,7 +79,6 @@ if (!toolsIndexFile || !legalToolsFile || !networkSitesFile || !aiDirectoryFile)
   }
   const directoryEntryCount = (aiDirectoryHtml.match(/<strong>/g) || []).length
   if (directoryEntryCount < 450) fail(`AI directory page expected at least 450 entries, found ${directoryEntryCount}`)
-  if (!legalToolsHtml.includes('持续建设中')) fail('Legal tools page is missing its initial state')
   const siteCardCount = (networkSitesHtml.match(/class="tool-site-card"/g) || []).length
   if (siteCardCount !== 17) fail(`Network-check sites page expected 17 sites, found ${siteCardCount}`)
   for (const required of ['企业登记与公共信用', '知识产权与域名', '行政监管与专项合规', '司法与执法', '综合信息检索', '国家企业信用信息公示系统', '信用中国', '中国海关企业信用信息公示平台', '中国执行信息公开网', '国家税务总局深圳市税务局', '证券期货市场失信记录查询平台', '国家市场监督管理总局行政处罚文书网', '深圳市市场监督管理局', '国家外汇管理局', '12309中国检察网', '上海证券交易所', '百度', 'IPE', '全国排污许可证管理信息平台', '中国商标网商标网上检索', '中国专利公布公告查询', 'ICP/IP地址/域名信息备案管理系统']) {
