@@ -69253,6 +69253,10 @@ export const generatedSidebar = {
     {
       "text": "网核网站",
       "link": "/tools/network-check-sites"
+    },
+    {
+      "text": "AI 网站导航",
+      "link": "/tools/ai-directory"
     }
   ]
 }

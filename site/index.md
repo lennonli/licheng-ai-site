@@ -64,4 +64,9 @@
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年上市/挂牌 386 家审核问询法律问题回溯（1,747 个详述问题），附年度总结报告。</span>
   </a>
+  <a class="home-card" href="/tools/ai-directory">
+    <span class="home-card-index">09 / Directory</span>
+    <span class="home-card-title">AI 网站导航</span>
+    <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
+  </a>
 </section>

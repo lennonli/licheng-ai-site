@@ -117,7 +117,7 @@
       <li>模板复用四步法：优先使用承办过的更优模板 → 映射表替换 → 最小必要修改 → 零残留验证，后续各门课文书环节统一沿用该方法</li>
       <li>交付验收方法：DOCX 解包完整性、修订痕迹作者核查、PDF 渲染版式检查的标准动作清单</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-principles">诉讼 AI 工作总则教程</a><a class="lc-course-link" href="/tutorials/civil-litigation-series-overview">系列总览导航</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">诉讼 AI 工作总则教程（资料待上线）</span><span class="lc-course-link">系列总览导航（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">09</span><p class="lc-course-name">诉前评估与诉讼策略</p><span class="lc-course-badge-new">新增</span></div>
@@ -128,7 +128,7 @@
       <li>三档策略建议（激进/稳健/保守）：请求金额设计、证据补强清单、利息与违约金计算口径及调减风险、和解空间预判</li>
       <li>交付《诉讼策略评估报告》（如有其他项目更优模板优先复用），法条全部经官方来源核验</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-pretrial-assessment">诉前评估与诉讼策略教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">诉前评估与诉讼策略教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">10</span><p class="lc-course-name">诉讼证据整理与证据目录制作</p><span class="lc-course-badge-new">新增</span></div>
@@ -139,7 +139,7 @@
       <li>微信/QQ 记录提示当事人保留原始载体，导出件注明提取方式；网页类证据用网核技能截图存档 PDF 并记录取证时间</li>
       <li>成稿《证据目录》Word（模板优先复用）＋ 双方证据比对表，附装订页码对照表</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-evidence-organization">证据整理与证据目录教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">证据整理与证据目录教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">11</span><p class="lc-course-name">起诉状、答辩状与上诉状起草</p><span class="lc-course-badge-new">新增</span></div>
@@ -150,7 +150,7 @@
       <li>三类文书起草以其他项目更优模板为基准做事实填充与调整完善——答辩状针对对方起诉状逐项回应，上诉状逐项映射一审判决认定，不得笼统主张"认定事实错误"</li>
       <li>成稿五项自检：当事人信息一致、金额合计吻合、事实均有证据支撑、法条全数核验、落款附件完整</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-pleadings-drafting">起诉状答辩状与上诉状起草教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">起诉状答辩状与上诉状起草教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">庭审举证与质证</p><span class="lc-course-badge-new">新增</span></div>
@@ -161,7 +161,7 @@
       <li>我方关键证据防御说明：原件情况、来源合法性、证明链条衔接及矛盾点的合理解释口径（提前与当事人核实）</li>
       <li>需补强的证据行动清单：证人出庭、调取证据、鉴定/评估的建议（期限接入定时任务盯守）</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-trial-evidence">庭审举证与质证教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">庭审举证与质证教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">庭前对抗演练与庭审提纲</p><span class="lc-course-badge-new">新增</span></div>
@@ -172,7 +172,7 @@
       <li>产出《庭前对抗演练复盘报告》：发问应对备忘（问题—建议回答口径—风险提示）、证据链弱点补强路径、《庭审提纲》修订标注</li>
       <li>提纲格式紧凑可打印：陈述提词、质证速查表、争议焦点观点卡、30 秒最后陈述</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-moot-court">庭前对抗演练与庭审提纲教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">庭前对抗演练与庭审提纲教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">代理词撰写</p><span class="lc-course-badge-new">新增</span></div>
@@ -183,7 +183,7 @@
       <li>措辞纪律：把握不足用"无法确认、不足以证明"，绝对化定性无充分依据不用；不利内容不回避不曲解，解释口径与当事人核实</li>
       <li>法条与案号"宁可少引不可错引"，全部回库核验；检索不到类案的不写</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-closing-argument">代理词撰写教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">代理词撰写教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">庭后复盘与裁判文书深读</p><span class="lc-course-badge-new">新增</span></div>
@@ -194,7 +194,7 @@
       <li>上诉决策量化评估：同案由二审改判理由类型映射本案弱点，成本周期与执行影响对比；样本局限如实披露</li>
       <li>补入再审情形清单（民事诉讼法再审事由逐项对照）与二审审理范围、开庭可能性处理依据；上诉期两级定时提醒</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-post-trial-review">庭后复盘与裁判文书深读教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">庭后复盘与裁判文书深读教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">强制执行与财产线索</p><span class="lc-course-badge-new">新增</span></div>
@@ -205,7 +205,7 @@
       <li>迟延履行期间债务利息分段计算表（日万分之一点七五，起算日人工复核）</li>
       <li>执行文书模板复用起草；冻结到期续封、终本恢复、新设公司等变动用定时任务推送邮件</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-enforcement">强制执行与财产线索教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">强制执行与财产线索教程（资料待上线）</span></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">结案归档与知识沉淀</p><span class="lc-course-badge-new">新增</span></div>
@@ -215,7 +215,7 @@
       <li>《结案报告》要素表：结果与预期对比、关键得失复盘（接庭后复盘结论）、可复用经验提炼</li>
       <li>经验沉淀入知识库：同类案件打法、本所模板更新建议（注意案件对外表述脱敏）</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-closing-archive">结案归档与知识沉淀教程</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><span class="lc-course-link">结案归档与知识沉淀教程（资料待上线）</span></div>
   </li>
   </ul>
 </div>
