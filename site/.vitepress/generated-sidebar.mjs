@@ -2512,6 +2512,178 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/company-monitoring-system-from-scratch": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "公司舆情与法律风险监控系统·从零搭建教程（Agent 复刻指南）",
+      "link": "/tutorials/company-monitoring-system-from-scratch"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "0. 开工前必须与用户确认的三个决策点（阻塞项）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_0-开工前必须与用户确认的三个决策点-阻塞项"
+        },
+        {
+          "text": "1. 架构总览",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_1-架构总览"
+        },
+        {
+          "text": "2. 数据源分档与方法论",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_2-数据源分档与方法论"
+        },
+        {
+          "text": "3. 环境前提清单",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_3-环境前提清单"
+        },
+        {
+          "text": "4. 目录结构（照此建好）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_4-目录结构-照此建好"
+        },
+        {
+          "text": "5. 第一步：主体核验（反编造红线先行）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_5-第一步-主体核验-反编造红线先行"
+        },
+        {
+          "text": "6. 第二步：写 config/targets.yaml （模板）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_6-第二步-写-config-targets-yaml-模板"
+        },
+        {
+          "text": "7. 第三步：写 SKILL.md （规则中枢，六节必写）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_7-第三步-写-skill-md-规则中枢-六节必写",
+          "items": [
+            {
+              "text": "7.1 合规红线（逐字写入，不可删减）",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_7-1-合规红线-逐字写入-不可删减"
+            },
+            {
+              "text": "7.2 数据源分档与降级规则（固化成文字）",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_7-2-数据源分档与降级规则-固化成文字"
+            },
+            {
+              "text": "7.3 每日执行流程（十步 SOP）",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_7-3-每日执行流程-十步-sop"
+            },
+            {
+              "text": "7.4 分级规则（红橙黄＋响应时限）",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_7-4-分级规则-红橙黄-响应时限"
+            },
+            {
+              "text": "7.5 条目结构与指纹规则",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_7-5-条目结构与指纹规则"
+            },
+            {
+              "text": "7.6 日报模板与全局约定",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_7-6-日报模板与全局约定"
+            }
+          ]
+        },
+        {
+          "text": "8. 第四步：B 档与 C 档采集实现要点",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_8-第四步-b-档与-c-档采集实现要点",
+          "items": [
+            {
+              "text": "8.1 去重引擎 dedup.py",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_8-1-去重引擎-dedup-py"
+            },
+            {
+              "text": "8.2 社媒采集 fetchsocial.py （本系统最硬的骨头，三条血泪教训）",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_8-2-社媒采集-fetch-social-py-本系统最硬的骨头-三条血泪教训"
+            },
+            {
+              "text": "8.3 官方公告降级通道 fetchofficial.py",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_8-3-官方公告降级通道-fetch-official-py"
+            },
+            {
+              "text": "8.4 交付管线三脚本（可从姊妹项目整体复制改配）",
+              "link": "/tutorials/company-monitoring-system-from-scratch#_8-4-交付管线三脚本-可从姊妹项目整体复制改配"
+            }
+          ]
+        },
+        {
+          "text": "9. 第五步：Baseline 执行 SOP（首日一次性）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_9-第五步-baseline-执行-sop-首日一次性"
+        },
+        {
+          "text": "10. 第六步：注册定时任务（只有这一个）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_10-第六步-注册定时任务-只有这一个"
+        },
+        {
+          "text": "11. 第七步：收尾检查清单（10 项全勾才算完工）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_11-第七步-收尾检查清单-10-项全勾才算完工"
+        },
+        {
+          "text": "12. 坑表速查（前一世代实践的全部学费）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_12-坑表速查-前一世代实践的全部学费"
+        },
+        {
+          "text": "13. 定性与合规备忘（写给所有使用者）",
+          "link": "/tutorials/company-monitoring-system-from-scratch#_13-定性与合规备忘-写给所有使用者"
+        }
+      ]
+    }
+  ],
+  "/tutorials/enforcement-asset-discovery": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "强制执行与财产线索教程",
+      "link": "/tutorials/enforcement-asset-discovery"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/enforcement-asset-discovery#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/enforcement-asset-discovery#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/enforcement-asset-discovery#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/enforcement-asset-discovery#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：被执行人全景画像",
+              "link": "/tutorials/enforcement-asset-discovery#第一步-被执行人全景画像"
+            },
+            {
+              "text": "第二步：财产线索清单与网核留痕",
+              "link": "/tutorials/enforcement-asset-discovery#第二步-财产线索清单与网核留痕"
+            },
+            {
+              "text": "第三步：执行文书起草（模板复用）",
+              "link": "/tutorials/enforcement-asset-discovery#第三步-执行文书起草-模板复用"
+            },
+            {
+              "text": "第四步：执行全程跟踪（定时任务）",
+              "link": "/tutorials/enforcement-asset-discovery#第四步-执行全程跟踪-定时任务"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则",
+          "link": "/tutorials/enforcement-asset-discovery#五、模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/enforcement-asset-discovery#六、红线"
+        }
+      ]
+    }
+  ],
   "/tutorials/ipo-legal-advisor-company-profile-prompt": [
     {
       "text": "返回栏目列表",
@@ -2867,6 +3039,364 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/litigation-evidence-arguments": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "举证质证意见与代理词撰写教程",
+      "link": "/tutorials/litigation-evidence-arguments"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/litigation-evidence-arguments#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/litigation-evidence-arguments#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/litigation-evidence-arguments#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/litigation-evidence-arguments#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：对方证据逐份质证表（核心）",
+              "link": "/tutorials/litigation-evidence-arguments#第一步-对方证据逐份质证表-核心"
+            },
+            {
+              "text": "第二步：我方举证说明与补强",
+              "link": "/tutorials/litigation-evidence-arguments#第二步-我方举证说明与补强"
+            },
+            {
+              "text": "第三步：代理词框架（核心）",
+              "link": "/tutorials/litigation-evidence-arguments#第三步-代理词框架-核心"
+            },
+            {
+              "text": "第四步：二审/再审代理词专项",
+              "link": "/tutorials/litigation-evidence-arguments#第四步-二审-再审代理词专项"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则",
+          "link": "/tutorials/litigation-evidence-arguments#五、模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/litigation-evidence-arguments#六、红线"
+        }
+      ]
+    }
+  ],
+  "/tutorials/litigation-evidence-organization": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "诉讼证据整理与证据目录制作教程",
+      "link": "/tutorials/litigation-evidence-organization"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/litigation-evidence-organization#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/litigation-evidence-organization#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/litigation-evidence-organization#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/litigation-evidence-organization#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：材料清点与预分类",
+              "link": "/tutorials/litigation-evidence-organization#第一步-材料清点与预分类"
+            },
+            {
+              "text": "第二步：OCR 提取与关键信息登记",
+              "link": "/tutorials/litigation-evidence-organization#第二步-ocr-提取与关键信息登记"
+            },
+            {
+              "text": "第三步：证明目的倒推编组（核心）",
+              "link": "/tutorials/litigation-evidence-organization#第三步-证明目的倒推编组-核心"
+            },
+            {
+              "text": "第四步：证据目录成稿（模板复用）",
+              "link": "/tutorials/litigation-evidence-organization#第四步-证据目录成稿-模板复用"
+            },
+            {
+              "text": "第五步：双方证据比对（二审/复杂案件加做）",
+              "link": "/tutorials/litigation-evidence-organization#第五步-双方证据比对-二审-复杂案件加做"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则",
+          "link": "/tutorials/litigation-evidence-organization#五、模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/litigation-evidence-organization#六、红线"
+        }
+      ]
+    }
+  ],
+  "/tutorials/litigation-moot-court": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI 模拟法庭与庭审陪练教程",
+      "link": "/tutorials/litigation-moot-court"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/litigation-moot-court#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/litigation-moot-court#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/litigation-moot-court#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/litigation-moot-court#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：案情脱敏摘要",
+              "link": "/tutorials/litigation-moot-court#第一步-案情脱敏摘要"
+            },
+            {
+              "text": "第二步：构建对方律师子代理（核心）",
+              "link": "/tutorials/litigation-moot-court#第二步-构建对方律师子代理-核心"
+            },
+            {
+              "text": "第三步：构建法官角色",
+              "link": "/tutorials/litigation-moot-court#第三步-构建法官角色"
+            },
+            {
+              "text": "第四步：对抗轮次演练",
+              "link": "/tutorials/litigation-moot-court#第四步-对抗轮次演练"
+            },
+            {
+              "text": "第五步：复盘与策略修正（交付物）",
+              "link": "/tutorials/litigation-moot-court#第五步-复盘与策略修正-交付物"
+            }
+          ]
+        },
+        {
+          "text": "五、文书类工作的模板复用原则",
+          "link": "/tutorials/litigation-moot-court#五、文书类工作的模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/litigation-moot-court#六、红线"
+        }
+      ]
+    }
+  ],
+  "/tutorials/litigation-pleadings-drafting": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "起诉状、答辩状与上诉状起草教程",
+      "link": "/tutorials/litigation-pleadings-drafting"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/litigation-pleadings-drafting#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/litigation-pleadings-drafting#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/litigation-pleadings-drafting#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/litigation-pleadings-drafting#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：事实要素与时间轴提取",
+              "link": "/tutorials/litigation-pleadings-drafting#第一步-事实要素与时间轴提取"
+            },
+            {
+              "text": "第二步：诉讼请求金额试算（核心）",
+              "link": "/tutorials/litigation-pleadings-drafting#第二步-诉讼请求金额试算-核心"
+            },
+            {
+              "text": "第三步：管辖与程序核验",
+              "link": "/tutorials/litigation-pleadings-drafting#第三步-管辖与程序核验"
+            },
+            {
+              "text": "第四步：文书起草（模板复用，核心）",
+              "link": "/tutorials/litigation-pleadings-drafting#第四步-文书起草-模板复用-核心"
+            },
+            {
+              "text": "第五步：交付自检",
+              "link": "/tutorials/litigation-pleadings-drafting#第五步-交付自检"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则（本教程的核心方法）",
+          "link": "/tutorials/litigation-pleadings-drafting#五、模板复用原则-本教程的核心方法"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/litigation-pleadings-drafting#六、红线"
+        }
+      ]
+    }
+  ],
+  "/tutorials/litigation-strategy-assessment": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "诉讼策略与案件评估教程",
+      "link": "/tutorials/litigation-strategy-assessment"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/litigation-strategy-assessment#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/litigation-strategy-assessment#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/litigation-strategy-assessment#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/litigation-strategy-assessment#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：请求权基础梳理",
+              "link": "/tutorials/litigation-strategy-assessment#第一步-请求权基础梳理"
+            },
+            {
+              "text": "第二步：类案裁判倾向分析（核心）",
+              "link": "/tutorials/litigation-strategy-assessment#第二步-类案裁判倾向分析-核心"
+            },
+            {
+              "text": "第三步：对方主体与履行能力调查",
+              "link": "/tutorials/litigation-strategy-assessment#第三步-对方主体与履行能力调查"
+            },
+            {
+              "text": "第四步：诉讼方案设计（交付物）",
+              "link": "/tutorials/litigation-strategy-assessment#第四步-诉讼方案设计-交付物"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则",
+          "link": "/tutorials/litigation-strategy-assessment#五、模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/litigation-strategy-assessment#六、红线"
+        }
+      ]
+    }
+  ],
+  "/tutorials/litigation-trial-outline-archiving": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "庭审提纲、庭审提醒与诉讼归档教程",
+      "link": "/tutorials/litigation-trial-outline-archiving"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/litigation-trial-outline-archiving#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/litigation-trial-outline-archiving#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/litigation-trial-outline-archiving#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/litigation-trial-outline-archiving#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：庭审提纲（核心交付物一）",
+              "link": "/tutorials/litigation-trial-outline-archiving#第一步-庭审提纲-核心交付物一"
+            },
+            {
+              "text": "第二步：庭前提醒设置（定时任务）",
+              "link": "/tutorials/litigation-trial-outline-archiving#第二步-庭前提醒设置-定时任务"
+            },
+            {
+              "text": "第三步：庭后即时归集",
+              "link": "/tutorials/litigation-trial-outline-archiving#第三步-庭后即时归集"
+            },
+            {
+              "text": "第四步：结案归档（核心交付物二）",
+              "link": "/tutorials/litigation-trial-outline-archiving#第四步-结案归档-核心交付物二"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则",
+          "link": "/tutorials/litigation-trial-outline-archiving#五、模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/litigation-trial-outline-archiving#六、红线"
+        },
+        {
+          "text": "诉讼实战系列完整导航（共九篇）",
+          "link": "/tutorials/litigation-trial-outline-archiving#诉讼实战系列完整导航-共九篇"
+        }
+      ]
+    }
+  ],
   "/tutorials/macos-codex-legal-workflow-setup": [
     {
       "text": "返回栏目列表",
@@ -3035,6 +3565,67 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/mediation-negotiation": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI 辅助调解与谈判教程",
+      "link": "/tutorials/mediation-negotiation"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/mediation-negotiation#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/mediation-negotiation#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/mediation-negotiation#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/mediation-negotiation#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：利益图谱",
+              "link": "/tutorials/mediation-negotiation#第一步-利益图谱"
+            },
+            {
+              "text": "第二步：方案量化测算（核心）",
+              "link": "/tutorials/mediation-negotiation#第二步-方案量化测算-核心"
+            },
+            {
+              "text": "第三步：对手模拟谈判",
+              "link": "/tutorials/mediation-negotiation#第三步-对手模拟谈判"
+            },
+            {
+              "text": "第四步：谈判弹药准备",
+              "link": "/tutorials/mediation-negotiation#第四步-谈判弹药准备"
+            },
+            {
+              "text": "第五步：协议起草（模板复用）",
+              "link": "/tutorials/mediation-negotiation#第五步-协议起草-模板复用"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则",
+          "link": "/tutorials/mediation-negotiation#五、模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/mediation-negotiation#六、红线"
+        }
+      ]
+    }
+  ],
   "/tutorials/new-vps-opencode-web-ui-setup": [
     {
       "text": "返回栏目列表",
@@ -3074,6 +3665,63 @@ export const generatedSidebar = {
         {
           "text": "七、安全与常驻运行建议",
           "link": "/tutorials/new-vps-opencode-web-ui-setup#七、安全与常驻运行建议"
+        }
+      ]
+    }
+  ],
+  "/tutorials/post-trial-review": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "庭后复盘与裁判文书深读教程",
+      "link": "/tutorials/post-trial-review"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、它能解决什么问题",
+          "link": "/tutorials/post-trial-review#一、它能解决什么问题"
+        },
+        {
+          "text": "二、输入材料",
+          "link": "/tutorials/post-trial-review#二、输入材料"
+        },
+        {
+          "text": "三、AI智能体能力配置",
+          "link": "/tutorials/post-trial-review#三、ai智能体能力配置"
+        },
+        {
+          "text": "四、标准工作流与提示词模板",
+          "link": "/tutorials/post-trial-review#四、标准工作流与提示词模板",
+          "items": [
+            {
+              "text": "第一步：庭审实录结构化",
+              "link": "/tutorials/post-trial-review#第一步-庭审实录结构化"
+            },
+            {
+              "text": "第二步：庭审复盘（交付物一）",
+              "link": "/tutorials/post-trial-review#第二步-庭审复盘-交付物一"
+            },
+            {
+              "text": "第三步：裁判文书深读",
+              "link": "/tutorials/post-trial-review#第三步-裁判文书深读"
+            },
+            {
+              "text": "第四步：上诉决策评估（交付物二）",
+              "link": "/tutorials/post-trial-review#第四步-上诉决策评估-交付物二"
+            }
+          ]
+        },
+        {
+          "text": "五、模板复用原则",
+          "link": "/tutorials/post-trial-review#五、模板复用原则"
+        },
+        {
+          "text": "六、红线",
+          "link": "/tutorials/post-trial-review#六、红线"
         }
       ]
     }
@@ -45164,6 +45812,23427 @@ export const generatedSidebar = {
     {
       "text": "IPO与挂牌问询案例库·2025",
       "link": "/kb2025/"
+    }
+  ],
+  "/kb2024/001277-速达股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "郑州速达工业机械服务股份有限公司（001277·深市主板）审核问询法律问题回溯",
+      "link": "/kb2024/001277-速达股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/001277-速达股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/001277-速达股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/001277-速达股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 2：关于郑煤机与发行人之间的关系（首轮，回复第 1-29 至 1-85 页；txt 行 1154–3523）",
+              "link": "/kb2024/001277-速达股份#问题-2-关于郑煤机与发行人之间的关系-首轮-回复第-1-29-至-1-85-页-txt-行-1154–3523"
+            },
+            {
+              "text": "问题 3：关于实际控制人的认定（首轮，回复第 1-86 至 1-112 页；txt 行 3524–4672）",
+              "link": "/kb2024/001277-速达股份#问题-3-关于实际控制人的认定-首轮-回复第-1-86-至-1-112-页-txt-行-3524–4672"
+            },
+            {
+              "text": "首轮问题 4：关于前次申报及整改措施——郑煤机派驻财务人员的治理瑕疵（首轮，回复第 1-113 至 1-116 页；txt 行 4673–4850）",
+              "link": "/kb2024/001277-速达股份#首轮问题-4-关于前次申报及整改措施——郑煤机派驻财务人员的治理瑕疵-首轮-回复第-1-113-至-1-116-页-txt-行-4673–4850"
+            },
+            {
+              "text": "落实函问题 1：关于股权转让——扬中徐工受让郑煤机 10% 老股（落实函回复第 1-3 至 1-21 页；txt 行 47–874）",
+              "link": "/kb2024/001277-速达股份#落实函问题-1-关于股权转让——扬中徐工受让郑煤机-10-老股-落实函回复第-1-3-至-1-21-页-txt-行-47–874"
+            },
+            {
+              "text": "落实函问题 2：关于发行人的独立性（落实函回复第 1-22 至 1-61 页；txt 行 875–2605）",
+              "link": "/kb2024/001277-速达股份#落实函问题-2-关于发行人的独立性-落实函回复第-1-22-至-1-61-页-txt-行-875–2605"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/001277-速达股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/001277-速达股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/001279-强邦新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽强邦新材料股份有限公司（001279·深市主板）审核问询法律问题回溯",
+      "link": "/kb2024/001279-强邦新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/001279-强邦新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/001279-强邦新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/001279-强邦新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 3：关于香港强邦、SPE 公司及 ABE 集团——借道第三方的 ODI 收购与\"先登记后备案\"瑕疵解释（首轮，回复第 1-37 至 1-42 页起；txt 行 1373–1660）",
+              "link": "/kb2024/001279-强邦新材#问题-3-关于香港强邦、spe-公司及-abe-集团——借道第三方的-odi-收购与-先登记后备案-瑕疵解释-首轮-回复第-1-37-至-1-42-页起-txt-行-1373–1660"
+            },
+            {
+              "text": "问题 8：关于股权激励——实控人借款注资持股平台的代持排查（首轮，回复第 1-130 至 1-131 页；txt 行 4746–4870）",
+              "link": "/kb2024/001279-强邦新材#问题-8-关于股权激励——实控人借款注资持股平台的代持排查-首轮-回复第-1-130-至-1-131-页-txt-行-4746–4870"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/001279-强邦新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/001279-强邦新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/001359-平安电工": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北平安电工科技股份公司（001359·深市主板）审核问询法律问题回溯",
+      "link": "/kb2024/001359-平安电工"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/001359-平安电工#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/001359-平安电工#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/001359-平安电工#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 2：关于一致行动协议——共同控制的认定补强与协议条款审查（首轮，回复第 1-14 至 1-19 页；txt 行 495–739）",
+              "link": "/kb2024/001359-平安电工#问题-2-关于一致行动协议——共同控制的认定补强与协议条款审查-首轮-回复第-1-14-至-1-19-页-txt-行-495–739"
+            },
+            {
+              "text": "问题 3：关于资产重组——云奇云母集体资产演变、公务员身份持股与房地产剥离（首轮，回复第 1-20 至 1-43 页；txt 行 740–1670）",
+              "link": "/kb2024/001359-平安电工#问题-3-关于资产重组——云奇云母集体资产演变、公务员身份持股与房地产剥离-首轮-回复第-1-20-至-1-43-页-txt-行-740–1670"
+            },
+            {
+              "text": "问题 4：关于关联方与关联方资金拆借——注销关联方清理与拆借利率公允性（首轮，回复第 1-44 至 1-63 页；txt 行 1671–2700）",
+              "link": "/kb2024/001359-平安电工#问题-4-关于关联方与关联方资金拆借——注销关联方清理与拆借利率公允性-首轮-回复第-1-44-至-1-63-页-txt-行-1671–2700"
+            },
+            {
+              "text": "落实函问题 2：关于平安材料——历史处罚核查与上市主体选择理由（落实函回复第 1-19 至 1-21 页；txt 行 630–745）",
+              "link": "/kb2024/001359-平安电工#落实函问题-2-关于平安材料——历史处罚核查与上市主体选择理由-落实函回复第-1-19-至-1-21-页-txt-行-630–745"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/001359-平安电工#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/001359-平安电工#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/001379-腾达科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东腾达紧固科技股份有限公司（001379·深市主板）审核问询法律问题回溯",
+      "link": "/kb2024/001379-腾达科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/001379-腾达科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/001379-腾达科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/001379-腾达科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 2（其一）：间接股东跨平台股份锁定承诺不一致及其整改（落实函回复第 8-1-28 至 8-1-30 页；txt 行 1105–1245）",
+              "link": "/kb2024/001379-腾达科技#问题-2-其一-间接股东跨平台股份锁定承诺不一致及其整改-落实函回复第-8-1-28-至-8-1-30-页-txt-行-1105–1245"
+            },
+            {
+              "text": "问题 2（其二）：实控人借款出资的代持排除与一致行动关系认定（落实函回复第 8-1-30 至 8-1-33 页；txt 行 1310–1418）",
+              "link": "/kb2024/001379-腾达科技#问题-2-其二-实控人借款出资的代持排除与一致行动关系认定-落实函回复第-8-1-30-至-8-1-33-页-txt-行-1310–1418"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/001379-腾达科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/001379-腾达科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/001387-雪祺电气": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "合肥雪祺电气股份有限公司（001387·深市主板）审核问询法律问题回溯",
+      "link": "/kb2024/001387-雪祺电气"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/001387-雪祺电气#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/001387-雪祺电气#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/001387-雪祺电气#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 3：关于历史沿革——两步走的控制权转移与代持排除（首轮，回复第 8-1-54 至 8-1-61 页；txt 行 2376–2750）",
+              "link": "/kb2024/001387-雪祺电气#问题-3-关于历史沿革——两步走的控制权转移与代持排除-首轮-回复第-8-1-54-至-8-1-61-页-txt-行-2376–2750"
+            },
+            {
+              "text": "问题 4：关于股东信息披露及核查——境外间接股东的穿透边界（首轮，回复第 8-1-62 至 8-1-66 页；txt 行 2751–2965）",
+              "link": "/kb2024/001387-雪祺电气#问题-4-关于股东信息披露及核查——境外间接股东的穿透边界-首轮-回复第-8-1-62-至-8-1-66-页-txt-行-2751–2965"
+            },
+            {
+              "text": "问题 9：关于未决诉讼——ASCOLI 商标许可合同纠纷与定牌加工侵权抗辩（首轮，回复第 8-1-124 至 8-1-132 页；txt 行 5780–6208）",
+              "link": "/kb2024/001387-雪祺电气#问题-9-关于未决诉讼——ascoli-商标许可合同纠纷与定牌加工侵权抗辩-首轮-回复第-8-1-124-至-8-1-132-页-txt-行-5780–6208"
+            },
+            {
+              "text": "问题 10：关于参股肥西农商行的审批合规（首轮，回复第 8-1-133 页起；txt 行 6209 起）",
+              "link": "/kb2024/001387-雪祺电气#问题-10-关于参股肥西农商行的审批合规-首轮-回复第-8-1-133-页起-txt-行-6209-起"
+            },
+            {
+              "text": "落实函问题 1：关于时乾中股权转让欠税与股份强制执行风险（落实函回复全文；原文 txt 行 65–215）",
+              "link": "/kb2024/001387-雪祺电气#落实函问题-1-关于时乾中股权转让欠税与股份强制执行风险-落实函回复全文-原文-txt-行-65–215"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/001387-雪祺电气#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/001387-雪祺电气#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/001389-广合科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广州广合科技股份有限公司（001389·深市主板）审核问询法律问题回溯",
+      "link": "/kb2024/001389-广合科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/001389-广合科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/001389-广合科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/001389-广合科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于存货（落实函，纯业务/财务类备案记录；txt 行 55-750，页 1-2 至 1-18）",
+              "link": "/kb2024/001389-广合科技#问题-1-关于存货-落实函-纯业务-财务类备案记录-txt-行-55-750-页-1-2-至-1-18"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/001389-广合科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/001389-广合科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/001391-国货航": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中国国际货运航空股份有限公司（001391·深市主板）审核问询法律问题回溯",
+      "link": "/kb2024/001391-国货航"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/001391-国货航#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/001391-国货航#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/001391-国货航#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于业务模式和同业竞争——独家经营模式的协议化定型（首轮，回复第 7-12-1-3 至 7-12-1-20 页；txt 行 63–745）",
+              "link": "/kb2024/001391-国货航#问题-1-关于业务模式和同业竞争——独家经营模式的协议化定型-首轮-回复第-7-12-1-3-至-7-12-1-20-页-txt-行-63–745"
+            },
+            {
+              "text": "问题 2：关于核心商标——凤凰图商标非排他普通许可（首轮，回复第 7-12-1-21 至 7-12-1-35 页；txt 行 823–1343）",
+              "link": "/kb2024/001391-国货航#问题-2-关于核心商标——凤凰图商标非排他普通许可-首轮-回复第-7-12-1-21-至-7-12-1-35-页-txt-行-823–1343"
+            },
+            {
+              "text": "问题 6：关于财务公司——存款集中与账户独立（首轮，回复第 7-12-1-69 至 7-12-1-76 页；txt 行 2670–2989）",
+              "link": "/kb2024/001391-国货航#问题-6-关于财务公司——存款集中与账户独立-首轮-回复第-7-12-1-69-至-7-12-1-76-页-txt-行-2670–2989"
+            },
+            {
+              "text": "问题 7：关于股东信息披露及核查——间接股东穿透专项（首轮，回复第 7-12-1-77 页；txt 行 2990–3040）",
+              "link": "/kb2024/001391-国货航#问题-7-关于股东信息披露及核查——间接股东穿透专项-首轮-回复第-7-12-1-77-页-txt-行-2990–3040"
+            },
+            {
+              "text": "落实函问题 1：关于独家经营相关业务稳定性（落实函回复第 1-2 至 1-8 页附近；txt 行 39–270）",
+              "link": "/kb2024/001391-国货航#落实函问题-1-关于独家经营相关业务稳定性-落实函回复第-1-2-至-1-8-页附近-txt-行-39–270"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/001391-国货航#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/001391-国货航#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/2024年度总结": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "2024年度上市/挂牌公司审核问询法律问题回溯报告",
+      "link": "/kb2024/2024年度总结"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "总体概览",
+          "link": "/kb2024/2024年度总结#总体概览"
+        },
+        {
+          "text": "共性法律问题统计（按类别频次）",
+          "link": "/kb2024/2024年度总结#共性法律问题统计-按类别频次"
+        },
+        {
+          "text": "2024年监管关注趋势（律师执业视角）",
+          "link": "/kb2024/2024年度总结#_2024年监管关注趋势-律师执业视角"
+        },
+        {
+          "text": "2024→2025演进要点（对照2025年度报告）",
+          "link": "/kb2024/2024年度总结#_2024→2025演进要点-对照2025年度报告"
+        },
+        {
+          "text": "使用说明与边界",
+          "link": "/kb2024/2024年度总结#使用说明与边界"
+        },
+        {
+          "text": "分公司索引",
+          "link": "/kb2024/2024年度总结#分公司索引"
+        },
+        {
+          "text": "一、科创板（15家）",
+          "link": "/kb2024/2024年度总结#一、科创板-15家",
+          "items": [
+            {
+              "text": "艾罗能源（688717，科创板，上市日 2024-01-03）",
+              "link": "/kb2024/2024年度总结#艾罗能源-688717-科创板-上市日-2024-01-03"
+            },
+            {
+              "text": "成都华微（688709，科创板，上市日 2024-02-07）",
+              "link": "/kb2024/2024年度总结#成都华微-688709-科创板-上市日-2024-02-07"
+            },
+            {
+              "text": "上海合晶（688584，科创板，上市日 2024-02-08）",
+              "link": "/kb2024/2024年度总结#上海合晶-688584-科创板-上市日-2024-02-08"
+            },
+            {
+              "text": "中创股份（688695，科创板，上市日 2024-03-13）",
+              "link": "/kb2024/2024年度总结#中创股份-688695-科创板-上市日-2024-03-13"
+            },
+            {
+              "text": "灿芯股份（688691，科创板，上市日 2024-04-11）",
+              "link": "/kb2024/2024年度总结#灿芯股份-688691-科创板-上市日-2024-04-11"
+            },
+            {
+              "text": "欧莱新材（688530，科创板，上市日 2024-05-09）",
+              "link": "/kb2024/2024年度总结#欧莱新材-688530-科创板-上市日-2024-05-09"
+            },
+            {
+              "text": "达梦数据（688692，科创板，上市日 2024-06-12）",
+              "link": "/kb2024/2024年度总结#达梦数据-688692-科创板-上市日-2024-06-12"
+            },
+            {
+              "text": "龙图光罩（688721，科创板，上市日 2024-08-06）",
+              "link": "/kb2024/2024年度总结#龙图光罩-688721-科创板-上市日-2024-08-06"
+            },
+            {
+              "text": "益诺思（688710，科创板，上市日 2024-09-03）",
+              "link": "/kb2024/2024年度总结#益诺思-688710-科创板-上市日-2024-09-03"
+            },
+            {
+              "text": "合合信息（688615，科创板，上市日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#合合信息-688615-科创板-上市日-2024-09-26"
+            },
+            {
+              "text": "拉普拉斯（688726，科创板，上市日 2024-10-29）",
+              "link": "/kb2024/2024年度总结#拉普拉斯-688726-科创板-上市日-2024-10-29"
+            },
+            {
+              "text": "金天钛业（688750，科创板，上市日 2024-11-20）",
+              "link": "/kb2024/2024年度总结#金天钛业-688750-科创板-上市日-2024-11-20"
+            },
+            {
+              "text": "联芸科技（688449，科创板，上市日 2024-11-29）",
+              "link": "/kb2024/2024年度总结#联芸科技-688449-科创板-上市日-2024-11-29"
+            },
+            {
+              "text": "佳驰科技（688708，科创板，上市日 2024-12-05）",
+              "link": "/kb2024/2024年度总结#佳驰科技-688708-科创板-上市日-2024-12-05"
+            },
+            {
+              "text": "先锋精科（688605，科创板，上市日 2024-12-12）",
+              "link": "/kb2024/2024年度总结#先锋精科-688605-科创板-上市日-2024-12-12"
+            }
+          ]
+        },
+        {
+          "text": "二、沪市主板（17家）",
+          "link": "/kb2024/2024年度总结#二、沪市主板-17家",
+          "items": [
+            {
+              "text": "博隆技术（603325，沪市主板，上市日 2024-01-10）",
+              "link": "/kb2024/2024年度总结#博隆技术-603325-沪市主板-上市日-2024-01-10"
+            },
+            {
+              "text": "西典新能（603312，沪市主板，上市日 2024-01-11）",
+              "link": "/kb2024/2024年度总结#西典新能-603312-沪市主板-上市日-2024-01-11"
+            },
+            {
+              "text": "永兴股份（601033，沪市主板，上市日 2024-01-18）",
+              "link": "/kb2024/2024年度总结#永兴股份-601033-沪市主板-上市日-2024-01-18"
+            },
+            {
+              "text": "盛景微（603375，沪市主板，上市日 2024-01-24）",
+              "link": "/kb2024/2024年度总结#盛景微-603375-沪市主板-上市日-2024-01-24"
+            },
+            {
+              "text": "北自科技（603082，沪市主板，上市日 2024-01-30）",
+              "link": "/kb2024/2024年度总结#北自科技-603082-沪市主板-上市日-2024-01-30"
+            },
+            {
+              "text": "龙旗科技（603341，沪市主板，上市日 2024-03-01）",
+              "link": "/kb2024/2024年度总结#龙旗科技-603341-沪市主板-上市日-2024-03-01"
+            },
+            {
+              "text": "星德胜（603344，沪市主板，上市日 2024-03-20）",
+              "link": "/kb2024/2024年度总结#星德胜-603344-沪市主板-上市日-2024-03-20"
+            },
+            {
+              "text": "永臻股份（603381，沪市主板，上市日 2024-06-26）",
+              "link": "/kb2024/2024年度总结#永臻股份-603381-沪市主板-上市日-2024-06-26"
+            },
+            {
+              "text": "安乃达（603350，沪市主板，上市日 2024-07-03）",
+              "link": "/kb2024/2024年度总结#安乃达-603350-沪市主板-上市日-2024-07-03"
+            },
+            {
+              "text": "键邦股份（603285，沪市主板，上市日 2024-07-05）",
+              "link": "/kb2024/2024年度总结#键邦股份-603285-沪市主板-上市日-2024-07-05"
+            },
+            {
+              "text": "力聚热能（603391，沪市主板，上市日 2024-07-31）",
+              "link": "/kb2024/2024年度总结#力聚热能-603391-沪市主板-上市日-2024-07-31"
+            },
+            {
+              "text": "巍华新材（603310，沪市主板，上市日 2024-08-14）",
+              "link": "/kb2024/2024年度总结#巍华新材-603310-沪市主板-上市日-2024-08-14"
+            },
+            {
+              "text": "小方制药（603207，沪市主板，上市日 2024-08-26）",
+              "link": "/kb2024/2024年度总结#小方制药-603207-沪市主板-上市日-2024-08-26"
+            },
+            {
+              "text": "众鑫股份（603091，沪市主板，上市日 2024-09-20）",
+              "link": "/kb2024/2024年度总结#众鑫股份-603091-沪市主板-上市日-2024-09-20"
+            },
+            {
+              "text": "健尔康（603205，沪市主板，上市日 2024-11-07）",
+              "link": "/kb2024/2024年度总结#健尔康-603205-沪市主板-上市日-2024-11-07"
+            },
+            {
+              "text": "红四方（603395，沪市主板，上市日 2024-11-26）",
+              "link": "/kb2024/2024年度总结#红四方-603395-沪市主板-上市日-2024-11-26"
+            },
+            {
+              "text": "中力股份（603194，沪市主板，上市日 2024-12-24）",
+              "link": "/kb2024/2024年度总结#中力股份-603194-沪市主板-上市日-2024-12-24"
+            }
+          ]
+        },
+        {
+          "text": "三、深市主板（7家）",
+          "link": "/kb2024/2024年度总结#三、深市主板-7家",
+          "items": [
+            {
+              "text": "雪祺电气（001387，深市主板，上市日 2024-01-11）",
+              "link": "/kb2024/2024年度总结#雪祺电气-001387-深市主板-上市日-2024-01-11"
+            },
+            {
+              "text": "腾达科技（001379，深市主板，上市日 2024-01-19）",
+              "link": "/kb2024/2024年度总结#腾达科技-001379-深市主板-上市日-2024-01-19"
+            },
+            {
+              "text": "平安电工（001359，深市主板，上市日 2024-03-28）",
+              "link": "/kb2024/2024年度总结#平安电工-001359-深市主板-上市日-2024-03-28"
+            },
+            {
+              "text": "广合科技（001389，深市主板，上市日 2024-04-02）",
+              "link": "/kb2024/2024年度总结#广合科技-001389-深市主板-上市日-2024-04-02"
+            },
+            {
+              "text": "速达股份（001277，深市主板，上市日 2024-09-03）",
+              "link": "/kb2024/2024年度总结#速达股份-001277-深市主板-上市日-2024-09-03"
+            },
+            {
+              "text": "强邦新材（001279，深市主板，上市日 2024-10-11）",
+              "link": "/kb2024/2024年度总结#强邦新材-001279-深市主板-上市日-2024-10-11"
+            },
+            {
+              "text": "国货航（001391，深市主板，上市日 2024-12-30）",
+              "link": "/kb2024/2024年度总结#国货航-001391-深市主板-上市日-2024-12-30"
+            }
+          ]
+        },
+        {
+          "text": "四、深市创业板（38家）",
+          "link": "/kb2024/2024年度总结#四、深市创业板-38家",
+          "items": [
+            {
+              "text": "贝隆精密（301567，深市创业板，上市日 2024-01-16）",
+              "link": "/kb2024/2024年度总结#贝隆精密-301567-深市创业板-上市日-2024-01-16"
+            },
+            {
+              "text": "美信科技（301577，深市创业板，上市日 2024-01-24）",
+              "link": "/kb2024/2024年度总结#美信科技-301577-深市创业板-上市日-2024-01-24"
+            },
+            {
+              "text": "华阳智能（301502，深市创业板，上市日 2024-02-02）",
+              "link": "/kb2024/2024年度总结#华阳智能-301502-深市创业板-上市日-2024-02-02"
+            },
+            {
+              "text": "诺瓦星云（301589，深市创业板，上市日 2024-02-08）",
+              "link": "/kb2024/2024年度总结#诺瓦星云-301589-深市创业板-上市日-2024-02-08"
+            },
+            {
+              "text": "肯特股份（301591，深市创业板，上市日 2024-02-28）",
+              "link": "/kb2024/2024年度总结#肯特股份-301591-深市创业板-上市日-2024-02-28"
+            },
+            {
+              "text": "美新科技（301588，深市创业板，上市日 2024-03-13）",
+              "link": "/kb2024/2024年度总结#美新科技-301588-深市创业板-上市日-2024-03-13"
+            },
+            {
+              "text": "骏鼎达（301538，深市创业板，上市日 2024-03-20）",
+              "link": "/kb2024/2024年度总结#骏鼎达-301538-深市创业板-上市日-2024-03-20"
+            },
+            {
+              "text": "星宸科技（301536，深市创业板，上市日 2024-03-28）",
+              "link": "/kb2024/2024年度总结#星宸科技-301536-深市创业板-上市日-2024-03-28"
+            },
+            {
+              "text": "中瑞股份（301587，深市创业板，上市日 2024-04-08）",
+              "link": "/kb2024/2024年度总结#中瑞股份-301587-深市创业板-上市日-2024-04-08"
+            },
+            {
+              "text": "宏鑫科技（301539，深市创业板，上市日 2024-04-15）",
+              "link": "/kb2024/2024年度总结#宏鑫科技-301539-深市创业板-上市日-2024-04-15"
+            },
+            {
+              "text": "瑞迪智驱（301596，深市创业板，上市日 2024-05-13）",
+              "link": "/kb2024/2024年度总结#瑞迪智驱-301596-深市创业板-上市日-2024-05-13"
+            },
+            {
+              "text": "汇成真空（301392，深市创业板，上市日 2024-06-05）",
+              "link": "/kb2024/2024年度总结#汇成真空-301392-深市创业板-上市日-2024-06-05"
+            },
+            {
+              "text": "利安科技（300784，深市创业板，上市日 2024-06-07）",
+              "link": "/kb2024/2024年度总结#利安科技-300784-深市创业板-上市日-2024-06-07"
+            },
+            {
+              "text": "中仑新材（301565，深市创业板，上市日 2024-06-20）",
+              "link": "/kb2024/2024年度总结#中仑新材-301565-深市创业板-上市日-2024-06-20"
+            },
+            {
+              "text": "爱迪特（301580，深市创业板，上市日 2024-06-26）",
+              "link": "/kb2024/2024年度总结#爱迪特-301580-深市创业板-上市日-2024-06-26"
+            },
+            {
+              "text": "乔锋智能（301603，深市创业板，上市日 2024-07-10）",
+              "link": "/kb2024/2024年度总结#乔锋智能-301603-深市创业板-上市日-2024-07-10"
+            },
+            {
+              "text": "科力装备（301552，深市创业板，上市日 2024-07-22）",
+              "link": "/kb2024/2024年度总结#科力装备-301552-深市创业板-上市日-2024-07-22"
+            },
+            {
+              "text": "绿联科技（301606，深市创业板，上市日 2024-07-26）",
+              "link": "/kb2024/2024年度总结#绿联科技-301606-深市创业板-上市日-2024-07-26"
+            },
+            {
+              "text": "博实结（301608，深市创业板，上市日 2024-08-01）",
+              "link": "/kb2024/2024年度总结#博实结-301608-深市创业板-上市日-2024-08-01"
+            },
+            {
+              "text": "珂玛科技（301611，深市创业板，上市日 2024-08-16）",
+              "link": "/kb2024/2024年度总结#珂玛科技-301611-深市创业板-上市日-2024-08-16"
+            },
+            {
+              "text": "国科天成（301571，深市创业板，上市日 2024-08-21）",
+              "link": "/kb2024/2024年度总结#国科天成-301571-深市创业板-上市日-2024-08-21"
+            },
+            {
+              "text": "佳力奇（301586，深市创业板，上市日 2024-08-28）",
+              "link": "/kb2024/2024年度总结#佳力奇-301586-深市创业板-上市日-2024-08-28"
+            },
+            {
+              "text": "富特科技（301607，深市创业板，上市日 2024-09-04）",
+              "link": "/kb2024/2024年度总结#富特科技-301607-深市创业板-上市日-2024-09-04"
+            },
+            {
+              "text": "慧翰股份（301600，深市创业板，上市日 2024-09-11）",
+              "link": "/kb2024/2024年度总结#慧翰股份-301600-深市创业板-上市日-2024-09-11"
+            },
+            {
+              "text": "无线传媒（301551，深市创业板，上市日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#无线传媒-301551-深市创业板-上市日-2024-09-26"
+            },
+            {
+              "text": "长联科技（301618，深市创业板，上市日 2024-09-30）",
+              "link": "/kb2024/2024年度总结#长联科技-301618-深市创业板-上市日-2024-09-30"
+            },
+            {
+              "text": "上大股份（301522，深市创业板，上市日 2024-10-16）",
+              "link": "/kb2024/2024年度总结#上大股份-301522-深市创业板-上市日-2024-10-16"
+            },
+            {
+              "text": "托普云农（301556，深市创业板，上市日 2024-10-17）",
+              "link": "/kb2024/2024年度总结#托普云农-301556-深市创业板-上市日-2024-10-17"
+            },
+            {
+              "text": "六九一二（301592，深市创业板，上市日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#六九一二-301592-深市创业板-上市日-2024-10-24"
+            },
+            {
+              "text": "苏州天脉（301626，深市创业板，上市日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#苏州天脉-301626-深市创业板-上市日-2024-10-24"
+            },
+            {
+              "text": "新铝时代（301613，深市创业板，上市日 2024-10-25）",
+              "link": "/kb2024/2024年度总结#新铝时代-301613-深市创业板-上市日-2024-10-25"
+            },
+            {
+              "text": "强达电路（301628，深市创业板，上市日 2024-10-31）",
+              "link": "/kb2024/2024年度总结#强达电路-301628-深市创业板-上市日-2024-10-31"
+            },
+            {
+              "text": "港迪技术（301633，深市创业板，上市日 2024-11-07）",
+              "link": "/kb2024/2024年度总结#港迪技术-301633-深市创业板-上市日-2024-11-07"
+            },
+            {
+              "text": "壹连科技（301631，深市创业板，上市日 2024-11-22）",
+              "link": "/kb2024/2024年度总结#壹连科技-301631-深市创业板-上市日-2024-11-22"
+            },
+            {
+              "text": "英思特（301622，深市创业板，上市日 2024-12-04）",
+              "link": "/kb2024/2024年度总结#英思特-301622-深市创业板-上市日-2024-12-04"
+            },
+            {
+              "text": "博苑新材（301617，深市创业板，上市日 2024-12-11）",
+              "link": "/kb2024/2024年度总结#博苑新材-301617-深市创业板-上市日-2024-12-11"
+            },
+            {
+              "text": "博科测试（301598，深市创业板，上市日 2024-12-20）",
+              "link": "/kb2024/2024年度总结#博科测试-301598-深市创业板-上市日-2024-12-20"
+            },
+            {
+              "text": "蓝宇股份（301585，深市创业板，上市日 2024-12-20）",
+              "link": "/kb2024/2024年度总结#蓝宇股份-301585-深市创业板-上市日-2024-12-20"
+            }
+          ]
+        },
+        {
+          "text": "五、北京证券交易所（23家）",
+          "link": "/kb2024/2024年度总结#五、北京证券交易所-23家",
+          "items": [
+            {
+              "text": "捷众科技（920690，北交所，上市日 2024-01-05）",
+              "link": "/kb2024/2024年度总结#捷众科技-920690-北交所-上市日-2024-01-05"
+            },
+            {
+              "text": "云星宇（920806，北交所，上市日 2024-01-11）",
+              "link": "/kb2024/2024年度总结#云星宇-920806-北交所-上市日-2024-01-11"
+            },
+            {
+              "text": "康农种业（920403，北交所，上市日 2024-01-18）",
+              "link": "/kb2024/2024年度总结#康农种业-920403-北交所-上市日-2024-01-18"
+            },
+            {
+              "text": "许昌智能（920496，北交所，上市日 2024-01-26）",
+              "link": "/kb2024/2024年度总结#许昌智能-920496-北交所-上市日-2024-01-26"
+            },
+            {
+              "text": "海昇药业（920656，北交所，上市日 2024-02-02）",
+              "link": "/kb2024/2024年度总结#海昇药业-920656-北交所-上市日-2024-02-02"
+            },
+            {
+              "text": "铁拓机械（920706，北交所，上市日 2024-03-08）",
+              "link": "/kb2024/2024年度总结#铁拓机械-920706-北交所-上市日-2024-03-08"
+            },
+            {
+              "text": "戈碧迦（920438，北交所，上市日 2024-03-25）",
+              "link": "/kb2024/2024年度总结#戈碧迦-920438-北交所-上市日-2024-03-25"
+            },
+            {
+              "text": "芭薇股份（920123，北交所，上市日 2024-03-29）",
+              "link": "/kb2024/2024年度总结#芭薇股份-920123-北交所-上市日-2024-03-29"
+            },
+            {
+              "text": "无锡鼎邦（920931，北交所，上市日 2024-04-08）",
+              "link": "/kb2024/2024年度总结#无锡鼎邦-920931-北交所-上市日-2024-04-08"
+            },
+            {
+              "text": "万达轴承（920002，北交所，上市日 2024-05-30）",
+              "link": "/kb2024/2024年度总结#万达轴承-920002-北交所-上市日-2024-05-30"
+            },
+            {
+              "text": "太湖远大（920118，北交所，上市日 2024-08-22）",
+              "link": "/kb2024/2024年度总结#太湖远大-920118-北交所-上市日-2024-08-22"
+            },
+            {
+              "text": "成电光信（920008，北交所，上市日 2024-08-29）",
+              "link": "/kb2024/2024年度总结#成电光信-920008-北交所-上市日-2024-08-29"
+            },
+            {
+              "text": "中草香料（920016，北交所，上市日 2024-09-13）",
+              "link": "/kb2024/2024年度总结#中草香料-920016-北交所-上市日-2024-09-13"
+            },
+            {
+              "text": "瑞华技术（920099，北交所，上市日 2024-09-25）",
+              "link": "/kb2024/2024年度总结#瑞华技术-920099-北交所-上市日-2024-09-25"
+            },
+            {
+              "text": "铜冠矿建（920019，北交所，上市日 2024-10-11）",
+              "link": "/kb2024/2024年度总结#铜冠矿建-920019-北交所-上市日-2024-10-11"
+            },
+            {
+              "text": "科力股份（920088，北交所，上市日 2024-10-29）",
+              "link": "/kb2024/2024年度总结#科力股份-920088-北交所-上市日-2024-10-29"
+            },
+            {
+              "text": "科拜尔（920066，北交所，上市日 2024-10-31）",
+              "link": "/kb2024/2024年度总结#科拜尔-920066-北交所-上市日-2024-10-31"
+            },
+            {
+              "text": "聚星科技（920111，北交所，上市日 2024-11-11）",
+              "link": "/kb2024/2024年度总结#聚星科技-920111-北交所-上市日-2024-11-11"
+            },
+            {
+              "text": "万源通（920060，北交所，上市日 2024-11-19）",
+              "link": "/kb2024/2024年度总结#万源通-920060-北交所-上市日-2024-11-19"
+            },
+            {
+              "text": "胜业电气（920128，北交所，上市日 2024-11-29）",
+              "link": "/kb2024/2024年度总结#胜业电气-920128-北交所-上市日-2024-11-29"
+            },
+            {
+              "text": "科隆新材（920098，北交所，上市日 2024-12-05）",
+              "link": "/kb2024/2024年度总结#科隆新材-920098-北交所-上市日-2024-12-05"
+            },
+            {
+              "text": "林泰新材（920106，北交所，上市日 2024-12-18）",
+              "link": "/kb2024/2024年度总结#林泰新材-920106-北交所-上市日-2024-12-18"
+            },
+            {
+              "text": "方正阀门（920082，北交所，上市日 2024-12-26）",
+              "link": "/kb2024/2024年度总结#方正阀门-920082-北交所-上市日-2024-12-26"
+            }
+          ]
+        },
+        {
+          "text": "六、新三板挂牌（286家）",
+          "link": "/kb2024/2024年度总结#六、新三板挂牌-286家",
+          "items": [
+            {
+              "text": "中科中涣（874355，新三板挂牌，挂牌日 2024-01-03）",
+              "link": "/kb2024/2024年度总结#中科中涣-874355-新三板挂牌-挂牌日-2024-01-03"
+            },
+            {
+              "text": "瑞林精科（874184，新三板挂牌，挂牌日 2024-01-03）",
+              "link": "/kb2024/2024年度总结#瑞林精科-874184-新三板挂牌-挂牌日-2024-01-03"
+            },
+            {
+              "text": "厚威包装（874310，新三板挂牌，挂牌日 2024-01-05）",
+              "link": "/kb2024/2024年度总结#厚威包装-874310-新三板挂牌-挂牌日-2024-01-05"
+            },
+            {
+              "text": "慧影医疗（874245，新三板挂牌，挂牌日 2024-01-08）",
+              "link": "/kb2024/2024年度总结#慧影医疗-874245-新三板挂牌-挂牌日-2024-01-08"
+            },
+            {
+              "text": "华慧能源（874350，新三板挂牌，挂牌日 2024-01-10）",
+              "link": "/kb2024/2024年度总结#华慧能源-874350-新三板挂牌-挂牌日-2024-01-10"
+            },
+            {
+              "text": "思科赛德（874253，新三板挂牌，挂牌日 2024-01-10）",
+              "link": "/kb2024/2024年度总结#思科赛德-874253-新三板挂牌-挂牌日-2024-01-10"
+            },
+            {
+              "text": "旭泉电机（874234，新三板挂牌，挂牌日 2024-01-10）",
+              "link": "/kb2024/2024年度总结#旭泉电机-874234-新三板挂牌-挂牌日-2024-01-10"
+            },
+            {
+              "text": "申传电气（873594，新三板挂牌，挂牌日 2024-01-10）",
+              "link": "/kb2024/2024年度总结#申传电气-873594-新三板挂牌-挂牌日-2024-01-10"
+            },
+            {
+              "text": "邦泽创科（874249，新三板挂牌，挂牌日 2024-01-11）",
+              "link": "/kb2024/2024年度总结#邦泽创科-874249-新三板挂牌-挂牌日-2024-01-11"
+            },
+            {
+              "text": "世纪数码（874360，新三板挂牌，挂牌日 2024-01-12）",
+              "link": "/kb2024/2024年度总结#世纪数码-874360-新三板挂牌-挂牌日-2024-01-12"
+            },
+            {
+              "text": "同威信达（874144，新三板挂牌，挂牌日 2024-01-12）",
+              "link": "/kb2024/2024年度总结#同威信达-874144-新三板挂牌-挂牌日-2024-01-12"
+            },
+            {
+              "text": "金凤凰（874170，新三板挂牌，挂牌日 2024-01-15）",
+              "link": "/kb2024/2024年度总结#金凤凰-874170-新三板挂牌-挂牌日-2024-01-15"
+            },
+            {
+              "text": "佛光发电（874150，新三板挂牌，挂牌日 2024-01-18）",
+              "link": "/kb2024/2024年度总结#佛光发电-874150-新三板挂牌-挂牌日-2024-01-18"
+            },
+            {
+              "text": "赛米垦拓（874128，新三板挂牌，挂牌日 2024-01-22）",
+              "link": "/kb2024/2024年度总结#赛米垦拓-874128-新三板挂牌-挂牌日-2024-01-22"
+            },
+            {
+              "text": "华来科技（874118，新三板挂牌，挂牌日 2024-01-24）",
+              "link": "/kb2024/2024年度总结#华来科技-874118-新三板挂牌-挂牌日-2024-01-24"
+            },
+            {
+              "text": "同富股份（874149，新三板挂牌，挂牌日 2024-01-26）",
+              "link": "/kb2024/2024年度总结#同富股份-874149-新三板挂牌-挂牌日-2024-01-26"
+            },
+            {
+              "text": "商城展览（874215，新三板挂牌，挂牌日 2024-01-26）",
+              "link": "/kb2024/2024年度总结#商城展览-874215-新三板挂牌-挂牌日-2024-01-26"
+            },
+            {
+              "text": "安簧股份（874140，新三板挂牌，挂牌日 2024-01-29）",
+              "link": "/kb2024/2024年度总结#安簧股份-874140-新三板挂牌-挂牌日-2024-01-29"
+            },
+            {
+              "text": "迅达药业（874300，新三板挂牌，挂牌日 2024-01-31）",
+              "link": "/kb2024/2024年度总结#迅达药业-874300-新三板挂牌-挂牌日-2024-01-31"
+            },
+            {
+              "text": "惠之星（874357，新三板挂牌，挂牌日 2024-02-02）",
+              "link": "/kb2024/2024年度总结#惠之星-874357-新三板挂牌-挂牌日-2024-02-02"
+            },
+            {
+              "text": "昊普康（874365，新三板挂牌，挂牌日 2024-02-02）",
+              "link": "/kb2024/2024年度总结#昊普康-874365-新三板挂牌-挂牌日-2024-02-02"
+            },
+            {
+              "text": "特味浓（874119，新三板挂牌，挂牌日 2024-02-02）",
+              "link": "/kb2024/2024年度总结#特味浓-874119-新三板挂牌-挂牌日-2024-02-02"
+            },
+            {
+              "text": "秦鼎精铸（874345，新三板挂牌，挂牌日 2024-02-02）",
+              "link": "/kb2024/2024年度总结#秦鼎精铸-874345-新三板挂牌-挂牌日-2024-02-02"
+            },
+            {
+              "text": "中煤环保（874401，新三板挂牌，挂牌日 2024-02-06）",
+              "link": "/kb2024/2024年度总结#中煤环保-874401-新三板挂牌-挂牌日-2024-02-06"
+            },
+            {
+              "text": "德美高科（874388，新三板挂牌，挂牌日 2024-02-06）",
+              "link": "/kb2024/2024年度总结#德美高科-874388-新三板挂牌-挂牌日-2024-02-06"
+            },
+            {
+              "text": "矩一建管（874315，新三板挂牌，挂牌日 2024-02-06）",
+              "link": "/kb2024/2024年度总结#矩一建管-874315-新三板挂牌-挂牌日-2024-02-06"
+            },
+            {
+              "text": "高飞股份（874169，新三板挂牌，挂牌日 2024-02-06）",
+              "link": "/kb2024/2024年度总结#高飞股份-874169-新三板挂牌-挂牌日-2024-02-06"
+            },
+            {
+              "text": "天奇新材（874346，新三板挂牌，挂牌日 2024-02-07）",
+              "link": "/kb2024/2024年度总结#天奇新材-874346-新三板挂牌-挂牌日-2024-02-07"
+            },
+            {
+              "text": "越群海洋（874351，新三板挂牌，挂牌日 2024-02-07）",
+              "link": "/kb2024/2024年度总结#越群海洋-874351-新三板挂牌-挂牌日-2024-02-07"
+            },
+            {
+              "text": "海宝股份（874353，新三板挂牌，挂牌日 2024-02-08）",
+              "link": "/kb2024/2024年度总结#海宝股份-874353-新三板挂牌-挂牌日-2024-02-08"
+            },
+            {
+              "text": "祺龙海洋（874392，新三板挂牌，挂牌日 2024-02-08）",
+              "link": "/kb2024/2024年度总结#祺龙海洋-874392-新三板挂牌-挂牌日-2024-02-08"
+            },
+            {
+              "text": "思普宁（874113，新三板挂牌，挂牌日 2024-02-19）",
+              "link": "/kb2024/2024年度总结#思普宁-874113-新三板挂牌-挂牌日-2024-02-19"
+            },
+            {
+              "text": "立万精工（874389，新三板挂牌，挂牌日 2024-02-20）",
+              "link": "/kb2024/2024年度总结#立万精工-874389-新三板挂牌-挂牌日-2024-02-20"
+            },
+            {
+              "text": "赤诚生物（874399，新三板挂牌，挂牌日 2024-02-20）",
+              "link": "/kb2024/2024年度总结#赤诚生物-874399-新三板挂牌-挂牌日-2024-02-20"
+            },
+            {
+              "text": "泰诚信（874180，新三板挂牌，挂牌日 2024-02-21）",
+              "link": "/kb2024/2024年度总结#泰诚信-874180-新三板挂牌-挂牌日-2024-02-21"
+            },
+            {
+              "text": "科普达（874129，新三板挂牌，挂牌日 2024-02-21）",
+              "link": "/kb2024/2024年度总结#科普达-874129-新三板挂牌-挂牌日-2024-02-21"
+            },
+            {
+              "text": "泛美实验（874393，新三板挂牌，挂牌日 2024-02-22）",
+              "link": "/kb2024/2024年度总结#泛美实验-874393-新三板挂牌-挂牌日-2024-02-22"
+            },
+            {
+              "text": "老娘舅（874418，新三板挂牌，挂牌日 2024-02-22）",
+              "link": "/kb2024/2024年度总结#老娘舅-874418-新三板挂牌-挂牌日-2024-02-22"
+            },
+            {
+              "text": "维萨阀门（874407，新三板挂牌，挂牌日 2024-02-29）",
+              "link": "/kb2024/2024年度总结#维萨阀门-874407-新三板挂牌-挂牌日-2024-02-29"
+            },
+            {
+              "text": "联川生物（874281，新三板挂牌，挂牌日 2024-02-29）",
+              "link": "/kb2024/2024年度总结#联川生物-874281-新三板挂牌-挂牌日-2024-02-29"
+            },
+            {
+              "text": "伟荣股份（874171，新三板挂牌，挂牌日 2024-03-01）",
+              "link": "/kb2024/2024年度总结#伟荣股份-874171-新三板挂牌-挂牌日-2024-03-01"
+            },
+            {
+              "text": "昂必立（874117，新三板挂牌，挂牌日 2024-03-01）",
+              "link": "/kb2024/2024年度总结#昂必立-874117-新三板挂牌-挂牌日-2024-03-01"
+            },
+            {
+              "text": "金红股份（874406，新三板挂牌，挂牌日 2024-03-01）",
+              "link": "/kb2024/2024年度总结#金红股份-874406-新三板挂牌-挂牌日-2024-03-01"
+            },
+            {
+              "text": "正康新材（874112，新三板挂牌，挂牌日 2024-03-07）",
+              "link": "/kb2024/2024年度总结#正康新材-874112-新三板挂牌-挂牌日-2024-03-07"
+            },
+            {
+              "text": "火星语盟（874408，新三板挂牌，挂牌日 2024-03-07）",
+              "link": "/kb2024/2024年度总结#火星语盟-874408-新三板挂牌-挂牌日-2024-03-07"
+            },
+            {
+              "text": "赛柯瑞思（874209，新三板挂牌，挂牌日 2024-03-07）",
+              "link": "/kb2024/2024年度总结#赛柯瑞思-874209-新三板挂牌-挂牌日-2024-03-07"
+            },
+            {
+              "text": "伯虎股份（874216，新三板挂牌，挂牌日 2024-03-08）",
+              "link": "/kb2024/2024年度总结#伯虎股份-874216-新三板挂牌-挂牌日-2024-03-08"
+            },
+            {
+              "text": "苏润种业（874409，新三板挂牌，挂牌日 2024-03-11）",
+              "link": "/kb2024/2024年度总结#苏润种业-874409-新三板挂牌-挂牌日-2024-03-11"
+            },
+            {
+              "text": "伊玛环境（874123，新三板挂牌，挂牌日 2024-03-14）",
+              "link": "/kb2024/2024年度总结#伊玛环境-874123-新三板挂牌-挂牌日-2024-03-14"
+            },
+            {
+              "text": "华剑智能（874317，新三板挂牌，挂牌日 2024-03-14）",
+              "link": "/kb2024/2024年度总结#华剑智能-874317-新三板挂牌-挂牌日-2024-03-14"
+            },
+            {
+              "text": "大禹科技（874361，新三板挂牌，挂牌日 2024-03-14）",
+              "link": "/kb2024/2024年度总结#大禹科技-874361-新三板挂牌-挂牌日-2024-03-14"
+            },
+            {
+              "text": "方圆塑机（874425，新三板挂牌，挂牌日 2024-03-18）",
+              "link": "/kb2024/2024年度总结#方圆塑机-874425-新三板挂牌-挂牌日-2024-03-18"
+            },
+            {
+              "text": "恒基金属（874320，新三板挂牌，挂牌日 2024-03-20）",
+              "link": "/kb2024/2024年度总结#恒基金属-874320-新三板挂牌-挂牌日-2024-03-20"
+            },
+            {
+              "text": "苏沃特（874305，新三板挂牌，挂牌日 2024-03-20）",
+              "link": "/kb2024/2024年度总结#苏沃特-874305-新三板挂牌-挂牌日-2024-03-20"
+            },
+            {
+              "text": "玛格家居（873214，新三板挂牌，挂牌日 2024-03-21）",
+              "link": "/kb2024/2024年度总结#玛格家居-873214-新三板挂牌-挂牌日-2024-03-21"
+            },
+            {
+              "text": "金叶科技（874246，新三板挂牌，挂牌日 2024-03-21）",
+              "link": "/kb2024/2024年度总结#金叶科技-874246-新三板挂牌-挂牌日-2024-03-21"
+            },
+            {
+              "text": "锐牛股份（874217，新三板挂牌，挂牌日 2024-03-21）",
+              "link": "/kb2024/2024年度总结#锐牛股份-874217-新三板挂牌-挂牌日-2024-03-21"
+            },
+            {
+              "text": "卓英社（874146，新三板挂牌，挂牌日 2024-03-25）",
+              "link": "/kb2024/2024年度总结#卓英社-874146-新三板挂牌-挂牌日-2024-03-25"
+            },
+            {
+              "text": "泓毅股份（874347，新三板挂牌，挂牌日 2024-03-28）",
+              "link": "/kb2024/2024年度总结#泓毅股份-874347-新三板挂牌-挂牌日-2024-03-28"
+            },
+            {
+              "text": "安达股份（874433，新三板挂牌，挂牌日 2024-03-29）",
+              "link": "/kb2024/2024年度总结#安达股份-874433-新三板挂牌-挂牌日-2024-03-29"
+            },
+            {
+              "text": "特富发展（874045，新三板挂牌，挂牌日 2024-03-29）",
+              "link": "/kb2024/2024年度总结#特富发展-874045-新三板挂牌-挂牌日-2024-03-29"
+            },
+            {
+              "text": "新康达（874372，新三板挂牌，挂牌日 2024-04-02）",
+              "link": "/kb2024/2024年度总结#新康达-874372-新三板挂牌-挂牌日-2024-04-02"
+            },
+            {
+              "text": "赛瓦特（874439，新三板挂牌，挂牌日 2024-04-02）",
+              "link": "/kb2024/2024年度总结#赛瓦特-874439-新三板挂牌-挂牌日-2024-04-02"
+            },
+            {
+              "text": "伊科能源（873144，新三板挂牌，挂牌日 2024-04-10）",
+              "link": "/kb2024/2024年度总结#伊科能源-873144-新三板挂牌-挂牌日-2024-04-10"
+            },
+            {
+              "text": "康居人（874120，新三板挂牌，挂牌日 2024-04-11）",
+              "link": "/kb2024/2024年度总结#康居人-874120-新三板挂牌-挂牌日-2024-04-11"
+            },
+            {
+              "text": "智能检测（874416，新三板挂牌，挂牌日 2024-04-15）",
+              "link": "/kb2024/2024年度总结#智能检测-874416-新三板挂牌-挂牌日-2024-04-15"
+            },
+            {
+              "text": "中原辊轴（874437，新三板挂牌，挂牌日 2024-04-16）",
+              "link": "/kb2024/2024年度总结#中原辊轴-874437-新三板挂牌-挂牌日-2024-04-16"
+            },
+            {
+              "text": "亚信股份（874438，新三板挂牌，挂牌日 2024-04-17）",
+              "link": "/kb2024/2024年度总结#亚信股份-874438-新三板挂牌-挂牌日-2024-04-17"
+            },
+            {
+              "text": "石羊农科（874456，新三板挂牌，挂牌日 2024-04-19）",
+              "link": "/kb2024/2024年度总结#石羊农科-874456-新三板挂牌-挂牌日-2024-04-19"
+            },
+            {
+              "text": "英氏控股（874431，新三板挂牌，挂牌日 2024-04-23）",
+              "link": "/kb2024/2024年度总结#英氏控股-874431-新三板挂牌-挂牌日-2024-04-23"
+            },
+            {
+              "text": "东通岩土（874444，新三板挂牌，挂牌日 2024-04-24）",
+              "link": "/kb2024/2024年度总结#东通岩土-874444-新三板挂牌-挂牌日-2024-04-24"
+            },
+            {
+              "text": "泰鹏环保（874417，新三板挂牌，挂牌日 2024-04-24）",
+              "link": "/kb2024/2024年度总结#泰鹏环保-874417-新三板挂牌-挂牌日-2024-04-24"
+            },
+            {
+              "text": "美思特（874307，新三板挂牌，挂牌日 2024-05-06）",
+              "link": "/kb2024/2024年度总结#美思特-874307-新三板挂牌-挂牌日-2024-05-06"
+            },
+            {
+              "text": "和普威视（872954，新三板挂牌，挂牌日 2024-05-09）",
+              "link": "/kb2024/2024年度总结#和普威视-872954-新三板挂牌-挂牌日-2024-05-09"
+            },
+            {
+              "text": "探创科技（874441，新三板挂牌，挂牌日 2024-05-10）",
+              "link": "/kb2024/2024年度总结#探创科技-874441-新三板挂牌-挂牌日-2024-05-10"
+            },
+            {
+              "text": "湖南设计（874368，新三板挂牌，挂牌日 2024-05-16）",
+              "link": "/kb2024/2024年度总结#湖南设计-874368-新三板挂牌-挂牌日-2024-05-16"
+            },
+            {
+              "text": "红光电能（874375，新三板挂牌，挂牌日 2024-05-20）",
+              "link": "/kb2024/2024年度总结#红光电能-874375-新三板挂牌-挂牌日-2024-05-20"
+            },
+            {
+              "text": "雄博股份（874455，新三板挂牌，挂牌日 2024-05-21）",
+              "link": "/kb2024/2024年度总结#雄博股份-874455-新三板挂牌-挂牌日-2024-05-21"
+            },
+            {
+              "text": "浙江钙科（874367，新三板挂牌，挂牌日 2024-05-24）",
+              "link": "/kb2024/2024年度总结#浙江钙科-874367-新三板挂牌-挂牌日-2024-05-24"
+            },
+            {
+              "text": "迪柯尼（873854，新三板挂牌，挂牌日 2024-05-24）",
+              "link": "/kb2024/2024年度总结#迪柯尼-873854-新三板挂牌-挂牌日-2024-05-24"
+            },
+            {
+              "text": "群旺科技（872834，新三板挂牌，挂牌日 2024-05-28）",
+              "link": "/kb2024/2024年度总结#群旺科技-872834-新三板挂牌-挂牌日-2024-05-28"
+            },
+            {
+              "text": "恒达科技（874469，新三板挂牌，挂牌日 2024-06-03）",
+              "link": "/kb2024/2024年度总结#恒达科技-874469-新三板挂牌-挂牌日-2024-06-03"
+            },
+            {
+              "text": "金昌树（874448，新三板挂牌，挂牌日 2024-06-04）",
+              "link": "/kb2024/2024年度总结#金昌树-874448-新三板挂牌-挂牌日-2024-06-04"
+            },
+            {
+              "text": "雅图高新（872924，新三板挂牌，挂牌日 2024-06-06）",
+              "link": "/kb2024/2024年度总结#雅图高新-872924-新三板挂牌-挂牌日-2024-06-06"
+            },
+            {
+              "text": "荣鑫智能（874446，新三板挂牌，挂牌日 2024-06-11）",
+              "link": "/kb2024/2024年度总结#荣鑫智能-874446-新三板挂牌-挂牌日-2024-06-11"
+            },
+            {
+              "text": "华尔科技（874452，新三板挂牌，挂牌日 2024-06-14）",
+              "link": "/kb2024/2024年度总结#华尔科技-874452-新三板挂牌-挂牌日-2024-06-14"
+            },
+            {
+              "text": "黄河新兴（874319，新三板挂牌，挂牌日 2024-06-17）",
+              "link": "/kb2024/2024年度总结#黄河新兴-874319-新三板挂牌-挂牌日-2024-06-17"
+            },
+            {
+              "text": "昆仑联通（874435，新三板挂牌，挂牌日 2024-06-20）",
+              "link": "/kb2024/2024年度总结#昆仑联通-874435-新三板挂牌-挂牌日-2024-06-20"
+            },
+            {
+              "text": "东方重工（874440，新三板挂牌，挂牌日 2024-06-21）",
+              "link": "/kb2024/2024年度总结#东方重工-874440-新三板挂牌-挂牌日-2024-06-21"
+            },
+            {
+              "text": "艺虹股份（874449，新三板挂牌，挂牌日 2024-06-21）",
+              "link": "/kb2024/2024年度总结#艺虹股份-874449-新三板挂牌-挂牌日-2024-06-21"
+            },
+            {
+              "text": "华汇智能（874378，新三板挂牌，挂牌日 2024-06-24）",
+              "link": "/kb2024/2024年度总结#华汇智能-874378-新三板挂牌-挂牌日-2024-06-24"
+            },
+            {
+              "text": "华通通信（874447，新三板挂牌，挂牌日 2024-06-25）",
+              "link": "/kb2024/2024年度总结#华通通信-874447-新三板挂牌-挂牌日-2024-06-25"
+            },
+            {
+              "text": "紫光国芯（874451，新三板挂牌，挂牌日 2024-06-25）",
+              "link": "/kb2024/2024年度总结#紫光国芯-874451-新三板挂牌-挂牌日-2024-06-25"
+            },
+            {
+              "text": "百菲乳业（874376，新三板挂牌，挂牌日 2024-06-28）",
+              "link": "/kb2024/2024年度总结#百菲乳业-874376-新三板挂牌-挂牌日-2024-06-28"
+            },
+            {
+              "text": "宏霸机电（874428，新三板挂牌，挂牌日 2024-07-04）",
+              "link": "/kb2024/2024年度总结#宏霸机电-874428-新三板挂牌-挂牌日-2024-07-04"
+            },
+            {
+              "text": "金钛股份（874391，新三板挂牌，挂牌日 2024-07-05）",
+              "link": "/kb2024/2024年度总结#金钛股份-874391-新三板挂牌-挂牌日-2024-07-05"
+            },
+            {
+              "text": "鸿舜科技（874377，新三板挂牌，挂牌日 2024-07-05）",
+              "link": "/kb2024/2024年度总结#鸿舜科技-874377-新三板挂牌-挂牌日-2024-07-05"
+            },
+            {
+              "text": "紫江新材（874461，新三板挂牌，挂牌日 2024-07-08）",
+              "link": "/kb2024/2024年度总结#紫江新材-874461-新三板挂牌-挂牌日-2024-07-08"
+            },
+            {
+              "text": "天永诚（874432，新三板挂牌，挂牌日 2024-07-09）",
+              "link": "/kb2024/2024年度总结#天永诚-874432-新三板挂牌-挂牌日-2024-07-09"
+            },
+            {
+              "text": "科金明（874445，新三板挂牌，挂牌日 2024-07-09）",
+              "link": "/kb2024/2024年度总结#科金明-874445-新三板挂牌-挂牌日-2024-07-09"
+            },
+            {
+              "text": "舒友仪器（874379，新三板挂牌，挂牌日 2024-07-12）",
+              "link": "/kb2024/2024年度总结#舒友仪器-874379-新三板挂牌-挂牌日-2024-07-12"
+            },
+            {
+              "text": "佑威新材（874390，新三板挂牌，挂牌日 2024-07-15）",
+              "link": "/kb2024/2024年度总结#佑威新材-874390-新三板挂牌-挂牌日-2024-07-15"
+            },
+            {
+              "text": "利思德（874488，新三板挂牌，挂牌日 2024-07-16）",
+              "link": "/kb2024/2024年度总结#利思德-874488-新三板挂牌-挂牌日-2024-07-16"
+            },
+            {
+              "text": "小小科技（874476，新三板挂牌，挂牌日 2024-07-23）",
+              "link": "/kb2024/2024年度总结#小小科技-874476-新三板挂牌-挂牌日-2024-07-23"
+            },
+            {
+              "text": "拓普泰克（874475，新三板挂牌，挂牌日 2024-07-24）",
+              "link": "/kb2024/2024年度总结#拓普泰克-874475-新三板挂牌-挂牌日-2024-07-24"
+            },
+            {
+              "text": "迅达工业（874499，新三板挂牌，挂牌日 2024-07-24）",
+              "link": "/kb2024/2024年度总结#迅达工业-874499-新三板挂牌-挂牌日-2024-07-24"
+            },
+            {
+              "text": "中奥电力（873494，新三板挂牌，挂牌日 2024-07-26）",
+              "link": "/kb2024/2024年度总结#中奥电力-873494-新三板挂牌-挂牌日-2024-07-26"
+            },
+            {
+              "text": "生力材料（874472，新三板挂牌，挂牌日 2024-07-26）",
+              "link": "/kb2024/2024年度总结#生力材料-874472-新三板挂牌-挂牌日-2024-07-26"
+            },
+            {
+              "text": "钰烯股份（874381，新三板挂牌，挂牌日 2024-07-30）",
+              "link": "/kb2024/2024年度总结#钰烯股份-874381-新三板挂牌-挂牌日-2024-07-30"
+            },
+            {
+              "text": "卓海科技（874380，新三板挂牌，挂牌日 2024-08-05）",
+              "link": "/kb2024/2024年度总结#卓海科技-874380-新三板挂牌-挂牌日-2024-08-05"
+            },
+            {
+              "text": "新亚电通（874415，新三板挂牌，挂牌日 2024-08-06）",
+              "link": "/kb2024/2024年度总结#新亚电通-874415-新三板挂牌-挂牌日-2024-08-06"
+            },
+            {
+              "text": "高特股份（873614，新三板挂牌，挂牌日 2024-08-06）",
+              "link": "/kb2024/2024年度总结#高特股份-873614-新三板挂牌-挂牌日-2024-08-06"
+            },
+            {
+              "text": "高科环保（874506，新三板挂牌，挂牌日 2024-08-06）",
+              "link": "/kb2024/2024年度总结#高科环保-874506-新三板挂牌-挂牌日-2024-08-06"
+            },
+            {
+              "text": "南高峰（874422，新三板挂牌，挂牌日 2024-08-07）",
+              "link": "/kb2024/2024年度总结#南高峰-874422-新三板挂牌-挂牌日-2024-08-07"
+            },
+            {
+              "text": "中集醇科（872914，新三板挂牌，挂牌日 2024-08-08）",
+              "link": "/kb2024/2024年度总结#中集醇科-872914-新三板挂牌-挂牌日-2024-08-08"
+            },
+            {
+              "text": "宝昱科技（874404，新三板挂牌，挂牌日 2024-08-08）",
+              "link": "/kb2024/2024年度总结#宝昱科技-874404-新三板挂牌-挂牌日-2024-08-08"
+            },
+            {
+              "text": "玖方新材（874470，新三板挂牌，挂牌日 2024-08-08）",
+              "link": "/kb2024/2024年度总结#玖方新材-874470-新三板挂牌-挂牌日-2024-08-08"
+            },
+            {
+              "text": "云眼视界（874515，新三板挂牌，挂牌日 2024-08-13）",
+              "link": "/kb2024/2024年度总结#云眼视界-874515-新三板挂牌-挂牌日-2024-08-13"
+            },
+            {
+              "text": "越升科技（874516，新三板挂牌，挂牌日 2024-08-14）",
+              "link": "/kb2024/2024年度总结#越升科技-874516-新三板挂牌-挂牌日-2024-08-14"
+            },
+            {
+              "text": "夏瑞科技（874503，新三板挂牌，挂牌日 2024-08-16）",
+              "link": "/kb2024/2024年度总结#夏瑞科技-874503-新三板挂牌-挂牌日-2024-08-16"
+            },
+            {
+              "text": "尚航科技（873374，新三板挂牌，挂牌日 2024-08-20）",
+              "link": "/kb2024/2024年度总结#尚航科技-873374-新三板挂牌-挂牌日-2024-08-20"
+            },
+            {
+              "text": "天健新材（874508，新三板挂牌，挂牌日 2024-08-22）",
+              "link": "/kb2024/2024年度总结#天健新材-874508-新三板挂牌-挂牌日-2024-08-22"
+            },
+            {
+              "text": "艾斯迪（874498，新三板挂牌，挂牌日 2024-08-22）",
+              "link": "/kb2024/2024年度总结#艾斯迪-874498-新三板挂牌-挂牌日-2024-08-22"
+            },
+            {
+              "text": "新瑞昕（874517，新三板挂牌，挂牌日 2024-08-23）",
+              "link": "/kb2024/2024年度总结#新瑞昕-874517-新三板挂牌-挂牌日-2024-08-23"
+            },
+            {
+              "text": "天润新材（874507，新三板挂牌，挂牌日 2024-08-30）",
+              "link": "/kb2024/2024年度总结#天润新材-874507-新三板挂牌-挂牌日-2024-08-30"
+            },
+            {
+              "text": "华甸防雷（874429，新三板挂牌，挂牌日 2024-09-02）",
+              "link": "/kb2024/2024年度总结#华甸防雷-874429-新三板挂牌-挂牌日-2024-09-02"
+            },
+            {
+              "text": "德泰燃气（874436，新三板挂牌，挂牌日 2024-09-03）",
+              "link": "/kb2024/2024年度总结#德泰燃气-874436-新三板挂牌-挂牌日-2024-09-03"
+            },
+            {
+              "text": "智先生（873904，新三板挂牌，挂牌日 2024-09-03）",
+              "link": "/kb2024/2024年度总结#智先生-873904-新三板挂牌-挂牌日-2024-09-03"
+            },
+            {
+              "text": "艾克姆（874548，新三板挂牌，挂牌日 2024-09-04）",
+              "link": "/kb2024/2024年度总结#艾克姆-874548-新三板挂牌-挂牌日-2024-09-04"
+            },
+            {
+              "text": "原力数字（874552，新三板挂牌，挂牌日 2024-09-05）",
+              "link": "/kb2024/2024年度总结#原力数字-874552-新三板挂牌-挂牌日-2024-09-05"
+            },
+            {
+              "text": "贝昂智能（874496，新三板挂牌，挂牌日 2024-09-05）",
+              "link": "/kb2024/2024年度总结#贝昂智能-874496-新三板挂牌-挂牌日-2024-09-05"
+            },
+            {
+              "text": "唯可鲜（874518，新三板挂牌，挂牌日 2024-09-06）",
+              "link": "/kb2024/2024年度总结#唯可鲜-874518-新三板挂牌-挂牌日-2024-09-06"
+            },
+            {
+              "text": "宝盖新材（874551，新三板挂牌，挂牌日 2024-09-06）",
+              "link": "/kb2024/2024年度总结#宝盖新材-874551-新三板挂牌-挂牌日-2024-09-06"
+            },
+            {
+              "text": "浙江天际（874536，新三板挂牌，挂牌日 2024-09-06）",
+              "link": "/kb2024/2024年度总结#浙江天际-874536-新三板挂牌-挂牌日-2024-09-06"
+            },
+            {
+              "text": "量传计量（874521，新三板挂牌，挂牌日 2024-09-06）",
+              "link": "/kb2024/2024年度总结#量传计量-874521-新三板挂牌-挂牌日-2024-09-06"
+            },
+            {
+              "text": "八桂种苗（874473，新三板挂牌，挂牌日 2024-09-09）",
+              "link": "/kb2024/2024年度总结#八桂种苗-874473-新三板挂牌-挂牌日-2024-09-09"
+            },
+            {
+              "text": "樱桃谷（874505，新三板挂牌，挂牌日 2024-09-09）",
+              "link": "/kb2024/2024年度总结#樱桃谷-874505-新三板挂牌-挂牌日-2024-09-09"
+            },
+            {
+              "text": "舟海智能（874458，新三板挂牌，挂牌日 2024-09-09）",
+              "link": "/kb2024/2024年度总结#舟海智能-874458-新三板挂牌-挂牌日-2024-09-09"
+            },
+            {
+              "text": "超晶科技（874478，新三板挂牌，挂牌日 2024-09-09）",
+              "link": "/kb2024/2024年度总结#超晶科技-874478-新三板挂牌-挂牌日-2024-09-09"
+            },
+            {
+              "text": "安宇迪（874443，新三板挂牌，挂牌日 2024-09-10）",
+              "link": "/kb2024/2024年度总结#安宇迪-874443-新三板挂牌-挂牌日-2024-09-10"
+            },
+            {
+              "text": "永盛科技（874497，新三板挂牌，挂牌日 2024-09-10）",
+              "link": "/kb2024/2024年度总结#永盛科技-874497-新三板挂牌-挂牌日-2024-09-10"
+            },
+            {
+              "text": "辛帕智能（874567，新三板挂牌，挂牌日 2024-09-10）",
+              "link": "/kb2024/2024年度总结#辛帕智能-874567-新三板挂牌-挂牌日-2024-09-10"
+            },
+            {
+              "text": "豪德数控（874530，新三板挂牌，挂牌日 2024-09-12）",
+              "link": "/kb2024/2024年度总结#豪德数控-874530-新三板挂牌-挂牌日-2024-09-12"
+            },
+            {
+              "text": "合众伟奇（874460，新三板挂牌，挂牌日 2024-09-13）",
+              "link": "/kb2024/2024年度总结#合众伟奇-874460-新三板挂牌-挂牌日-2024-09-13"
+            },
+            {
+              "text": "富杰德（874501，新三板挂牌，挂牌日 2024-09-13）",
+              "link": "/kb2024/2024年度总结#富杰德-874501-新三板挂牌-挂牌日-2024-09-13"
+            },
+            {
+              "text": "墙煌科技（874587，新三板挂牌，挂牌日 2024-09-18）",
+              "link": "/kb2024/2024年度总结#墙煌科技-874587-新三板挂牌-挂牌日-2024-09-18"
+            },
+            {
+              "text": "乘风科技（873774，新三板挂牌，挂牌日 2024-09-19）",
+              "link": "/kb2024/2024年度总结#乘风科技-873774-新三板挂牌-挂牌日-2024-09-19"
+            },
+            {
+              "text": "开元环保（874480，新三板挂牌，挂牌日 2024-09-20）",
+              "link": "/kb2024/2024年度总结#开元环保-874480-新三板挂牌-挂牌日-2024-09-20"
+            },
+            {
+              "text": "德普莱太（874479，新三板挂牌，挂牌日 2024-09-20）",
+              "link": "/kb2024/2024年度总结#德普莱太-874479-新三板挂牌-挂牌日-2024-09-20"
+            },
+            {
+              "text": "沛城科技（874553，新三板挂牌，挂牌日 2024-09-20）",
+              "link": "/kb2024/2024年度总结#沛城科技-874553-新三板挂牌-挂牌日-2024-09-20"
+            },
+            {
+              "text": "航特装备（874477，新三板挂牌，挂牌日 2024-09-20）",
+              "link": "/kb2024/2024年度总结#航特装备-874477-新三板挂牌-挂牌日-2024-09-20"
+            },
+            {
+              "text": "苏环院（874493，新三板挂牌，挂牌日 2024-09-20）",
+              "link": "/kb2024/2024年度总结#苏环院-874493-新三板挂牌-挂牌日-2024-09-20"
+            },
+            {
+              "text": "中德科技（874522，新三板挂牌，挂牌日 2024-09-23）",
+              "link": "/kb2024/2024年度总结#中德科技-874522-新三板挂牌-挂牌日-2024-09-23"
+            },
+            {
+              "text": "丰香园（874362，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#丰香园-874362-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "兴三星（874523，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#兴三星-874523-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "国容股份（874566，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#国容股份-874566-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "康华股份（874579，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#康华股份-874579-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "志达精密（874568，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#志达精密-874568-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "笛东股份（874467，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#笛东股份-874467-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "菊乐股份（874569，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#菊乐股份-874569-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "衣科股份（874423，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#衣科股份-874423-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "龙腾股份（874559，新三板挂牌，挂牌日 2024-09-24）",
+              "link": "/kb2024/2024年度总结#龙腾股份-874559-新三板挂牌-挂牌日-2024-09-24"
+            },
+            {
+              "text": "牛牌机电（874596，新三板挂牌，挂牌日 2024-09-25）",
+              "link": "/kb2024/2024年度总结#牛牌机电-874596-新三板挂牌-挂牌日-2024-09-25"
+            },
+            {
+              "text": "耀泰股份（874565，新三板挂牌，挂牌日 2024-09-25）",
+              "link": "/kb2024/2024年度总结#耀泰股份-874565-新三板挂牌-挂牌日-2024-09-25"
+            },
+            {
+              "text": "嘉特股份（874532，新三板挂牌，挂牌日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#嘉特股份-874532-新三板挂牌-挂牌日-2024-09-26"
+            },
+            {
+              "text": "嘉耐股份（874556，新三板挂牌，挂牌日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#嘉耐股份-874556-新三板挂牌-挂牌日-2024-09-26"
+            },
+            {
+              "text": "固力发（874588，新三板挂牌，挂牌日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#固力发-874588-新三板挂牌-挂牌日-2024-09-26"
+            },
+            {
+              "text": "奥立思特（874550，新三板挂牌，挂牌日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#奥立思特-874550-新三板挂牌-挂牌日-2024-09-26"
+            },
+            {
+              "text": "联成科技（874557，新三板挂牌，挂牌日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#联成科技-874557-新三板挂牌-挂牌日-2024-09-26"
+            },
+            {
+              "text": "金标股份（874561，新三板挂牌，挂牌日 2024-09-26）",
+              "link": "/kb2024/2024年度总结#金标股份-874561-新三板挂牌-挂牌日-2024-09-26"
+            },
+            {
+              "text": "安特磁材（874593，新三板挂牌，挂牌日 2024-09-27）",
+              "link": "/kb2024/2024年度总结#安特磁材-874593-新三板挂牌-挂牌日-2024-09-27"
+            },
+            {
+              "text": "方意股份（874586，新三板挂牌，挂牌日 2024-09-27）",
+              "link": "/kb2024/2024年度总结#方意股份-874586-新三板挂牌-挂牌日-2024-09-27"
+            },
+            {
+              "text": "兴福新材（874459，新三板挂牌，挂牌日 2024-09-30）",
+              "link": "/kb2024/2024年度总结#兴福新材-874459-新三板挂牌-挂牌日-2024-09-30"
+            },
+            {
+              "text": "千思跃（874581，新三板挂牌，挂牌日 2024-09-30）",
+              "link": "/kb2024/2024年度总结#千思跃-874581-新三板挂牌-挂牌日-2024-09-30"
+            },
+            {
+              "text": "家鸿口腔（874562，新三板挂牌，挂牌日 2024-09-30）",
+              "link": "/kb2024/2024年度总结#家鸿口腔-874562-新三板挂牌-挂牌日-2024-09-30"
+            },
+            {
+              "text": "莱恩精工（874549，新三板挂牌，挂牌日 2024-09-30）",
+              "link": "/kb2024/2024年度总结#莱恩精工-874549-新三板挂牌-挂牌日-2024-09-30"
+            },
+            {
+              "text": "唇动食品（874607，新三板挂牌，挂牌日 2024-10-08）",
+              "link": "/kb2024/2024年度总结#唇动食品-874607-新三板挂牌-挂牌日-2024-10-08"
+            },
+            {
+              "text": "艾科维（874603，新三板挂牌，挂牌日 2024-10-08）",
+              "link": "/kb2024/2024年度总结#艾科维-874603-新三板挂牌-挂牌日-2024-10-08"
+            },
+            {
+              "text": "上海宝丰（874582，新三板挂牌，挂牌日 2024-10-09）",
+              "link": "/kb2024/2024年度总结#上海宝丰-874582-新三板挂牌-挂牌日-2024-10-09"
+            },
+            {
+              "text": "中裕铁信（874484，新三板挂牌，挂牌日 2024-10-09）",
+              "link": "/kb2024/2024年度总结#中裕铁信-874484-新三板挂牌-挂牌日-2024-10-09"
+            },
+            {
+              "text": "惠尔信（874583，新三板挂牌，挂牌日 2024-10-09）",
+              "link": "/kb2024/2024年度总结#惠尔信-874583-新三板挂牌-挂牌日-2024-10-09"
+            },
+            {
+              "text": "科恩股份（874585，新三板挂牌，挂牌日 2024-10-09）",
+              "link": "/kb2024/2024年度总结#科恩股份-874585-新三板挂牌-挂牌日-2024-10-09"
+            },
+            {
+              "text": "西立股份（874606，新三板挂牌，挂牌日 2024-10-09）",
+              "link": "/kb2024/2024年度总结#西立股份-874606-新三板挂牌-挂牌日-2024-10-09"
+            },
+            {
+              "text": "日信高科（874591，新三板挂牌，挂牌日 2024-10-10）",
+              "link": "/kb2024/2024年度总结#日信高科-874591-新三板挂牌-挂牌日-2024-10-10"
+            },
+            {
+              "text": "昌誉股份（874597，新三板挂牌，挂牌日 2024-10-11）",
+              "link": "/kb2024/2024年度总结#昌誉股份-874597-新三板挂牌-挂牌日-2024-10-11"
+            },
+            {
+              "text": "飞宇医药（874410，新三板挂牌，挂牌日 2024-10-11）",
+              "link": "/kb2024/2024年度总结#飞宇医药-874410-新三板挂牌-挂牌日-2024-10-11"
+            },
+            {
+              "text": "洁华股份（874487，新三板挂牌，挂牌日 2024-10-14）",
+              "link": "/kb2024/2024年度总结#洁华股份-874487-新三板挂牌-挂牌日-2024-10-14"
+            },
+            {
+              "text": "库珀新能（874631，新三板挂牌，挂牌日 2024-10-15）",
+              "link": "/kb2024/2024年度总结#库珀新能-874631-新三板挂牌-挂牌日-2024-10-15"
+            },
+            {
+              "text": "恒信通（874609，新三板挂牌，挂牌日 2024-10-15）",
+              "link": "/kb2024/2024年度总结#恒信通-874609-新三板挂牌-挂牌日-2024-10-15"
+            },
+            {
+              "text": "泛博股份（874482，新三板挂牌，挂牌日 2024-10-15）",
+              "link": "/kb2024/2024年度总结#泛博股份-874482-新三板挂牌-挂牌日-2024-10-15"
+            },
+            {
+              "text": "元亨科技（874491，新三板挂牌，挂牌日 2024-10-16）",
+              "link": "/kb2024/2024年度总结#元亨科技-874491-新三板挂牌-挂牌日-2024-10-16"
+            },
+            {
+              "text": "天南电力（874623，新三板挂牌，挂牌日 2024-10-16）",
+              "link": "/kb2024/2024年度总结#天南电力-874623-新三板挂牌-挂牌日-2024-10-16"
+            },
+            {
+              "text": "天基生物（874646，新三板挂牌，挂牌日 2024-10-16）",
+              "link": "/kb2024/2024年度总结#天基生物-874646-新三板挂牌-挂牌日-2024-10-16"
+            },
+            {
+              "text": "恒业微晶（874533，新三板挂牌，挂牌日 2024-10-16）",
+              "link": "/kb2024/2024年度总结#恒业微晶-874533-新三板挂牌-挂牌日-2024-10-16"
+            },
+            {
+              "text": "中水三立（874589，新三板挂牌，挂牌日 2024-10-17）",
+              "link": "/kb2024/2024年度总结#中水三立-874589-新三板挂牌-挂牌日-2024-10-17"
+            },
+            {
+              "text": "埃夫科纳（874509，新三板挂牌，挂牌日 2024-10-17）",
+              "link": "/kb2024/2024年度总结#埃夫科纳-874509-新三板挂牌-挂牌日-2024-10-17"
+            },
+            {
+              "text": "城市云（874576，新三板挂牌，挂牌日 2024-10-17）",
+              "link": "/kb2024/2024年度总结#城市云-874576-新三板挂牌-挂牌日-2024-10-17"
+            },
+            {
+              "text": "微特股份（874608，新三板挂牌，挂牌日 2024-10-17）",
+              "link": "/kb2024/2024年度总结#微特股份-874608-新三板挂牌-挂牌日-2024-10-17"
+            },
+            {
+              "text": "鸿翔环境（874577，新三板挂牌，挂牌日 2024-10-17）",
+              "link": "/kb2024/2024年度总结#鸿翔环境-874577-新三板挂牌-挂牌日-2024-10-17"
+            },
+            {
+              "text": "尚华新材（874605，新三板挂牌，挂牌日 2024-10-18）",
+              "link": "/kb2024/2024年度总结#尚华新材-874605-新三板挂牌-挂牌日-2024-10-18"
+            },
+            {
+              "text": "蓬达高科（873944，新三板挂牌，挂牌日 2024-10-21）",
+              "link": "/kb2024/2024年度总结#蓬达高科-873944-新三板挂牌-挂牌日-2024-10-21"
+            },
+            {
+              "text": "坛墨质检（873354，新三板挂牌，挂牌日 2024-10-22）",
+              "link": "/kb2024/2024年度总结#坛墨质检-873354-新三板挂牌-挂牌日-2024-10-22"
+            },
+            {
+              "text": "张掖丹霞（874463，新三板挂牌，挂牌日 2024-10-22）",
+              "link": "/kb2024/2024年度总结#张掖丹霞-874463-新三板挂牌-挂牌日-2024-10-22"
+            },
+            {
+              "text": "丰德康（874430，新三板挂牌，挂牌日 2024-10-23）",
+              "link": "/kb2024/2024年度总结#丰德康-874430-新三板挂牌-挂牌日-2024-10-23"
+            },
+            {
+              "text": "先歌国际（872824，新三板挂牌，挂牌日 2024-10-23）",
+              "link": "/kb2024/2024年度总结#先歌国际-872824-新三板挂牌-挂牌日-2024-10-23"
+            },
+            {
+              "text": "凯得智能（874630，新三板挂牌，挂牌日 2024-10-23）",
+              "link": "/kb2024/2024年度总结#凯得智能-874630-新三板挂牌-挂牌日-2024-10-23"
+            },
+            {
+              "text": "北方实验（874611，新三板挂牌，挂牌日 2024-10-23）",
+              "link": "/kb2024/2024年度总结#北方实验-874611-新三板挂牌-挂牌日-2024-10-23"
+            },
+            {
+              "text": "华宇电子（874578，新三板挂牌，挂牌日 2024-10-23）",
+              "link": "/kb2024/2024年度总结#华宇电子-874578-新三板挂牌-挂牌日-2024-10-23"
+            },
+            {
+              "text": "扬州华光（874462，新三板挂牌，挂牌日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#扬州华光-874462-新三板挂牌-挂牌日-2024-10-24"
+            },
+            {
+              "text": "捷希科技（874592，新三板挂牌，挂牌日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#捷希科技-874592-新三板挂牌-挂牌日-2024-10-24"
+            },
+            {
+              "text": "新涛智控（874494，新三板挂牌，挂牌日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#新涛智控-874494-新三板挂牌-挂牌日-2024-10-24"
+            },
+            {
+              "text": "江锅股份（874668，新三板挂牌，挂牌日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#江锅股份-874668-新三板挂牌-挂牌日-2024-10-24"
+            },
+            {
+              "text": "百瑞吉（874637，新三板挂牌，挂牌日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#百瑞吉-874637-新三板挂牌-挂牌日-2024-10-24"
+            },
+            {
+              "text": "远华新材（874633，新三板挂牌，挂牌日 2024-10-24）",
+              "link": "/kb2024/2024年度总结#远华新材-874633-新三板挂牌-挂牌日-2024-10-24"
+            },
+            {
+              "text": "智汇新材（874658，新三板挂牌，挂牌日 2024-10-25）",
+              "link": "/kb2024/2024年度总结#智汇新材-874658-新三板挂牌-挂牌日-2024-10-25"
+            },
+            {
+              "text": "科蓝环保（873254，新三板挂牌，挂牌日 2024-10-25）",
+              "link": "/kb2024/2024年度总结#科蓝环保-873254-新三板挂牌-挂牌日-2024-10-25"
+            },
+            {
+              "text": "金鹏香料（874648，新三板挂牌，挂牌日 2024-10-25）",
+              "link": "/kb2024/2024年度总结#金鹏香料-874648-新三板挂牌-挂牌日-2024-10-25"
+            },
+            {
+              "text": "小草数字（874667，新三板挂牌，挂牌日 2024-10-29）",
+              "link": "/kb2024/2024年度总结#小草数字-874667-新三板挂牌-挂牌日-2024-10-29"
+            },
+            {
+              "text": "建工资源（874662，新三板挂牌，挂牌日 2024-10-29）",
+              "link": "/kb2024/2024年度总结#建工资源-874662-新三板挂牌-挂牌日-2024-10-29"
+            },
+            {
+              "text": "德硕科技（874669，新三板挂牌，挂牌日 2024-10-30）",
+              "link": "/kb2024/2024年度总结#德硕科技-874669-新三板挂牌-挂牌日-2024-10-30"
+            },
+            {
+              "text": "润奥供电（874618，新三板挂牌，挂牌日 2024-10-30）",
+              "link": "/kb2024/2024年度总结#润奥供电-874618-新三板挂牌-挂牌日-2024-10-30"
+            },
+            {
+              "text": "美康股份（874537，新三板挂牌，挂牌日 2024-10-30）",
+              "link": "/kb2024/2024年度总结#美康股份-874537-新三板挂牌-挂牌日-2024-10-30"
+            },
+            {
+              "text": "避泰电气（874615，新三板挂牌，挂牌日 2024-10-30）",
+              "link": "/kb2024/2024年度总结#避泰电气-874615-新三板挂牌-挂牌日-2024-10-30"
+            },
+            {
+              "text": "中鹏科技（874655，新三板挂牌，挂牌日 2024-10-31）",
+              "link": "/kb2024/2024年度总结#中鹏科技-874655-新三板挂牌-挂牌日-2024-10-31"
+            },
+            {
+              "text": "佳音科技（874629，新三板挂牌，挂牌日 2024-10-31）",
+              "link": "/kb2024/2024年度总结#佳音科技-874629-新三板挂牌-挂牌日-2024-10-31"
+            },
+            {
+              "text": "玫瑰岛（873024，新三板挂牌，挂牌日 2024-10-31）",
+              "link": "/kb2024/2024年度总结#玫瑰岛-873024-新三板挂牌-挂牌日-2024-10-31"
+            },
+            {
+              "text": "科恩新能（874564，新三板挂牌，挂牌日 2024-10-31）",
+              "link": "/kb2024/2024年度总结#科恩新能-874564-新三板挂牌-挂牌日-2024-10-31"
+            },
+            {
+              "text": "艾德森（873084，新三板挂牌，挂牌日 2024-10-31）",
+              "link": "/kb2024/2024年度总结#艾德森-873084-新三板挂牌-挂牌日-2024-10-31"
+            },
+            {
+              "text": "图维科技（874619，新三板挂牌，挂牌日 2024-11-01）",
+              "link": "/kb2024/2024年度总结#图维科技-874619-新三板挂牌-挂牌日-2024-11-01"
+            },
+            {
+              "text": "宇特光电（874571，新三板挂牌，挂牌日 2024-11-01）",
+              "link": "/kb2024/2024年度总结#宇特光电-874571-新三板挂牌-挂牌日-2024-11-01"
+            },
+            {
+              "text": "斯瑞达（874570，新三板挂牌，挂牌日 2024-11-01）",
+              "link": "/kb2024/2024年度总结#斯瑞达-874570-新三板挂牌-挂牌日-2024-11-01"
+            },
+            {
+              "text": "重庆美泰（874394，新三板挂牌，挂牌日 2024-11-01）",
+              "link": "/kb2024/2024年度总结#重庆美泰-874394-新三板挂牌-挂牌日-2024-11-01"
+            },
+            {
+              "text": "阿宽食品（874639，新三板挂牌，挂牌日 2024-11-01）",
+              "link": "/kb2024/2024年度总结#阿宽食品-874639-新三板挂牌-挂牌日-2024-11-01"
+            },
+            {
+              "text": "浙江亿得（874601，新三板挂牌，挂牌日 2024-11-04）",
+              "link": "/kb2024/2024年度总结#浙江亿得-874601-新三板挂牌-挂牌日-2024-11-04"
+            },
+            {
+              "text": "南通华新（872854，新三板挂牌，挂牌日 2024-11-06）",
+              "link": "/kb2024/2024年度总结#南通华新-872854-新三板挂牌-挂牌日-2024-11-06"
+            },
+            {
+              "text": "达实智控（874656，新三板挂牌，挂牌日 2024-11-06）",
+              "link": "/kb2024/2024年度总结#达实智控-874656-新三板挂牌-挂牌日-2024-11-06"
+            },
+            {
+              "text": "中塑股份（874595，新三板挂牌，挂牌日 2024-11-07）",
+              "link": "/kb2024/2024年度总结#中塑股份-874595-新三板挂牌-挂牌日-2024-11-07"
+            },
+            {
+              "text": "八达光电（874638，新三板挂牌，挂牌日 2024-11-07）",
+              "link": "/kb2024/2024年度总结#八达光电-874638-新三板挂牌-挂牌日-2024-11-07"
+            },
+            {
+              "text": "张恒春（874647，新三板挂牌，挂牌日 2024-11-07）",
+              "link": "/kb2024/2024年度总结#张恒春-874647-新三板挂牌-挂牌日-2024-11-07"
+            },
+            {
+              "text": "锐格科技（874442，新三板挂牌，挂牌日 2024-11-07）",
+              "link": "/kb2024/2024年度总结#锐格科技-874442-新三板挂牌-挂牌日-2024-11-07"
+            },
+            {
+              "text": "佰家丽（874612，新三板挂牌，挂牌日 2024-11-08）",
+              "link": "/kb2024/2024年度总结#佰家丽-874612-新三板挂牌-挂牌日-2024-11-08"
+            },
+            {
+              "text": "基因科技（874483，新三板挂牌，挂牌日 2024-11-08）",
+              "link": "/kb2024/2024年度总结#基因科技-874483-新三板挂牌-挂牌日-2024-11-08"
+            },
+            {
+              "text": "川力智能（874664，新三板挂牌，挂牌日 2024-11-08）",
+              "link": "/kb2024/2024年度总结#川力智能-874664-新三板挂牌-挂牌日-2024-11-08"
+            },
+            {
+              "text": "昂盛达（874680，新三板挂牌，挂牌日 2024-11-08）",
+              "link": "/kb2024/2024年度总结#昂盛达-874680-新三板挂牌-挂牌日-2024-11-08"
+            },
+            {
+              "text": "暨博医疗（874678，新三板挂牌，挂牌日 2024-11-08）",
+              "link": "/kb2024/2024年度总结#暨博医疗-874678-新三板挂牌-挂牌日-2024-11-08"
+            },
+            {
+              "text": "科视光学（874636，新三板挂牌，挂牌日 2024-11-08）",
+              "link": "/kb2024/2024年度总结#科视光学-874636-新三板挂牌-挂牌日-2024-11-08"
+            },
+            {
+              "text": "谐通科技（874274，新三板挂牌，挂牌日 2024-11-08）",
+              "link": "/kb2024/2024年度总结#谐通科技-874274-新三板挂牌-挂牌日-2024-11-08"
+            },
+            {
+              "text": "嘉利股份（874616，新三板挂牌，挂牌日 2024-11-11）",
+              "link": "/kb2024/2024年度总结#嘉利股份-874616-新三板挂牌-挂牌日-2024-11-11"
+            },
+            {
+              "text": "时代高科（874663，新三板挂牌，挂牌日 2024-11-11）",
+              "link": "/kb2024/2024年度总结#时代高科-874663-新三板挂牌-挂牌日-2024-11-11"
+            },
+            {
+              "text": "博兴新材（873154，新三板挂牌，挂牌日 2024-11-12）",
+              "link": "/kb2024/2024年度总结#博兴新材-873154-新三板挂牌-挂牌日-2024-11-12"
+            },
+            {
+              "text": "深圳中基（874666，新三板挂牌，挂牌日 2024-11-12）",
+              "link": "/kb2024/2024年度总结#深圳中基-874666-新三板挂牌-挂牌日-2024-11-12"
+            },
+            {
+              "text": "华达通（874688，新三板挂牌，挂牌日 2024-11-14）",
+              "link": "/kb2024/2024年度总结#华达通-874688-新三板挂牌-挂牌日-2024-11-14"
+            },
+            {
+              "text": "诺贝尔（874531，新三板挂牌，挂牌日 2024-11-14）",
+              "link": "/kb2024/2024年度总结#诺贝尔-874531-新三板挂牌-挂牌日-2024-11-14"
+            },
+            {
+              "text": "首页科技（874547，新三板挂牌，挂牌日 2024-11-14）",
+              "link": "/kb2024/2024年度总结#首页科技-874547-新三板挂牌-挂牌日-2024-11-14"
+            },
+            {
+              "text": "新大材料（874676，新三板挂牌，挂牌日 2024-11-15）",
+              "link": "/kb2024/2024年度总结#新大材料-874676-新三板挂牌-挂牌日-2024-11-15"
+            },
+            {
+              "text": "连科智造（874625，新三板挂牌，挂牌日 2024-11-15）",
+              "link": "/kb2024/2024年度总结#连科智造-874625-新三板挂牌-挂牌日-2024-11-15"
+            },
+            {
+              "text": "华景能源（874686，新三板挂牌，挂牌日 2024-11-18）",
+              "link": "/kb2024/2024年度总结#华景能源-874686-新三板挂牌-挂牌日-2024-11-18"
+            },
+            {
+              "text": "天祥股份（874650，新三板挂牌，挂牌日 2024-11-19）",
+              "link": "/kb2024/2024年度总结#天祥股份-874650-新三板挂牌-挂牌日-2024-11-19"
+            },
+            {
+              "text": "德耐尔（874402，新三板挂牌，挂牌日 2024-11-20）",
+              "link": "/kb2024/2024年度总结#德耐尔-874402-新三板挂牌-挂牌日-2024-11-20"
+            },
+            {
+              "text": "深鹏科技（874659，新三板挂牌，挂牌日 2024-11-20）",
+              "link": "/kb2024/2024年度总结#深鹏科技-874659-新三板挂牌-挂牌日-2024-11-20"
+            },
+            {
+              "text": "中矿岩土（874620，新三板挂牌，挂牌日 2024-11-21）",
+              "link": "/kb2024/2024年度总结#中矿岩土-874620-新三板挂牌-挂牌日-2024-11-21"
+            },
+            {
+              "text": "弘昌新材（874602，新三板挂牌，挂牌日 2024-11-21）",
+              "link": "/kb2024/2024年度总结#弘昌新材-874602-新三板挂牌-挂牌日-2024-11-21"
+            },
+            {
+              "text": "千年舟（873924，新三板挂牌，挂牌日 2024-11-29）",
+              "link": "/kb2024/2024年度总结#千年舟-873924-新三板挂牌-挂牌日-2024-11-29"
+            },
+            {
+              "text": "宸芯科技（874661，新三板挂牌，挂牌日 2024-12-02）",
+              "link": "/kb2024/2024年度总结#宸芯科技-874661-新三板挂牌-挂牌日-2024-12-02"
+            },
+            {
+              "text": "小鸟科技（874660，新三板挂牌，挂牌日 2024-12-02）",
+              "link": "/kb2024/2024年度总结#小鸟科技-874660-新三板挂牌-挂牌日-2024-12-02"
+            },
+            {
+              "text": "长步道（874420，新三板挂牌，挂牌日 2024-12-03）",
+              "link": "/kb2024/2024年度总结#长步道-874420-新三板挂牌-挂牌日-2024-12-03"
+            },
+            {
+              "text": "睿健医疗（874652，新三板挂牌，挂牌日 2024-12-05）",
+              "link": "/kb2024/2024年度总结#睿健医疗-874652-新三板挂牌-挂牌日-2024-12-05"
+            },
+            {
+              "text": "吉宝股份（874671，新三板挂牌，挂牌日 2024-12-06）",
+              "link": "/kb2024/2024年度总结#吉宝股份-874671-新三板挂牌-挂牌日-2024-12-06"
+            },
+            {
+              "text": "牙博士（874689，新三板挂牌，挂牌日 2024-12-06）",
+              "link": "/kb2024/2024年度总结#牙博士-874689-新三板挂牌-挂牌日-2024-12-06"
+            },
+            {
+              "text": "经纬科技（874681，新三板挂牌，挂牌日 2024-12-10）",
+              "link": "/kb2024/2024年度总结#经纬科技-874681-新三板挂牌-挂牌日-2024-12-10"
+            },
+            {
+              "text": "唐兴科技（874677，新三板挂牌，挂牌日 2024-12-12）",
+              "link": "/kb2024/2024年度总结#唐兴科技-874677-新三板挂牌-挂牌日-2024-12-12"
+            },
+            {
+              "text": "明泰股份（874675，新三板挂牌，挂牌日 2024-12-12）",
+              "link": "/kb2024/2024年度总结#明泰股份-874675-新三板挂牌-挂牌日-2024-12-12"
+            },
+            {
+              "text": "华益泰康（874191，新三板挂牌，挂牌日 2024-12-13）",
+              "link": "/kb2024/2024年度总结#华益泰康-874191-新三板挂牌-挂牌日-2024-12-13"
+            },
+            {
+              "text": "正大种业（874679，新三板挂牌，挂牌日 2024-12-13）",
+              "link": "/kb2024/2024年度总结#正大种业-874679-新三板挂牌-挂牌日-2024-12-13"
+            },
+            {
+              "text": "天元重工（874158，新三板挂牌，挂牌日 2024-12-16）",
+              "link": "/kb2024/2024年度总结#天元重工-874158-新三板挂牌-挂牌日-2024-12-16"
+            },
+            {
+              "text": "博奇科技（874690，新三板挂牌，挂牌日 2024-12-17）",
+              "link": "/kb2024/2024年度总结#博奇科技-874690-新三板挂牌-挂牌日-2024-12-17"
+            },
+            {
+              "text": "邦特科技（874159，新三板挂牌，挂牌日 2024-12-17）",
+              "link": "/kb2024/2024年度总结#邦特科技-874159-新三板挂牌-挂牌日-2024-12-17"
+            },
+            {
+              "text": "东交智控（874160，新三板挂牌，挂牌日 2024-12-20）",
+              "link": "/kb2024/2024年度总结#东交智控-874160-新三板挂牌-挂牌日-2024-12-20"
+            },
+            {
+              "text": "睿信电器（874181，新三板挂牌，挂牌日 2024-12-20）",
+              "link": "/kb2024/2024年度总结#睿信电器-874181-新三板挂牌-挂牌日-2024-12-20"
+            },
+            {
+              "text": "津移通信（874682，新三板挂牌，挂牌日 2024-12-26）",
+              "link": "/kb2024/2024年度总结#津移通信-874682-新三板挂牌-挂牌日-2024-12-26"
+            },
+            {
+              "text": "苏州双祺（874685，新三板挂牌，挂牌日 2024-12-26）",
+              "link": "/kb2024/2024年度总结#苏州双祺-874685-新三板挂牌-挂牌日-2024-12-26"
+            },
+            {
+              "text": "广泰真空（874200，新三板挂牌，挂牌日 2024-12-27）",
+              "link": "/kb2024/2024年度总结#广泰真空-874200-新三板挂牌-挂牌日-2024-12-27"
+            },
+            {
+              "text": "兴汉网际（874220，新三板挂牌，挂牌日 2024-12-30）",
+              "link": "/kb2024/2024年度总结#兴汉网际-874220-新三板挂牌-挂牌日-2024-12-30"
+            },
+            {
+              "text": "银河电力（874228，新三板挂牌，挂牌日 2024-12-30）",
+              "link": "/kb2024/2024年度总结#银河电力-874228-新三板挂牌-挂牌日-2024-12-30"
+            },
+            {
+              "text": "地拓精科（874223，新三板挂牌，挂牌日 2024-12-31）",
+              "link": "/kb2024/2024年度总结#地拓精科-874223-新三板挂牌-挂牌日-2024-12-31"
+            },
+            {
+              "text": "天华机器（874203，新三板挂牌，挂牌日 2024-12-31）",
+              "link": "/kb2024/2024年度总结#天华机器-874203-新三板挂牌-挂牌日-2024-12-31"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "/kb2024/300784-利安科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "宁波利安科技股份有限公司（300784·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/300784-利安科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/300784-利安科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/300784-利安科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/300784-利安科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 6：资产重组——收购立隆众创经营性资产、名义股东代持与注销承接（首轮，回复第 1-170 至 1-180 页）",
+              "link": "/kb2024/300784-利安科技#问题-6-资产重组——收购立隆众创经营性资产、名义股东代持与注销承接-首轮-回复第-1-170-至-1-180-页"
+            },
+            {
+              "text": "问题 11 与二轮问题 8：历史沿革——实物出资、外资转内资、0 元/欠款对价转让及国资入股程序（首轮回复第 1-255 至 1-263 页；二轮回复第 1-109 至 1-119 页）",
+              "link": "/kb2024/300784-利安科技#问题-11-与二轮问题-8-历史沿革——实物出资、外资转内资、0-元-欠款对价转让及国资入股程序-首轮回复第-1-255-至-1-263-页-二轮回复第-1-109-至-1-119-页"
+            },
+            {
+              "text": "问题 12：股份支付与员工持股平台宁波创匠（首轮，回复第 1-264 至 1-274 页）",
+              "link": "/kb2024/300784-利安科技#问题-12-股份支付与员工持股平台宁波创匠-首轮-回复第-1-264-至-1-274-页"
+            },
+            {
+              "text": "问题 13：股东特别权利及解除——旗山中智共同出售权与反稀释权（首轮，回复第 1-277 至 1-280 页）",
+              "link": "/kb2024/300784-利安科技#问题-13-股东特别权利及解除——旗山中智共同出售权与反稀释权-首轮-回复第-1-277-至-1-280-页"
+            },
+            {
+              "text": "问题 15：关联交易——关联租赁、注销/卸任关联方全景与决策程序（首轮，回复第 1-287 至 1-296 页）",
+              "link": "/kb2024/300784-利安科技#问题-15-关联交易——关联租赁、注销-卸任关联方全景与决策程序-首轮-回复第-1-287-至-1-296-页"
+            },
+            {
+              "text": "问题 16：房屋租赁——承租厂房的可替代性与搬迁影响测算（首轮，回复第 1-298 至 1-307 页）",
+              "link": "/kb2024/300784-利安科技#问题-16-房屋租赁——承租厂房的可替代性与搬迁影响测算-首轮-回复第-1-298-至-1-307-页"
+            },
+            {
+              "text": "问题 21 与二轮问题 9：劳务派遣用工超比例及\"收业务承接\"遗留整合（首轮回复第 1-362 至 1-367 页；二轮回复第 1-128 至 1-132 页）",
+              "link": "/kb2024/300784-利安科技#问题-21-与二轮问题-9-劳务派遣用工超比例及-收业务承接-遗留整合-首轮回复第-1-362-至-1-367-页-二轮回复第-1-128-至-1-132-页"
+            },
+            {
+              "text": "问题 23 与二轮问题 10：未缴纳社保与公积金的补缴测算与重大违法判定（首轮回复第 1-373 至 1-380 页；二轮回复第 1-133 页起）",
+              "link": "/kb2024/300784-利安科技#问题-23-与二轮问题-10-未缴纳社保与公积金的补缴测算与重大违法判定-首轮回复第-1-373-至-1-380-页-二轮回复第-1-133-页起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/300784-利安科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/300784-利安科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301392-汇成真空": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东汇成真空科技股份有限公司（301392·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301392-汇成真空"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301392-汇成真空#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301392-汇成真空#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301392-汇成真空#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：股权代持及对赌协议（首轮，回复第 1-1-3 至 1-1-28 页）",
+              "link": "/kb2024/301392-汇成真空#问题-1-股权代持及对赌协议-首轮-回复第-1-1-3-至-1-1-28-页"
+            },
+            {
+              "text": "问题 4：控股股东及实际控制人——四人共同控制与无控股股东认定（首轮，回复第 1-1-85 至 1-1-95 页）",
+              "link": "/kb2024/301392-汇成真空#问题-4-控股股东及实际控制人——四人共同控制与无控股股东认定-首轮-回复第-1-1-85-至-1-1-95-页"
+            },
+            {
+              "text": "问题 2(节录)：历史沿革中的股改个税缓缴、新增股东核查与商业贿赂排查（首轮，回复第 1-1-33 至 1-1-58 页）",
+              "link": "/kb2024/301392-汇成真空#问题-2-节录-历史沿革中的股改个税缓缴、新增股东核查与商业贿赂排查-首轮-回复第-1-1-33-至-1-1-58-页"
+            },
+            {
+              "text": "二轮问题 1：未决仲裁及司法冻结——与上海光驰合资纠纷仲裁（二轮，回复第 1-2-3 页起）",
+              "link": "/kb2024/301392-汇成真空#二轮问题-1-未决仲裁及司法冻结——与上海光驰合资纠纷仲裁-二轮-回复第-1-2-3-页起"
+            },
+            {
+              "text": "落实函问题 1：与上海光驰不竞争条款对生产经营的影响（审核中心意见落实函，回复第 1-3-3 页起）",
+              "link": "/kb2024/301392-汇成真空#落实函问题-1-与上海光驰不竞争条款对生产经营的影响-审核中心意见落实函-回复第-1-3-3-页起"
+            },
+            {
+              "text": "二轮问题 3 与落实函问题 3：实控人合计持有员工持股平台逾 50% 份额却未纳入表决权的认定（二轮回复第 1-2-62 页起；落实函回复第 1-3-37 页起）",
+              "link": "/kb2024/301392-汇成真空#二轮问题-3-与落实函问题-3-实控人合计持有员工持股平台逾-50-份额却未纳入表决权的认定-二轮回复第-1-2-62-页起-落实函回复第-1-3-37-页起"
+            },
+            {
+              "text": "其余法律节：",
+              "link": "/kb2024/301392-汇成真空#其余法律节"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301392-汇成真空#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301392-汇成真空#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301502-华阳智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏华阳智能装备股份有限公司（301502·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301502-华阳智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301502-华阳智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301502-华阳智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301502-华阳智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：股东及历史沿革——集体企业挂靠改制与新增股东入股（首轮回复第 4–11 页；txt 行 65–467）",
+              "link": "/kb2024/301502-华阳智能#_1-首轮问题-1-股东及历史沿革——集体企业挂靠改制与新增股东入股-首轮回复第-4–11-页-txt-行-65–467"
+            },
+            {
+              "text": "2. 首轮问题 5：专利诉讼（首轮回复第 60–63 页；txt 行 2142–2250）",
+              "link": "/kb2024/301502-华阳智能#_2-首轮问题-5-专利诉讼-首轮回复第-60–63-页-txt-行-2142–2250"
+            },
+            {
+              "text": "3. 首轮问题 6：关联交易、家族企业治理与员工代持收购（首轮回复第 64–95 页；txt 行 2251–2959）",
+              "link": "/kb2024/301502-华阳智能#_3-首轮问题-6-关联交易、家族企业治理与员工代持收购-首轮回复第-64–95-页-txt-行-2251–2959"
+            },
+            {
+              "text": "4. 首轮问题 7：环境保护（首轮回复第 82–94 页；txt 行 2960–3605）",
+              "link": "/kb2024/301502-华阳智能#_4-首轮问题-7-环境保护-首轮回复第-82–94-页-txt-行-2960–3605"
+            },
+            {
+              "text": "5. 二轮问题 2：关联方代持完整性追问（二轮回复第 10–14 页；txt 行 351–639）",
+              "link": "/kb2024/301502-华阳智能#_5-二轮问题-2-关联方代持完整性追问-二轮回复第-10–14-页-txt-行-351–639"
+            },
+            {
+              "text": "6. 二轮问题 3：通过关联方中转向曼卡隆资金拆借（二轮回复第 14–19 页；txt 行 640–1083）",
+              "link": "/kb2024/301502-华阳智能#_6-二轮问题-3-通过关联方中转向曼卡隆资金拆借-二轮回复第-14–19-页-txt-行-640–1083"
+            },
+            {
+              "text": "7. 二轮问题 5：劳务外包用工定性（二轮回复第 24–33 页；txt 行 1084–1360 之后）",
+              "link": "/kb2024/301502-华阳智能#_7-二轮问题-5-劳务外包用工定性-二轮回复第-24–33-页-txt-行-1084–1360-之后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301502-华阳智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301502-华阳智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301522-上大股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中和上大航空材料股份有限公司（301522·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301522-上大股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况（简版）",
+          "link": "/kb2024/301522-上大股份#一、公司与审核概况-简版"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301522-上大股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301522-上大股份#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301522-上大股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301522-上大股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301536-星宸科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "星宸科技股份有限公司（301536·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301536-星宸科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301536-星宸科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301536-星宸科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301536-星宸科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1(4)：核心技术来源、权属与核心技术人员竞业限制（首轮，页脚 8-1-1-22 至 32；txt 行 994–1377）",
+              "link": "/kb2024/301536-星宸科技#问题-1-4-核心技术来源、权属与核心技术人员竞业限制-首轮-页脚-8-1-1-22-至-32-txt-行-994–1377"
+            },
+            {
+              "text": "问题 2：关于发行人董监高——源自晨星半导体/联发科的团队与同业竞争边界（首轮，页脚 8-1-1-32 起；txt 行 1378–2102）",
+              "link": "/kb2024/301536-星宸科技#问题-2-关于发行人董监高——源自晨星半导体-联发科的团队与同业竞争边界-首轮-页脚-8-1-1-32-起-txt-行-1378–2102"
+            },
+            {
+              "text": "问题 10：关于关联交易——对联发科体系的采购与福建杰木合资转让（首轮，页脚 8-1-1-143 起；txt 行 6178–6603）",
+              "link": "/kb2024/301536-星宸科技#问题-10-关于关联交易——对联发科体系的采购与福建杰木合资转让-首轮-页脚-8-1-1-143-起-txt-行-6178–6603"
+            },
+            {
+              "text": "问题 12：关于员工持股平台——境内外九平台代持的形成与还原（首轮，页脚 8-1-1-161 至 169；txt 行 6941–7288）",
+              "link": "/kb2024/301536-星宸科技#问题-12-关于员工持股平台——境内外九平台代持的形成与还原-首轮-页脚-8-1-1-161-至-169-txt-行-6941–7288"
+            },
+            {
+              "text": "问题 13：关于实际控制权——无实际控制人的论证路径（首轮，页脚 8-1-1-170 起；txt 行 7289–7790）",
+              "link": "/kb2024/301536-星宸科技#问题-13-关于实际控制权——无实际控制人的论证路径-首轮-页脚-8-1-1-170-起-txt-行-7289–7790"
+            },
+            {
+              "text": "问题 14：关于历史沿革——报告期五轮融资的价格梯度与Frankstone穿透（首轮，页脚 8-1-1-181 起；txt 行 7791–8150）",
+              "link": "/kb2024/301536-星宸科技#问题-14-关于历史沿革——报告期五轮融资的价格梯度与frankstone穿透-首轮-页脚-8-1-1-181-起-txt-行-7791–8150"
+            },
+            {
+              "text": "问题 15：关于募集资金运用——产业政策符合性与审批备案（首轮，页脚 8-1-1-189 至 190；txt 行 8151–8235）",
+              "link": "/kb2024/301536-星宸科技#问题-15-关于募集资金运用——产业政策符合性与审批备案-首轮-页脚-8-1-1-189-至-190-txt-行-8151–8235"
+            },
+            {
+              "text": "二轮问题 5：IP授权与国际贸易摩擦风险（二轮，页脚 8-2-1-34 起；txt 行 1321–1582）",
+              "link": "/kb2024/301536-星宸科技#二轮问题-5-ip授权与国际贸易摩擦风险-二轮-页脚-8-2-1-34-起-txt-行-1321–1582"
+            },
+            {
+              "text": "落实函第 2 题：Elite Star 杠杆借款入股与股份质押（落实函回复 2022-12-06 首披，页脚 8-3-1-16 至 18；txt 行 577–720）",
+              "link": "/kb2024/301536-星宸科技#落实函第-2-题-elite-star-杠杆借款入股与股份质押-落实函回复-2022-12-06-首披-页脚-8-3-1-16-至-18-txt-行-577–720"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301536-星宸科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301536-星宸科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301538-骏鼎达": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市骏鼎达新材料股份有限公司（301538·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301538-骏鼎达"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301538-骏鼎达#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301538-骏鼎达#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301538-骏鼎达#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 4：关于股份支付——员工持股平台的设立与规范运行（首轮，回复页脚 86–102；txt 行 4066–4914）",
+              "link": "/kb2024/301538-骏鼎达#问题-4-关于股份支付——员工持股平台的设立与规范运行-首轮-回复页脚-86–102-txt-行-4066–4914"
+            },
+            {
+              "text": "问题 5：关于对赌协议及解除——深创投、红土智能特殊权利的分层清理（首轮，页脚 103–112；txt 行 4915–5317）",
+              "link": "/kb2024/301538-骏鼎达#问题-5-关于对赌协议及解除——深创投、红土智能特殊权利的分层清理-首轮-页脚-103–112-txt-行-4915–5317"
+            },
+            {
+              "text": "问题 7：关于环保问题——未批先建处罚与超环评产能（首轮，页脚 116–133；txt 行 5470–6238）",
+              "link": "/kb2024/301538-骏鼎达#问题-7-关于环保问题——未批先建处罚与超环评产能-首轮-页脚-116–133-txt-行-5470–6238"
+            },
+            {
+              "text": "问题 8：关于新三板挂牌——信息披露差异与摘牌程序合规（首轮，页脚 134–138；txt 行 6239–6476）",
+              "link": "/kb2024/301538-骏鼎达#问题-8-关于新三板挂牌——信息披露差异与摘牌程序合规-首轮-页脚-134–138-txt-行-6239–6476"
+            },
+            {
+              "text": "问题 19：关于经营合规性——第三方回款、社保公积金、票据找零（首轮，页脚 396 起；txt 行 18070–18641）",
+              "link": "/kb2024/301538-骏鼎达#问题-19-关于经营合规性——第三方回款、社保公积金、票据找零-首轮-页脚-396-起-txt-行-18070–18641"
+            },
+            {
+              "text": "问题 4（二轮）：股份支付追问——非员工合伙人退伙、隐形服务期与亲属持股锁定（二轮，页脚 74–85；txt 行 3172–3701）",
+              "link": "/kb2024/301538-骏鼎达#问题-4-二轮-股份支付追问——非员工合伙人退伙、隐形服务期与亲属持股锁定-二轮-页脚-74–85-txt-行-3172–3701"
+            },
+            {
+              "text": "问题 5（二轮）：关于关联方及关联交易——亲属企业冠用\"骏鼎达\"字号与同业竞争排查（二轮，页脚 86–91；txt 行 3702–3911）",
+              "link": "/kb2024/301538-骏鼎达#问题-5-二轮-关于关联方及关联交易——亲属企业冠用-骏鼎达-字号与同业竞争排查-二轮-页脚-86–91-txt-行-3702–3911"
+            },
+            {
+              "text": "问题 6（二轮）：关于环保及合规事项——高环境风险原材料与募投项目环评（二轮，页脚 91–96；txt 行 3912–4109）",
+              "link": "/kb2024/301538-骏鼎达#问题-6-二轮-关于环保及合规事项——高环境风险原材料与募投项目环评-二轮-页脚-91–96-txt-行-3912–4109"
+            },
+            {
+              "text": "问题 3（落实函）：关于对赌协议——恢复条款逐项核验（落实函 2023-03-30 版，页脚 21 起）",
+              "link": "/kb2024/301538-骏鼎达#问题-3-落实函-关于对赌协议——恢复条款逐项核验-落实函-2023-03-30-版-页脚-21-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301538-骏鼎达#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301538-骏鼎达#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301539-宏鑫科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江宏鑫科技股份有限公司（301539·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301539-宏鑫科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301539-宏鑫科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301539-宏鑫科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301539-宏鑫科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 3：关于股权代持及解除——跨越产权交易所的两级代持与司法调解式还原（首轮，页脚 1-1-86 至 105；txt 行 约4000–5060）",
+              "link": "/kb2024/301539-宏鑫科技#问题-3-关于股权代持及解除——跨越产权交易所的两级代持与司法调解式还原-首轮-页脚-1-1-86-至-105-txt-行-约4000–5060"
+            },
+            {
+              "text": "问题 4：关于历史沿革——低价入股排查、国资退出合规、专利出资补足与KIC诉讼（首轮，页脚 1-1-106 起；txt 行 约5060–6551）",
+              "link": "/kb2024/301539-宏鑫科技#问题-4-关于历史沿革——低价入股排查、国资退出合规、专利出资补足与kic诉讼-首轮-页脚-1-1-106-起-txt-行-约5060–6551"
+            },
+            {
+              "text": "问题 5：关于关联方和独立性——七家亲属贸易公司的通道销售清理（首轮，页脚 1-1-140 起；txt 行 6552–9918）",
+              "link": "/kb2024/301539-宏鑫科技#问题-5-关于关联方和独立性——七家亲属贸易公司的通道销售清理-首轮-页脚-1-1-140-起-txt-行-6552–9918"
+            },
+            {
+              "text": "问题 6：关于合规经营——工亡事故处罚、亲属企业环保处罚与社保公积金（首轮，页脚 1-1-216 起；txt 行 9919–11246）",
+              "link": "/kb2024/301539-宏鑫科技#问题-6-关于合规经营——工亡事故处罚、亲属企业环保处罚与社保公积金-首轮-页脚-1-1-216-起-txt-行-9919–11246"
+            },
+            {
+              "text": "问题 7：关于股权激励——台州齐鑫平台\"参考公允价故不计股份支付\"的自证（首轮，页脚 1-1-246 起；txt 行 11247–12048）",
+              "link": "/kb2024/301539-宏鑫科技#问题-7-关于股权激励——台州齐鑫平台-参考公允价故不计股份支付-的自证-首轮-页脚-1-1-246-起-txt-行-11247–12048"
+            },
+            {
+              "text": "问题 9：关于土地与房产——租赁占比递减与三宗土地全抵押（首轮，页脚 1-1-265 起；txt 行 12049–13340）",
+              "link": "/kb2024/301539-宏鑫科技#问题-9-关于土地与房产——租赁占比递减与三宗土地全抵押-首轮-页脚-1-1-265-起-txt-行-12049–13340"
+            },
+            {
+              "text": "问题 3（二轮）：关联方与独立性追深——宏鑫锻造关停与杭州米卡成都米卡（二轮，页脚 1-2-80 起；txt 行 3239–4772）",
+              "link": "/kb2024/301539-宏鑫科技#问题-3-二轮-关联方与独立性追深——宏鑫锻造关停与杭州米卡成都米卡-二轮-页脚-1-2-80-起-txt-行-3239–4772"
+            },
+            {
+              "text": "上市委审议意见落实函：实控人处置宏鑫锻造控股权最新进展（审核函〔2022〕011106号；回复 2022-12-31 披露）",
+              "link": "/kb2024/301539-宏鑫科技#上市委审议意见落实函-实控人处置宏鑫锻造控股权最新进展-审核函〔2022〕011106号-回复-2022-12-31-披露"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301539-宏鑫科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301539-宏鑫科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301551-无线传媒": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "河北广电无线传媒股份有限公司（301551·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301551-无线传媒"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301551-无线传媒#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301551-无线传媒#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301551-无线传媒#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2＋二轮问题3：IPTV牌照缺失阶段的合法性与授权链条（首轮，回复第 56 页起 txt行2479–2980；二轮，回复第 22 页起）",
+              "link": "/kb2024/301551-无线传媒#_1-首轮问题2-二轮问题3-iptv牌照缺失阶段的合法性与授权链条-首轮-回复第-56-页起-txt行2479–2980-二轮-回复第-22-页起"
+            },
+            {
+              "text": "2. 首轮问题5：历史沿革——国企改制程序与瑕疵汇总清洗（首轮，回复第 117 页起；txt行5130–6376）",
+              "link": "/kb2024/301551-无线传媒#_2-首轮问题5-历史沿革——国企改制程序与瑕疵汇总清洗-首轮-回复第-117-页起-txt行5130–6376"
+            },
+            {
+              "text": "3. 首轮问题6＋二轮问题1：报告期内国资股权变动的评估方法切换与定价公允性（首轮txt行6377–7165；二轮txt行49页起）",
+              "link": "/kb2024/301551-无线传媒#_3-首轮问题6-二轮问题1-报告期内国资股权变动的评估方法切换与定价公允性-首轮txt行6377–7165-二轮txt行49页起"
+            },
+            {
+              "text": "4. 首轮问题3：关联交易——公交广告代理、播控费版权费与资产划转（首轮，回复第 68 页起；txt行2981–4354）",
+              "link": "/kb2024/301551-无线传媒#_4-首轮问题3-关联交易——公交广告代理、播控费版权费与资产划转-首轮-回复第-68-页起-txt行2981–4354"
+            },
+            {
+              "text": "5. 首轮问题4：同业竞争——与省级台及集团传媒企业的边界（首轮，回复第 100 页起；txt行4355–5129）",
+              "link": "/kb2024/301551-无线传媒#_5-首轮问题4-同业竞争——与省级台及集团传媒企业的边界-首轮-回复第-100-页起-txt行4355–5129"
+            },
+            {
+              "text": "6. 首轮问题9：劳动与社会保障——事业编制与第三方代缴（首轮，回复第 171 页起；txt行7499–7650前后）",
+              "link": "/kb2024/301551-无线传媒#_6-首轮问题9-劳动与社会保障——事业编制与第三方代缴-首轮-回复第-171-页起-txt行7499–7650前后"
+            },
+            {
+              "text": "7. 首轮问题12：诉讼事项——爱上传媒系列著作权纠纷（首轮，回复第 193 页起；txt行8460–8800前后）",
+              "link": "/kb2024/301551-无线传媒#_7-首轮问题12-诉讼事项——爱上传媒系列著作权纠纷-首轮-回复第-193-页起-txt行8460–8800前后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301551-无线传媒#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301551-无线传媒#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301552-科力装备": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "河北科力汽车装备股份有限公司（301552·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301552-科力装备"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301552-科力装备#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301552-科力装备#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301552-科力装备#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 19：股权代持的全链条还原与 1 元回购减资（首轮回复第 1-518 页起）",
+              "link": "/kb2024/301552-科力装备#首轮问题-19-股权代持的全链条还原与-1-元回购减资-首轮回复第-1-518-页起"
+            },
+            {
+              "text": "首轮问题 15 与二轮问题 3：向客户反向收购——福耀饰件包边条资产的交易架构（首轮回复第 1-420 页起；二轮回复第 1-41 页起）",
+              "link": "/kb2024/301552-科力装备#首轮问题-15-与二轮问题-3-向客户反向收购——福耀饰件包边条资产的交易架构-首轮回复第-1-420-页起-二轮回复第-1-41-页起"
+            },
+            {
+              "text": "首轮问题 16 与二轮问题 4：股权激励及股份支付——60 个月锁定与离职回流（首轮回复第 1-441 页起）",
+              "link": "/kb2024/301552-科力装备#首轮问题-16-与二轮问题-4-股权激励及股份支付——60-个月锁定与离职回流-首轮回复第-1-441-页起"
+            },
+            {
+              "text": "其余法律节：",
+              "link": "/kb2024/301552-科力装备#其余法律节"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301552-科力装备#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301552-科力装备#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301556-托普云农": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江托普云农科技股份有限公司（301556·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301556-托普云农"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301556-托普云农#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301556-托普云农#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301556-托普云农#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题4＋二轮问题2：历史沿革——父辈代持、同名子公司存废与股份支付体系（首轮，回复第 101 页起 txt行4742–5601；二轮 txt行1669–2121）",
+              "link": "/kb2024/301556-托普云农#_1-首轮问题4-二轮问题2-历史沿革——父辈代持、同名子公司存废与股份支付体系-首轮-回复第-101-页起-txt行4742–5601-二轮-txt行1669–2121"
+            },
+            {
+              "text": "2. 首轮问题5＋二轮问题3：共同控制边界与朱旭华资金链事件（首轮，回复第 117 页起 txt行5602–6164；二轮 txt行2022–2127）",
+              "link": "/kb2024/301556-托普云农#_2-首轮问题5-二轮问题3-共同控制边界与朱旭华资金链事件-首轮-回复第-117-页起-txt行5602–6164-二轮-txt行2022–2127"
+            },
+            {
+              "text": "3. 首轮问题6：湖畔小园《增资协议》八项特殊权利的清理（首轮，回复第 129 页起；txt行6165–6327）",
+              "link": "/kb2024/301556-托普云农#_3-首轮问题6-湖畔小园《增资协议》八项特殊权利的清理-首轮-回复第-129-页起-txt行6165–6327"
+            },
+            {
+              "text": "4. 首轮问题7：家族控股下的治理有效性与中小股东保护（首轮，回复第 132 页起；txt行6328–6870）",
+              "link": "/kb2024/301556-托普云农#_4-首轮问题7-家族控股下的治理有效性与中小股东保护-首轮-回复第-132-页起-txt行6328–6870"
+            },
+            {
+              "text": "5. 首轮问题9＋二轮问题4＋落实函问题4：政企客户的订单合规（首轮，回复第 158 页起 txt行7484–7827；二轮 txt行2128–2914；落实函 txt行1527–1686）",
+              "link": "/kb2024/301556-托普云农#_5-首轮问题9-二轮问题4-落实函问题4-政企客户的订单合规-首轮-回复第-158-页起-txt行7484–7827-二轮-txt行2128–2914-落实函-txt行1527–1686"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301556-托普云农#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301556-托普云农#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301565-中仑新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中仑新材料股份有限公司（301565·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301565-中仑新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301565-中仑新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301565-中仑新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301565-中仑新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：反垄断调查——未依法申报经营者集中的重大违法辨析（首轮，回复第 8-1-1-3 至 8-1-1-5 页）",
+              "link": "/kb2024/301565-中仑新材#首轮问题-1-反垄断调查——未依法申报经营者集中的重大违法辨析-首轮-回复第-8-1-1-3-至-8-1-1-5-页"
+            },
+            {
+              "text": "首轮问题 3：中仑塑业与长塑实业——境外退市资产注入、非同一控制下收购与跨境支付（首轮，回复第 8-1-1-61 至 8-1-1-79 页）",
+              "link": "/kb2024/301565-中仑新材#首轮问题-3-中仑塑业与长塑实业——境外退市资产注入、非同一控制下收购与跨境支付-首轮-回复第-8-1-1-61-至-8-1-1-79-页"
+            },
+            {
+              "text": "首轮问题 5：实际控制人认定——未将杨杰列为共同实控人与代持排查（首轮，回复第 8-1-1-99 至 8-1-1-108 页）",
+              "link": "/kb2024/301565-中仑新材#首轮问题-5-实际控制人认定——未将杨杰列为共同实控人与代持排查-首轮-回复第-8-1-1-99-至-8-1-1-108-页"
+            },
+            {
+              "text": "首轮问题 6 与落实函问题 3：同业竞争与 BOPLA\"胶带基膜 vs BOPP 胶带\"之争（首轮回复第 8-1-1-114 页起；落实函回复第 8-1-3-34 页起）",
+              "link": "/kb2024/301565-中仑新材#首轮问题-6-与落实函问题-3-同业竞争与-bopla-胶带基膜-vs-bopp-胶带-之争-首轮回复第-8-1-1-114-页起-落实函回复第-8-1-3-34-页起"
+            },
+            {
+              "text": "首轮问题 7：关联方与关联交易——两个家族板块间的过渡期交易（首轮，回复第 8-1-1-124 至 8-1-1-178 页）",
+              "link": "/kb2024/301565-中仑新材#首轮问题-7-关联方与关联交易——两个家族板块间的过渡期交易-首轮-回复第-8-1-1-124-至-8-1-1-178-页"
+            },
+            {
+              "text": "首轮问题 8：核心人员与历史沿革——出资验资链条、对赌撤销、外资股东与税务（首轮，回复第 8-1-1-179 至 8-1-1-215 页）",
+              "link": "/kb2024/301565-中仑新材#首轮问题-8-核心人员与历史沿革——出资验资链条、对赌撤销、外资股东与税务-首轮-回复第-8-1-1-179-至-8-1-1-215-页"
+            },
+            {
+              "text": "首轮问题 9 与二轮问题 7：员工持股与股份支付——一次性确认 6,138.00 万元费用的勇气（首轮回复第 8-1-1-216 页起）",
+              "link": "/kb2024/301565-中仑新材#首轮问题-9-与二轮问题-7-员工持股与股份支付——一次性确认-6-138-00-万元费用的勇气-首轮回复第-8-1-1-216-页起"
+            },
+            {
+              "text": "其余法律节：",
+              "link": "/kb2024/301565-中仑新材#其余法律节"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301565-中仑新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301565-中仑新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301567-贝隆精密": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "贝隆精密科技股份有限公司（301567·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301567-贝隆精密"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301567-贝隆精密#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301567-贝隆精密#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301567-贝隆精密#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于信息披露（注册环节落实函，披露质量事项备案记录；txt 行 76-729，页 1-3 至 1-14）",
+              "link": "/kb2024/301567-贝隆精密#问题-1-关于信息披露-注册环节落实函-披露质量事项备案记录-txt-行-76-729-页-1-3-至-1-14"
+            },
+            {
+              "text": "问题 2：关于模具业务（注册环节落实函，会计估计备案记录；txt 行 733-1079，页 1-15 至 1-22；会计师豁免版 txt 行 55-413）",
+              "link": "/kb2024/301567-贝隆精密#问题-2-关于模具业务-注册环节落实函-会计估计备案记录-txt-行-733-1079-页-1-15-至-1-22-会计师豁免版-txt-行-55-413"
+            },
+            {
+              "text": "附：落实函回复所载修订后招股书风险因素中法律相关事项深度摘录（供同类项目对标，非问询事项；均系发行人自查式披露）",
+              "link": "/kb2024/301567-贝隆精密#附-落实函回复所载修订后招股书风险因素中法律相关事项深度摘录-供同类项目对标-非问询事项-均系发行人自查式披露"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301567-贝隆精密#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301567-贝隆精密#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301571-国科天成": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "国科天成科技股份有限公司（301571·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301571-国科天成"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301571-国科天成#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301571-国科天成#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301571-国科天成#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题十一：军工资质全链条核查——有效期、续领、招投标、反贿赂、军工事项审查与章程特别条款（回复第1-220至1-237页；txt行9359–10110）",
+              "link": "/kb2024/301571-国科天成#_1-首轮问题十一-军工资质全链条核查——有效期、续领、招投标、反贿赂、军工事项审查与章程特别条款-回复第1-220至1-237页-txt行9359–10110"
+            },
+            {
+              "text": "2. 首轮问题十二：共同控制的织网——空应科技排除、表决权委托嵌套与申淑敏\"五规避\"检验（回复第1-238至1-255页；txt行10111–10819）",
+              "link": "/kb2024/301571-国科天成#_2-首轮问题十二-共同控制的织网——空应科技排除、表决权委托嵌套与申淑敏-五规避-检验-回复第1-238至1-255页-txt行10111–10819"
+            },
+            {
+              "text": "3. 首轮问题十四：历史沿革三重奏——中科院系统受赠股权审批、双层代持解除、申报前12个月E轮融资股东的发行类第2号穿透（回复第1-275至1-292页；txt行11536–12229）",
+              "link": "/kb2024/301571-国科天成#_3-首轮问题十四-历史沿革三重奏——中科院系统受赠股权审批、双层代持解除、申报前12个月e轮融资股东的发行类第2号穿透-回复第1-275至1-292页-txt行11536–12229"
+            },
+            {
+              "text": "4. 二轮问题二：一致行动人追踪——母媳间转股后的股权稳定与员工借款出资的代持排除（回复第1-18至1-24页；txt行883–1152）",
+              "link": "/kb2024/301571-国科天成#_4-二轮问题二-一致行动人追踪——母媳间转股后的股权稳定与员工借款出资的代持排除-回复第1-18至1-24页-txt行883–1152"
+            },
+            {
+              "text": "5. 二轮问题三：国有股东\"SS\"标识申报前未办妥的合规性论证（回复第1-25至1-28页；txt行1153–1285）",
+              "link": "/kb2024/301571-国科天成#_5-二轮问题三-国有股东-ss-标识申报前未办妥的合规性论证-回复第1-25至1-28页-txt行1153–1285"
+            },
+            {
+              "text": "6. 首轮问题十五（3）：换股收购中科天盛非货币出资的兜底条款延迟履行与利益安排排查（回复第1-292至1-303页；txt行12230–12682）",
+              "link": "/kb2024/301571-国科天成#_6-首轮问题十五-3-换股收购中科天盛非货币出资的兜底条款延迟履行与利益安排排查-回复第1-292至1-303页-txt行12230–12682"
+            },
+            {
+              "text": "7. 首轮问题十七（2）：募投\"光电芯片研发中心建设项目\"租赁办公用房的房地产开发排除（回复第1-306至1-311页；txt行12769–13024）",
+              "link": "/kb2024/301571-国科天成#_7-首轮问题十七-2-募投-光电芯片研发中心建设项目-租赁办公用房的房地产开发排除-回复第1-306至1-311页-txt行12769–13024"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301571-国科天成#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301571-国科天成#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301577-美信科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东美信科技股份有限公司（301577·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301577-美信科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301577-美信科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301577-美信科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301577-美信科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 10：社保、住房公积金（首轮回复第 184–214 页附近；txt 行 8373–8794）",
+              "link": "/kb2024/301577-美信科技#_1-首轮问题-10-社保、住房公积金-首轮回复第-184–214-页附近-txt-行-8373–8794"
+            },
+            {
+              "text": "2. 首轮问题 11：股份代持与历史沿革（首轮回复第 214–228 页；txt 行 8783–9349）",
+              "link": "/kb2024/301577-美信科技#_2-首轮问题-11-股份代持与历史沿革-首轮回复第-214–228-页-txt-行-8783–9349"
+            },
+            {
+              "text": "3. 首轮问题 12：对赌协议与股东特别权利条款（首轮回复第 228–248 页；txt 行 9350–10221）",
+              "link": "/kb2024/301577-美信科技#_3-首轮问题-12-对赌协议与股东特别权利条款-首轮回复第-228–248-页-txt-行-9350–10221"
+            },
+            {
+              "text": "4. 首轮问题 13：新三板挂牌合规（首轮回复第 248–254 页；txt 行 10222–10502）",
+              "link": "/kb2024/301577-美信科技#_4-首轮问题-13-新三板挂牌合规-首轮回复第-248–254-页-txt-行-10222–10502"
+            },
+            {
+              "text": "5. 首轮问题 14：同业竞争及实控人近亲属核查（首轮回复第 254–272 页；txt 行 10503–11165）",
+              "link": "/kb2024/301577-美信科技#_5-首轮问题-14-同业竞争及实控人近亲属核查-首轮回复第-254–272-页-txt-行-10503–11165"
+            },
+            {
+              "text": "6. 首轮问题 15：租赁房产与土地使用权抵押（首轮回复第 272–279 页；txt 行 11166–11461）",
+              "link": "/kb2024/301577-美信科技#_6-首轮问题-15-租赁房产与土地使用权抵押-首轮回复第-272–279-页-txt-行-11166–11461"
+            },
+            {
+              "text": "7. 二轮问题 11：股份代持资金流水追问与股东信息全面核查（二轮回复第 183–190 页；txt 行 7004–7280）",
+              "link": "/kb2024/301577-美信科技#_7-二轮问题-11-股份代持资金流水追问与股东信息全面核查-二轮回复第-183–190-页-txt-行-7004–7280"
+            },
+            {
+              "text": "8. 二轮问题 12：劳务用工合法合规性（二轮回复第 190–199 页；txt 行 7281–7617）",
+              "link": "/kb2024/301577-美信科技#_8-二轮问题-12-劳务用工合法合规性-二轮回复第-190–199-页-txt-行-7281–7617"
+            },
+            {
+              "text": "9. 二轮问题 13：董事、高级管理人员变动（二轮回复第 199–200 页；txt 行 7618–7656）",
+              "link": "/kb2024/301577-美信科技#_9-二轮问题-13-董事、高级管理人员变动-二轮回复第-199–200-页-txt-行-7618–7656"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301577-美信科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301577-美信科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301580-爱迪特": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "爱迪特(秦皇岛)科技股份有限公司（301580·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301580-爱迪特"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301580-爱迪特#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301580-爱迪特#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301580-爱迪特#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 2 与落实函呼应题：知识产权和专利诉讼（首轮回复第 39 至 61 页）",
+              "link": "/kb2024/301580-爱迪特#首轮问题-2-与落实函呼应题-知识产权和专利诉讼-首轮回复第-39-至-61-页"
+            },
+            {
+              "text": "首轮问题 3：行业监管和业务合规性——FDA/CE MDR、两票制与商业贿赂排查（首轮回复第 66 至 91 页）",
+              "link": "/kb2024/301580-爱迪特#首轮问题-3-行业监管和业务合规性——fda-ce-mdr、两票制与商业贿赂排查-首轮回复第-66-至-91-页"
+            },
+            {
+              "text": "首轮问题 4：历史沿革和实际控制人认定——新加坡上市公司子公司的进出与创始人体系的回归（首轮回复第 91 至 117 页）",
+              "link": "/kb2024/301580-爱迪特#首轮问题-4-历史沿革和实际控制人认定——新加坡上市公司子公司的进出与创始人体系的回归-首轮回复第-91-至-117-页"
+            },
+            {
+              "text": "首轮问题 5：股东核查——申报前 12 个月新增 13 名股东的穿透与规范整改（首轮回复第 117 至 152 页）",
+              "link": "/kb2024/301580-爱迪特#首轮问题-5-股东核查——申报前-12-个月新增-13-名股东的穿透与规范整改-首轮回复第-117-至-152-页"
+            },
+            {
+              "text": "落实函问题 2：科美诊断商标权及不正当竞争诉讼（落实函回复第 29 至 43 页）",
+              "link": "/kb2024/301580-爱迪特#落实函问题-2-科美诊断商标权及不正当竞争诉讼-落实函回复第-29-至-43-页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301580-爱迪特#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301580-爱迪特#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301585-蓝宇股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江蓝宇数码科技股份有限公司（301585·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301585-蓝宇股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301585-蓝宇股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301585-蓝宇股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301585-蓝宇股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：关于环境保护——化工项目环境合规全景题（首轮回复第65页起；txt行3061以下）",
+              "link": "/kb2024/301585-蓝宇股份#_1-首轮问题3-关于环境保护——化工项目环境合规全景题-首轮回复第65页起-txt行3061以下"
+            },
+            {
+              "text": "2. 首轮问题18：关于历史沿革——客户股东套利、低价老股转让与突击入股（txt行19112—19524）",
+              "link": "/kb2024/301585-蓝宇股份#_2-首轮问题18-关于历史沿革——客户股东套利、低价老股转让与突击入股-txt行19112—19524"
+            },
+            {
+              "text": "3. 首轮问题19与问题20：新三板挂牌合规与对赌终止效力（txt行19524—19901）",
+              "link": "/kb2024/301585-蓝宇股份#_3-首轮问题19与问题20-新三板挂牌合规与对赌终止效力-txt行19524—19901"
+            },
+            {
+              "text": "4. 首轮问题21与问题22：募投用地与房产证的消解路径（txt行19901—20240）",
+              "link": "/kb2024/301585-蓝宇股份#_4-首轮问题21与问题22-募投用地与房产证的消解路径-txt行19901—20240"
+            },
+            {
+              "text": "5. 首轮问题16与问题24：第三方回款/员工代收货款与住房公积金（txt行17697以下、20404以下）",
+              "link": "/kb2024/301585-蓝宇股份#_5-首轮问题16与问题24-第三方回款-员工代收货款与住房公积金-txt行17697以下、20404以下"
+            },
+            {
+              "text": "6. 二轮问题2：关于同业竞争——荣升汇彩染料贸易资金往来的穿凿（二轮回复第76页起；txt行3299以下）",
+              "link": "/kb2024/301585-蓝宇股份#_6-二轮问题2-关于同业竞争——荣升汇彩染料贸易资金往来的穿凿-二轮回复第76页起-txt行3299以下"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301585-蓝宇股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301585-蓝宇股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301586-佳力奇": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽佳力奇先进复合材料科技股份公司（301586·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301586-佳力奇"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301586-佳力奇#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301586-佳力奇#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301586-佳力奇#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：关于实际控制人变更（首轮，回复第 8-1-3 至 8-1-23 页；txt行90–1026）",
+              "link": "/kb2024/301586-佳力奇#_1-首轮问题1-关于实际控制人变更-首轮-回复第-8-1-3-至-8-1-23-页-txt行90–1026"
+            },
+            {
+              "text": "2. 首轮问题2：关于历史沿革（首轮，回复第 8-1-24 至 8-1-56 页；txt行1027–2379）",
+              "link": "/kb2024/301586-佳力奇#_2-首轮问题2-关于历史沿革-首轮-回复第-8-1-24-至-8-1-56-页-txt行1027–2379"
+            },
+            {
+              "text": "3. 首轮问题3：关于军工类经营的合规性（首轮，回复第 8-1-57 至 8-1-62 页；txt行2380–2621）",
+              "link": "/kb2024/301586-佳力奇#_3-首轮问题3-关于军工类经营的合规性-首轮-回复第-8-1-57-至-8-1-62-页-txt行2380–2621"
+            },
+            {
+              "text": "4. 首轮问题4：关于对赌协议（首轮，回复第 8-1-63 至 8-1-70 页；txt行2622–2959）",
+              "link": "/kb2024/301586-佳力奇#_4-首轮问题4-关于对赌协议-首轮-回复第-8-1-63-至-8-1-70-页-txt行2622–2959"
+            },
+            {
+              "text": "5. 二轮问题2：关于历史沿革——商业贿赂追问与新增股东（二轮，回复第 8-3-42 页起；txt行1883–3924）",
+              "link": "/kb2024/301586-佳力奇#_5-二轮问题2-关于历史沿革——商业贿赂追问与新增股东-二轮-回复第-8-3-42-页起-txt行1883–3924"
+            },
+            {
+              "text": "6. 二轮问题3：关于实际控制人变更及股份转让（二轮，回复第 8-3-84 页起；txt行3925–4358）",
+              "link": "/kb2024/301586-佳力奇#_6-二轮问题3-关于实际控制人变更及股份转让-二轮-回复第-8-3-84-页起-txt行3925–4358"
+            },
+            {
+              "text": "7. 二轮问题10：关于信息披露豁免（二轮，回复第 8-3-141 至 8-3-143 页；txt行6437–6560）",
+              "link": "/kb2024/301586-佳力奇#_7-二轮问题10-关于信息披露豁免-二轮-回复第-8-3-141-至-8-3-143-页-txt行6437–6560"
+            },
+            {
+              "text": "8. 落实函问题1、2：历史沿革收口与路强入股背景（落实函，回复第 8-5-3 页、第 8-5-25 页起；2023年报更新版txt行67–1232）",
+              "link": "/kb2024/301586-佳力奇#_8-落实函问题1、2-历史沿革收口与路强入股背景-落实函-回复第-8-5-3-页、第-8-5-25-页起-2023年报更新版txt行67–1232"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301586-佳力奇#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301586-佳力奇#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301587-中瑞股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "常州武进中瑞电子科技股份有限公司（301587·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301587-中瑞股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301587-中瑞股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301587-中瑞股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301587-中瑞股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 14：关于股权激励及股份支付——三平台服务期设计与实控人份额代持还原（首轮，页脚 8-1-234 至 253；txt 行 9640–10531）",
+              "link": "/kb2024/301587-中瑞股份#问题-14-关于股权激励及股份支付——三平台服务期设计与实控人份额代持还原-首轮-页脚-8-1-234-至-253-txt-行-9640–10531"
+            },
+            {
+              "text": "问题 15：关于历史沿革——基金股东网络、保荐独立性与九份对赌的全景清理（首轮，页脚 8-1-254 至 270；txt 行 10532–11623）",
+              "link": "/kb2024/301587-中瑞股份#问题-15-关于历史沿革——基金股东网络、保荐独立性与九份对赌的全景清理-首轮-页脚-8-1-254-至-270-txt-行-10532–11623"
+            },
+            {
+              "text": "问题 16(1)：关于募投项目——用地取得进度与房地产属性排除（首轮，页脚 8-1-271 起；txt 行 11400–11623）",
+              "link": "/kb2024/301587-中瑞股份#问题-16-1-关于募投项目——用地取得进度与房地产属性排除-首轮-页脚-8-1-271-起-txt-行-11400–11623"
+            },
+            {
+              "text": "问题 17：关于前次申报撤回——撤回原因复盘与两版披露差异（首轮，页脚 8-1-276 起；txt 行 11624–12238）",
+              "link": "/kb2024/301587-中瑞股份#问题-17-关于前次申报撤回——撤回原因复盘与两版披露差异-首轮-页脚-8-1-276-起-txt-行-11624–12238"
+            },
+            {
+              "text": "问题 1（二轮）：关于对赌协议——\"招股书从未签署对赌\"与问询回复披露的口径缝合（二轮，页脚 8-4-3 起；txt 行 47–约400）",
+              "link": "/kb2024/301587-中瑞股份#问题-1-二轮-关于对赌协议——-招股书从未签署对赌-与问询回复披露的口径缝合-二轮-页脚-8-4-3-起-txt-行-47–约400"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301587-中瑞股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301587-中瑞股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301588-美新科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "美新科技股份有限公司（301588·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301588-美新科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301588-美新科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301588-美新科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301588-美新科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 13：关于发行人担保事项（首轮，回复页脚 8-1-1-191 至 195；txt 行 8750–8951）",
+              "link": "/kb2024/301588-美新科技#问题-13-关于发行人担保事项-首轮-回复页脚-8-1-1-191-至-195-txt-行-8750–8951"
+            },
+            {
+              "text": "问题 14：关于控股股东及实际控制人——认定依据、多层境外架构、历史股东（首轮，页脚 8-1-1-195 至 210；txt 行 8952–9770）",
+              "link": "/kb2024/301588-美新科技#问题-14-关于控股股东及实际控制人——认定依据、多层境外架构、历史股东-首轮-页脚-8-1-1-195-至-210-txt-行-8952–9770"
+            },
+            {
+              "text": "问题 15：关于关联方和独立性——关联企业群、同业竞争、财务不规范与注销转让（首轮，页脚 8-1-1-211 至 273；txt 行 9771–12986）",
+              "link": "/kb2024/301588-美新科技#问题-15-关于关联方和独立性——关联企业群、同业竞争、财务不规范与注销转让-首轮-页脚-8-1-1-211-至-273-txt-行-9771–12986"
+            },
+            {
+              "text": "问题 16：关于公司治理及合规经营——海关处罚、治理缺陷与必备资质（首轮，页脚 8-1-1-274 至 283；txt 行 12987–13477）",
+              "link": "/kb2024/301588-美新科技#问题-16-关于公司治理及合规经营——海关处罚、治理缺陷与必备资质-首轮-页脚-8-1-1-274-至-283-txt-行-12987–13477"
+            },
+            {
+              "text": "问题 17：关于股权激励及股份支付（首轮，页脚 8-1-1-284 至 303；txt 行 13478–14525）",
+              "link": "/kb2024/301588-美新科技#问题-17-关于股权激励及股份支付-首轮-页脚-8-1-1-284-至-303-txt-行-13478–14525"
+            },
+            {
+              "text": "问题 18：关于历史沿革——出资瑕疵、减资、返程投资与股东穿透核查（首轮，页脚 8-1-1-304 至 353；txt 行 14526–17164）",
+              "link": "/kb2024/301588-美新科技#问题-18-关于历史沿革——出资瑕疵、减资、返程投资与股东穿透核查-首轮-页脚-8-1-1-304-至-353-txt-行-14526–17164"
+            },
+            {
+              "text": "问题 19：关于对赌协议——清理模式与恢复条款（首轮，页脚 8-1-1-354 至 359；txt 行 17165–17476）",
+              "link": "/kb2024/301588-美新科技#问题-19-关于对赌协议——清理模式与恢复条款-首轮-页脚-8-1-1-354-至-359-txt-行-17165–17476"
+            },
+            {
+              "text": "问题 20：关于环境保护（首轮，页脚 8-1-1-360 至 374；txt 行 17477–18155）",
+              "link": "/kb2024/301588-美新科技#问题-20-关于环境保护-首轮-页脚-8-1-1-360-至-374-txt-行-17477–18155"
+            },
+            {
+              "text": "问题 21：关于租赁厂房（首轮，页脚 8-1-1-375 至 382；txt 行 18156–18596）",
+              "link": "/kb2024/301588-美新科技#问题-21-关于租赁厂房-首轮-页脚-8-1-1-375-至-382-txt-行-18156–18596"
+            },
+            {
+              "text": "问题 2（二轮）：关于行业政策及合规经营——再生塑料进口合法性（二轮，页脚 8-1-2-34 起；txt 行 1522–1991）",
+              "link": "/kb2024/301588-美新科技#问题-2-二轮-关于行业政策及合规经营——再生塑料进口合法性-二轮-页脚-8-1-2-34-起-txt-行-1522–1991"
+            },
+            {
+              "text": "问题 3（二轮）：关于实际控制人及控股股东——境外决策机制、历史股东退出与或有担保追问（二轮，页脚 8-1-2-44 起；txt 行 1992–2986）",
+              "link": "/kb2024/301588-美新科技#问题-3-二轮-关于实际控制人及控股股东——境外决策机制、历史股东退出与或有担保追问-二轮-页脚-8-1-2-44-起-txt-行-1992–2986"
+            },
+            {
+              "text": "问题 4（二轮）：关于关联方和独立性——同业竞争逐项核查与关联企业转让真实性（二轮，页脚 8-1-2-64 起；txt 行 2987–4300）",
+              "link": "/kb2024/301588-美新科技#问题-4-二轮-关于关联方和独立性——同业竞争逐项核查与关联企业转让真实性-二轮-页脚-8-1-2-64-起-txt-行-2987–4300"
+            },
+            {
+              "text": "问题 5（二轮）：关于股权激励及股份支付——持股平台流转机制追问（二轮，页脚 8-1-2-89 起；txt 行 4300–4824）",
+              "link": "/kb2024/301588-美新科技#问题-5-二轮-关于股权激励及股份支付——持股平台流转机制追问-二轮-页脚-8-1-2-89-起-txt-行-4300–4824"
+            },
+            {
+              "text": "问题 1(6)（审核中心意见落实函）：出口所需资质或认证（落实函 2022-11-15，页脚 8-1-3-31 至 33；txt 行 1358–1490）",
+              "link": "/kb2024/301588-美新科技#问题-1-6-审核中心意见落实函-出口所需资质或认证-落实函-2022-11-15-页脚-8-1-3-31-至-33-txt-行-1358–1490"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301588-美新科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301588-美新科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301589-诺瓦星云": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "西安诺瓦星云科技股份有限公司（301589·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301589-诺瓦星云"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301589-诺瓦星云#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301589-诺瓦星云#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301589-诺瓦星云#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：实际控制人认定与《一致行动协议》补签（首轮回复第 3–17 页；txt 行 83–1130）",
+              "link": "/kb2024/301589-诺瓦星云#_1-首轮问题-1-实际控制人认定与《一致行动协议》补签-首轮回复第-3–17-页-txt-行-83–1130"
+            },
+            {
+              "text": "2. 首轮问题 13：历史沿革——出资瑕疵与零对价转让（首轮回复第 309–317 页；txt 行 14963–15304）",
+              "link": "/kb2024/301589-诺瓦星云#_2-首轮问题-13-历史沿革——出资瑕疵与零对价转让-首轮回复第-309–317-页-txt-行-14963–15304"
+            },
+            {
+              "text": "3. 首轮问题 14：员工持股平台与股权激励（首轮回复第 318–335 页；txt 行 15305–16098）",
+              "link": "/kb2024/301589-诺瓦星云#_3-首轮问题-14-员工持股平台与股权激励-首轮回复第-318–335-页-txt-行-15305–16098"
+            },
+            {
+              "text": "4. 首轮问题 15：收购京能物业（首轮回复第 336–340 页；txt 行 16099–16425）",
+              "link": "/kb2024/301589-诺瓦星云#_4-首轮问题-15-收购京能物业-首轮回复第-336–340-页-txt-行-16099–16425"
+            },
+            {
+              "text": "5. 首轮问题 17：董监高——财务总监变动与独董任职资格（首轮回复第 343–345 页；txt 行 16426–16554）",
+              "link": "/kb2024/301589-诺瓦星云#_5-首轮问题-17-董监高——财务总监变动与独董任职资格-首轮回复第-343–345-页-txt-行-16426–16554"
+            },
+            {
+              "text": "6. 首轮问题 18：用工及土地房产合规性（首轮回复第 346–353 页；txt 行 16555–16968）",
+              "link": "/kb2024/301589-诺瓦星云#_6-首轮问题-18-用工及土地房产合规性-首轮回复第-346–353-页-txt-行-16555–16968"
+            },
+            {
+              "text": "7. 首轮问题 19：其他信息披露——专利受让与境外投资（首轮回复第 354–361 页；txt 行 16969–17452）",
+              "link": "/kb2024/301589-诺瓦星云#_7-首轮问题-19-其他信息披露——专利受让与境外投资-首轮回复第-354–361-页-txt-行-16969–17452"
+            },
+            {
+              "text": "8. 二轮问题 1：零对价股权转让追问与流水排查代持（二轮回复第 3–25 页；txt 行 69–3648）",
+              "link": "/kb2024/301589-诺瓦星云#_8-二轮问题-1-零对价股权转让追问与流水排查代持-二轮回复第-3–25-页-txt-行-69–3648"
+            },
+            {
+              "text": "9. 二轮问题 6：出资瑕疵补足明细与工商匹配性（二轮回复第 83–92 页；txt 行 3649–4565）",
+              "link": "/kb2024/301589-诺瓦星云#_9-二轮问题-6-出资瑕疵补足明细与工商匹配性-二轮回复第-83–92-页-txt-行-3649–4565"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301589-诺瓦星云#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301589-诺瓦星云#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301591-肯特股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "南京肯特复合材料股份有限公司（301591·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301591-肯特股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301591-肯特股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301591-肯特股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301591-肯特股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 3：实际控制人认定与同业竞争（首轮回复第 82–108 页附近；txt 行 4039–4735）",
+              "link": "/kb2024/301591-肯特股份#_1-首轮问题-3-实际控制人认定与同业竞争-首轮回复第-82–108-页附近-txt-行-4039–4735"
+            },
+            {
+              "text": "2. 首轮问题 6：历史沿革——实物出资、对赌清理、税务与新增股份锁定（首轮回复第 139–156 页；txt 行 6087–6986）",
+              "link": "/kb2024/301591-肯特股份#_2-首轮问题-6-历史沿革——实物出资、对赌清理、税务与新增股份锁定-首轮回复第-139–156-页-txt-行-6087–6986"
+            },
+            {
+              "text": "3. 首轮问题 8：合规经营——海关处罚、资质、社保公积金与劳动用工（首轮回复第 157–196 页；txt 行 7737–8772）",
+              "link": "/kb2024/301591-肯特股份#_3-首轮问题-8-合规经营——海关处罚、资质、社保公积金与劳动用工-首轮回复第-157–196-页-txt-行-7737–8772"
+            },
+            {
+              "text": "4. 首轮问题 9：资产完整性——关联租赁、受让知识产权与合作研发（首轮回复第 197 页前后；txt 行 8773–9375）",
+              "link": "/kb2024/301591-肯特股份#_4-首轮问题-9-资产完整性——关联租赁、受让知识产权与合作研发-首轮回复第-197-页前后-txt-行-8773–9375"
+            },
+            {
+              "text": "5. 首轮问题 19：前次申报（首轮回复第 379–384 页；txt 行 16912–17090）",
+              "link": "/kb2024/301591-肯特股份#_5-首轮问题-19-前次申报-首轮回复第-379–384-页-txt-行-16912–17090"
+            },
+            {
+              "text": "6. 二轮问题 6：直系亲属共同实控人与\"不谋求控制权\"条款追问（二轮回复第 80–95 页；txt 行 3322 起）",
+              "link": "/kb2024/301591-肯特股份#_6-二轮问题-6-直系亲属共同实控人与-不谋求控制权-条款追问-二轮回复第-80–95-页-txt-行-3322-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301591-肯特股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301591-肯特股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301592-六九一二": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "四川六九一二通信技术股份有限公司（301592·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301592-六九一二"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301592-六九一二#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301592-六九一二#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301592-六九一二#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2＋问题8＋二轮问题4、6：母子架构倒置与前身的代持清理（首轮 txt行1666–1995、正文另段；二轮对应问题节）",
+              "link": "/kb2024/301592-六九一二#_1-首轮问题2-问题8-二轮问题4、6-母子架构倒置与前身的代持清理-首轮-txt行1666–1995、正文另段-二轮对应问题节"
+            },
+            {
+              "text": "2. 首轮问题3：实控人亲属的股份锁定期升级（首轮，回复第 46 页起；txt行1996–2167）",
+              "link": "/kb2024/301592-六九一二#_2-首轮问题3-实控人亲属的股份锁定期升级-首轮-回复第-46-页起-txt行1996–2167"
+            },
+            {
+              "text": "3. 首轮问题4：单一大股东与并列大股东的实控人之争（首轮，回复第 51 页起；txt行2168–2400前后）",
+              "link": "/kb2024/301592-六九一二#_3-首轮问题4-单一大股东与并列大股东的实控人之争-首轮-回复第-51-页起-txt行2168–2400前后"
+            },
+            {
+              "text": "4. 首轮问题9：住房公积金欠缴段的补救与量罚推演（首轮，回复第 114 页起）",
+              "link": "/kb2024/301592-六九一二#_4-首轮问题9-住房公积金欠缴段的补救与量罚推演-首轮-回复第-114-页起"
+            },
+            {
+              "text": "5. 首轮问题10＋问题11：涉军资质续期、抵押受限资产与在建工程纠纷（首轮，回复第 121 页起、123 页起）",
+              "link": "/kb2024/301592-六九一二#_5-首轮问题10-问题11-涉军资质续期、抵押受限资产与在建工程纠纷-首轮-回复第-121-页起、123-页起"
+            },
+            {
+              "text": "6. 落实函问题3、4：民营军工客户收入真实性与舆情收口（落实函，回复第 59 页起、73 页起）",
+              "link": "/kb2024/301592-六九一二#_6-落实函问题3、4-民营军工客户收入真实性与舆情收口-落实函-回复第-59-页起、73-页起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301592-六九一二#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301592-六九一二#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301596-瑞迪智驱": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "成都瑞迪智驱科技股份有限公司（301596·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301596-瑞迪智驱"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301596-瑞迪智驱#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301596-瑞迪智驱#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301596-瑞迪智驱#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 3：关于历史沿革——民办学院隔离性重组、六笔代持的滚动清零与非员工持股边界（首轮，页脚 1-105 至 138；txt 行 4956–6375）",
+              "link": "/kb2024/301596-瑞迪智驱#问题-3-关于历史沿革——民办学院隔离性重组、六笔代持的滚动清零与非员工持股边界-首轮-页脚-1-105-至-138-txt-行-4956–6375"
+            },
+            {
+              "text": "问题 4：关于民办非企四川现代职业学院——民非高校关联方的全景切割（首轮，页脚 1-139 起；txt 行 6376–6841）",
+              "link": "/kb2024/301596-瑞迪智驱#问题-4-关于民办非企四川现代职业学院——民非高校关联方的全景切割-首轮-页脚-1-139-起-txt-行-6376–6841"
+            },
+            {
+              "text": "问题 5：关于子公司及合规经营——境外子公司、少数股东流转与六罚合并整改（首轮，页脚 1-150 起；txt 行 6842–7990）",
+              "link": "/kb2024/301596-瑞迪智驱#问题-5-关于子公司及合规经营——境外子公司、少数股东流转与六罚合并整改-首轮-页脚-1-150-起-txt-行-6842–7990"
+            },
+            {
+              "text": "问题 6：关于员工——社保公积金补缴测算与退休返聘队伍（首轮，页脚 1-175 起；txt 行 7990–约8600）",
+              "link": "/kb2024/301596-瑞迪智驱#问题-6-关于员工——社保公积金补缴测算与退休返聘队伍-首轮-页脚-1-175-起-txt-行-7990–约8600"
+            },
+            {
+              "text": "问题 6（二轮）：关于股权诉讼——前高管赠与纠纷的调解式熄灭（二轮，页脚 1-92 起；txt 行 4017–4119）",
+              "link": "/kb2024/301596-瑞迪智驱#问题-6-二轮-关于股权诉讼——前高管赠与纠纷的调解式熄灭-二轮-页脚-1-92-起-txt-行-4017–4119"
+            },
+            {
+              "text": "问题 7（二轮）：关于退休返聘员工——依赖度否定与趋势展望（二轮，页脚 1-94 起；txt 行 4120–4200）",
+              "link": "/kb2024/301596-瑞迪智驱#问题-7-二轮-关于退休返聘员工——依赖度否定与趋势展望-二轮-页脚-1-94-起-txt-行-4120–4200"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301596-瑞迪智驱#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301596-瑞迪智驱#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301598-博科测试": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京博科测试系统股份有限公司（301598·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301598-博科测试"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301598-博科测试#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301598-博科测试#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301598-博科测试#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2＋二轮问题2＋落实函问题2：关于实际控制人——无民事行为能力、监护代行、协议追认与去世后的继承衔接（首轮回复第1-45至64页，txt行1809以下；二轮回复第1-27页起，txt行975以下；落实函第17页起）",
+              "link": "/kb2024/301598-博科测试#_1-首轮问题2-二轮问题2-落实函问题2-关于实际控制人——无民事行为能力、监护代行、协议追认与去世后的继承衔接-首轮回复第1-45至64页-txt行1809以下-二轮回复第1-27页起-txt行975以下-落实函第17页起"
+            },
+            {
+              "text": "2. 首轮问题3与二轮问题3：关于前股东安超／安超与TONG WU（首轮回复第1-65页起，txt行2551以下）",
+              "link": "/kb2024/301598-博科测试#_2-首轮问题3与二轮问题3-关于前股东安超-安超与tong-wu-首轮回复第1-65页起-txt行2551以下"
+            },
+            {
+              "text": "3. 首轮问题4：关于股权变动及股东——员工持股平台、券商直投与配偶代领激励股份（首轮回复第1-76页起，txt行2975以下）",
+              "link": "/kb2024/301598-博科测试#_3-首轮问题4-关于股权变动及股东——员工持股平台、券商直投与配偶代领激励股份-首轮回复第1-76页起-txt行2975以下"
+            },
+            {
+              "text": "4. 首轮问题6：关于资质与经营合法合规性（首轮回复第1-112页起，txt行4437以下）",
+              "link": "/kb2024/301598-博科测试#_4-首轮问题6-关于资质与经营合法合规性-首轮回复第1-112页起-txt行4437以下"
+            },
+            {
+              "text": "5. 首轮问题7：关于宝克公司——独家代理、反向竞业限制与依赖性（首轮回复第1-123页起，txt行4908以下）",
+              "link": "/kb2024/301598-博科测试#_5-首轮问题7-关于宝克公司——独家代理、反向竞业限制与依赖性-首轮回复第1-123页起-txt行4908以下"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301598-博科测试#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301598-博科测试#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301600-慧翰股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "慧翰微电子股份有限公司（301600·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301600-慧翰股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301600-慧翰股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301600-慧翰股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301600-慧翰股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：关于前次申报——科创板过会后注册阶段撤回再战创业板（首轮，回复第 1-3 页起；txt行82–444）",
+              "link": "/kb2024/301600-慧翰股份#_1-首轮问题1-关于前次申报——科创板过会后注册阶段撤回再战创业板-首轮-回复第-1-3-页起-txt行82–444"
+            },
+            {
+              "text": "2. 首轮问题2＋二轮问题2、3＋落实函问题3：实控人认定、家族成员安排与中财裕富差额补足诉讼（首轮txt行445–3598；二轮txt行461–712；落实函txt行1034–1407）",
+              "link": "/kb2024/301600-慧翰股份#_2-首轮问题2-二轮问题2、3-落实函问题3-实控人认定、家族成员安排与中财裕富差额补足诉讼-首轮txt行445–3598-二轮txt行461–712-落实函txt行1034–1407"
+            },
+            {
+              "text": "3. 首轮问题17＋二轮问题1＋落实函问题2：南方贝尔股权转让异议连环诉讼（首轮txt行11661–12226；二轮txt行69–460；落实函txt行824–1033）",
+              "link": "/kb2024/301600-慧翰股份#_3-首轮问题17-二轮问题1-落实函问题2-南方贝尔股权转让异议连环诉讼-首轮txt行11661–12226-二轮txt行69–460-落实函txt行824–1033"
+            },
+            {
+              "text": "4. 首轮问题6：产业政策与监管——3C认证暂停及资质完备性（首轮，回复第 1-76 页起；txt行3599–11660段内）",
+              "link": "/kb2024/301600-慧翰股份#_4-首轮问题6-产业政策与监管——3c认证暂停及资质完备性-首轮-回复第-1-76-页起-txt行3599–11660段内"
+            },
+            {
+              "text": "5. 首轮问题18：同业竞争——与国脉科技的物联网业务边界（首轮，回复第 1-266 页起；txt行12227–12832）",
+              "link": "/kb2024/301600-慧翰股份#_5-首轮问题18-同业竞争——与国脉科技的物联网业务边界-首轮-回复第-1-266-页起-txt行12227–12832"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301600-慧翰股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301600-慧翰股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301603-乔锋智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "乔锋智能装备股份有限公司（301603·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301603-乔锋智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301603-乔锋智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301603-乔锋智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301603-乔锋智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 2 与二轮问题 3 合并详述：历史沿革——增资定价、持股平台借款出资、历史代持清理与亲属锁定期（首轮回复第 8-1-1-35 至 55 页；二轮回复第 8-1-2-47 至 52 页）",
+              "link": "/kb2024/301603-乔锋智能#首轮问题-2-与二轮问题-3-合并详述-历史沿革——增资定价、持股平台借款出资、历史代持清理与亲属锁定期-首轮回复第-8-1-1-35-至-55-页-二轮回复第-8-1-2-47-至-52-页"
+            },
+            {
+              "text": "首轮问题 6：经营合规性——南京腾阳环保处罚的重大违法辨析（首轮回复第 8-1-1-110 页起）",
+              "link": "/kb2024/301603-乔锋智能#首轮问题-6-经营合规性——南京腾阳环保处罚的重大违法辨析-首轮回复第-8-1-1-110-页起"
+            },
+            {
+              "text": "首轮问题 7 与二轮问题 4：土地房产权属——抵押、未办证与拆迁腾挪（首轮回复第 8-1-1-116 页起；二轮回复第 8-1-2-58 页起）",
+              "link": "/kb2024/301603-乔锋智能#首轮问题-7-与二轮问题-4-土地房产权属——抵押、未办证与拆迁腾挪-首轮回复第-8-1-1-116-页起-二轮回复第-8-1-2-58-页起"
+            },
+            {
+              "text": "其余法律节：",
+              "link": "/kb2024/301603-乔锋智能#其余法律节"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301603-乔锋智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301603-乔锋智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301606-绿联科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市绿联科技股份有限公司（301606·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301606-绿联科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301606-绿联科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301606-绿联科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301606-绿联科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 11：数据安全——\"绿联云\"App 的个人信息收集全景与\"100 万人\"测试（首轮回复第 1-290 至 1-299 页）",
+              "link": "/kb2024/301606-绿联科技#首轮问题-11-数据安全——-绿联云-app-的个人信息收集全景与-100-万人-测试-首轮回复第-1-290-至-1-299-页"
+            },
+            {
+              "text": "首轮问题 14 与二轮问题 5：员工持股平台与股份支付——两代公允价值路径与 18,988.36 万元总盘子（首轮回复第 1-319 至 1-327 页）",
+              "link": "/kb2024/301606-绿联科技#首轮问题-14-与二轮问题-5-员工持股平台与股份支付——两代公允价值路径与-18-988-36-万元总盘子-首轮回复第-1-319-至-1-327-页"
+            },
+            {
+              "text": "二轮问题 6：专利许可——全方位电子 154 项 Type-C 专利的非排他许可转型（二轮回复第 1-114 页起）",
+              "link": "/kb2024/301606-绿联科技#二轮问题-6-专利许可——全方位电子-154-项-type-c-专利的非排他许可转型-二轮回复第-1-114-页起"
+            },
+            {
+              "text": "其余法律节：",
+              "link": "/kb2024/301606-绿联科技#其余法律节"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301606-绿联科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301606-绿联科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301607-富特科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江富特科技股份有限公司（301607·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301607-富特科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301607-富特科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301607-富特科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301607-富特科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：历史沿革及股权变动瑕疵（首轮，回复第 8-1-1-46 页起；txt行1971–3258）",
+              "link": "/kb2024/301607-富特科技#_1-首轮问题3-历史沿革及股权变动瑕疵-首轮-回复第-8-1-1-46-页起-txt行1971–3258"
+            },
+            {
+              "text": "2. 首轮问题4＋二轮问题6＋上市委落实函问题一：客户背景股东、蔚来汽车关联方认定与利益输送防范（首轮txt行3259–4531；二轮txt行3104–3623；上市委落实函txt行59起）",
+              "link": "/kb2024/301607-富特科技#_2-首轮问题4-二轮问题6-上市委落实函问题一-客户背景股东、蔚来汽车关联方认定与利益输送防范-首轮txt行3259–4531-二轮txt行3104–3623-上市委落实函txt行59起"
+            },
+            {
+              "text": "3. 首轮问题5＋二轮问题8：实际控制人认定与股权质押冻结（首轮txt行4532–5261；二轮txt行3944–4184）",
+              "link": "/kb2024/301607-富特科技#_3-首轮问题5-二轮问题8-实际控制人认定与股权质押冻结-首轮txt行4532–5261-二轮txt行3944–4184"
+            },
+            {
+              "text": "4. 首轮问题19：对赌协议（首轮，回复第 8-1-1-356 页起；txt行16122–16295）",
+              "link": "/kb2024/301607-富特科技#_4-首轮问题19-对赌协议-首轮-回复第-8-1-1-356-页起-txt行16122–16295"
+            },
+            {
+              "text": "5. 首轮问题20：员工持股平台及股权激励（首轮，回复第 8-1-1-361 页起；txt行16296–16672）",
+              "link": "/kb2024/301607-富特科技#_5-首轮问题20-员工持股平台及股权激励-首轮-回复第-8-1-1-361-页起-txt行16296–16672"
+            },
+            {
+              "text": "6. 首轮问题21：财务内控规范性——个人卡收付供应商返点（首轮，回复第 8-1-1-370 页起；txt行16673–17450前后）",
+              "link": "/kb2024/301607-富特科技#_6-首轮问题21-财务内控规范性——个人卡收付供应商返点-首轮-回复第-8-1-1-370-页起-txt行16673–17450前后"
+            },
+            {
+              "text": "7. 首轮问题22＋二轮问题5：全租赁经营的房产合规性与稳定性（首轮txt行17451–17920；二轮txt行2903–3103）",
+              "link": "/kb2024/301607-富特科技#_7-首轮问题22-二轮问题5-全租赁经营的房产合规性与稳定性-首轮txt行17451–17920-二轮txt行2903–3103"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301607-富特科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301607-富特科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301608-博实结": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市博实结科技股份有限公司（301608·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301608-博实结"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301608-博实结#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301608-博实结#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301608-博实结#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1（2）：车载终端行业监管政策影响与产品数据采集合规（数据合规；首轮回复第8-1-44至48页、第8-1-60至64页；txt行1975–2205、2660–2818）",
+              "link": "/kb2024/301608-博实结#_1-首轮问题1-2-车载终端行业监管政策影响与产品数据采集合规-数据合规-首轮回复第8-1-44至48页、第8-1-60至64页-txt行1975–2205、2660–2818"
+            },
+            {
+              "text": "2. 首轮问题18：房地产事项——子公司持地持房、17套城镇住宅与募投用地合规（土地房产权属；首轮回复第8-1-316至330页；txt行14342–14989）",
+              "link": "/kb2024/301608-博实结#_2-首轮问题18-房地产事项——子公司持地持房、17套城镇住宅与募投用地合规-土地房产权属-首轮回复第8-1-316至330页-txt行14342–14989"
+            },
+            {
+              "text": "3. 首轮问题19：核心子公司惠州博实结合规状况（其他需律师事项——质押/处罚/诉讼；首轮回复第8-1-330至332页；txt行14989–15072）",
+              "link": "/kb2024/301608-博实结#_3-首轮问题19-核心子公司惠州博实结合规状况-其他需律师事项——质押-处罚-诉讼-首轮回复第8-1-330至332页-txt行14989–15072"
+            },
+            {
+              "text": "4. 首轮问题20：2018年增资价差、住房公积金、劳务派遣、关联方注销及子公司行政处罚（历史沿革；社保公积金；关联方注销与行政处罚；首轮回复第8-1-332至349页；txt行15072–15840）",
+              "link": "/kb2024/301608-博实结#_4-首轮问题20-2018年增资价差、住房公积金、劳务派遣、关联方注销及子公司行政处罚-历史沿革-社保公积金-关联方注销与行政处罚-首轮回复第8-1-332至349页-txt行15072–15840"
+            },
+            {
+              "text": "5. 首轮问题12＋二轮问题2＋落实函问题2：员工持股平台实添益受让老股东股权的股份支付之争（员工持股；首轮回复第8-1-229页起txt行10184–10210；二轮回复第8-1-21至29页txt行786–1164；落实函回复第1-41至51页txt行2046–2520）",
+              "link": "/kb2024/301608-博实结#_5-首轮问题12-二轮问题2-落实函问题2-员工持股平台实添益受让老股东股权的股份支付之争-员工持股-首轮回复第8-1-229页起txt行10184–10210-二轮回复第8-1-21至29页txt行786–1164-落实函回复第1-41至51页txt行2046–2520"
+            },
+            {
+              "text": "6. 首轮问题17＋二轮问题6（1）：大额现金分红必要性与分红款资金流向核查（分红与股利分配；首轮回复第8-1-295至315页txt行13334–14341；二轮回复第8-1-132页起txt行6239–7450）",
+              "link": "/kb2024/301608-博实结#_6-首轮问题17-二轮问题6-1-大额现金分红必要性与分红款资金流向核查-分红与股利分配-首轮回复第8-1-295至315页txt行13334–14341-二轮回复第8-1-132页起txt行6239–7450"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301608-博实结#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301608-博实结#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301611-珂玛科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州珂玛材料科技股份有限公司（301611·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301611-珂玛科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301611-珂玛科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301611-珂玛科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301611-珂玛科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：实际控制人认定——财务投资人以自有股份实施激励与\"规避共同控制\"抗辩（回复第8-1-1-59至62页；txt行2706–2879）",
+              "link": "/kb2024/301611-珂玛科技#_1-首轮问题3-实际控制人认定——财务投资人以自有股份实施激励与-规避共同控制-抗辩-回复第8-1-1-59至62页-txt行2706–2879"
+            },
+            {
+              "text": "2. 首轮问题4：股权清晰——高建受让价款转为借款与董监高年转25%限制的效力（回复第8-1-1-63至66页；txt行2881–3041）",
+              "link": "/kb2024/301611-珂玛科技#_2-首轮问题4-股权清晰——高建受让价款转为借款与董监高年转25-限制的效力-回复第8-1-1-63至66页-txt行2881–3041"
+            },
+            {
+              "text": "3. 二轮问题3：胡文出资来源与股权代持的流水级穿透核查（回复第8-1-2-20至23页；txt行928–1080）",
+              "link": "/kb2024/301611-珂玛科技#_3-二轮问题3-胡文出资来源与股权代持的流水级穿透核查-回复第8-1-2-20至23页-txt行928–1080"
+            },
+            {
+              "text": "4. 首轮问题13：危化品使用/储存/运输资质豁免论证、排污许可登记与危险废物处置外包合规（回复第8-1-1-185至193页；txt行8493–8945）",
+              "link": "/kb2024/301611-珂玛科技#_4-首轮问题13-危化品使用-储存-运输资质豁免论证、排污许可登记与危险废物处置外包合规-回复第8-1-1-185至193页-txt行8493–8945"
+            },
+            {
+              "text": "5. 落实函问题3：媒体质疑综合回应中的五项法律事项（回复第8-1-3-26至38页；txt行1154–1700）",
+              "link": "/kb2024/301611-珂玛科技#_5-落实函问题3-媒体质疑综合回应中的五项法律事项-回复第8-1-3-26至38页-txt行1154–1700"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301611-珂玛科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301611-珂玛科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301613-新铝时代": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "重庆新铝时代科技股份有限公司（301613·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301613-新铝时代"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301613-新铝时代#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301613-新铝时代#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301613-新铝时代#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题13＋二轮问题2：抵债实物出资、国资有序退出与两层代持的8折还原（首轮，回复第 341 页起 txt行14101–16544；二轮 txt行1709–3070）",
+              "link": "/kb2024/301613-新铝时代#_1-首轮问题13-二轮问题2-抵债实物出资、国资有序退出与两层代持的8折还原-首轮-回复第-341-页起-txt行14101–16544-二轮-txt行1709–3070"
+            },
+            {
+              "text": "2. 首轮问题15：父女共同控制与配偶出局的边界设计（首轮，回复第 397 页起；txt行16545–16794）",
+              "link": "/kb2024/301613-新铝时代#_2-首轮问题15-父女共同控制与配偶出局的边界设计-首轮-回复第-397-页起-txt行16545–16794"
+            },
+            {
+              "text": "3. 首轮问题16：含\"股权质押式违约担保\"在内的九批对赌条款全量清零（首轮，回复第 404 页起；txt行16795–17200前后）",
+              "link": "/kb2024/301613-新铝时代#_3-首轮问题16-含-股权质押式违约担保-在内的九批对赌条款全量清零-首轮-回复第-404-页起-txt行16795–17200前后"
+            },
+            {
+              "text": "4. 首轮问题12：质量召回长臂责任、安全事故与无证排污双罚（首轮，回复第 321 页起）",
+              "link": "/kb2024/301613-新铝时代#_4-首轮问题12-质量召回长臂责任、安全事故与无证排污双罚-首轮-回复第-321-页起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301613-新铝时代#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301613-新铝时代#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301617-博苑新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东博苑新材料股份有限公司（301617·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301617-博苑新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301617-博苑新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301617-博苑新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301617-博苑新材#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301617-博苑新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301617-博苑新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301618-长联科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "东莞长联新材料科技股份有限公司（301618·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301618-长联科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301618-长联科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301618-长联科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301618-长联科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题18＋二轮问题7：子公司超环评批复产能生产的定性与清零（首轮，回复第 370 页起 txt行16872–17315；二轮，回复第 101 页起 txt行4301–4985）",
+              "link": "/kb2024/301618-长联科技#_1-首轮问题18-二轮问题7-子公司超环评批复产能生产的定性与清零-首轮-回复第-370-页起-txt行16872–17315-二轮-回复第-101-页起-txt行4301–4985"
+            },
+            {
+              "text": "2. 首轮问题17：环保及生产安全十项专项核查（首轮，回复第 332 页起；txt行15117–16871）",
+              "link": "/kb2024/301618-长联科技#_2-首轮问题17-环保及生产安全十项专项核查-首轮-回复第-332-页起-txt行15117–16871"
+            },
+            {
+              "text": "3. 首轮问题19：销售外购设备卷入发明专利侵权之诉（首轮，回复第 380 页起；txt行17316–17513）",
+              "link": "/kb2024/301618-长联科技#_3-首轮问题19-销售外购设备卷入发明专利侵权之诉-首轮-回复第-380-页起-txt行17316–17513"
+            },
+            {
+              "text": "4. 首轮问题20：房屋租赁瑕疵与募投用地性质（首轮，回复第 384 页起；txt行17514–17766）",
+              "link": "/kb2024/301618-长联科技#_4-首轮问题20-房屋租赁瑕疵与募投用地性质-首轮-回复第-384-页起-txt行17514–17766"
+            },
+            {
+              "text": "5. 首轮问题21＋二轮问题8：员工持股平台的离职人员与股东配偶（首轮，回复第 389 页起 txt行17767–17903）",
+              "link": "/kb2024/301618-长联科技#_5-首轮问题21-二轮问题8-员工持股平台的离职人员与股东配偶-首轮-回复第-389-页起-txt行17767–17903"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301618-长联科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301618-长联科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301622-英思特": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "包头市英思特稀磁新材料股份有限公司（301622·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301622-英思特"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301622-英思特#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301622-英思特#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301622-英思特#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题14：关于股份代持（首轮豁免版第8-1-2-333至339页；txt行14492—14878）",
+              "link": "/kb2024/301622-英思特#_1-首轮问题14-关于股份代持-首轮豁免版第8-1-2-333至339页-txt行14492—14878"
+            },
+            {
+              "text": "2. 首轮问题15：关于实际控制人认定（首轮豁免版第8-1-2-342至347页；txt行14878—15099）",
+              "link": "/kb2024/301622-英思特#_2-首轮问题15-关于实际控制人认定-首轮豁免版第8-1-2-342至347页-txt行14878—15099"
+            },
+            {
+              "text": "3. 首轮问题16：关于对赌协议（首轮豁免版第8-1-2-347至353页；txt行15099—15418）",
+              "link": "/kb2024/301622-英思特#_3-首轮问题16-关于对赌协议-首轮豁免版第8-1-2-347至353页-txt行15099—15418"
+            },
+            {
+              "text": "4. 首轮问题17：关于其他股东（首轮豁免版第8-1-2-353至359页；txt行15418—15706）",
+              "link": "/kb2024/301622-英思特#_4-首轮问题17-关于其他股东-首轮豁免版第8-1-2-353至359页-txt行15418—15706"
+            },
+            {
+              "text": "5. 首轮问题18：关于主要厂房系租赁所得（首轮豁免版第8-1-2-359至369页；txt行15706—16176）",
+              "link": "/kb2024/301622-英思特#_5-首轮问题18-关于主要厂房系租赁所得-首轮豁免版第8-1-2-359至369页-txt行15706—16176"
+            },
+            {
+              "text": "6. 首轮问题19：关于共用商号（首轮豁免版第8-1-2-369至378页；txt行16176—16580）",
+              "link": "/kb2024/301622-英思特#_6-首轮问题19-关于共用商号-首轮豁免版第8-1-2-369至378页-txt行16176—16580"
+            },
+            {
+              "text": "7. 二轮问题2与落实函问题3：一致行动人王诗畅股份权属清晰性（二轮回复第8-1-27页起，txt行1042—1356；落实函回复相应节）",
+              "link": "/kb2024/301622-英思特#_7-二轮问题2与落实函问题3-一致行动人王诗畅股份权属清晰性-二轮回复第8-1-27页起-txt行1042—1356-落实函回复相应节"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301622-英思特#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301622-英思特#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301626-苏州天脉": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州天脉导热科技股份有限公司（301626·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301626-苏州天脉"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301626-苏州天脉#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301626-苏州天脉#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301626-苏州天脉#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题8：对赌协议——发行人作为回购义务人的账面清理全过程（首轮，回复第 259 页起；txt行9939–10550前后）",
+              "link": "/kb2024/301626-苏州天脉#_1-首轮问题8-对赌协议——发行人作为回购义务人的账面清理全过程-首轮-回复第-259-页起-txt行9939–10550前后"
+            },
+            {
+              "text": "2. 首轮问题10：股权激励——平台份额价格调整与实控人借款出资（首轮，回复第 290 页起；txt行11145–11266）",
+              "link": "/kb2024/301626-苏州天脉#_2-首轮问题10-股权激励——平台份额价格调整与实控人借款出资-首轮-回复第-290-页起-txt行11145–11266"
+            },
+            {
+              "text": "3. 首轮问题15：劳务派遣超标整改与劳务外包供应商独立性（首轮，回复第 341 页起；txt行13304–13760前后）",
+              "link": "/kb2024/301626-苏州天脉#_3-首轮问题15-劳务派遣超标整改与劳务外包供应商独立性-首轮-回复第-341-页起-txt行13304–13760前后"
+            },
+            {
+              "text": "4. 二轮问题7：嵊州天脉全租赁经营、自有物业抵押与募投用地叠加（二轮，回复第 121 页起；txt行4541–4800前后）",
+              "link": "/kb2024/301626-苏州天脉#_4-二轮问题7-嵊州天脉全租赁经营、自有物业抵押与募投用地叠加-二轮-回复第-121-页起-txt行4541–4800前后"
+            },
+            {
+              "text": "5. 首轮问题17：重要合同披露标准的自查（首轮，回复第 355 页起；txt行14051–14130）",
+              "link": "/kb2024/301626-苏州天脉#_5-首轮问题17-重要合同披露标准的自查-首轮-回复第-355-页起-txt行14051–14130"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301626-苏州天脉#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301626-苏州天脉#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301628-强达电路": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市强达电路股份有限公司（301628·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301628-强达电路"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301628-强达电路#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301628-强达电路#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301628-强达电路#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题15：关于关联方与资金流水核查（首轮回复第387—401页附近；txt行17103—17789）",
+              "link": "/kb2024/301628-强达电路#_1-首轮问题15-关于关联方与资金流水核查-首轮回复第387—401页附近-txt行17103—17789"
+            },
+            {
+              "text": "2. 首轮问题17：关于股权激励——持股平台股份支付公允价值与等待期安排（首轮回复第417—420页；txt行18348—18516）",
+              "link": "/kb2024/301628-强达电路#_2-首轮问题17-关于股权激励——持股平台股份支付公允价值与等待期安排-首轮回复第417—420页-txt行18348—18516"
+            },
+            {
+              "text": "3. 首轮问题18：关于技术来源——创始团队竞业禁止与核心技术权属（首轮回复第421—425页；txt行18516—18877）",
+              "link": "/kb2024/301628-强达电路#_3-首轮问题18-关于技术来源——创始团队竞业禁止与核心技术权属-首轮回复第421—425页-txt行18516—18877"
+            },
+            {
+              "text": "4. 二轮问题5：关于股权激励——未认定宋振武共同实控人、代持追问与监事激励对象合规（二轮回复第85—93页；txt行3462—3860）",
+              "link": "/kb2024/301628-强达电路#_4-二轮问题5-关于股权激励——未认定宋振武共同实控人、代持追问与监事激励对象合规-二轮回复第85—93页-txt行3462—3860"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301628-强达电路#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301628-强达电路#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301631-壹连科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳壹连科技股份有限公司（301631·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301631-壹连科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301631-壹连科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301631-壹连科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301631-壹连科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题16：关于财务内控（首轮回复第1-413页起；txt行18247—18663）",
+              "link": "/kb2024/301631-壹连科技#_1-首轮问题16-关于财务内控-首轮回复第1-413页起-txt行18247—18663"
+            },
+            {
+              "text": "2. 首轮问题18：关于外部股东入股及对赌协议（首轮回复第1-440至443页；txt行19375—19537）",
+              "link": "/kb2024/301631-壹连科技#_2-首轮问题18-关于外部股东入股及对赌协议-首轮回复第1-440至443页-txt行19375—19537"
+            },
+            {
+              "text": "3. 首轮问题19：关于股权激励（首轮回复第1-444页起；txt行19537—19931）",
+              "link": "/kb2024/301631-壹连科技#_3-首轮问题19-关于股权激励-首轮回复第1-444页起-txt行19537—19931"
+            },
+            {
+              "text": "4. 首轮问题20：关于用工合规性（首轮回复第1-454页起；txt行19931—20523）",
+              "link": "/kb2024/301631-壹连科技#_4-首轮问题20-关于用工合规性-首轮回复第1-454页起-txt行19931—20523"
+            },
+            {
+              "text": "5. 首轮问题21：关于同业竞争和关联交易（首轮回复第1-468页起；txt行20523—21863）",
+              "link": "/kb2024/301631-壹连科技#_5-首轮问题21-关于同业竞争和关联交易-首轮回复第1-468页起-txt行20523—21863"
+            },
+            {
+              "text": "6. 首轮问题22：关于资产权属（首轮回复第1-495页起；txt行21863—22283）",
+              "link": "/kb2024/301631-壹连科技#_6-首轮问题22-关于资产权属-首轮回复第1-495页起-txt行21863—22283"
+            },
+            {
+              "text": "7. 第三轮问题1/问题2：“侨云”系公司与关联方供应商重叠（三轮回复第1-3、1-44页起；txt行72以下、1963以下）",
+              "link": "/kb2024/301631-壹连科技#_7-第三轮问题1-问题2-侨云-系公司与关联方供应商重叠-三轮回复第1-3、1-44页起-txt行72以下、1963以下"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301631-壹连科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301631-壹连科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/301633-港迪技术": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "武汉港迪技术股份有限公司（301633·深市创业板）审核问询法律问题回溯",
+      "link": "/kb2024/301633-港迪技术"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/301633-港迪技术#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/301633-港迪技术#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/301633-港迪技术#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：实际控制人出售港迪电气及与港迪电气的关联交易（首轮回复第8-1-1-75至131页；txt行3058—约5580）",
+              "link": "/kb2024/301633-港迪技术#_1-首轮问题3-实际控制人出售港迪电气及与港迪电气的关联交易-首轮回复第8-1-1-75至131页-txt行3058—约5580"
+            },
+            {
+              "text": "2. 首轮问题5：关于股份代持及估值公允性（首轮回复第8-1-1-153至165页；txt行6525—7082）",
+              "link": "/kb2024/301633-港迪技术#_2-首轮问题5-关于股份代持及估值公允性-首轮回复第8-1-1-153至165页-txt行6525—7082"
+            },
+            {
+              "text": "3. 首轮问题6：关于经营合规性（首轮回复第8-1-1-166至177页；txt行7082—7704）",
+              "link": "/kb2024/301633-港迪技术#_3-首轮问题6-关于经营合规性-首轮回复第8-1-1-166至177页-txt行7082—7704"
+            },
+            {
+              "text": "4. 首轮问题7：关于实际控制人及高级管理人员（首轮回复第8-1-1-178页起；txt行7704—8294）",
+              "link": "/kb2024/301633-港迪技术#_4-首轮问题7-关于实际控制人及高级管理人员-首轮回复第8-1-1-178页起-txt行7704—8294"
+            },
+            {
+              "text": "5. 首轮问题4：与华东重机及苏港智能的关联交易（首轮回复第8-1-1-132页起；txt行约5590—6525）",
+              "link": "/kb2024/301633-港迪技术#_5-首轮问题4-与华东重机及苏港智能的关联交易-首轮回复第8-1-1-132页起-txt行约5590—6525"
+            },
+            {
+              "text": "6. 后续轮次对关联交易的追问：二轮问题2子问（2）与落实函问题1（二轮回复txt相应区间；落实函回复第8-3-1-3页起，txt行53以下）",
+              "link": "/kb2024/301633-港迪技术#_6-后续轮次对关联交易的追问-二轮问题2子问-2-与落实函问题1-二轮回复txt相应区间-落实函回复第8-3-1-3页起-txt行53以下"
+            },
+            {
+              "text": "7. 首轮问题2：关于业务重组及行业分类准确性（首轮回复第8-1-1-57页起；txt行2459—3058）",
+              "link": "/kb2024/301633-港迪技术#_7-首轮问题2-关于业务重组及行业分类准确性-首轮回复第8-1-1-57页起-txt行2459—3058"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/301633-港迪技术#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/301633-港迪技术#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/601033-永兴股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广州环投永兴集团股份有限公司（601033·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/601033-永兴股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/601033-永兴股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/601033-永兴股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/601033-永兴股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 6.1：博世科同业竞争排查与避免承诺（首轮，回复第 8-1-103 至 8-1-176 页；txt 行 3928–7095）",
+              "link": "/kb2024/601033-永兴股份#问题-6-1-博世科同业竞争排查与避免承诺-首轮-回复第-8-1-103-至-8-1-176-页-txt-行-3928–7095"
+            },
+            {
+              "text": "问题 6.2：博世科控制权短期转手宁国国控的合规性与表决权委托到期安排（首轮，回复第 8-1-177 至 8-1-186 页；txt 行 7137–7470）",
+              "link": "/kb2024/601033-永兴股份#问题-6-2-博世科控制权短期转手宁国国控的合规性与表决权委托到期安排-首轮-回复第-8-1-177-至-8-1-186-页-txt-行-7137–7470"
+            },
+            {
+              "text": "问题 6.3：实际控制人广州市政府控制的全部企业同业竞争排查（首轮，回复第 8-1-187 至 8-1-203 页；txt 行 7500–8175）",
+              "link": "/kb2024/601033-永兴股份#问题-6-3-实际控制人广州市政府控制的全部企业同业竞争排查-首轮-回复第-8-1-187-至-8-1-203-页-txt-行-7500–8175"
+            },
+            {
+              "text": "问题 7：关于政府采购服务、BOT——合同期限大幅缩短的合规性与续约保障（首轮，回复第 8-1-205 至 8-1-215 页；txt 行 8176–8550）",
+              "link": "/kb2024/601033-永兴股份#问题-7-关于政府采购服务、bot——合同期限大幅缩短的合规性与续约保障-首轮-回复第-8-1-205-至-8-1-215-页-txt-行-8176–8550"
+            },
+            {
+              "text": "问题 8：关于特许经营权——取得情况与区域排他性（首轮，回复第 8-1-217 页起；txt 行 8551–9130）",
+              "link": "/kb2024/601033-永兴股份#问题-8-关于特许经营权——取得情况与区域排他性-首轮-回复第-8-1-217-页起-txt-行-8551–9130"
+            },
+            {
+              "text": "问题 9：关于固废排放——炉渣飞灰危废全流程管理与排污许可衔接（首轮，回复第 8-1-233 至 8-1-245 页；txt 行 9131–9733）",
+              "link": "/kb2024/601033-永兴股份#问题-9-关于固废排放——炉渣飞灰危废全流程管理与排污许可衔接-首轮-回复第-8-1-233-至-8-1-245-页-txt-行-9131–9733"
+            },
+            {
+              "text": "问题 10：关于间接控股股东——国有股权无偿划转生效与工商登记分离（首轮，回复第 8-1-247 至 8-1-249 页；txt 行 9734–9850）",
+              "link": "/kb2024/601033-永兴股份#问题-10-关于间接控股股东——国有股权无偿划转生效与工商登记分离-首轮-回复第-8-1-247-至-8-1-249-页-txt-行-9734–9850"
+            },
+            {
+              "text": "问题 11：关于重大资产重组完成时点——一揽子划转的合并日拆分认定（首轮，回复第 8-1-250 至 8-1-255 页；txt 行 9850–10104）",
+              "link": "/kb2024/601033-永兴股份#问题-11-关于重大资产重组完成时点——一揽子划转的合并日拆分认定-首轮-回复第-8-1-250-至-8-1-255-页-txt-行-9850–10104"
+            },
+            {
+              "text": "问题 12（子题 12.1/12.2）：员工持股平台退出登记与瑕疵土地房产提示（首轮，回复第 8-1-256 至 8-1-257 页；txt 行 10105–10192）",
+              "link": "/kb2024/601033-永兴股份#问题-12-子题-12-1-12-2-员工持股平台退出登记与瑕疵土地房产提示-首轮-回复第-8-1-256-至-8-1-257-页-txt-行-10105–10192"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/601033-永兴股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/601033-永兴股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603082-北自科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北自所（北京）科技发展股份有限公司（603082·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603082-北自科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603082-北自科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603082-北自科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603082-北自科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 2：关于交易方案——支付结构、方案调整与未实缴出资义务承接（首轮，回复第 6-1-27 至 6-1-35 页；txt 行 1007–1350）",
+              "link": "/kb2024/603082-北自科技#问题-2-关于交易方案——支付结构、方案调整与未实缴出资义务承接-首轮-回复第-6-1-27-至-6-1-35-页-txt-行-1007–1350"
+            },
+            {
+              "text": "问题 3（其一）：关于历史沿革——穗柯智能股权代持的建立、变更与解除（首轮，回复第 6-1-39 至 6-1-40 页；txt 行 1512–1560）",
+              "link": "/kb2024/603082-北自科技#问题-3-其一-关于历史沿革——穗柯智能股权代持的建立、变更与解除-首轮-回复第-6-1-39-至-6-1-40-页-txt-行-1512–1560"
+            },
+            {
+              "text": "问题 3（其二）：核心技术来源、迟延实缴注册资本与关联方苏州柯杰注销（首轮，回复第 6-1-36 至 6-1-46 页；txt 行 1351–1805）",
+              "link": "/kb2024/603082-北自科技#问题-3-其二-核心技术来源、迟延实缴注册资本与关联方苏州柯杰注销-首轮-回复第-6-1-36-至-6-1-46-页-txt-行-1351–1805"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603082-北自科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603082-北自科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603091-众鑫股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江众鑫环保科技集团股份有限公司（603091·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603091-众鑫股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603091-众鑫股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603091-众鑫股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603091-众鑫股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1.1：换股收购众生纤维、现金收购广西华宝 42% 少数股权与董监高共同投资的适法性（首轮，更新版回复第 8-1-1-4 至 8-1-30 页；txt 行 63—1185）",
+              "link": "/kb2024/603091-众鑫股份#问题-1-1-换股收购众生纤维、现金收购广西华宝-42-少数股权与董监高共同投资的适法性-首轮-更新版回复第-8-1-1-4-至-8-1-30-页-txt-行-63—1185"
+            },
+            {
+              "text": "问题 1.2：南宁全耀纸浆锁价采购（首轮，更新版回复第 8-1-1-31 页起；txt 行 1186—1821）",
+              "link": "/kb2024/603091-众鑫股份#问题-1-2-南宁全耀纸浆锁价采购-首轮-更新版回复第-8-1-1-31-页起-txt-行-1186—1821"
+            },
+            {
+              "text": "问题 2：绿四季经营性资产收购与披露差异更正（首轮，更新版回复第 8-1-1-47 至 8-1-52 页；txt 行 1822—2059）",
+              "link": "/kb2024/603091-众鑫股份#问题-2-绿四季经营性资产收购与披露差异更正-首轮-更新版回复第-8-1-1-47-至-8-1-52-页-txt-行-1822—2059"
+            },
+            {
+              "text": "问题 3：共同控制的否定式认定——“同一控制”表述歧义修正与季文虎定位（首轮，更新版回复第 8-1-1-53 至 8-1-58 页；txt 行 2060—2560）",
+              "link": "/kb2024/603091-众鑫股份#问题-3-共同控制的否定式认定——-同一控制-表述歧义修正与季文虎定位-首轮-更新版回复第-8-1-1-53-至-8-1-58-页-txt-行-2060—2560"
+            },
+            {
+              "text": "问题 6：五张专用个人卡的完整还原（首轮，更新版回复第 8-1-1-80 页起；txt 行 3203—6134）",
+              "link": "/kb2024/603091-众鑫股份#问题-6-五张专用个人卡的完整还原-首轮-更新版回复第-8-1-1-80-页起-txt-行-3203—6134"
+            },
+            {
+              "text": "问题 12.1：滕步相名义持股怀远嘉恩的委托持股清理（首轮，更新版回复第 8-1-1-240 页起；txt 行 10190—10266）",
+              "link": "/kb2024/603091-众鑫股份#问题-12-1-滕步相名义持股怀远嘉恩的委托持股清理-首轮-更新版回复第-8-1-1-240-页起-txt-行-10190—10266"
+            },
+            {
+              "text": "问题 12.2：与严光跃的对赌条款及解除、发行类第 4 号 4-3 的适用（首轮，更新版回复第 8-1-1-241 页起；txt 行 10267—10636）",
+              "link": "/kb2024/603091-众鑫股份#问题-12-2-与严光跃的对赌条款及解除、发行类第-4-号-4-3-的适用-首轮-更新版回复第-8-1-1-241-页起-txt-行-10267—10636"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603091-众鑫股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603091-众鑫股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603194-中力股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江中力机械股份有限公司（603194·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603194-中力股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603194-中力股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603194-中力股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603194-中力股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 6：关于收购与子公司——2018 年系列重组及境外子公司 ODI 合规（首轮，回复第 8-1-172 至 8-1-205 页；txt 行 7575–9270）",
+              "link": "/kb2024/603194-中力股份#问题-6-关于收购与子公司——2018-年系列重组及境外子公司-odi-合规-首轮-回复第-8-1-172-至-8-1-205-页-txt-行-7575–9270"
+            },
+            {
+              "text": "问题 7：关于发行人股东与历史沿革——外资转内资、准股权投资与对赌清理（首轮，回复第 8-1-206 至 8-1-240 页；txt 行 9271–10973）",
+              "link": "/kb2024/603194-中力股份#问题-7-关于发行人股东与历史沿革——外资转内资、准股权投资与对赌清理-首轮-回复第-8-1-206-至-8-1-240-页-txt-行-9271–10973"
+            },
+            {
+              "text": "问题 8：关于关联方与关联交易——原关联方注销、借款豁免与同业竞争（首轮，回复第 8-1-241 至 8-1-268 页；txt 行 10974–12601）",
+              "link": "/kb2024/603194-中力股份#问题-8-关于关联方与关联交易——原关联方注销、借款豁免与同业竞争-首轮-回复第-8-1-241-至-8-1-268-页-txt-行-10974–12601"
+            },
+            {
+              "text": "问题 9.1：不动产抵押与集体农用地租赁（首轮，回复第 8-1-270 至 8-1-280 页；txt 行 12602–12960）",
+              "link": "/kb2024/603194-中力股份#问题-9-1-不动产抵押与集体农用地租赁-首轮-回复第-8-1-270-至-8-1-280-页-txt-行-12602–12960"
+            },
+            {
+              "text": "问题 9.3：员工持股平台的非在职人员持份与客户供应商持股（首轮，回复第 8-1-285 至 8-1-292 页；txt 行 13424–13760）",
+              "link": "/kb2024/603194-中力股份#问题-9-3-员工持股平台的非在职人员持份与客户供应商持股-首轮-回复第-8-1-285-至-8-1-292-页-txt-行-13424–13760"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603194-中力股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603194-中力股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603205-健尔康": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "健尔康医疗科技股份有限公司（603205·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603205-健尔康"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603205-健尔康#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603205-健尔康#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603205-健尔康#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 2：香港联赛代持、关联购销与口罩机租赁（首轮，回复第 8-1-38 至 8-1-49 页；txt 行 1877—2490 左右）",
+              "link": "/kb2024/603205-健尔康#问题-2-香港联赛代持、关联购销与口罩机租赁-首轮-回复第-8-1-38-至-8-1-49-页-txt-行-1877—2490-左右"
+            },
+            {
+              "text": "问题 7.1 ＆ 7.2：特殊身份股东入股、对赌终止与员工股回购条款处置（首轮，回复第 8-1-137 至 8-1-145 页；txt 行 6216—6480）",
+              "link": "/kb2024/603205-健尔康#问题-7-1-7-2-特殊身份股东入股、对赌终止与员工股回购条款处置-首轮-回复第-8-1-137-至-8-1-145-页-txt-行-6216—6480"
+            },
+            {
+              "text": "问题 8：非医疗器械界定的准确性与无证销售排除（首轮，回复第 8-1-147 至 8-1-148 页；txt 行 6588—6650）",
+              "link": "/kb2024/603205-健尔康#问题-8-非医疗器械界定的准确性与无证销售排除-首轮-回复第-8-1-147-至-8-1-148-页-txt-行-6588—6650"
+            },
+            {
+              "text": "问题 9.2：质量退换货、索赔与 GMP 质量体系（首轮，回复第 8-1-159 页起；txt 行 7114 起）",
+              "link": "/kb2024/603205-健尔康#问题-9-2-质量退换货、索赔与-gmp-质量体系-首轮-回复第-8-1-159-页起-txt-行-7114-起"
+            },
+            {
+              "text": "二轮问题 3：口罩居间模式的资金闭环排查（二轮回复合刊第 8-1-30 至 8-1-34 页；txt 行 1219 起）",
+              "link": "/kb2024/603205-健尔康#二轮问题-3-口罩居间模式的资金闭环排查-二轮回复合刊第-8-1-30-至-8-1-34-页-txt-行-1219-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603205-健尔康#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603205-健尔康#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603207-小方制药": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海小方制药股份有限公司（603207·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603207-小方制药"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603207-小方制药#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603207-小方制药#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603207-小方制药#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1 ＆ 7.4：实物出资、国资程序与出资房产不能过户的补救闭环（首轮，回复第 8-1-1-3 至 8-1-11 页、第 8-1-1-153 至 8-1-157 页；txt 行 100—620、6941—7125）",
+              "link": "/kb2024/603207-小方制药#问题-1-7-4-实物出资、国资程序与出资房产不能过户的补救闭环-首轮-回复第-8-1-1-3-至-8-1-11-页、第-8-1-1-153-至-8-1-157-页-txt-行-100—620、6941—7125"
+            },
+            {
+              "text": "问题 7.1：方家辰、罗晓旭不构成共同实际控制人（首轮，回复第 8-1-1-137 至 8-1-140 页；txt 行 6250—6520）",
+              "link": "/kb2024/603207-小方制药#问题-7-1-方家辰、罗晓旭不构成共同实际控制人-首轮-回复第-8-1-1-137-至-8-1-140-页-txt-行-6250—6520"
+            },
+            {
+              "text": "问题 7.2：六名外部投资人回购权、反稀释权的清理（首轮，回复第 8-1-1-141 至 8-1-145 页；txt 行 6520—6591）",
+              "link": "/kb2024/603207-小方制药#问题-7-2-六名外部投资人回购权、反稀释权的清理-首轮-回复第-8-1-1-141-至-8-1-145-页-txt-行-6520—6591"
+            },
+            {
+              "text": "问题 7.3：劳务外包人员的定性与外包商资质（首轮，回复第 8-1-1-146 至 8-1-152 页；txt 行 6592—6940）",
+              "link": "/kb2024/603207-小方制药#问题-7-3-劳务外包人员的定性与外包商资质-首轮-回复第-8-1-1-146-至-8-1-152-页-txt-行-6592—6940"
+            },
+            {
+              "text": "问题 6：货币资金、理财产品与实控人大额资金去向（首轮，回复第 8-1-1-106 至 8-1-135 页；txt 行 4848—6249）",
+              "link": "/kb2024/603207-小方制药#问题-6-货币资金、理财产品与实控人大额资金去向-首轮-回复第-8-1-1-106-至-8-1-135-页-txt-行-4848—6249"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603207-小方制药#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603207-小方制药#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603285-键邦股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东键邦新材料股份有限公司（603285·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603285-键邦股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603285-键邦股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603285-键邦股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603285-键邦股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1.1：常州系公司历史沿革、集体改制瑕疵、环保整治停产与担保诉讼（首轮，回复第 8-1-4 至 8-1-28 页；txt 行 84—1269）",
+              "link": "/kb2024/603285-键邦股份#问题-1-1-常州系公司历史沿革、集体改制瑕疵、环保整治停产与担保诉讼-首轮-回复第-8-1-4-至-8-1-28-页-txt-行-84—1269"
+            },
+            {
+              "text": "问题 1.2：主要客户承继独立性与朱伯范方关联交易、委托持股核查（首轮，回复第 8-1-29 至 8-1-36 页；txt 行 1270—1644）",
+              "link": "/kb2024/603285-键邦股份#问题-1-2-主要客户承继独立性与朱伯范方关联交易、委托持股核查-首轮-回复第-8-1-29-至-8-1-36-页-txt-行-1270—1644"
+            },
+            {
+              "text": "问题 5：贸易商及关联方——广东鑫达定价放宽信用政策与银康国际停业（首轮，回复第 8-1-75 至 8-1-79 页；txt 行 3769—4024）",
+              "link": "/kb2024/603285-键邦股份#问题-5-贸易商及关联方——广东鑫达定价放宽信用政策与银康国际停业-首轮-回复第-8-1-75-至-8-1-79-页-txt-行-3769—4024"
+            },
+            {
+              "text": "问题 10：现金分红 4 亿元的资金去向与代持分红归还（首轮，回复第 8-1-113 至 8-1-125 页；txt 行 5743—6461）",
+              "link": "/kb2024/603285-键邦股份#问题-10-现金分红-4-亿元的资金去向与代持分红归还-首轮-回复第-8-1-113-至-8-1-125-页-txt-行-5743—6461"
+            },
+            {
+              "text": "落实函：资金流水核查与个人卡、第三方收付款专项（落实函回复全文单问，2023-07-31，第 8-1-3 至 8-1-40 页左右）",
+              "link": "/kb2024/603285-键邦股份#落实函-资金流水核查与个人卡、第三方收付款专项-落实函回复全文单问-2023-07-31-第-8-1-3-至-8-1-40-页左右"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603285-键邦股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603285-键邦股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603310-巍华新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江巍华新材料股份有限公司（603310·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603310-巍华新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603310-巍华新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603310-巍华新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603310-巍华新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：巍华化工集体企业改制瑕疵与存续分立（首轮，更新版回复第 8-1-3 至 8-1-19 页；txt 行 91—772）",
+              "link": "/kb2024/603310-巍华新材#问题-1-巍华化工集体企业改制瑕疵与存续分立-首轮-更新版回复第-8-1-3-至-8-1-19-页-txt-行-91—772"
+            },
+            {
+              "text": "问题 2 ＋ 落实函问题1：父子共同控制的认定、《管理安排协议》表决权委托与分歧解决机制（首轮回复第 8-1-20 至 8-1-35 页，txt 行 773—1555；落实函回复第 8-1-3 至 8-1-26 页）",
+              "link": "/kb2024/603310-巍华新材#问题-2-落实函问题1-父子共同控制的认定、《管理安排协议》表决权委托与分歧解决机制-首轮回复第-8-1-20-至-8-1-35-页-txt-行-773—1555-落实函回复第-8-1-3-至-8-1-26-页"
+            },
+            {
+              "text": "问题 8.1：超环评与超安全生产许可产能生产（首轮，更新版回复第 8-1-154 至 8-1-169 页；txt 行 6834—7560）",
+              "link": "/kb2024/603310-巍华新材#问题-8-1-超环评与超安全生产许可产能生产-首轮-更新版回复第-8-1-154-至-8-1-169-页-txt-行-6834—7560"
+            },
+            {
+              "text": "问题 7：与巍华化工的同产品购销及闰土新材液氯采购（首轮，更新版回复第 8-1-152 至 8-1-153 页；txt 行 6745—6833）",
+              "link": "/kb2024/603310-巍华新材#问题-7-与巍华化工的同产品购销及闰土新材液氯采购-首轮-更新版回复第-8-1-152-至-8-1-153-页-txt-行-6745—6833"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603310-巍华新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603310-巍华新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603312-西典新能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州西典新能源电气股份有限公司（603312·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603312-西典新能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603312-西典新能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603312-西典新能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603312-西典新能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 3：关于主要股东——长江晨道穿透、客户参股与定价公允性（首轮，回复第 8-1-45 至 8-1-56 页；txt 行 1819–2313）",
+              "link": "/kb2024/603312-西典新能#问题-3-关于主要股东——长江晨道穿透、客户参股与定价公允性-首轮-回复第-8-1-45-至-8-1-56-页-txt-行-1819–2313"
+            },
+            {
+              "text": "问题 4（其一）：关于关联方及关联交易——关联借款、体外代付奖金与苏州西顿代开发设备的资金合规（首轮，回复第 8-1-57 至 8-1-60、8-1-62 至 8-1-67 页；txt 行 2314–2749）",
+              "link": "/kb2024/603312-西典新能#问题-4-其一-关于关联方及关联交易——关联借款、体外代付奖金与苏州西顿代开发设备的资金合规-首轮-回复第-8-1-57-至-8-1-60、8-1-62-至-8-1-67-页-txt-行-2314–2749"
+            },
+            {
+              "text": "问题 4（其二）：苏州西顿设备团队剥离、发行人设备独立性与同业竞争（首轮，同上回复区间后半；txt 行 2680–3759）",
+              "link": "/kb2024/603312-西典新能#问题-4-其二-苏州西顿设备团队剥离、发行人设备独立性与同业竞争-首轮-同上回复区间后半-txt-行-2680–3759"
+            },
+            {
+              "text": "问题 10：关于其他问题——独立董事选任与履职保障（首轮，回复第 8-1-146 至 8-1-151 页；txt 行 6283–6692）",
+              "link": "/kb2024/603312-西典新能#问题-10-关于其他问题——独立董事选任与履职保障-首轮-回复第-8-1-146-至-8-1-151-页-txt-行-6283–6692"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603312-西典新能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603312-西典新能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603325-博隆技术": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海博隆装备技术股份有限公司（603325·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603325-博隆技术"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603325-博隆技术#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603325-博隆技术#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603325-博隆技术#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于周浜村入股及退出（首轮，回复第 8-1-3 至 8-1-14 页；txt 行 72–463）",
+              "link": "/kb2024/603325-博隆技术#问题-1-关于周浜村入股及退出-首轮-回复第-8-1-3-至-8-1-14-页-txt-行-72–463"
+            },
+            {
+              "text": "问题 2：关于股权结构——博实股份财务投资人认定、共同控制格局及股东股份继承（首轮，回复第 8-1-15 至 8-1-27 页；txt 行 464–893）",
+              "link": "/kb2024/603325-博隆技术#问题-2-关于股权结构——博实股份财务投资人认定、共同控制格局及股东股份继承-首轮-回复第-8-1-15-至-8-1-27-页-txt-行-464–893"
+            },
+            {
+              "text": "问题 6（子问题节录(1)-(4)）：关于定期存单和保函——资金占用与利益输送排查（首轮，回复第 8-1-137 页起；txt 行 5121–5646）",
+              "link": "/kb2024/603325-博隆技术#问题-6-子问题节录-1-4-关于定期存单和保函——资金占用与利益输送排查-首轮-回复第-8-1-137-页起-txt-行-5121–5646"
+            },
+            {
+              "text": "问题 9.6：关于业务开拓——招投标合规与商业贿赂（首轮，回复第 8-1-249 至 8-1-253 页；txt 行 9348–9505）",
+              "link": "/kb2024/603325-博隆技术#问题-9-6-关于业务开拓——招投标合规与商业贿赂-首轮-回复第-8-1-249-至-8-1-253-页-txt-行-9348–9505"
+            },
+            {
+              "text": "问题 9.7：关于发行人及相关责任主体出具的承诺（首轮，回复第 8-1-253 至 8-1-263 页；txt 行 9506–10075）",
+              "link": "/kb2024/603325-博隆技术#问题-9-7-关于发行人及相关责任主体出具的承诺-首轮-回复第-8-1-253-至-8-1-263-页-txt-行-9506–10075"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603325-博隆技术#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603325-博隆技术#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603341-龙旗科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海龙旗科技股份有限公司（603341·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603341-龙旗科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603341-龙旗科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603341-龙旗科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603341-龙旗科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1.1：一票否决权清理、控股股东与实控人认定及17号文专项意见（首轮，首轮回复第8-1-4至8-1-24页；txt行119–1142）",
+              "link": "/kb2024/603341-龙旗科技#问题1-1-一票否决权清理、控股股东与实控人认定及17号文专项意见-首轮-首轮回复第8-1-4至8-1-24页-txt行119–1142"
+            },
+            {
+              "text": "问题1.2：实控人离婚后财产纠纷两项诉讼及财产份额冻结（首轮，首轮回复第8-1-25至8-1-34页；txt行1143–1531）",
+              "link": "/kb2024/603341-龙旗科技#问题1-2-实控人离婚后财产纠纷两项诉讼及财产份额冻结-首轮-首轮回复第8-1-25至8-1-34页-txt行1143–1531"
+            },
+            {
+              "text": "问题2：同业竞争全面核查（首轮，首轮回复第8-1-35至8-1-49页；txt行1532–2505）",
+              "link": "/kb2024/603341-龙旗科技#问题2-同业竞争全面核查-首轮-首轮回复第8-1-35至8-1-49页-txt行1532–2505"
+            },
+            {
+              "text": "问题3：红筹架构搭建与拆除的合规性（首轮，首轮回复第8-1-50至8-1-88页；txt行2506–4210）",
+              "link": "/kb2024/603341-龙旗科技#问题3-红筹架构搭建与拆除的合规性-首轮-首轮回复第8-1-50至8-1-88页-txt行2506–4210"
+            },
+            {
+              "text": "问题4：历次增资与股权转让的合法性、自然人股东及子公司代持（首轮，首轮回复第8-1-89至8-1-100页；txt行4211–4794）",
+              "link": "/kb2024/603341-龙旗科技#问题4-历次增资与股权转让的合法性、自然人股东及子公司代持-首轮-首轮回复第8-1-89至8-1-100页-txt行4211–4794"
+            },
+            {
+              "text": "问题5：对赌协议及投资者特殊权利条款清理（首轮，首轮回复第8-1-101至8-1-109页；txt行4795–5223）",
+              "link": "/kb2024/603341-龙旗科技#问题5-对赌协议及投资者特殊权利条款清理-首轮-首轮回复第8-1-101至8-1-109页-txt行4795–5223"
+            },
+            {
+              "text": "问题6：员工持股平台与黄燕青退付纠纷（首轮，首轮回复第8-1-110至8-1-182页；txt行5224–8465）",
+              "link": "/kb2024/603341-龙旗科技#问题6-员工持股平台与黄燕青退付纠纷-首轮-首轮回复第8-1-110至8-1-182页-txt行5224–8465"
+            },
+            {
+              "text": "问题7：用工合规（7.1劳务派遣/7.2社保公积金/7.3实习生死亡事件）（首轮，首轮回复第8-1-183至8-1-209页；txt行8466–9650）",
+              "link": "/kb2024/603341-龙旗科技#问题7-用工合规-7-1劳务派遣-7-2社保公积金-7-3实习生死亡事件-首轮-首轮回复第8-1-183至8-1-209页-txt行8466–9650"
+            },
+            {
+              "text": "问题12.1/12.7：关联方认定完整性及关联方注销、转让（首轮，首轮回复第8-1-324页起、第8-1-397至8-1-403页；txt行16656–16910、19895–20187）",
+              "link": "/kb2024/603341-龙旗科技#问题12-1-12-7-关联方认定完整性及关联方注销、转让-首轮-首轮回复第8-1-324页起、第8-1-397至8-1-403页-txt行16656–16910、19895–20187"
+            },
+            {
+              "text": "问题28：前次创业板IPO被否事项（首轮，首轮回复第8-1-716至8-1-728页；txt行34888–35559）",
+              "link": "/kb2024/603341-龙旗科技#问题28-前次创业板ipo被否事项-首轮-首轮回复第8-1-716至8-1-728页-txt行34888–35559"
+            },
+            {
+              "text": "二轮问题4：一票否决权语境下的实控人有效控制追问（二轮，二轮回复第8-1-49至8-1-54页；txt行1948–2179）",
+              "link": "/kb2024/603341-龙旗科技#二轮问题4-一票否决权语境下的实控人有效控制追问-二轮-二轮回复第8-1-49至8-1-54页-txt行1948–2179"
+            },
+            {
+              "text": "二轮问题5：黄燕青退付纠纷与平台确权（二轮，二轮回复第8-1-55至8-1-60页；txt行2180–2416）",
+              "link": "/kb2024/603341-龙旗科技#二轮问题5-黄燕青退付纠纷与平台确权-二轮-二轮回复第8-1-55至8-1-60页-txt行2180–2416"
+            },
+            {
+              "text": "二轮问题6：瑕疵租赁房屋（二轮，二轮回复第8-1-61页起；txt行2417–2740）",
+              "link": "/kb2024/603341-龙旗科技#二轮问题6-瑕疵租赁房屋-二轮-二轮回复第8-1-61页起-txt行2417–2740"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603341-龙旗科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603341-龙旗科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603344-星德胜": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "星德胜科技(苏州)股份有限公司（603344·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603344-星德胜"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603344-星德胜#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603344-星德胜#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603344-星德胜#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2.1：返程投资三层借款链条与代持排查（首轮，首轮回复第8-1-1-24至8-1-39页；txt行1019–1690）",
+              "link": "/kb2024/603344-星德胜#问题2-1-返程投资三层借款链条与代持排查-首轮-首轮回复第8-1-1-24至8-1-39页-txt行1019–1690"
+            },
+            {
+              "text": "问题2.2：外汇登记瑕疵行政处罚与外资税收优惠追缴风险（首轮，首轮回复第8-1-1-40至8-1-43页；txt行1690–1845）",
+              "link": "/kb2024/603344-星德胜#问题2-2-外汇登记瑕疵行政处罚与外资税收优惠追缴风险-首轮-首轮回复第8-1-1-40至8-1-43页-txt行1690–1845"
+            },
+            {
+              "text": "问题3：环保违规（未批先建、未验先投、超产能）（首轮，首轮回复第8-1-1-44至8-1-49页；txt行1845–2135）",
+              "link": "/kb2024/603344-星德胜#问题3-环保违规-未批先建、未验先投、超产能-首轮-首轮回复第8-1-1-44至8-1-49页-txt行1845–2135"
+            },
+            {
+              "text": "问题4：劳务派遣用工超标的整改（首轮，首轮回复第8-1-1-50至8-1-57页；txt行2135–2480）",
+              "link": "/kb2024/603344-星德胜#问题4-劳务派遣用工超标的整改-首轮-首轮回复第8-1-1-50至8-1-57页-txt行2135–2480"
+            },
+            {
+              "text": "问题10：越正机电售出7个月后回购（首轮，首轮回复第8-1-111页起；txt行4635–4800）",
+              "link": "/kb2024/603344-星德胜#问题10-越正机电售出7个月后回购-首轮-首轮回复第8-1-111页起-txt行4635–4800"
+            },
+            {
+              "text": "二轮问题1：中介机构执业质量与信息披露义务（二轮，二轮回复第8-2-1-3至8-2-1-27页；txt行56–1296）",
+              "link": "/kb2024/603344-星德胜#二轮问题1-中介机构执业质量与信息披露义务-二轮-二轮回复第8-2-1-3至8-2-1-27页-txt行56–1296"
+            },
+            {
+              "text": "二轮问题2：返程投资债务清理路径二轮追问（二轮，二轮回复第8-2-1-28至8-2-1-40页；txt行1297–1700）",
+              "link": "/kb2024/603344-星德胜#二轮问题2-返程投资债务清理路径二轮追问-二轮-二轮回复第8-2-1-28至8-2-1-40页-txt行1297–1700"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603344-星德胜#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603344-星德胜#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603350-安乃达": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安乃达驱动技术(上海)股份有限公司（603350·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603350-安乃达"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603350-安乃达#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603350-安乃达#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603350-安乃达#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：历史沿革——实物出资超额部分挂账、国资边界与代持排查（首轮，更新版回复第8-1-3至8-1-18页；txt行67–668）",
+              "link": "/kb2024/603350-安乃达#问题1-历史沿革——实物出资超额部分挂账、国资边界与代持排查-首轮-更新版回复第8-1-3至8-1-18页-txt行67–668"
+            },
+            {
+              "text": "问题2：子公司取得方式与合资平台上海佑槿（首轮，更新版回复第8-1-19至8-1-38页；txt行669–1368）",
+              "link": "/kb2024/603350-安乃达#问题2-子公司取得方式与合资平台上海佑槿-首轮-更新版回复第8-1-19至8-1-38页-txt行669–1368"
+            },
+            {
+              "text": "问题9：光中路房产夹层违建与出租房屋转租（首轮，更新版回复第8-1-220至8-1-246页；txt行8750–9225）",
+              "link": "/kb2024/603350-安乃达#问题9-光中路房产夹层违建与出租房屋转租-首轮-更新版回复第8-1-220至8-1-246页-txt行8750–9225"
+            },
+            {
+              "text": "问题10.1：与新三板挂牌期间的信息披露差异（首轮，更新版回复第8-1-232至8-1-244页；txt行9226–9766）",
+              "link": "/kb2024/603350-安乃达#问题10-1-与新三板挂牌期间的信息披露差异-首轮-更新版回复第8-1-232至8-1-244页-txt行9226–9766"
+            },
+            {
+              "text": "问题10.2：二十一所员工持股国籍核查（首轮，更新版回复第8-1-245至8-1-246页；txt行9767–9826）",
+              "link": "/kb2024/603350-安乃达#问题10-2-二十一所员工持股国籍核查-首轮-更新版回复第8-1-245至8-1-246页-txt行9767–9826"
+            },
+            {
+              "text": "问题10.3：律师工作报告补充两大持股平台沿革（首轮，更新版回复第8-1-247页；txt行9827–9843）",
+              "link": "/kb2024/603350-安乃达#问题10-3-律师工作报告补充两大持股平台沿革-首轮-更新版回复第8-1-247页-txt行9827–9843"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603350-安乃达#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603350-安乃达#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603375-盛景微": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "无锡盛景微电子股份有限公司（603375·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603375-盛景微"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603375-盛景微#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603375-盛景微#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603375-盛景微#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 2：关于资产来自上市公司——代持设立、事业单位人员投资与上市公司孙公司资产收购（首轮，回复第 8-1-41 至 8-1-76 页；txt 行 1783–4405）",
+              "link": "/kb2024/603375-盛景微#问题-2-关于资产来自上市公司——代持设立、事业单位人员投资与上市公司孙公司资产收购-首轮-回复第-8-1-41-至-8-1-76-页-txt-行-1783–4405"
+            },
+            {
+              "text": "问题 4：关于股东与股权——5% 股东共同控制排除、佛山保兴资金穿透与代持排查（首轮，回复第 8-1-102 至 8-1-122 页；txt 行 4406–5225）",
+              "link": "/kb2024/603375-盛景微#问题-4-关于股东与股权——5-股东共同控制排除、佛山保兴资金穿透与代持排查-首轮-回复第-8-1-102-至-8-1-122-页-txt-行-4406–5225"
+            },
+            {
+              "text": "问题 5：关于收购子公司——上海先积、维纳芯及客益电子资产包并购（首轮，回复第 8-1-123 页起；txt 行 5226–5976）",
+              "link": "/kb2024/603375-盛景微#问题-5-关于收购子公司——上海先积、维纳芯及客益电子资产包并购-首轮-回复第-8-1-123-页起-txt-行-5226–5976"
+            },
+            {
+              "text": "问题 10.1：关于安全评估——民爆行业模块准入与资质豁免（首轮，回复第 8-1-204 至 8-1-206 页；txt 行 8744–8860）",
+              "link": "/kb2024/603375-盛景微#问题-10-1-关于安全评估——民爆行业模块准入与资质豁免-首轮-回复第-8-1-204-至-8-1-206-页-txt-行-8744–8860"
+            },
+            {
+              "text": "问题 10.2：关于独立董事——张志宏兼任家数合规（首轮，回复第 8-1-207 至 8-1-208 页；txt 行 8861–8945）",
+              "link": "/kb2024/603375-盛景微#问题-10-2-关于独立董事——张志宏兼任家数合规-首轮-回复第-8-1-207-至-8-1-208-页-txt-行-8861–8945"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603375-盛景微#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603375-盛景微#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603381-永臻股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "永臻科技股份有限公司（603381·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603381-永臻股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603381-永臻股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603381-永臻股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603381-永臻股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2.2：三大组件厂商客户低价入股（首轮，首轮回复第8-1-64至8-1-78页；txt行2794–3560）",
+              "link": "/kb2024/603381-永臻股份#问题2-2-三大组件厂商客户低价入股-首轮-首轮回复第8-1-64至8-1-78页-txt行2794–3560"
+            },
+            {
+              "text": "问题4：历史沿革、员工平台近亲属份额、供应商关联入股、19名股东对赌与保荐关联PE（首轮，首轮回复第8-1-106至8-1-124页；txt行4930–5885）",
+              "link": "/kb2024/603381-永臻股份#问题4-历史沿革、员工平台近亲属份额、供应商关联入股、19名股东对赌与保荐关联pe-首轮-首轮回复第8-1-106至8-1-124页-txt行4930–5885"
+            },
+            {
+              "text": "问题15：同一控制下资产重组与但来宝代持华通模具还原（首轮，首轮回复第8-1-293至8-1-298页；txt行13922–14670）",
+              "link": "/kb2024/603381-永臻股份#问题15-同一控制下资产重组与但来宝代持华通模具还原-首轮-首轮回复第8-1-293至8-1-298页-txt行13922–14670"
+            },
+            {
+              "text": "问题17：与实控人双向资金拆借及营口和联担保（首轮，首轮回复第8-1-311至8-1-318页；txt行14673–14959）",
+              "link": "/kb2024/603381-永臻股份#问题17-与实控人双向资金拆借及营口和联担保-首轮-首轮回复第8-1-311至8-1-318页-txt行14673–14959"
+            },
+            {
+              "text": "问题18：转贷与财务内控（首轮，首轮回复第8-1-318页起；txt行14960–15887）",
+              "link": "/kb2024/603381-永臻股份#问题18-转贷与财务内控-首轮-首轮回复第8-1-318页起-txt行14960–15887"
+            },
+            {
+              "text": "问题19.2：社保公积金欠缴与超批准用地（首轮，首轮回复第8-1-339至8-1-343页；txt行15888–16059）",
+              "link": "/kb2024/603381-永臻股份#问题19-2-社保公积金欠缴与超批准用地-首轮-首轮回复第8-1-339至8-1-343页-txt行15888–16059"
+            },
+            {
+              "text": "问题19.3：股东信息披露专项核查（首轮，首轮回复第8-1-344至8-1-346页；txt行16060–16151）",
+              "link": "/kb2024/603381-永臻股份#问题19-3-股东信息披露专项核查-首轮-首轮回复第8-1-344至8-1-346页-txt行16060–16151"
+            },
+            {
+              "text": "二轮问题7：董事副总经理兼核心技术人员离职（二轮，二轮回复第8-1-2-64至8-1-2-66页；txt行2761–2900）",
+              "link": "/kb2024/603381-永臻股份#二轮问题7-董事副总经理兼核心技术人员离职-二轮-二轮回复第8-1-2-64至8-1-2-66页-txt行2761–2900"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603381-永臻股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603381-永臻股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603391-力聚热能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江力聚热能装备股份有限公司（603391·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603391-力聚热能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603391-力聚热能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603391-力聚热能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603391-力聚热能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于热力设备——境外返程投资瑕疵、\"分红权＋增值权\"安排与资产收购式同业竞争解决（首轮，更新版回复第 8-1-1-4 至 8-1-60 页；txt 行 75—2716）",
+              "link": "/kb2024/603391-力聚热能#问题-1-关于热力设备——境外返程投资瑕疵、-分红权-增值权-安排与资产收购式同业竞争解决-首轮-更新版回复第-8-1-1-4-至-8-1-60-页-txt-行-75—2716"
+            },
+            {
+              "text": "问题 3：西安力聚——参股公司专利许可、市场划分与产销能力（首轮，更新版回复第 8-1-1-93 至 8-1-106 页；txt 行 4205—4766）",
+              "link": "/kb2024/603391-力聚热能#问题-3-西安力聚——参股公司专利许可、市场划分与产销能力-首轮-更新版回复第-8-1-1-93-至-8-1-106-页-txt-行-4205—4766"
+            },
+            {
+              "text": "问题 10.2：联赫节能代持设立与富尔顿前高管研发成果权属、竞业限制（首轮，更新版回复第 8-1-1-281 至 8-1-285 页；txt 行 12661—12923）",
+              "link": "/kb2024/603391-力聚热能#问题-10-2-联赫节能代持设立与富尔顿前高管研发成果权属、竞业限制-首轮-更新版回复第-8-1-1-281-至-8-1-285-页-txt-行-12661—12923"
+            },
+            {
+              "text": "问题 10.3：刘小松退出湖州欣然持股平台（首轮，更新版回复第 8-1-1-285 至 8-1-287 页；txt 行 12859—12923）",
+              "link": "/kb2024/603391-力聚热能#问题-10-3-刘小松退出湖州欣然持股平台-首轮-更新版回复第-8-1-1-285-至-8-1-287-页-txt-行-12859—12923"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603391-力聚热能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603391-力聚热能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/603395-红四方": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中盐安徽红四方肥业股份有限公司（603395·沪市主板）审核问询法律问题回溯",
+      "link": "/kb2024/603395-红四方"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/603395-红四方#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/603395-红四方#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/603395-红四方#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于资产重组与关联交易（首轮，回复第 8-1-3 至 8-1-61 页；首轮回复 txt 行 71–2129）",
+              "link": "/kb2024/603395-红四方#问题-1-关于资产重组与关联交易-首轮-回复第-8-1-3-至-8-1-61-页-首轮回复-txt-行-71–2129"
+            },
+            {
+              "text": "问题 2：关于高管资格——总会计师限制高消费事项（首轮，回复第 8-1-62 至 8-1-66 页；txt 行 2130–2280）",
+              "link": "/kb2024/603395-红四方#问题-2-关于高管资格——总会计师限制高消费事项-首轮-回复第-8-1-62-至-8-1-66-页-txt-行-2130–2280"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/603395-红四方#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/603395-红四方#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688449-联芸科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "联芸科技(杭州)股份有限公司（688449·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688449-联芸科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688449-联芸科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688449-联芸科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688449-联芸科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题13：实际控制人认定——一票否决权、不谋求控制权承诺与国有股东标识的三线作战（首轮回复第8-1-294至8-1-306页；txt行12884–13600）",
+              "link": "/kb2024/688449-联芸科技#_1-首轮问题13-实际控制人认定——一票否决权、不谋求控制权承诺与国有股东标识的三线作战-首轮回复第8-1-294至8-1-306页-txt行12884–13600"
+            },
+            {
+              "text": "2. 首轮问题11：境外主体A/B的协议控制、代持解除与清算合规（首轮回复第8-1-268至8-1-280页；txt行11733–12287）",
+              "link": "/kb2024/688449-联芸科技#_2-首轮问题11-境外主体a-b的协议控制、代持解除与清算合规-首轮回复第8-1-268至8-1-280页-txt行11733–12287"
+            },
+            {
+              "text": "3. 首轮问题3＋二轮问题2：与第一大关联客户E交易的公允性与依赖性拆解（首轮回复第8-1-50页起txt行2183–3100；二轮回复问题2.1自第8-1-63页起）",
+              "link": "/kb2024/688449-联芸科技#_3-首轮问题3-二轮问题2-与第一大关联客户e交易的公允性与依赖性拆解-首轮回复第8-1-50页起txt行2183–3100-二轮回复问题2-1自第8-1-63页起"
+            },
+            {
+              "text": "4. 首轮问题12：四期股权激励的决策程序合规与授予日口径统一（首轮回复第8-1-281至8-1-293页；txt行12287–12884）",
+              "link": "/kb2024/688449-联芸科技#_4-首轮问题12-四期股权激励的决策程序合规与授予日口径统一-首轮回复第8-1-281至8-1-293页-txt行12287–12884"
+            },
+            {
+              "text": "5. 首轮问题15.4＋二轮问题10：信息披露豁免合法性与媒体舆情闭环（首轮回复第8-1-350至8-1-358页txt行15591–16016；二轮回复第8-1-254页起txt行10913–11400）",
+              "link": "/kb2024/688449-联芸科技#_5-首轮问题15-4-二轮问题10-信息披露豁免合法性与媒体舆情闭环-首轮回复第8-1-350至8-1-358页txt行15591–16016-二轮回复第8-1-254页起txt行10913–11400"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688449-联芸科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688449-联芸科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688530-欧莱新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东欧莱高新材料股份有限公司（688530·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688530-欧莱新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688530-欧莱新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688530-欧莱新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688530-欧莱新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 17：关于股东信息核查——私募平台份额代持的形成与解除（首轮，回复第 8-1-454 至 457 页；txt 行 18855–18980）",
+              "link": "/kb2024/688530-欧莱新材#问题-17-关于股东信息核查——私募平台份额代持的形成与解除-首轮-回复第-8-1-454-至-457-页-txt-行-18855–18980"
+            },
+            {
+              "text": "问题 18.2：对赌条款中的公司治理条款——内容、执行与自始无效清理（首轮，回复第 8-1-464 至 473 页；txt 行 19279–19808）",
+              "link": "/kb2024/688530-欧莱新材#问题-18-2-对赌条款中的公司治理条款——内容、执行与自始无效清理-首轮-回复第-8-1-464-至-473-页-txt-行-19279–19808"
+            },
+            {
+              "text": "问题 18.3：房屋所有权抵押（首轮，回复第 8-1-473 至 477 页；txt 行 19809–20004）",
+              "link": "/kb2024/688530-欧莱新材#问题-18-3-房屋所有权抵押-首轮-回复第-8-1-473-至-477-页-txt-行-19809–20004"
+            },
+            {
+              "text": "问题 18.4：社保公积金欠缴与\"自愿放弃\"效力（首轮，回复第 8-1-477 至 480 页；txt 行 20005–20146）",
+              "link": "/kb2024/688530-欧莱新材#问题-18-4-社保公积金欠缴与-自愿放弃-效力-首轮-回复第-8-1-477-至-480-页-txt-行-20005–20146"
+            },
+            {
+              "text": "问题 16：关于子公司——欧莱高纯合资背景与东莞欧莱股权增资（首轮，回复第 8-1-446 至 457 页；txt 行 18482–18854）",
+              "link": "/kb2024/688530-欧莱新材#问题-16-关于子公司——欧莱高纯合资背景与东莞欧莱股权增资-首轮-回复第-8-1-446-至-457-页-txt-行-18482–18854"
+            },
+            {
+              "text": "问题 18.1：实控人曾控制/参股企业的注销转让切割（首轮，回复第 8-1-457 至 464 页；txt 行 18981–19278）",
+              "link": "/kb2024/688530-欧莱新材#问题-18-1-实控人曾控制-参股企业的注销转让切割-首轮-回复第-8-1-457-至-464-页-txt-行-18981–19278"
+            },
+            {
+              "text": "问题 14：会计差错更正、亲属任职与三类资金流水不规范（首轮，回复第 8-1-419 至 429 页；txt 行 17375–18481）",
+              "link": "/kb2024/688530-欧莱新材#问题-14-会计差错更正、亲属任职与三类资金流水不规范-首轮-回复第-8-1-419-至-429-页-txt-行-17375–18481"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688530-欧莱新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688530-欧莱新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688584-上海合晶": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海合晶硅材料股份有限公司（688584·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688584-上海合晶"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688584-上海合晶#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688584-上海合晶#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688584-上海合晶#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 3：业务布局及独立性——境外上柜公司境内分拆的全链条梳理（首轮回复第 8-1-55 至 84 页；txt 行 2179–3313）",
+              "link": "/kb2024/688584-上海合晶#首轮问题-3-业务布局及独立性——境外上柜公司境内分拆的全链条梳理-首轮回复第-8-1-55-至-84-页-txt-行-2179–3313"
+            },
+            {
+              "text": "首轮问题 4：关于实际控制人——\"无实际控制人\"的双层防御论证（首轮回复第 8-1-84 至 113 页；txt 行 3314–4416）",
+              "link": "/kb2024/688584-上海合晶#首轮问题-4-关于实际控制人——-无实际控制人-的双层防御论证-首轮回复第-8-1-84-至-113-页-txt-行-3314–4416"
+            },
+            {
+              "text": "二轮问题 1：无实际控制人的升级追问——焦平海作用史与 STIC 章程修订（二轮回复第 8-1-3 页起；txt 行 81–2990）",
+              "link": "/kb2024/688584-上海合晶#二轮问题-1-无实际控制人的升级追问——焦平海作用史与-stic-章程修订-二轮回复第-8-1-3-页起-txt-行-81–2990"
+            },
+            {
+              "text": "首轮问题 13：股份支付与员工持股平台（首轮回复第 8-1-291 至 313 页；txt 行 11729–12703）",
+              "link": "/kb2024/688584-上海合晶#首轮问题-13-股份支付与员工持股平台-首轮回复第-8-1-291-至-313-页-txt-行-11729–12703"
+            },
+            {
+              "text": "首轮问题 16.2：经营资质与多项行政处罚（首轮回复第 8-1-340 至 353 页；txt 行 13727–14327）",
+              "link": "/kb2024/688584-上海合晶#首轮问题-16-2-经营资质与多项行政处罚-首轮回复第-8-1-340-至-353-页-txt-行-13727–14327"
+            },
+            {
+              "text": "首轮问题 16.3：扬州合晶闲置土地退地（首轮回复第 8-1-353 至 355 页；txt 行 14328–14426）",
+              "link": "/kb2024/688584-上海合晶#首轮问题-16-3-扬州合晶闲置土地退地-首轮回复第-8-1-353-至-355-页-txt-行-14328–14426"
+            },
+            {
+              "text": "首轮问题 16.4：董监高及核心技术人员变动（首轮回复第 8-1-356 至 362 页；txt 行 14427–14649）",
+              "link": "/kb2024/688584-上海合晶#首轮问题-16-4-董监高及核心技术人员变动-首轮回复第-8-1-356-至-362-页-txt-行-14427–14649"
+            },
+            {
+              "text": "首轮问题 16.5：媒体质疑（首轮回复第 8-1-362 页起；txt 行 14650 起）",
+              "link": "/kb2024/688584-上海合晶#首轮问题-16-5-媒体质疑-首轮回复第-8-1-362-页起-txt-行-14650-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688584-上海合晶#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688584-上海合晶#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688605-先锋精科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏先锋精密科技股份有限公司（688605·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688605-先锋精科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688605-先锋精科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688605-先锋精科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688605-先锋精科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：李欢、邵佳及其关联方——多重代持链、涉案隔离与一致行动反向排除（首轮回复第8-1-59页起；txt行2704–4320）",
+              "link": "/kb2024/688605-先锋精科#_1-首轮问题3-李欢、邵佳及其关联方——多重代持链、涉案隔离与一致行动反向排除-首轮回复第8-1-59页起-txt行2704–4320"
+            },
+            {
+              "text": "2. 首轮问题4：股东专项——原始股东退出真实性与持股平台的借款出资（首轮回复第8-1-94页起；txt行4320–5740；4.2节txt行6082起）",
+              "link": "/kb2024/688605-先锋精科#_2-首轮问题4-股东专项——原始股东退出真实性与持股平台的借款出资-首轮回复第8-1-94页起-txt行4320–5740-4-2节txt行6082起"
+            },
+            {
+              "text": "3. 首轮问题18.1：对赌协议的三段式清理与\"自始无效\"时点管理（首轮回复第8-1-520至8-1-525页；txt行24511–24784）",
+              "link": "/kb2024/688605-先锋精科#_3-首轮问题18-1-对赌协议的三段式清理与-自始无效-时点管理-首轮回复第8-1-520至8-1-525页-txt行24511–24784"
+            },
+            {
+              "text": "4. 首轮问题13.1：内控不规范的四类集中爆发与整改销账（首轮回复第8-1-440页起；txt行20699–21300）",
+              "link": "/kb2024/688605-先锋精科#_4-首轮问题13-1-内控不规范的四类集中爆发与整改销账-首轮回复第8-1-440页起-txt行20699–21300"
+            },
+            {
+              "text": "5. 二轮问题6/7：关联交易后续清理与募投环评合规（二轮回复；txt行待复核区段问题6自页97起、问题7自页102起）",
+              "link": "/kb2024/688605-先锋精科#_5-二轮问题6-7-关联交易后续清理与募投环评合规-二轮回复-txt行待复核区段问题6自页97起、问题7自页102起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688605-先锋精科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688605-先锋精科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688615-合合信息": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海合合信息科技股份有限公司（688615·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688615-合合信息"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688615-合合信息#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688615-合合信息#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688615-合合信息#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 2：实控人认定——实控人与前妻的跨期股权处置（首轮回复第 8-1-50 至 58 页；txt 行 1970–2265）",
+              "link": "/kb2024/688615-合合信息#首轮问题-2-实控人认定——实控人与前妻的跨期股权处置-首轮回复第-8-1-50-至-58-页-txt-行-1970–2265"
+            },
+            {
+              "text": "首轮问题 3：经营资质——企业征信备案与增值电信许可的补正路径（首轮回复第 8-1-58 至 74 页；txt 行 2266–2978）",
+              "link": "/kb2024/688615-合合信息#首轮问题-3-经营资质——企业征信备案与增值电信许可的补正路径-首轮回复第-8-1-58-至-74-页-txt-行-2266–2978"
+            },
+            {
+              "text": "首轮问题 4 + 二轮问题 2：数据合规——三种取得途径的全景合法性（首轮回复第 8-1-74 至 110 页，txt 行 2979 起；二轮回复第 8-1-24 页起）",
+              "link": "/kb2024/688615-合合信息#首轮问题-4-二轮问题-2-数据合规——三种取得途径的全景合法性-首轮回复第-8-1-74-至-110-页-txt-行-2979-起-二轮回复第-8-1-24-页起"
+            },
+            {
+              "text": "首轮问题 15：资金流水核查与代付薪酬走账（首轮回复第 8-1-490 至 504 页；txt 行 22451–24079）",
+              "link": "/kb2024/688615-合合信息#首轮问题-15-资金流水核查与代付薪酬走账-首轮回复第-8-1-490-至-504-页-txt-行-22451–24079"
+            },
+            {
+              "text": "首轮问题 17：股东与股权变动——可转债投资的架构切换与平台交叉（首轮回复第 8-1-528 至 546 页；txt 行 24080–24888）",
+              "link": "/kb2024/688615-合合信息#首轮问题-17-股东与股权变动——可转债投资的架构切换与平台交叉-首轮回复第-8-1-528-至-546-页-txt-行-24080–24888"
+            },
+            {
+              "text": "二轮问题 5：上海找齐——体外孵化项目的外部融资特殊权利切割（二轮回复第 8-1-140 页起；txt 行 6362–6505）",
+              "link": "/kb2024/688615-合合信息#二轮问题-5-上海找齐——体外孵化项目的外部融资特殊权利切割-二轮回复第-8-1-140-页起-txt-行-6362–6505"
+            },
+            {
+              "text": "首轮问题 18：董监高——摩托罗拉竞业禁止的历史遗留排查（首轮回复第 8-1-546 页起；txt 行 24889 起）",
+              "link": "/kb2024/688615-合合信息#首轮问题-18-董监高——摩托罗拉竞业禁止的历史遗留排查-首轮回复第-8-1-546-页起-txt-行-24889-起"
+            },
+            {
+              "text": "首轮问题 19：关联方——东家金服诉讼切割与未登记退出安排（首轮回复第 8-1-558 页起；txt 行 25451 起）",
+              "link": "/kb2024/688615-合合信息#首轮问题-19-关联方——东家金服诉讼切割与未登记退出安排-首轮回复第-8-1-558-页起-txt-行-25451-起"
+            },
+            {
+              "text": "落实函：媒体质疑集中自查（2023-07-28 披露；txt 行 40 起）",
+              "link": "/kb2024/688615-合合信息#落实函-媒体质疑集中自查-2023-07-28-披露-txt-行-40-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688615-合合信息#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688615-合合信息#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688691-灿芯股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "灿芯半导体（上海）股份有限公司（688691·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688691-灿芯股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688691-灿芯股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688691-灿芯股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688691-灿芯股份#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688691-灿芯股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688691-灿芯股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688692-达梦数据": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "武汉达梦数据库股份有限公司（688692·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688692-达梦数据"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688692-达梦数据#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688692-达梦数据#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688692-达梦数据#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 3：控制权与股权变动——\"弱控股创始人+强国资二股东\"结构与公司僵局防范（首轮回复第 8-1-59 至 93 页；txt 行 2588–3729）",
+              "link": "/kb2024/688692-达梦数据#首轮问题-3-控制权与股权变动——-弱控股创始人-强国资二股东-结构与公司僵局防范-首轮回复第-8-1-59-至-93-页-txt-行-2588–3729"
+            },
+            {
+              "text": "二轮问题 1：控制权升级追问——合伙份额稳定性与中国软件投资易鲸捷（二轮回复第 8-1-3 至 17 页；txt 行 56–678）",
+              "link": "/kb2024/688692-达梦数据#二轮问题-1-控制权升级追问——合伙份额稳定性与中国软件投资易鲸捷-二轮回复第-8-1-3-至-17-页-txt-行-56–678"
+            },
+            {
+              "text": "二轮问题 2：股份代持——84.9 万股疑云、人力资源股性质与四起股权诉讼（二轮回复第 8-1-18 至 45 页；txt 行 679–1700）",
+              "link": "/kb2024/688692-达梦数据#二轮问题-2-股份代持——84-9-万股疑云、人力资源股性质与四起股权诉讼-二轮回复第-8-1-18-至-45-页-txt-行-679–1700"
+            },
+            {
+              "text": "首轮问题 10：股份支付——解代持平台份额的激励化处理与非员工入股（首轮回复第 8-1-287 至 304 页；txt 行 13740–13948）",
+              "link": "/kb2024/688692-达梦数据#首轮问题-10-股份支付——解代持平台份额的激励化处理与非员工入股-首轮回复第-8-1-287-至-304-页-txt-行-13740–13948"
+            },
+            {
+              "text": "媒体报道与舆情自查（首轮 13.4 目录项；二轮 8.3，txt 行 12271 起）",
+              "link": "/kb2024/688692-达梦数据#媒体报道与舆情自查-首轮-13-4-目录项-二轮-8-3-txt-行-12271-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688692-达梦数据#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688692-达梦数据#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688695-中创股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东中创软件商用中间件股份有限公司（688695·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688695-中创股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688695-中创股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688695-中创股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688695-中创股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：关于实际控制人——共同实控与\"持股多数原则\"分歧决策机制（首轮回复第 8-1-3 至 15 页；txt 行 237 起）",
+              "link": "/kb2024/688695-中创股份#首轮问题-1-关于实际控制人——共同实控与-持股多数原则-分歧决策机制-首轮回复第-8-1-3-至-15-页-txt-行-237-起"
+            },
+            {
+              "text": "首轮问题 2：关于同业竞争与独立性（首轮回复第 8-1-16 至 51 页；txt 行 665–2078）",
+              "link": "/kb2024/688695-中创股份#首轮问题-2-关于同业竞争与独立性-首轮回复第-8-1-16-至-51-页-txt-行-665–2078"
+            },
+            {
+              "text": "首轮问题 11 + 二轮问题 8.2：股份代持的形成、清理与股东穿透核查（首轮回复第 8-1-311 至 337 页，txt 行 14805–17076；二轮回复问题 8.2 第 8-1-2-273 页起，txt 行 12115 起）",
+              "link": "/kb2024/688695-中创股份#首轮问题-11-二轮问题-8-2-股份代持的形成、清理与股东穿透核查-首轮回复第-8-1-311-至-337-页-txt-行-14805–17076-二轮回复问题-8-2-第-8-1-2-273-页起-txt-行-12115-起"
+            },
+            {
+              "text": "首轮问题 13：信息安全——数据合规适用论、网络安全审查与涉密资质剥离（首轮回复第 8-1-359 至 367 页；txt 行 17077–17430）",
+              "link": "/kb2024/688695-中创股份#首轮问题-13-信息安全——数据合规适用论、网络安全审查与涉密资质剥离-首轮回复第-8-1-359-至-367-页-txt-行-17077–17430"
+            },
+            {
+              "text": "首轮问题 14.1：注销转让关联公司（首轮回复第 8-1-367 至 371 页；txt 行 17433 起约至 17870）",
+              "link": "/kb2024/688695-中创股份#首轮问题-14-1-注销转让关联公司-首轮回复第-8-1-367-至-371-页-txt-行-17433-起约至-17870"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688695-中创股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688695-中创股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688708-佳驰科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "成都佳驰电子科技股份有限公司（688708·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688708-佳驰科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688708-佳驰科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688708-佳驰科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688708-佳驰科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1.1：高校教师创业的核心技术独立性与专利流转链条（首轮回复第8-1-1-3至8-1-83页；txt行100–2600）",
+              "link": "/kb2024/688708-佳驰科技#_1-首轮问题1-1-高校教师创业的核心技术独立性与专利流转链条-首轮回复第8-1-1-3至8-1-83页-txt行100–2600"
+            },
+            {
+              "text": "2. 首轮问题2：实控人认定——《一致行动协议》演进、近两年代持还原的17号意见应用与党政干部持股边界（首轮回复第8-1-1-84至8-1-106页；txt行4531–5780）",
+              "link": "/kb2024/688708-佳驰科技#_2-首轮问题2-实控人认定——《一致行动协议》演进、近两年代持还原的17号意见应用与党政干部持股边界-首轮回复第8-1-1-84至8-1-106页-txt行4531–5780"
+            },
+            {
+              "text": "3. 首轮问题13：一次性大额股份支付与服务期条款的事后调整（首轮回复第8-1-1-288至8-1-300页；txt行14469–15099）",
+              "link": "/kb2024/688708-佳驰科技#_3-首轮问题13-一次性大额股份支付与服务期条款的事后调整-首轮回复第8-1-1-288至8-1-300页-txt行14469–15099"
+            },
+            {
+              "text": "4. 首轮问题14.1：低价入股的外部平台的穿透排查与流水核查（首轮回复第8-1-1-300至8-1-317页；txt行15099–15900）",
+              "link": "/kb2024/688708-佳驰科技#_4-首轮问题14-1-低价入股的外部平台的穿透排查与流水核查-首轮回复第8-1-1-300至8-1-317页-txt行15099–15900"
+            },
+            {
+              "text": "5. 落实函问题一＋问题三：军品采购合规论述框架与重大事项提示重整（落实函回复第8-1-3-3至8-1-3-37页；txt行75–657、1810–2054）",
+              "link": "/kb2024/688708-佳驰科技#_5-落实函问题一-问题三-军品采购合规论述框架与重大事项提示重整-落实函回复第8-1-3-3至8-1-3-37页-txt行75–657、1810–2054"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688708-佳驰科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688708-佳驰科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688709-成都华微": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "成都华微电子科技股份有限公司（688709·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688709-成都华微"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688709-成都华微#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688709-成都华微#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688709-成都华微#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 2：关于同业竞争——中国电子旗下两大集成电路设计板块（回复第 8-1-1-49 至 80 页；txt 行 2307–3732）",
+              "link": "/kb2024/688709-成都华微#首轮问题-2-关于同业竞争——中国电子旗下两大集成电路设计板块-回复第-8-1-1-49-至-80-页-txt-行-2307–3732"
+            },
+            {
+              "text": "首轮问题 5：关于国拨项目——成果归属与国有独享资本公积确权（回复第 8-1-1-157 至 176 页；txt 行 7371–8193）",
+              "link": "/kb2024/688709-成都华微#首轮问题-5-关于国拨项目——成果归属与国有独享资本公积确权-回复第-8-1-1-157-至-176-页-txt-行-7371–8193"
+            },
+            {
+              "text": "首轮问题 6 + 二轮问题 7：员工增资、代持清理与股份支付授予日更正（首轮回复第 8-1-1-176 至 197 页，txt 行 8194–9220；二轮回复第 8-1-2-136 至 143 页，txt 行 5882 起）",
+              "link": "/kb2024/688709-成都华微#首轮问题-6-二轮问题-7-员工增资、代持清理与股份支付授予日更正-首轮回复第-8-1-1-176-至-197-页-txt-行-8194–9220-二轮回复第-8-1-2-136-至-143-页-txt-行-5882-起"
+            },
+            {
+              "text": "首轮问题 8：关联交易——关联销售、ABS、转贷式资金往来与社保代缴（回复第 8-1-1-228 至 251 页；txt 行 10771 起）",
+              "link": "/kb2024/688709-成都华微#首轮问题-8-关联交易——关联销售、abs、转贷式资金往来与社保代缴-回复第-8-1-1-228-至-251-页-txt-行-10771-起"
+            },
+            {
+              "text": "首轮问题 13：公司股东及出资——32 号令下的代持与超 200 人论证（回复第 8-1-1-306 至 314 页；txt 行 14389–14723）",
+              "link": "/kb2024/688709-成都华微#首轮问题-13-公司股东及出资——32-号令下的代持与超-200-人论证-回复第-8-1-1-306-至-314-页-txt-行-14389–14723"
+            },
+            {
+              "text": "首轮问题 14：电子科大出资及技术合作——非专利技术出资补强、高校校企剥离与职务发明切割（回复第 8-1-1-314 至 320 页；txt 行 14724–14981）",
+              "link": "/kb2024/688709-成都华微#首轮问题-14-电子科大出资及技术合作——非专利技术出资补强、高校校企剥离与职务发明切割-回复第-8-1-1-314-至-320-页-txt-行-14724–14981"
+            },
+            {
+              "text": "首轮问题 15：董事、高管变动与核心技术人员认定（回复第 8-1-1-320 至 328 页；txt 行 14982–15335）",
+              "link": "/kb2024/688709-成都华微#首轮问题-15-董事、高管变动与核心技术人员认定-回复第-8-1-1-320-至-328-页-txt-行-14982–15335"
+            },
+            {
+              "text": "首轮问题 17.1：信息披露豁免——涉密批复与商业秘密豁免依据（回复第 8-1-1-339 至 343 页；txt 行 15771–15979）",
+              "link": "/kb2024/688709-成都华微#首轮问题-17-1-信息披露豁免——涉密批复与商业秘密豁免依据-回复第-8-1-1-339-至-343-页-txt-行-15771–15979"
+            },
+            {
+              "text": "二轮问题 2：同业竞争追问（第二轮回复第 8-1-2-16 至 77 页；txt 行 639 起）",
+              "link": "/kb2024/688709-成都华微#二轮问题-2-同业竞争追问-第二轮回复第-8-1-2-16-至-77-页-txt-行-639-起"
+            },
+            {
+              "text": "二轮问题 8：媒体质疑专项核查（第二轮回复第 8-1-2-144 页起；txt 行 6202 起）",
+              "link": "/kb2024/688709-成都华微#二轮问题-8-媒体质疑专项核查-第二轮回复第-8-1-2-144-页起-txt-行-6202-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688709-成都华微#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688709-成都华微#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688710-益诺思": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海益诺思生物技术股份有限公司（688710·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688710-益诺思"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688710-益诺思#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688710-益诺思#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688710-益诺思#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 5：安评中心与独立性——\"事业单位运营公司\"的组织切割全景（首轮回复第 8-1-154 至 179 页；txt 行 6566–7636）",
+              "link": "/kb2024/688710-益诺思#首轮问题-5-安评中心与独立性——-事业单位运营公司-的组织切割全景-首轮回复第-8-1-154-至-179-页-txt-行-6566–7636"
+            },
+            {
+              "text": "首轮问题 6：国药集团体系内的同业竞争认定与承诺升级（首轮回复第 8-1-179 至 210 页；txt 行 7637–9034）",
+              "link": "/kb2024/688710-益诺思#首轮问题-6-国药集团体系内的同业竞争认定与承诺升级-首轮回复第-8-1-179-至-210-页-txt-行-7637–9034"
+            },
+            {
+              "text": "首轮问题 12 + 二轮问题 6：国企员工持股平台的合规审计与股份支付授予日特殊认定（首轮回复第 8-1-338 至 375 页，txt 行 15013–16795；二轮回复第 8-1-146 页起，txt 行 6391 起）",
+              "link": "/kb2024/688710-益诺思#首轮问题-12-二轮问题-6-国企员工持股平台的合规审计与股份支付授予日特殊认定-首轮回复第-8-1-338-至-375-页-txt-行-15013–16795-二轮回复第-8-1-146-页起-txt-行-6391-起"
+            },
+            {
+              "text": "首轮问题 14：股改后增资与股权转让的国资程序（首轮回复第 8-1-399 至 405 页；txt 行 18018–18256）",
+              "link": "/kb2024/688710-益诺思#首轮问题-14-股改后增资与股权转让的国资程序-首轮回复第-8-1-399-至-405-页-txt-行-18018–18256"
+            },
+            {
+              "text": "首轮问题 15：深圳益诺思合资——事业单位股东的设备使用权出资与同业隔离（首轮回复第 8-1-405 至 412 页；txt 行 18257–18530）",
+              "link": "/kb2024/688710-益诺思#首轮问题-15-深圳益诺思合资——事业单位股东的设备使用权出资与同业隔离-首轮回复第-8-1-405-至-412-页-txt-行-18257–18530"
+            },
+            {
+              "text": "二轮问题 8：GLP 资质体系的一致性与失效期间执业（二轮回复第 8-1-166 页起；行号以 txt 定位约在第八问段落）",
+              "link": "/kb2024/688710-益诺思#二轮问题-8-glp-资质体系的一致性与失效期间执业-二轮回复第-8-1-166-页起-行号以-txt-定位约在第八问段落"
+            },
+            {
+              "text": "首轮问题 16：国家科技重大专项承担与科创属性（首轮回复第 8-1-412 页起；txt 行 18531 起）",
+              "link": "/kb2024/688710-益诺思#首轮问题-16-国家科技重大专项承担与科创属性-首轮回复第-8-1-412-页起-txt-行-18531-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688710-益诺思#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688710-益诺思#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688717-艾罗能源": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江艾罗网络能源技术股份有限公司（688717·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688717-艾罗能源"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688717-艾罗能源#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688717-艾罗能源#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688717-艾罗能源#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 5：关于独立性——体内分立、专利无偿划转与人员兼职（首轮，回复第 8-1-1-251 至 280 页；txt 行 11678–12890）",
+              "link": "/kb2024/688717-艾罗能源#问题-5-关于独立性——体内分立、专利无偿划转与人员兼职-首轮-回复第-8-1-1-251-至-280-页-txt-行-11678–12890"
+            },
+            {
+              "text": "问题 6：关于股权激励——五次授予、长期代持与员工借款购股（首轮，回复第 8-1-1-280 至 302 页；txt 行 12891–13840）",
+              "link": "/kb2024/688717-艾罗能源#问题-6-关于股权激励——五次授予、长期代持与员工借款购股-首轮-回复第-8-1-1-280-至-302-页-txt-行-12891–13840"
+            },
+            {
+              "text": "问题 7：关于内部控制——转贷、票据融资、资金拆借、垫付薪酬与实控人个人卡（首轮，回复第 8-1-1-302 至 328 页；txt 行 13841–15053）",
+              "link": "/kb2024/688717-艾罗能源#问题-7-关于内部控制——转贷、票据融资、资金拆借、垫付薪酬与实控人个人卡-首轮-回复第-8-1-1-302-至-328-页-txt-行-13841–15053"
+            },
+            {
+              "text": "问题 8：关于实际控制人及其控制企业大额负债与两层面对赌回购（首轮，回复第 8-1-1-328 至 347 页及附件一/附件二；txt 行 15054–18555）",
+              "link": "/kb2024/688717-艾罗能源#问题-8-关于实际控制人及其控制企业大额负债与两层面对赌回购-首轮-回复第-8-1-1-328-至-347-页及附件一-附件二-txt-行-15054–18555"
+            },
+            {
+              "text": "问题 10：关于关联交易——股东关联方采购与利益输送核查（首轮，回复第 8-1-1-397 至 409 页；txt 行 18556–19000 左右）",
+              "link": "/kb2024/688717-艾罗能源#问题-10-关于关联交易——股东关联方采购与利益输送核查-首轮-回复第-8-1-1-397-至-409-页-txt-行-18556–19000-左右"
+            },
+            {
+              "text": "问题 14：关于历史沿革——设备购置、股权代持形成与解除、新增股东（首轮，回复第 8-1-1-475 至 494 页；txt 行 22030–23007）",
+              "link": "/kb2024/688717-艾罗能源#问题-14-关于历史沿革——设备购置、股权代持形成与解除、新增股东-首轮-回复第-8-1-1-475-至-494-页-txt-行-22030–23007"
+            },
+            {
+              "text": "问题 19.1：劳务外包用工合规（首轮，回复第 8-1-1-569 至 577 页；txt 行 26510 起）",
+              "link": "/kb2024/688717-艾罗能源#问题-19-1-劳务外包用工合规-首轮-回复第-8-1-1-569-至-577-页-txt-行-26510-起"
+            },
+            {
+              "text": "二轮问题 1：实控人及其控制企业大额负债追问——偿债计划、任职资格、授信承诺与股份质押禁止（二轮，回复第 8-1-2-3 至 37 页；txt 行 63–1620 左右）",
+              "link": "/kb2024/688717-艾罗能源#二轮问题-1-实控人及其控制企业大额负债追问——偿债计划、任职资格、授信承诺与股份质押禁止-二轮-回复第-8-1-2-3-至-37-页-txt-行-63–1620-左右"
+            },
+            {
+              "text": "二轮问题 2：关联方资金拆借及关联销售逐笔穿透（二轮，回复第 8-1-2-53 页起；txt 行 2410 起约至 5200）",
+              "link": "/kb2024/688717-艾罗能源#二轮问题-2-关联方资金拆借及关联销售逐笔穿透-二轮-回复第-8-1-2-53-页起-txt-行-2410-起约至-5200"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688717-艾罗能源#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688717-艾罗能源#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688721-龙图光罩": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市龙图光罩股份有限公司（688721·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688721-龙图光罩"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688721-龙图光罩#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688721-龙图光罩#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688721-龙图光罩#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 3 + 二轮问题 7：共同实际控制人认定与控制权稳定性全景核查（首轮回复第 8-1-93 至 121 页，txt 行 3357–4556；二轮回复第 8-1-145 至 167 页，txt 行 5766–6716）",
+              "link": "/kb2024/688721-龙图光罩#首轮问题-3-二轮问题-7-共同实际控制人认定与控制权稳定性全景核查-首轮回复第-8-1-93-至-121-页-txt-行-3357–4556-二轮回复第-8-1-145-至-167-页-txt-行-5766–6716"
+            },
+            {
+              "text": "首轮问题 7.1：关于客户入股——三大晶圆厂关联方的突击增资（首轮回复第 8-1-189 至 198 页；txt 行 7437 起）",
+              "link": "/kb2024/688721-龙图光罩#首轮问题-7-1-关于客户入股——三大晶圆厂关联方的突击增资-首轮回复第-8-1-189-至-198-页-txt-行-7437-起"
+            },
+            {
+              "text": "首轮问题 16.6：房屋租赁——全部生产场所仰赖租赁房的持续性（首轮回复第 8-1-407 至 410 页；txt 行 16339 起）",
+              "link": "/kb2024/688721-龙图光罩#首轮问题-16-6-房屋租赁——全部生产场所仰赖租赁房的持续性-首轮回复第-8-1-407-至-410-页-txt-行-16339-起"
+            },
+            {
+              "text": "首轮问题 16.5：环保资质与易制毒化学品管理（首轮回复第 8-1-401 至 407 页；txt 行 16096 起）",
+              "link": "/kb2024/688721-龙图光罩#首轮问题-16-5-环保资质与易制毒化学品管理-首轮回复第-8-1-401-至-407-页-txt-行-16096-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688721-龙图光罩#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688721-龙图光罩#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688726-拉普拉斯": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "拉普拉斯新能源科技股份有限公司（688726·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688726-拉普拉斯"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688726-拉普拉斯#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688726-拉普拉斯#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688726-拉普拉斯#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题4.1：实际控制人认定——设立时代持的形成与解除、原任职单位职务发明与竞业限制（首轮回复第8-1-131至8-1-136页；txt行5845–6104）",
+              "link": "/kb2024/688726-拉普拉斯#_1-首轮问题4-1-实际控制人认定——设立时代持的形成与解除、原任职单位职务发明与竞业限制-首轮回复第8-1-131至8-1-136页-txt行5845–6104"
+            },
+            {
+              "text": "2. 首轮问题4.2：员工持股平台借款出资、质押担保解除与实控人负债（首轮回复第8-1-137页起；txt行6104–6923）",
+              "link": "/kb2024/688726-拉普拉斯#_2-首轮问题4-2-员工持股平台借款出资、质押担保解除与实控人负债-首轮回复第8-1-137页起-txt行6104–6923"
+            },
+            {
+              "text": "3. 首轮问题5.1＋5.3＋5.4：历史沿革——无偿转让股权与多轮代持、申报前估值跃升定价、代持事项重新披露（首轮回复第8-1-157至8-1-181页；txt行6923–8045）",
+              "link": "/kb2024/688726-拉普拉斯#_3-首轮问题5-1-5-3-5-4-历史沿革——无偿转让股权与多轮代持、申报前估值跃升定价、代持事项重新披露-首轮回复第8-1-157至8-1-181页-txt行6923–8045"
+            },
+            {
+              "text": "4. 首轮问题5.2：股东间一致行动关系的反向举证（首轮回复第8-1-166至8-1-172页；txt行7348–7686）",
+              "link": "/kb2024/688726-拉普拉斯#_4-首轮问题5-2-股东间一致行动关系的反向举证-首轮回复第8-1-166至8-1-172页-txt行7348–7686"
+            },
+            {
+              "text": "5. 首轮问题5.5：对赌及特殊权利条款终止效力——是否\"自始无效\"（首轮回复第8-1-181至8-1-183页；txt行8045–8148）",
+              "link": "/kb2024/688726-拉普拉斯#_5-首轮问题5-5-对赌及特殊权利条款终止效力——是否-自始无效-首轮回复第8-1-181至8-1-183页-txt行8045–8148"
+            },
+            {
+              "text": "6. 首轮问题2＋二轮问题2.1：连城数控比照控股股东的同业竞争核查与利益冲突防范体系（首轮回复第8-1-66至8-1-90页、txt行2887–4058；二轮回复第8-1-34页起、txt行1301–1899）",
+              "link": "/kb2024/688726-拉普拉斯#_6-首轮问题2-二轮问题2-1-连城数控比照控股股东的同业竞争核查与利益冲突防范体系-首轮回复第8-1-66至8-1-90页、txt行2887–4058-二轮回复第8-1-34页起、txt行1301–1899"
+            },
+            {
+              "text": "7. 首轮问题1.1／1.3：客户入股的交易必要性与律师关联关系排查（首轮回复第8-1-3至8-1-58页；txt行77–2465、2465–2887）",
+              "link": "/kb2024/688726-拉普拉斯#_7-首轮问题1-1-1-3-客户入股的交易必要性与律师关联关系排查-首轮回复第8-1-3至8-1-58页-txt行77–2465、2465–2887"
+            },
+            {
+              "text": "8. 首轮问题7.1/7.2＋问题8：体外培育主体的独立性、资产回流与内控整改（首轮回复第8-1-189至8-1-232页；txt行8334–9886）",
+              "link": "/kb2024/688726-拉普拉斯#_8-首轮问题7-1-7-2-问题8-体外培育主体的独立性、资产回流与内控整改-首轮回复第8-1-189至8-1-232页-txt行8334–9886"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688726-拉普拉斯#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688726-拉普拉斯#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/688750-金天钛业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖南湘投金天钛业科技股份有限公司（688750·科创板）审核问询法律问题回溯",
+      "link": "/kb2024/688750-金天钛业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/688750-金天钛业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/688750-金天钛业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/688750-金天钛业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1＋二轮问题2：同业竞争的三层递进核查——姐妹公司、控股平台自研、可比公司反驳（首轮回复txt行约80–3875、二轮回复第8-1-2-69至8-1-2-116页txt行2883–3720）",
+              "link": "/kb2024/688750-金天钛业#_1-首轮问题1-二轮问题2-同业竞争的三层递进核查——姐妹公司、控股平台自研、可比公司反驳-首轮回复txt行约80–3875、二轮回复第8-1-2-69至8-1-2-116页txt行2883–3720"
+            },
+            {
+              "text": "2. 首轮问题3.1/3.2：集团商标授权使用与共有专利权属流转（首轮回复第8-1-101至8-1-128页；txt行4691–6244）",
+              "link": "/kb2024/688750-金天钛业#_2-首轮问题3-1-3-2-集团商标授权使用与共有专利权属流转-首轮回复第8-1-101至8-1-128页-txt行4691–6244"
+            },
+            {
+              "text": "3. 首轮问题4.1：设立时无形资产出资瑕疵与历次国资程序瑕疵的集中整改（首轮回复第8-1-129页起；txt行6244–7209）",
+              "link": "/kb2024/688750-金天钛业#_3-首轮问题4-1-设立时无形资产出资瑕疵与历次国资程序瑕疵的集中整改-首轮回复第8-1-129页起-txt行6244–7209"
+            },
+            {
+              "text": "4. 首轮问题4.2：员工激励代持的形成、 reluctant解除与股东资格穿透（首轮回复第8-1-154至8-1-161页；txt行7209–7562）",
+              "link": "/kb2024/688750-金天钛业#_4-首轮问题4-2-员工激励代持的形成、-reluctant解除与股东资格穿透-首轮回复第8-1-154至8-1-161页-txt行7209–7562"
+            },
+            {
+              "text": "5. 首轮问题4.3：对赌当事人的准确界定与\"解除+附条件恢复\"双协议设计（首轮回复第8-1-162至8-1-165页；txt行7562–7728）",
+              "link": "/kb2024/688750-金天钛业#_5-首轮问题4-3-对赌当事人的准确界定与-解除-附条件恢复-双协议设计-首轮回复第8-1-162至8-1-165页-txt行7562–7728"
+            },
+            {
+              "text": "6. 首轮问题2＋二轮问题7：与金天钛金关联交易的公允性轴心——负毛利销售的定价逻辑（首轮回复第8-1-82页起txt行3875–4691；二轮回复第8-1-2-211页起txt行9320–10300）",
+              "link": "/kb2024/688750-金天钛业#_6-首轮问题2-二轮问题7-与金天钛金关联交易的公允性轴心——负毛利销售的定价逻辑-首轮回复第8-1-82页起txt行3875–4691-二轮回复第8-1-2-211页起txt行9320–10300"
+            },
+            {
+              "text": "7. 首轮问题18.2：社保公积金缴费基数不足的量化达标路径（首轮回复第8-1-465至8-1-471页；txt行21542–22000）",
+              "link": "/kb2024/688750-金天钛业#_7-首轮问题18-2-社保公积金缴费基数不足的量化达标路径-首轮回复第8-1-465至8-1-471页-txt行21542–22000"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/688750-金天钛业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/688750-金天钛业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/872824-先歌国际": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "先歌国际影音股份有限公司（872824·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/872824-先歌国际"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/872824-先歌国际#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/872824-先歌国际#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/872824-先歌国际#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题6（1）（2）：股东层面代持的形成解除与员工激励赠与出资（回复第115-122页；txt行4694-5040）",
+              "link": "/kb2024/872824-先歌国际#_1-首轮问题6-1-2-股东层面代持的形成解除与员工激励赠与出资-回复第115-122页-txt行4694-5040"
+            },
+            {
+              "text": "2. 首轮问题6（3）（4）：外资审批备案、返程投资外汇登记与实物出资（回复第127-131页；txt行5033-5478）",
+              "link": "/kb2024/872824-先歌国际#_2-首轮问题6-3-4-外资审批备案、返程投资外汇登记与实物出资-回复第127-131页-txt行5033-5478"
+            },
+            {
+              "text": "3. 首轮问题6（5）：2017年派生分立及与先歌创新的关联交易（回复第131-134页；txt行5479-5660）",
+              "link": "/kb2024/872824-先歌国际#_3-首轮问题6-5-2017年派生分立及与先歌创新的关联交易-回复第131-134页-txt行5479-5660"
+            },
+            {
+              "text": "4. 首轮问题7（2）：先歌日本为Sasson Inc提供关联担保及解除（回复第151-153页；txt行6262-6400）",
+              "link": "/kb2024/872824-先歌国际#_4-首轮问题7-2-先歌日本为sasson-inc提供关联担保及解除-回复第151-153页-txt行6262-6400"
+            },
+            {
+              "text": "5. 首轮问题7（3）（4）：境外投资ODI程序与品牌商标权属（回复第153-160页前后；txt行6400-7000前后）",
+              "link": "/kb2024/872824-先歌国际#_5-首轮问题7-3-4-境外投资odi程序与品牌商标权属-回复第153-160页前后-txt行6400-7000前后"
+            },
+            {
+              "text": "6. 首轮问题7（1）：线上销售刷单与竞价排名合规（回复第142-150页前后；txt行5901-6260）",
+              "link": "/kb2024/872824-先歌国际#_6-首轮问题7-1-线上销售刷单与竞价排名合规-回复第142-150页前后-txt行5901-6260"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/872824-先歌国际#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/872824-先歌国际#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/872834-群旺科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东群旺科技股份有限公司（872834·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/872834-群旺科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/872834-群旺科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/872834-群旺科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/872834-群旺科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题5：业务合规性——超产能环评、医疗器械资质、外协及劳务派遣（第一轮，回复第135-147页；txt 行6281-6793）",
+              "link": "/kb2024/872834-群旺科技#问题5-业务合规性——超产能环评、医疗器械资质、外协及劳务派遣-第一轮-回复第135-147页-txt-行6281-6793"
+            },
+            {
+              "text": "问题6：经营场所——集体土地无证厂房租赁、搬迁影响测算及实控人关联租赁（第一轮，回复第147-157页；txt 行6794-7179）",
+              "link": "/kb2024/872834-群旺科技#问题6-经营场所——集体土地无证厂房租赁、搬迁影响测算及实控人关联租赁-第一轮-回复第147-157页-txt-行6794-7179"
+            },
+            {
+              "text": "问题7：历史沿革——台资历次变动审批备案、增资实缴逾期瑕疵、合资设立群鼎科技及张钊股权激励（第一轮，回复第157-172页；txt 行7180-7854）",
+              "link": "/kb2024/872834-群旺科技#问题7-历史沿革——台资历次变动审批备案、增资实缴逾期瑕疵、合资设立群鼎科技及张钊股权激励-第一轮-回复第157-172页-txt-行7180-7854"
+            },
+            {
+              "text": "问题8（五）（六）：台湾籍员工就业许可及电商销售平台合规（第一轮，回复第195-201页；txt 行8939-9190）",
+              "link": "/kb2024/872834-群旺科技#问题8-五-六-台湾籍员工就业许可及电商销售平台合规-第一轮-回复第195-201页-txt-行8939-9190"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/872834-群旺科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/872834-群旺科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/872854-南通华新": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "南通华新环保科技股份有限公司（872854·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/872854-南通华新"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/872854-南通华新#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/872854-南通华新#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/872854-南通华新#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：集体企业改制、出资瑕疵与外资沿革（首轮回复第4—44页；20240716 txt行74—1874）",
+              "link": "/kb2024/872854-南通华新#_1-首轮问题1-集体企业改制、出资瑕疵与外资沿革-首轮回复第4—44页-20240716-txt行74—1874"
+            },
+            {
+              "text": "2. 二轮问题1：1998年\"戴红帽子\"名义股东、代持解除与200人穿透（二轮回复第4—21页；20240823 txt行60—753）",
+              "link": "/kb2024/872854-南通华新#_2-二轮问题1-1998年-戴红帽子-名义股东、代持解除与200人穿透-二轮回复第4—21页-20240823-txt行60—753"
+            },
+            {
+              "text": "3. 首轮问题3(2)(3)：安全生产死亡事故行政处罚与未结诉讼（首轮回复第51—72页；txt行2651—3018）",
+              "link": "/kb2024/872854-南通华新#_3-首轮问题3-2-3-安全生产死亡事故行政处罚与未结诉讼-首轮回复第51—72页-txt行2651—3018"
+            },
+            {
+              "text": "4. 二轮问题2：客户/供应商股东通过员工持股平台间接入股（二轮回复第21—33页；20240823 txt行754—1100）",
+              "link": "/kb2024/872854-南通华新#_4-二轮问题2-客户-供应商股东通过员工持股平台间接入股-二轮回复第21—33页-20240823-txt行754—1100"
+            },
+            {
+              "text": "5. 首轮问题3(4)(5)(6)：招投标合规与违法分包核查（首轮回复第52—72页；txt行2813—3298）",
+              "link": "/kb2024/872854-南通华新#_5-首轮问题3-4-5-6-招投标合规与违法分包核查-首轮回复第52—72页-txt行2813—3298"
+            },
+            {
+              "text": "6. 首轮问题4：三家持股平台的性质区分与激励安排（首轮回复第72—85页；txt行3299—3385）",
+              "link": "/kb2024/872854-南通华新#_6-首轮问题4-三家持股平台的性质区分与激励安排-首轮回复第72—85页-txt行3299—3385"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/872854-南通华新#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/872854-南通华新#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/872914-中集醇科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中集安瑞醇科技股份有限公司（872914·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/872914-中集醇科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/872914-中集醇科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/872914-中集醇科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/872914-中集醇科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（一轮）：境外控股股东架构、无实际控制人认定、员工平台与特殊投资条款解除（一轮回复第3–47页；txt 行68–1948）",
+              "link": "/kb2024/872914-中集醇科#问题1-一轮-境外控股股东架构、无实际控制人认定、员工平台与特殊投资条款解除-一轮回复第3–47页-txt-行68–1948"
+            },
+            {
+              "text": "问题2＋问题3（一轮）：同业竞争排查与集团化关联交易、资金池规范（一轮回复第48–97页；txt 行1949–4242）",
+              "link": "/kb2024/872914-中集醇科#问题2-问题3-一轮-同业竞争排查与集团化关联交易、资金池规范-一轮回复第48–97页-txt-行1949–4242"
+            },
+            {
+              "text": "问题4（一轮）：三起未决诉讼与丹麦税务局境外行政诉讼（一轮回复第97–110页；txt 行4243–4627）",
+              "link": "/kb2024/872914-中集醇科#问题4-一轮-三起未决诉讼与丹麦税务局境外行政诉讼-一轮回复第97–110页-txt-行4243–4627"
+            },
+            {
+              "text": "问题8（一轮）：境外子公司多重架构、境内外土地瑕疵与重大资产收购（一轮回复第249–290页；txt 行10655–11870）",
+              "link": "/kb2024/872914-中集醇科#问题8-一轮-境外子公司多重架构、境内外土地瑕疵与重大资产收购-一轮回复第249–290页-txt-行10655–11870"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/872914-中集醇科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/872914-中集醇科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/872924-雅图高新": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "雅图高新材料股份有限公司（872924·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/872924-雅图高新"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/872924-雅图高新#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/872924-雅图高新#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/872924-雅图高新#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：历史沿革——土地出资、派生分立、对赌、集体挂靠脱钩、份额代持与国有股东（第一轮，回复第3-28页；txt 行75-1746）",
+              "link": "/kb2024/872924-雅图高新#问题1-历史沿革——土地出资、派生分立、对赌、集体挂靠脱钩、份额代持与国有股东-第一轮-回复第3-28页-txt-行75-1746"
+            },
+            {
+              "text": "问题2：两高事项（第一轮，回复第29-41页；txt 行1040-1784）",
+              "link": "/kb2024/872924-雅图高新#问题2-两高事项-第一轮-回复第29-41页-txt-行1040-1784"
+            },
+            {
+              "text": "问题6(1)：员工持股平台共青城冠图与股份支付（第一轮，回复第132-141页；txt 行5557-6010）",
+              "link": "/kb2024/872924-雅图高新#问题6-1-员工持股平台共青城冠图与股份支付-第一轮-回复第132-141页-txt-行5557-6010"
+            },
+            {
+              "text": "问题6(2)：危险化学品经营资质（第一轮，回复第142-147页；txt 行6129-6280）",
+              "link": "/kb2024/872924-雅图高新#问题6-2-危险化学品经营资质-第一轮-回复第142-147页-txt-行6129-6280"
+            },
+            {
+              "text": "问题6(3)：重大诉讼与预计负债（第一轮，回复第147-154页；txt 行6281-6390）",
+              "link": "/kb2024/872924-雅图高新#问题6-3-重大诉讼与预计负债-第一轮-回复第147-154页-txt-行6281-6390"
+            },
+            {
+              "text": "问题6(4)：境外子公司投资手续与参股广东威驰（第一轮，回复第154-158页；txt 行6570-6778）",
+              "link": "/kb2024/872924-雅图高新#问题6-4-境外子公司投资手续与参股广东威驰-第一轮-回复第154-158页-txt-行6570-6778"
+            },
+            {
+              "text": "问题6(5)：独立董事设置合规（第一轮，回复第159-160页；txt 行6779-6860）",
+              "link": "/kb2024/872924-雅图高新#问题6-5-独立董事设置合规-第一轮-回复第159-160页-txt-行6779-6860"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/872924-雅图高新#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/872924-雅图高新#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/872954-和普威视": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "和普威视光电股份有限公司（872954·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/872954-和普威视"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/872954-和普威视#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/872954-和普威视#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/872954-和普威视#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（第二轮）：关于历史沿革——股权代持专项核查（二轮回复第3—21页；txt 行53—905）",
+              "link": "/kb2024/872954-和普威视#问题1-第二轮-关于历史沿革——股权代持专项核查-二轮回复第3—21页-txt-行53—905"
+            },
+            {
+              "text": "问题2/3（第一轮）：关于公司技术及竞业禁止、举报事项（首轮回复第38—60页；txt 行2414—4100）",
+              "link": "/kb2024/872954-和普威视#问题2-3-第一轮-关于公司技术及竞业禁止、举报事项-首轮回复第38—60页-txt-行2414—4100"
+            },
+            {
+              "text": "问题4（第一轮）：关于特殊投资条款（首轮回复第61—86页；txt 行4104—5300）",
+              "link": "/kb2024/872954-和普威视#问题4-第一轮-关于特殊投资条款-首轮回复第61—86页-txt-行4104—5300"
+            },
+            {
+              "text": "问题5（第一轮）：关于股权激励——三平台架构与决策程序（首轮回复第87—113页；txt 行4842—5500）",
+              "link": "/kb2024/872954-和普威视#问题5-第一轮-关于股权激励——三平台架构与决策程序-首轮回复第87—113页-txt-行4842—5500"
+            },
+            {
+              "text": "问题9(2)（第一轮）：关于租赁房产（首轮回复第157—164页；txt 行7737—7990）",
+              "link": "/kb2024/872954-和普威视#问题9-2-第一轮-关于租赁房产-首轮回复第157—164页-txt-行7737—7990"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/872954-和普威视#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/872954-和普威视#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873024-玫瑰岛": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东玫瑰岛家居股份有限公司（873024·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873024-玫瑰岛"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873024-玫瑰岛#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873024-玫瑰岛#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873024-玫瑰岛#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：同业竞争、关联租赁、资金占用与商标继受（问询回复第 3–26 页；txt 行 76–1156）",
+              "link": "/kb2024/873024-玫瑰岛#_1-首轮问题-1-同业竞争、关联租赁、资金占用与商标继受-问询回复第-3–26-页-txt-行-76–1156"
+            },
+            {
+              "text": "2. 首轮问题 2：外协与劳务外包、超产能与未批先建、小程序数据合规（问询回复第 27–49 页；txt 行 1158–2181）",
+              "link": "/kb2024/873024-玫瑰岛#_2-首轮问题-2-外协与劳务外包、超产能与未批先建、小程序数据合规-问询回复第-27–49-页-txt-行-1158–2181"
+            },
+            {
+              "text": "3. 首轮问题 3：实控人配偶李龙未认定为共同实控人（问询回复第 50–54 页；txt 行 2182–2379）",
+              "link": "/kb2024/873024-玫瑰岛#_3-首轮问题-3-实控人配偶李龙未认定为共同实控人-问询回复第-50–54-页-txt-行-2182–2379"
+            },
+            {
+              "text": "4. 首轮问题 4：员工持股平台四次股权激励（问询回复第 55–70 页；txt 行 2380–3094）",
+              "link": "/kb2024/873024-玫瑰岛#_4-首轮问题-4-员工持股平台四次股权激励-问询回复第-55–70-页-txt-行-2380–3094"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873024-玫瑰岛#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873024-玫瑰岛#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873084-艾德森": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东艾德森生物科技股份有限公司（873084·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873084-艾德森"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873084-艾德森#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873084-艾德森#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873084-艾德森#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1(1)：四层代持链条、现金出资与业绩承诺式股权转让（问询回复第 3–27 页；txt 行 44–669）",
+              "link": "/kb2024/873084-艾德森#_1-首轮问题-1-1-四层代持链条、现金出资与业绩承诺式股权转让-问询回复第-3–27-页-txt-行-44–669"
+            },
+            {
+              "text": "2. 首轮问题 1(2)及问题 2：外资合规与实控人认定、治理僵局防范（问询回复第 19–24、28–37 页；txt 行 670–833、971–1290）",
+              "link": "/kb2024/873084-艾德森#_2-首轮问题-1-2-及问题-2-外资合规与实控人认定、治理僵局防范-问询回复第-19–24、28–37-页-txt-行-670–833、971–1290"
+            },
+            {
+              "text": "3. 首轮问题 4：电力业务许可、环评超产能、资质续期与社保公积金（问询回复第 50–78 页；txt 行 1870–2900）",
+              "link": "/kb2024/873084-艾德森#_3-首轮问题-4-电力业务许可、环评超产能、资质续期与社保公积金-问询回复第-50–78-页-txt-行-1870–2900"
+            },
+            {
+              "text": "4. 首轮问题 5：金锣集团关联交易与重大依赖（问询回复第 94–115 页；txt 行 3451–5140）",
+              "link": "/kb2024/873084-艾德森#_4-首轮问题-5-金锣集团关联交易与重大依赖-问询回复第-94–115-页-txt-行-3451–5140"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873084-艾德森#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873084-艾德森#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873144-伊科能源": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "合肥伊科耐能源股份有限公司（873144·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873144-伊科能源"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873144-伊科能源#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873144-伊科能源#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873144-伊科能源#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题6：独立性——同业竞争清理与关联外协（首轮回复第 106—155 页前后；txt 行 4347—6098）",
+              "link": "/kb2024/873144-伊科能源#首轮问题6-独立性——同业竞争清理与关联外协-首轮回复第-106—155-页前后-txt-行-4347—6098"
+            },
+            {
+              "text": "首轮问题7+二轮问题3(1)：业务资质、CCC 认证新规与未批先建定性（首轮回复第 155—180 页前后；txt 行 6419—7661；二轮回复合肥片区 txt 行 2111—2400）",
+              "link": "/kb2024/873144-伊科能源#首轮问题7-二轮问题3-1-业务资质、ccc-认证新规与未批先建定性-首轮回复第-155—180-页前后-txt-行-6419—7661-二轮回复合肥片区-txt-行-2111—2400"
+            },
+            {
+              "text": "首轮问题8+二轮问题3(2)：历史沿革股权瑕疵与实控人代持追问（首轮回复第 181 页起；txt 行 7662—9615；二轮回复 txt 行 2111—2920）",
+              "link": "/kb2024/873144-伊科能源#首轮问题8-二轮问题3-2-历史沿革股权瑕疵与实控人代持追问-首轮回复第-181-页起-txt-行-7662—9615-二轮回复-txt-行-2111—2920"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873144-伊科能源#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873144-伊科能源#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873154-博兴新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东博兴新材料科技股份有限公司（873154·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873154-博兴新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873154-博兴新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873154-博兴新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873154-博兴新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：合规经营——危化品经营资质超越与全链条合规、未批先建、产业政策（问询回复txt行70-2191）",
+              "link": "/kb2024/873154-博兴新材#_1-首轮问题1-合规经营——危化品经营资质超越与全链条合规、未批先建、产业政策-问询回复txt行70-2191"
+            },
+            {
+              "text": "2. 首轮问题2：特殊投资条款——终止协议、附条件恢复、明股实债与模糊触发条款（问询回复txt行2192-2978）",
+              "link": "/kb2024/873154-博兴新材#_2-首轮问题2-特殊投资条款——终止协议、附条件恢复、明股实债与模糊触发条款-问询回复txt行2192-2978"
+            },
+            {
+              "text": "3. 首轮问题3：子公司——越南玖兴重组、同业竞争规范与 ODI 程序（问询回复txt行2979-4052）",
+              "link": "/kb2024/873154-博兴新材#_3-首轮问题3-子公司——越南玖兴重组、同业竞争规范与-odi-程序-问询回复txt行2979-4052"
+            },
+            {
+              "text": "4. 首轮问题4：历史沿革——实控人香港永久居民身份与外资属性、代持排查（问询回复txt行4053-5200 区间）",
+              "link": "/kb2024/873154-博兴新材#_4-首轮问题4-历史沿革——实控人香港永久居民身份与外资属性、代持排查-问询回复txt行4053-5200-区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873154-博兴新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873154-博兴新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873214-玛格家居": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "玛格家居股份有限公司（873214·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873214-玛格家居"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873214-玛格家居#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873214-玛格家居#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873214-玛格家居#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革及股权质押（第一轮，回复第3—18页；txt 行87–1000 区间）",
+              "link": "/kb2024/873214-玛格家居#问题1-关于历史沿革及股权质押-第一轮-回复第3—18页-txt-行87–1000-区间"
+            },
+            {
+              "text": "问题6（1）：特殊投资条款——代持还原后回购条款的效力延续（第一轮，回复第156—159页；txt 行6850 起）",
+              "link": "/kb2024/873214-玛格家居#问题6-1-特殊投资条款——代持还原后回购条款的效力延续-第一轮-回复第156—159页-txt-行6850-起"
+            },
+            {
+              "text": "问题3：关于重大诉讼——商标维权与租赁纠纷的全量披露（第一轮，回复第50—61页；txt 行约4780–5290）",
+              "link": "/kb2024/873214-玛格家居#问题3-关于重大诉讼——商标维权与租赁纠纷的全量披露-第一轮-回复第50—61页-txt-行约4780–5290"
+            },
+            {
+              "text": "问题6（2）：经营合规性——环评豁免、危废处置与消防安全（第一轮，回复第159—169页；txt 行7060 起）",
+              "link": "/kb2024/873214-玛格家居#问题6-2-经营合规性——环评豁免、危废处置与消防安全-第一轮-回复第159—169页-txt-行7060-起"
+            },
+            {
+              "text": "问题6（3）：深交所主板申报衔接（第一轮，回复第169—180页；txt 行 约7590 起）",
+              "link": "/kb2024/873214-玛格家居#问题6-3-深交所主板申报衔接-第一轮-回复第169—180页-txt-行-约7590-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873214-玛格家居#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873214-玛格家居#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873254-科蓝环保": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "佛山市科蓝环保科技股份有限公司（873254·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873254-科蓝环保"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873254-科蓝环保#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873254-科蓝环保#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873254-科蓝环保#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题6：山东盛世信诚双向买卖合同纠纷与调解（首轮回复第141—150页；txt行6798—7221）",
+              "link": "/kb2024/873254-科蓝环保#_1-首轮问题6-山东盛世信诚双向买卖合同纠纷与调解-首轮回复第141—150页-txt行6798—7221"
+            },
+            {
+              "text": "2. 首轮问题7：特殊投资条款触发回购与历史代持（首轮回复第151—163页；txt行7222—7941）",
+              "link": "/kb2024/873254-科蓝环保#_2-首轮问题7-特殊投资条款触发回购与历史代持-首轮回复第151—163页-txt行7222—7941"
+            },
+            {
+              "text": "3. 首轮问题8与9(1)：股权激励平台与92.39%控制下公司治理（首轮回复第164—183页；txt行7942—8950）",
+              "link": "/kb2024/873254-科蓝环保#_3-首轮问题8与9-1-股权激励平台与92-39-控制下公司治理-首轮回复第164—183页-txt行7942—8950"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873254-科蓝环保#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873254-科蓝环保#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873354-坛墨质检": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "坛墨质检科技股份有限公司（873354·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873354-坛墨质检"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873354-坛墨质检#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873354-坛墨质检#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873354-坛墨质检#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2：历史沿革、北京坛墨注销、股权代持还原与历次股权转让（回复第35-56页；txt行1428-2298）",
+              "link": "/kb2024/873354-坛墨质检#_1-首轮问题2-历史沿革、北京坛墨注销、股权代持还原与历次股权转让-回复第35-56页-txt行1428-2298"
+            },
+            {
+              "text": "2. 首轮问题1：危化品资质、环评验收、劳动争议、劳务派遣与线上模式合规（回复第3-34页；txt行70-1427）",
+              "link": "/kb2024/873354-坛墨质检#_2-首轮问题1-危化品资质、环评验收、劳动争议、劳务派遣与线上模式合规-回复第3-34页-txt行70-1427"
+            },
+            {
+              "text": "3. 首轮问题7（1）（2）（3）：知识产权权属、董监高任职资格与公司治理（回复第143-160页；txt行5628-6702前后）",
+              "link": "/kb2024/873354-坛墨质检#_3-首轮问题7-1-2-3-知识产权权属、董监高任职资格与公司治理-回复第143-160页-txt行5628-6702前后"
+            },
+            {
+              "text": "4. 首轮问题7（5）：员工持股平台股权激励（回复第160-170页前后；txt行6900-7500前后、2110-2260）",
+              "link": "/kb2024/873354-坛墨质检#_4-首轮问题7-5-员工持股平台股权激励-回复第160-170页前后-txt行6900-7500前后、2110-2260"
+            },
+            {
+              "text": "5. 首轮问题7（6）④：大额分红的决策程序、资金流向与税款（回复第195-198页；txt行7816-7990）",
+              "link": "/kb2024/873354-坛墨质检#_5-首轮问题7-6-4-大额分红的决策程序、资金流向与税款-回复第195-198页-txt行7816-7990"
+            },
+            {
+              "text": "6. 首轮问题7（4）：关联交易（回复第160页前后；txt行5681-5697，回复正文由主办券商、会计师核查）",
+              "link": "/kb2024/873354-坛墨质检#_6-首轮问题7-4-关联交易-回复第160页前后-txt行5681-5697-回复正文由主办券商、会计师核查"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873354-坛墨质检#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873354-坛墨质检#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873374-尚航科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广州尚航信息科技股份有限公司（873374·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873374-尚航科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873374-尚航科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873374-尚航科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873374-尚航科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：股东人数超200人核查、历史股权代持及员工持股平台（首轮，回复第3—43页；txt 行77—2258）",
+              "link": "/kb2024/873374-尚航科技#问题1-股东人数超200人核查、历史股权代持及员工持股平台-首轮-回复第3—43页-txt-行77—2258"
+            },
+            {
+              "text": "问题2：IDC业务经营合法合规性——超范围经营与跨境经营（首轮，回复第44—72页；txt 行2259—3513）",
+              "link": "/kb2024/873374-尚航科技#问题2-idc业务经营合法合规性——超范围经营与跨境经营-首轮-回复第44—72页-txt-行2259—3513"
+            },
+            {
+              "text": "问题6：关联方信息披露完整性——欢聚集团、广州津虹与亿安天下（首轮，回复第156—168页；txt 行7273—7865）",
+              "link": "/kb2024/873374-尚航科技#问题6-关联方信息披露完整性——欢聚集团、广州津虹与亿安天下-首轮-回复第156—168页-txt-行7273—7865"
+            },
+            {
+              "text": "问题7(1)：前次挂牌及IPO期间未披露特殊投资条款、摘牌异议股东保护（首轮，回复第169—177页；txt 行7868—8127）",
+              "link": "/kb2024/873374-尚航科技#问题7-1-前次挂牌及ipo期间未披露特殊投资条款、摘牌异议股东保护-首轮-回复第169—177页-txt-行7868—8127"
+            },
+            {
+              "text": "二轮问题1：申请文件财务资料过有效期（二轮，回复第3页；txt 行25—60）",
+              "link": "/kb2024/873374-尚航科技#二轮问题1-申请文件财务资料过有效期-二轮-回复第3页-txt-行25—60"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873374-尚航科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873374-尚航科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873494-中奥电力": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东中奥电力设备股份有限公司（873494·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873494-中奥电力"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873494-中奥电力#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873494-中奥电力#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873494-中奥电力#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题1：土地房产与合规经营——无偿使用转租赁、无证房产与招投标（一轮回复第1–18页；txt 行21–620）",
+              "link": "/kb2024/873494-中奥电力#一轮问题1-土地房产与合规经营——无偿使用转租赁、无证房产与招投标-一轮回复第1–18页-txt-行21–620"
+            },
+            {
+              "text": "一轮问题2：历史沿革与公司治理——家族企业股权重构与债务抵销减资（一轮回复第19–42页；txt 行621–1804）",
+              "link": "/kb2024/873494-中奥电力#一轮问题2-历史沿革与公司治理——家族企业股权重构与债务抵销减资-一轮回复第19–42页-txt-行621–1804"
+            },
+            {
+              "text": "一轮问题7与二轮问题六：关联交易与资金占用清理（一轮回复第120–140页；txt 行4669–6038；二轮回复第93–100页；txt 行4264–4564）",
+              "link": "/kb2024/873494-中奥电力#一轮问题7与二轮问题六-关联交易与资金占用清理-一轮回复第120–140页-txt-行4669–6038-二轮回复第93–100页-txt-行4264–4564"
+            },
+            {
+              "text": "二轮问题三、四：股权架构调整、共同实控人排除与同业竞争（二轮回复第65–92页；txt 行2756–4263）",
+              "link": "/kb2024/873494-中奥电力#二轮问题三、四-股权架构调整、共同实控人排除与同业竞争-二轮回复第65–92页-txt-行2756–4263"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873494-中奥电力#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873494-中奥电力#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873594-申传电气": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海申传电气股份有限公司（873594·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873594-申传电气"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873594-申传电气#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873594-申传电气#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873594-申传电气#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——合伙平台清算分股、科技成果出资缩水与国资属性甄别（第一轮，回复第 3—15 页；txt 行88—1000 区域）",
+              "link": "/kb2024/873594-申传电气#问题1-关于历史沿革——合伙平台清算分股、科技成果出资缩水与国资属性甄别-第一轮-回复第-3—15-页-txt-行88—1000-区域"
+            },
+            {
+              "text": "问题6(1)：公司治理——高校教师兼职取酬与入股合规性（第一轮，回复第 104—106 页；txt 行4852—4960）",
+              "link": "/kb2024/873594-申传电气#问题6-1-公司治理——高校教师兼职取酬与入股合规性-第一轮-回复第-104—106-页-txt-行4852—4960"
+            },
+            {
+              "text": "问题6(2)＋6(3)：关联资金往来与股利分配的正当性（第一轮，回复第 106—109 页；txt 行4960—5120 区域）",
+              "link": "/kb2024/873594-申传电气#问题6-2-6-3-关联资金往来与股利分配的正当性-第一轮-回复第-106—109-页-txt-行4960—5120-区域"
+            },
+            {
+              "text": "问题6(5)：票据找零与现金坐支的法律定性（第一轮，回复第 111—113 页；txt 行5200—5350 区域）",
+              "link": "/kb2024/873594-申传电气#问题6-5-票据找零与现金坐支的法律定性-第一轮-回复第-111—113-页-txt-行5200—5350-区域"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873594-申传电气#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873594-申传电气#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873614-高特股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "常州高特新材料股份有限公司（873614·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873614-高特股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873614-高特股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873614-高特股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873614-高特股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1＋二轮问题1：王佩华入股——配偶被留置引发的适格性、冻结风险与实控人回购退出（一轮回复第4–13页，txt 行82–760；二轮回复第4–11页，txt 行57–420）",
+              "link": "/kb2024/873614-高特股份#问题1-二轮问题1-王佩华入股——配偶被留置引发的适格性、冻结风险与实控人回购退出-一轮回复第4–13页-txt-行82–760-二轮回复第4–11页-txt-行57–420"
+            },
+            {
+              "text": "问题2：员工持股计划、员工-实控人对赌条款与金融负债判断（一轮回复第21–32页；txt 行885–1380）",
+              "link": "/kb2024/873614-高特股份#问题2-员工持股计划、员工-实控人对赌条款与金融负债判断-一轮回复第21–32页-txt-行885–1380"
+            },
+            {
+              "text": "问题1(2)：常州翼飞未签协议代持的证据链重建（一轮回复第9–13页；txt 行301–500）",
+              "link": "/kb2024/873614-高特股份#问题1-2-常州翼飞未签协议代持的证据链重建-一轮回复第9–13页-txt-行301–500"
+            },
+            {
+              "text": "问题10(1)：子公司少数股东借款出资与非专利技术出资瑕疵（一轮回复第129–146页；txt 行5934–6260）",
+              "link": "/kb2024/873614-高特股份#问题10-1-子公司少数股东借款出资与非专利技术出资瑕疵-一轮回复第129–146页-txt-行5934–6260"
+            },
+            {
+              "text": "问题10(3)(4)：信息披露豁免依据与核心技术人员的竞业限制（一轮回复第147–152页；txt 行6749–7000）",
+              "link": "/kb2024/873614-高特股份#问题10-3-4-信息披露豁免依据与核心技术人员的竞业限制-一轮回复第147–152页-txt-行6749–7000"
+            },
+            {
+              "text": "问题10(5)：报告期两次现金分红（一轮回复第154–157页；txt 行7020–7160）",
+              "link": "/kb2024/873614-高特股份#问题10-5-报告期两次现金分红-一轮回复第154–157页-txt-行7020–7160"
+            },
+            {
+              "text": "问题3：家族成员与学生董事的公司治理（一轮回复第34–39页；txt 行1401–1651）",
+              "link": "/kb2024/873614-高特股份#问题3-家族成员与学生董事的公司治理-一轮回复第34–39页-txt-行1401–1651"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873614-高特股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873614-高特股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873774-乘风科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "成都乘风流体科技集团股份有限公司（873774·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873774-乘风科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873774-乘风科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873774-乘风科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873774-乘风科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题4：关于业务合规性——特种设备资质与环保处罚（第一轮，回复第45–58页；txt行1731–2299）",
+              "link": "/kb2024/873774-乘风科技#问题4-关于业务合规性——特种设备资质与环保处罚-第一轮-回复第45–58页-txt行1731–2299"
+            },
+            {
+              "text": "问题5：关于子公司对赌条款——子公司层面特殊投资条款的解除与回购（第一轮，回复第59–67页；txt行2300–2618）",
+              "link": "/kb2024/873774-乘风科技#问题5-关于子公司对赌条款——子公司层面特殊投资条款的解除与回购-第一轮-回复第59–67页-txt行2300–2618"
+            },
+            {
+              "text": "问题6：关于股权激励——子公司层面员工持股平台（第一轮，回复第68–81页；txt行2619–3180）",
+              "link": "/kb2024/873774-乘风科技#问题6-关于股权激励——子公司层面员工持股平台-第一轮-回复第68–81页-txt行2619–3180"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873774-乘风科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873774-乘风科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873854-迪柯尼": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广州迪柯尼服饰股份有限公司（873854·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873854-迪柯尼"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873854-迪柯尼#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873854-迪柯尼#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873854-迪柯尼#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题一(2)(3)(4)(5)：关于经营合规——刷单排查、平台定性、资质与第三方代缴社保（回复第4—53页；txt 行114—2210）",
+              "link": "/kb2024/873854-迪柯尼#问题一-2-3-4-5-关于经营合规——刷单排查、平台定性、资质与第三方代缴社保-回复第4—53页-txt-行114—2210"
+            },
+            {
+              "text": "问题二：关于员工持股平台——横琴裕盛隆（回复第54—64页；txt 行2240—2690）",
+              "link": "/kb2024/873854-迪柯尼#问题二-关于员工持股平台——横琴裕盛隆-回复第54—64页-txt-行2240—2690"
+            },
+            {
+              "text": "问题三：关于重大诉讼——6起未决案件（回复第65—74页；txt 行2700—3290）",
+              "link": "/kb2024/873854-迪柯尼#问题三-关于重大诉讼——6起未决案件-回复第65—74页-txt-行2700—3290"
+            },
+            {
+              "text": "问题十：关于股权代持——极简股权结构的专项核查（回复第226—231页；txt 行10258—10500）",
+              "link": "/kb2024/873854-迪柯尼#问题十-关于股权代持——极简股权结构的专项核查-回复第226—231页-txt-行10258—10500"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873854-迪柯尼#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873854-迪柯尼#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873904-智先生": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "智先生电器（江苏）股份有限公司（873904·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873904-智先生"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873904-智先生#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873904-智先生#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873904-智先生#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：劳务派遣超比例整改（首轮，回复第4—7页；txt 行61—240）",
+              "link": "/kb2024/873904-智先生#问题1-1-劳务派遣超比例整改-首轮-回复第4—7页-txt-行61—240"
+            },
+            {
+              "text": "问题1(2)(3)：厂房租赁到期未续签与继受专利职务发明（首轮，回复第7—17页；txt 行240—708）",
+              "link": "/kb2024/873904-智先生#问题1-2-3-厂房租赁到期未续签与继受专利职务发明-首轮-回复第7—17页-txt-行240—708"
+            },
+            {
+              "text": "问题2+问题6(1) 节录：历史沿革核查与子公司收购（首轮，回复第18—26、122—127页；txt 行709—1140、2780 前后）",
+              "link": "/kb2024/873904-智先生#问题2-问题6-1-节录-历史沿革核查与子公司收购-首轮-回复第18—26、122—127页-txt-行709—1140、2780-前后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873904-智先生#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873904-智先生#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873924-千年舟": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "千年舟新材科技集团股份有限公司（873924·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873924-千年舟"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873924-千年舟#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873924-千年舟#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873924-千年舟#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1（一）：排污许可、环评验收与日照澳思柏恩环保处罚（首轮回复 txt 行 58-230）",
+              "link": "/kb2024/873924-千年舟#_1-首轮问题-1-一-排污许可、环评验收与日照澳思柏恩环保处罚-首轮回复-txt-行-58-230"
+            },
+            {
+              "text": "2. 首轮问题 1（二）：江苏澳思柏恩未批先建、产证办理与消防验收（首轮回复 txt 行 227-345、400-470）",
+              "link": "/kb2024/873924-千年舟#_2-首轮问题-1-二-江苏澳思柏恩未批先建、产证办理与消防验收-首轮回复-txt-行-227-345、400-470"
+            },
+            {
+              "text": "3. 首轮问题 1（三）：17 项域名与互联网信息服务备案（首轮回复 txt 行 312-400）",
+              "link": "/kb2024/873924-千年舟#_3-首轮问题-1-三-17-项域名与互联网信息服务备案-首轮回复-txt-行-312-400"
+            },
+            {
+              "text": "4. 首轮问题 1（五）：社保公积金欠缴与补缴测算（首轮回复 txt 行 470-620）",
+              "link": "/kb2024/873924-千年舟#_4-首轮问题-1-五-社保公积金欠缴与补缴测算-首轮回复-txt-行-470-620"
+            },
+            {
+              "text": "5. 首轮问题 2（一）（二）：两次股权激励与余杭产业基金让利性投资入股退出（首轮回复 txt 行 808-1010）",
+              "link": "/kb2024/873924-千年舟#_5-首轮问题-2-一-二-两次股权激励与余杭产业基金让利性投资入股退出-首轮回复-txt-行-808-1010"
+            },
+            {
+              "text": "6. 首轮问题 2（三）：1999-2005 年汪明敢代陆铜华代持的形成演变解除与 200 人穿透（首轮回复 txt 行 1010-1620）",
+              "link": "/kb2024/873924-千年舟#_6-首轮问题-2-三-1999-2005-年汪明敢代陆铜华代持的形成演变解除与-200-人穿透-首轮回复-txt-行-1010-1620"
+            },
+            {
+              "text": "7. 首轮问题 3：2018 年特殊投资条款的履行与终止（首轮回复 txt 行 1613-2070）",
+              "link": "/kb2024/873924-千年舟#_7-首轮问题-3-2018-年特殊投资条款的履行与终止-首轮回复-txt-行-1613-2070"
+            },
+            {
+              "text": "8. 首轮问题 4（3）（4）（5）：对外投资阜阳大可、参股余杭农商行与师宗华海转让（首轮回复 txt 行 2072-2536）",
+              "link": "/kb2024/873924-千年舟#_8-首轮问题-4-3-4-5-对外投资阜阳大可、参股余杭农商行与师宗华海转让-首轮回复-txt-行-2072-2536"
+            },
+            {
+              "text": "9. 二轮问题 1（一）：检测中心未办理环保验收即投入使用追问（二轮回复 txt 行 58-310）",
+              "link": "/kb2024/873924-千年舟#_9-二轮问题-1-一-检测中心未办理环保验收即投入使用追问-二轮回复-txt-行-58-310"
+            },
+            {
+              "text": "10. 二轮问题 1（二）：加盟费与《商业特许经营管理条例》（二轮回复 txt 行 180-601）",
+              "link": "/kb2024/873924-千年舟#_10-二轮问题-1-二-加盟费与《商业特许经营管理条例》-二轮回复-txt-行-180-601"
+            },
+            {
+              "text": "11. 二轮问题 2：股权激励未实施完毕、离职份额处置与代持追问（二轮回复 txt 行 601-973）",
+              "link": "/kb2024/873924-千年舟#_11-二轮问题-2-股权激励未实施完毕、离职份额处置与代持追问-二轮回复-txt-行-601-973"
+            },
+            {
+              "text": "12. 二轮问题 3：品牌综合服务及线上渠道质量责任风险（二轮回复 txt 行 974-1808）",
+              "link": "/kb2024/873924-千年舟#_12-二轮问题-3-品牌综合服务及线上渠道质量责任风险-二轮回复-txt-行-974-1808"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873924-千年舟#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873924-千年舟#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/873944-蓬达高科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "襄阳蓬达高新科技股份有限公司（873944·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/873944-蓬达高科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/873944-蓬达高科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/873944-蓬达高科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/873944-蓬达高科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：实际控制人认定——并列第一大股东杨开鹏的排除论证（首轮回复第 3-25 页；txt 行 66–1132）",
+              "link": "/kb2024/873944-蓬达高科#首轮问题-1-实际控制人认定——并列第一大股东杨开鹏的排除论证-首轮回复第-3-25-页-txt-行-66–1132"
+            },
+            {
+              "text": "首轮问题 2：历史沿革——对赌触发回购减资、代持还原与非员工激励（首轮回复第 26-83 页；txt 行 1133–3680）",
+              "link": "/kb2024/873944-蓬达高科#首轮问题-2-历史沿革——对赌触发回购减资、代持还原与非员工激励-首轮回复第-26-83-页-txt-行-1133–3680"
+            },
+            {
+              "text": "首轮问题 6：军品订单获取方式与商业贿赂（首轮回复第 142-151 页；txt 行 5931–6519）",
+              "link": "/kb2024/873944-蓬达高科#首轮问题-6-军品订单获取方式与商业贿赂-首轮回复第-142-151-页-txt-行-5931–6519"
+            },
+            {
+              "text": "二轮问题 2：军品审价的影响（二轮回复第 14-19 页；txt 行 499–648）",
+              "link": "/kb2024/873944-蓬达高科#二轮问题-2-军品审价的影响-二轮回复第-14-19-页-txt-行-499–648"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/873944-蓬达高科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/873944-蓬达高科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874045-特富发展": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江特富发展股份有限公司（874045·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874045-特富发展"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874045-特富发展#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874045-特富发展#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874045-特富发展#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：一致行动关系、股权变动及境外投资（首轮，回复第 8-1-3 至 8-1-15 页；txt 行 69—557）",
+              "link": "/kb2024/874045-特富发展#问题1-一致行动关系、股权变动及境外投资-首轮-回复第-8-1-3-至-8-1-15-页-txt-行-69—557"
+            },
+            {
+              "text": "问题5：重大诉讼与公司采购服务模式（首轮，回复第 8-1-128 至 8-1-162 页；txt 行 5626—7186）",
+              "link": "/kb2024/874045-特富发展#问题5-重大诉讼与公司采购服务模式-首轮-回复第-8-1-128-至-8-1-162-页-txt-行-5626—7186"
+            },
+            {
+              "text": "问题6（1）：安全生产与特种设备合规（首轮，回复第 8-1-163 至 8-1-166、224—225 页；txt 行 7254—7429、10391—10418）",
+              "link": "/kb2024/874045-特富发展#问题6-1-安全生产与特种设备合规-首轮-回复第-8-1-163-至-8-1-166、224—225-页-txt-行-7254—7429、10391—10418"
+            },
+            {
+              "text": "附·其他问题：历史沿革股权代持专项核查（首轮回复文末，回复第 8-1-229 至 8-1-236 页；txt 行 10594—10937）",
+              "link": "/kb2024/874045-特富发展#附·其他问题-历史沿革股权代持专项核查-首轮回复文末-回复第-8-1-229-至-8-1-236-页-txt-行-10594—10937"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874045-特富发展#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874045-特富发展#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874112-正康新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏正康新材料科技股份有限公司（874112·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874112-正康新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874112-正康新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874112-正康新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874112-正康新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：挂靠集体企业清产核资式改制（首轮，回复第 2–14 页；txt 行 36–668）",
+              "link": "/kb2024/874112-正康新材#问题-1-挂靠集体企业清产核资式改制-首轮-回复第-2–14-页-txt-行-36–668"
+            },
+            {
+              "text": "问题 2：安全生产事故、无证排污与用工合规叠加整改（首轮，回复第 18–49 页；txt 行 671–1962）",
+              "link": "/kb2024/874112-正康新材#问题-2-安全生产事故、无证排污与用工合规叠加整改-首轮-回复第-18–49-页-txt-行-671–1962"
+            },
+            {
+              "text": "问题 3 与二轮问题 2：两高行业环保节能合规与节能审查补办（首轮回复第 50–66 页 txt 行 1965–2740；二轮回复第 86–96 页 txt 行 4026–4230）",
+              "link": "/kb2024/874112-正康新材#问题-3-与二轮问题-2-两高行业环保节能合规与节能审查补办-首轮回复第-50–66-页-txt-行-1965–2740-二轮回复第-86–96-页-txt-行-4026–4230"
+            },
+            {
+              "text": "问题 4：夫妻100%持股下的治理规范性（首轮，回复第 68–95 页；txt 行 2741–3068）",
+              "link": "/kb2024/874112-正康新材#问题-4-夫妻100-持股下的治理规范性-首轮-回复第-68–95-页-txt-行-2741–3068"
+            },
+            {
+              "text": "二轮问题 3：26,027.80 平方米无证房产与集体建设用地租赁量化（二轮，回复第 92–110 页；txt 行 4231 起）",
+              "link": "/kb2024/874112-正康新材#二轮问题-3-26-027-80-平方米无证房产与集体建设用地租赁量化-二轮-回复第-92–110-页-txt-行-4231-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874112-正康新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874112-正康新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874113-思普宁": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "重庆思普宁科技股份有限公司（874113·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874113-思普宁"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874113-思普宁#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874113-思普宁#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874113-思普宁#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于股权激励（第一轮，回复第4—17页；txt行71—564）",
+              "link": "/kb2024/874113-思普宁#问题1-关于股权激励-第一轮-回复第4—17页-txt行71—564"
+            },
+            {
+              "text": "问题2：关于劳务用工——劳务派遣超10%（第一轮，回复第18—30页；txt行565—1142）",
+              "link": "/kb2024/874113-思普宁#问题2-关于劳务用工——劳务派遣超10-第一轮-回复第18—30页-txt行565—1142"
+            },
+            {
+              "text": "问题3：关于环保合规性——未批先建与环保处罚（第一轮，回复第31—42页；txt行1143—1668）",
+              "link": "/kb2024/874113-思普宁#问题3-关于环保合规性——未批先建与环保处罚-第一轮-回复第31—42页-txt行1143—1668"
+            },
+            {
+              "text": "问题7(3)：关于无控股股东认定与共同实际控制人（第一轮，回复第124—126页；txt行4604—4729）",
+              "link": "/kb2024/874113-思普宁#问题7-3-关于无控股股东认定与共同实际控制人-第一轮-回复第124—126页-txt行4604—4729"
+            },
+            {
+              "text": "问题7(5)：关于区域性股权市场挂牌或培育情况（第一轮，回复第130—131页；txt行4779—4825）",
+              "link": "/kb2024/874113-思普宁#问题7-5-关于区域性股权市场挂牌或培育情况-第一轮-回复第130—131页-txt行4779—4825"
+            },
+            {
+              "text": "问题7(6)：关于关联担保（第一轮，回复第131—132页；txt行4826—4862）",
+              "link": "/kb2024/874113-思普宁#问题7-6-关于关联担保-第一轮-回复第131—132页-txt行4826—4862"
+            },
+            {
+              "text": "问题7(7)：关于财务规范性——票据不规范与个人卡（第一轮，回复第132—138页；txt行4863—5088）",
+              "link": "/kb2024/874113-思普宁#问题7-7-关于财务规范性——票据不规范与个人卡-第一轮-回复第132—138页-txt行4863—5088"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874113-思普宁#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874113-思普宁#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874117-昂必立": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "青岛昂必立实业股份有限公司（874117·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874117-昂必立"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874117-昂必立#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874117-昂必立#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874117-昂必立#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：安全生产与危险化学品经营合规（首轮，回复第 2–12 页；txt 行 51–497）",
+              "link": "/kb2024/874117-昂必立#问题-1-安全生产与危险化学品经营合规-首轮-回复第-2–12-页-txt-行-51–497"
+            },
+            {
+              "text": "问题 2：同业竞争——香港关联公司 OBNCHEM 的委托经营与清算路径（首轮，回复第 13–20 页；txt 行 499–810）",
+              "link": "/kb2024/874117-昂必立#问题-2-同业竞争——香港关联公司-obnchem-的委托经营与清算路径-首轮-回复第-13–20-页-txt-行-499–810"
+            },
+            {
+              "text": "问题 3：国资股东进出程序瑕疵与子公司代持（首轮，回复第 21–39 页；txt 行 811–1300）",
+              "link": "/kb2024/874117-昂必立#问题-3-国资股东进出程序瑕疵与子公司代持-首轮-回复第-21–39-页-txt-行-811–1300"
+            },
+            {
+              "text": "问题 7 与问题 9(1)：关联交易安顺立的公允性与资质齐备性追问（首轮，回复第 64–70、75–79 页；txt 行 2471–2663、2884–2989）",
+              "link": "/kb2024/874117-昂必立#问题-7-与问题-9-1-关联交易安顺立的公允性与资质齐备性追问-首轮-回复第-64–70、75–79-页-txt-行-2471–2663、2884–2989"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874117-昂必立#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874117-昂必立#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874118-华来科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "天津华来科技股份有限公司（874118·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874118-华来科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874118-华来科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874118-华来科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874118-华来科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（节录）：股份代持、股权变动与涉税（首轮，回复第 4–19 页；txt 行 89–960）",
+              "link": "/kb2024/874118-华来科技#问题1-节录-股份代持、股权变动与涉税-首轮-回复第-4–19-页-txt-行-89–960"
+            },
+            {
+              "text": "问题1（节录）：实际控制人变动——未成年继承人股权的监护代理转让（首轮，回复第 20–31 页；txt 行 900–1360）",
+              "link": "/kb2024/874118-华来科技#问题1-节录-实际控制人变动——未成年继承人股权的监护代理转让-首轮-回复第-20–31-页-txt-行-900–1360"
+            },
+            {
+              "text": "问题2：生产经营合法合规性——终端用户信息数据合规与租赁房屋权属（首轮，回复第 49–61 页；txt 行 2133–3810）",
+              "link": "/kb2024/874118-华来科技#问题2-生产经营合法合规性——终端用户信息数据合规与租赁房屋权属-首轮-回复第-49–61-页-txt-行-2133–3810"
+            },
+            {
+              "text": "问题6（节录）：小米入股型关联交易与合作模式（首轮，回复第 171–192 页；txt 行 8128–9170）",
+              "link": "/kb2024/874118-华来科技#问题6-节录-小米入股型关联交易与合作模式-首轮-回复第-171–192-页-txt-行-8128–9170"
+            },
+            {
+              "text": "问题7① ：科创天使国有股东的投资与平价退出（首轮，回复第 193–200 页；txt 行 9171–9420）",
+              "link": "/kb2024/874118-华来科技#问题71-科创天使国有股东的投资与平价退出-首轮-回复第-193–200-页-txt-行-9171–9420"
+            },
+            {
+              "text": "问题7④（节录）：个人信用卡、支付宝结算的规范（首轮，回复第 216–228 页前后；txt 行 9420 以后至文件尾部）",
+              "link": "/kb2024/874118-华来科技#问题74-节录-个人信用卡、支付宝结算的规范-首轮-回复第-216–228-页前后-txt-行-9420-以后至文件尾部"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874118-华来科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874118-华来科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874119-特味浓": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏特味浓食品股份有限公司（874119·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874119-特味浓"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874119-特味浓#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874119-特味浓#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874119-特味浓#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：合法规范经营——消防整改闭环、经销商登记被撤销与食品安全体系（首轮，回复第 4—17 页；txt 行 80—575）",
+              "link": "/kb2024/874119-特味浓#问题-1-合法规范经营——消防整改闭环、经销商登记被撤销与食品安全体系-首轮-回复第-4—17-页-txt-行-80—575"
+            },
+            {
+              "text": "其他事项 1：家族企业治理——100% 家族控股下的关联交易\"全体关联化\"审议与决策独立性（首轮，回复第 112—125 页；txt 行 4559—5106）",
+              "link": "/kb2024/874119-特味浓#其他事项-1-家族企业治理——100-家族控股下的关联交易-全体关联化-审议与决策独立性-首轮-回复第-112—125-页-txt-行-4559—5106"
+            },
+            {
+              "text": "其他事项 2：员工持股平台增资式激励——适格性、无特殊权益安排与公允价值（首轮，回复第 125—131 页；txt 行 5107—5560）",
+              "link": "/kb2024/874119-特味浓#其他事项-2-员工持股平台增资式激励——适格性、无特殊权益安排与公允价值-首轮-回复第-125—131-页-txt-行-5107—5560"
+            },
+            {
+              "text": "其他事项 3：高校教师独董合规与核心技术人员竞业核查（首轮，回复第 131—137 页；txt 行 5490—5637）",
+              "link": "/kb2024/874119-特味浓#其他事项-3-高校教师独董合规与核心技术人员竞业核查-首轮-回复第-131—137-页-txt-行-5490—5637"
+            },
+            {
+              "text": "其他事项 4：江南大学合作研发成果归属调整与技术独立性（首轮，回复第 137—140 页；txt 行 5638—5899）",
+              "link": "/kb2024/874119-特味浓#其他事项-4-江南大学合作研发成果归属调整与技术独立性-首轮-回复第-137—140-页-txt-行-5638—5899"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874119-特味浓#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874119-特味浓#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874120-康居人": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "合肥康居人医疗器械科技股份有限公司（874120·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874120-康居人"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874120-康居人#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874120-康居人#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874120-康居人#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题1：业务模式及合规性十四连问（首轮回复第 2—68 页前后；txt 行 46—3776）",
+              "link": "/kb2024/874120-康居人#首轮问题1-业务模式及合规性十四连问-首轮回复第-2—68-页前后-txt-行-46—3776"
+            },
+            {
+              "text": "首轮问题2+二轮关联方追问：关联收购、同业竞争与亲属代持网络清理（首轮回复第 69—105 页前后；txt 行 3777—4710；二轮 txt 行 668—1417）",
+              "link": "/kb2024/874120-康居人#首轮问题2-二轮关联方追问-关联收购、同业竞争与亲属代持网络清理-首轮回复第-69—105-页前后-txt-行-3777—4710-二轮-txt-行-668—1417"
+            },
+            {
+              "text": "二轮代持标准专项问（二轮回复合肥片区 txt 行 1827—2100）",
+              "link": "/kb2024/874120-康居人#二轮代持标准专项问-二轮回复合肥片区-txt-行-1827—2100"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874120-康居人#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874120-康居人#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874123-伊玛环境": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "宁波伊玛环境科技股份有限公司（874123·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874123-伊玛环境"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874123-伊玛环境#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874123-伊玛环境#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874123-伊玛环境#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题4：股权代持（第一轮，回复第60—63页；txt 行2289—2421）",
+              "link": "/kb2024/874123-伊玛环境#问题4-股权代持-第一轮-回复第60—63页-txt-行2289—2421"
+            },
+            {
+              "text": "问题5：监事任职合规性（原机关编外人员转任招投标总监/监事）（第一轮，回复第64—74页；txt 行2422—2873）",
+              "link": "/kb2024/874123-伊玛环境#问题5-监事任职合规性-原机关编外人员转任招投标总监-监事-第一轮-回复第64—74页-txt-行2422—2873"
+            },
+            {
+              "text": "问题6：业务资质（资质挂靠、向无资质供应商分包、资质续期）（第一轮，回复第75—88页；txt 行2874—3443）",
+              "link": "/kb2024/874123-伊玛环境#问题6-业务资质-资质挂靠、向无资质供应商分包、资质续期-第一轮-回复第75—88页-txt-行2874—3443"
+            },
+            {
+              "text": "问题7：合作研发成果归属与职务发明（混合型，全问详述法律部分）（第一轮，回复第89—116页；txt 行3444—4924）",
+              "link": "/kb2024/874123-伊玛环境#问题7-合作研发成果归属与职务发明-混合型-全问详述法律部分-第一轮-回复第89—116页-txt-行3444—4924"
+            },
+            {
+              "text": "问题8（1）—（4）：社保公积金、用工合规、股东人数穿透、区域股权市场挂牌（第一轮，回复第117—123页；txt 行4925—5218）",
+              "link": "/kb2024/874123-伊玛环境#问题8-1-—-4-社保公积金、用工合规、股东人数穿透、区域股权市场挂牌-第一轮-回复第117—123页-txt-行4925—5218"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874123-伊玛环境#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874123-伊玛环境#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874128-赛米垦拓": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "无锡赛米垦拓微电子股份有限公司（874128·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874128-赛米垦拓"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874128-赛米垦拓#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874128-赛米垦拓#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874128-赛米垦拓#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874128-赛米垦拓#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874128-赛米垦拓#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874129-科普达": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北科普达高分子材料股份有限公司（874129·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874129-科普达"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874129-科普达#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874129-科普达#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874129-科普达#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874129-科普达#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874129-科普达#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874140-安簧股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽安簧机械股份有限公司（874140·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874140-安簧股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874140-安簧股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874140-安簧股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874140-安簧股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——国企改制四项程序瑕疵与职工安置（首轮，回复第 1–16 页；txt 行 50–740）",
+              "link": "/kb2024/874140-安簧股份#问题1-关于历史沿革——国企改制四项程序瑕疵与职工安置-首轮-回复第-1–16-页-txt-行-50–740"
+            },
+            {
+              "text": "问题2：关于股东人数及股权代持——皖安咨询信托持股的还原（首轮，回复第 17–51 页；txt 行 743–2340）",
+              "link": "/kb2024/874140-安簧股份#问题2-关于股东人数及股权代持——皖安咨询信托持股的还原-首轮-回复第-17–51-页-txt-行-743–2340"
+            },
+            {
+              "text": "问题3：关于股权激励——安簧管理平台与未确认股份支付（首轮，回复第 52–67 页；txt 行 2349–3090）",
+              "link": "/kb2024/874140-安簧股份#问题3-关于股权激励——安簧管理平台与未确认股份支付-首轮-回复第-52–67-页-txt-行-2349–3090"
+            },
+            {
+              "text": "问题4：关于无产权房屋及消防情况（首轮，回复第 68–90 页前后；txt 行 3093–3450）",
+              "link": "/kb2024/874140-安簧股份#问题4-关于无产权房屋及消防情况-首轮-回复第-68–90-页前后-txt-行-3093–3450"
+            },
+            {
+              "text": "二轮问题1：关于股权代持及纠纷——272 人解除的逐笔追查（二轮，回复第 1–35 页；txt 行 37–1600）",
+              "link": "/kb2024/874140-安簧股份#二轮问题1-关于股权代持及纠纷——272-人解除的逐笔追查-二轮-回复第-1–35-页-txt-行-37–1600"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874140-安簧股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874140-安簧股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874144-同威信达": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "同威信达技术（江苏）股份有限公司（874144·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874144-同威信达"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874144-同威信达#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874144-同威信达#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874144-同威信达#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（节录）：关于关联交易——剥离售后工程服务与内控（首轮，回复第 3–21 页；txt 行 74–940）",
+              "link": "/kb2024/874144-同威信达#问题1-节录-关于关联交易——剥离售后工程服务与内控-首轮-回复第-3–21-页-txt-行-74–940"
+            },
+            {
+              "text": "问题4：关于期后事项——收购同方辐照 60% 股权（首轮，回复第 45–50 页；txt 行 1929–2145）",
+              "link": "/kb2024/874144-同威信达#问题4-关于期后事项——收购同方辐照-60-股权-首轮-回复第-45–50-页-txt-行-1929–2145"
+            },
+            {
+              "text": "问题5：关于股权激励——同核清控非闭环持股平台（首轮，回复第 51–58 页；txt 行 2147–2455）",
+              "link": "/kb2024/874144-同威信达#问题5-关于股权激励——同核清控非闭环持股平台-首轮-回复第-51–58-页-txt-行-2147–2455"
+            },
+            {
+              "text": "问题6（节录）：核心技术人员覃怀莉自清华大学离职再入职（首轮，回复第 59–68 页；txt 行 2457–2938）",
+              "link": "/kb2024/874144-同威信达#问题6-节录-核心技术人员覃怀莉自清华大学离职再入职-首轮-回复第-59–68-页-txt-行-2457–2938"
+            },
+            {
+              "text": "问题7：关于实际控制人及股东——无实控人认定、200 人穿透与公职人员持股（首轮，回复第 69–78 页；txt 行 2940–3395）",
+              "link": "/kb2024/874144-同威信达#问题7-关于实际控制人及股东——无实控人认定、200-人穿透与公职人员持股-首轮-回复第-69–78-页-txt-行-2940–3395"
+            },
+            {
+              "text": "问题8（节录）：关于子公司——控股子公司控制与少数股东关联关系核查（首轮，回复第 79–89 页；txt 行 3405–3860）",
+              "link": "/kb2024/874144-同威信达#问题8-节录-关于子公司——控股子公司控制与少数股东关联关系核查-首轮-回复第-79–89-页-txt-行-3405–3860"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874144-同威信达#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874144-同威信达#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874146-卓英社": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "青岛卓英社科技股份有限公司（874146·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874146-卓英社"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874146-卓英社#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874146-卓英社#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874146-卓英社#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于实际控制人认定（第一轮，回复第3—6页；txt 行 约180–230）",
+              "link": "/kb2024/874146-卓英社#问题1-关于实际控制人认定-第一轮-回复第3—6页-txt-行-约180–230"
+            },
+            {
+              "text": "问题2：关于历史沿革——韩资股东退出、对赌减资与转增个税（第一轮，回复第7—22页；txt 行231–992）",
+              "link": "/kb2024/874146-卓英社#问题2-关于历史沿革——韩资股东退出、对赌减资与转增个税-第一轮-回复第7—22页-txt-行231–992"
+            },
+            {
+              "text": "问题3：关于员工持股平台——嵌套架构的合规性（第一轮，回复第23—33页；txt 行993–1416）",
+              "link": "/kb2024/874146-卓英社#问题3-关于员工持股平台——嵌套架构的合规性-第一轮-回复第23—33页-txt-行993–1416"
+            },
+            {
+              "text": "问题4（节选）：劳务外包、生产许可与环评——用工与资质混合审查（第一轮，回复第34—84页；txt 行1417–2847）",
+              "link": "/kb2024/874146-卓英社#问题4-节选-劳务外包、生产许可与环评——用工与资质混合审查-第一轮-回复第34—84页-txt-行1417–2847"
+            },
+            {
+              "text": "问题8：财务规范性——无真实交易背景票据融资与资金占用（第一轮，回复第133—155页；txt 行5850–6379）",
+              "link": "/kb2024/874146-卓英社#问题8-财务规范性——无真实交易背景票据融资与资金占用-第一轮-回复第133—155页-txt-行5850–6379"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874146-卓英社#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874146-卓英社#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874149-同富股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江同富特美刻股份有限公司（874149·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874149-同富股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874149-同富股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874149-同富股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874149-同富股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2(1)：实控人认定——一致行动人不构成共同控制的论证与对赌义务主体（首轮，回复第 42–48 页；txt 行 1570–1700）",
+              "link": "/kb2024/874149-同富股份#问题2-1-实控人认定——一致行动人不构成共同控制的论证与对赌义务主体-首轮-回复第-42–48-页-txt-行-1570–1700"
+            },
+            {
+              "text": "问题2(2)(3)：员工股权激励——含实控人廖妍玲的授予、递补机制与公允价值（首轮，回复第 48–53 页；txt 行 1690–2030）",
+              "link": "/kb2024/874149-同富股份#问题2-2-3-员工股权激励——含实控人廖妍玲的授予、递补机制与公允价值-首轮-回复第-48–53-页-txt-行-1690–2030"
+            },
+            {
+              "text": "问题2(4)(6)：境外子公司 ODI 合规与收购金维克科技的资金出境（首轮，回复第 53–60 页；txt 行 2000–2260）",
+              "link": "/kb2024/874149-同富股份#问题2-4-6-境外子公司-odi-合规与收购金维克科技的资金出境-首轮-回复第-53–60-页-txt-行-2000–2260"
+            },
+            {
+              "text": "问题1（节录）：多业态业务资质、线上合规与投资监管协议（首轮，回复第 1–41 页；txt 行 64–1560）",
+              "link": "/kb2024/874149-同富股份#问题1-节录-多业态业务资质、线上合规与投资监管协议-首轮-回复第-1–41-页-txt-行-64–1560"
+            },
+            {
+              "text": "问题8(1)：家与树同业竞争专项（首轮，回复第 214–219 页；txt 行 8257–8500）",
+              "link": "/kb2024/874149-同富股份#问题8-1-家与树同业竞争专项-首轮-回复第-214–219-页-txt-行-8257–8500"
+            },
+            {
+              "text": "问题8(2)(3)：治理亲属图谱、独董兼职身份与继受取得专利（首轮，回复第 219–235 页；txt 行 8500—）",
+              "link": "/kb2024/874149-同富股份#问题8-2-3-治理亲属图谱、独董兼职身份与继受取得专利-首轮-回复第-219–235-页-txt-行-8500—"
+            },
+            {
+              "text": "问题8(4)：前次主板 IPO 撤回与媒体质疑核查（首轮，回复第 235–239 页；txt 行 9100–9420）",
+              "link": "/kb2024/874149-同富股份#问题8-4-前次主板-ipo-撤回与媒体质疑核查-首轮-回复第-235–239-页-txt-行-9100–9420"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874149-同富股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874149-同富股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874150-佛光发电": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "郑州佛光发电设备股份有限公司（874150·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874150-佛光发电"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874150-佛光发电#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874150-佛光发电#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874150-佛光发电#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题4：关于特殊投资条款——对赌清理与回购履约能力（首轮，回复第 83–95 页；txt 行 3540–4130）",
+              "link": "/kb2024/874150-佛光发电#问题4-关于特殊投资条款——对赌清理与回购履约能力-首轮-回复第-83–95-页-txt-行-3540–4130"
+            },
+            {
+              "text": "问题5：关于信息披露豁免——涉军信息脱密与国防科工局批复（首轮，回复第 95–100 页；txt 行 4128–4335）",
+              "link": "/kb2024/874150-佛光发电#问题5-关于信息披露豁免——涉军信息脱密与国防科工局批复-首轮-回复第-95–100-页-txt-行-4128–4335"
+            },
+            {
+              "text": "问题3：关于外协及劳务用工——劳务派遣超比例整改（首轮，回复第 70–82 页；txt 行 2893–3540）",
+              "link": "/kb2024/874150-佛光发电#问题3-关于外协及劳务用工——劳务派遣超比例整改-首轮-回复第-70–82-页-txt-行-2893–3540"
+            },
+            {
+              "text": "问题9.1：关于历史沿革——两起亲属股权代持的形成与解除（首轮，回复第 142–149 页；txt 行 6340–6540）",
+              "link": "/kb2024/874150-佛光发电#问题9-1-关于历史沿革——两起亲属股权代持的形成与解除-首轮-回复第-142–149-页-txt-行-6340–6540"
+            },
+            {
+              "text": "问题9.2：关于合作研发——高校共有专利的权利约定与技术独立性（首轮，回复第 149–152 页；txt 行 6538–6680）",
+              "link": "/kb2024/874150-佛光发电#问题9-2-关于合作研发——高校共有专利的权利约定与技术独立性-首轮-回复第-149–152-页-txt-行-6538–6680"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874150-佛光发电#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874150-佛光发电#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874158-天元重工": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "德阳天元重工股份有限公司（874158·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874158-天元重工"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874158-天元重工#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874158-天元重工#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874158-天元重工#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1 与二轮问题 2：安全生产事故、无证房产、招投标与转包分包（首轮回复第 3—57 页 txt 行 76—2494；二轮回复第 11—24 页 txt 行 405—1068）",
+              "link": "/kb2024/874158-天元重工#_1-首轮问题-1-与二轮问题-2-安全生产事故、无证房产、招投标与转包分包-首轮回复第-3—57-页-txt-行-76—2494-二轮回复第-11—24-页-txt-行-405—1068"
+            },
+            {
+              "text": "2. 首轮问题 2：历史沿革——实物出资瑕疵、国有股权批复、代持与私募基金股东适格性（回复第 58—81 页；txt 行 2495—3591）",
+              "link": "/kb2024/874158-天元重工#_2-首轮问题-2-历史沿革——实物出资瑕疵、国有股权批复、代持与私募基金股东适格性-回复第-58—81-页-txt-行-2495—3591"
+            },
+            {
+              "text": "3. 二轮问题 1：代持解除的真实性与资金流水核查（二轮回复第 4—11 页；txt 行 72—404）",
+              "link": "/kb2024/874158-天元重工#_3-二轮问题-1-代持解除的真实性与资金流水核查-二轮回复第-4—11-页-txt-行-72—404"
+            },
+            {
+              "text": "4. 首轮问题 4 与二轮问题 4：特殊投资条款与实控人控制的创投平台（首轮回复第 111—117 页 txt 行 4730—5024；二轮回复第 27—33 页 txt 行 1181—1462）",
+              "link": "/kb2024/874158-天元重工#_4-首轮问题-4-与二轮问题-4-特殊投资条款与实控人控制的创投平台-首轮回复第-111—117-页-txt-行-4730—5024-二轮回复第-27—33-页-txt-行-1181—1462"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874158-天元重工#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874158-天元重工#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874159-邦特科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江阴邦特新材料科技股份有限公司（874159·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874159-邦特科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874159-邦特科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874159-邦特科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874159-邦特科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题五：特殊投资条款的解除与附效力恢复条款（回复第 120—133 页；txt 行 5339—5946）",
+              "link": "/kb2024/874159-邦特科技#_1-首轮问题五-特殊投资条款的解除与附效力恢复条款-回复第-120—133-页-txt-行-5339—5946"
+            },
+            {
+              "text": "2. 首轮问题四(1)(4)(6)：收购实控人企业的程序、子公司控制与邦特锦宏注销（回复第 95—119 页；txt 行 4454—5338）",
+              "link": "/kb2024/874159-邦特科技#_2-首轮问题四-1-4-6-收购实控人企业的程序、子公司控制与邦特锦宏注销-回复第-95—119-页-txt-行-4454—5338"
+            },
+            {
+              "text": "3. 首轮问题八：3,735 平方米无证房产与集体土地租赁（回复第 150—155 页；txt 行 6586—6830）",
+              "link": "/kb2024/874159-邦特科技#_3-首轮问题八-3-735-平方米无证房产与集体土地租赁-回复第-150—155-页-txt-行-6586—6830"
+            },
+            {
+              "text": "4. 首轮问题六与问题七：行业分类、环保合规与危化品资质（回复第 134—149 页；txt 行 5949—6585）",
+              "link": "/kb2024/874159-邦特科技#_4-首轮问题六与问题七-行业分类、环保合规与危化品资质-回复第-134—149-页-txt-行-5949—6585"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874159-邦特科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874159-邦特科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874160-东交智控": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏东交智控科技集团股份有限公司（874160·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874160-东交智控"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874160-东交智控#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874160-东交智控#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874160-东交智控#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：周伍阳\"预留股权\"代持、0 元受让与程序瑕疵追认（回复第 3—27 页；txt 行 70—1114）",
+              "link": "/kb2024/874160-东交智控#_1-首轮问题-1-周伍阳-预留股权-代持、0-元受让与程序瑕疵追认-回复第-3—27-页-txt-行-70—1114"
+            },
+            {
+              "text": "2. 首轮问题 2：联东 U 谷\"纳税额达标后办证\"模式的无证房产与租赁瑕疵（回复第 28—36 页；txt 行 1115—1474）",
+              "link": "/kb2024/874160-东交智控#_2-首轮问题-2-联东-u-谷-纳税额达标后办证-模式的无证房产与租赁瑕疵-回复第-28—36-页-txt-行-1115—1474"
+            },
+            {
+              "text": "3. 首轮问题 3：实控人王捷与江苏港口的现行有效回购权（回复第 37—43 页；txt 行 1475—1796）",
+              "link": "/kb2024/874160-东交智控#_3-首轮问题-3-实控人王捷与江苏港口的现行有效回购权-回复第-37—43-页-txt-行-1475—1796"
+            },
+            {
+              "text": "4. 首轮问题 10(1)(5)：二次申报全链条核查与 FESCO 代缴社保（回复第 172—194 页；txt 行 7414—8415）",
+              "link": "/kb2024/874160-东交智控#_4-首轮问题-10-1-5-二次申报全链条核查与-fesco-代缴社保-回复第-172—194-页-txt-行-7414—8415"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874160-东交智控#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874160-东交智控#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874169-高飞股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "洛阳高飞桥隧机械股份有限公司（874169·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874169-高飞股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874169-高飞股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874169-高飞股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874169-高飞股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题 2：集体建设用地上的无证厂房租赁——拆除风险、流转手续与混同经营排查（首轮，回复第 35—43 页；txt 行 1524—1829）",
+              "link": "/kb2024/874169-高飞股份#一轮问题-2-集体建设用地上的无证厂房租赁——拆除风险、流转手续与混同经营排查-首轮-回复第-35—43-页-txt-行-1524—1829"
+            },
+            {
+              "text": "一轮问题 3：第一大股东（38.44%）为何不是实控人——创始人黄高飞的绝对表决权设计（首轮，回复第 43—50 页；txt 行 1830—2057）",
+              "link": "/kb2024/874169-高飞股份#一轮问题-3-第一大股东-38-44-为何不是实控人——创始人黄高飞的绝对表决权设计-首轮-回复第-43—50-页-txt-行-1830—2057"
+            },
+            {
+              "text": "一轮问题 4：认缴资本八年未实缴的正当性重构与营运资金来源（首轮，回复第 50—54 页；txt 行 2058—2360）",
+              "link": "/kb2024/874169-高飞股份#一轮问题-4-认缴资本八年未实缴的正当性重构与营运资金来源-首轮-回复第-50—54-页-txt-行-2058—2360"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874169-高飞股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874169-高飞股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874170-金凤凰": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江金凤凰电力科技股份有限公司（874170·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874170-金凤凰"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874170-金凤凰#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874170-金凤凰#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874170-金凤凰#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于独立性——关联交易、资金占用清理与同业竞争整改（首轮，回复第 2–35 页；txt 行 62–1460）",
+              "link": "/kb2024/874170-金凤凰#问题1-关于独立性——关联交易、资金占用清理与同业竞争整改-首轮-回复第-2–35-页-txt-行-62–1460"
+            },
+            {
+              "text": "问题2：关于历史沿革——减资退出与科成电气业务资产人员转移（首轮，回复第 36–45 页；txt 行 1462–1900）",
+              "link": "/kb2024/874170-金凤凰#问题2-关于历史沿革——减资退出与科成电气业务资产人员转移-首轮-回复第-36–45-页-txt-行-1462–1900"
+            },
+            {
+              "text": "问题7：关于财务规范性——个人卡与不规范使用票据（首轮，回复第 90–96 页；txt 行 3702–3938）",
+              "link": "/kb2024/874170-金凤凰#问题7-关于财务规范性——个人卡与不规范使用票据-首轮-回复第-90–96-页-txt-行-3702–3938"
+            },
+            {
+              "text": "问题9（节录）：招投标合规、环保排污登记、合作研发归属与股权转让税收（首轮，回复第 105–129 页；txt 行 4837–5550）",
+              "link": "/kb2024/874170-金凤凰#问题9-节录-招投标合规、环保排污登记、合作研发归属与股权转让税收-首轮-回复第-105–129-页-txt-行-4837–5550"
+            },
+            {
+              "text": "问题8：关于公司治理的有效性和规范性（首轮，回复第 97–104 页；txt 行 3940–4290）",
+              "link": "/kb2024/874170-金凤凰#问题8-关于公司治理的有效性和规范性-首轮-回复第-97–104-页-txt-行-3940–4290"
+            },
+            {
+              "text": "二轮问题1：关于独立性追问——整合计划、《公司法》147/148 条与开关柜同业竞争收口（二轮，回复第 2–38 页；txt 行 28–1610）",
+              "link": "/kb2024/874170-金凤凰#二轮问题1-关于独立性追问——整合计划、《公司法》147-148-条与开关柜同业竞争收口-二轮-回复第-2–38-页-txt-行-28–1610"
+            },
+            {
+              "text": "二轮问题3(3)：家族信托安排的披露、解除与 200 人复核（二轮，回复第 59–65 页；txt 行 2560–2900）",
+              "link": "/kb2024/874170-金凤凰#二轮问题3-3-家族信托安排的披露、解除与-200-人复核-二轮-回复第-59–65-页-txt-行-2560–2900"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874170-金凤凰#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874170-金凤凰#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874171-伟荣股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "衢州伟荣药化股份有限公司（874171·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874171-伟荣股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874171-伟荣股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874171-伟荣股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874171-伟荣股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题一：业务合规性——资质齐备性、危险品经营链条与消防处罚辨析（首轮，回复第 3–30 页；txt 行 46–1313）",
+              "link": "/kb2024/874171-伟荣股份#问题一-业务合规性——资质齐备性、危险品经营链条与消防处罚辨析-首轮-回复第-3–30-页-txt-行-46–1313"
+            },
+            {
+              "text": "问题六（一）1：集体所有制企业改制与买断经营的合法性（首轮，回复第 87–91 页；txt 行 3809–3985 区间）",
+              "link": "/kb2024/874171-伟荣股份#问题六-一-1-集体所有制企业改制与买断经营的合法性-首轮-回复第-87–91-页-txt-行-3809–3985-区间"
+            },
+            {
+              "text": "问题六（一）2：土地使用权房屋重复出资及减资整改（首轮，回复第 91–94 页；txt 行 4010–4090、4240 等区间）",
+              "link": "/kb2024/874171-伟荣股份#问题六-一-2-土地使用权房屋重复出资及减资整改-首轮-回复第-91–94-页-txt-行-4010–4090、4240-等区间"
+            },
+            {
+              "text": "问题六（一）3：员工持股平台英挺企管（首轮，回复第 94–96 页；txt 行 4200 前后区间）",
+              "link": "/kb2024/874171-伟荣股份#问题六-一-3-员工持股平台英挺企管-首轮-回复第-94–96-页-txt-行-4200-前后区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874171-伟荣股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874171-伟荣股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874180-泰诚信": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京泰诚信测控技术股份有限公司（874180·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874180-泰诚信"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874180-泰诚信#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874180-泰诚信#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874180-泰诚信#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——非专利技术出资、未验资设立与摘牌后股份转让（第一轮，txt行60—505）",
+              "link": "/kb2024/874180-泰诚信#问题1-关于历史沿革——非专利技术出资、未验资设立与摘牌后股份转让-第一轮-txt行60—505"
+            },
+            {
+              "text": "问题6：关于二次申报——信披差异、摘牌托管与未披露代持还原（第一轮，txt行4635—5054）",
+              "link": "/kb2024/874180-泰诚信#问题6-关于二次申报——信披差异、摘牌托管与未披露代持还原-第一轮-txt行4635—5054"
+            },
+            {
+              "text": "问题7(5)：招投标合法合规性与商业贿赂防范（第一轮，txt行6312—6445）",
+              "link": "/kb2024/874180-泰诚信#问题7-5-招投标合法合规性与商业贿赂防范-第一轮-txt行6312—6445"
+            },
+            {
+              "text": "问题7(6)：配偶李敏、胞弟陶勇未认定共同实控人（第一轮，txt行6446—6712）",
+              "link": "/kb2024/874180-泰诚信#问题7-6-配偶李敏、胞弟陶勇未认定共同实控人-第一轮-txt行6446—6712"
+            },
+            {
+              "text": "问题7(7)：董监高任职资格与前任职单位涉密/侵权争议（第一轮，txt行6713—6813）",
+              "link": "/kb2024/874180-泰诚信#问题7-7-董监高任职资格与前任职单位涉密-侵权争议-第一轮-txt行6713—6813"
+            },
+            {
+              "text": "问题7(8)：股东大会就挂牌事项的审议程序（第一轮，txt行6814—6938）",
+              "link": "/kb2024/874180-泰诚信#问题7-8-股东大会就挂牌事项的审议程序-第一轮-txt行6814—6938"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874180-泰诚信#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874180-泰诚信#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874181-睿信电器": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北睿信汽车电器股份有限公司（874181·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874181-睿信电器"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874181-睿信电器#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874181-睿信电器#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874181-睿信电器#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 2(1)(2)：两次股权代持（含法院调解书还原）与出资备注瑕疵（回复第 17—22 页；txt 行 621—845）",
+              "link": "/kb2024/874181-睿信电器#_1-首轮问题-2-1-2-两次股权代持-含法院调解书还原-与出资备注瑕疵-回复第-17—22-页-txt-行-621—845"
+            },
+            {
+              "text": "2. 首轮问题 2(3) 与 6(1)：博得汽车—新博得汽车—睿信电器承继关系及子公司普得瑞代垫出资代持（回复第 22—50 页 txt 行 845—1490；第 141—149 页 txt 行 6004—6380）",
+              "link": "/kb2024/874181-睿信电器#_2-首轮问题-2-3-与-6-1-博得汽车—新博得汽车—睿信电器承继关系及子公司普得瑞代垫出资代持-回复第-22—50-页-txt-行-845—1490-第-141—149-页-txt-行-6004—6380"
+            },
+            {
+              "text": "3. 首轮问题 6(2)：实控人公务员任职背景与房地产资金隔离（回复第 150—152 页；txt 行 6382—6520）",
+              "link": "/kb2024/874181-睿信电器#_3-首轮问题-6-2-实控人公务员任职背景与房地产资金隔离-回复第-150—152-页-txt-行-6382—6520"
+            },
+            {
+              "text": "4. 首轮问题 1(1)(4)：环保批复验收与继受取得知识产权（回复第 3—16 页；txt 行 60—620）",
+              "link": "/kb2024/874181-睿信电器#_4-首轮问题-1-1-4-环保批复验收与继受取得知识产权-回复第-3—16-页-txt-行-60—620"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874181-睿信电器#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874181-睿信电器#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874184-瑞林精科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽瑞林精科股份有限公司（874184·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874184-瑞林精科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874184-瑞林精科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874184-瑞林精科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874184-瑞林精科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题一：关于诉讼和仲裁（第一轮，回复第 4—13 页；txt 行95—445）",
+              "link": "/kb2024/874184-瑞林精科#问题一-关于诉讼和仲裁-第一轮-回复第-4—13-页-txt-行95—445"
+            },
+            {
+              "text": "问题二：关于历史沿革及土地房产（第一轮，回复第 14—41 页；txt 行448—1778）",
+              "link": "/kb2024/874184-瑞林精科#问题二-关于历史沿革及土地房产-第一轮-回复第-14—41-页-txt-行448—1778"
+            },
+            {
+              "text": "问题三：关于股权激励（第一轮，回复第 42—52 页；txt 行1780—2190）",
+              "link": "/kb2024/874184-瑞林精科#问题三-关于股权激励-第一轮-回复第-42—52-页-txt-行1780—2190"
+            },
+            {
+              "text": "问题四（子问题）：关于外协的关联关系、依赖与资质（第一轮，回复第 53—61 页；txt 行2194—2560）",
+              "link": "/kb2024/874184-瑞林精科#问题四-子问题-关于外协的关联关系、依赖与资质-第一轮-回复第-53—61-页-txt-行2194—2560"
+            },
+            {
+              "text": "问题九（节选子问题）：消防手续等披露事项综合对照（第一轮，回复第 145 页起；txt 行6273—8320）",
+              "link": "/kb2024/874184-瑞林精科#问题九-节选子问题-消防手续等披露事项综合对照-第一轮-回复第-145-页起-txt-行6273—8320"
+            },
+            {
+              "text": "问题一（第二轮）：明股实债《三方协议》履行、清理与 2011 年出资瑕疵补足（第二轮，回复第 4—12 页；txt 行79—430）",
+              "link": "/kb2024/874184-瑞林精科#问题一-第二轮-明股实债《三方协议》履行、清理与-2011-年出资瑕疵补足-第二轮-回复第-4—12-页-txt-行79—430"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874184-瑞林精科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874184-瑞林精科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874191-华益泰康": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "华益泰康药业股份有限公司（874191·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874191-华益泰康"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874191-华益泰康#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874191-华益泰康#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874191-华益泰康#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：历史沿革——国资程序、外资股东与五层代持清理（回复第 3—39 页；txt 行 57—1864）",
+              "link": "/kb2024/874191-华益泰康#_1-首轮问题-1-历史沿革——国资程序、外资股东与五层代持清理-回复第-3—39-页-txt-行-57—1864"
+            },
+            {
+              "text": "2. 首轮问题 2 与二轮问题 1：控股股东/实控人认定——第一大股东高于实控人表决权的认定路径（首轮回复第 40—65 页 txt 行 1865—2983；二轮回复第 3—12 页 txt 行 52—440）",
+              "link": "/kb2024/874191-华益泰康#_2-首轮问题-2-与二轮问题-1-控股股东-实控人认定——第一大股东高于实控人表决权的认定路径-首轮回复第-40—65-页-txt-行-1865—2983-二轮回复第-3—12-页-txt-行-52—440"
+            },
+            {
+              "text": "3. 首轮问题 4 与二轮问题 2：特殊投资条款清理与现行有效回购条款（首轮回复第 95—112 页 txt 行 4377—5060；二轮回复第 13—17 页 txt 行 441—658）",
+              "link": "/kb2024/874191-华益泰康#_3-首轮问题-4-与二轮问题-2-特殊投资条款清理与现行有效回购条款-首轮回复第-95—112-页-txt-行-4377—5060-二轮回复第-13—17-页-txt-行-441—658"
+            },
+            {
+              "text": "4. 首轮问题 3(5)(7)(8)：商业贿赂防范、第三方代缴社保公积金与集体土地租赁备案（回复第 87—94 页；txt 行 3896—4375）",
+              "link": "/kb2024/874191-华益泰康#_4-首轮问题-3-5-7-8-商业贿赂防范、第三方代缴社保公积金与集体土地租赁备案-回复第-87—94-页-txt-行-3896—4375"
+            },
+            {
+              "text": "5. 首轮问题 8(2)：不动产、专利及机器设备抵押质押（回复第 181—184 页；txt 行 8074—8209）",
+              "link": "/kb2024/874191-华益泰康#_5-首轮问题-8-2-不动产、专利及机器设备抵押质押-回复第-181—184-页-txt-行-8074—8209"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874191-华益泰康#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874191-华益泰康#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874200-广泰真空": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "沈阳广泰真空科技股份有限公司（874200·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874200-广泰真空"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874200-广泰真空#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874200-广泰真空#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874200-广泰真空#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1（前半）：历次股权变动资金来源、王吉刚借款出资与转增股本个税（回复第 3–24 页；txt 行 50–478）",
+              "link": "/kb2024/874200-广泰真空#_1-首轮问题-1-前半-历次股权变动资金来源、王吉刚借款出资与转增股本个税-回复第-3–24-页-txt-行-50–478"
+            },
+            {
+              "text": "2. 首轮问题 1（后半）：中信证投《股份回购协议》解除与券商直投利益冲突审查（回复第 21–26 页；txt 行 309–478）",
+              "link": "/kb2024/874200-广泰真空#_2-首轮问题-1-后半-中信证投《股份回购协议》解除与券商直投利益冲突审查-回复第-21–26-页-txt-行-309–478"
+            },
+            {
+              "text": "3. 首轮问题 2：广泰设备历史代持、子公司注销与博纳科代持（回复第 27–39 页；txt 行 1038–1572）",
+              "link": "/kb2024/874200-广泰真空#_3-首轮问题-2-广泰设备历史代持、子公司注销与博纳科代持-回复第-27–39-页-txt-行-1038–1572"
+            },
+            {
+              "text": "4. 首轮问题 3(2)(3)(4)：受让专利、竞业禁止与职务发明、沈阳恒进专利侵权诉讼（回复第 48–55 页；txt 行 2010–2341）",
+              "link": "/kb2024/874200-广泰真空#_4-首轮问题-3-2-3-4-受让专利、竞业禁止与职务发明、沈阳恒进专利侵权诉讼-回复第-48–55-页-txt-行-2010–2341"
+            },
+            {
+              "text": "5. 首轮问题 4：实控人委托换汇的外汇合规、超备案产能与未验收先投用（回复第 56–81 页；txt 行 2342–3422）",
+              "link": "/kb2024/874200-广泰真空#_5-首轮问题-4-实控人委托换汇的外汇合规、超备案产能与未验收先投用-回复第-56–81-页-txt-行-2342–3422"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874200-广泰真空#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874200-广泰真空#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874203-天华机器": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳天华机器设备股份有限公司（874203·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874203-天华机器"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874203-天华机器#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874203-天华机器#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874203-天华机器#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：与东莞宇宙的知识产权纠纷、继受取得专利与合作研发（首轮回复第 5–37 页；txt 行 187–1795）",
+              "link": "/kb2024/874203-天华机器#_1-首轮问题-1-与东莞宇宙的知识产权纠纷、继受取得专利与合作研发-首轮回复第-5–37-页-txt-行-187–1795"
+            },
+            {
+              "text": "2. 首轮问题 2 与二轮问题 2：朱东增资特殊投资条款及代持专项核查（首轮回复第 38–47 页、txt 行 1796–2383；二轮回复第 58–61 页、txt 行 2755–2924）",
+              "link": "/kb2024/874203-天华机器#_2-首轮问题-2-与二轮问题-2-朱东增资特殊投资条款及代持专项核查-首轮回复第-38–47-页、txt-行-1796–2383-二轮回复第-58–61-页、txt-行-2755–2924"
+            },
+            {
+              "text": "3. 首轮问题 10 与问题 11：员工股权激励（含预留份额）与股权代持解除（首轮回复第 267–303 页、txt 行 12794–14557；第 286–304 页、txt 行 13670–14557）",
+              "link": "/kb2024/874203-天华机器#_3-首轮问题-10-与问题-11-员工股权激励-含预留份额-与股权代持解除-首轮回复第-267–303-页、txt-行-12794–14557-第-286–304-页、txt-行-13670–14557"
+            },
+            {
+              "text": "4. 首轮问题 12(2)(3) 与二轮问题 4(1)：经营合规（消防/资质/无证房产）、同业竞争清理与环境验收补办（首轮回复第 305–357 页、txt 行 14558 起；二轮回复第 66–77 页、txt 行 3146 起）",
+              "link": "/kb2024/874203-天华机器#_4-首轮问题-12-2-3-与二轮问题-4-1-经营合规-消防-资质-无证房产-、同业竞争清理与环境验收补办-首轮回复第-305–357-页、txt-行-14558-起-二轮回复第-66–77-页、txt-行-3146-起"
+            },
+            {
+              "text": "5. 首轮问题 9：香港天华机器 ODI 备案与子公司注销（首轮回复第 254–266 页；txt 行 12183–12793）",
+              "link": "/kb2024/874203-天华机器#_5-首轮问题-9-香港天华机器-odi-备案与子公司注销-首轮回复第-254–266-页-txt-行-12183–12793"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874203-天华机器#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874203-天华机器#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874209-赛柯瑞思": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "陕西赛柯瑞思生态建材股份有限公司（874209·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874209-赛柯瑞思"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874209-赛柯瑞思#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874209-赛柯瑞思#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874209-赛柯瑞思#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "（一）国资背景下的整体变更与控股股东行政处罚（法律意见书第 12–14、96–97 页）",
+              "link": "/kb2024/874209-赛柯瑞思#一-国资背景下的整体变更与控股股东行政处罚-法律意见书第-12–14、96–97-页"
+            },
+            {
+              "text": "（二）劳动用工与社会保险（法律意见书十八，第 88–90 页）",
+              "link": "/kb2024/874209-赛柯瑞思#二-劳动用工与社会保险-法律意见书十八-第-88–90-页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874209-赛柯瑞思#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874209-赛柯瑞思#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874215-商城展览": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "义乌中国小商品城展览股份有限公司（874215·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874215-商城展览"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874215-商城展览#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874215-商城展览#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874215-商城展览#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（节录）：独立性——上市公司子公司挂牌、关联交易与同业竞争核查范围（首轮，回复第 2–46 页；txt 行 60–1766）",
+              "link": "/kb2024/874215-商城展览#问题1-节录-独立性——上市公司子公司挂牌、关联交易与同业竞争核查范围-首轮-回复第-2–46-页-txt-行-60–1766"
+            },
+            {
+              "text": "问题2（节录）：业务模式及合规性——会展审批、线上平台数据合规、招投标与消防（首轮，回复第 45–86 页；txt 行 1768–3640）",
+              "link": "/kb2024/874215-商城展览#问题2-节录-业务模式及合规性——会展审批、线上平台数据合规、招投标与消防-首轮-回复第-45–86-页-txt-行-1768–3640"
+            },
+            {
+              "text": "其他问题一：国有股权变动的程序合规与瑕疵补正（首轮，回复第 139–145 页；txt 行 5723–6040）",
+              "link": "/kb2024/874215-商城展览#其他问题一-国有股权变动的程序合规与瑕疵补正-首轮-回复第-139–145-页-txt-行-5723–6040"
+            },
+            {
+              "text": "其他问题二（节录）：股东限售数量计算的披露依据（首轮，回复第 146–147 页；txt 行 6044–6090）",
+              "link": "/kb2024/874215-商城展览#其他问题二-节录-股东限售数量计算的披露依据-首轮-回复第-146–147-页-txt-行-6044–6090"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874215-商城展览#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874215-商城展览#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874216-伯虎股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江浦江伯虎链条股份有限公司（874216·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874216-伯虎股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874216-伯虎股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874216-伯虎股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874216-伯虎股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：对外担保代偿与连带保证责任的持续暴露（首轮，回复第 1–14 页；txt 行 30–676）",
+              "link": "/kb2024/874216-伯虎股份#问题-1-对外担保代偿与连带保证责任的持续暴露-首轮-回复第-1–14-页-txt-行-30–676"
+            },
+            {
+              "text": "问题 2：无证建筑、消防备案缺失与土地抵押（首轮，回复第 14–26 页；txt 行 678–1346）",
+              "link": "/kb2024/874216-伯虎股份#问题-2-无证建筑、消防备案缺失与土地抵押-首轮-回复第-14–26-页-txt-行-678–1346"
+            },
+            {
+              "text": "问题 3：历史沿革四重瑕疵的组合化解（首轮，回复第 27–41 页；txt 行 1348–2066）",
+              "link": "/kb2024/874216-伯虎股份#问题-3-历史沿革四重瑕疵的组合化解-首轮-回复第-27–41-页-txt-行-1348–2066"
+            },
+            {
+              "text": "问题 4 与二轮问题 2：资质合规与实控人关联企业注销清理（首轮回复第 42–56 页 txt 行 2068–2862；二轮回复第 15–22 页 txt 行 755 起）",
+              "link": "/kb2024/874216-伯虎股份#问题-4-与二轮问题-2-资质合规与实控人关联企业注销清理-首轮回复第-42–56-页-txt-行-2068–2862-二轮回复第-15–22-页-txt-行-755-起"
+            },
+            {
+              "text": "问题 5（首轮）：伯立合伙员工股权激励的全要素核查（回复第 74–88 页；txt 行 2864 起）",
+              "link": "/kb2024/874216-伯虎股份#问题-5-首轮-伯立合伙员工股权激励的全要素核查-回复第-74–88-页-txt-行-2864-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874216-伯虎股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874216-伯虎股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874217-锐牛股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "锐牛股份有限公司（874217·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874217-锐牛股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874217-锐牛股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874217-锐牛股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874217-锐牛股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——同控收购、债权出资与 PSP 虚拟股权激励（第一轮，回复第3—22页；txt 行52–819）",
+              "link": "/kb2024/874217-锐牛股份#问题1-关于历史沿革——同控收购、债权出资与-psp-虚拟股权激励-第一轮-回复第3—22页-txt-行52–819"
+            },
+            {
+              "text": "问题2：公司业务——资质、商标继受、域名与数据合规（第一轮，回复第23—51页；txt 行820–1864）",
+              "link": "/kb2024/874217-锐牛股份#问题2-公司业务——资质、商标继受、域名与数据合规-第一轮-回复第23—51页-txt-行820–1864"
+            },
+            {
+              "text": "问题8（节选）：重要子公司运作、子公司分红与实际控制人认定（第一轮，回复第209–240页；txt 行8694 起）",
+              "link": "/kb2024/874217-锐牛股份#问题8-节选-重要子公司运作、子公司分红与实际控制人认定-第一轮-回复第209–240页-txt-行8694-起"
+            },
+            {
+              "text": "问题3：生产经营及环保节能（第一轮，回复第41–53页区间；txt 行1865–3000）",
+              "link": "/kb2024/874217-锐牛股份#问题3-生产经营及环保节能-第一轮-回复第41–53页区间-txt-行1865–3000"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874217-锐牛股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874217-锐牛股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874220-兴汉网际": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京兴汉网际股份有限公司（874220·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874220-兴汉网际"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874220-兴汉网际#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874220-兴汉网际#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874220-兴汉网际#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874220-兴汉网际#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874220-兴汉网际#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874223-地拓精科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "大连地拓精密科技股份有限公司（874223·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874223-地拓精科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874223-地拓精科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874223-地拓精科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874223-地拓精科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：申报主体切换的股权变动、历史母公司地拓重工合规性与代持排查（首轮回复第 4–35 页；txt 行 68–1421）",
+              "link": "/kb2024/874223-地拓精科#_1-首轮问题-1-申报主体切换的股权变动、历史母公司地拓重工合规性与代持排查-首轮回复第-4–35-页-txt-行-68–1421"
+            },
+            {
+              "text": "2. 首轮问题 2：共同控股股东认定与实控人间接持股（首轮回复第 36–42 页；txt 行 1422–1713）",
+              "link": "/kb2024/874223-地拓精科#_2-首轮问题-2-共同控股股东认定与实控人间接持股-首轮回复第-36–42-页-txt-行-1422–1713"
+            },
+            {
+              "text": "3. 首轮问题 3：劳务派遣超比例、外协与资质未覆盖报告期（首轮回复第 43–57 页；txt 行 1714–2383）",
+              "link": "/kb2024/874223-地拓精科#_3-首轮问题-3-劳务派遣超比例、外协与资质未覆盖报告期-首轮回复第-43–57-页-txt-行-1714–2383"
+            },
+            {
+              "text": "4. 首轮问题 4(9)(10)(11) 与二轮问题 3：关联资金拆借、资金占用及披露补正（首轮回复第 83–95 页、txt 行 3412–3816；二轮回复第 40–47 页、txt 行 1459 起）",
+              "link": "/kb2024/874223-地拓精科#_4-首轮问题-4-9-10-11-与二轮问题-3-关联资金拆借、资金占用及披露补正-首轮回复第-83–95-页、txt-行-3412–3816-二轮回复第-40–47-页、txt-行-1459-起"
+            },
+            {
+              "text": "5. 首轮问题 7(1)(2)：核心技术人员竞业限制与合作研发、受让专利（首轮回复第 171–178 页；txt 行 7110–7600）",
+              "link": "/kb2024/874223-地拓精科#_5-首轮问题-7-1-2-核心技术人员竞业限制与合作研发、受让专利-首轮回复第-171–178-页-txt-行-7110–7600"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874223-地拓精科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874223-地拓精科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874228-银河电力": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "银河电力集团股份有限公司（874228·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874228-银河电力"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874228-银河电力#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874228-银河电力#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874228-银河电力#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：业务合法合规——资质、实习生用工、招投标与代理商、经营异常名录（首轮回复第 3–27 页；txt 行 69–1137）",
+              "link": "/kb2024/874228-银河电力#_1-首轮问题-1-业务合法合规——资质、实习生用工、招投标与代理商、经营异常名录-首轮回复第-3–27-页-txt-行-69–1137"
+            },
+            {
+              "text": "2. 首轮问题 2：发起设立与股份托管、设立时代持与员工持股计划（首轮回复第 28–40 页；txt 行 1138–1765）",
+              "link": "/kb2024/874228-银河电力#_2-首轮问题-2-发起设立与股份托管、设立时代持与员工持股计划-首轮回复第-28–40-页-txt-行-1138–1765"
+            },
+            {
+              "text": "3. 首轮问题 3(1)(2)：境外子公司共同投资与 ODI 备案程序（首轮回复第 41–57 页；txt 行 1766–2629）",
+              "link": "/kb2024/874228-银河电力#_3-首轮问题-3-1-2-境外子公司共同投资与-odi-备案程序-首轮回复第-41–57-页-txt-行-1766–2629"
+            },
+            {
+              "text": "4. 首轮问题 10.1：思达仪表诉讼与专利、竞业保密核查（首轮回复第 221–230 页；txt 行 9667–10284）",
+              "link": "/kb2024/874228-银河电力#_4-首轮问题-10-1-思达仪表诉讼与专利、竞业保密核查-首轮回复第-221–230-页-txt-行-9667–10284"
+            },
+            {
+              "text": "5. 首轮问题 10.2：实控人创银系企业同业竞争（首轮回复第 231–235 页；txt 行 10285–10493）",
+              "link": "/kb2024/874228-银河电力#_5-首轮问题-10-2-实控人创银系企业同业竞争-首轮回复第-231–235-页-txt-行-10285–10493"
+            },
+            {
+              "text": "6. 首轮问题 10.3 与二轮问题 4：三次 IPO 申报历史与非洲银河 ODI 备案整改（首轮回复第 236–245 页、txt 行 10494–11009；二轮回复第 48–53 页、txt 行 1932–2176）",
+              "link": "/kb2024/874228-银河电力#_6-首轮问题-10-3-与二轮问题-4-三次-ipo-申报历史与非洲银河-odi-备案整改-首轮回复第-236–245-页、txt-行-10494–11009-二轮回复第-48–53-页、txt-行-1932–2176"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874228-银河电力#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874228-银河电力#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874234-旭泉电机": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏旭泉电机股份有限公司（874234·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874234-旭泉电机"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874234-旭泉电机#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874234-旭泉电机#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874234-旭泉电机#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——家族交叉退出、鼎智同源与日本外资嵌套（第一轮，回复第 2—13 页；txt 行60—607）",
+              "link": "/kb2024/874234-旭泉电机#问题1-关于历史沿革——家族交叉退出、鼎智同源与日本外资嵌套-第一轮-回复第-2—13-页-txt-行60—607"
+            },
+            {
+              "text": "问题2：关于业务合法合规——安全责任事故与无证厂房（第一轮，回复第 14—21 页；txt 行608—936）",
+              "link": "/kb2024/874234-旭泉电机#问题2-关于业务合法合规——安全责任事故与无证厂房-第一轮-回复第-14—21-页-txt-行608—936"
+            },
+            {
+              "text": "问题3：关于关联交易——对北交所客户兼股东鼎智科技的深挖（第一轮，回复第 22—44 页；txt 行937—1389）",
+              "link": "/kb2024/874234-旭泉电机#问题3-关于关联交易——对北交所客户兼股东鼎智科技的深挖-第一轮-回复第-22—44-页-txt-行937—1389"
+            },
+            {
+              "text": "问题6(1)-(4)：其他法律事项——兼职竞业、亲属同业与参股排查（第一轮，回复第 45—53 页；txt 行2055—2400 区域）",
+              "link": "/kb2024/874234-旭泉电机#问题6-1-4-其他法律事项——兼职竞业、亲属同业与参股排查-第一轮-回复第-45—53-页-txt-行2055—2400-区域"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874234-旭泉电机#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874234-旭泉电机#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874245-慧影医疗": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "慧影医疗科技（北京）股份有限公司（874245·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874245-慧影医疗"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874245-慧影医疗#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874245-慧影医疗#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874245-慧影医疗#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于红筹架构的搭建与拆除（一次反馈，回复第 3—17 页；txt 行62—748）",
+              "link": "/kb2024/874245-慧影医疗#问题1-关于红筹架构的搭建与拆除-一次反馈-回复第-3—17-页-txt-行62—748"
+            },
+            {
+              "text": "问题2：关于实际控制人（一次反馈，回复第 18—20 页；txt 行749—865）",
+              "link": "/kb2024/874245-慧影医疗#问题2-关于实际控制人-一次反馈-回复第-18—20-页-txt-行749—865"
+            },
+            {
+              "text": "问题3：关于机构股东（一次反馈，回复第 21—30 页；txt 行866—1275）",
+              "link": "/kb2024/874245-慧影医疗#问题3-关于机构股东-一次反馈-回复第-21—30-页-txt-行866—1275"
+            },
+            {
+              "text": "问题5：关于股权激励（一次反馈，回复第 39—59 页；txt 行1664—2405）",
+              "link": "/kb2024/874245-慧影医疗#问题5-关于股权激励-一次反馈-回复第-39—59-页-txt-行1664—2405"
+            },
+            {
+              "text": "问题6：关于公司业务资质（一次反馈，回复第 60—76 页；txt 行2406—3125）",
+              "link": "/kb2024/874245-慧影医疗#问题6-关于公司业务资质-一次反馈-回复第-60—76-页-txt-行2406—3125"
+            },
+            {
+              "text": "问题1（二次反馈）：关于国有股东出资（二次反馈，回复第 3—8 页；txt 行58—305）",
+              "link": "/kb2024/874245-慧影医疗#问题1-二次反馈-关于国有股东出资-二次反馈-回复第-3—8-页-txt-行58—305"
+            },
+            {
+              "text": "问题2（二次反馈）：关于红筹架构——收购汇医慧影的资金来源与外汇合规（二次反馈，回复第 9—17 页；txt 行310—760 区域）",
+              "link": "/kb2024/874245-慧影医疗#问题2-二次反馈-关于红筹架构——收购汇医慧影的资金来源与外汇合规-二次反馈-回复第-9—17-页-txt-行310—760-区域"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874245-慧影医疗#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874245-慧影医疗#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874246-金叶科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖南金叶众望科技股份有限公司（874246·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874246-金叶科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874246-金叶科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874246-金叶科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874246-金叶科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（首轮）：历史沿革——国资程序瑕疵、非货币出资与四平台代持确权（第一轮，回复第3—84页；txt 正文段约 起·178 至 3510）",
+              "link": "/kb2024/874246-金叶科技#问题1-首轮-历史沿革——国资程序瑕疵、非货币出资与四平台代持确权-第一轮-回复第3—84页-txt-正文段约-起·178-至-3510"
+            },
+            {
+              "text": "问题3（首轮）：土地和房屋——划拨地铁路专用线、林地流转与非农占用处罚（第一轮，回复第99—116页；txt 行4041–4629）",
+              "link": "/kb2024/874246-金叶科技#问题3-首轮-土地和房屋——划拨地铁路专用线、林地流转与非农占用处罚-第一轮-回复第99—116页-txt-行4041–4629"
+            },
+            {
+              "text": "问题4（首轮）：重大诉讼——未决租赁类案件的全量披露（第一轮，回复第117—126页；txt 行4630–5140）",
+              "link": "/kb2024/874246-金叶科技#问题4-首轮-重大诉讼——未决租赁类案件的全量披露-第一轮-回复第117—126页-txt-行4630–5140"
+            },
+            {
+              "text": "问题10（首轮）：主板申报衔接——撤回原因、信息披露差异与媒体质疑（第一轮，回复第280—292页；txt 行10623 起）",
+              "link": "/kb2024/874246-金叶科技#问题10-首轮-主板申报衔接——撤回原因、信息披露差异与媒体质疑-第一轮-回复第280—292页-txt-行10623-起"
+            },
+            {
+              "text": "问题1（二轮）：国有股权——首轮结论被推翻后的重新梳理（第二轮，回复第3—19页；txt 首 起段）",
+              "link": "/kb2024/874246-金叶科技#问题1-二轮-国有股权——首轮结论被推翻后的重新梳理-第二轮-回复第3—19页-txt-首-起段"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874246-金叶科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874246-金叶科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874249-邦泽创科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东邦泽创科电器股份有限公司（874249·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874249-邦泽创科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874249-邦泽创科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874249-邦泽创科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874249-邦泽创科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2：关于股权激励——平台合规性与追溯确认的标杆操作（第一轮，回复第 27—54 页；txt 行1242—2634）",
+              "link": "/kb2024/874249-邦泽创科#问题2-关于股权激励——平台合规性与追溯确认的标杆操作-第一轮-回复第-27—54-页-txt-行1242—2634"
+            },
+            {
+              "text": "问题3：关于公司房产——三类权属瑕疵分级处置（第一轮，回复第 55—67 页；txt 行2635—3100 区域）",
+              "link": "/kb2024/874249-邦泽创科#问题3-关于公司房产——三类权属瑕疵分级处置-第一轮-回复第-55—67-页-txt-行2635—3100-区域"
+            },
+            {
+              "text": "问题2（第二轮）：关于公司减资——美的投资对赌的体面退场（第二轮，回复第 23—31 页；txt 行878—1300 区域）",
+              "link": "/kb2024/874249-邦泽创科#问题2-第二轮-关于公司减资——美的投资对赌的体面退场-第二轮-回复第-23—31-页-txt-行878—1300-区域"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874249-邦泽创科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874249-邦泽创科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874253-思科赛德": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州思科赛德电子科技股份有限公司（874253·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874253-思科赛德"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874253-思科赛德#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874253-思科赛德#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874253-思科赛德#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874253-思科赛德#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874253-思科赛德#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874274-谐通科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州谐通光伏科技股份有限公司（874274·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874274-谐通科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874274-谐通科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874274-谐通科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874274-谐通科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：历史沿革及二次申报——分散股权代持、7.2 万股定性、实控人认定与摘牌合规（问询回复txt行27-1922）",
+              "link": "/kb2024/874274-谐通科技#_1-首轮问题1-历史沿革及二次申报——分散股权代持、7-2-万股定性、实控人认定与摘牌合规-问询回复txt行27-1922"
+            },
+            {
+              "text": "2. 首轮问题2：特殊投资条款——业绩承诺、回购承诺与\"投资方聘请审计机构\"条款（问询回复txt行1923-2596）",
+              "link": "/kb2024/874274-谐通科技#_2-首轮问题2-特殊投资条款——业绩承诺、回购承诺与-投资方聘请审计机构-条款-问询回复txt行1923-2596"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874274-谐通科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874274-谐通科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874281-联川生物": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "杭州联川生物技术股份有限公司（874281·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874281-联川生物"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874281-联川生物#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874281-联川生物#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874281-联川生物#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：股权转让的真实性与实际控制人关联方退出审查（第一轮，回复第3—9页；txt行63—343）",
+              "link": "/kb2024/874281-联川生物#问题1-1-股权转让的真实性与实际控制人关联方退出审查-第一轮-回复第3—9页-txt行63—343"
+            },
+            {
+              "text": "问题1(2)③：二次申报的信披差异、历史隐藏对赌与异议股东（第一轮，回复第10—14页；txt行369—556）",
+              "link": "/kb2024/874281-联川生物#问题1-2-3-二次申报的信披差异、历史隐藏对赌与异议股东-第一轮-回复第10—14页-txt行369—556"
+            },
+            {
+              "text": "问题1(3)(4)：机构股东属性辨析、员工持股计划与股份支付（第一轮，回复第14—18页；txt行546—753）",
+              "link": "/kb2024/874281-联川生物#问题1-3-4-机构股东属性辨析、员工持股计划与股份支付-第一轮-回复第14—18页-txt行546—753"
+            },
+            {
+              "text": "问题2(3)：基因检测业务的资质、科技伦理与个人样本隐私（第一轮，回复第49—54页；txt行1832—2260）",
+              "link": "/kb2024/874281-联川生物#问题2-3-基因检测业务的资质、科技伦理与个人样本隐私-第一轮-回复第49—54页-txt行1832—2260"
+            },
+            {
+              "text": "问题2(4)：13项继受取得专利的程序与对高晓莲的技术依赖（第一轮，回复第67—71页；txt行2962—3290）",
+              "link": "/kb2024/874281-联川生物#问题2-4-13项继受取得专利的程序与对高晓莲的技术依赖-第一轮-回复第67—71页-txt行2962—3290"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874281-联川生物#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874281-联川生物#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874300-迅达药业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北迅达药业股份有限公司（874300·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874300-迅达药业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874300-迅达药业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874300-迅达药业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874300-迅达药业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于股权激励——武穴达坤未实缴出资与股份质押（首轮，回复第 3–21 页；txt 行 87–560）",
+              "link": "/kb2024/874300-迅达药业#问题1-关于股权激励——武穴达坤未实缴出资与股份质押-首轮-回复第-3–21-页-txt-行-87–560"
+            },
+            {
+              "text": "问题3：关于经营合规性——重污染行业的\"三同时\"、未批先建与节能审查补办（首轮，回复第 32–69 页；txt 行 1460–2400）",
+              "link": "/kb2024/874300-迅达药业#问题3-关于经营合规性——重污染行业的-三同时-、未批先建与节能审查补办-首轮-回复第-32–69-页-txt-行-1460–2400"
+            },
+            {
+              "text": "问题5（节录）：关联交易与实控人家族资金拆借（首轮，回复第 132–144 页；txt 行 7000 前后区间）",
+              "link": "/kb2024/874300-迅达药业#问题5-节录-关联交易与实控人家族资金拆借-首轮-回复第-132–144-页-txt-行-7000-前后区间"
+            },
+            {
+              "text": "问题10（节录）：2008 年股改转增个税补缴、李亮任职资格、迅达医化僵局与融资租赁（首轮，回复第 224 页起；txt 行 11020–11750）",
+              "link": "/kb2024/874300-迅达药业#问题10-节录-2008-年股改转增个税补缴、李亮任职资格、迅达医化僵局与融资租赁-首轮-回复第-224-页起-txt-行-11020–11750"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874300-迅达药业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874300-迅达药业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874305-苏沃特": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州苏沃特环境科技股份有限公司（874305·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874305-苏沃特"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874305-苏沃特#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874305-苏沃特#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874305-苏沃特#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（首轮）/问题1、2（二轮）：同业竞争与企业群谱系核查（首轮回复第1—17页 txt 行52–654；二轮回复第1–28页 txt 行12–557）",
+              "link": "/kb2024/874305-苏沃特#问题1-首轮-问题1、2-二轮-同业竞争与企业群谱系核查-首轮回复第1—17页-txt-行52–654-二轮回复第1–28页-txt-行12–557"
+            },
+            {
+              "text": "问题3（首轮）/问题4（二轮）：特殊投资条款——现行对赌的存续与\"明股实债\"追问（首轮回复第30—37页 txt 行1184–1382；二轮回复第29–42页 txt 行1021 起）",
+              "link": "/kb2024/874305-苏沃特#问题3-首轮-问题4-二轮-特殊投资条款——现行对赌的存续与-明股实债-追问-首轮回复第30—37页-txt-行1184–1382-二轮回复第29–42页-txt-行1021-起"
+            },
+            {
+              "text": "问题9（四）（首轮）：历史沿革——2022 年减资程序合法性（首轮回复第110—111页；txt 行4309–4437）",
+              "link": "/kb2024/874305-苏沃特#问题9-四-首轮-历史沿革——2022-年减资程序合法性-首轮回复第110—111页-txt-行4309–4437"
+            },
+            {
+              "text": "问题2（首轮）：业务合规性——资质、招投标、环保验收与分包（第一轮，回复第18—29页；txt 行655–1183）",
+              "link": "/kb2024/874305-苏沃特#问题2-首轮-业务合规性——资质、招投标、环保验收与分包-第一轮-回复第18—29页-txt-行655–1183"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874305-苏沃特#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874305-苏沃特#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874307-美思特": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "杭州美思特智能科技股份有限公司（874307·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874307-美思特"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874307-美思特#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874307-美思特#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874307-美思特#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（第一轮）：关于对赌协议及公司减资（回复第4—13页；txt 行63—600）",
+              "link": "/kb2024/874307-美思特#问题1-第一轮-关于对赌协议及公司减资-回复第4—13页-txt-行63—600"
+            },
+            {
+              "text": "问题2（第一轮）：关于诉讼——实控人离婚纠纷与股份冻结（回复第14—16页；txt 行550—800）",
+              "link": "/kb2024/874307-美思特#问题2-第一轮-关于诉讼——实控人离婚纠纷与股份冻结-回复第14—16页-txt-行550—800"
+            },
+            {
+              "text": "问题7（第一轮）：关于二次申报（回复第94—101页；txt 行3940—4300）",
+              "link": "/kb2024/874307-美思特#问题7-第一轮-关于二次申报-回复第94—101页-txt-行3940—4300"
+            },
+            {
+              "text": "问题8(3)（第一轮）：关于子公司——武义美思特转让与境外并购V-TOP（回复第112—116页；txt 行4758—4930）",
+              "link": "/kb2024/874307-美思特#问题8-3-第一轮-关于子公司——武义美思特转让与境外并购v-top-回复第112—116页-txt-行4758—4930"
+            },
+            {
+              "text": "问题1（第二轮）：关于处置武义美思特——真实转让与利益回流追查（二轮回复第4—13页；txt 行60—600）",
+              "link": "/kb2024/874307-美思特#问题1-第二轮-关于处置武义美思特——真实转让与利益回流追查-二轮回复第4—13页-txt-行60—600"
+            },
+            {
+              "text": "问题5（第二轮）：股权代持专项核查（二轮回复第47—52页；txt 行2143—2600）",
+              "link": "/kb2024/874307-美思特#问题5-第二轮-股权代持专项核查-二轮回复第47—52页-txt-行2143—2600"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874307-美思特#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874307-美思特#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874310-厚威包装": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "东莞市厚威包装科技股份有限公司（874310·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874310-厚威包装"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874310-厚威包装#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874310-厚威包装#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874310-厚威包装#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于无证土地和房产（第一轮，回复第 1—23 页；txt 行60—884）",
+              "link": "/kb2024/874310-厚威包装#问题1-关于无证土地和房产-第一轮-回复第-1—23-页-txt-行60—884"
+            },
+            {
+              "text": "问题2：关于历史沿革——特殊投资条款与员工持股平台（第一轮，回复第 23—31 页；txt 行885—1180）",
+              "link": "/kb2024/874310-厚威包装#问题2-关于历史沿革——特殊投资条款与员工持股平台-第一轮-回复第-23—31-页-txt-行885—1180"
+            },
+            {
+              "text": "问题3：关于劳动用工、业务资质与招投标合规（第一轮，回复第 32—49 页；txt 行1180—1980）",
+              "link": "/kb2024/874310-厚威包装#问题3-关于劳动用工、业务资质与招投标合规-第一轮-回复第-32—49-页-txt-行1180—1980"
+            },
+            {
+              "text": "问题4：关于重大诉讼及仲裁（第一轮，回复第 50—58 页；txt 行1982—2245）",
+              "link": "/kb2024/874310-厚威包装#问题4-关于重大诉讼及仲裁-第一轮-回复第-50—58-页-txt-行1982—2245"
+            },
+            {
+              "text": "问题6（节选）：境外销售的《挂牌审核业务规则适用指引第 1 号》专项核查（第一轮，回复第 174—177 页；txt 行7000—7100）",
+              "link": "/kb2024/874310-厚威包装#问题6-节选-境外销售的《挂牌审核业务规则适用指引第-1-号》专项核查-第一轮-回复第-174—177-页-txt-行7000—7100"
+            },
+            {
+              "text": "问题7(1)-(3)：实控人认定、香港子公司ODI与公司治理（第一轮，回复第 97—110 页；txt 行3715—4240）",
+              "link": "/kb2024/874310-厚威包装#问题7-1-3-实控人认定、香港子公司odi与公司治理-第一轮-回复第-97—110-页-txt-行3715—4240"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874310-厚威包装#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874310-厚威包装#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874315-矩一建管": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "西安高新矩一建设管理股份有限公司（874315·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874315-矩一建管"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874315-矩一建管#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874315-矩一建管#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874315-矩一建管#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题 1 子项：高科集团职工持股会的设立、清理与西安鑫源两期退出（首轮，回复第 3—6 页起；txt 行区间约 40—120）",
+              "link": "/kb2024/874315-矩一建管#一轮问题-1-子项-高科集团职工持股会的设立、清理与西安鑫源两期退出-首轮-回复第-3—6-页起-txt-行区间约-40—120"
+            },
+            {
+              "text": "一轮问题 2 子项：西安思维的国资产权登记瑕疵与改制确认（首轮，回复第 12—14、33—34 页段；txt 行区间约 95—160、重复段落）",
+              "link": "/kb2024/874315-矩一建管#一轮问题-2-子项-西安思维的国资产权登记瑕疵与改制确认-首轮-回复第-12—14、33—34-页段-txt-行区间约-95—160、重复段落"
+            },
+            {
+              "text": "法律意见书补充要点：实控人认定与众鑫臻远/富沃德双层平台结构（20230928 法律意见书第六、九部分；txt 行 1093—1165、2404—2560）",
+              "link": "/kb2024/874315-矩一建管#法律意见书补充要点-实控人认定与众鑫臻远-富沃德双层平台结构-20230928-法律意见书第六、九部分-txt-行-1093—1165、2404—2560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874315-矩一建管#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874315-矩一建管#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874317-华剑智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江华剑智能装备股份有限公司（874317·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874317-华剑智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874317-华剑智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874317-华剑智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874317-华剑智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：特种设备资质链、到期证照续展与自研 APP 的法律定性（首轮，回复第 3–20 页；txt 行 68–867 区间）",
+              "link": "/kb2024/874317-华剑智能#问题-1-特种设备资质链、到期证照续展与自研-app-的法律定性-首轮-回复第-3–20-页-txt-行-68–867-区间"
+            },
+            {
+              "text": "问题 2(1)：吸收合并的程序完备性与债权债务承继（首轮，回复第 21–25 页；txt 行 1014–1090 区间）",
+              "link": "/kb2024/874317-华剑智能#问题-2-1-吸收合并的程序完备性与债权债务承继-首轮-回复第-21–25-页-txt-行-1014–1090-区间"
+            },
+            {
+              "text": "问题 2(2)：华德 BVI 设立、返程投资及 37 号文外汇补登记瑕疵（首轮，回复第 25–29 页；txt 行 1043–1230 区间）",
+              "link": "/kb2024/874317-华剑智能#问题-2-2-华德-bvi-设立、返程投资及-37-号文外汇补登记瑕疵-首轮-回复第-25–29-页-txt-行-1043–1230-区间"
+            },
+            {
+              "text": "问题 2(4) 与 6(1)：员工持股平台治理与两次 IPO 终止的历史交代（首轮，回复第 40–43 页 txt 行 1740 起、115–121 页 txt 行 4742 起）",
+              "link": "/kb2024/874317-华剑智能#问题-2-4-与-6-1-员工持股平台治理与两次-ipo-终止的历史交代-首轮-回复第-40–43-页-txt-行-1740-起、115–121-页-txt-行-4742-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874317-华剑智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874317-华剑智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874319-黄河新兴": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "陕西黄河新兴新材料科技股份有限公司（874319·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874319-黄河新兴"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874319-黄河新兴#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874319-黄河新兴#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874319-黄河新兴#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：股东情况——实控人认定、两起代持、低价增资、国企员工持股与特殊投资条款（第一轮，回复第3-22页；txt 行64-975）",
+              "link": "/kb2024/874319-黄河新兴#问题1-股东情况——实控人认定、两起代持、低价增资、国企员工持股与特殊投资条款-第一轮-回复第3-22页-txt-行64-975"
+            },
+            {
+              "text": "问题2：业务取得及资质——招投标结构与涉密资质（第一轮，回复第23-28页；txt 行976-1213）",
+              "link": "/kb2024/874319-黄河新兴#问题2-业务取得及资质——招投标结构与涉密资质-第一轮-回复第23-28页-txt-行976-1213"
+            },
+            {
+              "text": "问题4：信息披露豁免——涉国家秘密信息的豁免披露（第一轮，回复第41-42页；txt 行1844-1933）",
+              "link": "/kb2024/874319-黄河新兴#问题4-信息披露豁免——涉国家秘密信息的豁免披露-第一轮-回复第41-42页-txt-行1844-1933"
+            },
+            {
+              "text": "问题9：补充问题——股权代持审核问询口径（第一轮，回复第170-180页；txt 行7308-7770）",
+              "link": "/kb2024/874319-黄河新兴#问题9-补充问题——股权代持审核问询口径-第一轮-回复第170-180页-txt-行7308-7770"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874319-黄河新兴#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874319-黄河新兴#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874320-恒基金属": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东恒基金属股份有限公司（874320·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874320-恒基金属"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874320-恒基金属#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874320-恒基金属#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874320-恒基金属#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——集体企业转制、外资并购瑕疵与家族多层代持（第一轮，回复第3—25页；txt 行78–224 及后续）",
+              "link": "/kb2024/874320-恒基金属#问题1-关于历史沿革——集体企业转制、外资并购瑕疵与家族多层代持-第一轮-回复第3—25页-txt-行78–224-及后续"
+            },
+            {
+              "text": "问题3：关于实际控制人——无民事行为能力实控人的认定与治理安排（第一轮，回复第26—33页；txt 行1715 起）",
+              "link": "/kb2024/874320-恒基金属#问题3-关于实际控制人——无民事行为能力实控人的认定与治理安排-第一轮-回复第26—33页-txt-行1715-起"
+            },
+            {
+              "text": "问题10（5）：报告期大额分红的背景、合规性与税务处理（第一轮，回复第138—142页；txt 行6189–6370）",
+              "link": "/kb2024/874320-恒基金属#问题10-5-报告期大额分红的背景、合规性与税务处理-第一轮-回复第138—142页-txt-行6189–6370"
+            },
+            {
+              "text": "问题10（7）：划拨土地及其房产出租给关联方从事营利性养老业务的合规性（第一轮，回复第142—145页；txt 行6370–6520）",
+              "link": "/kb2024/874320-恒基金属#问题10-7-划拨土地及其房产出租给关联方从事营利性养老业务的合规性-第一轮-回复第142—145页-txt-行6370–6520"
+            },
+            {
+              "text": "问题11：其他——挂牌条件对照核查（第一轮，回复第150页；txt 行6698–6740）",
+              "link": "/kb2024/874320-恒基金属#问题11-其他——挂牌条件对照核查-第一轮-回复第150页-txt-行6698–6740"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874320-恒基金属#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874320-恒基金属#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874345-秦鼎精铸": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "西安秦鼎精铸制造股份有限公司（874345·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874345-秦鼎精铸"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874345-秦鼎精铸#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874345-秦鼎精铸#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874345-秦鼎精铸#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 6：历史沿革——英国上星入股退出、设立时出资凭证灭失的补足、股权转让税收无法核实与返程投资认定（首轮，回复第 110—122 页；txt 行 4229—4762）",
+              "link": "/kb2024/874345-秦鼎精铸#问题-6-历史沿革——英国上星入股退出、设立时出资凭证灭失的补足、股权转让税收无法核实与返程投资认定-首轮-回复第-110—122-页-txt-行-4229—4762"
+            },
+            {
+              "text": "问题 7：无证房产及消防事项——权属风险分层论证与消防监督检查整改（首轮，回复第 123—147 页；txt 行 4763—5749）",
+              "link": "/kb2024/874345-秦鼎精铸#问题-7-无证房产及消防事项——权属风险分层论证与消防监督检查整改-首轮-回复第-123—147-页-txt-行-4763—5749"
+            },
+            {
+              "text": "问题 8：公司治理——父女二人持股 100% 的家族控制、关联交易回避程序与一致行动安排（首轮，回复第 148—160 页；txt 行 5750—6283）",
+              "link": "/kb2024/874345-秦鼎精铸#问题-8-公司治理——父女二人持股-100-的家族控制、关联交易回避程序与一致行动安排-首轮-回复第-148—160-页-txt-行-5750—6283"
+            },
+            {
+              "text": "问题 9(2)：资金拆借程序、电信诈骗事件与实控人资金占用排查（首轮，回复第 165 页起；txt 行 6460 起）",
+              "link": "/kb2024/874345-秦鼎精铸#问题-9-2-资金拆借程序、电信诈骗事件与实控人资金占用排查-首轮-回复第-165-页起-txt-行-6460-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874345-秦鼎精铸#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874345-秦鼎精铸#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874346-天奇新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江天奇新材料科技股份有限公司（874346·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874346-天奇新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874346-天奇新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874346-天奇新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874346-天奇新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题 1(1)(2)：呋喃树脂连年超产能 + 环保处罚 13.60 万元的定性组合拳（首轮，回复第 3—9 页；txt 行 64—520）",
+              "link": "/kb2024/874346-天奇新材#一轮问题-1-1-2-呋喃树脂连年超产能-环保处罚-13-60-万元的定性组合拳-首轮-回复第-3—9-页-txt-行-64—520"
+            },
+            {
+              "text": "一轮问题 1(3)(4)(5)：资质覆盖缺口、63 人公积金欠缴测算与杭州天宇代发代缴的三连整改（首轮，回复第 14—17 页；txt 行 430—700）",
+              "link": "/kb2024/874346-天奇新材#一轮问题-1-3-4-5-资质覆盖缺口、63-人公积金欠缴测算与杭州天宇代发代缴的三连整改-首轮-回复第-14—17-页-txt-行-430—700"
+            },
+            {
+              "text": "一轮问题 3：夫妻二人 100% 持股下的关联交易审议——\"全体股东均为关联方不回避\"的表决路径（首轮，回复第 39—44 页；txt 行 1689—1949）",
+              "link": "/kb2024/874346-天奇新材#一轮问题-3-夫妻二人-100-持股下的关联交易审议——-全体股东均为关联方不回避-的表决路径-首轮-回复第-39—44-页-txt-行-1689—1949"
+            },
+            {
+              "text": "一轮问题 1(6)：253.06 万元未决诉讼的全景列表与会计联动（首轮，回复第 17—24 页；txt 行 656—830）",
+              "link": "/kb2024/874346-天奇新材#一轮问题-1-6-253-06-万元未决诉讼的全景列表与会计联动-首轮-回复第-17—24-页-txt-行-656—830"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874346-天奇新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874346-天奇新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874347-泓毅股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽泓毅汽车技术股份有限公司（874347·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874347-泓毅股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874347-泓毅股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874347-泓毅股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874347-泓毅股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于同业竞争——奇瑞生态圈内企业比对与主动收缩工艺装备业务（第一轮，回复第3—15页；txt 行77–699）",
+              "link": "/kb2024/874347-泓毅股份#问题1-关于同业竞争——奇瑞生态圈内企业比对与主动收缩工艺装备业务-第一轮-回复第3—15页-txt-行77–699"
+            },
+            {
+              "text": "问题2：关于合法规范经营——无证房产、消防、外包、强制认证、环评与招投标七连问（第一轮，回复第16—45页；txt 行700–2248）",
+              "link": "/kb2024/874347-泓毅股份#问题2-关于合法规范经营——无证房产、消防、外包、强制认证、环评与招投标七连问-第一轮-回复第16—45页-txt-行700–2248"
+            },
+            {
+              "text": "问题10：关于二次申报——重复挂牌的信息一致性专项（第一轮，回复第126—143页；txt 行6026–6471）",
+              "link": "/kb2024/874347-泓毅股份#问题10-关于二次申报——重复挂牌的信息一致性专项-第一轮-回复第126—143页-txt-行6026–6471"
+            },
+            {
+              "text": "问题12：历史沿革代持排除与国资入股定价专项（第一轮，回复第170—177页起；txt 行8117–8440）",
+              "link": "/kb2024/874347-泓毅股份#问题12-历史沿革代持排除与国资入股定价专项-第一轮-回复第170—177页起-txt-行8117–8440"
+            },
+            {
+              "text": "问题4：关于关联方及关联交易（第一轮，回复第53–90页区间；txt 行3035–3941）",
+              "link": "/kb2024/874347-泓毅股份#问题4-关于关联方及关联交易-第一轮-回复第53–90页区间-txt-行3035–3941"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874347-泓毅股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874347-泓毅股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874350-华慧能源": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖南华慧新能源股份有限公司（874350·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874350-华慧能源"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874350-华慧能源#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874350-华慧能源#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874350-华慧能源#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题6：关于历史沿革——两次定向发行式激励与代持还原（第一轮，回复第 74—86 页；txt 行3119—3659）",
+              "link": "/kb2024/874350-华慧能源#问题6-关于历史沿革——两次定向发行式激励与代持还原-第一轮-回复第-74—86-页-txt-行3119—3659"
+            },
+            {
+              "text": "问题7：关于重大诉讼及涉诉专利（第一轮，回复第 87—94 页；txt 行3660—3973）",
+              "link": "/kb2024/874350-华慧能源#问题7-关于重大诉讼及涉诉专利-第一轮-回复第-87—94-页-txt-行3660—3973"
+            },
+            {
+              "text": "问题9：关于公司独立性（第一轮，回复第 103—121 页；txt 行4335—5167）",
+              "link": "/kb2024/874350-华慧能源#问题9-关于公司独立性-第一轮-回复第-103—121-页-txt-行4335—5167"
+            },
+            {
+              "text": "问题10：关于二次申报及创业板申报（第一轮，回复第 122—135 页；txt 行5168—6000 区域）",
+              "link": "/kb2024/874350-华慧能源#问题10-关于二次申报及创业板申报-第一轮-回复第-122—135-页-txt-行5168—6000-区域"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874350-华慧能源#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874350-华慧能源#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874351-越群海洋": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东越群海洋生物科技股份有限公司（874351·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874351-越群海洋"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874351-越群海洋#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874351-越群海洋#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874351-越群海洋#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题 4：特殊投资条款的“部分保留”处理——知情权解除与回购/反稀释/优先清算权的留置论证（首轮，回复第 33—41 页；txt 行 1220—1580）",
+              "link": "/kb2024/874351-越群海洋#一轮问题-4-特殊投资条款的-部分保留-处理——知情权解除与回购-反稀释-优先清算权的留置论证-首轮-回复第-33—41-页-txt-行-1220—1580"
+            },
+            {
+              "text": "一轮问题 2：控股股东 9.5589% 股份质押 + 发行人反向关联担保的双重捆绑（首轮，回复第 15—22 页；txt 行 523—770）",
+              "link": "/kb2024/874351-越群海洋#一轮问题-2-控股股东-9-5589-股份质押-发行人反向关联担保的双重捆绑-首轮-回复第-15—22-页-txt-行-523—770"
+            },
+            {
+              "text": "一轮问题 1 & 3：历史沿革三项焦点与无证房产/环保处罚组合（一轮，问题 1 回复第 3—14 页 txt 行 58—522；问题 3 回复第 22—32 页 txt 行 771—1219）",
+              "link": "/kb2024/874351-越群海洋#一轮问题-1-3-历史沿革三项焦点与无证房产-环保处罚组合-一轮-问题-1-回复第-3—14-页-txt-行-58—522-问题-3-回复第-22—32-页-txt-行-771—1219"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874351-越群海洋#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874351-越群海洋#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874353-海宝股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "大连海宝食品股份有限公司（874353·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874353-海宝股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874353-海宝股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874353-海宝股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874353-海宝股份#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874353-海宝股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874353-海宝股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874355-中科中涣": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽中科中涣智能装备股份有限公司（874355·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874355-中科中涣"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874355-中科中涣#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874355-中科中涣#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874355-中科中涣#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "议题一：历史沿革——发起设立未实缴即对外募资、多轮增资减资与减资款抵销（法律意见书第31—46页；txt 行1290–1700、约1980–2160）",
+              "link": "/kb2024/874355-中科中涣#议题一-历史沿革——发起设立未实缴即对外募资、多轮增资减资与减资款抵销-法律意见书第31—46页-txt-行1290–1700、约1980–2160"
+            },
+            {
+              "text": "议题二：六家投资机构特殊投资条款（对赌）清理（《全国中小企业股份转让系统股票挂牌审核业务规则适用指引第 1 号》专节；txt 行1990–2180）",
+              "link": "/kb2024/874355-中科中涣#议题二-六家投资机构特殊投资条款-对赌-清理-《全国中小企业股份转让系统股票挂牌审核业务规则适用指引第-1-号》专节-txt-行1990–2180"
+            },
+            {
+              "text": "议题三：实际控制人认定、一致行动与实控人资金占用（法律意见书第五章、第九章；txt 行650–750、2337–2990）",
+              "link": "/kb2024/874355-中科中涣#议题三-实际控制人认定、一致行动与实控人资金占用-法律意见书第五章、第九章-txt-行650–750、2337–2990"
+            },
+            {
+              "text": "议题四：土地房产——自有房屋全部抵押与出租备案（法律意见书第十章\"十\"；txt 行3027–3110、3740–3830）",
+              "link": "/kb2024/874355-中科中涣#议题四-土地房产——自有房屋全部抵押与出租备案-法律意见书第十章-十-txt-行3027–3110、3740–3830"
+            },
+            {
+              "text": "议题五：劳动用工——社保公积金缴存缺口分类披露、劳务派遣超比例及与无证机构合作（法律意见书第十八章；txt 行5766–5890）",
+              "link": "/kb2024/874355-中科中涣#议题五-劳动用工——社保公积金缴存缺口分类披露、劳务派遣超比例及与无证机构合作-法律意见书第十八章-txt-行5766–5890"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874355-中科中涣#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874355-中科中涣#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874357-惠之星": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "宁波惠之星新材料科技股份有限公司（874357·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874357-惠之星"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874357-惠之星#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874357-惠之星#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874357-惠之星#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：历史沿革——担保质押、员工持股平台穿透、国资/外资股东及对赌回购退出（首轮，回复第 3—24 页；txt 行 69—985）",
+              "link": "/kb2024/874357-惠之星#问题-1-历史沿革——担保质押、员工持股平台穿透、国资-外资股东及对赌回购退出-首轮-回复第-3—24-页-txt-行-69—985"
+            },
+            {
+              "text": "问题 2：业务合规性——产业政策、“双高”产品、环保处罚与能耗双控（首轮，回复第 24—35 页；txt 行 989—1507）",
+              "link": "/kb2024/874357-惠之星#问题-2-业务合规性——产业政策、-双高-产品、环保处罚与能耗双控-首轮-回复第-24—35-页-txt-行-989—1507"
+            },
+            {
+              "text": "问题 5(1)：继受取得专利商标、产学研合作研发及核心人员竞业限制（首轮，回复第 59—70 页；txt 行 2452—2745）",
+              "link": "/kb2024/874357-惠之星#问题-5-1-继受取得专利商标、产学研合作研发及核心人员竞业限制-首轮-回复第-59—70-页-txt-行-2452—2745"
+            },
+            {
+              "text": "问题 5(4)④：报告期转贷行为的违规定性与整改（首轮，回复第 91—92 页；txt 行 3844—3927）",
+              "link": "/kb2024/874357-惠之星#问题-5-4-4-报告期转贷行为的违规定性与整改-首轮-回复第-91—92-页-txt-行-3844—3927"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874357-惠之星#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874357-惠之星#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874360-世纪数码": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "郑州新世纪数码科技股份有限公司（874360·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874360-世纪数码"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874360-世纪数码#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874360-世纪数码#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874360-世纪数码#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于特殊投资条款和股权代持（第一轮，回复第 4—15 页；txt 行80—657）",
+              "link": "/kb2024/874360-世纪数码#问题1-关于特殊投资条款和股权代持-第一轮-回复第-4—15-页-txt-行80—657"
+            },
+            {
+              "text": "问题2：关于公司业务合规性——劳务派遣、外包与公积金大规模弃缴（第一轮，回复第 16—30 页；txt 行658—1156 及（五）节行1157—1290 区域）",
+              "link": "/kb2024/874360-世纪数码#问题2-关于公司业务合规性——劳务派遣、外包与公积金大规模弃缴-第一轮-回复第-16—30-页-txt-行658—1156-及-五-节行1157—1290-区域"
+            },
+            {
+              "text": "问题3：关于土地和房屋（第一轮，回复第 31—40 页；txt 行1300 之后段落）",
+              "link": "/kb2024/874360-世纪数码#问题3-关于土地和房屋-第一轮-回复第-31—40-页-txt-行1300-之后段落"
+            },
+            {
+              "text": "问题7：关于二次申报（第一轮，回复第 100—106 页；txt 行5200 区域）",
+              "link": "/kb2024/874360-世纪数码#问题7-关于二次申报-第一轮-回复第-100—106-页-txt-行5200-区域"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874360-世纪数码#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874360-世纪数码#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874361-大禹科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "大禹电气科技股份有限公司（874361·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874361-大禹科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874361-大禹科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874361-大禹科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874361-大禹科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1(2) 与二轮问题 2：公司借员工名义回购机构股东股份——特殊投资条款违规的全链条清算（首轮回复第 5–8 页 txt 行 139–230；二轮回复第 15–19 页 txt 行 520–700）",
+              "link": "/kb2024/874361-大禹科技#问题-1-2-与二轮问题-2-公司借员工名义回购机构股东股份——特殊投资条款违规的全链条清算-首轮回复第-5–8-页-txt-行-139–230-二轮回复第-15–19-页-txt-行-520–700"
+            },
+            {
+              "text": "问题 1(1) 与二轮问题 3：公务员继承持股与未成年人股东适格性（首轮回复第 4–5 页 txt 行 88–138；二轮回复第 23–26 页 txt 行 810 起）",
+              "link": "/kb2024/874361-大禹科技#问题-1-1-与二轮问题-3-公务员继承持股与未成年人股东适格性-首轮回复第-4–5-页-txt-行-88–138-二轮回复第-23–26-页-txt-行-810-起"
+            },
+            {
+              "text": "问题 1(4)：摘牌后两次定向减资的程序再造（首轮回复第 17–19 页；txt 行 210–330 区间）",
+              "link": "/kb2024/874361-大禹科技#问题-1-4-摘牌后两次定向减资的程序再造-首轮回复第-17–19-页-txt-行-210–330-区间"
+            },
+            {
+              "text": "二轮问题 1 的财务面向与首轮问题 7：二次申报整改印证（略详）",
+              "link": "/kb2024/874361-大禹科技#二轮问题-1-的财务面向与首轮问题-7-二次申报整改印证-略详"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874361-大禹科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874361-大禹科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874362-丰香园": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东丰香园食品股份有限公司（874362·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874362-丰香园"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874362-丰香园#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874362-丰香园#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874362-丰香园#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：合法规范经营——安全生产处罚与食品安全合规（第一次反馈，回复第 4—20 页；txt 行 127—860）",
+              "link": "/kb2024/874362-丰香园#问题-1-合法规范经营——安全生产处罚与食品安全合规-第一次反馈-回复第-4—20-页-txt-行-127—860"
+            },
+            {
+              "text": "问题 6(1)：历史沿革——恒丰运营、恒泰投资零对价受让股权（第一次反馈，回复第 104—106 页；txt 行 4730—4830）",
+              "link": "/kb2024/874362-丰香园#问题-6-1-历史沿革——恒丰运营、恒泰投资零对价受让股权-第一次反馈-回复第-104—106-页-txt-行-4730—4830"
+            },
+            {
+              "text": "问题 6(2)：电商子公司互联网平台认定与个人信息保护（第一次反馈，回复第 106—108 页；txt 行 4780—4885）",
+              "link": "/kb2024/874362-丰香园#问题-6-2-电商子公司互联网平台认定与个人信息保护-第一次反馈-回复第-106—108-页-txt-行-4780—4885"
+            },
+            {
+              "text": "问题 6(3)：继受取得专利的权属与产学研合作（第一次反馈，回复第 109—117 页；txt 行 4890—5180）",
+              "link": "/kb2024/874362-丰香园#问题-6-3-继受取得专利的权属与产学研合作-第一次反馈-回复第-109—117-页-txt-行-4890—5180"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874362-丰香园#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874362-丰香园#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874365-昊普康": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京昊普康科技股份有限公司（874365·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874365-昊普康"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874365-昊普康#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874365-昊普康#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874365-昊普康#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于股权激励——钟能俊横跨七年的无协议代持与平台的平移置换（首轮，回复第 3–14 页；txt 行 64–718）",
+              "link": "/kb2024/874365-昊普康#问题1-关于股权激励——钟能俊横跨七年的无协议代持与平台的平移置换-首轮-回复第-3–14-页-txt-行-64–718"
+            },
+            {
+              "text": "问题2：关于前次申报——摘牌复盘、子公司双重代持、特殊投资条款解除与实控人变更（首轮，回复第 15–27 页；txt 行 719–1433）",
+              "link": "/kb2024/874365-昊普康#问题2-关于前次申报——摘牌复盘、子公司双重代持、特殊投资条款解除与实控人变更-首轮-回复第-15–27-页-txt-行-719–1433"
+            },
+            {
+              "text": "二轮问题2：实控人认定的规避监管五维排除法（二轮，回复第 9–13 页；txt 行 385–662）",
+              "link": "/kb2024/874365-昊普康#二轮问题2-实控人认定的规避监管五维排除法-二轮-回复第-9–13-页-txt-行-385–662"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874365-昊普康#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874365-昊普康#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874367-浙江钙科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江钙科科技股份有限公司（874367·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874367-浙江钙科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874367-浙江钙科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874367-浙江钙科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874367-浙江钙科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于公司业务——采矿权、资质与开采外包（首轮回复第3—30页；txt 行60—1110）",
+              "link": "/kb2024/874367-浙江钙科#问题1-关于公司业务——采矿权、资质与开采外包-首轮回复第3—30页-txt-行60—1110"
+            },
+            {
+              "text": "问题3/问题9：关于历史沿革与股权代持——永兴达代持的形成演变与增资解除（首轮回复第49—69、156—165页；txt 行2030—3010、6455—7330）",
+              "link": "/kb2024/874367-浙江钙科#问题3-问题9-关于历史沿革与股权代持——永兴达代持的形成演变与增资解除-首轮回复第49—69、156—165页-txt-行2030—3010、6455—7330"
+            },
+            {
+              "text": "问题2：关于生产经营及环保节能（首轮回复第31—48页；txt 行1112—2010）",
+              "link": "/kb2024/874367-浙江钙科#问题2-关于生产经营及环保节能-首轮回复第31—48页-txt-行1112—2010"
+            },
+            {
+              "text": "问题8（部分）：同业竞争、亲属持股与职务发明（首轮回复第128—155页；txt 行5280—6450）",
+              "link": "/kb2024/874367-浙江钙科#问题8-部分-同业竞争、亲属持股与职务发明-首轮回复第128—155页-txt-行5280—6450"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874367-浙江钙科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874367-浙江钙科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874368-湖南设计": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖南省建筑设计院集团股份有限公司（874368·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874368-湖南设计"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874368-湖南设计#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874368-湖南设计#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874368-湖南设计#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于股权激励——七个混改员工持股平台的合规性（回复第3—29页；txt 行49—1075）",
+              "link": "/kb2024/874368-湖南设计#问题1-关于股权激励——七个混改员工持股平台的合规性-回复第3—29页-txt-行49—1075"
+            },
+            {
+              "text": "问题2：关于历史沿革——公司制改制、华誉建设股权转让与中证投资参股（回复第30—49页；txt 行1077—2100）",
+              "link": "/kb2024/874368-湖南设计#问题2-关于历史沿革——公司制改制、华誉建设股权转让与中证投资参股-回复第30—49页-txt-行1077—2100"
+            },
+            {
+              "text": "其他事项(2)：关于同业竞争——控股股东旗下建投公司（回复第204—216页；txt 行8683—8935）",
+              "link": "/kb2024/874368-湖南设计#其他事项-2-关于同业竞争——控股股东旗下建投公司-回复第204—216页-txt-行8683—8935"
+            },
+            {
+              "text": "其他事项(3)：关于租赁房屋未办理权属证书（回复第196-197、216—219页；txt 行8317-8340、8937-9215）",
+              "link": "/kb2024/874368-湖南设计#其他事项-3-关于租赁房屋未办理权属证书-回复第196-197、216—219页-txt-行8317-8340、8937-9215"
+            },
+            {
+              "text": "其他事项(4)：关于劳动用工——劳务派遣超10%的整改（回复第219—227页；txt 行9283—9465）",
+              "link": "/kb2024/874368-湖南设计#其他事项-4-关于劳动用工——劳务派遣超10-的整改-回复第219—227页-txt-行9283—9465"
+            },
+            {
+              "text": "其他事项(9)：股权代持专项核查（回复第199页起；txt 行8405—8660）",
+              "link": "/kb2024/874368-湖南设计#其他事项-9-股权代持专项核查-回复第199页起-txt-行8405—8660"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874368-湖南设计#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874368-湖南设计#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874372-新康达": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "马鞍山新康达磁业股份有限公司（874372·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874372-新康达"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874372-新康达#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874372-新康达#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874372-新康达#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：公司历史沿革及相关主体合规性事项（首轮，回复第 3—37 页；txt 行 60—1589）",
+              "link": "/kb2024/874372-新康达#问题1-公司历史沿革及相关主体合规性事项-首轮-回复第-3—37-页-txt-行-60—1589"
+            },
+            {
+              "text": "问题3：公司及相关主体经营合规性（首轮，回复第 92—124 页；txt 行 4081—5416）",
+              "link": "/kb2024/874372-新康达#问题3-公司及相关主体经营合规性-首轮-回复第-92—124-页-txt-行-4081—5416"
+            },
+            {
+              "text": "问题4：公司业务独立性及关联交易公允性（首轮，回复第 125—143 页；txt 行 5417—6258）",
+              "link": "/kb2024/874372-新康达#问题4-公司业务独立性及关联交易公允性-首轮-回复第-125—143-页-txt-行-5417—6258"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874372-新康达#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874372-新康达#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874375-红光电能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "常州市红光电能科技股份有限公司（874375·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874375-红光电能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874375-红光电能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874375-红光电能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874375-红光电能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——集体企业改制、村委代持与派生分立（回复第2—18页；txt 行35—1170）",
+              "link": "/kb2024/874375-红光电能#问题1-关于历史沿革——集体企业改制、村委代持与派生分立-回复第2—18页-txt-行35—1170"
+            },
+            {
+              "text": "问题2：关于特殊投资条款——新武创与周仁杰（回复第19—30页；txt 行1175—1185）",
+              "link": "/kb2024/874375-红光电能#问题2-关于特殊投资条款——新武创与周仁杰-回复第19—30页-txt-行1175—1185"
+            },
+            {
+              "text": "问题4：公司治理与财务规范——关联方代付薪酬股利、资金拆借、担保与分红（回复第105—114页；txt 行4244—4820）",
+              "link": "/kb2024/874375-红光电能#问题4-公司治理与财务规范——关联方代付薪酬股利、资金拆借、担保与分红-回复第105—114页-txt-行4244—4820"
+            },
+            {
+              "text": "问题9(一)/(二)：境外子公司与股权激励平台（回复第151—162页；txt 行6318—7010）",
+              "link": "/kb2024/874375-红光电能#问题9-一-二-境外子公司与股权激励平台-回复第151—162页-txt-行6318—7010"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874375-红光电能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874375-红光电能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874376-百菲乳业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广西百菲乳业股份有限公司（874376·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874376-百菲乳业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874376-百菲乳业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874376-百菲乳业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874376-百菲乳业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于历史沿革及控股股东前次挂牌（首轮，回复第 4–28 页；txt 行 89–1200）",
+              "link": "/kb2024/874376-百菲乳业#问题-1-关于历史沿革及控股股东前次挂牌-首轮-回复第-4–28-页-txt-行-89–1200"
+            },
+            {
+              "text": "问题 2：关于业务合规性（首轮，回复第 28–46 页；txt 行 1201–2240）",
+              "link": "/kb2024/874376-百菲乳业#问题-2-关于业务合规性-首轮-回复第-28–46-页-txt-行-1201–2240"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874376-百菲乳业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874376-百菲乳业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874377-鸿舜科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏鸿舜工业科技股份有限公司（874377·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874377-鸿舜科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874377-鸿舜科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874377-鸿舜科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874377-鸿舜科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 3：关于股权代持和子公司（首轮，回复第 12–40 页；txt 行 514–1610）",
+              "link": "/kb2024/874377-鸿舜科技#问题-3-关于股权代持和子公司-首轮-回复第-12–40-页-txt-行-514–1610"
+            },
+            {
+              "text": "问题 4：关于重大诉讼（首轮，回复第 41–51 页；txt 行 1611–1990）",
+              "link": "/kb2024/874377-鸿舜科技#问题-4-关于重大诉讼-首轮-回复第-41–51-页-txt-行-1611–1990"
+            },
+            {
+              "text": "问题 1 与问题 2 要点：无证房产与 100% 夫妻控股治理（首轮，回复第 1–11 页；txt 行 59–513）",
+              "link": "/kb2024/874377-鸿舜科技#问题-1-与问题-2-要点-无证房产与-100-夫妻控股治理-首轮-回复第-1–11-页-txt-行-59–513"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874377-鸿舜科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874377-鸿舜科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874378-华汇智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东华汇智能装备股份有限公司（874378·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874378-华汇智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874378-华汇智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874378-华汇智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874378-华汇智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于历史沿革（首轮，回复第 3–54 页；txt 行 60–2118）",
+              "link": "/kb2024/874378-华汇智能#问题-1-关于历史沿革-首轮-回复第-3–54-页-txt-行-60–2118"
+            },
+            {
+              "text": "问题 7：其他事项——与富源实业的同业竞争/独立性、子公司少数股东何建能及财务不规范（首轮，回复第 181–199 页；txt 行 7596–8502）",
+              "link": "/kb2024/874378-华汇智能#问题-7-其他事项——与富源实业的同业竞争-独立性、子公司少数股东何建能及财务不规范-首轮-回复第-181–199-页-txt-行-7596–8502"
+            },
+            {
+              "text": "问题 2（二轮）：关于股权代持及实际控制人认定（二轮回复第 24–34 页；txt 行 877–1272）",
+              "link": "/kb2024/874378-华汇智能#问题-2-二轮-关于股权代持及实际控制人认定-二轮回复第-24–34-页-txt-行-877–1272"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874378-华汇智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874378-华汇智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874379-舒友仪器": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江舒友仪器设备股份有限公司（874379·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874379-舒友仪器"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874379-舒友仪器#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874379-舒友仪器#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874379-舒友仪器#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于实际控制人与核心技术——医院任职合规、职务发明与关联专利受让（第一轮，回复第3–22页；txt 行69–886）",
+              "link": "/kb2024/874379-舒友仪器#问题1-关于实际控制人与核心技术——医院任职合规、职务发明与关联专利受让-第一轮-回复第3–22页-txt-行69–886"
+            },
+            {
+              "text": "问题2：关于业务合规性——医疗器械全链条资质与经营合规（第一轮，回复第23–54页；txt 行887–2492）",
+              "link": "/kb2024/874379-舒友仪器#问题2-关于业务合规性——医疗器械全链条资质与经营合规-第一轮-回复第23–54页-txt-行887–2492"
+            },
+            {
+              "text": "问题3：关于历史沿革——特殊投资条款、控股股东实物出资、代持与员工持股平台（第一轮，回复第55–74页；txt 行2493–3322）",
+              "link": "/kb2024/874379-舒友仪器#问题3-关于历史沿革——特殊投资条款、控股股东实物出资、代持与员工持股平台-第一轮-回复第55–74页-txt-行2493–3322"
+            },
+            {
+              "text": "问题7(2)(5)：境外销售专项核查与大额股利分配（第一轮，回复第124–149页；txt 行5467–6510，另律所意见书覆盖）",
+              "link": "/kb2024/874379-舒友仪器#问题7-2-5-境外销售专项核查与大额股利分配-第一轮-回复第124–149页-txt-行5467–6510-另律所意见书覆盖"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874379-舒友仪器#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874379-舒友仪器#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874380-卓海科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "无锡卓海科技股份有限公司（874380·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874380-卓海科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874380-卓海科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874380-卓海科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874380-卓海科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题8：关于公司业务及知识产权——修复业务的权属边界与行业定性（第一轮，回复第144–156页；txt 行6561–7177）",
+              "link": "/kb2024/874380-卓海科技#问题8-关于公司业务及知识产权——修复业务的权属边界与行业定性-第一轮-回复第144–156页-txt-行6561–7177"
+            },
+            {
+              "text": "问题9(1)：关于历史沿革——母子代持、对赌终止与申报前突击股权转让（第一轮，回复第157–173页；txt 行7178–8553）",
+              "link": "/kb2024/874380-卓海科技#问题9-1-关于历史沿革——母子代持、对赌终止与申报前突击股权转让-第一轮-回复第157–173页-txt-行7178–8553"
+            },
+            {
+              "text": "问题9(2)：关于信息披露豁免——商业秘密不予披露的专项论证（第一轮，回复第183–185页；txt 行8554–8623）",
+              "link": "/kb2024/874380-卓海科技#问题9-2-关于信息披露豁免——商业秘密不予披露的专项论证-第一轮-回复第183–185页-txt-行8554–8623"
+            },
+            {
+              "text": "问题9(3)(4)(5)：创业板被否转挂牌、员工平台激励与境外子公司（第一轮，回复第185–200页；txt 行8624–9800）",
+              "link": "/kb2024/874380-卓海科技#问题9-3-4-5-创业板被否转挂牌、员工平台激励与境外子公司-第一轮-回复第185–200页-txt-行8624–9800"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874380-卓海科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874380-卓海科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874381-钰烯股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江钰烯腐蚀控制股份有限公司（874381·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874381-钰烯股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874381-钰烯股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874381-钰烯股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874381-钰烯股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2：关于特殊投资条款——分层终止与员工限制性股权回购条款（第一轮，回复第62–74页；txt 行2578–3064）",
+              "link": "/kb2024/874381-钰烯股份#问题2-关于特殊投资条款——分层终止与员工限制性股权回购条款-第一轮-回复第62–74页-txt-行2578–3064"
+            },
+            {
+              "text": "问题3：关于环保及超产能生产（第一轮，回复第75–104页；txt 行3065–4231）",
+              "link": "/kb2024/874381-钰烯股份#问题3-关于环保及超产能生产-第一轮-回复第75–104页-txt-行3065–4231"
+            },
+            {
+              "text": "问题9(1)：关于二次申报——摘牌再挂牌的全套核查（第一轮，回复第187–196页；txt 行8086–8587）",
+              "link": "/kb2024/874381-钰烯股份#问题9-1-关于二次申报——摘牌再挂牌的全套核查-第一轮-回复第187–196页-txt-行8086–8587"
+            },
+            {
+              "text": "问题9(2)(5)：外资沿革、国资入股补正与镭纳涂层同业竞争（第一轮，回复第197–234、235–277页；txt 行8588–9800、9800–11702）",
+              "link": "/kb2024/874381-钰烯股份#问题9-2-5-外资沿革、国资入股补正与镭纳涂层同业竞争-第一轮-回复第197–234、235–277页-txt-行8588–9800、9800–11702"
+            },
+            {
+              "text": "问题9(3)：关于股权激励——限制性股权激励与股份支付（第一轮，回复第212–234页；txt 行9800–10800）",
+              "link": "/kb2024/874381-钰烯股份#问题9-3-关于股权激励——限制性股权激励与股份支付-第一轮-回复第212–234页-txt-行9800–10800"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874381-钰烯股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874381-钰烯股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874388-德美高科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京德美高科科技股份有限公司（874388·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874388-德美高科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874388-德美高科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874388-德美高科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874388-德美高科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题 1(2)：劳务外包 vs 劳务分包的定性切割与\"违反商业约定\"外包的民事后果（首轮，回复第 15—24 页；txt 行 31—1579）",
+              "link": "/kb2024/874388-德美高科#一轮问题-1-2-劳务外包-vs-劳务分包的定性切割与-违反商业约定-外包的民事后果-首轮-回复第-15—24-页-txt-行-31—1579"
+            },
+            {
+              "text": "一轮问题 2：非货币出资置换、减资程序与外部顾问 1 元入股+咨询费走账（首轮，回复第 40—49 页；txt 行 1580—1926）",
+              "link": "/kb2024/874388-德美高科#一轮问题-2-非货币出资置换、减资程序与外部顾问-1-元入股-咨询费走账-首轮-回复第-40—49-页-txt-行-1580—1926"
+            },
+            {
+              "text": "一轮问题 3：无控股股东下的三人共同实控——\"少数服从多数\"一致行动机制（首轮，回复第 50—58 页；txt 行 1927—2110）",
+              "link": "/kb2024/874388-德美高科#一轮问题-3-无控股股东下的三人共同实控——-少数服从多数-一致行动机制-首轮-回复第-50—58-页-txt-行-1927—2110"
+            },
+            {
+              "text": "一轮问题 5(9)：个人卡代付与关联方资金占用的合并整改（首轮，回复第 137—140 页；txt 行 5265—5510）",
+              "link": "/kb2024/874388-德美高科#一轮问题-5-9-个人卡代付与关联方资金占用的合并整改-首轮-回复第-137—140-页-txt-行-5265—5510"
+            },
+            {
+              "text": "一轮问题 5 子项：代石大博诚履行环评手续的合规边界（首轮，回复第 97—99 页；txt 行 3660—3763）",
+              "link": "/kb2024/874388-德美高科#一轮问题-5-子项-代石大博诚履行环评手续的合规边界-首轮-回复第-97—99-页-txt-行-3660—3763"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874388-德美高科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874388-德美高科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874389-立万精工": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏立万精密工业股份有限公司（874389·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874389-立万精工"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874389-立万精工#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874389-立万精工#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874389-立万精工#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题1：关于历史沿革——实控人变更、亲属增资与员工持股平台（第一轮，回复第3—14页；txt行58—559）",
+              "link": "/kb2024/874389-立万精工#首轮问题1-关于历史沿革——实控人变更、亲属增资与员工持股平台-第一轮-回复第3—14页-txt行58—559"
+            },
+            {
+              "text": "首轮问题2：关于子公司——港资历史与精密管厂集体企业两次改制（第一轮，回复第15—45页；txt行560—1713）",
+              "link": "/kb2024/874389-立万精工#首轮问题2-关于子公司——港资历史与精密管厂集体企业两次改制-第一轮-回复第15—45页-txt行560—1713"
+            },
+            {
+              "text": "第二轮问题1：关于债务情况——2,500万元无人主张权利债务（第二轮，回复第4—17页；txt行47—512）",
+              "link": "/kb2024/874389-立万精工#第二轮问题1-关于债务情况——2-500万元无人主张权利债务-第二轮-回复第4—17页-txt行47—512"
+            },
+            {
+              "text": "第二轮问题2：精密管厂转让价低于评估净资产的追问（第二轮，回复第18—24页；txt行516—750）",
+              "link": "/kb2024/874389-立万精工#第二轮问题2-精密管厂转让价低于评估净资产的追问-第二轮-回复第18—24页-txt行516—750"
+            },
+            {
+              "text": "第三轮问题1：关于债务情况——债权人主体、补充协议结算与任职资格（第三轮，回复第1-4至1-9页；txt行47—402）",
+              "link": "/kb2024/874389-立万精工#第三轮问题1-关于债务情况——债权人主体、补充协议结算与任职资格-第三轮-回复第1-4至1-9页-txt行47—402"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874389-立万精工#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874389-立万精工#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874390-佑威新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江佑威新材料股份有限公司（874390·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874390-佑威新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874390-佑威新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874390-佑威新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874390-佑威新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(一)：历史沿革、双重股权代持与员工平台减资退出（第一轮，回复第3–21页；txt 行65–900）",
+              "link": "/kb2024/874390-佑威新材#问题1-一-历史沿革、双重股权代持与员工平台减资退出-第一轮-回复第3–21页-txt-行65–900"
+            },
+            {
+              "text": "问题1(一)附：赵炯银行业从业人员持股适格性论证（同节txt 行740–806）",
+              "link": "/kb2024/874390-佑威新材#问题1-一-附-赵炯银行业从业人员持股适格性论证-同节txt-行740–806"
+            },
+            {
+              "text": "问题1(二)(三)：收购中威航空关联交易与信海环保注销（第一轮，回复第22–32页；txt 行897–1255）",
+              "link": "/kb2024/874390-佑威新材#问题1-二-三-收购中威航空关联交易与信海环保注销-第一轮-回复第22–32页-txt-行897–1255"
+            },
+            {
+              "text": "问题2：第三大股东程聪及相关情况核查——共同实控人认定之否定（第一轮，回复第33–39页；txt 行1256–1529）",
+              "link": "/kb2024/874390-佑威新材#问题2-第三大股东程聪及相关情况核查——共同实控人认定之否定-第一轮-回复第33–39页-txt-行1256–1529"
+            },
+            {
+              "text": "问题3：生产经营及环保节能消防合规（第一轮，回复第40–66页；txt 行1530–2559）",
+              "link": "/kb2024/874390-佑威新材#问题3-生产经营及环保节能消防合规-第一轮-回复第40–66页-txt-行1530–2559"
+            },
+            {
+              "text": "问题7一/二/四：前次IPO撤回转挂牌、私募基金股东异常经营与创新层决议程序（第一轮，回复第193–203页；txt 行7983–8420）",
+              "link": "/kb2024/874390-佑威新材#问题7一-二-四-前次ipo撤回转挂牌、私募基金股东异常经营与创新层决议程序-第一轮-回复第193–203页-txt-行7983–8420"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874390-佑威新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874390-佑威新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874391-金钛股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "朝阳金达钛业股份有限公司（874391·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874391-金钛股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874391-金钛股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874391-金钛股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874391-金钛股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：历史沿革的合法合规性（首轮，回复第 4–37 页；txt 行 88–1762）",
+              "link": "/kb2024/874391-金钛股份#问题-1-历史沿革的合法合规性-首轮-回复第-4–37-页-txt-行-88–1762"
+            },
+            {
+              "text": "问题 2：关于生产经营的独立性（首轮，回复第 38–67 页；txt 行 1763–3110）",
+              "link": "/kb2024/874391-金钛股份#问题-2-关于生产经营的独立性-首轮-回复第-38–67-页-txt-行-1763–3110"
+            },
+            {
+              "text": "问题 3：业务合法合规性（首轮，回复第 68–79 页；txt 行 3111–3608）",
+              "link": "/kb2024/874391-金钛股份#问题-3-业务合法合规性-首轮-回复第-68–79-页-txt-行-3111–3608"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874391-金钛股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874391-金钛股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874392-祺龙海洋": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东祺龙海洋石油钢管股份有限公司（874392·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874392-祺龙海洋"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874392-祺龙海洋#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874392-祺龙海洋#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874392-祺龙海洋#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题 1(2)：二次申报下的股权代持全景清理——形成/演变/解除/前次责任四段论（首轮，回复第 11—33 页；txt 行 560—1700）",
+              "link": "/kb2024/874392-祺龙海洋#一轮问题-1-2-二次申报下的股权代持全景清理——形成-演变-解除-前次责任四段论-首轮-回复第-11—33-页-txt-行-560—1700"
+            },
+            {
+              "text": "一轮问题 1(尾段)：无实际控制人状态下的治理有效性与稳定性论证（首轮，回复第 42—45 页；txt 行 2178—2255）",
+              "link": "/kb2024/874392-祺龙海洋#一轮问题-1-尾段-无实际控制人状态下的治理有效性与稳定性论证-首轮-回复第-42—45-页-txt-行-2178—2255"
+            },
+            {
+              "text": "一轮兜底项：转贷与控股股东资金占用的“两项规范”合并整改（首轮，回复第 137—141 页；txt 行 5540—5690）",
+              "link": "/kb2024/874392-祺龙海洋#一轮兜底项-转贷与控股股东资金占用的-两项规范-合并整改-首轮-回复第-137—141-页-txt-行-5540—5690"
+            },
+            {
+              "text": "一轮问题 1(3)：摘牌后股权变动的定价与个税核查要点（首轮，回复第 34—41 页；txt 行 1750—2100 区间）",
+              "link": "/kb2024/874392-祺龙海洋#一轮问题-1-3-摘牌后股权变动的定价与个税核查要点-首轮-回复第-34—41-页-txt-行-1750—2100-区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874392-祺龙海洋#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874392-祺龙海洋#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874393-泛美实验": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广州泛美实验室系统科技股份有限公司（874393·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874393-泛美实验"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874393-泛美实验#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874393-泛美实验#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874393-泛美实验#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——两次代持、资管计划清算代持与减资（第一轮，回复第3—27页；txt行84—1164）",
+              "link": "/kb2024/874393-泛美实验#问题1-关于历史沿革——两次代持、资管计划清算代持与减资-第一轮-回复第3—27页-txt行84—1164"
+            },
+            {
+              "text": "问题3：关于特殊投资条款——对赌签订、以1元对价部分履行与彻底终止（第一轮，回复第46—53页；txt行2022—2470）",
+              "link": "/kb2024/874393-泛美实验#问题3-关于特殊投资条款——对赌签订、以1元对价部分履行与彻底终止-第一轮-回复第46—53页-txt行2022—2470"
+            },
+            {
+              "text": "问题2：关于业务合规性和安全生产——资质匹配、特种设备与税务（第一轮，回复第28—45页；txt行1165—2021）",
+              "link": "/kb2024/874393-泛美实验#问题2-关于业务合规性和安全生产——资质匹配、特种设备与税务-第一轮-回复第28—45页-txt行1165—2021"
+            },
+            {
+              "text": "问题9：关于二次申报——信披差异与摘牌托管（第一轮，回复第130—135页；txt行5926—6265）",
+              "link": "/kb2024/874393-泛美实验#问题9-关于二次申报——信披差异与摘牌托管-第一轮-回复第130—135页-txt行5926—6265"
+            },
+            {
+              "text": "问题10(1)：关于招投标——强制招标门槛与获客合法合规（第一轮，回复第136—141页；txt行6266—6930）",
+              "link": "/kb2024/874393-泛美实验#问题10-1-关于招投标——强制招标门槛与获客合法合规-第一轮-回复第136—141页-txt行6266—6930"
+            },
+            {
+              "text": "问题10(3)：关于任职合规性——汪汇职务发明排查与独董设置（第一轮，回复第150—154页；txt行6931—7214）",
+              "link": "/kb2024/874393-泛美实验#问题10-3-关于任职合规性——汪汇职务发明排查与独董设置-第一轮-回复第150—154页-txt行6931—7214"
+            },
+            {
+              "text": "问题10(4)：关于创业板申报——撤回改道的审核衔接（第一轮，回复第155页起；txt行7215—7690）",
+              "link": "/kb2024/874393-泛美实验#问题10-4-关于创业板申报——撤回改道的审核衔接-第一轮-回复第155页起-txt行7215—7690"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874393-泛美实验#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874393-泛美实验#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874394-重庆美泰": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "重庆美泰塑胶股份有限公司（874394·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874394-重庆美泰"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874394-重庆美泰#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874394-重庆美泰#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874394-重庆美泰#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：产业政策、环保合规与印尼美泰未取得生产资质（首轮回复第4—25页；20240719 txt行64—140问询、880—990核查）",
+              "link": "/kb2024/874394-重庆美泰#_1-首轮问题1-产业政策、环保合规与印尼美泰未取得生产资质-首轮回复第4—25页-20240719-txt行64—140问询、880—990核查"
+            },
+            {
+              "text": "2. 首轮问题2：子公司收购、境外投资程序与少数股东核查（首轮回复第25—49页；txt行991—1189、1780—1900）",
+              "link": "/kb2024/874394-重庆美泰#_2-首轮问题2-子公司收购、境外投资程序与少数股东核查-首轮回复第25—49页-txt行991—1189、1780—1900"
+            },
+            {
+              "text": "3. 首轮问题3：家族企业三会治理、关联交易回避与五独立（首轮回复第49—55页；txt行2023—2267）",
+              "link": "/kb2024/874394-重庆美泰#_3-首轮问题3-家族企业三会治理、关联交易回避与五独立-首轮回复第49—55页-txt行2023—2267"
+            },
+            {
+              "text": "4. 首轮问题9(1)：转让解决同业竞争的真实性与资金流向核查（首轮回复第142—143页；txt行6033—6128）",
+              "link": "/kb2024/874394-重庆美泰#_4-首轮问题9-1-转让解决同业竞争的真实性与资金流向核查-首轮回复第142—143页-txt行6033—6128"
+            },
+            {
+              "text": "5. 首轮问题9(3)：继受专利权属瑕疵与技术独立性（首轮回复第151—156页；txt行6485—6746）",
+              "link": "/kb2024/874394-重庆美泰#_5-首轮问题9-3-继受专利权属瑕疵与技术独立性-首轮回复第151—156页-txt行6485—6746"
+            },
+            {
+              "text": "6. 首轮问题9(4)：历史沿革代持核查与\"股权明晰\"（首轮回复第157—163页；txt行6753—7033）",
+              "link": "/kb2024/874394-重庆美泰#_6-首轮问题9-4-历史沿革代持核查与-股权明晰-首轮回复第157—163页-txt行6753—7033"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874394-重庆美泰#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874394-重庆美泰#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874399-赤诚生物": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "五峰赤诚生物科技股份有限公司（874399·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874399-赤诚生物"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874399-赤诚生物#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874399-赤诚生物#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874399-赤诚生物#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：历次股东人数超200人的披露、2021年7月定增瑕疵与回购减资消除（第一轮，回复第3—14页；txt行79—583）",
+              "link": "/kb2024/874399-赤诚生物#问题1-1-历次股东人数超200人的披露、2021年7月定增瑕疵与回购减资消除-第一轮-回复第3—14页-txt行79—583"
+            },
+            {
+              "text": "问题1(1)⑥：三笔历史股权代持的形成与解除（第一轮，回复第20—23页；txt行904—1055）",
+              "link": "/kb2024/874399-赤诚生物#问题1-1-6-三笔历史股权代持的形成与解除-第一轮-回复第20—23页-txt行904—1055"
+            },
+            {
+              "text": "问题1(2)：前次挂牌期间未披露代持及特殊投资条款、异议股东保护与信披差异（第一轮，回复第23—26页；txt行1056—1199）",
+              "link": "/kb2024/874399-赤诚生物#问题1-2-前次挂牌期间未披露代持及特殊投资条款、异议股东保护与信披差异-第一轮-回复第23—26页-txt行1056—1199"
+            },
+            {
+              "text": "问题1(3)：实际控制人由单一变更为共同认定的合理性（第一轮，回复第26—30页；txt行1200—1341）",
+              "link": "/kb2024/874399-赤诚生物#问题1-3-实际控制人由单一变更为共同认定的合理性-第一轮-回复第26—30页-txt行1200—1341"
+            },
+            {
+              "text": "问题1(4)：国资股东入股审批备案程序（第一轮，回复第30—31页；txt行1358—1400）",
+              "link": "/kb2024/874399-赤诚生物#问题1-4-国资股东入股审批备案程序-第一轮-回复第30—31页-txt行1358—1400"
+            },
+            {
+              "text": "问题2(2)(5)：环保手续瑕疵、三次行政处罚与超产能30%（第一轮，回复第37—63页；txt行1634—3092）",
+              "link": "/kb2024/874399-赤诚生物#问题2-2-5-环保手续瑕疵、三次行政处罚与超产能30-第一轮-回复第37—63页-txt行1634—3092"
+            },
+            {
+              "text": "问题6(4)：特殊投资条款更新披露、失联股东处理与高企资质续期（第一轮，回复第186—189页；txt行8580—8720）",
+              "link": "/kb2024/874399-赤诚生物#问题6-4-特殊投资条款更新披露、失联股东处理与高企资质续期-第一轮-回复第186—189页-txt行8580—8720"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874399-赤诚生物#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874399-赤诚生物#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874401-中煤环保": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中煤（北京）环保股份有限公司（874401·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874401-中煤环保"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874401-中煤环保#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874401-中煤环保#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874401-中煤环保#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题 4：安全生产与业务合规——三项必备资质到期续期、漏报事故罚款 75 万元及徐州明光环保罚款的定性与闭环（一轮，回复第 1-90 至 1-105 页；txt 行 3857—4520）",
+              "link": "/kb2024/874401-中煤环保#一轮问题-4-安全生产与业务合规——三项必备资质到期续期、漏报事故罚款-75-万元及徐州明光环保罚款的定性与闭环-一轮-回复第-1-90-至-1-105-页-txt-行-3857—4520"
+            },
+            {
+              "text": "一轮问题 5：员工持股平台山至青定向增发激励——实控人参股、出资来源亲属借款与闭环安排（一轮，回复第 1-106 至 1-114 页；txt 行 4521—4916）",
+              "link": "/kb2024/874401-中煤环保#一轮问题-5-员工持股平台山至青定向增发激励——实控人参股、出资来源亲属借款与闭环安排-一轮-回复第-1-106-至-1-114-页-txt-行-4521—4916"
+            },
+            {
+              "text": "二轮问题 1：西部环保的控制权归属与水城矿业 11,895.07 万元关联应收（二轮，回复第 3—22 页；txt 行 60—800）",
+              "link": "/kb2024/874401-中煤环保#二轮问题-1-西部环保的控制权归属与水城矿业-11-895-07-万元关联应收-二轮-回复第-3—22-页-txt-行-60—800"
+            },
+            {
+              "text": "二轮问题 2(4)：劳务分包与外协供应商资质核查（二轮，回复第 30—36 页；txt 行 1300—1520）",
+              "link": "/kb2024/874401-中煤环保#二轮问题-2-4-劳务分包与外协供应商资质核查-二轮-回复第-30—36-页-txt-行-1300—1520"
+            },
+            {
+              "text": "二轮兜底事项：审计截止日超过 7 个月的期后信息补充披露（二轮，回复第 36—37 页；txt 行 1440—1545）",
+              "link": "/kb2024/874401-中煤环保#二轮兜底事项-审计截止日超过-7-个月的期后信息补充披露-二轮-回复第-36—37-页-txt-行-1440—1545"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874401-中煤环保#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874401-中煤环保#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874402-德耐尔": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "德耐尔节能科技（上海）股份有限公司（874402·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874402-德耐尔"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874402-德耐尔#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874402-德耐尔#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874402-德耐尔#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1(1)：外商投资——DENAIR（GERMANY）入股退出、外资转内资与外汇登记瑕疵（回复第2–15页；首轮回复txt行64–640）",
+              "link": "/kb2024/874402-德耐尔#_1-首轮问题1-1-外商投资——denair-germany-入股退出、外资转内资与外汇登记瑕疵-回复第2–15页-首轮回复txt行64–640"
+            },
+            {
+              "text": "2. 首轮问题1(2)及二轮问题2：股权代持与二次申报追责（首轮回复第15–30页；首轮回复txt行465–640；二轮回复txt行767–933）",
+              "link": "/kb2024/874402-德耐尔#_2-首轮问题1-2-及二轮问题2-股权代持与二次申报追责-首轮回复第15–30页-首轮回复txt行465–640-二轮回复txt行767–933"
+            },
+            {
+              "text": "3. 首轮问题3：税务行政处罚、土地房产与劳务派遣（回复第70–93页；首轮回复txt行3052–3660）",
+              "link": "/kb2024/874402-德耐尔#_3-首轮问题3-税务行政处罚、土地房产与劳务派遣-回复第70–93页-首轮回复txt行3052–3660"
+            },
+            {
+              "text": "4. 首轮问题12(一)及问题1(3)：实控人认定、一致行动人与员工持股平台（回复第226–232页、第15–30页；首轮回复txt行9821–10020、930–1010）",
+              "link": "/kb2024/874402-德耐尔#_4-首轮问题12-一-及问题1-3-实控人认定、一致行动人与员工持股平台-回复第226–232页、第15–30页-首轮回复txt行9821–10020、930–1010"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874402-德耐尔#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874402-德耐尔#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874404-宝昱科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "陕西宝昱科技工业股份有限公司（874404·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874404-宝昱科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874404-宝昱科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874404-宝昱科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874404-宝昱科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：经营合规性——未批先建、无资质经营与劳务派遣（一轮回复第3–33页；txt 行63–1412）",
+              "link": "/kb2024/874404-宝昱科技#问题1-经营合规性——未批先建、无资质经营与劳务派遣-一轮回复第3–33页-txt-行63–1412"
+            },
+            {
+              "text": "问题2：父子实控人法定一致行动、同业竞争排查与全租赁经营（一轮回复第34–44页；txt 行1413–1790）",
+              "link": "/kb2024/874404-宝昱科技#问题2-父子实控人法定一致行动、同业竞争排查与全租赁经营-一轮回复第34–44页-txt-行1413–1790"
+            },
+            {
+              "text": "问题8(1)：特殊投资条款的全量清理（一轮回复第182–188页；txt 行7867–8180）",
+              "link": "/kb2024/874404-宝昱科技#问题8-1-特殊投资条款的全量清理-一轮回复第182–188页-txt-行7867–8180"
+            },
+            {
+              "text": "问题8(2)：员工持股平台宝昱卓悦、宝昱岁月（一轮回复第188–195页；txt 行8180–8420）",
+              "link": "/kb2024/874404-宝昱科技#问题8-2-员工持股平台宝昱卓悦、宝昱岁月-一轮回复第188–195页-txt-行8180–8420"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874404-宝昱科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874404-宝昱科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874406-金红股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏金红新材料股份有限公司（874406·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874406-金红股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874406-金红股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874406-金红股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874406-金红股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：采矿权取得合规与续期（首轮问题1＋第二轮问题1）",
+              "link": "/kb2024/874406-金红股份#问题-1-采矿权取得合规与续期-首轮问题1-第二轮问题1"
+            },
+            {
+              "text": "问题 2：无控股股东认定与三人共同控制（首轮问题2＋第二轮问题3(1)）",
+              "link": "/kb2024/874406-金红股份#问题-2-无控股股东认定与三人共同控制-首轮问题2-第二轮问题3-1"
+            },
+            {
+              "text": "问题 3：历史沿革——增资、债权出资瑕疵、代持还原与国有股权进退（首轮问题3＋第二轮问题3(2)）",
+              "link": "/kb2024/874406-金红股份#问题-3-历史沿革——增资、债权出资瑕疵、代持还原与国有股权进退-首轮问题3-第二轮问题3-2"
+            },
+            {
+              "text": "问题 4：经营资质、安全生产行政处罚与商业贿赂（首轮问题4）",
+              "link": "/kb2024/874406-金红股份#问题-4-经营资质、安全生产行政处罚与商业贿赂-首轮问题4"
+            },
+            {
+              "text": "问题 5：产业政策、环保与节能合规（首轮问题5＋第二轮问题2(1)）",
+              "link": "/kb2024/874406-金红股份#问题-5-产业政策、环保与节能合规-首轮问题5-第二轮问题2-1"
+            },
+            {
+              "text": "问题 6：自建无证建筑物与集体土地租赁（首轮问题6＋第二轮问题2②）",
+              "link": "/kb2024/874406-金红股份#问题-6-自建无证建筑物与集体土地租赁-首轮问题6-第二轮问题22"
+            },
+            {
+              "text": "问题 10：员工持股平台、独立董事高校兼职与核心技术人员竞业（首轮问题10）",
+              "link": "/kb2024/874406-金红股份#问题-10-员工持股平台、独立董事高校兼职与核心技术人员竞业-首轮问题10"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874406-金红股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874406-金红股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874407-维萨阀门": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "昆山维萨阀门股份有限公司（874407·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874407-维萨阀门"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874407-维萨阀门#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874407-维萨阀门#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874407-维萨阀门#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题1：关于公司实际控制人——一致行动机制与变更影响（第一轮，回复第3—9页；txt行62—335）",
+              "link": "/kb2024/874407-维萨阀门#首轮问题1-关于公司实际控制人——一致行动机制与变更影响-第一轮-回复第3—9页-txt行62—335"
+            },
+            {
+              "text": "首轮问题2：关于历史沿革——债转股出资瑕疵、补充出资与低价入股定性（第一轮，回复第10—17页；txt行336—680）",
+              "link": "/kb2024/874407-维萨阀门#首轮问题2-关于历史沿革——债转股出资瑕疵、补充出资与低价入股定性-第一轮-回复第10—17页-txt行336—680"
+            },
+            {
+              "text": "首轮问题3：关于土地——集体流转用地规划调整与租赁集体土地程序（第一轮，回复第18—25页；txt行681—1020）",
+              "link": "/kb2024/874407-维萨阀门#首轮问题3-关于土地——集体流转用地规划调整与租赁集体土地程序-第一轮-回复第18—25页-txt行681—1020"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874407-维萨阀门#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874407-维萨阀门#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874408-火星语盟": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳火星语盟科技股份有限公司（874408·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874408-火星语盟"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874408-火星语盟#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874408-火星语盟#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874408-火星语盟#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1（首轮）：境外子公司设立合规与同业竞争核查（回复第 4–27 页；txt 行 67–809）",
+              "link": "/kb2024/874408-火星语盟#问题-1-首轮-境外子公司设立合规与同业竞争核查-回复第-4–27-页-txt-行-67–809"
+            },
+            {
+              "text": "问题 7（首轮）：多层级子公司架构与关联自然人收购及重大资产重组确认（回复第 102–111 页；txt 行 3941–4359）",
+              "link": "/kb2024/874408-火星语盟#问题-7-首轮-多层级子公司架构与关联自然人收购及重大资产重组确认-回复第-102–111-页-txt-行-3941–4359"
+            },
+            {
+              "text": "问题 8（首轮）：员工股权激励的决策程序与披露完备性（回复第 112–115 页；txt 行 4360–4560 区间）",
+              "link": "/kb2024/874408-火星语盟#问题-8-首轮-员工股权激励的决策程序与披露完备性-回复第-112–115-页-txt-行-4360–4560-区间"
+            },
+            {
+              "text": "问题 1（第二轮）：互联网平台定性、数据合规与网络招聘资质（回复第 3–26 页；txt 行 51–1100 区间）",
+              "link": "/kb2024/874408-火星语盟#问题-1-第二轮-互联网平台定性、数据合规与网络招聘资质-回复第-3–26-页-txt-行-51–1100-区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874408-火星语盟#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874408-火星语盟#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874409-苏润种业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏苏润种业集团股份有限公司（874409·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874409-苏润种业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874409-苏润种业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874409-苏润种业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874409-苏润种业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1(1)(2)：未经品种登记销售辣椒种子的违法行为及其规范（本次首轮，回复第 1–8 页；txt 行 53–380 区间）",
+              "link": "/kb2024/874409-苏润种业#问题-1-1-2-未经品种登记销售辣椒种子的违法行为及其规范-本次首轮-回复第-1–8-页-txt-行-53–380-区间"
+            },
+            {
+              "text": "问题 1(3)：超法定周期支付工资与非全日制用工工伤保险缺失（本次首轮，回复第 9–12 页；txt 行 495–600、815 前后）",
+              "link": "/kb2024/874409-苏润种业#问题-1-3-超法定周期支付工资与非全日制用工工伤保险缺失-本次首轮-回复第-9–12-页-txt-行-495–600、815-前后"
+            },
+            {
+              "text": "问题 5(1)①：控股股东与关联自然人资金占用的披露与归还（本次首轮，回复第 78–102 页；txt 行 3409–3440、4224–4260）",
+              "link": "/kb2024/874409-苏润种业#问题-5-1-1-控股股东与关联自然人资金占用的披露与归还-本次首轮-回复第-78–102-页-txt-行-3409–3440、4224–4260"
+            },
+            {
+              "text": "历史申报对照（2021-2022 年两轮反馈）：同一问题的隔代演化（20211210 回复、20220726 二次反馈回复 txt 行 46 起）",
+              "link": "/kb2024/874409-苏润种业#历史申报对照-2021-2022-年两轮反馈-同一问题的隔代演化-20211210-回复、20220726-二次反馈回复-txt-行-46-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874409-苏润种业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874409-苏润种业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874410-飞宇医药": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏飞宇医药科技股份有限公司（874410·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874410-飞宇医药"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874410-飞宇医药#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874410-飞宇医药#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874410-飞宇医药#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1(1)(4)(5)(6)：危化品资质、超环评产能 30%、无证房产与继受专利（首轮回复第 1–74 页；txt 行 68–3502）",
+              "link": "/kb2024/874410-飞宇医药#_1-首轮问题-1-1-4-5-6-危化品资质、超环评产能-30-、无证房产与继受专利-首轮回复第-1–74-页-txt-行-68–3502"
+            },
+            {
+              "text": "2. 首轮问题 2：董事总经理沈文光的公职背景、借款与利益输送排查（首轮回复第 75–84 页；txt 行 3503–3849）",
+              "link": "/kb2024/874410-飞宇医药#_2-首轮问题-2-董事总经理沈文光的公职背景、借款与利益输送排查-首轮回复第-75–84-页-txt-行-3503–3849"
+            },
+            {
+              "text": "3. 首轮问题 8：历史沿革、特殊投资条款、员工持股平台与供应商实控人激励（首轮回复第 208–271 页；txt 行 9279–12222）",
+              "link": "/kb2024/874410-飞宇医药#_3-首轮问题-8-历史沿革、特殊投资条款、员工持股平台与供应商实控人激励-首轮回复第-208–271-页-txt-行-9279–12222"
+            },
+            {
+              "text": "4. 二轮问题 3：超产能生产的披露准确性、发现途径与重大违法认定（二轮回复第 14–20 页；txt 行 614–830）",
+              "link": "/kb2024/874410-飞宇医药#_4-二轮问题-3-超产能生产的披露准确性、发现途径与重大违法认定-二轮回复第-14–20-页-txt-行-614–830"
+            },
+            {
+              "text": "5. 二轮问题 4：参股江苏江南农村商业银行（二轮回复第 21–23 页；txt 行 881 起）",
+              "link": "/kb2024/874410-飞宇医药#_5-二轮问题-4-参股江苏江南农村商业银行-二轮回复第-21–23-页-txt-行-881-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874410-飞宇医药#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874410-飞宇医药#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874415-新亚电通": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州新亚电通股份有限公司（874415·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874415-新亚电通"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874415-新亚电通#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874415-新亚电通#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874415-新亚电通#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：三家公司交叉持股的两次清理与香港新亚双层代持的解除（首轮，回复第3–18页；txt 行59–675）",
+              "link": "/kb2024/874415-新亚电通#问题1-1-三家公司交叉持股的两次清理与香港新亚双层代持的解除-首轮-回复第3–18页-txt-行59–675"
+            },
+            {
+              "text": "问题1(5)：两次股权激励与员工持股平台苏州确上（首轮，回复第21–27页；txt 行728–1010）",
+              "link": "/kb2024/874415-新亚电通#问题1-5-两次股权激励与员工持股平台苏州确上-首轮-回复第21–27页-txt-行728–1010"
+            },
+            {
+              "text": "问题1(6)：国资基金孟溪创投入股程序的适格性（首轮，回复第27–28页；txt 行957–1030）",
+              "link": "/kb2024/874415-新亚电通#问题1-6-国资基金孟溪创投入股程序的适格性-首轮-回复第27–28页-txt-行957–1030"
+            },
+            {
+              "text": "问题2(3)：社保公积金——城乡居民保险替代城镇职工保险的合法性（首轮，回复第71–84页；txt 行2926–3600）",
+              "link": "/kb2024/874415-新亚电通#问题2-3-社保公积金——城乡居民保险替代城镇职工保险的合法性-首轮-回复第71–84页-txt-行2926–3600"
+            },
+            {
+              "text": "问题7(2)：持股客户极米科技入股退股的利益输送审查（首轮，回复第161–166页；txt 行6640–6762）",
+              "link": "/kb2024/874415-新亚电通#问题7-2-持股客户极米科技入股退股的利益输送审查-首轮-回复第161–166页-txt-行6640–6762"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874415-新亚电通#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874415-新亚电通#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874416-智能检测": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北交投智能检测股份有限公司（874416·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874416-智能检测"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874416-智能检测#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874416-智能检测#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874416-智能检测#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题2+问题6：国有股权程序瑕疵、出资瑕疵置换与设立以来资产重组链条（首轮回复第 60—78、146—158 页前后；txt 行 2820—3981、7565—8302）",
+              "link": "/kb2024/874416-智能检测#首轮问题2-问题6-国有股权程序瑕疵、出资瑕疵置换与设立以来资产重组链条-首轮回复第-60—78、146—158-页前后-txt-行-2820—3981、7565—8302"
+            },
+            {
+              "text": "首轮问题3+二轮问题1：同业竞争的认定、扩大的动态与 2026 年收购承诺（首轮回复第 79—103 页前后；txt 行 3982—5271；二轮 txt 行 58—922）",
+              "link": "/kb2024/874416-智能检测#首轮问题3-二轮问题1-同业竞争的认定、扩大的动态与-2026-年收购承诺-首轮回复第-79—103-页前后-txt-行-3982—5271-二轮-txt-行-58—922"
+            },
+            {
+              "text": "首轮问题1+问题4：强关联依赖下的资金独立与全租赁模式土地房产瑕疵（首轮回复第 3—59、104—145 页前后；txt 行 61—2819、5272—6293）",
+              "link": "/kb2024/874416-智能检测#首轮问题1-问题4-强关联依赖下的资金独立与全租赁模式土地房产瑕疵-首轮回复第-3—59、104—145-页前后-txt-行-61—2819、5272—6293"
+            },
+            {
+              "text": "首轮问题5：合作研发知识产权归属与职务发明（首轮回复第 130—145 页前后；txt 行 6294—7564）",
+              "link": "/kb2024/874416-智能检测#首轮问题5-合作研发知识产权归属与职务发明-首轮回复第-130—145-页前后-txt-行-6294—7564"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874416-智能检测#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874416-智能检测#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874417-泰鹏环保": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东泰鹏环保材料股份有限公司（874417·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874417-泰鹏环保"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874417-泰鹏环保#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874417-泰鹏环保#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874417-泰鹏环保#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革（第一轮，回复第3—43页；txt 行125—2540）",
+              "link": "/kb2024/874417-泰鹏环保#问题1-关于历史沿革-第一轮-回复第3—43页-txt-行125—2540"
+            },
+            {
+              "text": "问题2：关于公司治理——7名共同实际控制人与一致行动协议（第一轮，回复第43—56页；txt 行2550—3300）",
+              "link": "/kb2024/874417-泰鹏环保#问题2-关于公司治理——7名共同实际控制人与一致行动协议-第一轮-回复第43—56页-txt-行2550—3300"
+            },
+            {
+              "text": "问题3：关于重大资产重组——泰鹏新材料剥离与关联转让（第一轮，回复第57—72页；txt 行3300—3980）",
+              "link": "/kb2024/874417-泰鹏环保#问题3-关于重大资产重组——泰鹏新材料剥离与关联转让-第一轮-回复第57—72页-txt-行3300—3980"
+            },
+            {
+              "text": "问题9(1)：关于二次申报、前次IPO警示函与摘牌股权管理（第一轮，回复第207—231页；txt 行12651—13950）",
+              "link": "/kb2024/874417-泰鹏环保#问题9-1-关于二次申报、前次ipo警示函与摘牌股权管理-第一轮-回复第207—231页-txt-行12651—13950"
+            },
+            {
+              "text": "问题9(2)：关于同业竞争与独立性（第一轮，回复第232—244页；txt 行12780—13150）",
+              "link": "/kb2024/874417-泰鹏环保#问题9-2-关于同业竞争与独立性-第一轮-回复第232—244页-txt-行12780—13150"
+            },
+            {
+              "text": "问题9(3)：经营合规性——劳务派遣与业务资质（第一轮，回复第245—247页；txt 行13200—13500）",
+              "link": "/kb2024/874417-泰鹏环保#问题9-3-经营合规性——劳务派遣与业务资质-第一轮-回复第245—247页-txt-行13200—13500"
+            },
+            {
+              "text": "问题9(4)：技术独立性——合作研发与继受取得专利（第一轮，回复第248—253页；txt 行11760—12140）",
+              "link": "/kb2024/874417-泰鹏环保#问题9-4-技术独立性——合作研发与继受取得专利-第一轮-回复第248—253页-txt-行11760—12140"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874417-泰鹏环保#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874417-泰鹏环保#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874418-老娘舅": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "老娘舅餐饮股份有限公司（874418·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874418-老娘舅"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874418-老娘舅#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874418-老娘舅#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874418-老娘舅#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题4：关于特殊投资条款——主板撤回后回购权恢复与新三板再清理（第一轮，回复第90—103页；txt行3877—4500）",
+              "link": "/kb2024/874418-老娘舅#问题4-关于特殊投资条款——主板撤回后回购权恢复与新三板再清理-第一轮-回复第90—103页-txt行3877—4500"
+            },
+            {
+              "text": "问题2：关于业务合规性——资质、平台合规、消防环保、非全日制用工、游戏业务（第一轮，回复第46—71页；txt行1901—3015）",
+              "link": "/kb2024/874418-老娘舅#问题2-关于业务合规性——资质、平台合规、消防环保、非全日制用工、游戏业务-第一轮-回复第46—71页-txt行1901—3015"
+            },
+            {
+              "text": "问题3：关于食品安全——行政处罚、媒体事件与内控对照（第一轮，回复第72—89页；txt行3016—3876）",
+              "link": "/kb2024/874418-老娘舅#问题3-关于食品安全——行政处罚、媒体事件与内控对照-第一轮-回复第72—89页-txt行3016—3876"
+            },
+            {
+              "text": "问题1：关于连锁及加盟模式——特许经营与利益输送排查（第一轮，回复第3—45页；txt行63—1524）",
+              "link": "/kb2024/874418-老娘舅#问题1-关于连锁及加盟模式——特许经营与利益输送排查-第一轮-回复第3—45页-txt行63—1524"
+            },
+            {
+              "text": "问题9(1)：机构股东私募属性与200人穿透（第一轮，回复第170—171页；txt行7323—7480）",
+              "link": "/kb2024/874418-老娘舅#问题9-1-机构股东私募属性与200人穿透-第一轮-回复第170—171页-txt行7323—7480"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874418-老娘舅#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874418-老娘舅#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874420-长步道": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖南长步道光电科技股份有限公司（874420·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874420-长步道"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874420-长步道#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874420-长步道#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874420-长步道#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1（1）（7）：员工持股平台、200 人穿透与限售承诺（首轮回复 txt 行 60-240、1290-1640）",
+              "link": "/kb2024/874420-长步道#_1-首轮问题-1-1-7-员工持股平台、200-人穿透与限售承诺-首轮回复-txt-行-60-240、1290-1640"
+            },
+            {
+              "text": "2. 首轮问题 1（2）：对赌条款与最惠待遇条款的签署、履行与解除（首轮回复 txt 行 240-560）",
+              "link": "/kb2024/874420-长步道#_2-首轮问题-1-2-对赌条款与最惠待遇条款的签署、履行与解除-首轮回复-txt-行-240-560"
+            },
+            {
+              "text": "3. 首轮问题 1（3）：国有股东广州科金与雨花经开的国资程序（首轮回复 txt 行 460-660）",
+              "link": "/kb2024/874420-长步道#_3-首轮问题-1-3-国有股东广州科金与雨花经开的国资程序-首轮回复-txt-行-460-660"
+            },
+            {
+              "text": "4. 首轮问题 1（4）：外商投资、外汇登记、安全审查与返程投资（首轮回复 txt 行 660-1080）",
+              "link": "/kb2024/874420-长步道#_4-首轮问题-1-4-外商投资、外汇登记、安全审查与返程投资-首轮回复-txt-行-660-1080"
+            },
+            {
+              "text": "5. 首轮问题 1（5）（6）：增资价差、客户股东低价入股与关联方披露口径（首轮回复 txt 行 900-1290）",
+              "link": "/kb2024/874420-长步道#_5-首轮问题-1-5-6-增资价差、客户股东低价入股与关联方披露口径-首轮回复-txt-行-900-1290"
+            },
+            {
+              "text": "6. 首轮问题 6（1）：共同实控人治理与独立董事任职核查（首轮回复 txt 行 5664-5794）",
+              "link": "/kb2024/874420-长步道#_6-首轮问题-6-1-共同实控人治理与独立董事任职核查-首轮回复-txt-行-5664-5794"
+            },
+            {
+              "text": "7. 首轮问题 6（2）：核心技术人员竞业、委托研发、排污登记与集体建设用地（首轮回复 txt 行 5795-6148）",
+              "link": "/kb2024/874420-长步道#_7-首轮问题-6-2-核心技术人员竞业、委托研发、排污登记与集体建设用地-首轮回复-txt-行-5795-6148"
+            },
+            {
+              "text": "8. 首轮问题 6（3）：科创板申报终止、申报文件差异与媒体质疑（首轮回复 txt 行 6149-6334）",
+              "link": "/kb2024/874420-长步道#_8-首轮问题-6-3-科创板申报终止、申报文件差异与媒体质疑-首轮回复-txt-行-6149-6334"
+            },
+            {
+              "text": "9. 二轮问题 2（3）：自然人股东与广州创为合伙人流水代持核查（二轮回复 txt 行 539-末段）",
+              "link": "/kb2024/874420-长步道#_9-二轮问题-2-3-自然人股东与广州创为合伙人流水代持核查-二轮回复-txt-行-539-末段"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874420-长步道#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874420-长步道#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874422-南高峰": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "衢州南高峰化工股份有限公司（874422·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874422-南高峰"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874422-南高峰#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874422-南高峰#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874422-南高峰#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（一轮）：业务合规性——超产能、安全生产事故与双高产品（一轮回复第4–46页；txt 行79–1956）",
+              "link": "/kb2024/874422-南高峰#问题1-一轮-业务合规性——超产能、安全生产事故与双高产品-一轮回复第4–46页-txt-行79–1956"
+            },
+            {
+              "text": "问题2＋二轮问题3-1：香港居民实控人境外架构、外汇登记与实控人人数变动（一轮回复第47–68页，txt 行1957–2920；二轮回复第31–34页，txt 行1268–1400）",
+              "link": "/kb2024/874422-南高峰#问题2-二轮问题3-1-香港居民实控人境外架构、外汇登记与实控人人数变动-一轮回复第47–68页-txt-行1957–2920-二轮回复第31–34页-txt-行1268–1400"
+            },
+            {
+              "text": "问题10-2（一轮）：无证房产与已作出处罚的资产瑕疵（一轮回复第240–245页；txt 行10632–10868）",
+              "link": "/kb2024/874422-南高峰#问题10-2-一轮-无证房产与已作出处罚的资产瑕疵-一轮回复第240–245页-txt-行10632–10868"
+            },
+            {
+              "text": "问题10-1＋问题9（一轮）：股权代持核查与员工持股平台合规（一轮回复第225–239、214–224页；txt 行9665–9676、9227–9662）",
+              "link": "/kb2024/874422-南高峰#问题10-1-问题9-一轮-股权代持核查与员工持股平台合规-一轮回复第225–239、214–224页-txt-行9665–9676、9227–9662"
+            },
+            {
+              "text": "问题10-6（一轮）：三次大额分红的程序合规与资金流向追踪（一轮回复第276–285页；txt 行12263–12690）",
+              "link": "/kb2024/874422-南高峰#问题10-6-一轮-三次大额分红的程序合规与资金流向追踪-一轮回复第276–285页-txt-行12263–12690"
+            },
+            {
+              "text": "问题10-5（一轮）：前次沪市主板申报衔接与媒体质疑逐项回应（一轮回复第268–275页；txt 行11902–12260）",
+              "link": "/kb2024/874422-南高峰#问题10-5-一轮-前次沪市主板申报衔接与媒体质疑逐项回应-一轮回复第268–275页-txt-行11902–12260"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874422-南高峰#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874422-南高峰#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874423-衣科股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "杭州衣科信息技术股份有限公司（874423·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874423-衣科股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874423-衣科股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874423-衣科股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874423-衣科股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：业务合规——互联网平台认定、数据合规与业务资质（首轮，回复第 3—42 页；txt 行 80—2005）",
+              "link": "/kb2024/874423-衣科股份#问题-1-业务合规——互联网平台认定、数据合规与业务资质-首轮-回复第-3—42-页-txt-行-80—2005"
+            },
+            {
+              "text": "问题 4：历史沿革——机构股东入股、员工持股平台认定与实控人财务资助（首轮，回复第 130—139 页；txt 行 5622—6098）",
+              "link": "/kb2024/874423-衣科股份#问题-4-历史沿革——机构股东入股、员工持股平台认定与实控人财务资助-首轮-回复第-130—139-页-txt-行-5622—6098"
+            },
+            {
+              "text": "问题 5：特殊投资条款的清理——聚水潭股东协议与股权回购（首轮，回复第 140—146 页；txt 行 6099—6395）",
+              "link": "/kb2024/874423-衣科股份#问题-5-特殊投资条款的清理——聚水潭股东协议与股权回购-首轮-回复第-140—146-页-txt-行-6099—6395"
+            },
+            {
+              "text": "问题 6：股权代持的形成与解除（首轮，回复第 147—155 页；txt 行 6396—6867）",
+              "link": "/kb2024/874423-衣科股份#问题-6-股权代持的形成与解除-首轮-回复第-147—155-页-txt-行-6396—6867"
+            },
+            {
+              "text": "问题 10：财务规范性——个人卡收款、实控人资金占用与关联拆借（首轮，回复第 206—229 页；txt 行 8887—9327）",
+              "link": "/kb2024/874423-衣科股份#问题-10-财务规范性——个人卡收款、实控人资金占用与关联拆借-首轮-回复第-206—229-页-txt-行-8887—9327"
+            },
+            {
+              "text": "问题 14：董监高任职、杭州东灵承继与公司治理（首轮，回复第 252—266 页；txt 行 10996—11470 及其后）",
+              "link": "/kb2024/874423-衣科股份#问题-14-董监高任职、杭州东灵承继与公司治理-首轮-回复第-252—266-页-txt-行-10996—11470-及其后"
+            },
+            {
+              "text": "二轮问题 1：拟挂牌层级由创新层调整为基础层（二轮，回复第 3—4 页；txt 行 45—98）",
+              "link": "/kb2024/874423-衣科股份#二轮问题-1-拟挂牌层级由创新层调整为基础层-二轮-回复第-3—4-页-txt-行-45—98"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874423-衣科股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874423-衣科股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874425-方圆塑机": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "杭州方圆塑机股份有限公司（874425·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874425-方圆塑机"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874425-方圆塑机#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874425-方圆塑机#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874425-方圆塑机#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革（首轮，回复第4—26页；txt 行81–1038）",
+              "link": "/kb2024/874425-方圆塑机#问题1-关于历史沿革-首轮-回复第4—26页-txt-行81–1038"
+            },
+            {
+              "text": "问题3：关于实际控制人——大额借款与参股公司破产清算（首轮，回复第41—48页；txt 行1584–1887）",
+              "link": "/kb2024/874425-方圆塑机#问题3-关于实际控制人——大额借款与参股公司破产清算-首轮-回复第41—48页-txt-行1584–1887"
+            },
+            {
+              "text": "问题7（1）：特殊投资条款——外部投资人回购对赌（首轮，回复第111、114—118页；txt 行4452–4514、4664–4867）",
+              "link": "/kb2024/874425-方圆塑机#问题7-1-特殊投资条款——外部投资人回购对赌-首轮-回复第111、114—118页-txt-行4452–4514、4664–4867"
+            },
+            {
+              "text": "问题7（2）：同业竞争（首轮，回复第111、118—120页；txt 行4868–5000）",
+              "link": "/kb2024/874425-方圆塑机#问题7-2-同业竞争-首轮-回复第111、118—120页-txt-行4868–5000"
+            },
+            {
+              "text": "问题7（3）：安全生产处罚（首轮，回复第111、120—127页；txt 行5000–5310）",
+              "link": "/kb2024/874425-方圆塑机#问题7-3-安全生产处罚-首轮-回复第111、120—127页-txt-行5000–5310"
+            },
+            {
+              "text": "问题7（10）：环评批复及验收、董监高履历信息披露（首轮，回复第113页起；txt 行4425–4451 起）",
+              "link": "/kb2024/874425-方圆塑机#问题7-10-环评批复及验收、董监高履历信息披露-首轮-回复第113页起-txt-行4425–4451-起"
+            },
+            {
+              "text": "问题2（二轮）：关于历史股东——平台穿透与国资属性认定（二轮，回复第23—30页；txt 行958–1266）",
+              "link": "/kb2024/874425-方圆塑机#问题2-二轮-关于历史股东——平台穿透与国资属性认定-二轮-回复第23—30页-txt-行958–1266"
+            },
+            {
+              "text": "问题3（二轮）：关于公司治理——家族化结构下的程序与独立性（二轮，回复第31—38页；txt 行1267–1572）",
+              "link": "/kb2024/874425-方圆塑机#问题3-二轮-关于公司治理——家族化结构下的程序与独立性-二轮-回复第31—38页-txt-行1267–1572"
+            },
+            {
+              "text": "问题4（1）（二轮）：实控人清偿能力与任职资格追问（二轮，回复第39—42页；txt 行1573–1782）",
+              "link": "/kb2024/874425-方圆塑机#问题4-1-二轮-实控人清偿能力与任职资格追问-二轮-回复第39—42页-txt-行1573–1782"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874425-方圆塑机#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874425-方圆塑机#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874428-宏霸机电": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "无锡宏霸机电股份有限公司（874428·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874428-宏霸机电"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874428-宏霸机电#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874428-宏霸机电#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874428-宏霸机电#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于公司独立性（首轮，回复第 3–22 页；txt 行 50–783）",
+              "link": "/kb2024/874428-宏霸机电#问题-1-关于公司独立性-首轮-回复第-3–22-页-txt-行-50–783"
+            },
+            {
+              "text": "问题 2：关于合法规范经营（首轮，回复第 22–46 页；txt 行 785–1752）",
+              "link": "/kb2024/874428-宏霸机电#问题-2-关于合法规范经营-首轮-回复第-22–46-页-txt-行-785–1752"
+            },
+            {
+              "text": "问题 3：关于诉讼纠纷（首轮，回复第 47–62 页；txt 行 1754–2374）",
+              "link": "/kb2024/874428-宏霸机电#问题-3-关于诉讼纠纷-首轮-回复第-47–62-页-txt-行-1754–2374"
+            },
+            {
+              "text": "问题 4：关于委托研发及专利（首轮，回复第 63–68 页；txt 行 2375–2643）",
+              "link": "/kb2024/874428-宏霸机电#问题-4-关于委托研发及专利-首轮-回复第-63–68-页-txt-行-2375–2643"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874428-宏霸机电#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874428-宏霸机电#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874429-华甸防雷": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江华甸防雷科技股份有限公司（874429·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874429-华甸防雷"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874429-华甸防雷#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874429-华甸防雷#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874429-华甸防雷#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：家族三代赠予、实控人认定与两次增资（首轮，回复第3—23页；txt 行77—1230 前后）",
+              "link": "/kb2024/874429-华甸防雷#问题1-家族三代赠予、实控人认定与两次增资-首轮-回复第3—23页-txt-行77—1230-前后"
+            },
+            {
+              "text": "问题2：家族100%控制下的公司治理（首轮，回复第24—30页；txt 行1231 前后）",
+              "link": "/kb2024/874429-华甸防雷#问题2-家族100-控制下的公司治理-首轮-回复第24—30页-txt-行1231-前后"
+            },
+            {
+              "text": "问题8(1)(2)(3)：权利负担、子公司未实缴与程序完善（首轮，回复第122—127页；txt 行6340—6560）",
+              "link": "/kb2024/874429-华甸防雷#问题8-1-2-3-权利负担、子公司未实缴与程序完善-首轮-回复第122—127页-txt-行6340—6560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874429-华甸防雷#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874429-华甸防雷#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874430-丰德康": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳丰德康种业股份有限公司（874430·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874430-丰德康"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874430-丰德康#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874430-丰德康#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874430-丰德康#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1（5）：种质资源无形资产出资的职务发明排查与出资合规（回复第36-39页；txt行1709-1810）",
+              "link": "/kb2024/874430-丰德康#_1-首轮问题1-5-种质资源无形资产出资的职务发明排查与出资合规-回复第36-39页-txt行1709-1810"
+            },
+            {
+              "text": "2. 首轮问题1（8）：河南丰德康多层股权代持的形成与解除（回复第9-26页；txt行2400-2560、700-1030）",
+              "link": "/kb2024/874430-丰德康#_2-首轮问题1-8-河南丰德康多层股权代持的形成与解除-回复第9-26页-txt行2400-2560、700-1030"
+            },
+            {
+              "text": "3. 首轮问题2：无控股股东认定、共同实际控制人与郑继东排除（回复第64-70页；txt行2976-3230）",
+              "link": "/kb2024/874430-丰德康#_3-首轮问题2-无控股股东认定、共同实际控制人与郑继东排除-回复第64-70页-txt行2976-3230"
+            },
+            {
+              "text": "4. 首轮问题7（1）（2）：党政干部任职合规与土地房产合规（回复第219-229页；txt行9740-10260）",
+              "link": "/kb2024/874430-丰德康#_4-首轮问题7-1-2-党政干部任职合规与土地房产合规-回复第219-229页-txt行9740-10260"
+            },
+            {
+              "text": "5. 首轮问题7（3）：员工持股平台郑州玉麦股权激励（回复第229-240页前后；txt行10260-10450前后）",
+              "link": "/kb2024/874430-丰德康#_5-首轮问题7-3-员工持股平台郑州玉麦股权激励-回复第229-240页前后-txt行10260-10450前后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874430-丰德康#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874430-丰德康#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874431-英氏控股": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "英氏控股集团股份有限公司（874431·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874431-英氏控股"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874431-英氏控股#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览（按法律意见书正文结构映射）",
+          "link": "/kb2024/874431-英氏控股#二、法律问题总览-按法律意见书正文结构映射"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874431-英氏控股#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "专题A：设立时期 14 人代持的形成、\"预留股\"创新与 2018 年启动上市节点的一揽子清理（《法律意见书》正文四、六、七，页 3-3-15 至 3-3-52 区间；txt 行 494—2386）",
+              "link": "/kb2024/874431-英氏控股#专题a-设立时期-14-人代持的形成、-预留股-创新与-2018-年启动上市节点的一揽子清理-《法律意见书》正文四、六、七-页-3-3-15-至-3-3-52-区间-txt-行-494—2386"
+            },
+            {
+              "text": "专题B：华润润湘等机构入股的全套投资方权利条款与两步\"自始无效\"清理（《法律意见书》正文七第 6 项，页 3-3-48 至 3-3-50；txt 行 1800—1935）",
+              "link": "/kb2024/874431-英氏控股#专题b-华润润湘等机构入股的全套投资方权利条款与两步-自始无效-清理-《法律意见书》正文七第-6-项-页-3-3-48-至-3-3-50-txt-行-1800—1935"
+            },
+            {
+              "text": "专题C：社保公积金缺口量化与劳务外包定性（正文十九，页 3-3-106 至 3-3-108；txt 行 4467—4560）",
+              "link": "/kb2024/874431-英氏控股#专题c-社保公积金缺口量化与劳务外包定性-正文十九-页-3-3-106-至-3-3-108-txt-行-4467—4560"
+            },
+            {
+              "text": "专题D：境外子公司与外汇出口（《法律意见书》正文八、十，txt 行 1939—1940、2164—2165、3802—3850）",
+              "link": "/kb2024/874431-英氏控股#专题d-境外子公司与外汇出口-《法律意见书》正文八、十-txt-行-1939—1940、2164—2165、3802—3850"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874431-英氏控股#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874431-英氏控股#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874432-天永诚": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "天永诚高分子材料（江苏）股份有限公司（874432·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874432-天永诚"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874432-天永诚#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874432-天永诚#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874432-天永诚#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于历史沿革——港资背景、平台代持与实控人认定（首轮，回复第 4–28 页；txt 行 55–1100）",
+              "link": "/kb2024/874432-天永诚#问题-1-关于历史沿革——港资背景、平台代持与实控人认定-首轮-回复第-4–28-页-txt-行-55–1100"
+            },
+            {
+              "text": "问题 3：关于特殊投资条款——存量对赌保留挂牌的标杆论证（首轮，回复第 61–71 页；txt 行 2494–2900）",
+              "link": "/kb2024/874432-天永诚#问题-3-关于特殊投资条款——存量对赌保留挂牌的标杆论证-首轮-回复第-61–71-页-txt-行-2494–2900"
+            },
+            {
+              "text": "问题 2 与问题 8 要点：超批复产能生产与关联收购、税务处罚（首轮，回复第 29–60 页、173–195 页；txt 行 1100–2493、3050–3560）",
+              "link": "/kb2024/874432-天永诚#问题-2-与问题-8-要点-超批复产能生产与关联收购、税务处罚-首轮-回复第-29–60-页、173–195-页-txt-行-1100–2493、3050–3560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874432-天永诚#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874432-天永诚#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874433-安达股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖州安达汽车配件股份有限公司（874433·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874433-安达股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874433-安达股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874433-安达股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874433-安达股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2：关于股权代持——\"上不持下\"红线下的双层代持及其申报前清洗（第一轮，回复第13—28页；txt 行587–1236）",
+              "link": "/kb2024/874433-安达股份#问题2-关于股权代持——-上不持下-红线下的双层代持及其申报前清洗-第一轮-回复第13—28页-txt-行587–1236"
+            },
+            {
+              "text": "问题3：关于用工合规性——劳务派遣严重超比例的整改与证明效力（第一轮，回复第29—32页；txt 行1237–1421）",
+              "link": "/kb2024/874433-安达股份#问题3-关于用工合规性——劳务派遣严重超比例的整改与证明效力-第一轮-回复第29—32页-txt-行1237–1421"
+            },
+            {
+              "text": "问题1：关于历史沿革——国企改制批复缺口与评估备案补正（第一轮，回复第3—12页；txt 行84–586）",
+              "link": "/kb2024/874433-安达股份#问题1-关于历史沿革——国企改制批复缺口与评估备案补正-第一轮-回复第3—12页-txt-行84–586"
+            },
+            {
+              "text": "问题7（节选）：境外销售的补充披露与合规框架（第一轮，回复第142—152页区间；txt 行6397–6806）",
+              "link": "/kb2024/874433-安达股份#问题7-节选-境外销售的补充披露与合规框架-第一轮-回复第142—152页区间-txt-行6397–6806"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874433-安达股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874433-安达股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874435-昆仑联通": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京昆仑联通科技发展股份有限公司（874435·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874435-昆仑联通"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874435-昆仑联通#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874435-昆仑联通#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874435-昆仑联通#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题6：订单获取合规——招投标与商业贿赂（第一轮，回复第127-132页；txt 行5372-5534）",
+              "link": "/kb2024/874435-昆仑联通#问题6-订单获取合规——招投标与商业贿赂-第一轮-回复第127-132页-txt-行5372-5534"
+            },
+            {
+              "text": "问题7：子公司布局与境外投资手续（第一轮，回复第132-146页；txt 行5535-6079）",
+              "link": "/kb2024/874435-昆仑联通#问题7-子公司布局与境外投资手续-第一轮-回复第132-146页-txt-行5535-6079"
+            },
+            {
+              "text": "问题8：昆仑合伙股权激励——无决议、无考核、无服务期的整改（第一轮，回复第146-161页；txt 行6080-6683）",
+              "link": "/kb2024/874435-昆仑联通#问题8-昆仑合伙股权激励——无决议、无考核、无服务期的整改-第一轮-回复第146-161页-txt-行6080-6683"
+            },
+            {
+              "text": "问题9：胡衡沅代晋健股权代持的形成与还原（第一轮，回复第161-173页；txt 行6684-7217）",
+              "link": "/kb2024/874435-昆仑联通#问题9-胡衡沅代晋健股权代持的形成与还原-第一轮-回复第161-173页-txt-行6684-7217"
+            },
+            {
+              "text": "问题10：二次申报挂牌及 IPO 申报专项核查（第一轮，回复第173-187页；txt 行7218-7890）",
+              "link": "/kb2024/874435-昆仑联通#问题10-二次申报挂牌及-ipo-申报专项核查-第一轮-回复第173-187页-txt-行7218-7890"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874435-昆仑联通#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874435-昆仑联通#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874436-德泰燃气": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "大连德泰港华燃气股份有限公司（874436·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874436-德泰燃气"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874436-德泰燃气#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874436-德泰燃气#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874436-德泰燃气#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：燃气经营许可与特许经营权（首轮，回复第4—16页；txt 行80—724）",
+              "link": "/kb2024/874436-德泰燃气#问题1-燃气经营许可与特许经营权-首轮-回复第4—16页-txt-行80—724"
+            },
+            {
+              "text": "问题3：国企改制、职工持股平台代持与外资合规（首轮，回复第27—54页；txt 行1173—2339）",
+              "link": "/kb2024/874436-德泰燃气#问题3-国企改制、职工持股平台代持与外资合规-首轮-回复第27—54页-txt-行1173—2339"
+            },
+            {
+              "text": "问题4：同业竞争——科泰金诚排他性委托加工（首轮，回复第55—70页；txt 行2340—3118）",
+              "link": "/kb2024/874436-德泰燃气#问题4-同业竞争——科泰金诚排他性委托加工-首轮-回复第55—70页-txt-行2340—3118"
+            },
+            {
+              "text": "问题2：燃气安全生产与劳务用工（首轮，回复第17—26页；txt 行725—1172）",
+              "link": "/kb2024/874436-德泰燃气#问题2-燃气安全生产与劳务用工-首轮-回复第17—26页-txt-行725—1172"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874436-德泰燃气#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874436-德泰燃气#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874437-中原辊轴": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "河南中原辊轴股份有限公司（874437·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874437-中原辊轴"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874437-中原辊轴#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874437-中原辊轴#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874437-中原辊轴#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：向员工集资的债权定性、非法吸收公众存款罪排除与集资款代持（首轮，回复第 3—23 页；txt 行 49—945）",
+              "link": "/kb2024/874437-中原辊轴#问题1-向员工集资的债权定性、非法吸收公众存款罪排除与集资款代持-首轮-回复第-3—23-页-txt-行-49—945"
+            },
+            {
+              "text": "问题2：股权代持全程还原与四次实物出资瑕疵补正（首轮，回复第 24—65 页前后；txt 行 946—2728）",
+              "link": "/kb2024/874437-中原辊轴#问题2-股权代持全程还原与四次实物出资瑕疵补正-首轮-回复第-24—65-页前后-txt-行-946—2728"
+            },
+            {
+              "text": "问题3：亲属企业与共同投资的独立性攻防（首轮，回复第 66—91 页前后；txt 行 2729—3750）",
+              "link": "/kb2024/874437-中原辊轴#问题3-亲属企业与共同投资的独立性攻防-首轮-回复第-66—91-页前后-txt-行-2729—3750"
+            },
+            {
+              "text": "问题4：员工持股平台的激励安排核查（首轮，回复第 92 页起；txt 行 3751—4475）",
+              "link": "/kb2024/874437-中原辊轴#问题4-员工持股平台的激励安排核查-首轮-回复第-92-页起-txt-行-3751—4475"
+            },
+            {
+              "text": "问题10：未取证房产（首轮，回复第 231 页前后；txt 行 9417—9615+）",
+              "link": "/kb2024/874437-中原辊轴#问题10-未取证房产-首轮-回复第-231-页前后-txt-行-9417—9615"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874437-中原辊轴#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874437-中原辊轴#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874438-亚信股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "怀化亚信科技股份有限公司（874438·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874438-亚信股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874438-亚信股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874438-亚信股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874438-亚信股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2：经营合规性及土地房产——双处罚定性、社保缺口与无证场所（首轮，回复第 40—55 页；txt 行 1569—2164）",
+              "link": "/kb2024/874438-亚信股份#问题2-经营合规性及土地房产——双处罚定性、社保缺口与无证场所-首轮-回复第-40—55-页-txt-行-1569—2164"
+            },
+            {
+              "text": "问题3：公司治理——对等持股一致行动、家族平台股份平移与同业竞争主体注销（首轮，回复第 56—81 页；txt 行 2165—3014，代持专项 txt 行 3015—3357）",
+              "link": "/kb2024/874438-亚信股份#问题3-公司治理——对等持股一致行动、家族平台股份平移与同业竞争主体注销-首轮-回复第-56—81-页-txt-行-2165—3014-代持专项-txt-行-3015—3357"
+            },
+            {
+              "text": "问题4+问题8-1：员工平台激励与境外子公司 ODI 合规（首轮，回复第 82—91、162—164 页；txt 行 3358—3750、6561—6670）",
+              "link": "/kb2024/874438-亚信股份#问题4-问题8-1-员工平台激励与境外子公司-odi-合规-首轮-回复第-82—91、162—164-页-txt-行-3358—3750、6561—6670"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874438-亚信股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874438-亚信股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874439-赛瓦特": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "赛瓦特（山东）动力科技股份有限公司（874439·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874439-赛瓦特"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874439-赛瓦特#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874439-赛瓦特#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874439-赛瓦特#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题1+二轮问题1：历史沿革——让与担保、国资程序与出资瑕疵（首轮回复第 4—39 页，txt 行 93—1614；二轮回复第 3—17 页，txt 行 46—648）",
+              "link": "/kb2024/874439-赛瓦特#首轮问题1-二轮问题1-历史沿革——让与担保、国资程序与出资瑕疵-首轮回复第-4—39-页-txt-行-93—1614-二轮回复第-3—17-页-txt-行-46—648"
+            },
+            {
+              "text": "首轮问题2：实际控制人认定演变（首轮回复第 40—48 页；txt 行 1619—1618+）",
+              "link": "/kb2024/874439-赛瓦特#首轮问题2-实际控制人认定演变-首轮回复第-40—48-页-txt-行-1619—1618"
+            },
+            {
+              "text": "首轮问题3：特殊投资条款的存在与清理（首轮回复第 49—65 页；txt 行 2019—2858）",
+              "link": "/kb2024/874439-赛瓦特#首轮问题3-特殊投资条款的存在与清理-首轮回复第-49—65-页-txt-行-2019—2858"
+            },
+            {
+              "text": "首轮问题4+二轮问题2：业务资质、劳务分包与安全生产费（首轮回复第 66—82 页；txt 行 2859—3644；二轮回复第 18—46 页；txt 行 649—1974）",
+              "link": "/kb2024/874439-赛瓦特#首轮问题4-二轮问题2-业务资质、劳务分包与安全生产费-首轮回复第-66—82-页-txt-行-2859—3644-二轮回复第-18—46-页-txt-行-649—1974"
+            },
+            {
+              "text": "首轮问题13(7)(8)(9)：商标专利继受取得、总经理竞业、间接控股股东业务隔离（首轮回复第 172—205 页区间；txt 行 8544—8861 前后）",
+              "link": "/kb2024/874439-赛瓦特#首轮问题13-7-8-9-商标专利继受取得、总经理竞业、间接控股股东业务隔离-首轮回复第-172—205-页区间-txt-行-8544—8861-前后"
+            },
+            {
+              "text": "二轮问题3+4：名称相似企业、赛瓦特能源代持收购与控制权/代持总核查（二轮回复第 47—110 页；txt 行 1975—4595）",
+              "link": "/kb2024/874439-赛瓦特#二轮问题3-4-名称相似企业、赛瓦特能源代持收购与控制权-代持总核查-二轮回复第-47—110-页-txt-行-1975—4595"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874439-赛瓦特#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874439-赛瓦特#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874440-东方重工": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "珠海东方重工股份有限公司（874440·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874440-东方重工"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874440-东方重工#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874440-东方重工#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874440-东方重工#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：历史沿革——多起实控人代持还原、境外子公司与同业竞争整合（第一轮，回复第3-30页；txt 行58-1165）",
+              "link": "/kb2024/874440-东方重工#问题1-历史沿革——多起实控人代持还原、境外子公司与同业竞争整合-第一轮-回复第3-30页-txt-行58-1165"
+            },
+            {
+              "text": "问题2：劳务用工及安全生产——两起死亡事故与劳务供应商适格性（第一轮，回复第31-67页；txt 行1166-2887）",
+              "link": "/kb2024/874440-东方重工#问题2-劳务用工及安全生产——两起死亡事故与劳务供应商适格性-第一轮-回复第31-67页-txt-行1166-2887"
+            },
+            {
+              "text": "问题3：土地房产及业务合规——未报批报建加建、土地全额抵押、招投标与资质挂靠排查（第一轮，回复第68-94页；txt 行2888-4000）",
+              "link": "/kb2024/874440-东方重工#问题3-土地房产及业务合规——未报批报建加建、土地全额抵押、招投标与资质挂靠排查-第一轮-回复第68-94页-txt-行2888-4000"
+            },
+            {
+              "text": "问题9：四次股权激励与两平台安排（第一轮，回复第234-244页；txt 行10070-10560 及其后）",
+              "link": "/kb2024/874440-东方重工#问题9-四次股权激励与两平台安排-第一轮-回复第234-244页-txt-行10070-10560-及其后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874440-东方重工#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874440-东方重工#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874441-探创科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京探创资源科技股份有限公司（874441·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874441-探创科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874441-探创科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874441-探创科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874441-探创科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（第一轮）：关于历史沿革——国资程序链条、控股股东变更与职工股退出（首轮回复第3—11页；txt 行75—470）",
+              "link": "/kb2024/874441-探创科技#问题1-第一轮-关于历史沿革——国资程序链条、控股股东变更与职工股退出-首轮回复第3—11页-txt-行75—470"
+            },
+            {
+              "text": "问题2（第一轮）：关于董事、核心技术人员和合作研发（首轮回复第12—26页；txt 行473—980）",
+              "link": "/kb2024/874441-探创科技#问题2-第一轮-关于董事、核心技术人员和合作研发-首轮回复第12—26页-txt-行473—980"
+            },
+            {
+              "text": "问题7(2)（第一轮）：关于同业竞争（首轮回复第107—133页；txt 行4044—5370）",
+              "link": "/kb2024/874441-探创科技#问题7-2-第一轮-关于同业竞争-首轮回复第107—133页-txt-行4044—5370"
+            },
+            {
+              "text": "问题7(3)/(4)（第一轮）：关于业务资质、招投标（首轮回复第134—136页；txt 行5371—5510）",
+              "link": "/kb2024/874441-探创科技#问题7-3-4-第一轮-关于业务资质、招投标-首轮回复第134—136页-txt-行5371—5510"
+            },
+            {
+              "text": "问题3（第一轮）/问题1（第二轮）：关于关联交易——90%关联销售的依赖与公允性（首轮回复第27—49页，txt 行987—1810；二轮回复第4—8页，txt 行70—318）",
+              "link": "/kb2024/874441-探创科技#问题3-第一轮-问题1-第二轮-关于关联交易——90-关联销售的依赖与公允性-首轮回复第27—49页-txt-行987—1810-二轮回复第4—8页-txt-行70—318"
+            },
+            {
+              "text": "问题3(1)(2)（第二轮）：职工股定性、招投标占比波动与国有股权设置批复（二轮回复第16—22页；txt 行614—900）",
+              "link": "/kb2024/874441-探创科技#问题3-1-2-第二轮-职工股定性、招投标占比波动与国有股权设置批复-二轮回复第16—22页-txt-行614—900"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874441-探创科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874441-探创科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874442-锐格科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江锐格物流科技股份有限公司（874442·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874442-锐格科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874442-锐格科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874442-锐格科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874442-锐格科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：现行有效回购条款的清理边界与实控人支付能力测算（首轮回复第47—58页；20240814 txt行1650—2400）",
+              "link": "/kb2024/874442-锐格科技#_1-首轮问题3-现行有效回购条款的清理边界与实控人支付能力测算-首轮回复第47—58页-20240814-txt行1650—2400"
+            },
+            {
+              "text": "2. 首轮问题1(4)：安全生产死亡事故及个人处罚（首轮回复第19—23页；20240814 txt行612—680）",
+              "link": "/kb2024/874442-锐格科技#_2-首轮问题1-4-安全生产死亡事故及个人处罚-首轮回复第19—23页-20240814-txt行612—680"
+            },
+            {
+              "text": "3. 首轮问题2(4)：与德马科技（688360）的独立性核查（首轮回复第47—48页；20240814 txt行1532—1560）",
+              "link": "/kb2024/874442-锐格科技#_3-首轮问题2-4-与德马科技-688360-的独立性核查-首轮回复第47—48页-20240814-txt行1532—1560"
+            },
+            {
+              "text": "4. 首轮问题1(1)：劳务外包的资质、定价与规避劳务派遣核查（首轮回复第3—19页；20240814 txt行92—610）",
+              "link": "/kb2024/874442-锐格科技#_4-首轮问题1-1-劳务外包的资质、定价与规避劳务派遣核查-首轮回复第3—19页-20240814-txt行92—610"
+            },
+            {
+              "text": "5. 首轮问题2(1)(5)：2015年减资程序与转增股本口径更正（首轮回复第23—47页；20240814 txt行130—1600）",
+              "link": "/kb2024/874442-锐格科技#_5-首轮问题2-1-5-2015年减资程序与转增股本口径更正-首轮回复第23—47页-20240814-txt行130—1600"
+            },
+            {
+              "text": "6. 首轮问题9(1)(4)：转贷与个人卡的核查（首轮回复第172—188页；20240814 txt行7326—8010）",
+              "link": "/kb2024/874442-锐格科技#_6-首轮问题9-1-4-转贷与个人卡的核查-首轮回复第172—188页-20240814-txt行7326—8010"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874442-锐格科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874442-锐格科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874443-安宇迪": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "哈尔滨安宇迪航空工业股份有限公司（874443·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874443-安宇迪"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874443-安宇迪#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874443-安宇迪#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874443-安宇迪#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：股权变动合规性及特殊投资条款解除真实性（第一轮，回复第3–39页；txt行86–1670）",
+              "link": "/kb2024/874443-安宇迪#问题1-股权变动合规性及特殊投资条款解除真实性-第一轮-回复第3–39页-txt行86–1670"
+            },
+            {
+              "text": "问题2：客户集中度较高及订单获取合规性（第一轮，回复第40–76页；txt行1671–7138；律师就（1）（5）发表意见）",
+              "link": "/kb2024/874443-安宇迪#问题2-客户集中度较高及订单获取合规性-第一轮-回复第40–76页-txt行1671–7138-律师就-1-5-发表意见"
+            },
+            {
+              "text": "问题4：关联方及关联交易合理性、公允性（第一轮，回复第134–169页；txt行5664–7138）",
+              "link": "/kb2024/874443-安宇迪#问题4-关联方及关联交易合理性、公允性-第一轮-回复第134–169页-txt行5664–7138"
+            },
+            {
+              "text": "问题6：经营合法规范性——集体土地房产、社保公积金、环评与超产能（第一轮，回复第180–195页；txt行7590–8202）",
+              "link": "/kb2024/874443-安宇迪#问题6-经营合法规范性——集体土地房产、社保公积金、环评与超产能-第一轮-回复第180–195页-txt行7590–8202"
+            },
+            {
+              "text": "问题5：财务内控规范整改——现金交易与实控人代收（第一轮，回复第170–179页；txt行7139–7589）",
+              "link": "/kb2024/874443-安宇迪#问题5-财务内控规范整改——现金交易与实控人代收-第一轮-回复第170–179页-txt行7139–7589"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874443-安宇迪#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874443-安宇迪#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874444-东通岩土": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "东通岩土科技股份有限公司（874444·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874444-东通岩土"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874444-东通岩土#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874444-东通岩土#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874444-东通岩土#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革与实际控制人认定（第一轮，回复第3—29页；txt 行61—1127）",
+              "link": "/kb2024/874444-东通岩土#问题1-关于历史沿革与实际控制人认定-第一轮-回复第3—29页-txt-行61—1127"
+            },
+            {
+              "text": "问题2：关于业务合规性（第一轮，回复第30—59页；txt 行1128—2321）",
+              "link": "/kb2024/874444-东通岩土#问题2-关于业务合规性-第一轮-回复第30—59页-txt-行1128—2321"
+            },
+            {
+              "text": "问题3：关于重大诉讼（第一轮，回复第60—66页；txt 行2322—2596）",
+              "link": "/kb2024/874444-东通岩土#问题3-关于重大诉讼-第一轮-回复第60—66页-txt-行2322—2596"
+            },
+            {
+              "text": "问题8(1)：关于部分房产未办理产权证书（第一轮，回复第149—155页；txt 行5875—6115）",
+              "link": "/kb2024/874444-东通岩土#问题8-1-关于部分房产未办理产权证书-第一轮-回复第149—155页-txt-行5875—6115"
+            },
+            {
+              "text": "股权代持专项核查（第一轮，回复第233—241页；txt 行9382—9733）",
+              "link": "/kb2024/874444-东通岩土#股权代持专项核查-第一轮-回复第233—241页-txt-行9382—9733"
+            },
+            {
+              "text": "问题2（第二轮）：关于现金分红（第二轮，回复第24—29页；txt 二轮文件行831—1080）",
+              "link": "/kb2024/874444-东通岩土#问题2-第二轮-关于现金分红-第二轮-回复第24—29页-txt-二轮文件行831—1080"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874444-东通岩土#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874444-东通岩土#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874445-科金明": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市科金明电子股份有限公司（874445·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874445-科金明"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874445-科金明#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874445-科金明#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874445-科金明#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于子公司收购——前次挂牌未披露代持关联方的补救（首轮，回复第 4–30 页；txt 行 83–1096）",
+              "link": "/kb2024/874445-科金明#问题-1-关于子公司收购——前次挂牌未披露代持关联方的补救-首轮-回复第-4–30-页-txt-行-83–1096"
+            },
+            {
+              "text": "问题 2：关于业务合规性——跨境电商与海关处罚、社保放弃（首轮，回复第 31–46 页；txt 行 1097–1770）",
+              "link": "/kb2024/874445-科金明#问题-2-关于业务合规性——跨境电商与海关处罚、社保放弃-首轮-回复第-31–46-页-txt-行-1097–1770"
+            },
+            {
+              "text": "问题 3：关于历史沿革——二次挂牌的增资价差、激励平台与前次披露一致性（首轮，回复第 47–77 页；txt 行 1771–3061）",
+              "link": "/kb2024/874445-科金明#问题-3-关于历史沿革——二次挂牌的增资价差、激励平台与前次披露一致性-首轮-回复第-47–77-页-txt-行-1771–3061"
+            },
+            {
+              "text": "问题 10 与问题 11 要点：资金占用、第三方账号公司与夫妻治理（首轮，回复第 249–276 页及 265 页起；txt 行 10200–12050）",
+              "link": "/kb2024/874445-科金明#问题-10-与问题-11-要点-资金占用、第三方账号公司与夫妻治理-首轮-回复第-249–276-页及-265-页起-txt-行-10200–12050"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874445-科金明#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874445-科金明#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874446-荣鑫智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江荣鑫智能仪表股份有限公司（874446·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874446-荣鑫智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874446-荣鑫智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874446-荣鑫智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874446-荣鑫智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：历史沿革——债权转股增资、设立时代持与员工股权激励（第一轮，回复第3-13页；txt 行51-431）",
+              "link": "/kb2024/874446-荣鑫智能#问题1-历史沿革——债权转股增资、设立时代持与员工股权激励-第一轮-回复第3-13页-txt-行51-431"
+            },
+            {
+              "text": "问题2：劳务派遣与劳务外包——\"假外包、真派遣\"辨析（第一轮，回复第14-22页；txt 行432-813）",
+              "link": "/kb2024/874446-荣鑫智能#问题2-劳务派遣与劳务外包——-假外包、真派遣-辨析-第一轮-回复第14-22页-txt-行432-813"
+            },
+            {
+              "text": "问题8：公司治理的有效性和规范性——亲属共同控制下的治理与同业竞争（第一轮，回复第101-114页；txt 行3695-4277）",
+              "link": "/kb2024/874446-荣鑫智能#问题8-公司治理的有效性和规范性——亲属共同控制下的治理与同业竞争-第一轮-回复第101-114页-txt-行3695-4277"
+            },
+            {
+              "text": "问题9(4)：大额分红与超额分配的弥补（第一轮，回复第144-146页；txt 行5352-5438）",
+              "link": "/kb2024/874446-荣鑫智能#问题9-4-大额分红与超额分配的弥补-第一轮-回复第144-146页-txt-行5352-5438"
+            },
+            {
+              "text": "问题10：股权代持审核问询口径（第一轮，回复第147-160页；txt 行5439-5946）",
+              "link": "/kb2024/874446-荣鑫智能#问题10-股权代持审核问询口径-第一轮-回复第147-160页-txt-行5439-5946"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874446-荣鑫智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874446-荣鑫智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874447-华通通信": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "华通誉球通信产业集团股份有限公司（874447·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874447-华通通信"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874447-华通通信#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874447-华通通信#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874447-华通通信#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1（首轮）：关于业务合规性——涉密资质剥离、招投标、数据安全、分包挂靠与社保（首轮，回复第 2-1-3 至 2-1-27 页；txt 行 56–1460）",
+              "link": "/kb2024/874447-华通通信#问题-1-首轮-关于业务合规性——涉密资质剥离、招投标、数据安全、分包挂靠与社保-首轮-回复第-2-1-3-至-2-1-27-页-txt-行-56–1460"
+            },
+            {
+              "text": "问题 3（首轮）：关于历史沿革——200 人核算、工研院创投对赌清理、员工平台（首轮，回复第 2-1-110 至 2-1-140 页；txt 行 5159–6615）",
+              "link": "/kb2024/874447-华通通信#问题-3-首轮-关于历史沿革——200-人核算、工研院创投对赌清理、员工平台-首轮-回复第-2-1-110-至-2-1-140-页-txt-行-5159–6615"
+            },
+            {
+              "text": "问题 10(一)(二)（首轮）：华运通投资同业竞争、继受专利职务发明与董监高竞业禁止（首轮，回复第 2-1-269 至 2-1-278 页；txt 行 12059–12650）",
+              "link": "/kb2024/874447-华通通信#问题-10-一-二-首轮-华运通投资同业竞争、继受专利职务发明与董监高竞业禁止-首轮-回复第-2-1-269-至-2-1-278-页-txt-行-12059–12650"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874447-华通通信#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874447-华通通信#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874448-金昌树": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东金昌树新材料股份有限公司（874448·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874448-金昌树"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874448-金昌树#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874448-金昌树#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874448-金昌树#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：两高事项——产业政策、高污染高环境风险产品、禁燃区、排污许可与节能审查（第一轮，回复第4-27页；txt 行66-1085）",
+              "link": "/kb2024/874448-金昌树#问题1-两高事项——产业政策、高污染高环境风险产品、禁燃区、排污许可与节能审查-第一轮-回复第4-27页-txt-行66-1085"
+            },
+            {
+              "text": "问题2：安全生产处罚及安全合规（第一轮，回复第28-32页；txt 行1087-1264）",
+              "link": "/kb2024/874448-金昌树#问题2-安全生产处罚及安全合规-第一轮-回复第28-32页-txt-行1087-1264"
+            },
+            {
+              "text": "问题3：历史沿革——债转股出资、设立时代汇与代持核查、股权继承（第一轮，回复第32-43页；txt 行1265-1668）",
+              "link": "/kb2024/874448-金昌树#问题3-历史沿革——债转股出资、设立时代汇与代持核查、股权继承-第一轮-回复第32-43页-txt-行1265-1668"
+            },
+            {
+              "text": "问题9一：实际控制人认定与亲属股东一致行动（第一轮，回复第107-109页；txt 行4374-4484）",
+              "link": "/kb2024/874448-金昌树#问题9一-实际控制人认定与亲属股东一致行动-第一轮-回复第107-109页-txt-行4374-4484"
+            },
+            {
+              "text": "问题9二：公司治理——亲属回避、董监高变动、兼任与五独立（第一轮，回复第110-122页；txt 行4485-5128）",
+              "link": "/kb2024/874448-金昌树#问题9二-公司治理——亲属回避、董监高变动、兼任与五独立-第一轮-回复第110-122页-txt-行4485-5128"
+            },
+            {
+              "text": "问题9三：继受取得济南大学三项专利（第一轮，回复第123-126页；txt 行5129-5329）",
+              "link": "/kb2024/874448-金昌树#问题9三-继受取得济南大学三项专利-第一轮-回复第123-126页-txt-行5129-5329"
+            },
+            {
+              "text": "问题9四：子公司架构、外协资质与区域性股权市场挂牌（第一轮，回复第127-134页；txt 行5330-5646）",
+              "link": "/kb2024/874448-金昌树#问题9四-子公司架构、外协资质与区域性股权市场挂牌-第一轮-回复第127-134页-txt-行5330-5646"
+            },
+            {
+              "text": "法律意见书专项：社保公积金缴纳与诉讼处罚失信核查（法律意见书第110-118页；txt 行4060-4240、尾部）",
+              "link": "/kb2024/874448-金昌树#法律意见书专项-社保公积金缴纳与诉讼处罚失信核查-法律意见书第110-118页-txt-行4060-4240、尾部"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874448-金昌树#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874448-金昌树#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874449-艺虹股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "天津艺虹智能包装科技股份有限公司（874449·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874449-艺虹股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874449-艺虹股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874449-艺虹股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874449-艺虹股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2：共同实际控制人认定——邱氏三姐妹与\"以邱毓敏意见为准\"的一致行动安排（第一轮，回复第42-52页；txt 行1560-1975）",
+              "link": "/kb2024/874449-艺虹股份#问题2-共同实际控制人认定——邱氏三姐妹与-以邱毓敏意见为准-的一致行动安排-第一轮-回复第42-52页-txt-行1560-1975"
+            },
+            {
+              "text": "问题3：历史沿革——国有股权 65% 转让未进场、集体企业 0.38% 股权未产权界定及注销后签约（第一轮，回复第52-83页；txt 行1976-3529）",
+              "link": "/kb2024/874449-艺虹股份#问题3-历史沿革——国有股权-65-转让未进场、集体企业-0-38-股权未产权界定及注销后签约-第一轮-回复第52-83页-txt-行1976-3529"
+            },
+            {
+              "text": "问题4：四个员工持股平台与股权激励合规（第一轮，回复第84-95页；txt 行3530-3961）",
+              "link": "/kb2024/874449-艺虹股份#问题4-四个员工持股平台与股权激励合规-第一轮-回复第84-95页-txt-行3530-3961"
+            },
+            {
+              "text": "问题5：劳动用工——劳务派遣整改为外包与社保公积金提升（第一轮，回复第96-119页；txt 行3962-5017）",
+              "link": "/kb2024/874449-艺虹股份#问题5-劳动用工——劳务派遣整改为外包与社保公积金提升-第一轮-回复第96-119页-txt-行3962-5017"
+            },
+            {
+              "text": "问题6：环保处罚与未验先用项目（第一轮，回复第120-129页；txt 行5018-5652）",
+              "link": "/kb2024/874449-艺虹股份#问题6-环保处罚与未验先用项目-第一轮-回复第120-129页-txt-行5018-5652"
+            },
+            {
+              "text": "补充问题2：上海泉岳和杨茵突击入股（第一轮补充问题，回复第219-224页；txt 行9285-9292 及周边）",
+              "link": "/kb2024/874449-艺虹股份#补充问题2-上海泉岳和杨茵突击入股-第一轮补充问题-回复第219-224页-txt-行9285-9292-及周边"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874449-艺虹股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874449-艺虹股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874451-紫光国芯": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "西安紫光国芯半导体股份有限公司（874451·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874451-紫光国芯"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874451-紫光国芯#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874451-紫光国芯#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874451-紫光国芯#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1（首轮）：历史沿革合法合规性（首轮，回复第 3–24 页；txt 行 78–905）",
+              "link": "/kb2024/874451-紫光国芯#问题-1-首轮-历史沿革合法合规性-首轮-回复第-3–24-页-txt-行-78–905"
+            },
+            {
+              "text": "问题 2（首轮）：无实际控制人认定准确性（首轮，回复第 25–56 页；txt 行 908–2255）",
+              "link": "/kb2024/874451-紫光国芯#问题-2-首轮-无实际控制人认定准确性-首轮-回复第-25–56-页-txt-行-908–2255"
+            },
+            {
+              "text": "问题 3（首轮）：设置多个持股平台的合法合规性（首轮，回复第 57–72 页；txt 行 2256–2947）",
+              "link": "/kb2024/874451-紫光国芯#问题-3-首轮-设置多个持股平台的合法合规性-首轮-回复第-57–72-页-txt-行-2256–2947"
+            },
+            {
+              "text": "问题 2（三轮）：其他问题——“股权明晰”专项核查（三轮，回复第 71–80 页；txt 行 3171–3560）",
+              "link": "/kb2024/874451-紫光国芯#问题-2-三轮-其他问题——-股权明晰-专项核查-三轮-回复第-71–80-页-txt-行-3171–3560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874451-紫光国芯#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874451-紫光国芯#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874452-华尔科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "华尔科技集团股份有限公司（874452·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874452-华尔科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874452-华尔科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874452-华尔科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874452-华尔科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：历史沿革——外资审批、安全审查、返程投资与非货币出资（第一轮，回复第4-24页；txt 行79-1099）",
+              "link": "/kb2024/874452-华尔科技#问题1-历史沿革——外资审批、安全审查、返程投资与非货币出资-第一轮-回复第4-24页-txt-行79-1099"
+            },
+            {
+              "text": "问题2：机构股东——境外架构披露、员工平台闭环与明德对赌解除（第一轮，回复第25-35页；txt 行1100-1578）",
+              "link": "/kb2024/874452-华尔科技#问题2-机构股东——境外架构披露、员工平台闭环与明德对赌解除-第一轮-回复第25-35页-txt-行1100-1578"
+            },
+            {
+              "text": "问题3⑥与问题4：增值电信资质与土地房产瑕疵（第一轮，回复第36-66页；txt 行1579-2795）",
+              "link": "/kb2024/874452-华尔科技#问题36与问题4-增值电信资质与土地房产瑕疵-第一轮-回复第36-66页-txt-行1579-2795"
+            },
+            {
+              "text": "问题9(1)：境外再投资手续未办结——欧博收购墨西哥 AMRAY（第一轮，回复第160-166页；txt 行6745-7723）",
+              "link": "/kb2024/874452-华尔科技#问题9-1-境外再投资手续未办结——欧博收购墨西哥-amray-第一轮-回复第160-166页-txt-行6745-7723"
+            },
+            {
+              "text": "问题9(5)：章程通知方式与披露更正（第一轮，回复第207-209页；txt 行8814-9237）",
+              "link": "/kb2024/874452-华尔科技#问题9-5-章程通知方式与披露更正-第一轮-回复第207-209页-txt-行8814-9237"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874452-华尔科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874452-华尔科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874455-雄博股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海雄博精密仪器股份有限公司（874455·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874455-雄博股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874455-雄博股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874455-雄博股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874455-雄博股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题9：关于股权代持——三笔代持的逐笔还原（首轮回复第115—117页；txt 行4622—4935）",
+              "link": "/kb2024/874455-雄博股份#问题9-关于股权代持——三笔代持的逐笔还原-首轮回复第115—117页-txt-行4622—4935"
+            },
+            {
+              "text": "问题4：关于无产权房屋及消防情况（首轮回复第29—34页；txt 行1303—1590）",
+              "link": "/kb2024/874455-雄博股份#问题4-关于无产权房屋及消防情况-首轮回复第29—34页-txt-行1303—1590"
+            },
+            {
+              "text": "问题10：关于公司二次申报挂牌（首轮回复第118—122页；txt 行4937—5440）",
+              "link": "/kb2024/874455-雄博股份#问题10-关于公司二次申报挂牌-首轮回复第118—122页-txt-行4937—5440"
+            },
+            {
+              "text": "问题3：关于股权激励——非闭环管理的员工持股（首轮回复第21—28页；txt 行1002—1300）",
+              "link": "/kb2024/874455-雄博股份#问题3-关于股权激励——非闭环管理的员工持股-首轮回复第21—28页-txt-行1002—1300"
+            },
+            {
+              "text": "问题2：关于业务合规性——医疗器械全链条资质（首轮回复第7—20页；txt 行282—1000）",
+              "link": "/kb2024/874455-雄博股份#问题2-关于业务合规性——医疗器械全链条资质-首轮回复第7—20页-txt-行282—1000"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874455-雄博股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874455-雄博股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874456-石羊农科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "陕西石羊农业科技股份有限公司（874456·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874456-石羊农科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874456-石羊农科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874456-石羊农科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874456-石羊农科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "二轮问题1：前次挂牌未披露特殊投资条款与实控人资金输送式受让（二轮回复第 2—46 页前后；txt 行 30—1370）",
+              "link": "/kb2024/874456-石羊农科#二轮问题1-前次挂牌未披露特殊投资条款与实控人资金输送式受让-二轮回复第-2—46-页前后-txt-行-30—1370"
+            },
+            {
+              "text": "首轮问题1：员工平台、国资股东增资与集体企业改制的组合历史题（首轮回复第 2—73 页前后；txt 行 50—1407）",
+              "link": "/kb2024/874456-石羊农科#首轮问题1-员工平台、国资股东增资与集体企业改制的组合历史题-首轮回复第-2—73-页前后-txt-行-50—1407"
+            },
+            {
+              "text": "首轮问题3：17 处整体租赁养殖场的土地与环保合规（首轮回复第 74—127 页前后；txt 行 3224—4482）",
+              "link": "/kb2024/874456-石羊农科#首轮问题3-17-处整体租赁养殖场的土地与环保合规-首轮回复第-74—127-页前后-txt-行-3224—4482"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874456-石羊农科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874456-石羊农科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874458-舟海智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "重庆舟海智能科技股份有限公司（874458·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874458-舟海智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874458-舟海智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874458-舟海智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874458-舟海智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：彭宏代王迎曦股权代持的形成与解除（首轮，回复第3—10页；20240702 txt 行88—690）",
+              "link": "/kb2024/874458-舟海智能#问题1-1-彭宏代王迎曦股权代持的形成与解除-首轮-回复第3—10页-20240702-txt-行88—690"
+            },
+            {
+              "text": "问题1(2)：舟海合伙员工持股平台（首轮，回复第7—18页；20240702 txt 行249—690）",
+              "link": "/kb2024/874458-舟海智能#问题1-2-舟海合伙员工持股平台-首轮-回复第7—18页-20240702-txt-行249—690"
+            },
+            {
+              "text": "问题2：原控股股东深圳舟海同业竞争、关联交易与资金拆借（首轮，回复第19—34页；20240702 txt 行692—1479）",
+              "link": "/kb2024/874458-舟海智能#问题2-原控股股东深圳舟海同业竞争、关联交易与资金拆借-首轮-回复第19—34页-20240702-txt-行692—1479"
+            },
+            {
+              "text": "二轮问题1：深圳舟海借公司主要供应商购销的规避嫌疑（二轮，回复第3—10页；20240730 txt 行60—540）",
+              "link": "/kb2024/874458-舟海智能#二轮问题1-深圳舟海借公司主要供应商购销的规避嫌疑-二轮-回复第3—10页-20240730-txt-行60—540"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874458-舟海智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874458-舟海智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874459-兴福新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "辽宁兴福新材料股份有限公司（874459·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874459-兴福新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874459-兴福新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874459-兴福新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874459-兴福新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——增资价差、员工持股平台与代持排查（第一轮，回复第 3-26 页；txt 行 46-1064）",
+              "link": "/kb2024/874459-兴福新材#问题1-关于历史沿革——增资价差、员工持股平台与代持排查-第一轮-回复第-3-26-页-txt-行-46-1064"
+            },
+            {
+              "text": "问题2：关于业务合规性——危化品资质、外协与无证临时建筑（第一轮，回复第 27-38 页；txt 行 1065-1638）",
+              "link": "/kb2024/874459-兴福新材#问题2-关于业务合规性——危化品资质、外协与无证临时建筑-第一轮-回复第-27-38-页-txt-行-1065-1638"
+            },
+            {
+              "text": "问题3：关于两高事项（第一轮，回复第 39-60 页；txt 行 1639-2608）",
+              "link": "/kb2024/874459-兴福新材#问题3-关于两高事项-第一轮-回复第-39-60-页-txt-行-1639-2608"
+            },
+            {
+              "text": "问题7：关于投资性房地产——黄龙生物以房抵债与实控人兼职（第一轮，回复第 138-147 页；txt 行 5769-6370）",
+              "link": "/kb2024/874459-兴福新材#问题7-关于投资性房地产——黄龙生物以房抵债与实控人兼职-第一轮-回复第-138-147-页-txt-行-5769-6370"
+            },
+            {
+              "text": "问题10：关于特殊投资条款——A/B/C 轮股东协议终止（第一轮，回复第 178-180 页；txt 行 7428-7600）",
+              "link": "/kb2024/874459-兴福新材#问题10-关于特殊投资条款——a-b-c-轮股东协议终止-第一轮-回复第-178-180-页-txt-行-7428-7600"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874459-兴福新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874459-兴福新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874460-合众伟奇": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京合众伟奇科技股份有限公司（874460·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874460-合众伟奇"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874460-合众伟奇#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874460-合众伟奇#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874460-合众伟奇#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——亲属代持的形成、解除与比例调整（第一轮，回复第3–21页；txt行57–910）",
+              "link": "/kb2024/874460-合众伟奇#问题1-关于历史沿革——亲属代持的形成、解除与比例调整-第一轮-回复第3–21页-txt行57–910"
+            },
+            {
+              "text": "问题2：关于合法规范经营——业务资质与招投标（第一轮，回复第21–40页；txt行911–1767）",
+              "link": "/kb2024/874460-合众伟奇#问题2-关于合法规范经营——业务资质与招投标-第一轮-回复第21–40页-txt行911–1767"
+            },
+            {
+              "text": "问题2（第二轮）：主办券商利益冲突审查与未经客户同意外采技术服务（第二轮，回复第22–29页；txt行808–1190）",
+              "link": "/kb2024/874460-合众伟奇#问题2-第二轮-主办券商利益冲突审查与未经客户同意外采技术服务-第二轮-回复第22–29页-txt行808–1190"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874460-合众伟奇#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874460-合众伟奇#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874461-紫江新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海紫江新材料科技股份有限公司（874461·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874461-紫江新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874461-紫江新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874461-紫江新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874461-紫江新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：关于上市公司子公司（首轮，回复第 3–49 页；txt 行 62–1929）",
+              "link": "/kb2024/874461-紫江新材#问题-1-关于上市公司子公司-首轮-回复第-3–49-页-txt-行-62–1929"
+            },
+            {
+              "text": "问题 2：关于独立性（首轮，回复第 50–70 页；txt 行 1930–2814）",
+              "link": "/kb2024/874461-紫江新材#问题-2-关于独立性-首轮-回复第-50–70-页-txt-行-1930–2814"
+            },
+            {
+              "text": "问题 9：关于环保等相关事项（首轮，回复第 182 页起；txt 行 7461–10680 的一部分）",
+              "link": "/kb2024/874461-紫江新材#问题-9-关于环保等相关事项-首轮-回复第-182-页起-txt-行-7461–10680-的一部分"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874461-紫江新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874461-紫江新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874462-扬州华光": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "扬州华光新材料股份有限公司（874462·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874462-扬州华光"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874462-扬州华光#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874462-扬州华光#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874462-扬州华光#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：股权代持形成与还原、家族无偿转让与员工持股平台（回复第3—13页；txt行75—501）",
+              "link": "/kb2024/874462-扬州华光#_1-首轮问题1-股权代持形成与还原、家族无偿转让与员工持股平台-回复第3—13页-txt行75—501"
+            },
+            {
+              "text": "2. 首轮问题2：家族控制下的公司治理与共同实控人认定（回复第14—27页；txt行502—1167）",
+              "link": "/kb2024/874462-扬州华光#_2-首轮问题2-家族控制下的公司治理与共同实控人认定-回复第14—27页-txt行502—1167"
+            },
+            {
+              "text": "3. 首轮问题8：重大诉讼、共同投资、排污登记滞后与分红（回复第136—155页；txt行5548—6345）",
+              "link": "/kb2024/874462-扬州华光#_3-首轮问题8-重大诉讼、共同投资、排污登记滞后与分红-回复第136—155页-txt行5548—6345"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874462-扬州华光#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874462-扬州华光#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874463-张掖丹霞": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "张掖丹霞文化旅游股份有限公司（874463·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874463-张掖丹霞"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874463-张掖丹霞#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874463-张掖丹霞#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874463-张掖丹霞#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：历史沿革——实物出资瑕疵、派生分立及减资、国资程序（回复第103-126页；txt行4071-5010）",
+              "link": "/kb2024/874463-张掖丹霞#_1-首轮问题3-历史沿革——实物出资瑕疵、派生分立及减资、国资程序-回复第103-126页-txt行4071-5010"
+            },
+            {
+              "text": "2. 首轮问题1：特许经营权、业务资质与劳务派遣用工（回复第3-30页；txt行46-1866）",
+              "link": "/kb2024/874463-张掖丹霞#_2-首轮问题1-特许经营权、业务资质与劳务派遣用工-回复第3-30页-txt行46-1866"
+            },
+            {
+              "text": "3. 首轮问题4：经营场所房产权证、资产转移国资程序与消防（回复第126-142页；txt行5011-5615）",
+              "link": "/kb2024/874463-张掖丹霞#_3-首轮问题4-经营场所房产权证、资产转移国资程序与消防-回复第126-142页-txt行5011-5615"
+            },
+            {
+              "text": "4. 首轮问题8（1）：股份质押、司法冻结与控制权稳定性（回复第177-181页；txt行7057-7586）",
+              "link": "/kb2024/874463-张掖丹霞#_4-首轮问题8-1-股份质押、司法冻结与控制权稳定性-回复第177-181页-txt行7057-7586"
+            },
+            {
+              "text": "5. 首轮问题8（2）：人员独立性、代垫薪酬与代缴社保公积金（回复第181-190页；txt行7587-8000前后）",
+              "link": "/kb2024/874463-张掖丹霞#_5-首轮问题8-2-人员独立性、代垫薪酬与代缴社保公积金-回复第181-190页-txt行7587-8000前后"
+            },
+            {
+              "text": "6. 首轮问题6：同业竞争（回复第151-160页；txt行5919-6357）",
+              "link": "/kb2024/874463-张掖丹霞#_6-首轮问题6-同业竞争-回复第151-160页-txt行5919-6357"
+            },
+            {
+              "text": "7. 首轮问题5：子公司设立国资程序与投资方入股子公司（回复第143-150页；txt行5616-5918）",
+              "link": "/kb2024/874463-张掖丹霞#_7-首轮问题5-子公司设立国资程序与投资方入股子公司-回复第143-150页-txt行5616-5918"
+            },
+            {
+              "text": "8. 二轮问题2：租赁房产土地瑕疵、线上平台属性与兴旅文化股权司法处置风险（二轮回复第32-41页；txt行1104-1676）",
+              "link": "/kb2024/874463-张掖丹霞#_8-二轮问题2-租赁房产土地瑕疵、线上平台属性与兴旅文化股权司法处置风险-二轮回复第32-41页-txt行1104-1676"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874463-张掖丹霞#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874463-张掖丹霞#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874467-笛东股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "笛东规划设计（北京）股份有限公司（874467·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874467-笛东股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874467-笛东股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874467-笛东股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874467-笛东股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题4(1)：实控人配偶 PENG FEN LIU 不认定为共同实控人之辩（首轮，回复第79–82页；txt 行3234–3399）",
+              "link": "/kb2024/874467-笛东股份#首轮问题4-1-实控人配偶-peng-fen-liu-不认定为共同实控人之辩-首轮-回复第79–82页-txt-行3234–3399"
+            },
+            {
+              "text": "首轮问题4(2)：汪敏代持与智度惠信投资退出（首轮，回复第82–86页；txt 行3399–3560）",
+              "link": "/kb2024/874467-笛东股份#首轮问题4-2-汪敏代持与智度惠信投资退出-首轮-回复第82–86页-txt-行3399–3560"
+            },
+            {
+              "text": "首轮问题7：智度惠信五项特殊权利的终止（首轮，回复第151–154页；txt 行6393–6527）",
+              "link": "/kb2024/874467-笛东股份#首轮问题7-智度惠信五项特殊权利的终止-首轮-回复第151–154页-txt-行6393–6527"
+            },
+            {
+              "text": "首轮问题8：四次股权激励与东持咨询（首轮，回复第155–170页；txt 行6528–6393 之后的对应区间）",
+              "link": "/kb2024/874467-笛东股份#首轮问题8-四次股权激励与东持咨询-首轮-回复第155–170页-txt-行6528–6393-之后的对应区间"
+            },
+            {
+              "text": "首轮问题5：招投标、资质挂靠之辩、外籍员工与知识产权防控（首轮，回复第99–137页；txt 行4096–5854）",
+              "link": "/kb2024/874467-笛东股份#首轮问题5-招投标、资质挂靠之辩、外籍员工与知识产权防控-首轮-回复第99–137页-txt-行4096–5854"
+            },
+            {
+              "text": "二轮问题4(3)：以房抵债房产的交接与产权证书（二轮，回复第74–86页；txt 行3769–4369）",
+              "link": "/kb2024/874467-笛东股份#二轮问题4-3-以房抵债房产的交接与产权证书-二轮-回复第74–86页-txt-行3769–4369"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874467-笛东股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874467-笛东股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874469-恒达科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "天津恒达文博科技股份有限公司（874469·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874469-恒达科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874469-恒达科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874469-恒达科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874469-恒达科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题6：公司业务合规——数据个人信息、APP、招投标与商业贿赂、行业资质（第一轮，回复第79-101页；txt 行3669-4617）",
+              "link": "/kb2024/874469-恒达科技#问题6-公司业务合规——数据个人信息、app、招投标与商业贿赂、行业资质-第一轮-回复第79-101页-txt-行3669-4617"
+            },
+            {
+              "text": "问题8(2)：境外销售合规核查（第一轮，回复第120-129页；txt 行5541-6396）",
+              "link": "/kb2024/874469-恒达科技#问题8-2-境外销售合规核查-第一轮-回复第120-129页-txt-行5541-6396"
+            },
+            {
+              "text": "问题8(6)：历次股权激励（第一轮，回复第167-172页；txt 行7732-8210）",
+              "link": "/kb2024/874469-恒达科技#问题8-6-历次股权激励-第一轮-回复第167-172页-txt-行7732-8210"
+            },
+            {
+              "text": "问题8(9)：股利分配（第一轮，回复第188-190页；txt 行8715-8803）",
+              "link": "/kb2024/874469-恒达科技#问题8-9-股利分配-第一轮-回复第188-190页-txt-行8715-8803"
+            },
+            {
+              "text": "问题8(10)：特殊投资条款（对赌）清理（第一轮，回复第190-195页；txt 行8804-9068）",
+              "link": "/kb2024/874469-恒达科技#问题8-10-特殊投资条款-对赌-清理-第一轮-回复第190-195页-txt-行8804-9068"
+            },
+            {
+              "text": "问题8(11)：历史沿革历次股转合法合规与股东人数穿透（第一轮，回复第195-205页；txt 行9069-9529）",
+              "link": "/kb2024/874469-恒达科技#问题8-11-历史沿革历次股转合法合规与股东人数穿透-第一轮-回复第195-205页-txt-行9069-9529"
+            },
+            {
+              "text": "问题8(12)：信息披露补正三事项（第一轮，回复第205-208页；txt 行9530-9690）",
+              "link": "/kb2024/874469-恒达科技#问题8-12-信息披露补正三事项-第一轮-回复第205-208页-txt-行9530-9690"
+            },
+            {
+              "text": "二轮问题2：其他股东投资背景、关联关系与利益安排（第二轮，回复第9-13页；txt 行308-533）",
+              "link": "/kb2024/874469-恒达科技#二轮问题2-其他股东投资背景、关联关系与利益安排-第二轮-回复第9-13页-txt-行308-533"
+            },
+            {
+              "text": "三轮问题1：股权代持与\"股权明晰\"挂牌条件（第三轮，回复第2-8页；txt 行45-367）",
+              "link": "/kb2024/874469-恒达科技#三轮问题1-股权代持与-股权明晰-挂牌条件-第三轮-回复第2-8页-txt-行45-367"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874469-恒达科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874469-恒达科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874470-玖方新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "南通玖方新材料股份有限公司（874470·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874470-玖方新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874470-玖方新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874470-玖方新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874470-玖方新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题1＋二轮问题1＋三轮问题1：对迈为股份的依赖、竞业限制与\"孵化企业\"定性（一轮回复第2–25页，txt 行32–1013；二轮回复第3–20页，txt 行28–890；三轮回复第2–20页，txt 行28–737）",
+              "link": "/kb2024/874470-玖方新材#一轮问题1-二轮问题1-三轮问题1-对迈为股份的依赖、竞业限制与-孵化企业-定性-一轮回复第2–25页-txt-行32–1013-二轮回复第3–20页-txt-行28–890-三轮回复第2–20页-txt-行28–737"
+            },
+            {
+              "text": "一轮问题2＋二轮问题2：50%+50%共同实控人与\"以高晗意见为准\"的一致行动安排（一轮回复第26–41页，txt 行1014–1690；二轮回复第21–30页，txt 行891–1180）",
+              "link": "/kb2024/874470-玖方新材#一轮问题2-二轮问题2-50-50-共同实控人与-以高晗意见为准-的一致行动安排-一轮回复第26–41页-txt-行1014–1690-二轮回复第21–30页-txt-行891–1180"
+            },
+            {
+              "text": "一轮问题3：全租赁经营下的出租方产权瑕疵（一轮回复第42–52页；txt 行1691–2136）",
+              "link": "/kb2024/874470-玖方新材#一轮问题3-全租赁经营下的出租方产权瑕疵-一轮回复第42–52页-txt-行1691–2136"
+            },
+            {
+              "text": "一轮问题4：特种作业无证操作行政处罚（一轮回复第53–58页；txt 行2137–2346）",
+              "link": "/kb2024/874470-玖方新材#一轮问题4-特种作业无证操作行政处罚-一轮回复第53–58页-txt-行2137–2346"
+            },
+            {
+              "text": "三轮问题2：以分红款实缴注册资本与迈为股份关联方认定（三轮回复第21–30页；txt 行738–1180）",
+              "link": "/kb2024/874470-玖方新材#三轮问题2-以分红款实缴注册资本与迈为股份关联方认定-三轮回复第21–30页-txt-行738–1180"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874470-玖方新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874470-玖方新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874472-生力材料": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "益阳生力材料科技股份有限公司（874472·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874472-生力材料"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874472-生力材料#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874472-生力材料#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874472-生力材料#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2：关于历史沿革——国资股东程序补正、亲属代持与税务处理（第一轮，回复第34–51页；txt 行1397–2247）",
+              "link": "/kb2024/874472-生力材料#问题2-关于历史沿革——国资股东程序补正、亲属代持与税务处理-第一轮-回复第34–51页-txt-行1397–2247"
+            },
+            {
+              "text": "问题3：关于特殊投资条款——存续有效的城建投回购条款及履约能力论证（第一轮，回复第52–59页；txt 行2248–2621）",
+              "link": "/kb2024/874472-生力材料#问题3-关于特殊投资条款——存续有效的城建投回购条款及履约能力论证-第一轮-回复第52–59页-txt-行2248–2621"
+            },
+            {
+              "text": "问题4：关于公司技术与竞业禁止——前国企技术团队独立性与职务发明（第一轮，回复第60–81页；txt 行2622–4400）",
+              "link": "/kb2024/874472-生力材料#问题4-关于公司技术与竞业禁止——前国企技术团队独立性与职务发明-第一轮-回复第60–81页-txt-行2622–4400"
+            },
+            {
+              "text": "问题8与问题9(1)(2)(3)(4)：股权激励、无证房产、共同实控人与境外子公司（第一轮，回复第174–215页；txt 行7506–9800）",
+              "link": "/kb2024/874472-生力材料#问题8与问题9-1-2-3-4-股权激励、无证房产、共同实控人与境外子公司-第一轮-回复第174–215页-txt-行7506–9800"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874472-生力材料#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874472-生力材料#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874473-八桂种苗": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广西八桂种苗高科技集团股份有限公司（874473·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874473-八桂种苗"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874473-八桂种苗#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874473-八桂种苗#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874473-八桂种苗#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题4：违法占地处罚、无证房产与无规划许可大棚（首轮，回复第82—104页；20240523 txt 行3731—4616）",
+              "link": "/kb2024/874473-八桂种苗#问题4-违法占地处罚、无证房产与无规划许可大棚-首轮-回复第82—104页-20240523-txt-行3731—4616"
+            },
+            {
+              "text": "问题5：东门林场及东盛林业同业竞争（首轮，回复第105—109页；20240523 txt 行4617—4720）",
+              "link": "/kb2024/874473-八桂种苗#问题5-东门林场及东盛林业同业竞争-首轮-回复第105—109页-20240523-txt-行4617—4720"
+            },
+            {
+              "text": "问题10：国有控股员工股权激励合规（首轮，回复第231—244页；20240523 txt 行9683—10316）",
+              "link": "/kb2024/874473-八桂种苗#问题10-国有控股员工股权激励合规-首轮-回复第231—244页-20240523-txt-行9683—10316"
+            },
+            {
+              "text": "问题11：股权代持排查与股东人数穿透（首轮，回复第245—252页；20240523 txt 行10317—10668）",
+              "link": "/kb2024/874473-八桂种苗#问题11-股权代持排查与股东人数穿透-首轮-回复第245—252页-20240523-txt-行10317—10668"
+            },
+            {
+              "text": "二轮问题2：设施农用地、林地设施审批与租赁备案（二轮，回复第34—52页；20240621 txt 行1257—2027）",
+              "link": "/kb2024/874473-八桂种苗#二轮问题2-设施农用地、林地设施审批与租赁备案-二轮-回复第34—52页-20240621-txt-行1257—2027"
+            },
+            {
+              "text": "二轮问题3(1)(3)(4)：良种种源知识产权、八桂财聚激励与子公司设立程序（二轮，回复第53—88页；20240621 txt 行2028—2475）",
+              "link": "/kb2024/874473-八桂种苗#二轮问题3-1-3-4-良种种源知识产权、八桂财聚激励与子公司设立程序-二轮-回复第53—88页-20240621-txt-行2028—2475"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874473-八桂种苗#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874473-八桂种苗#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874475-拓普泰克": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市拓普泰克技术股份有限公司（874475·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874475-拓普泰克"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874475-拓普泰克#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874475-拓普泰克#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874475-拓普泰克#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(2)(3)(4)(5)(6)：电子烟监管定性、劳动用工瑕疵与商标受让（第一轮，回复第4–32页；txt 行100–1317）",
+              "link": "/kb2024/874475-拓普泰克#问题1-2-3-4-5-6-电子烟监管定性、劳动用工瑕疵与商标受让-第一轮-回复第4–32页-txt-行100–1317"
+            },
+            {
+              "text": "问题2：关于历史沿革——设立代持、异价交易与国资排查（第一轮，回复第33–46页；txt 行1318–2100）",
+              "link": "/kb2024/874475-拓普泰克#问题2-关于历史沿革——设立代持、异价交易与国资排查-第一轮-回复第33–46页-txt-行1318–2100"
+            },
+            {
+              "text": "问题3：关于境外子公司——香港与越南双平台ODI（第一轮，回复第47–55页；txt 行2100–2466）",
+              "link": "/kb2024/874475-拓普泰克#问题3-关于境外子公司——香港与越南双平台odi-第一轮-回复第47–55页-txt-行2100–2466"
+            },
+            {
+              "text": "问题4：关于房屋租赁——集体土地无证厂房与深圳历史遗留违法建筑（第一轮，回复第56–67页；txt 行2467–3009）",
+              "link": "/kb2024/874475-拓普泰克#问题4-关于房屋租赁——集体土地无证厂房与深圳历史遗留违法建筑-第一轮-回复第56–67页-txt-行2467–3009"
+            },
+            {
+              "text": "问题9.1/9.2/9.3：分红、员工持股与治理杂项（第一轮，回复第167–195页；txt 行7802–9607）",
+              "link": "/kb2024/874475-拓普泰克#问题9-1-9-2-9-3-分红、员工持股与治理杂项-第一轮-回复第167–195页-txt-行7802–9607"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874475-拓普泰克#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874475-拓普泰克#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874476-小小科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽省小小科技股份有限公司（874476·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874476-小小科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874476-小小科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874476-小小科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874476-小小科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——出资瑕疵三连、国资程序补正与券商关联持股（第一轮，回复第3–36页；txt 行83–1471）",
+              "link": "/kb2024/874476-小小科技#问题1-关于历史沿革——出资瑕疵三连、国资程序补正与券商关联持股-第一轮-回复第3–36页-txt-行83–1471"
+            },
+            {
+              "text": "问题2：关于特殊投资条款——历史对赌全清单梳理（第一轮，回复第37–43页；txt 行1472–1784）",
+              "link": "/kb2024/874476-小小科技#问题2-关于特殊投资条款——历史对赌全清单梳理-第一轮-回复第37–43页-txt-行1472–1784"
+            },
+            {
+              "text": "问题6(1)：关于土地房产——11项土地抵押与超规划无证建筑物（第一轮，回复第107–113页；txt 行4030–4386）",
+              "link": "/kb2024/874476-小小科技#问题6-1-关于土地房产——11项土地抵押与超规划无证建筑物-第一轮-回复第107–113页-txt-行4030–4386"
+            },
+            {
+              "text": "问题6(2)与6(8)：未验先投整改、劳务派遣、关联资金拆借与公职人员任职（第一轮，回复第113–168页；txt 行4387–6619）",
+              "link": "/kb2024/874476-小小科技#问题6-2-与6-8-未验先投整改、劳务派遣、关联资金拆借与公职人员任职-第一轮-回复第113–168页-txt-行4387–6619"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874476-小小科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874476-小小科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874477-航特装备": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北航特装备制造股份有限公司（874477·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874477-航特装备"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874477-航特装备#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874477-航特装备#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874477-航特装备#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1.1：国资决策、评估、备案程序瑕疵及规范（首轮，回复第5–17页；txt 行229–662）",
+              "link": "/kb2024/874477-航特装备#问题1-1-国资决策、评估、备案程序瑕疵及规范-首轮-回复第5–17页-txt-行229–662"
+            },
+            {
+              "text": "问题1.2：非货币资产出资（首轮，回复第18–21页；txt 行663–839）",
+              "link": "/kb2024/874477-航特装备#问题1-2-非货币资产出资-首轮-回复第18–21页-txt-行663–839"
+            },
+            {
+              "text": "问题1.3：历次增资、股权转让定价与股份支付（首轮，回复第22–30页；txt 行840–1150）",
+              "link": "/kb2024/874477-航特装备#问题1-3-历次增资、股权转让定价与股份支付-首轮-回复第22–30页-txt-行840–1150"
+            },
+            {
+              "text": "问题1.4-1.6：职工持股与平台份额代持清理、股东人数超 200 人与股权明晰（首轮，回复第31–60页；txt 行1151–2285）",
+              "link": "/kb2024/874477-航特装备#问题1-4-1-6-职工持股与平台份额代持清理、股东人数超-200-人与股权明晰-首轮-回复第31–60页-txt-行1151–2285"
+            },
+            {
+              "text": "问题2.1：实际控制人认定（首轮，回复第62–72页；txt 行2286–2836）",
+              "link": "/kb2024/874477-航特装备#问题2-1-实际控制人认定-首轮-回复第62–72页-txt-行2286–2836"
+            },
+            {
+              "text": "问题2.2：特飞所及其控制企业同业竞争（首轮，回复第73–78页；txt 行2837–2998）",
+              "link": "/kb2024/874477-航特装备#问题2-2-特飞所及其控制企业同业竞争-首轮-回复第73–78页-txt-行2837–2998"
+            },
+            {
+              "text": "问题2.3：特殊投资条款的披露与解除（首轮，回复第79–84页；txt 行2999–3251）",
+              "link": "/kb2024/874477-航特装备#问题2-3-特殊投资条款的披露与解除-首轮-回复第79–84页-txt-行2999–3251"
+            },
+            {
+              "text": "问题3.1/3.3：环保消防处罚与重大违法认定、安全生产（首轮，回复第88–97页；txt 行3405–3876）",
+              "link": "/kb2024/874477-航特装备#问题3-1-3-3-环保消防处罚与重大违法认定、安全生产-首轮-回复第88–97页-txt-行3405–3876"
+            },
+            {
+              "text": "问题3.2：房屋建筑物权属证书（首轮，回复第91–94页；txt 行3550–3747）",
+              "link": "/kb2024/874477-航特装备#问题3-2-房屋建筑物权属证书-首轮-回复第91–94页-txt-行3550–3747"
+            },
+            {
+              "text": "问题3.4：军工资质与保密审查（首轮，回复第98–100页；txt 行3773–3972）",
+              "link": "/kb2024/874477-航特装备#问题3-4-军工资质与保密审查-首轮-回复第98–100页-txt-行3773–3972"
+            },
+            {
+              "text": "问题4.2/4.3：劳务外包派遣与实习生用工（首轮，回复第112–123页；txt 行4383–4921）",
+              "link": "/kb2024/874477-航特装备#问题4-2-4-3-劳务外包派遣与实习生用工-首轮-回复第112–123页-txt-行4383–4921"
+            },
+            {
+              "text": "问题4.4：员工保留事业单位编制（首轮，回复第124–128页；txt 行4922–5139）",
+              "link": "/kb2024/874477-航特装备#问题4-4-员工保留事业单位编制-首轮-回复第124–128页-txt-行4922–5139"
+            },
+            {
+              "text": "问题4.5：特飞所代缴社保公积金与员工独立性（首轮，回复第129–130页；txt 行5140–5240）",
+              "link": "/kb2024/874477-航特装备#问题4-5-特飞所代缴社保公积金与员工独立性-首轮-回复第129–130页-txt-行5140–5240"
+            },
+            {
+              "text": "问题9(2)：印度航特境外投资合规（首轮，回复第323–329页；txt 行13310–13950）",
+              "link": "/kb2024/874477-航特装备#问题9-2-印度航特境外投资合规-首轮-回复第323–329页-txt-行13310–13950"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874477-航特装备#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874477-航特装备#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874478-超晶科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "西安超晶科技股份有限公司（874478·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874478-超晶科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874478-超晶科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874478-超晶科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874478-超晶科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：西工大历史持股的程序瑕疵与工信部财务司确认（首轮，回复第4—14页；20240813 txt 行77—364及1426—1483）",
+              "link": "/kb2024/874478-超晶科技#问题1-1-西工大历史持股的程序瑕疵与工信部财务司确认-首轮-回复第4—14页-20240813-txt-行77—364及1426—1483"
+            },
+            {
+              "text": "问题1(2)：事业单位编制人员持股与任职合规（首轮，回复第14—26页；20240813 txt 行365—1099）",
+              "link": "/kb2024/874478-超晶科技#问题1-2-事业单位编制人员持股与任职合规-首轮-回复第14—26页-20240813-txt-行365—1099"
+            },
+            {
+              "text": "问题1(3)(4)：共有专利、国防科技进步一等奖成果与技术独立（首轮，回复第26—34页；20240813 txt 行1196—1425）",
+              "link": "/kb2024/874478-超晶科技#问题1-3-4-共有专利、国防科技进步一等奖成果与技术独立-首轮-回复第26—34页-20240813-txt-行1196—1425"
+            },
+            {
+              "text": "问题2：实控人认定与控制权稳定性（首轮，回复第35—63页；20240813 txt 行1534—2771，设重大事项提示）",
+              "link": "/kb2024/874478-超晶科技#问题2-实控人认定与控制权稳定性-首轮-回复第35—63页-20240813-txt-行1534—2771-设重大事项提示"
+            },
+            {
+              "text": "问题7(1)：出资瑕疵、历史代持五项与私募股东适格性（首轮，回复第140—156页；20240813 txt 行5931—6560及1100—1200）",
+              "link": "/kb2024/874478-超晶科技#问题7-1-出资瑕疵、历史代持五项与私募股东适格性-首轮-回复第140—156页-20240813-txt-行5931—6560及1100—1200"
+            },
+            {
+              "text": "问题7(3)(4)：排污许可、无证厂房、社保与军工信息披露豁免（首轮，回复第156—162页；20240813 txt 行6560—6700区间）",
+              "link": "/kb2024/874478-超晶科技#问题7-3-4-排污许可、无证厂房、社保与军工信息披露豁免-首轮-回复第156—162页-20240813-txt-行6560—6700区间"
+            },
+            {
+              "text": "问题7(5)(8)：关联方外协与海通系股东利益冲突（首轮，回复第162—166页及169—170页；20240813 txt 行6700—6900区间）",
+              "link": "/kb2024/874478-超晶科技#问题7-5-8-关联方外协与海通系股东利益冲突-首轮-回复第162—166页及169—170页-20240813-txt-行6700—6900区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874478-超晶科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874478-超晶科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874479-德普莱太": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江德普莱太环境科技股份有限公司（874479·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874479-德普莱太"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874479-德普莱太#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874479-德普莱太#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874479-德普莱太#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：一致行动协议与实控人认定、治理僵局（首轮，回复第3–7页；txt 行64–259）",
+              "link": "/kb2024/874479-德普莱太#问题1-1-一致行动协议与实控人认定、治理僵局-首轮-回复第3–7页-txt-行64–259"
+            },
+            {
+              "text": "问题1(2)：股改补充评估复核与追溯验资、整体变更效力（首轮，回复第8–13页；txt 行260–473）",
+              "link": "/kb2024/874479-德普莱太#问题1-2-股改补充评估复核与追溯验资、整体变更效力-首轮-回复第8–13页-txt-行260–473"
+            },
+            {
+              "text": "问题1(3)：吸收合并浙江森风（首轮，回复第14–15页；txt 行474–561）",
+              "link": "/kb2024/874479-德普莱太#问题1-3-吸收合并浙江森风-首轮-回复第14–15页-txt-行474–561"
+            },
+            {
+              "text": "问题1(4)(5)：张凌云股权代持的形成与解除、股权明晰专项核查（首轮，回复第16–22页；txt 行562–858；法律意见书 txt 行1328–1420）",
+              "link": "/kb2024/874479-德普莱太#问题1-4-5-张凌云股权代持的形成与解除、股权明晰专项核查-首轮-回复第16–22页-txt-行562–858-法律意见书-txt-行1328–1420"
+            },
+            {
+              "text": "问题2(1)(2)：排污排水许可覆盖期与无证建筑物（首轮，回复第23–27页；txt 行860–1030）",
+              "link": "/kb2024/874479-德普莱太#问题2-1-2-排污排水许可覆盖期与无证建筑物-首轮-回复第23–27页-txt-行860–1030"
+            },
+            {
+              "text": "问题2(3)：社保公积金欠缴与补缴测算（首轮，回复第27–28页；txt 行1031–1109）",
+              "link": "/kb2024/874479-德普莱太#问题2-3-社保公积金欠缴与补缴测算-首轮-回复第27–28页-txt-行1031–1109"
+            },
+            {
+              "text": "问题2(4)(5)：招投标合规与特种作业行政处罚（首轮，回复第29–31页；txt 行1110–1188）",
+              "link": "/kb2024/874479-德普莱太#问题2-4-5-招投标合规与特种作业行政处罚-首轮-回复第29–31页-txt-行1110–1188"
+            },
+            {
+              "text": "问题6(1)：关联方资金拆借清理与内控（首轮，回复第136–138页；txt 行5722–5838）",
+              "link": "/kb2024/874479-德普莱太#问题6-1-关联方资金拆借清理与内控-首轮-回复第136–138页-txt-行5722–5838"
+            },
+            {
+              "text": "问题6(2)⑧：报告期分红及分红款流向（首轮，回复第161–163页；txt 行6901–6966）",
+              "link": "/kb2024/874479-德普莱太#问题6-2-8-报告期分红及分红款流向-首轮-回复第161–163页-txt-行6901–6966"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874479-德普莱太#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874479-德普莱太#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874480-开元环保": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "工大开元环保科技（安徽）股份有限公司（874480·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874480-开元环保"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874480-开元环保#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874480-开元环保#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874480-开元环保#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题6(2)：关于实际控制人变动（第一轮，回复第197–199页；txt行8725–8743及对应回复）",
+              "link": "/kb2024/874480-开元环保#问题6-2-关于实际控制人变动-第一轮-回复第197–199页-txt行8725–8743及对应回复"
+            },
+            {
+              "text": "问题2：关于历史沿革——国资股东、股权激励、减资与区域股权市场（第一轮，回复第74–117页；txt行3444–5306）",
+              "link": "/kb2024/874480-开元环保#问题2-关于历史沿革——国资股东、股权激励、减资与区域股权市场-第一轮-回复第74–117页-txt行3444–5306"
+            },
+            {
+              "text": "问题6(4)：关于股利分配与问题1(2)特许经营权（第一轮，回复第196–198页、第3–20页；txt行8725–8743、1440–1500）",
+              "link": "/kb2024/874480-开元环保#问题6-4-关于股利分配与问题1-2-特许经营权-第一轮-回复第196–198页、第3–20页-txt行8725–8743、1440–1500"
+            },
+            {
+              "text": "问题4：关于期后减资及股权转让——规避发起人锁定期的\"先增资后减资\"安排（第二轮，回复第40–46页；txt行1696–1990）",
+              "link": "/kb2024/874480-开元环保#问题4-关于期后减资及股权转让——规避发起人锁定期的-先增资后减资-安排-第二轮-回复第40–46页-txt行1696–1990"
+            },
+            {
+              "text": "问题3（第二轮）：关于知识产权——继受取得与职务发明（第二轮，回复第30–39页；txt行1239–1695）",
+              "link": "/kb2024/874480-开元环保#问题3-第二轮-关于知识产权——继受取得与职务发明-第二轮-回复第30–39页-txt行1239–1695"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874480-开元环保#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874480-开元环保#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874482-泛博股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "无锡泛博智能饰件股份有限公司（874482·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874482-泛博股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874482-泛博股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874482-泛博股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874482-泛博股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1（1）（2）：家族业务分割、平价退出与同业竞争清理（回复txt行57—1266，回复第3—32页）",
+              "link": "/kb2024/874482-泛博股份#_1-首轮问题1-1-2-家族业务分割、平价退出与同业竞争清理-回复txt行57—1266-回复第3—32页"
+            },
+            {
+              "text": "2. 首轮问题1（3）（4）：资产专利人员转移、关联租赁与商号共用（回复txt行694—1256，回复第18—31页）",
+              "link": "/kb2024/874482-泛博股份#_2-首轮问题1-3-4-资产专利人员转移、关联租赁与商号共用-回复txt行694—1256-回复第18—31页"
+            },
+            {
+              "text": "3. 首轮问题2：固定资产投资项目备案、环评验收与排污许可（回复txt行1267—1664，回复第33—42页）",
+              "link": "/kb2024/874482-泛博股份#_3-首轮问题2-固定资产投资项目备案、环评验收与排污许可-回复txt行1267—1664-回复第33—42页"
+            },
+            {
+              "text": "4. 首轮问题8：知识产权继受取得与董监高任职（回复txt行5006—5540，回复第118—127页）",
+              "link": "/kb2024/874482-泛博股份#_4-首轮问题8-知识产权继受取得与董监高任职-回复txt行5006—5540-回复第118—127页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874482-泛博股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874482-泛博股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874483-基因科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "基因科技（上海）股份有限公司（874483·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874483-基因科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874483-基因科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874483-基因科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874483-基因科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：业务合规性——医疗器械资质、产品召回、飞行检查、商业贿赂与晶泰实验室（问询回复txt行78-2459）",
+              "link": "/kb2024/874483-基因科技#_1-首轮问题1-业务合规性——医疗器械资质、产品召回、飞行检查、商业贿赂与晶泰实验室-问询回复txt行78-2459"
+            },
+            {
+              "text": "2. 首轮问题2：公司股权真实性及合法合规性——境外平台出资外汇税务、代持还原、特殊投资条款终止（问询回复txt行2460-4503）",
+              "link": "/kb2024/874483-基因科技#_2-首轮问题2-公司股权真实性及合法合规性——境外平台出资外汇税务、代持还原、特殊投资条款终止-问询回复txt行2460-4503"
+            },
+            {
+              "text": "3. 首轮问题7（1）（2）：境外子公司 ODI 程序、境外律师意见与曾申报 IPO 终止（问询回复txt行8661-14004 区间）",
+              "link": "/kb2024/874483-基因科技#_3-首轮问题7-1-2-境外子公司-odi-程序、境外律师意见与曾申报-ipo-终止-问询回复txt行8661-14004-区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874483-基因科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874483-基因科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874484-中裕铁信": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中裕铁信交通科技股份有限公司（874484·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874484-中裕铁信"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874484-中裕铁信#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874484-中裕铁信#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874484-中裕铁信#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1①：非货币出资瑕疵与货币置换补救（回复txt行110—805，回复第1-5至1-19页）",
+              "link": "/kb2024/874484-中裕铁信#_1-首轮问题11-非货币出资瑕疵与货币置换补救-回复txt行110—805-回复第1-5至1-19页"
+            },
+            {
+              "text": "2. 首轮问题1②：国资程序瑕疵、股权转让诉讼与有权确认机关（回复txt行806—1045、2400—2560，回复第1-20至1-61页）",
+              "link": "/kb2024/874484-中裕铁信#_2-首轮问题12-国资程序瑕疵、股权转让诉讼与有权确认机关-回复txt行806—1045、2400—2560-回复第1-20至1-61页"
+            },
+            {
+              "text": "3. 首轮问题1（3）（5）：委托代持的形成还原与员工持股平台股权激励（回复txt行1045—1120、2474—2560，回复第1-16至1-60页）",
+              "link": "/kb2024/874484-中裕铁信#_3-首轮问题1-3-5-委托代持的形成还原与员工持股平台股权激励-回复txt行1045—1120、2474—2560-回复第1-16至1-60页"
+            },
+            {
+              "text": "4. 首轮问题1（4）：2023年派生分立（回复txt行655—662、2491—2560，回复第1-17、1-59至1-60页）",
+              "link": "/kb2024/874484-中裕铁信#_4-首轮问题1-4-2023年派生分立-回复txt行655—662、2491—2560-回复第1-17、1-59至1-60页"
+            },
+            {
+              "text": "5. 首轮问题4：华舆国创对赌解除与退出（回复txt行5271—5374，回复第1-122至1-124页）",
+              "link": "/kb2024/874484-中裕铁信#_5-首轮问题4-华舆国创对赌解除与退出-回复txt行5271—5374-回复第1-122至1-124页"
+            },
+            {
+              "text": "6. 首轮问题3：业务合规性——CRCC资质到期、招投标与土地房产瑕疵（回复txt行4581—5270，回复第1-107至1-121页）",
+              "link": "/kb2024/874484-中裕铁信#_6-首轮问题3-业务合规性——crcc资质到期、招投标与土地房产瑕疵-回复txt行4581—5270-回复第1-107至1-121页"
+            },
+            {
+              "text": "7. 首轮问题10：创业板IPO撤回、实控人涉房企业与治理核查（回复txt行13464—14400，回复第1-303至1-320页）",
+              "link": "/kb2024/874484-中裕铁信#_7-首轮问题10-创业板ipo撤回、实控人涉房企业与治理核查-回复txt行13464—14400-回复第1-303至1-320页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874484-中裕铁信#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874484-中裕铁信#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874487-洁华股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江洁华新材料股份有限公司（874487·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874487-洁华股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874487-洁华股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874487-洁华股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874487-洁华股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1（1）（2）：返程投资外汇瑕疵、OGI折让退出与外商投资合规（回复txt行100—1200，回复第3—31页）",
+              "link": "/kb2024/874487-洁华股份#_1-首轮问题1-1-2-返程投资外汇瑕疵、ogi折让退出与外商投资合规-回复txt行100—1200-回复第3—31页"
+            },
+            {
+              "text": "2. 首轮问题2：共同实控人认定、家族治理与独董干部身份（回复txt行1978—3117，回复第44—68页）",
+              "link": "/kb2024/874487-洁华股份#_2-首轮问题2-共同实控人认定、家族治理与独董干部身份-回复txt行1978—3117-回复第44—68页"
+            },
+            {
+              "text": "3. 首轮问题4：超环评产能、危化品资质与海关处罚（回复txt行4184—5030，回复第93—108页）",
+              "link": "/kb2024/874487-洁华股份#_3-首轮问题4-超环评产能、危化品资质与海关处罚-回复txt行4184—5030-回复第93—108页"
+            },
+            {
+              "text": "4. 首轮问题3（节选）：两高事项与新化学物质登记处罚（回复txt行3118—4183，回复第69—92页）",
+              "link": "/kb2024/874487-洁华股份#_4-首轮问题3-节选-两高事项与新化学物质登记处罚-回复txt行3118—4183-回复第69—92页"
+            },
+            {
+              "text": "5. 首轮问题10（一）：子公司华跃电子互联网销售与个人信息保护（回复txt行10031—10560，回复第233—241页）",
+              "link": "/kb2024/874487-洁华股份#_5-首轮问题10-一-子公司华跃电子互联网销售与个人信息保护-回复txt行10031—10560-回复第233—241页"
+            },
+            {
+              "text": "6. 首轮问题1（4）：控股股东华望商贸未实缴与新《公司法》衔接（回复txt行990—1100，回复第22—23页）",
+              "link": "/kb2024/874487-洁华股份#_6-首轮问题1-4-控股股东华望商贸未实缴与新《公司法》衔接-回复txt行990—1100-回复第22—23页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874487-洁华股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874487-洁华股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874488-利思德": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏利思德新材料股份有限公司（874488·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874488-利思德"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874488-利思德#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874488-利思德#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874488-利思德#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于业务合规性——化工企业资质、环保与劳务派遣（第一轮，回复第3–30页；txt 行60–1189）",
+              "link": "/kb2024/874488-利思德#问题1-关于业务合规性——化工企业资质、环保与劳务派遣-第一轮-回复第3–30页-txt-行60–1189"
+            },
+            {
+              "text": "问题2：关于历史沿革——代持核查、国资排查、200人穿透与无形资产出资货币置换（第一轮，回复第31–46页；txt 行1190–1904）",
+              "link": "/kb2024/874488-利思德#问题2-关于历史沿革——代持核查、国资排查、200人穿透与无形资产出资货币置换-第一轮-回复第31–46页-txt-行1190–1904"
+            },
+            {
+              "text": "问题4：关于股权激励——三平台设置与差异化定价（第一轮，回复第61–80页；txt 行2453–3278）",
+              "link": "/kb2024/874488-利思德#问题4-关于股权激励——三平台设置与差异化定价-第一轮-回复第61–80页-txt-行2453–3278"
+            },
+            {
+              "text": "问题5：关于土地房产——自有土地4处无证自建房（第一轮，回复第81–87页；txt 行3279–3527）",
+              "link": "/kb2024/874488-利思德#问题5-关于土地房产——自有土地4处无证自建房-第一轮-回复第81–87页-txt-行3279–3527"
+            },
+            {
+              "text": "问题8（一）：香港子公司ODI全链条备案（第一轮，回复第146–152页；txt 行5699–5950）",
+              "link": "/kb2024/874488-利思德#问题8-一-香港子公司odi全链条备案-第一轮-回复第146–152页-txt-行5699–5950"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874488-利思德#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874488-利思德#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874491-元亨科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖南元亨科技股份有限公司（874491·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874491-元亨科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874491-元亨科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874491-元亨科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874491-元亨科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：股权代持——嵌套双层代持的全面还原与股东人数穿透（首轮回复第 4-21 页；txt 行 87–681）",
+              "link": "/kb2024/874491-元亨科技#首轮问题-1-股权代持——嵌套双层代持的全面还原与股东人数穿透-首轮回复第-4-21-页-txt-行-87–681"
+            },
+            {
+              "text": "首轮问题 2／二轮问题 1：美的智能基金特殊投资条款——分层清理与\"名股实债\"实质审查（首轮回复第 22-39 页、二轮回复第 4-10 页；首轮 txt 行 682–1307、二轮 txt 行 79–1625）",
+              "link": "/kb2024/874491-元亨科技#首轮问题-2-二轮问题-1-美的智能基金特殊投资条款——分层清理与-名股实债-实质审查-首轮回复第-22-39-页、二轮回复第-4-10-页-首轮-txt-行-682–1307、二轮-txt-行-79–1625"
+            },
+            {
+              "text": "首轮问题 3：业务合规性——劳务用工定性、排污登记瑕疵与招投标（首轮回复第 40-49 页；txt 行 1418–1828）",
+              "link": "/kb2024/874491-元亨科技#首轮问题-3-业务合规性——劳务用工定性、排污登记瑕疵与招投标-首轮回复第-40-49-页-txt-行-1418–1828"
+            },
+            {
+              "text": "首轮问题 8(1)(2)：重要子公司控制与现金分红合规（首轮回复第 135-151 页；txt 行 5363–6220）",
+              "link": "/kb2024/874491-元亨科技#首轮问题-8-1-2-重要子公司控制与现金分红合规-首轮回复第-135-151-页-txt-行-5363–6220"
+            },
+            {
+              "text": "二轮问题 3：分散股权下实控人认定与资金流水逐笔核查（二轮回复第 41-60 页；txt 行 1626–2769）",
+              "link": "/kb2024/874491-元亨科技#二轮问题-3-分散股权下实控人认定与资金流水逐笔核查-二轮回复第-41-60-页-txt-行-1626–2769"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874491-元亨科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874491-元亨科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874493-苏环院": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏环保产业技术研究院股份公司（874493·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874493-苏环院"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874493-苏环院#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874493-苏环院#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874493-苏环院#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于公司设立——环评机构脱钩的政策依据、辞职审批与资产处置（第一轮，回复第3–18页；txt行57–772）",
+              "link": "/kb2024/874493-苏环院#问题1-关于公司设立——环评机构脱钩的政策依据、辞职审批与资产处置-第一轮-回复第3–18页-txt行57–772"
+            },
+            {
+              "text": "问题2：关于控股股东与实际控制人认定——表决权委托与一致行动（第一轮，回复第19–27页；txt行773–1170）",
+              "link": "/kb2024/874493-苏环院#问题2-关于控股股东与实际控制人认定——表决权委托与一致行动-第一轮-回复第19–27页-txt行773–1170"
+            },
+            {
+              "text": "问题3：关于公司股份——历史转让、代持核查与大额分红（第一轮，回复第28–38页；txt行1171–1590）",
+              "link": "/kb2024/874493-苏环院#问题3-关于公司股份——历史转让、代持核查与大额分红-第一轮-回复第28–38页-txt行1171–1590"
+            },
+            {
+              "text": "问题4：关于业务模式及合规性——资质、外协、招投标与报告期前处罚（第一轮，回复第39–65页；txt行1591–2863）",
+              "link": "/kb2024/874493-苏环院#问题4-关于业务模式及合规性——资质、外协、招投标与报告期前处罚-第一轮-回复第39–65页-txt行1591–2863"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874493-苏环院#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874493-苏环院#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874494-新涛智控": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江新涛智控科技股份有限公司（874494·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874494-新涛智控"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874494-新涛智控#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874494-新涛智控#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874494-新涛智控#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：集体企业改制、土地使用权出资、减资与特殊投资条款（回复第1—40页；txt行65—1876）",
+              "link": "/kb2024/874494-新涛智控#_1-首轮问题1-集体企业改制、土地使用权出资、减资与特殊投资条款-回复第1—40页-txt行65—1876"
+            },
+            {
+              "text": "2. 首轮问题2：收购曾挂牌子公司、同业竞争与摘牌股权管理（回复第41—62页；txt行1884—2771）",
+              "link": "/kb2024/874494-新涛智控#_2-首轮问题2-收购曾挂牌子公司、同业竞争与摘牌股权管理-回复第41—62页-txt行1884—2771"
+            },
+            {
+              "text": "3. 首轮问题7(1)(2)(4)：劳务派遣与社保、股份质押、董监高履职（回复第175—197页；txt行7057—7918）",
+              "link": "/kb2024/874494-新涛智控#_3-首轮问题7-1-2-4-劳务派遣与社保、股份质押、董监高履职-回复第175—197页-txt行7057—7918"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874494-新涛智控#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874494-新涛智控#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874496-贝昂智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州贝昂智能科技股份有限公司（874496·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874496-贝昂智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874496-贝昂智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874496-贝昂智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874496-贝昂智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于业务合规性（首轮，回复第3—16页；20240711 txt 行107—775）",
+              "link": "/kb2024/874496-贝昂智能#问题1-关于业务合规性-首轮-回复第3—16页-20240711-txt-行107—775"
+            },
+            {
+              "text": "问题2：关于历史沿革——国有股权瑕疵、股权代持与入股核查（首轮，回复第17—34页；20240711 txt 行776—1394）",
+              "link": "/kb2024/874496-贝昂智能#问题2-关于历史沿革——国有股权瑕疵、股权代持与入股核查-首轮-回复第17—34页-20240711-txt-行776—1394"
+            },
+            {
+              "text": "问题3：关于子公司——境外投资备案与注销合规（首轮，回复第35—54页；20240711 txt 行1395—2232）",
+              "link": "/kb2024/874496-贝昂智能#问题3-关于子公司——境外投资备案与注销合规-首轮-回复第35—54页-20240711-txt-行1395—2232"
+            },
+            {
+              "text": "问题10(1)：专利纠纷——盛思锐诉讼结案与巴慕达专利警告（首轮，回复第180—187页；20240711 txt 行7271—7553）",
+              "link": "/kb2024/874496-贝昂智能#问题10-1-专利纠纷——盛思锐诉讼结案与巴慕达专利警告-首轮-回复第180—187页-20240711-txt-行7271—7553"
+            },
+            {
+              "text": "问题10(2)：股权激励——直接受让价格差异与持股平台约束条款（首轮，回复第187—193页；20240711 txt 行7554—7900）",
+              "link": "/kb2024/874496-贝昂智能#问题10-2-股权激励——直接受让价格差异与持股平台约束条款-首轮-回复第187—193页-20240711-txt-行7554—7900"
+            },
+            {
+              "text": "问题10(3)：特殊投资条款——三家机构股东对赌的全链条清理（首轮，回复第194—201页；20240711 txt 行7900—8158）",
+              "link": "/kb2024/874496-贝昂智能#问题10-3-特殊投资条款——三家机构股东对赌的全链条清理-首轮-回复第194—201页-20240711-txt-行7900—8158"
+            },
+            {
+              "text": "问题10(4)：信息披露豁免——日本推广服务商（首轮，回复第201—202页；20240711 txt 行8159—8223）",
+              "link": "/kb2024/874496-贝昂智能#问题10-4-信息披露豁免——日本推广服务商-首轮-回复第201—202页-20240711-txt-行8159—8223"
+            },
+            {
+              "text": "问题10(5)：公司分红——5,000万元分红程序与代扣代缴（首轮，回复第203—206页；20240711 txt 行8224—8470）",
+              "link": "/kb2024/874496-贝昂智能#问题10-5-公司分红——5-000万元分红程序与代扣代缴-首轮-回复第203—206页-20240711-txt-行8224—8470"
+            },
+            {
+              "text": "问题10(8)⑦-⑩：独立董事、高管变动、继受专利与股东大会决议（首轮，回复第242—255页；20240711 txt 行9151—10629律师部分）",
+              "link": "/kb2024/874496-贝昂智能#问题10-8-7-10-独立董事、高管变动、继受专利与股东大会决议-首轮-回复第242—255页-20240711-txt-行9151—10629律师部分"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874496-贝昂智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874496-贝昂智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874497-永盛科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江永盛科技股份有限公司（874497·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874497-永盛科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874497-永盛科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874497-永盛科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874497-永盛科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：合法规范经营——特种设备资质、无证临时建筑、环评验收与招投标（第一轮，回复第3–20页；txt行82–898；第二轮问3，20240708回复第38–50页、行1685–2318）",
+              "link": "/kb2024/874497-永盛科技#问题1-合法规范经营——特种设备资质、无证临时建筑、环评验收与招投标-第一轮-回复第3–20页-txt行82–898-第二轮问3-20240708回复第38–50页、行1685–2318"
+            },
+            {
+              "text": "问题2：历史沿革——国资股东入股回购、员工持股平台与新增股东（第一轮，回复第21–36页；txt行900–1630；第二轮问1，20240708回复第3–20页、行72–934）",
+              "link": "/kb2024/874497-永盛科技#问题2-历史沿革——国资股东入股回购、员工持股平台与新增股东-第一轮-回复第21–36页-txt行900–1630-第二轮问1-20240708回复第3–20页、行72–934"
+            },
+            {
+              "text": "问题3：特殊投资条款的清理与附恢复条款（第一轮，回复第37–49页；txt行1631–2309；第二轮问2，20240708回复第21–37页、行935–1684）",
+              "link": "/kb2024/874497-永盛科技#问题3-特殊投资条款的清理与附恢复条款-第一轮-回复第37–49页-txt行1631–2309-第二轮问2-20240708回复第21–37页、行935–1684"
+            },
+            {
+              "text": "问题10：二次申报——信息披露一致性、摘牌程序与异议股东保护（第一轮，回复第126–139页；txt行5549–6198；第二轮问9(2)，20240708回复第117–127页、行5082–5600）",
+              "link": "/kb2024/874497-永盛科技#问题10-二次申报——信息披露一致性、摘牌程序与异议股东保护-第一轮-回复第126–139页-txt行5549–6198-第二轮问9-2-20240708回复第117–127页、行5082–5600"
+            },
+            {
+              "text": "问题11：股权代持的形成、演变、解除与穿透200人核查（第一轮，回复第140–155页；txt行6199–6961）",
+              "link": "/kb2024/874497-永盛科技#问题11-股权代持的形成、演变、解除与穿透200人核查-第一轮-回复第140–155页-txt行6199–6961"
+            },
+            {
+              "text": "问题12(4)(5)：继受取得专利与军工保密审查（第一轮，回复第178–183页；txt行7925–8257）",
+              "link": "/kb2024/874497-永盛科技#问题12-4-5-继受取得专利与军工保密审查-第一轮-回复第178–183页-txt行7925–8257"
+            },
+            {
+              "text": "问题9(1)：子公司对外转让与共同投资（第二轮，20240708回复第109–116页；txt行4894–5081）",
+              "link": "/kb2024/874497-永盛科技#问题9-1-子公司对外转让与共同投资-第二轮-20240708回复第109–116页-txt行4894–5081"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874497-永盛科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874497-永盛科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874498-艾斯迪": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "艾斯迪工业技术股份有限公司（874498·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874498-艾斯迪"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874498-艾斯迪#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874498-艾斯迪#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874498-艾斯迪#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：子公司架构、收购亚新科天津与独立性（首轮，回复第3—44页；txt 行77—1735）",
+              "link": "/kb2024/874498-艾斯迪#问题1-子公司架构、收购亚新科天津与独立性-首轮-回复第3—44页-txt-行77—1735"
+            },
+            {
+              "text": "问题2：实际控制人认定与控制权稳定（首轮，回复第45—74页；txt 行1736—2935）",
+              "link": "/kb2024/874498-艾斯迪#问题2-实际控制人认定与控制权稳定-首轮-回复第45—74页-txt-行1736—2935"
+            },
+            {
+              "text": "问题3：历次股权代持形成演变解除与外资股东合规（首轮，回复第75—105页；txt 行2936—4551）",
+              "link": "/kb2024/874498-艾斯迪#问题3-历次股权代持形成演变解除与外资股东合规-首轮-回复第75—105页-txt-行2936—4551"
+            },
+            {
+              "text": "问题4：特殊投资条款终止及恢复条款整改（首轮，回复第106—110页；txt 行4552—4732）",
+              "link": "/kb2024/874498-艾斯迪#问题4-特殊投资条款终止及恢复条款整改-首轮-回复第106—110页-txt-行4552—4732"
+            },
+            {
+              "text": "问题5：嵌套式员工持股平台股权激励（首轮，回复第111—125页；txt 行4733—5349）",
+              "link": "/kb2024/874498-艾斯迪#问题5-嵌套式员工持股平台股权激励-首轮-回复第111—125页-txt-行4733—5349"
+            },
+            {
+              "text": "问题11(3)：劳务派遣超10%的整改（首轮，回复第241—246页；txt 行10269—10457）",
+              "link": "/kb2024/874498-艾斯迪#问题11-3-劳务派遣超10-的整改-首轮-回复第241—246页-txt-行10269—10457"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874498-艾斯迪#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874498-艾斯迪#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874499-迅达工业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江迅达工业股份有限公司（874499·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874499-迅达工业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874499-迅达工业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874499-迅达工业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874499-迅达工业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2：关于历史沿革——非货币出资、关联资金占用与向实控人平台转让股权（第一轮，回复第40–57页；txt 行1630–2363）",
+              "link": "/kb2024/874499-迅达工业#问题2-关于历史沿革——非货币出资、关联资金占用与向实控人平台转让股权-第一轮-回复第40–57页-txt-行1630–2363"
+            },
+            {
+              "text": "问题3：关于股权激励——员工平台瑞安鑫宇（第一轮，回复第58–68页；txt 行2364–3222）",
+              "link": "/kb2024/874499-迅达工业#问题3-关于股权激励——员工平台瑞安鑫宇-第一轮-回复第58–68页-txt-行2364–3222"
+            },
+            {
+              "text": "问题7：关于财务规范性——个人卡、关联拆借与现金收付（第一轮，回复第118–125页；txt 行4613–4898）",
+              "link": "/kb2024/874499-迅达工业#问题7-关于财务规范性——个人卡、关联拆借与现金收付-第一轮-回复第118–125页-txt-行4613–4898"
+            },
+            {
+              "text": "问题8(1)(2)(3)(4)：前次IPO撤回、收购柳州迅捷、认证续期与家族治理（第一轮，回复第126–142页；txt 行4899–5853）",
+              "link": "/kb2024/874499-迅达工业#问题8-1-2-3-4-前次ipo撤回、收购柳州迅捷、认证续期与家族治理-第一轮-回复第126–142页-txt-行4899–5853"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874499-迅达工业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874499-迅达工业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874501-富杰德": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江富杰德汽车系统股份有限公司（874501·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874501-富杰德"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874501-富杰德#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874501-富杰德#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874501-富杰德#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874501-富杰德#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874501-富杰德#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874503-夏瑞科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市夏瑞科技股份有限公司（874503·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874503-夏瑞科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874503-夏瑞科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874503-夏瑞科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874503-夏瑞科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2（一轮）：三类代持的并存与解除——设立设计型、怠于变更型与预留份额型（一轮回复第61–73页；txt 行2712–3418）",
+              "link": "/kb2024/874503-夏瑞科技#问题2-一轮-三类代持的并存与解除——设立设计型、怠于变更型与预留份额型-一轮回复第61–73页-txt-行2712–3418"
+            },
+            {
+              "text": "问题3（一轮）：境外投资三段进退与香港法律意见（一轮回复第73–90页；txt 行3419–4113）",
+              "link": "/kb2024/874503-夏瑞科技#问题3-一轮-境外投资三段进退与香港法律意见-一轮回复第73–90页-txt-行3419–4113"
+            },
+            {
+              "text": "问题4＋二轮问题1（一轮及二轮）：饮用水源保护区内租赁厂房的未批先建（一轮回复第90–104页，txt 行4114–4592；二轮回复第3–12页，txt 行70–548）",
+              "link": "/kb2024/874503-夏瑞科技#问题4-二轮问题1-一轮及二轮-饮用水源保护区内租赁厂房的未批先建-一轮回复第90–104页-txt-行4114–4592-二轮回复第3–12页-txt-行70–548"
+            },
+            {
+              "text": "问题8(4)（一轮）：跨主体代缴社保公积金的治理整改（一轮回复第139–145页；txt 行6364–6460、7848–7930）",
+              "link": "/kb2024/874503-夏瑞科技#问题8-4-一轮-跨主体代缴社保公积金的治理整改-一轮回复第139–145页-txt-行6364–6460、7848–7930"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874503-夏瑞科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874503-夏瑞科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874505-樱桃谷": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "樱桃谷育种科技股份有限公司（874505·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874505-樱桃谷"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874505-樱桃谷#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874505-樱桃谷#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874505-樱桃谷#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：核心技术与种质资源的收购完整性及权属（首轮，回复第3—20页；20240607 txt 行77—775）",
+              "link": "/kb2024/874505-樱桃谷#问题1-核心技术与种质资源的收购完整性及权属-首轮-回复第3—20页-20240607-txt-行77—775"
+            },
+            {
+              "text": "问题2(5)-(7)：同业竞争、北京鸭原种资源转让与独立性（首轮，回复第21—50页；20240607 txt 行776—1813律师部分）",
+              "link": "/kb2024/874505-樱桃谷#问题2-5-7-同业竞争、北京鸭原种资源转让与独立性-首轮-回复第21—50页-20240607-txt-行776—1813律师部分"
+            },
+            {
+              "text": "问题4：国有股权设置、外商投资程序与境外架构（首轮，回复第68—73页；20240607 txt 行2399—2615）",
+              "link": "/kb2024/874505-樱桃谷#问题4-国有股权设置、外商投资程序与境外架构-首轮-回复第68—73页-20240607-txt-行2399—2615"
+            },
+            {
+              "text": "问题10(2)：首农集团实控人认定与北京市国资委未认定的原因（首轮，回复第164—166页；20240607 txt 行5821—5903）",
+              "link": "/kb2024/874505-樱桃谷#问题10-2-首农集团实控人认定与北京市国资委未认定的原因-首轮-回复第164—166页-20240607-txt-行5821—5903"
+            },
+            {
+              "text": "问题10(3)：控股股东报告期前3起环保处罚（首轮，回复第167—169页；20240607 txt 行5904—6055）",
+              "link": "/kb2024/874505-樱桃谷#问题10-3-控股股东报告期前3起环保处罚-首轮-回复第167—169页-20240607-txt-行5904—6055"
+            },
+            {
+              "text": "问题10(4)：7项农村集体土地租赁（首轮，回复第170—174页；20240607 txt 行6056—6279）",
+              "link": "/kb2024/874505-樱桃谷#问题10-4-7项农村集体土地租赁-首轮-回复第170—174页-20240607-txt-行6056—6279"
+            },
+            {
+              "text": "问题10(5)(6)：特许权使用费模式与曾申报主板差异（首轮，回复第175—180页；20240607 txt 行6280—6500及对应区间）",
+              "link": "/kb2024/874505-樱桃谷#问题10-5-6-特许权使用费模式与曾申报主板差异-首轮-回复第175—180页-20240607-txt-行6280—6500及对应区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874505-樱桃谷#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874505-樱桃谷#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874506-高科环保": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "陕西高科环保科技股份有限公司（874506·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874506-高科环保"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874506-高科环保#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874506-高科环保#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874506-高科环保#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1（首轮）：业务合规性——安全生产、无证房产、消防与经营资质（一轮回复第3–29页；txt 行64–1263）",
+              "link": "/kb2024/874506-高科环保#问题1-首轮-业务合规性——安全生产、无证房产、消防与经营资质-一轮回复第3–29页-txt-行64–1263"
+            },
+            {
+              "text": "问题2（首轮）：国有企业及独立性（一轮回复第30–37页；txt 行1263–1573）",
+              "link": "/kb2024/874506-高科环保#问题2-首轮-国有企业及独立性-一轮回复第30–37页-txt-行1263–1573"
+            },
+            {
+              "text": "问题8(2)（首轮）：历史沿革股权代持核查与\"股权明晰\"挂牌条件（一轮回复第163–168页；txt 行6619–6936）",
+              "link": "/kb2024/874506-高科环保#问题8-2-首轮-历史沿革股权代持核查与-股权明晰-挂牌条件-一轮回复第163–168页-txt-行6619–6936"
+            },
+            {
+              "text": "问题8(3)（首轮）：报告期现金分红合规性（一轮回复第169–171页；txt 行6937–7080）",
+              "link": "/kb2024/874506-高科环保#问题8-3-首轮-报告期现金分红合规性-一轮回复第169–171页-txt-行6937–7080"
+            },
+            {
+              "text": "问题8(1)（首轮）：引进技术与继受取得发明专利的权属（一轮回复第158–162页；txt 行6500–6618）",
+              "link": "/kb2024/874506-高科环保#问题8-1-首轮-引进技术与继受取得发明专利的权属-一轮回复第158–162页-txt-行6500–6618"
+            },
+            {
+              "text": "问题8(7)①②（首轮）：董事任职经历披露与股东大会挂牌决议（一轮回复第204–207页；txt 行8509–8640）",
+              "link": "/kb2024/874506-高科环保#问题8-7-12-首轮-董事任职经历披露与股东大会挂牌决议-一轮回复第204–207页-txt-行8509–8640"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874506-高科环保#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874506-高科环保#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874507-天润新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏天润盛凯新材料股份有限公司（874507·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874507-天润新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874507-天润新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874507-天润新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874507-天润新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题2+二轮问题3(1)：家族企业实际控制人认定及与关联企业认定差异（首轮回复第13—18页 txt 行585—1060；二轮回复第27—41页 txt 行1054—1781）",
+              "link": "/kb2024/874507-天润新材#首轮问题2-二轮问题3-1-家族企业实际控制人认定及与关联企业认定差异-首轮回复第13—18页-txt-行585—1060-二轮回复第27—41页-txt-行1054—1781"
+            },
+            {
+              "text": "首轮问题1+二轮问题3(2)：家族内部无偿股权转让与代持流水核查（首轮回复第2—12页 txt 行43—584；二轮回复第41—45页 txt 行1782 附近）",
+              "link": "/kb2024/874507-天润新材#首轮问题1-二轮问题3-2-家族内部无偿股权转让与代持流水核查-首轮回复第2—12页-txt-行43—584-二轮回复第41—45页-txt-行1782-附近"
+            },
+            {
+              "text": "首轮问题4：业务资质、消防验收与节能审查（首轮回复第35—47页；txt 行1482—2940）",
+              "link": "/kb2024/874507-天润新材#首轮问题4-业务资质、消防验收与节能审查-首轮回复第35—47页-txt-行1482—2940"
+            },
+            {
+              "text": "二轮问题1+首轮问题11：关联采购芯纸的公允性与依赖（二轮回复第3—24页 txt 行43—987；首轮回复第175—178页 txt 行7872 起）",
+              "link": "/kb2024/874507-天润新材#二轮问题1-首轮问题11-关联采购芯纸的公允性与依赖-二轮回复第3—24页-txt-行43—987-首轮回复第175—178页-txt-行7872-起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874507-天润新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874507-天润新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874508-天健新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东省天行健新材料股份有限公司（874508·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874508-天健新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874508-天健新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874508-天健新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874508-天健新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：特殊投资条款的签署、解除及现行《承诺函》效力（首轮，回复第3—13页；txt 行56—582）",
+              "link": "/kb2024/874508-天健新材#问题1-特殊投资条款的签署、解除及现行《承诺函》效力-首轮-回复第3—13页-txt-行56—582"
+            },
+            {
+              "text": "问题3：环保合规——环评、排污许可瑕疵与节能审查（首轮，回复第17—38页；txt 行797—1951）",
+              "link": "/kb2024/874508-天健新材#问题3-环保合规——环评、排污许可瑕疵与节能审查-首轮-回复第17—38页-txt-行797—1951"
+            },
+            {
+              "text": "问题2(节录)：重要子公司东莞奥能合法规范经营与申报主体选择（首轮，回复第13—17页；txt 行583—796）",
+              "link": "/kb2024/874508-天健新材#问题2-节录-重要子公司东莞奥能合法规范经营与申报主体选择-首轮-回复第13—17页-txt-行583—796"
+            },
+            {
+              "text": "问题9(3)：劳务派遣、董监高简历与域名备案（首轮，回复第149—151页；txt 行6570—6665）",
+              "link": "/kb2024/874508-天健新材#问题9-3-劳务派遣、董监高简历与域名备案-首轮-回复第149—151页-txt-行6570—6665"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874508-天健新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874508-天健新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874509-埃夫科纳": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "埃夫科纳聚合物股份有限公司（874509·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874509-埃夫科纳"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874509-埃夫科纳#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874509-埃夫科纳#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874509-埃夫科纳#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：两高事项——产业政策、高污染名录与节能审查（首轮回复第 3-14 页；txt 行 79–644）",
+              "link": "/kb2024/874509-埃夫科纳#首轮问题-1-两高事项——产业政策、高污染名录与节能审查-首轮回复第-3-14-页-txt-行-79–644"
+            },
+            {
+              "text": "首轮问题 2：业务合规性——危化品试生产衔接、资质链条与南充基地权属（首轮回复第 15-25 页；txt 行 645–1123）",
+              "link": "/kb2024/874509-埃夫科纳#首轮问题-2-业务合规性——危化品试生产衔接、资质链条与南充基地权属-首轮回复第-15-25-页-txt-行-645–1123"
+            },
+            {
+              "text": "首轮问题 3：技术独立性——荷兰埃夫卡渊源与继受专利（首轮回复第 26-30 页；txt 行 1124–1336）",
+              "link": "/kb2024/874509-埃夫科纳#首轮问题-3-技术独立性——荷兰埃夫卡渊源与继受专利-首轮回复第-26-30-页-txt-行-1124–1336"
+            },
+            {
+              "text": "首轮问题 4／问题 9(1)(2)：股权激励、外籍自然人股东与境外架构（首轮回复第 31-33、141-161 页；txt 行 1337–1764、5887–6450）",
+              "link": "/kb2024/874509-埃夫科纳#首轮问题-4-问题-9-1-2-股权激励、外籍自然人股东与境外架构-首轮回复第-31-33、141-161-页-txt-行-1337–1764、5887–6450"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874509-埃夫科纳#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874509-埃夫科纳#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874515-云眼视界": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江西云眼视界科技股份有限公司（874515·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874515-云眼视界"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874515-云眼视界#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874515-云眼视界#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874515-云眼视界#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2（首轮）：历史沿革全部股权进退、双层代持的还原与国资并购程序（一轮回复第40–75页；txt 行1559–3240）",
+              "link": "/kb2024/874515-云眼视界#问题2-首轮-历史沿革全部股权进退、双层代持的还原与国资并购程序-一轮回复第40–75页-txt-行1559–3240"
+            },
+            {
+              "text": "问题3(5)（首轮）：涉密信息系统集成资质与挂牌合规（一轮回复第92–96页；txt 行4049–4250）",
+              "link": "/kb2024/874515-云眼视界#问题3-5-首轮-涉密信息系统集成资质与挂牌合规-一轮回复第92–96页-txt-行4049–4250"
+            },
+            {
+              "text": "问题7（首轮）：现存有效回购条款的合规性与履约能力（一轮回复第185–195页；txt 行7932–8430）",
+              "link": "/kb2024/874515-云眼视界#问题7-首轮-现存有效回购条款的合规性与履约能力-一轮回复第185–195页-txt-行7932–8430"
+            },
+            {
+              "text": "问题3(6)（首轮）：招投标与商业贿赂排查（一轮回复第96–100页；txt 行4250–4596）",
+              "link": "/kb2024/874515-云眼视界#问题3-6-首轮-招投标与商业贿赂排查-一轮回复第96–100页-txt-行4250–4596"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874515-云眼视界#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874515-云眼视界#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874516-越升科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏越升科技股份有限公司（874516·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874516-越升科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874516-越升科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874516-越升科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874516-越升科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)（首轮）：无书面协议的家庭内部股权代持链条（一轮回复第3–7页；txt 行60–470）",
+              "link": "/kb2024/874516-越升科技#问题1-1-首轮-无书面协议的家庭内部股权代持链条-一轮回复第3–7页-txt-行60–470"
+            },
+            {
+              "text": "问题1(2)（首轮）：苏州越瀚员工持股平台与激励条款设计（一轮回复第6–15页；txt 行300–600）",
+              "link": "/kb2024/874516-越升科技#问题1-2-首轮-苏州越瀚员工持股平台与激励条款设计-一轮回复第6–15页-txt-行300–600"
+            },
+            {
+              "text": "问题3（首轮）：子公司控制、注销合规与一个月短持参股（一轮回复第50–63页；txt 行2050–2576）",
+              "link": "/kb2024/874516-越升科技#问题3-首轮-子公司控制、注销合规与一个月短持参股-一轮回复第50–63页-txt-行2050–2576"
+            },
+            {
+              "text": "问题7(1)（首轮）：墨尔堡产品质量诉讼与预计负债不计提的论证（一轮回复第166–169页；txt 行7013–7090）",
+              "link": "/kb2024/874516-越升科技#问题7-1-首轮-墨尔堡产品质量诉讼与预计负债不计提的论证-一轮回复第166–169页-txt-行7013–7090"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874516-越升科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874516-越升科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874517-新瑞昕": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江新瑞昕科技股份有限公司（874517·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874517-新瑞昕"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874517-新瑞昕#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874517-新瑞昕#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874517-新瑞昕#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(4)：超产能生产——环评重大变动与重大违法认定（首轮，回复第15—19页；txt 行615—816）",
+              "link": "/kb2024/874517-新瑞昕#问题1-4-超产能生产——环评重大变动与重大违法认定-首轮-回复第15—19页-txt-行615—816"
+            },
+            {
+              "text": "问题2(2)：特殊投资条款的清理与保留（首轮，回复第33—54页；txt 行1417—2540）",
+              "link": "/kb2024/874517-新瑞昕#问题2-2-特殊投资条款的清理与保留-首轮-回复第33—54页-txt-行1417—2540"
+            },
+            {
+              "text": "问题1(5)+6(3)：劳务派遣超比例与社保公积金未足额缴纳（首轮，回复第23—33、180—184页；txt 行818—1035、1786—2040）",
+              "link": "/kb2024/874517-新瑞昕#问题1-5-6-3-劳务派遣超比例与社保公积金未足额缴纳-首轮-回复第23—33、180—184页-txt-行818—1035、1786—2040"
+            },
+            {
+              "text": "问题6(4)：知识产权来源、晶科系任职与竞业禁止（首轮，回复第184—195页；txt 行2041—2470 前后）",
+              "link": "/kb2024/874517-新瑞昕#问题6-4-知识产权来源、晶科系任职与竞业禁止-首轮-回复第184—195页-txt-行2041—2470-前后"
+            },
+            {
+              "text": "问题2(1)(3) 节录：国资程序、200人穿透与员工持股平台（首轮，回复第34—38、50—52页；txt 行1486—1713、2396—2470）",
+              "link": "/kb2024/874517-新瑞昕#问题2-1-3-节录-国资程序、200人穿透与员工持股平台-首轮-回复第34—38、50—52页-txt-行1486—1713、2396—2470"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874517-新瑞昕#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874517-新瑞昕#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874518-唯可鲜": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东唯可鲜食品集团股份有限公司（874518·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874518-唯可鲜"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874518-唯可鲜#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874518-唯可鲜#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874518-唯可鲜#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874518-唯可鲜#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874518-唯可鲜#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874521-量传计量": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "天津量传计量检测股份有限公司（874521·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874521-量传计量"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874521-量传计量#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874521-量传计量#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874521-量传计量#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "一轮问题1+二轮问题2：实际控制人变更与马占杰未认定为共同实控人（一轮，回复第4—23页，20240704 txt 行66—722；二轮，回复第43—45页，20240731 txt 行1651—1740）",
+              "link": "/kb2024/874521-量传计量#一轮问题1-二轮问题2-实际控制人变更与马占杰未认定为共同实控人-一轮-回复第4—23页-20240704-txt-行66—722-二轮-回复第43—45页-20240731-txt-行1651—1740"
+            },
+            {
+              "text": "一轮问题2：2023年3月亲属间1元/出资额股权转让（首轮，回复第24—28页；20240704 txt 行723—1614律师部分）",
+              "link": "/kb2024/874521-量传计量#一轮问题2-2023年3月亲属间1元-出资额股权转让-首轮-回复第24—28页-20240704-txt-行723—1614律师部分"
+            },
+            {
+              "text": "一轮问题5：供应商体外资金循环、股东资金占用与个人卡（首轮，回复第48—60页；20240704 txt 行1615—4258）",
+              "link": "/kb2024/874521-量传计量#一轮问题5-供应商体外资金循环、股东资金占用与个人卡-首轮-回复第48—60页-20240704-txt-行1615—4258"
+            },
+            {
+              "text": "一轮问题9(1)-(4)：北京量传合并、劳务外包、房屋租赁与CNAS资质（首轮，回复第118—152页；20240704 txt 行4259—5800）",
+              "link": "/kb2024/874521-量传计量#一轮问题9-1-4-北京量传合并、劳务外包、房屋租赁与cnas资质-首轮-回复第118—152页-20240704-txt-行4259—5800"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874521-量传计量#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874521-量传计量#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874522-中德科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江中德自控科技股份有限公司（874522·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874522-中德科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874522-中德科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874522-中德科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874522-中德科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：控股股东与实际控制人认定及二次申报差异（首轮，回复第3–8页；txt 行53–280）",
+              "link": "/kb2024/874522-中德科技#问题1-控股股东与实际控制人认定及二次申报差异-首轮-回复第3–8页-txt-行53–280"
+            },
+            {
+              "text": "问题2(1)(3)(4)：资质续期、招投标与无证房产（首轮，回复第9–24页；txt 行281–909）",
+              "link": "/kb2024/874522-中德科技#问题2-1-3-4-资质续期、招投标与无证房产-首轮-回复第9–24页-txt-行281–909"
+            },
+            {
+              "text": "问题3(1)：前次挂牌与摘牌程序合规（首轮，回复第38–44页；txt 行1530–1900）",
+              "link": "/kb2024/874522-中德科技#问题3-1-前次挂牌与摘牌程序合规-首轮-回复第38–44页-txt-行1530–1900"
+            },
+            {
+              "text": "问题3(2)(3)(4)：家族无对价转让与员工持股平台永青投资（首轮，回复第44–60页；txt 行1900–2660）",
+              "link": "/kb2024/874522-中德科技#问题3-2-3-4-家族无对价转让与员工持股平台永青投资-首轮-回复第44–60页-txt-行1900–2660"
+            },
+            {
+              "text": "问题9(1)(2)(3)：家族治理、参股债转股与股份限售（首轮，回复第186–204页；txt 行7985–8770）",
+              "link": "/kb2024/874522-中德科技#问题9-1-2-3-家族治理、参股债转股与股份限售-首轮-回复第186–204页-txt-行7985–8770"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874522-中德科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874522-中德科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874523-兴三星": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "兴三星云科技股份有限公司（874523·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874523-兴三星"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874523-兴三星#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874523-兴三星#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874523-兴三星#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：2021 年频繁增减资与定价差异（首轮，回复第3–10页；txt 行87–392）",
+              "link": "/kb2024/874523-兴三星#问题1-1-2021-年频繁增减资与定价差异-首轮-回复第3–10页-txt-行87–392"
+            },
+            {
+              "text": "问题1(3)：三星锁业退出与同业竞争之辩（首轮，回复第11–15页；txt 行393–476）",
+              "link": "/kb2024/874523-兴三星#问题1-3-三星锁业退出与同业竞争之辩-首轮-回复第11–15页-txt-行393–476"
+            },
+            {
+              "text": "问题1(4)：核心技术人员职务发明与浙江豪烽科技（首轮，回复第15–18页；txt 行3773 之前对应部分）",
+              "link": "/kb2024/874523-兴三星#问题1-4-核心技术人员职务发明与浙江豪烽科技-首轮-回复第15–18页-txt-行3773-之前对应部分"
+            },
+            {
+              "text": "问题1(5)：葛朝霞代持的形成与解除（首轮，回复第18–19页；txt 行802–870）",
+              "link": "/kb2024/874523-兴三星#问题1-5-葛朝霞代持的形成与解除-首轮-回复第18–19页-txt-行802–870"
+            },
+            {
+              "text": "问题2：特殊投资条款的中止与恢复安排（首轮，回复第33–40页；txt 行1436–1735）",
+              "link": "/kb2024/874523-兴三星#问题2-特殊投资条款的中止与恢复安排-首轮-回复第33–40页-txt-行1436–1735"
+            },
+            {
+              "text": "问题7(一)：专利质押与继受取得专利（首轮，回复第160–163页；txt 行7409–7560）",
+              "link": "/kb2024/874523-兴三星#问题7-一-专利质押与继受取得专利-首轮-回复第160–163页-txt-行7409–7560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874523-兴三星#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874523-兴三星#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874530-豪德数控": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东豪德数控装备股份有限公司（874530·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874530-豪德数控"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874530-豪德数控#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874530-豪德数控#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874530-豪德数控#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题5：关于实际控制人认定（第一轮，回复第89–102页；txt行3731–4348）",
+              "link": "/kb2024/874530-豪德数控#问题5-关于实际控制人认定-第一轮-回复第89–102页-txt行3731–4348"
+            },
+            {
+              "text": "问题6(5)：关于特殊投资条款（第一轮，回复第151–160页；txt行4423–4430、6476–6990）",
+              "link": "/kb2024/874530-豪德数控#问题6-5-关于特殊投资条款-第一轮-回复第151–160页-txt行4423–4430、6476–6990"
+            },
+            {
+              "text": "问题6(1)：关于股权激励（第一轮，回复第103–121页；txt行4351–4422及后续回复）",
+              "link": "/kb2024/874530-豪德数控#问题6-1-关于股权激励-第一轮-回复第103–121页-txt行4351–4422及后续回复"
+            },
+            {
+              "text": "问题6(6)：关于公司治理有效性（第一轮，回复第161–166页；txt行4431–4440及后续回复）",
+              "link": "/kb2024/874530-豪德数控#问题6-6-关于公司治理有效性-第一轮-回复第161–166页-txt行4431–4440及后续回复"
+            },
+            {
+              "text": "问题1：关于经销——境外销售事项核查（第一轮，回复第3–38页；txt行69–3730；律师就境外销售按《挂牌审核业务规则适用指引第1号》核查）",
+              "link": "/kb2024/874530-豪德数控#问题1-关于经销——境外销售事项核查-第一轮-回复第3–38页-txt行69–3730-律师就境外销售按《挂牌审核业务规则适用指引第1号》核查"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874530-豪德数控#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874530-豪德数控#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874531-诺贝尔": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏诺贝尔塑业股份有限公司（874531·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874531-诺贝尔"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874531-诺贝尔#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874531-诺贝尔#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874531-诺贝尔#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：司法拍卖取得土地房产与消防验收瑕疵（回复第3–21页；txt行47–783）",
+              "link": "/kb2024/874531-诺贝尔#_1-首轮问题1-司法拍卖取得土地房产与消防验收瑕疵-回复第3–21页-txt行47–783"
+            },
+            {
+              "text": "2. 首轮问题2：实际控制人认定、股权代持与董监高竞业（回复第22–43页；txt行784–1800）",
+              "link": "/kb2024/874531-诺贝尔#_2-首轮问题2-实际控制人认定、股权代持与董监高竞业-回复第22–43页-txt行784–1800"
+            },
+            {
+              "text": "3. 首轮问题3：产品质量、招投标、危废与涉水卫生许可（回复第43–55页；txt行1801–2270）",
+              "link": "/kb2024/874531-诺贝尔#_3-首轮问题3-产品质量、招投标、危废与涉水卫生许可-回复第43–55页-txt行1801–2270"
+            },
+            {
+              "text": "4. 首轮问题4：环保合规与\"未验先投\"（回复第55–75页；txt行2271–3070）",
+              "link": "/kb2024/874531-诺贝尔#_4-首轮问题4-环保合规与-未验先投-回复第55–75页-txt行2271–3070"
+            },
+            {
+              "text": "5. 首轮问题7(1)/7(2)/7(7)①②：继受取得专利权属、对外投资与企业名称、独董（回复第112–119、163–174页；txt行4651–5318、6894–7307）",
+              "link": "/kb2024/874531-诺贝尔#_5-首轮问题7-1-7-2-7-7-12-继受取得专利权属、对外投资与企业名称、独董-回复第112–119、163–174页-txt行4651–5318、6894–7307"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874531-诺贝尔#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874531-诺贝尔#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874532-嘉特股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江嘉特保温科技股份有限公司（874532·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874532-嘉特股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874532-嘉特股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874532-嘉特股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874532-嘉特股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1（首轮）：实控人认定、日本光琳商事代持与出资瑕疵（首轮，回复第 3—47 页；txt 行 110—1700 区间）",
+              "link": "/kb2024/874532-嘉特股份#问题-1-首轮-实控人认定、日本光琳商事代持与出资瑕疵-首轮-回复第-3—47-页-txt-行-110—1700-区间"
+            },
+            {
+              "text": "问题 1（二轮）：三八塑料厂集体改制、美昶租赁穿透与现金置换（二轮，回复第 3—11 页；txt 行 60—700）",
+              "link": "/kb2024/874532-嘉特股份#问题-1-二轮-三八塑料厂集体改制、美昶租赁穿透与现金置换-二轮-回复第-3—11-页-txt-行-60—700"
+            },
+            {
+              "text": "问题 2（首轮）与问题 1（三轮）：收购明德金属、任享保温及未实缴出资入评估值（首轮，回复第 48—98 页；txt 行 1900—3300；三轮，回复第 3—7 页；txt 行 60—380）",
+              "link": "/kb2024/874532-嘉特股份#问题-2-首轮-与问题-1-三轮-收购明德金属、任享保温及未实缴出资入评估值-首轮-回复第-48—98-页-txt-行-1900—3300-三轮-回复第-3—7-页-txt-行-60—380"
+            },
+            {
+              "text": "问题 3（二轮）/问题 2（三轮）：境外销售尽调手段有效性（二轮，回复第 36—37 页起；三轮，回复第 8 页起；txt 行 1490—1591、380—744）",
+              "link": "/kb2024/874532-嘉特股份#问题-3-二轮-问题-2-三轮-境外销售尽调手段有效性-二轮-回复第-36—37-页起-三轮-回复第-8-页起-txt-行-1490—1591、380—744"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874532-嘉特股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874532-嘉特股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874533-恒业微晶": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海恒业微晶材料科技股份有限公司（874533·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874533-恒业微晶"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874533-恒业微晶#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874533-恒业微晶#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874533-恒业微晶#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：业务合规性及经营场所——现场检查发现的未环评扩产与集体用地取地（首轮回复第 1-3 至 1-39 页；txt 行 70–1703）",
+              "link": "/kb2024/874533-恒业微晶#首轮问题-1-业务合规性及经营场所——现场检查发现的未环评扩产与集体用地取地-首轮回复第-1-3-至-1-39-页-txt-行-70–1703"
+            },
+            {
+              "text": "首轮问题 2：子公司及参股公司——境外投资程序瑕疵与关联共同投资（首轮回复第 1-40 至 1-53 页；txt 行 1704–2418）",
+              "link": "/kb2024/874533-恒业微晶#首轮问题-2-子公司及参股公司——境外投资程序瑕疵与关联共同投资-首轮回复第-1-40-至-1-53-页-txt-行-1704–2418"
+            },
+            {
+              "text": "首轮问题 3：历史沿革——出资瑕疵夯实、突击增资定价与国资股东程序（首轮回复第 1-58 至 1-78 页；txt 行 2419–3283）",
+              "link": "/kb2024/874533-恒业微晶#首轮问题-3-历史沿革——出资瑕疵夯实、突击增资定价与国资股东程序-首轮回复第-1-58-至-1-78-页-txt-行-2419–3283"
+            },
+            {
+              "text": "首轮问题 7：股权激励——双持股平台、IPO 成功为可行权条件与贷款出资（首轮回复第 1-192 至 1-201 页；txt 行 8325–8961）",
+              "link": "/kb2024/874533-恒业微晶#首轮问题-7-股权激励——双持股平台、ipo-成功为可行权条件与贷款出资-首轮回复第-1-192-至-1-201-页-txt-行-8325–8961"
+            },
+            {
+              "text": "首轮问题 8(1)(2)(3)：外协委托加工、实控人产业版图与受让专利（首轮回复第 1-207 至 1-231 页；txt 行 8962–10198）",
+              "link": "/kb2024/874533-恒业微晶#首轮问题-8-1-2-3-外协委托加工、实控人产业版图与受让专利-首轮回复第-1-207-至-1-231-页-txt-行-8962–10198"
+            },
+            {
+              "text": "首轮问题 8(8)：前次挂牌—创业板撤回—现场检查—二次申报的全链条交代（首轮回复第 1-274 至 1-294 页；txt 行 12017–13100）",
+              "link": "/kb2024/874533-恒业微晶#首轮问题-8-8-前次挂牌—创业板撤回—现场检查—二次申报的全链条交代-首轮回复第-1-274-至-1-294-页-txt-行-12017–13100"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874533-恒业微晶#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874533-恒业微晶#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874536-浙江天际": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江天际互感器股份有限公司（874536·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874536-浙江天际"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874536-浙江天际#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874536-浙江天际#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874536-浙江天际#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)①②④：国有股出资与两次集体企业改制（首轮，回复第1-5至1-13页；20240726 txt 行140—612）",
+              "link": "/kb2024/874536-浙江天际#问题1-1-124-国有股出资与两次集体企业改制-首轮-回复第1-5至1-13页-20240726-txt-行140—612"
+            },
+            {
+              "text": "问题1(1)③⑤⑦：经营层收购、2008年差异化增资与银行股权剥离（首轮，回复第1-13至1-23页；20240726 txt 行534—706、613—706、707—1006）",
+              "link": "/kb2024/874536-浙江天际#问题1-1-357-经营层收购、2008年差异化增资与银行股权剥离-首轮-回复第1-13至1-23页-20240726-txt-行534—706、613—706、707—1006"
+            },
+            {
+              "text": "问题1(1)⑥：派生分立新设三烽电力（首轮，回复第1-18至1-19页；20240726 txt 行652—706）",
+              "link": "/kb2024/874536-浙江天际#问题1-1-6-派生分立新设三烽电力-首轮-回复第1-18至1-19页-20240726-txt-行652—706"
+            },
+            {
+              "text": "问题1(2)：久兴投资、昌联投资员工持股平台（首轮，回复第1-27至1-37页；20240726 txt 行1007—1471）",
+              "link": "/kb2024/874536-浙江天际#问题1-2-久兴投资、昌联投资员工持股平台-首轮-回复第1-27至1-37页-20240726-txt-行1007—1471"
+            },
+            {
+              "text": "问题1(3)：历史代持排查（首轮，回复第1-38至1-46页；20240726 txt 行1472—1972）",
+              "link": "/kb2024/874536-浙江天际#问题1-3-历史代持排查-首轮-回复第1-38至1-46页-20240726-txt-行1472—1972"
+            },
+            {
+              "text": "问题8(2)：特殊投资条款——《战略合作协议》对赌解除（首轮，回复第1-185至1-189页；20240726 txt 行8314—8470）",
+              "link": "/kb2024/874536-浙江天际#问题8-2-特殊投资条款——《战略合作协议》对赌解除-首轮-回复第1-185至1-189页-20240726-txt-行8314—8470"
+            },
+            {
+              "text": "问题8(3)：共同控制与一致行动人认定（首轮，回复第1-172至1-210页；20240726 txt 行7754—9289）",
+              "link": "/kb2024/874536-浙江天际#问题8-3-共同控制与一致行动人认定-首轮-回复第1-172至1-210页-20240726-txt-行7754—9289"
+            },
+            {
+              "text": "问题8(4)：报告期股利分配22,500万元（首轮，回复第1-217至1-222页；20240726 txt 行9888—10123）",
+              "link": "/kb2024/874536-浙江天际#问题8-4-报告期股利分配22-500万元-首轮-回复第1-217至1-222页-20240726-txt-行9888—10123"
+            },
+            {
+              "text": "问题8(5)：不动产与机器设备抵押担保（首轮，回复第1-223至1-226页；20240726 txt 行10124—10230）",
+              "link": "/kb2024/874536-浙江天际#问题8-5-不动产与机器设备抵押担保-首轮-回复第1-223至1-226页-20240726-txt-行10124—10230"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874536-浙江天际#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874536-浙江天际#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874537-美康股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "四川美康医药软件研究开发股份有限公司（874537·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874537-美康股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874537-美康股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874537-美康股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874537-美康股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1(1)(2)：医药知识库的著作权与商业秘密合规（问询回复第 3–16 页；txt 行 78–656）",
+              "link": "/kb2024/874537-美康股份#_1-首轮问题-1-1-2-医药知识库的著作权与商业秘密合规-问询回复第-3–16-页-txt-行-78–656"
+            },
+            {
+              "text": "2. 首轮问题 1(5)：招投标合规与军队采购串标处理（问询回复第 30–36 页；txt 行 1173–1471）",
+              "link": "/kb2024/874537-美康股份#_2-首轮问题-1-5-招投标合规与军队采购串标处理-问询回复第-30–36-页-txt-行-1173–1471"
+            },
+            {
+              "text": "3. 首轮问题 1(6)(7)：个人信息保护与互联网药品信息服务备案瑕疵（问询回复第 37–46 页；txt 行 1480–2024）",
+              "link": "/kb2024/874537-美康股份#_3-首轮问题-1-6-7-个人信息保护与互联网药品信息服务备案瑕疵-问询回复第-37–46-页-txt-行-1480–2024"
+            },
+            {
+              "text": "4. 首轮问题 2：四次控制权变动、多重代持、吸收合并与外资合规（问询回复第 56–106 页；txt 行 2430–4801）",
+              "link": "/kb2024/874537-美康股份#_4-首轮问题-2-四次控制权变动、多重代持、吸收合并与外资合规-问询回复第-56–106-页-txt-行-2430–4801"
+            },
+            {
+              "text": "5. 首轮问题 4：特殊投资条款的终止、恢复与再终止（问询回复第 116–129 页；txt 行 5217–5853）",
+              "link": "/kb2024/874537-美康股份#_5-首轮问题-4-特殊投资条款的终止、恢复与再终止-问询回复第-116–129-页-txt-行-5217–5853"
+            },
+            {
+              "text": "6. 首轮问题 9(2)：个人卡付款与个税补缴（问询回复第 284–288 页；txt 行 13136–13351）",
+              "link": "/kb2024/874537-美康股份#_6-首轮问题-9-2-个人卡付款与个税补缴-问询回复第-284–288-页-txt-行-13136–13351"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874537-美康股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874537-美康股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874547-首页科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "南昌首页科技股份有限公司（874547·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874547-首页科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874547-首页科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874547-首页科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874547-首页科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：IDC 业务资质、数据安全合规与共建机房权属（含网络安全行政处罚）（回复第3–24页；首轮回复txt行71–1042）",
+              "link": "/kb2024/874547-首页科技#_1-首轮问题1-idc-业务资质、数据安全合规与共建机房权属-含网络安全行政处罚-回复第3–24页-首轮回复txt行71–1042"
+            },
+            {
+              "text": "2. 首轮问题4：实际控制人资金占用、关联方拆借与内控有效性（回复第118–129页；首轮回复txt行4960–5519）",
+              "link": "/kb2024/874547-首页科技#_2-首轮问题4-实际控制人资金占用、关联方拆借与内控有效性-回复第118–129页-首轮回复txt行4960–5519"
+            },
+            {
+              "text": "3. 首轮问题5.1：收购 5 家子公司、股权代持还原与股权明晰（回复第130–157页；首轮回复txt行5520–6778）",
+              "link": "/kb2024/874547-首页科技#_3-首轮问题5-1-收购-5-家子公司、股权代持还原与股权明晰-回复第130–157页-首轮回复txt行5520–6778"
+            },
+            {
+              "text": "4. 首轮问题5.2：王细娥、陈林未认定为共同实际控制人（回复第157–168页；首轮回复txt行6779–7289）",
+              "link": "/kb2024/874547-首页科技#_4-首轮问题5-2-王细娥、陈林未认定为共同实际控制人-回复第157–168页-首轮回复txt行6779–7289"
+            },
+            {
+              "text": "5. 首轮问题5.3/5.4/5.5：公司治理、子公司未实缴与股权激励（回复第168–199页；首轮回复txt行7290–8729）",
+              "link": "/kb2024/874547-首页科技#_5-首轮问题5-3-5-4-5-5-公司治理、子公司未实缴与股权激励-回复第168–199页-首轮回复txt行7290–8729"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874547-首页科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874547-首页科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874548-艾克姆": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "宁波艾克姆新材料股份有限公司（874548·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874548-艾克姆"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874548-艾克姆#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874548-艾克姆#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874548-艾克姆#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：设立即代持的形成与两轮还原（首轮，回复第3—10页；txt 行57—370）",
+              "link": "/kb2024/874548-艾克姆#问题1-1-设立即代持的形成与两轮还原-首轮-回复第3—10页-txt-行57—370"
+            },
+            {
+              "text": "问题1(2)(3)：区域股权市场挂牌合规与兄弟企业承继关系（首轮，回复第10—22页；txt 行371—440、440—963）",
+              "link": "/kb2024/874548-艾克姆#问题1-2-3-区域股权市场挂牌合规与兄弟企业承继关系-首轮-回复第10—22页-txt-行371—440、440—963"
+            },
+            {
+              "text": "问题1(4)：董事兼财务总监、董秘的兼职与竞业禁止（首轮，回复第22—26页；txt 行963—1200 前后）",
+              "link": "/kb2024/874548-艾克姆#问题1-4-董事兼财务总监、董秘的兼职与竞业禁止-首轮-回复第22—26页-txt-行963—1200-前后"
+            },
+            {
+              "text": "问题2：业务资质覆盖与重污染行业认定（首轮，回复第34—52页；txt 行1280 前后）",
+              "link": "/kb2024/874548-艾克姆#问题2-业务资质覆盖与重污染行业认定-首轮-回复第34—52页-txt-行1280-前后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874548-艾克姆#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874548-艾克姆#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874549-莱恩精工": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州莱恩精工合金股份有限公司（874549·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874549-莱恩精工"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874549-莱恩精工#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874549-莱恩精工#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874549-莱恩精工#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——离婚引发的母亲代持、父母赠与与实控人认定（第一轮，回复第 4-28 页；txt 行 45-1237）",
+              "link": "/kb2024/874549-莱恩精工#问题1-关于历史沿革——离婚引发的母亲代持、父母赠与与实控人认定-第一轮-回复第-4-28-页-txt-行-45-1237"
+            },
+            {
+              "text": "问题3：关于合法规范经营——环评验收、违章建筑、土地规划调整与越南处罚（第一轮，回复第 45-57 页；txt 行 1903-2405）",
+              "link": "/kb2024/874549-莱恩精工#问题3-关于合法规范经营——环评验收、违章建筑、土地规划调整与越南处罚-第一轮-回复第-45-57-页-txt-行-1903-2405"
+            },
+            {
+              "text": "问题8.1：关于创业板申报——转贷撤回、监管函与二次申报（第一轮，回复第 155-160 页；txt 行 6370-6560）",
+              "link": "/kb2024/874549-莱恩精工#问题8-1-关于创业板申报——转贷撤回、监管函与二次申报-第一轮-回复第-155-160-页-txt-行-6370-6560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874549-莱恩精工#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874549-莱恩精工#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874550-奥立思特": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "常州奥立思特电气股份有限公司（874550·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874550-奥立思特"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874550-奥立思特#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874550-奥立思特#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874550-奥立思特#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：设立时亲属代持、竞业限制排查与前雇主知识产权纠纷（第一轮，回复第 3—23 页；txt 行 45—1088）",
+              "link": "/kb2024/874550-奥立思特#问题-1-设立时亲属代持、竞业限制排查与前雇主知识产权纠纷-第一轮-回复第-3—23-页-txt-行-45—1088"
+            },
+            {
+              "text": "问题 2(3)(4)：越南子公司租赁与环境许可证整改（第一轮，回复第 24—56 页；txt 行 1089—1619）",
+              "link": "/kb2024/874550-奥立思特#问题-2-3-4-越南子公司租赁与环境许可证整改-第一轮-回复第-24—56-页-txt-行-1089—1619"
+            },
+            {
+              "text": "问题 7(1)：前次挂牌摘牌——披露一致性与 64 名异议股东回购安排（第一轮，回复第 128—137 页；txt 行 5000—5400）",
+              "link": "/kb2024/874550-奥立思特#问题-7-1-前次挂牌摘牌——披露一致性与-64-名异议股东回购安排-第一轮-回复第-128—137-页-txt-行-5000—5400"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874550-奥立思特#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874550-奥立思特#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874551-宝盖新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东宝盖新材料科技股份有限公司（874551·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874551-宝盖新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874551-宝盖新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874551-宝盖新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874551-宝盖新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)(2)：资质、危废处置与串标行政处罚（首轮，回复第4—15页；20240808 txt 行62—560）",
+              "link": "/kb2024/874551-宝盖新材#问题1-1-2-资质、危废处置与串标行政处罚-首轮-回复第4—15页-20240808-txt-行62—560"
+            },
+            {
+              "text": "问题1(3)：关于\"两高\"事项（首轮，回复第5、16—30页；20240808 txt 行98—1367）",
+              "link": "/kb2024/874551-宝盖新材#问题1-3-关于-两高-事项-首轮-回复第5、16—30页-20240808-txt-行98—1367"
+            },
+            {
+              "text": "问题1(4)：无证房产与消防验收瑕疵（首轮，回复第31—35页；20240808 txt 行1368—1597）",
+              "link": "/kb2024/874551-宝盖新材#问题1-4-无证房产与消防验收瑕疵-首轮-回复第31—35页-20240808-txt-行1368—1597"
+            },
+            {
+              "text": "问题1(5)：用工平台发放薪酬（首轮，回复第36—39页；20240808 txt 行1598—1745）",
+              "link": "/kb2024/874551-宝盖新材#问题1-5-用工平台发放薪酬-首轮-回复第36—39页-20240808-txt-行1598—1745"
+            },
+            {
+              "text": "问题2：非货币出资、员工持股平台与双层代持（首轮，回复第46—65页；20240808 txt 行1999—2878）",
+              "link": "/kb2024/874551-宝盖新材#问题2-非货币出资、员工持股平台与双层代持-首轮-回复第46—65页-20240808-txt-行1999—2878"
+            },
+            {
+              "text": "问题3：公司治理与控制权集中（首轮，回复第66—74页；20240808 txt 行2879—3070及3140起）",
+              "link": "/kb2024/874551-宝盖新材#问题3-公司治理与控制权集中-首轮-回复第66—74页-20240808-txt-行2879—3070及3140起"
+            },
+            {
+              "text": "问题8(1)：收购西安宝盖与重要子公司合规（首轮，回复第183—192页；20240808 txt 行8101—8330及后续）",
+              "link": "/kb2024/874551-宝盖新材#问题8-1-收购西安宝盖与重要子公司合规-首轮-回复第183—192页-20240808-txt-行8101—8330及后续"
+            },
+            {
+              "text": "问题8(4)①：新增土地使用权来源与程序（首轮，回复第216—218页；20240808 txt 行9529—9560）",
+              "link": "/kb2024/874551-宝盖新材#问题8-4-1-新增土地使用权来源与程序-首轮-回复第216—218页-20240808-txt-行9529—9560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874551-宝盖新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874551-宝盖新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874552-原力数字": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏原力数字科技股份有限公司（874552·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874552-原力数字"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874552-原力数字#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874552-原力数字#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874552-原力数字#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：境外投资合规——未发改备案的化解与子公司注销（首轮，回复第3—27页；txt 行57—1180 前后）",
+              "link": "/kb2024/874552-原力数字#问题1-境外投资合规——未发改备案的化解与子公司注销-首轮-回复第3—27页-txt-行57—1180-前后"
+            },
+            {
+              "text": "问题4：特殊投资条款全部终止与国资投资者程序（首轮，回复第61—74页；txt 行2640 前后—3230）",
+              "link": "/kb2024/874552-原力数字#问题4-特殊投资条款全部终止与国资投资者程序-首轮-回复第61—74页-txt-行2640-前后—3230"
+            },
+            {
+              "text": "问题9：实控人代员工持股的解除还原（首轮，回复第153—160页；txt 行6480 前后—6700）",
+              "link": "/kb2024/874552-原力数字#问题9-实控人代员工持股的解除还原-首轮-回复第153—160页-txt-行6480-前后—6700"
+            },
+            {
+              "text": "问题3：涉外仲裁与应收制作费诉讼（首轮，回复第53—60页；txt 行3300 前后—3640）",
+              "link": "/kb2024/874552-原力数字#问题3-涉外仲裁与应收制作费诉讼-首轮-回复第53—60页-txt-行3300-前后—3640"
+            },
+            {
+              "text": "问题2+问题8 节录：动画企业知识产权与员工激励基金（首轮，回复第28—52、138—152页；txt 行1250 前后—2640、5100 前后—6480）",
+              "link": "/kb2024/874552-原力数字#问题2-问题8-节录-动画企业知识产权与员工激励基金-首轮-回复第28—52、138—152页-txt-行1250-前后—2640、5100-前后—6480"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874552-原力数字#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874552-原力数字#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874553-沛城科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市沛城电子科技股份有限公司（874553·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874553-沛城科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874553-沛城科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874553-沛城科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874553-沛城科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于业务合规性——资质覆盖与排污登记（第一轮，回复第3–15页；txt行74–654）",
+              "link": "/kb2024/874553-沛城科技#问题1-关于业务合规性——资质覆盖与排污登记-第一轮-回复第3–15页-txt行74–654"
+            },
+            {
+              "text": "问题2：关于历史沿革——员工持股平台与股权激励（第一轮，回复第16–38页；txt行655–1884）",
+              "link": "/kb2024/874553-沛城科技#问题2-关于历史沿革——员工持股平台与股权激励-第一轮-回复第16–38页-txt行655–1884"
+            },
+            {
+              "text": "问题7：其它补充说明——挂牌条件对照与北交所辅导核查（第一轮，回复第188–189页；txt行8411–8460）",
+              "link": "/kb2024/874553-沛城科技#问题7-其它补充说明——挂牌条件对照与北交所辅导核查-第一轮-回复第188–189页-txt行8411–8460"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874553-沛城科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874553-沛城科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874556-嘉耐股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏嘉耐高温材料股份有限公司（874556·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874556-嘉耐股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874556-嘉耐股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874556-嘉耐股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874556-嘉耐股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1(1)(3)：特殊投资条款回购退出与双层代持还原（第一轮，回复第 4—20 页；txt 行 77—1770 区间）",
+              "link": "/kb2024/874556-嘉耐股份#问题-1-1-3-特殊投资条款回购退出与双层代持还原-第一轮-回复第-4—20-页-txt-行-77—1770-区间"
+            },
+            {
+              "text": "问题 3：两高事项——产业政策、高污染产品与环保合规（第一轮，回复第 44—59 页；txt 行 1717—2365）",
+              "link": "/kb2024/874556-嘉耐股份#问题-3-两高事项——产业政策、高污染产品与环保合规-第一轮-回复第-44—59-页-txt-行-1717—2365"
+            },
+            {
+              "text": "问题 4：实控人类金融任职、兄弟业务整合与同业竞争排查（第一轮，回复第 60—82 页；txt 行 2366—3221）",
+              "link": "/kb2024/874556-嘉耐股份#问题-4-实控人类金融任职、兄弟业务整合与同业竞争排查-第一轮-回复第-60—82-页-txt-行-2366—3221"
+            },
+            {
+              "text": "问题 7(2)(3)：独董高校任职合规与不动产抵押负担（第一轮，回复第 132—136 页起；txt 行 5540—5590、后续区间）",
+              "link": "/kb2024/874556-嘉耐股份#问题-7-2-3-独董高校任职合规与不动产抵押负担-第一轮-回复第-132—136-页起-txt-行-5540—5590、后续区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874556-嘉耐股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874556-嘉耐股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874557-联成科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "南京联成科技发展股份有限公司（874557·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874557-联成科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874557-联成科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874557-联成科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874557-联成科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1(2)(5)：离婚股权分割、一致行动安排与历史代持（第一轮，回复第 11—13、26—30 页；txt 行 460—600、1209—1330）",
+              "link": "/kb2024/874557-联成科技#问题-1-2-5-离婚股权分割、一致行动安排与历史代持-第一轮-回复第-11—13、26—30-页-txt-行-460—600、1209—1330"
+            },
+            {
+              "text": "问题 1(3)(4)：国资股东核查与特殊投资条款解除（第一轮，回复第 14—25 页；txt 行 591—1060）",
+              "link": "/kb2024/874557-联成科技#问题-1-3-4-国资股东核查与特殊投资条款解除-第一轮-回复第-14—25-页-txt-行-591—1060"
+            },
+            {
+              "text": "问题 2(2)(5)(6)(7)：涉密资质、平台认定、数据合规与继受专利（第一轮，回复第 58—84 页；txt 行 2573—3000 区间）",
+              "link": "/kb2024/874557-联成科技#问题-2-2-5-6-7-涉密资质、平台认定、数据合规与继受专利-第一轮-回复第-58—84-页-txt-行-2573—3000-区间"
+            },
+            {
+              "text": "问题 9(三)：二次申报——与前次挂牌披露一致性核查（第一轮，回复第 222 页起；txt 行 9780—10050 区间）",
+              "link": "/kb2024/874557-联成科技#问题-9-三-二次申报——与前次挂牌披露一致性核查-第一轮-回复第-222-页起-txt-行-9780—10050-区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874557-联成科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874557-联成科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874559-龙腾股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "龙腾照明集团股份有限公司（874559·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874559-龙腾股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874559-龙腾股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874559-龙腾股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874559-龙腾股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2.4：晶日科技外观设计专利侵权诉讼（首轮，回复第49–51页；txt 行2161–2244）",
+              "link": "/kb2024/874559-龙腾股份#问题2-4-晶日科技外观设计专利侵权诉讼-首轮-回复第49–51页-txt-行2161–2244"
+            },
+            {
+              "text": "问题3.1：龙腾农贷类金融注入承诺与隔离（首轮，回复第61–63页；txt 行2639–2729）",
+              "link": "/kb2024/874559-龙腾股份#问题3-1-龙腾农贷类金融注入承诺与隔离-首轮-回复第61–63页-txt-行2639–2729"
+            },
+            {
+              "text": "问题3.2：董监高及核心技术人员原任职与职务发明核查（首轮，回复第63–70页；txt 行2730–3139）",
+              "link": "/kb2024/874559-龙腾股份#问题3-2-董监高及核心技术人员原任职与职务发明核查-首轮-回复第63–70页-txt-行2730–3139"
+            },
+            {
+              "text": "问题4：特殊投资条款（苏州凯笔回购）的终止（首轮，回复第85–89页；txt 行3944–4125）",
+              "link": "/kb2024/874559-龙腾股份#问题4-特殊投资条款-苏州凯笔回购-的终止-首轮-回复第85–89页-txt-行3944–4125"
+            },
+            {
+              "text": "问题6.2：设立时代持（许福祥代许福萍）的形成与解除（首轮，回复第109–112页；txt 行4957–5432）",
+              "link": "/kb2024/874559-龙腾股份#问题6-2-设立时代持-许福祥代许福萍-的形成与解除-首轮-回复第109–112页-txt-行4957–5432"
+            },
+            {
+              "text": "问题6.3：前次主板 IPO 终止审核（首轮，回复第120–123页；txt 行5433–5587）",
+              "link": "/kb2024/874559-龙腾股份#问题6-3-前次主板-ipo-终止审核-首轮-回复第120–123页-txt-行5433–5587"
+            },
+            {
+              "text": "问题6.4：股权激励（龙瑞投资、龙祥投资）（首轮，回复第123–132页；txt 行5588–5960）",
+              "link": "/kb2024/874559-龙腾股份#问题6-4-股权激励-龙瑞投资、龙祥投资-首轮-回复第123–132页-txt-行5588–5960"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874559-龙腾股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874559-龙腾股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874561-金标股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海金标文化创意股份有限公司（874561·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874561-金标股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874561-金标股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874561-金标股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874561-金标股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：历史沿革——两期股权激励与叶威明实控人认定（第一轮，回复第 4—18 页；txt 行 77—720）",
+              "link": "/kb2024/874561-金标股份#问题-1-历史沿革——两期股权激励与叶威明实控人认定-第一轮-回复第-4—18-页-txt-行-77—720"
+            },
+            {
+              "text": "问题 2：合法规范经营——建筑资质、劳务分包与违法分包排查（第一轮，回复第 19—43 页；txt 行 721—1765）",
+              "link": "/kb2024/874561-金标股份#问题-2-合法规范经营——建筑资质、劳务分包与违法分包排查-第一轮-回复第-19—43-页-txt-行-721—1765"
+            },
+            {
+              "text": "问题 7(2)：关于 IPO 申报——深主板撤回后转道挂牌的差异核查（第一轮，回复第 219—226 页；txt 行 9309—9420）",
+              "link": "/kb2024/874561-金标股份#问题-7-2-关于-ipo-申报——深主板撤回后转道挂牌的差异核查-第一轮-回复第-219—226-页-txt-行-9309—9420"
+            },
+            {
+              "text": "问题 7(1)：子公司控制与分红条款（第一轮，回复第 219—222 页；txt 行 9118—9308）",
+              "link": "/kb2024/874561-金标股份#问题-7-1-子公司控制与分红条款-第一轮-回复第-219—222-页-txt-行-9118—9308"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874561-金标股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874561-金标股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874562-家鸿口腔": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市家鸿口腔医疗股份有限公司（874562·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874562-家鸿口腔"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874562-家鸿口腔#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874562-家鸿口腔#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874562-家鸿口腔#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——控制权更迭、代持、出资瑕疵与对赌遗留（第一轮，回复第 3-46 页；txt 行 77-2032）",
+              "link": "/kb2024/874562-家鸿口腔#问题1-关于历史沿革——控制权更迭、代持、出资瑕疵与对赌遗留-第一轮-回复第-3-46-页-txt-行-77-2032"
+            },
+            {
+              "text": "问题8(3)：关于特殊投资条款——五家机构对赌的全周期梳理（第一轮，回复第 302-307 页；txt 行 14011-14366）",
+              "link": "/kb2024/874562-家鸿口腔#问题8-3-关于特殊投资条款——五家机构对赌的全周期梳理-第一轮-回复第-302-307-页-txt-行-14011-14366"
+            },
+            {
+              "text": "问题8(1)：关于土地房产及消防——集体土地上无证厂房租赁（第一轮，回复第 277-295 页；txt 行 12816-13582）",
+              "link": "/kb2024/874562-家鸿口腔#问题8-1-关于土地房产及消防——集体土地上无证厂房租赁-第一轮-回复第-277-295-页-txt-行-12816-13582"
+            },
+            {
+              "text": "问题2+问题7：子公司控制、境外投资与关联交易（第一轮，回复第 47-81、257-276 页；txt 行 2033-3630、11885-12815）",
+              "link": "/kb2024/874562-家鸿口腔#问题2-问题7-子公司控制、境外投资与关联交易-第一轮-回复第-47-81、257-276-页-txt-行-2033-3630、11885-12815"
+            },
+            {
+              "text": "问题8(2)与8(4)：董监高竞业与同业竞争辨析（第一轮，回复第 296-315 页；txt 行 13583-14366 及 14367 以后）",
+              "link": "/kb2024/874562-家鸿口腔#问题8-2-与8-4-董监高竞业与同业竞争辨析-第一轮-回复第-296-315-页-txt-行-13583-14366-及-14367-以后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874562-家鸿口腔#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874562-家鸿口腔#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874564-科恩新能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州科恩新能科技股份有限公司（874564·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874564-科恩新能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874564-科恩新能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874564-科恩新能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874564-科恩新能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 6：科恩耀荣持股平台清理、赵强琳退出与股权代持（首轮回复第 122–142 页；txt 行 5120–5958）",
+              "link": "/kb2024/874564-科恩新能#_1-首轮问题-6-科恩耀荣持股平台清理、赵强琳退出与股权代持-首轮回复第-122–142-页-txt-行-5120–5958"
+            },
+            {
+              "text": "2. 首轮问题 7：七名机构股东回购权条款及附恢复条件安排（首轮回复第 143–151 页；txt 行 5959–6382）",
+              "link": "/kb2024/874564-科恩新能#_2-首轮问题-7-七名机构股东回购权条款及附恢复条件安排-首轮回复第-143–151-页-txt-行-5959–6382"
+            },
+            {
+              "text": "3. 首轮问题 8(1)(2)：机构股东平台性质、预留份额与实控人认定（首轮回复第 152–162 页；txt 行 6385–6797）",
+              "link": "/kb2024/874564-科恩新能#_3-首轮问题-8-1-2-机构股东平台性质、预留份额与实控人认定-首轮回复第-152–162-页-txt-行-6385–6797"
+            },
+            {
+              "text": "4. 首轮问题 8(6)：租赁房产未办理备案（首轮回复第 196–198 页；txt 行 8302–8420）",
+              "link": "/kb2024/874564-科恩新能#_4-首轮问题-8-6-租赁房产未办理备案-首轮回复第-196–198-页-txt-行-8302–8420"
+            },
+            {
+              "text": "5. 二轮问题 4：赵强琳退出、回购条款触发履行与新老股东估值差异（二轮回复第 54–67 页；txt 行 2144–2610）",
+              "link": "/kb2024/874564-科恩新能#_5-二轮问题-4-赵强琳退出、回购条款触发履行与新老股东估值差异-二轮回复第-54–67-页-txt-行-2144–2610"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874564-科恩新能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874564-科恩新能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874565-耀泰股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "宁波耀泰光电科技股份有限公司（874565·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874565-耀泰股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874565-耀泰股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874565-耀泰股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874565-耀泰股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1(5)：土地房产——9,328.25 平方米无证建筑与分步拆违、租赁无证房产（第一轮，回复第 22—31 页；txt 行 930—1370）",
+              "link": "/kb2024/874565-耀泰股份#问题-1-5-土地房产——9-328-25-平方米无证建筑与分步拆违、租赁无证房产-第一轮-回复第-22—31-页-txt-行-930—1370"
+            },
+            {
+              "text": "问题 2：历史沿革——设立时代持、返程投资外汇补登记瑕疵与股权激励（第一轮，回复第 36—56 页；txt 行 1385—2326）",
+              "link": "/kb2024/874565-耀泰股份#问题-2-历史沿革——设立时代持、返程投资外汇补登记瑕疵与股权激励-第一轮-回复第-36—56-页-txt-行-1385—2326"
+            },
+            {
+              "text": "问题 3：子公司——宁波颐道解散纠纷与菲律宾耀泰代持（第一轮，回复第 58—74 页；txt 行 2327—3134）",
+              "link": "/kb2024/874565-耀泰股份#问题-3-子公司——宁波颐道解散纠纷与菲律宾耀泰代持-第一轮-回复第-58—74-页-txt-行-2327—3134"
+            },
+            {
+              "text": "问题 4：同业竞争——杭州耀泰与借用亚马逊店铺（第一轮，回复第 75—80 页；txt 行 3135—3345）",
+              "link": "/kb2024/874565-耀泰股份#问题-4-同业竞争——杭州耀泰与借用亚马逊店铺-第一轮-回复第-75—80-页-txt-行-3135—3345"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874565-耀泰股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874565-耀泰股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874566-国容股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "河南国容电子科技股份有限公司（874566·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874566-国容股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874566-国容股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874566-国容股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874566-国容股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)②：范丰良以嘉荣电子股权增资的非货币出资（首轮，回复第9–15页；txt 行250–470）",
+              "link": "/kb2024/874566-国容股份#问题1-1-2-范丰良以嘉荣电子股权增资的非货币出资-首轮-回复第9–15页-txt-行250–470"
+            },
+            {
+              "text": "问题1(2)：2019 年增资代持的形成、解除与确权（首轮，回复第18–26页；txt 行636–1010）",
+              "link": "/kb2024/874566-国容股份#问题1-2-2019-年增资代持的形成、解除与确权-首轮-回复第18–26页-txt-行636–1010"
+            },
+            {
+              "text": "问题1(3)：科源电子、嘉荣电子收购与 44%控制权论证（首轮，回复第41–67页；txt 行1857–3230）",
+              "link": "/kb2024/874566-国容股份#问题1-3-科源电子、嘉荣电子收购与-44-控制权论证-首轮-回复第41–67页-txt-行1857–3230"
+            },
+            {
+              "text": "问题7(1)：主板 IPO 撤回与财务内控整改（首轮，回复第215–223页；txt 行10088–10505）",
+              "link": "/kb2024/874566-国容股份#问题7-1-主板-ipo-撤回与财务内控整改-首轮-回复第215–223页-txt-行10088–10505"
+            },
+            {
+              "text": "问题7(2)(3)：董监高兼职、实控人房地产家族资金流向与工亡事故（首轮，回复第232–246页；txt 行10507–11509）",
+              "link": "/kb2024/874566-国容股份#问题7-2-3-董监高兼职、实控人房地产家族资金流向与工亡事故-首轮-回复第232–246页-txt-行10507–11509"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874566-国容股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874566-国容股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874567-辛帕智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海辛帕智能科技股份有限公司（874567·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874567-辛帕智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874567-辛帕智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874567-辛帕智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874567-辛帕智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(2)：以实控人为回购义务人的现行有效对赌及恢复条款（首轮，回复第5—30页；20240809 txt 行190—1130）",
+              "link": "/kb2024/874567-辛帕智能#问题1-2-以实控人为回购义务人的现行有效对赌及恢复条款-首轮-回复第5—30页-20240809-txt-行190—1130"
+            },
+            {
+              "text": "问题1(1)：报告期8次股权转让——以回购价定价的老股东退出（首轮，回复第2—4页；20240809 txt 行100—189）",
+              "link": "/kb2024/874567-辛帕智能#问题1-1-报告期8次股权转让——以回购价定价的老股东退出-首轮-回复第2—4页-20240809-txt-行100—189"
+            },
+            {
+              "text": "问题1(3)：上海辛畅员工持股平台（首轮，回复第30—37页；20240809 txt 行1131—1305）",
+              "link": "/kb2024/874567-辛帕智能#问题1-3-上海辛畅员工持股平台-首轮-回复第30—37页-20240809-txt-行1131—1305"
+            },
+            {
+              "text": "问题5(1)：曾申报创业板撤回与中介机构更换（首轮，回复第142—150页；20240809 txt 行6264—6500）",
+              "link": "/kb2024/874567-辛帕智能#问题5-1-曾申报创业板撤回与中介机构更换-首轮-回复第142—150页-20240809-txt-行6264—6500"
+            },
+            {
+              "text": "问题5(2)：实控人及关联人员与康达新材人员的资金往来（首轮，回复第158—162页；20240809 txt 行6900—7100区间）",
+              "link": "/kb2024/874567-辛帕智能#问题5-2-实控人及关联人员与康达新材人员的资金往来-首轮-回复第158—162页-20240809-txt-行6900—7100区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874567-辛帕智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874567-辛帕智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874568-志达精密": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东志达精密管业制造股份有限公司（874568·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874568-志达精密"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874568-志达精密#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874568-志达精密#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874568-志达精密#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(9)：高管及其配偶持股关联客户广州志科之辩（首轮，回复第29–31页；txt 行1106–1210）",
+              "link": "/kb2024/874568-志达精密#问题1-9-高管及其配偶持股关联客户广州志科之辩-首轮-回复第29–31页-txt-行1106–1210"
+            },
+            {
+              "text": "问题4(1)-(3)：德洋恩普合伙份额代持与股东人数（首轮，回复第66–75页；txt 行2709–3079）",
+              "link": "/kb2024/874568-志达精密#问题4-1-3-德洋恩普合伙份额代持与股东人数-首轮-回复第66–75页-txt-行2709–3079"
+            },
+            {
+              "text": "问题4(4)：志达投资三次非货币出资（首轮，回复第75–82页；txt 行3080–3420）",
+              "link": "/kb2024/874568-志达精密#问题4-4-志达投资三次非货币出资-首轮-回复第75–82页-txt-行3080–3420"
+            },
+            {
+              "text": "问题5：排污许可、临时建筑与租赁无证房产（首轮，回复第87–95页；txt 行3619–4018）",
+              "link": "/kb2024/874568-志达精密#问题5-排污许可、临时建筑与租赁无证房产-首轮-回复第87–95页-txt-行3619–4018"
+            },
+            {
+              "text": "问题6：股权激励与罗立新低价入股（首轮，回复第96–104页；txt 行4019–4376）",
+              "link": "/kb2024/874568-志达精密#问题6-股权激励与罗立新低价入股-首轮-回复第96–104页-txt-行4019–4376"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874568-志达精密#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874568-志达精密#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874569-菊乐股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "四川菊乐食品股份有限公司（874569·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874569-菊乐股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874569-菊乐股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874569-菊乐股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874569-菊乐股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：2002 年集体企业改制、清产核资瑕疵与非货币出资（首轮，回复第3–8页；txt 行112–299）",
+              "link": "/kb2024/874569-菊乐股份#问题1-1-2002-年集体企业改制、清产核资瑕疵与非货币出资-首轮-回复第3–8页-txt-行112–299"
+            },
+            {
+              "text": "问题1(2)：菊乐集团定向募集设立、集体股量化与省政府确认函（首轮，回复第9–14页；txt 行300–558）",
+              "link": "/kb2024/874569-菊乐股份#问题1-2-菊乐集团定向募集设立、集体股量化与省政府确认函-首轮-回复第9–14页-txt-行300–558"
+            },
+            {
+              "text": "问题1(3)：国资股东入股、增资及股改的程序瑕疵（首轮，回复第15–16页；txt 行560–631）",
+              "link": "/kb2024/874569-菊乐股份#问题1-3-国资股东入股、增资及股改的程序瑕疵-首轮-回复第15–16页-txt-行560–631"
+            },
+            {
+              "text": "问题1(4)：职工持股代持的形成与还原（首轮，回复第16–29页；txt 行633–1354）",
+              "link": "/kb2024/874569-菊乐股份#问题1-4-职工持股代持的形成与还原-首轮-回复第16–29页-txt-行633–1354"
+            },
+            {
+              "text": "问题2(1)(10)：经营资质（含烟草专卖零售许可证）与无证房产（首轮，回复第50–58、106–108页；txt 行1917–2340、4442–4570）",
+              "link": "/kb2024/874569-菊乐股份#问题2-1-10-经营资质-含烟草专卖零售许可证-与无证房产-首轮-回复第50–58、106–108页-txt-行1917–2340、4442–4570"
+            },
+            {
+              "text": "问题9-1：三次 IPO 申报史、媒体质疑与证监会警示函整改（首轮，回复第240–247页；txt 行9911–10394）",
+              "link": "/kb2024/874569-菊乐股份#问题9-1-三次-ipo-申报史、媒体质疑与证监会警示函整改-首轮-回复第240–247页-txt-行9911–10394"
+            },
+            {
+              "text": "问题9-3：关联经销商交易（首轮，回复第259页起；txt 行10718–10899）",
+              "link": "/kb2024/874569-菊乐股份#问题9-3-关联经销商交易-首轮-回复第259页起-txt-行10718–10899"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874569-菊乐股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874569-菊乐股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874570-斯瑞达": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏斯瑞达材料技术股份有限公司（874570·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874570-斯瑞达"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874570-斯瑞达#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874570-斯瑞达#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874570-斯瑞达#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：历史沿革、员工持股平台、子公司及境外投资、股权代持核查（首轮回复第3—30页；20240814 txt行78—1313）",
+              "link": "/kb2024/874570-斯瑞达#_1-首轮问题1-历史沿革、员工持股平台、子公司及境外投资、股权代持核查-首轮回复第3—30页-20240814-txt行78—1313"
+            },
+            {
+              "text": "2. 首轮问题2.1：危废资质、排污登记注销重办瑕疵与业务资质齐备性（首轮回复第31—33页；txt行1350—1569）",
+              "link": "/kb2024/874570-斯瑞达#_2-首轮问题2-1-危废资质、排污登记注销重办瑕疵与业务资质齐备性-首轮回复第31—33页-txt行1350—1569"
+            },
+            {
+              "text": "3. 首轮问题9.1：特殊投资条款的终止与附条件恢复（首轮回复第170—177页；txt行6834—7123）",
+              "link": "/kb2024/874570-斯瑞达#_3-首轮问题9-1-特殊投资条款的终止与附条件恢复-首轮回复第170—177页-txt行6834—7123"
+            },
+            {
+              "text": "4. 首轮问题9.2：土地使用权抵押及抵押权实现风险（首轮回复第177—178页；txt行7124—7237）",
+              "link": "/kb2024/874570-斯瑞达#_4-首轮问题9-2-土地使用权抵押及抵押权实现风险-首轮回复第177—178页-txt行7124—7237"
+            },
+            {
+              "text": "5. 二轮问题3：实际控制人通过代持、协议控制7家公司的同业竞争核查（二轮回复第44—54页；20240910 txt行1738—2224）",
+              "link": "/kb2024/874570-斯瑞达#_5-二轮问题3-实际控制人通过代持、协议控制7家公司的同业竞争核查-二轮回复第44—54页-20240910-txt行1738—2224"
+            },
+            {
+              "text": "6. 二轮问题4：商业秘密信息披露豁免（二轮回复第55—69页；txt行2225—2847）",
+              "link": "/kb2024/874570-斯瑞达#_6-二轮问题4-商业秘密信息披露豁免-二轮回复第55—69页-txt行2225—2847"
+            },
+            {
+              "text": "7. 二轮问题5：危险化学品管理与消防备案（二轮回复第70—76页；txt行2848—3130）",
+              "link": "/kb2024/874570-斯瑞达#_7-二轮问题5-危险化学品管理与消防备案-二轮回复第70—76页-txt行2848—3130"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874570-斯瑞达#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874570-斯瑞达#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874571-宇特光电": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏宇特光电科技股份有限公司（874571·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874571-宇特光电"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874571-宇特光电#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874571-宇特光电#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874571-宇特光电#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 5：控制权稳定——原实控人退出、期权安排与实控人更替（问询回复第 93–117 页；txt 行 3938–5089）",
+              "link": "/kb2024/874571-宇特光电#_1-首轮问题-5-控制权稳定——原实控人退出、期权安排与实控人更替-问询回复第-93–117-页-txt-行-3938–5089"
+            },
+            {
+              "text": "2. 首轮问题 6(1)②：历史沿革中的五次减资（问询回复第 133–139 页；txt 行 5900–6065）",
+              "link": "/kb2024/874571-宇特光电#_2-首轮问题-6-1-2-历史沿革中的五次减资-问询回复第-133–139-页-txt-行-5900–6065"
+            },
+            {
+              "text": "3. 首轮问题 6(1)③⑤及6(3)：香港籍股东外商合规、代持清理与大额分红（问询回复第 138–147、223–229 页；txt 行 6066–6300、9727–9950）",
+              "link": "/kb2024/874571-宇特光电#_3-首轮问题-6-1-35及6-3-香港籍股东外商合规、代持清理与大额分红-问询回复第-138–147、223–229-页-txt-行-6066–6300、9727–9950"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874571-宇特光电#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874571-宇特光电#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874576-城市云": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "合肥城市云数据中心股份有限公司（874576·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874576-城市云"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874576-城市云#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874576-城市云#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874576-城市云#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：业务及合法合规性——IDC 业务资质与网安/数据合规（首轮回复第 3-33 页；txt 行 66–1591）",
+              "link": "/kb2024/874576-城市云#首轮问题-1-业务及合法合规性——idc-业务资质与网安-数据合规-首轮回复第-3-33-页-txt-行-66–1591"
+            },
+            {
+              "text": "首轮问题 8(1)(2)：二次申报、国有股东程序、平台股权质押与代持还原（首轮回复第 146-172 页；txt 行 6256–7438）",
+              "link": "/kb2024/874576-城市云#首轮问题-8-1-2-二次申报、国有股东程序、平台股权质押与代持还原-首轮回复第-146-172-页-txt-行-6256–7438"
+            },
+            {
+              "text": "首轮问题 8(3)：一致行动协议下的共同实控人认定（首轮回复第 172-178 页；txt 行 7439–7841）",
+              "link": "/kb2024/874576-城市云#首轮问题-8-3-一致行动协议下的共同实控人认定-首轮回复第-172-178-页-txt-行-7439–7841"
+            },
+            {
+              "text": "首轮问题 8(6)：涉密信息系统集成资质的挂牌限制（首轮回复第 186-192 页；txt 行 8100–8320）",
+              "link": "/kb2024/874576-城市云#首轮问题-8-6-涉密信息系统集成资质的挂牌限制-首轮回复第-186-192-页-txt-行-8100–8320"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874576-城市云#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874576-城市云#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874577-鸿翔环境": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "鸿翔环境科技股份有限公司（874577·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874577-鸿翔环境"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874577-鸿翔环境#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874577-鸿翔环境#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874577-鸿翔环境#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：合法规范经营——超产能、两起死亡事故与特许经营程序（首轮回复第 3-34 页；txt 行 60–1531）",
+              "link": "/kb2024/874577-鸿翔环境#首轮问题-1-合法规范经营——超产能、两起死亡事故与特许经营程序-首轮回复第-3-34-页-txt-行-60–1531"
+            },
+            {
+              "text": "首轮问题 2：控股股东鸿翔集团——房地产风险隔离、同业竞争剥离与资金占用整改（首轮回复第 35-41 页；txt 行 1532–1833）",
+              "link": "/kb2024/874577-鸿翔环境#首轮问题-2-控股股东鸿翔集团——房地产风险隔离、同业竞争剥离与资金占用整改-首轮回复第-35-41-页-txt-行-1532–1833"
+            },
+            {
+              "text": "首轮问题 3：股权代持——二次转委托的配偶圈代持（首轮回复第 42-59 页；txt 行 1834–2280）",
+              "link": "/kb2024/874577-鸿翔环境#首轮问题-3-股权代持——二次转委托的配偶圈代持-首轮回复第-42-59-页-txt-行-1834–2280"
+            },
+            {
+              "text": "首轮问题 10(1)(2)(3)(4)：土地抵押、合作研发、员工持股平台与子公司收购（首轮回复第 199-236 页；txt 行 9120–10750）",
+              "link": "/kb2024/874577-鸿翔环境#首轮问题-10-1-2-3-4-土地抵押、合作研发、员工持股平台与子公司收购-首轮回复第-199-236-页-txt-行-9120–10750"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874577-鸿翔环境#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874577-鸿翔环境#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874578-华宇电子": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "池州华宇电子科技股份有限公司（874578·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874578-华宇电子"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874578-华宇电子#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874578-华宇电子#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874578-华宇电子#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：同一控制下股权及资产收购的合法有效性（回复第4-17页；txt行92-802）",
+              "link": "/kb2024/874578-华宇电子#_1-首轮问题1-同一控制下股权及资产收购的合法有效性-回复第4-17页-txt行92-802"
+            },
+            {
+              "text": "2. 首轮问题2（1）：两次环保行政处罚、行政复议与环评验收（回复第18-23页；txt行803-990）",
+              "link": "/kb2024/874578-华宇电子#_2-首轮问题2-1-两次环保行政处罚、行政复议与环评验收-回复第18-23页-txt行803-990"
+            },
+            {
+              "text": "3. 首轮问题2（2）：华力宇承租集体土地无证房产与土地整备风险（回复第23-27页；txt行990-1228）",
+              "link": "/kb2024/874578-华宇电子#_3-首轮问题2-2-华力宇承租集体土地无证房产与土地整备风险-回复第23-27页-txt行990-1228"
+            },
+            {
+              "text": "4. 首轮问题3：历史沿革、机构股东入股、员工持股平台与代持核查（回复第27-35页；txt行1229-1660）",
+              "link": "/kb2024/874578-华宇电子#_4-首轮问题3-历史沿革、机构股东入股、员工持股平台与代持核查-回复第27-35页-txt行1229-1660"
+            },
+            {
+              "text": "5. 首轮问题9（2）（3）：前次主板申报撤回与特殊投资条款解除（回复第174-176、214-220页；txt行7934-7977、9571-9880）",
+              "link": "/kb2024/874578-华宇电子#_5-首轮问题9-2-3-前次主板申报撤回与特殊投资条款解除-回复第174-176、214-220页-txt行7934-7977、9571-9880"
+            },
+            {
+              "text": "6. 首轮问题9（4）：继受专利与董监高竞业、商业秘密（回复第220-224页前后；txt行9880-9960前后）",
+              "link": "/kb2024/874578-华宇电子#_6-首轮问题9-4-继受专利与董监高竞业、商业秘密-回复第220-224页前后-txt行9880-9960前后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874578-华宇电子#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874578-华宇电子#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874579-康华股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "山东康华生物医疗科技股份有限公司（874579·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874579-康华股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874579-康华股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874579-康华股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874579-康华股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1(1)：应急业务资质、产品质量与广告合规（首轮，回复第4页起；txt 行100–1111）",
+              "link": "/kb2024/874579-康华股份#问题1-1-应急业务资质、产品质量与广告合规-首轮-回复第4页起-txt-行100–1111"
+            },
+            {
+              "text": "问题1(3)(4)：患者个人信息保护与互联网平台（首轮，回复第23–26页起；txt 行1347–1660）",
+              "link": "/kb2024/874579-康华股份#问题1-3-4-患者个人信息保护与互联网平台-首轮-回复第23–26页起-txt-行1347–1660"
+            },
+            {
+              "text": "问题1(6)(7)(8)：劳务外包、社保公积金与环评验收（首轮，回复第47–48页起；txt 行1944–2587）",
+              "link": "/kb2024/874579-康华股份#问题1-6-7-8-劳务外包、社保公积金与环评验收-首轮-回复第47–48页起-txt-行1944–2587"
+            },
+            {
+              "text": "问题1(10)：与迈赛凯尔同业竞争及医美业务注入承诺（首轮，回复第61–62页；txt 行3043–3131）",
+              "link": "/kb2024/874579-康华股份#问题1-10-与迈赛凯尔同业竞争及医美业务注入承诺-首轮-回复第61–62页-txt-行3043–3131"
+            },
+            {
+              "text": "问题2(1)(2)：实物出资现金置换与股权转让价格差异（首轮，回复第75–77页；txt 行3597–3716）",
+              "link": "/kb2024/874579-康华股份#问题2-1-2-实物出资现金置换与股权转让价格差异-首轮-回复第75–77页-txt-行3597–3716"
+            },
+            {
+              "text": "问题2(4)：设立时代持与员工平台份额代持（首轮，回复第83–88页；txt 行3930–4526）",
+              "link": "/kb2024/874579-康华股份#问题2-4-设立时代持与员工平台份额代持-首轮-回复第83–88页-txt-行3930–4526"
+            },
+            {
+              "text": "问题3(2)(3)：子公司少数股东与收购合规（首轮，回复第108–128页；txt 行5099–6109）",
+              "link": "/kb2024/874579-康华股份#问题3-2-3-子公司少数股东与收购合规-首轮-回复第108–128页-txt-行5099–6109"
+            },
+            {
+              "text": "问题9(1)：特殊投资条款的清理与自始无效（首轮，回复第397–399页；txt 行18123–18282）",
+              "link": "/kb2024/874579-康华股份#问题9-1-特殊投资条款的清理与自始无效-首轮-回复第397–399页-txt-行18123–18282"
+            },
+            {
+              "text": "问题9(3)：报告期分红（首轮，回复第400–403页；txt 行18283–18575）",
+              "link": "/kb2024/874579-康华股份#问题9-3-报告期分红-首轮-回复第400–403页-txt-行18283–18575"
+            },
+            {
+              "text": "问题9(4)：与成都康华的商业混淆之辩、实控人高校任职与治理事项（首轮，回复第407–413页起；txt 行18576–18950）",
+              "link": "/kb2024/874579-康华股份#问题9-4-与成都康华的商业混淆之辩、实控人高校任职与治理事项-首轮-回复第407–413页起-txt-行18576–18950"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874579-康华股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874579-康华股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874581-千思跃": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "千思跃智能科技（苏州）股份有限公司（874581·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874581-千思跃"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874581-千思跃#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874581-千思跃#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874581-千思跃#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题三：关于股权代持——王胜虎名义持有全部股权及还原（第一轮，回复第 37-42 页；txt 行 1330-1920）",
+              "link": "/kb2024/874581-千思跃#问题三-关于股权代持——王胜虎名义持有全部股权及还原-第一轮-回复第-37-42-页-txt-行-1330-1920"
+            },
+            {
+              "text": "问题二：关于股权激励——两个员工持股平台（第一轮，回复第 33-36 页；txt 行 1046-1330）",
+              "link": "/kb2024/874581-千思跃#问题二-关于股权激励——两个员工持股平台-第一轮-回复第-33-36-页-txt-行-1046-1330"
+            },
+            {
+              "text": "问题四(一)：关于劳务派遣——超比例用工及整改（第一轮，回复第 52-58 页；txt 行 1922-2188）",
+              "link": "/kb2024/874581-千思跃#问题四-一-关于劳务派遣——超比例用工及整改-第一轮-回复第-52-58-页-txt-行-1922-2188"
+            },
+            {
+              "text": "问题四(二)(三)：公司治理有效性与子公司收购注销（第一轮，回复第 59-74 页；txt 行 2189-2958）",
+              "link": "/kb2024/874581-千思跃#问题四-二-三-公司治理有效性与子公司收购注销-第一轮-回复第-59-74-页-txt-行-2189-2958"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874581-千思跃#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874581-千思跃#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874582-上海宝丰": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "上海宝丰机械制造股份有限公司（874582·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874582-上海宝丰"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874582-上海宝丰#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874582-上海宝丰#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874582-上海宝丰#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：上市公司控股子公司挂牌——实控人无民事行为能力下的控制权认定（回复txt行46—1026，回复第3—23页）",
+              "link": "/kb2024/874582-上海宝丰#_1-首轮问题1-上市公司控股子公司挂牌——实控人无民事行为能力下的控制权认定-回复txt行46—1026-回复第3—23页"
+            },
+            {
+              "text": "2. 首轮问题2：关联交易及关联方资金往来——资金归集拆借与资金占用（回复txt行1027—1381，回复第24—32页）",
+              "link": "/kb2024/874582-上海宝丰#_2-首轮问题2-关联交易及关联方资金往来——资金归集拆借与资金占用-回复txt行1027—1381-回复第24—32页"
+            },
+            {
+              "text": "3. 首轮问题3：合法规范经营——特种设备与辐射安全资质、环保处罚定性、危化品危废（回复txt行1382—2234，回复第33—53页）",
+              "link": "/kb2024/874582-上海宝丰#_3-首轮问题3-合法规范经营——特种设备与辐射安全资质、环保处罚定性、危化品危废-回复txt行1382—2234-回复第33—53页"
+            },
+            {
+              "text": "4. 首轮问题9（1）（4）：股权代持核查与2022年9月40名自然人增资（回复txt行6485—6712、7056—7197，回复第155—167页）",
+              "link": "/kb2024/874582-上海宝丰#_4-首轮问题9-1-4-股权代持核查与2022年9月40名自然人增资-回复txt行6485—6712、7056—7197-回复第155—167页"
+            },
+            {
+              "text": "5. 首轮问题9（2）（3）：无证房产与合作研发成果归属（回复txt行6713—7055，回复第159—167页）",
+              "link": "/kb2024/874582-上海宝丰#_5-首轮问题9-2-3-无证房产与合作研发成果归属-回复txt行6713—7055-回复第159—167页"
+            },
+            {
+              "text": "6. 首轮问题9（6）（8）：财务规范性（个人卡、票据）与大额分红（回复txt行7548—8460，回复第181—202页）",
+              "link": "/kb2024/874582-上海宝丰#_6-首轮问题9-6-8-财务规范性-个人卡、票据-与大额分红-回复txt行7548—8460-回复第181—202页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874582-上海宝丰#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874582-上海宝丰#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874583-惠尔信": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江阴市惠尔信精密装备股份有限公司（874583·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874583-惠尔信"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874583-惠尔信#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874583-惠尔信#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874583-惠尔信#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：特殊投资条款——员工持股平台代实控人履行回购、公司借款给持股平台、对赌清理与恢复（回复txt行80—1584，回复第3—37页）",
+              "link": "/kb2024/874583-惠尔信#_1-首轮问题1-特殊投资条款——员工持股平台代实控人履行回购、公司借款给持股平台、对赌清理与恢复-回复txt行80—1584-回复第3—37页"
+            },
+            {
+              "text": "2. 首轮问题2：国资股东程序、历次增资转让定价与代持、200人核查（回复txt行1585—3047，回复第38—66页）",
+              "link": "/kb2024/874583-惠尔信#_2-首轮问题2-国资股东程序、历次增资转让定价与代持、200人核查-回复txt行1585—3047-回复第38—66页"
+            },
+            {
+              "text": "3. 首轮问题3：子公司合并重要性、惠尔信机械资质与补充披露、注销惠尔信智能的合规性（回复txt行3048—4375，回复第67—95页）",
+              "link": "/kb2024/874583-惠尔信#_3-首轮问题3-子公司合并重要性、惠尔信机械资质与补充披露、注销惠尔信智能的合规性-回复txt行3048—4375-回复第67—95页"
+            },
+            {
+              "text": "4. 首轮问题8.1：经营合规性——环评、未批先建、业务资质、招投标与商业贿赂（回复txt行8127—8762，回复第181—193页）",
+              "link": "/kb2024/874583-惠尔信#_4-首轮问题8-1-经营合规性——环评、未批先建、业务资质、招投标与商业贿赂-回复txt行8127—8762-回复第181—193页"
+            },
+            {
+              "text": "5. 首轮问题8.2：董监高任职——职务发明、竞业限制、监事兼职与独董设置（回复txt行8763—9354，回复第194—204页）",
+              "link": "/kb2024/874583-惠尔信#_5-首轮问题8-2-董监高任职——职务发明、竞业限制、监事兼职与独董设置-回复txt行8763—9354-回复第194—204页"
+            },
+            {
+              "text": "6. 首轮问题8.3：劳务用工——社保公积金与外协劳务外包（回复txt行9355—9671，回复第205—211页）",
+              "link": "/kb2024/874583-惠尔信#_6-首轮问题8-3-劳务用工——社保公积金与外协劳务外包-回复txt行9355—9671-回复第205—211页"
+            },
+            {
+              "text": "7. 首轮问题8.4：股权激励——持股平台条款、激励对象选定与出资（回复txt行9672—10294，回复第212—224页）",
+              "link": "/kb2024/874583-惠尔信#_7-首轮问题8-4-股权激励——持股平台条款、激励对象选定与出资-回复txt行9672—10294-回复第212—224页"
+            },
+            {
+              "text": "8. 首轮问题8.5：土地房产——无证房产与集体建设用地承租（回复txt行10295—10654，回复第225—231页）",
+              "link": "/kb2024/874583-惠尔信#_8-首轮问题8-5-土地房产——无证房产与集体建设用地承租-回复txt行10295—10654-回复第225—231页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874583-惠尔信#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874583-惠尔信#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874585-科恩股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江科恩实验设备股份有限公司（874585·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874585-科恩股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874585-科恩股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874585-科恩股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874585-科恩股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题2：关于历史沿革——子公司价款回流增资与平台份额错位（首轮回复第 27-51 页；txt 行 1197-2244）",
+              "link": "/kb2024/874585-科恩股份#首轮问题2-关于历史沿革——子公司价款回流增资与平台份额错位-首轮回复第-27-51-页-txt-行-1197-2244"
+            },
+            {
+              "text": "首轮问题3：关于房产——9,992.19㎡ 临时建筑与对外出租（首轮回复第 52-62 页；txt 行 2245-2738）",
+              "link": "/kb2024/874585-科恩股份#首轮问题3-关于房产——9-992-19m2-临时建筑与对外出租-首轮回复第-52-62-页-txt-行-2245-2738"
+            },
+            {
+              "text": "二轮问题2：关于公司收购子公司——同一控制下少数股权与关联方整合（二轮回复第 37 页起；txt 行 1572-2175）",
+              "link": "/kb2024/874585-科恩股份#二轮问题2-关于公司收购子公司——同一控制下少数股权与关联方整合-二轮回复第-37-页起-txt-行-1572-2175"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874585-科恩股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874585-科恩股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874586-方意股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏方意摩擦材料股份有限公司（874586·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874586-方意股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874586-方意股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874586-方意股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874586-方意股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——代持、外商投资、特殊投资条款与员工持股（第一轮，回复第 3-39 页；txt 行 73-1731）",
+              "link": "/kb2024/874586-方意股份#问题1-关于历史沿革——代持、外商投资、特殊投资条款与员工持股-第一轮-回复第-3-39-页-txt-行-73-1731"
+            },
+            {
+              "text": "问题5：关于公司治理——家族集中持股下的决策程序与独立性（第一轮，回复第 108-158 页；txt 行 4828-7130）",
+              "link": "/kb2024/874586-方意股份#问题5-关于公司治理——家族集中持股下的决策程序与独立性-第一轮-回复第-108-158-页-txt-行-4828-7130"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874586-方意股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874586-方意股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874587-墙煌科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "墙煌科技股份有限公司（874587·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874587-墙煌科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874587-墙煌科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874587-墙煌科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874587-墙煌科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于历史沿革——重大资产重组、非货币出资、减资增资与国资程序（第一轮，回复第3–46页；txt行53–1963）",
+              "link": "/kb2024/874587-墙煌科技#问题1-关于历史沿革——重大资产重组、非货币出资、减资增资与国资程序-第一轮-回复第3–46页-txt行53–1963"
+            },
+            {
+              "text": "问题2：关于生产经营——环保处罚、安全生产与资质（第一轮，回复第47–82页；txt行1964–3635）",
+              "link": "/kb2024/874587-墙煌科技#问题2-关于生产经营——环保处罚、安全生产与资质-第一轮-回复第47–82页-txt行1964–3635"
+            },
+            {
+              "text": "问题3：关于特殊投资条款（第一轮，回复第83–97页；txt行3636–4344）",
+              "link": "/kb2024/874587-墙煌科技#问题3-关于特殊投资条款-第一轮-回复第83–97页-txt行3636–4344"
+            },
+            {
+              "text": "问题10：关于独立性——关联交易、资金占用与董监高兼职（第一轮，回复第194–222页；txt行8234–9400）",
+              "link": "/kb2024/874587-墙煌科技#问题10-关于独立性——关联交易、资金占用与董监高兼职-第一轮-回复第194–222页-txt行8234–9400"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874587-墙煌科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874587-墙煌科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874588-固力发": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "固力发集团股份有限公司（874588·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874588-固力发"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874588-固力发#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874588-固力发#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874588-固力发#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1.1：历史沿革——中外合作、集体/国资/外资确认体系与永固集团关系（第一轮，回复第 3—75 页；txt 行 57—2973）",
+              "link": "/kb2024/874588-固力发#问题-1-1-历史沿革——中外合作、集体-国资-外资确认体系与永固集团关系-第一轮-回复第-3—75-页-txt-行-57—2973"
+            },
+            {
+              "text": "问题 1.2：股权激励——直接与间接持股并用及近亲属激励（第一轮，回复第 56—75 页；txt 行 1900—2973 区间）",
+              "link": "/kb2024/874588-固力发#问题-1-2-股权激励——直接与间接持股并用及近亲属激励-第一轮-回复第-56—75-页-txt-行-1900—2973-区间"
+            },
+            {
+              "text": "问题 2(2)(3)(4)：招投标合规、社保公积金补缴测算与无证房产（第一轮，回复第 76—107 页；txt 行 2974—4335）",
+              "link": "/kb2024/874588-固力发#问题-2-2-3-4-招投标合规、社保公积金补缴测算与无证房产-第一轮-回复第-76—107-页-txt-行-2974—4335"
+            },
+            {
+              "text": "问题 3：公司治理——郑晓明未认定为实控人的论证与家族治理（第一轮，回复第 108—149 页；txt 行 4336—5988）",
+              "link": "/kb2024/874588-固力发#问题-3-公司治理——郑晓明未认定为实控人的论证与家族治理-第一轮-回复第-108—149-页-txt-行-4336—5988"
+            },
+            {
+              "text": "问题 8.1：子公司——少数股东背景与重要子公司控制（第一轮，回复第 250—262 页；txt 行 10279—10550 区间）",
+              "link": "/kb2024/874588-固力发#问题-8-1-子公司——少数股东背景与重要子公司控制-第一轮-回复第-250—262-页-txt-行-10279—10550-区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874588-固力发#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874588-固力发#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874589-中水三立": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "中水三立数据技术股份有限公司（874589·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874589-中水三立"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874589-中水三立#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874589-中水三立#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874589-中水三立#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：历史沿革——无形资产出资不实的补足、借款出资之辩与国资/券商关联程序（首轮回复第 3-41 页；txt 行 79–2067）",
+              "link": "/kb2024/874589-中水三立#首轮问题-1-历史沿革——无形资产出资不实的补足、借款出资之辩与国资-券商关联程序-首轮回复第-3-41-页-txt-行-79–2067"
+            },
+            {
+              "text": "首轮问题 2：特殊投资条款——五家外部投资人条款的触发与解除（首轮回复第 42-57 页；txt 行 2068–2876）",
+              "link": "/kb2024/874589-中水三立#首轮问题-2-特殊投资条款——五家外部投资人条款的触发与解除-首轮回复第-42-57-页-txt-行-2068–2876"
+            },
+            {
+              "text": "首轮问题 3：合法规范经营——建筑资质、无资质分包瑕疵与政府采购合规（首轮回复第 58-73 页；txt 行 2877–3672）",
+              "link": "/kb2024/874589-中水三立#首轮问题-3-合法规范经营——建筑资质、无资质分包瑕疵与政府采购合规-首轮回复第-58-73-页-txt-行-2877–3672"
+            },
+            {
+              "text": "首轮问题 4／问题 11：子公司披露差异、民办非企业单位与二次挂牌程序（首轮回复第 74-79、273-281 页；txt 行 3673–3937、11837–12600）",
+              "link": "/kb2024/874589-中水三立#首轮问题-4-问题-11-子公司披露差异、民办非企业单位与二次挂牌程序-首轮回复第-74-79、273-281-页-txt-行-3673–3937、11837–12600"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874589-中水三立#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874589-中水三立#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874591-日信高科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东日信高精密科技股份有限公司（874591·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874591-日信高科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874591-日信高科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874591-日信高科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874591-日信高科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：土地房产——集体建设用地租赁瑕疵、消防、抵押与境外不动产（回复txt行76—1059，回复第2—19页）",
+              "link": "/kb2024/874591-日信高科#_1-首轮问题1-土地房产——集体建设用地租赁瑕疵、消防、抵押与境外不动产-回复txt行76—1059-回复第2—19页"
+            },
+            {
+              "text": "2. 首轮问题2：共同实控人认定、多层代持还原与同业公司注销（回复txt行1060—2589，回复第20—54页）",
+              "link": "/kb2024/874591-日信高科#_2-首轮问题2-共同实控人认定、多层代持还原与同业公司注销-回复txt行1060—2589-回复第20—54页"
+            },
+            {
+              "text": "3. 首轮问题3：特殊投资条款清单与股权回售权履约能力（回复txt行2590—3349，回复第55—66页）",
+              "link": "/kb2024/874591-日信高科#_3-首轮问题3-特殊投资条款清单与股权回售权履约能力-回复txt行2590—3349-回复第55—66页"
+            },
+            {
+              "text": "4. 首轮问题9（1）（2）：经营合规性与董监高任职（回复txt行9552—10780，回复第215—240页）",
+              "link": "/kb2024/874591-日信高科#_4-首轮问题9-1-2-经营合规性与董监高任职-回复txt行9552—10780-回复第215—240页"
+            },
+            {
+              "text": "5. 首轮问题9（3）：三次股权激励与财务顾问入股（回复txt行9552起（3）部分，回复第216页起）",
+              "link": "/kb2024/874591-日信高科#_5-首轮问题9-3-三次股权激励与财务顾问入股-回复txt行9552起-3-部分-回复第216页起"
+            },
+            {
+              "text": "6. 首轮问题1（5）补充与申请文件相关问题：挂牌层级调整与北交所辅导衔接（回复txt行12695—12810，回复第282—283页）",
+              "link": "/kb2024/874591-日信高科#_6-首轮问题1-5-补充与申请文件相关问题-挂牌层级调整与北交所辅导衔接-回复txt行12695—12810-回复第282—283页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874591-日信高科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874591-日信高科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874592-捷希科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "南京捷希科技股份有限公司（874592·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874592-捷希科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874592-捷希科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874592-捷希科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874592-捷希科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：股权代持、历史沿革与特殊投资条款（首轮回复第3—27页；txt行62—1253）",
+              "link": "/kb2024/874592-捷希科技#_1-首轮问题1-股权代持、历史沿革与特殊投资条款-首轮回复第3—27页-txt行62—1253"
+            },
+            {
+              "text": "2. 首轮问题2：招投标、合作研发、外协外包、劳务派遣与租赁（首轮回复第28—46页；txt行1254—2119）",
+              "link": "/kb2024/874592-捷希科技#_2-首轮问题2-招投标、合作研发、外协外包、劳务派遣与租赁-首轮回复第28—46页-txt行1254—2119"
+            },
+            {
+              "text": "3. 首轮问题7：股权激励、境外子公司、现金分红与其他事项（首轮回复第132—175页；txt行5478—7421）",
+              "link": "/kb2024/874592-捷希科技#_3-首轮问题7-股权激励、境外子公司、现金分红与其他事项-首轮回复第132—175页-txt行5478—7421"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874592-捷希科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874592-捷希科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874593-安特磁材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江安特磁材股份有限公司（874593·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874593-安特磁材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874593-安特磁材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874593-安特磁材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874593-安特磁材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题1：关于公司历史沿革（第一轮，回复第 4-73 页；txt 行 66-3023）",
+              "link": "/kb2024/874593-安特磁材#问题1-关于公司历史沿革-第一轮-回复第-4-73-页-txt-行-66-3023"
+            },
+            {
+              "text": "问题6-2：关于公司的环境保护与消防（第一轮，回复第 170-180 页；txt 行 7361-7700）",
+              "link": "/kb2024/874593-安特磁材#问题6-2-关于公司的环境保护与消防-第一轮-回复第-170-180-页-txt-行-7361-7700"
+            },
+            {
+              "text": "问题6-3：关于子公司的土地权属瑕疵（第一轮，回复第 181-183 页；txt 行 7700-7789）",
+              "link": "/kb2024/874593-安特磁材#问题6-3-关于子公司的土地权属瑕疵-第一轮-回复第-181-183-页-txt-行-7700-7789"
+            },
+            {
+              "text": "问题6-1：关于公司历史沿革中的分立（第一轮，回复第 166-169 页；txt 行 7035-7360）",
+              "link": "/kb2024/874593-安特磁材#问题6-1-关于公司历史沿革中的分立-第一轮-回复第-166-169-页-txt-行-7035-7360"
+            },
+            {
+              "text": "问题6-4：关于公司前次IPO事项（第一轮，回复第 184-190 页；txt 行 7789-7930）",
+              "link": "/kb2024/874593-安特磁材#问题6-4-关于公司前次ipo事项-第一轮-回复第-184-190-页-txt-行-7789-7930"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874593-安特磁材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874593-安特磁材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874595-中塑股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东中塑新材料股份有限公司（874595·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874595-中塑股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874595-中塑股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874595-中塑股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874595-中塑股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2：朱怀玉不认定为共同实控人与广东中瀚同业竞争边界（首轮回复第31—52页；20240812 txt行1197—2223）",
+              "link": "/kb2024/874595-中塑股份#_1-首轮问题2-朱怀玉不认定为共同实控人与广东中瀚同业竞争边界-首轮回复第31—52页-20240812-txt行1197—2223"
+            },
+            {
+              "text": "2. 首轮问题3(2)(3)(5)：欧阳启潘代欧阳军生持股及1元夫妻转让（首轮回复第52—66页；20240812 txt行2224—2760）",
+              "link": "/kb2024/874595-中塑股份#_2-首轮问题3-2-3-5-欧阳启潘代欧阳军生持股及1元夫妻转让-首轮回复第52—66页-20240812-txt行2224—2760"
+            },
+            {
+              "text": "3. 首轮问题3(4)：至诚至信定向减资退出的程序合规（首轮回复第60—62页；20240812 txt行2630—2740）",
+              "link": "/kb2024/874595-中塑股份#_3-首轮问题3-4-至诚至信定向减资退出的程序合规-首轮回复第60—62页-20240812-txt行2630—2740"
+            },
+            {
+              "text": "4. 首轮问题1：环保合规与未验先投（首轮回复第3—31页；20240812 txt行60—1196）",
+              "link": "/kb2024/874595-中塑股份#_4-首轮问题1-环保合规与未验先投-首轮回复第3—31页-20240812-txt行60—1196"
+            },
+            {
+              "text": "5. 首轮问题7（节选）：员工持股平台众行致远的激励与回购安排（首轮回复第173—175页；20240812 txt行7300—7380）",
+              "link": "/kb2024/874595-中塑股份#_5-首轮问题7-节选-员工持股平台众行致远的激励与回购安排-首轮回复第173—175页-20240812-txt行7300—7380"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874595-中塑股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874595-中塑股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874596-牛牌机电": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏牛牌机械电子股份有限公司（874596·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874596-牛牌机电"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874596-牛牌机电#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874596-牛牌机电#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874596-牛牌机电#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题 1：历史沿革——派生分立、家族代持、出资瑕疵置换与兄弟间股权转让（首轮，回复第 3—36 页；txt 行 81—1447）",
+              "link": "/kb2024/874596-牛牌机电#问题-1-历史沿革——派生分立、家族代持、出资瑕疵置换与兄弟间股权转让-首轮-回复第-3—36-页-txt-行-81—1447"
+            },
+            {
+              "text": "问题 7(1)：房产土地——吴江分公司无证房产（首轮，回复第 119—123 页；txt 行 4845—5035）",
+              "link": "/kb2024/874596-牛牌机电#问题-7-1-房产土地——吴江分公司无证房产-首轮-回复第-119—123-页-txt-行-4845—5035"
+            },
+            {
+              "text": "问题 7(3)：子公司——牛牌印度境外投资与印度员工微量持股（首轮，回复第 133—146 页；txt 行 5036—5310）",
+              "link": "/kb2024/874596-牛牌机电#问题-7-3-子公司——牛牌印度境外投资与印度员工微量持股-首轮-回复第-133—146-页-txt-行-5036—5310"
+            },
+            {
+              "text": "问题 7(4)：环保事项——NP-W408 项目环评未验收（首轮，回复第 147—148 页；txt 行 6045—6090）",
+              "link": "/kb2024/874596-牛牌机电#问题-7-4-环保事项——np-w408-项目环评未验收-首轮-回复第-147—148-页-txt-行-6045—6090"
+            },
+            {
+              "text": "问题 7(5)(6)：继受专利权属与报告期诉讼（首轮，回复第 149—166 页；txt 行 6091—7045）",
+              "link": "/kb2024/874596-牛牌机电#问题-7-5-6-继受专利权属与报告期诉讼-首轮-回复第-149—166-页-txt-行-6091—7045"
+            },
+            {
+              "text": "二轮问题 1：派生分立追问——房地产资金隔离承诺与《公司法》第 23 条（二轮，回复第 3—6 页；txt 行 54—188）",
+              "link": "/kb2024/874596-牛牌机电#二轮问题-1-派生分立追问——房地产资金隔离承诺与《公司法》第-23-条-二轮-回复第-3—6-页-txt-行-54—188"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874596-牛牌机电#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874596-牛牌机电#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874597-昌誉股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "莱阳市昌誉密封科技股份有限公司（874597·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874597-昌誉股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874597-昌誉股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874597-昌誉股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874597-昌誉股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2（1）（2）（3）：股权代持、挂靠集体企业改制与吸收合并、债权出资（回复txt行2332—3569，回复第47—71页）",
+              "link": "/kb2024/874597-昌誉股份#_1-首轮问题2-1-2-3-股权代持、挂靠集体企业改制与吸收合并、债权出资-回复txt行2332—3569-回复第47—71页"
+            },
+            {
+              "text": "2. 首轮问题2（4）：北汽基金、济南侨梦对赌——回购时间早于触发时间（回复txt行3570—4354，回复第72—88页）",
+              "link": "/kb2024/874597-昌誉股份#_2-首轮问题2-4-北汽基金、济南侨梦对赌——回购时间早于触发时间-回复txt行3570—4354-回复第72—88页"
+            },
+            {
+              "text": "3. 首轮问题1（5）：劳务派遣超比例用工合规（回复txt行1951—2331，回复第44—46页）",
+              "link": "/kb2024/874597-昌誉股份#_3-首轮问题1-5-劳务派遣超比例用工合规-回复txt行1951—2331-回复第44—46页"
+            },
+            {
+              "text": "4. 首轮问题3：润蚨祥同业竞争（回复txt行4355—4631，回复第89—94页）",
+              "link": "/kb2024/874597-昌誉股份#_4-首轮问题3-润蚨祥同业竞争-回复txt行4355—4631-回复第89—94页"
+            },
+            {
+              "text": "5. 首轮问题10（1）：无证房产与瑞宝特代建新厂区（回复txt行11050—11190，回复第222—225页）",
+              "link": "/kb2024/874597-昌誉股份#_5-首轮问题10-1-无证房产与瑞宝特代建新厂区-回复txt行11050—11190-回复第222—225页"
+            },
+            {
+              "text": "6. 首轮问题1（2）：排污资质覆盖报告期（回复txt行300—1100区间，回复第4—20页）",
+              "link": "/kb2024/874597-昌誉股份#_6-首轮问题1-2-排污资质覆盖报告期-回复txt行300—1100区间-回复第4—20页"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874597-昌誉股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874597-昌誉股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874601-浙江亿得": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江亿得新材料股份有限公司（874601·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874601-浙江亿得"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874601-浙江亿得#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874601-浙江亿得#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874601-浙江亿得#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1（1）（2）（6）：危化品资质矩阵、产业政策与超产能生产（首轮回复第4—66页；20240816 txt行81—1800、4540—4700）",
+              "link": "/kb2024/874601-浙江亿得#_1-首轮问题1-1-2-6-危化品资质矩阵、产业政策与超产能生产-首轮回复第4—66页-20240816-txt行81—1800、4540—4700"
+            },
+            {
+              "text": "2. 首轮问题1（4）：住建违规处罚与25,721.32平方米无证房产（首轮回复第55—62页；txt行2620—2960）",
+              "link": "/kb2024/874601-浙江亿得#_2-首轮问题1-4-住建违规处罚与25-721-32平方米无证房产-首轮回复第55—62页-txt行2620—2960"
+            },
+            {
+              "text": "3. 首轮问题2（1）（3）：特殊投资条款清理、附条件恢复与回购支付能力（首轮回复第77—88页；txt行3612—4170）",
+              "link": "/kb2024/874601-浙江亿得#_3-首轮问题2-1-3-特殊投资条款清理、附条件恢复与回购支付能力-首轮回复第77—88页-txt行3612—4170"
+            },
+            {
+              "text": "4. 首轮问题2（2）（3）：员工持股平台与2003年股权纠纷（首轮回复第88—97页；txt行4171—4660）",
+              "link": "/kb2024/874601-浙江亿得#_4-首轮问题2-2-3-员工持股平台与2003年股权纠纷-首轮回复第88—97页-txt行4171—4660"
+            },
+            {
+              "text": "5. 首轮问题9（2）（3）：抵押担保与股利分配（首轮回复第216—240页；txt行10670—11010）",
+              "link": "/kb2024/874601-浙江亿得#_5-首轮问题9-2-3-抵押担保与股利分配-首轮回复第216—240页-txt行10670—11010"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874601-浙江亿得#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874601-浙江亿得#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874602-弘昌新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽弘昌新材料股份有限公司（874602·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874602-弘昌新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874602-弘昌新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874602-弘昌新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874602-弘昌新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：两高行业、排污许可、节能审查与超产能（首轮回复 txt 行 65-690）",
+              "link": "/kb2024/874602-弘昌新材#_1-首轮问题-1-两高行业、排污许可、节能审查与超产能-首轮回复-txt-行-65-690"
+            },
+            {
+              "text": "2. 首轮问题 2（1）（2）：实际控制人认定（首轮未认定肖孝天）与国有股东（首轮回复 txt 行 692-1290）",
+              "link": "/kb2024/874602-弘昌新材#_2-首轮问题-2-1-2-实际控制人认定-首轮未认定肖孝天-与国有股东-首轮回复-txt-行-692-1290"
+            },
+            {
+              "text": "3. 首轮问题 2（3）（4）：债权出资程序瑕疵与减资程序瑕疵（首轮回复 txt 行 1290-1600）",
+              "link": "/kb2024/874602-弘昌新材#_3-首轮问题-2-3-4-债权出资程序瑕疵与减资程序瑕疵-首轮回复-txt-行-1290-1600"
+            },
+            {
+              "text": "4. 首轮问题 2（5）（6）：员工持股平台与股权代持核查（首轮回复 txt 行 1600-2230）",
+              "link": "/kb2024/874602-弘昌新材#_4-首轮问题-2-5-6-员工持股平台与股权代持核查-首轮回复-txt-行-1600-2230"
+            },
+            {
+              "text": "5. 首轮问题 3：特殊投资条款清理（首轮回复 txt 行 2698-3094）",
+              "link": "/kb2024/874602-弘昌新材#_5-首轮问题-3-特殊投资条款清理-首轮回复-txt-行-2698-3094"
+            },
+            {
+              "text": "6. 首轮问题 9：对外担保程序与关联方安徽天凯非关联化（首轮回复 txt 行 10730-11600）",
+              "link": "/kb2024/874602-弘昌新材#_6-首轮问题-9-对外担保程序与关联方安徽天凯非关联化-首轮回复-txt-行-10730-11600"
+            },
+            {
+              "text": "7. 二轮问题 2：实际控制人认定反转——肖孝天补充认定为共同实控人（二轮回复 txt 行 1247-1444）",
+              "link": "/kb2024/874602-弘昌新材#_7-二轮问题-2-实际控制人认定反转——肖孝天补充认定为共同实控人-二轮回复-txt-行-1247-1444"
+            },
+            {
+              "text": "8. 二轮问题 3：回购触发条款之\"审计报告提供条款\"合规性与回购履约能力测算（二轮回复 txt 行 1446-1615）",
+              "link": "/kb2024/874602-弘昌新材#_8-二轮问题-3-回购触发条款之-审计报告提供条款-合规性与回购履约能力测算-二轮回复-txt-行-1446-1615"
+            },
+            {
+              "text": "9. 二轮问题 4：在建项目节能审查未批先建（二轮回复 txt 行 1617-1741）",
+              "link": "/kb2024/874602-弘昌新材#_9-二轮问题-4-在建项目节能审查未批先建-二轮回复-txt-行-1617-1741"
+            },
+            {
+              "text": "10. 二轮问题 5：债权出资真实性复核（二轮回复 txt 行 1743-1929）",
+              "link": "/kb2024/874602-弘昌新材#_10-二轮问题-5-债权出资真实性复核-二轮回复-txt-行-1743-1929"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874602-弘昌新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874602-弘昌新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874603-艾科维": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏艾科维科技股份有限公司（874603·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874603-艾科维"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874603-艾科维#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874603-艾科维#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874603-艾科维#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题1(1)④+二轮问题1：关于超产及超品类生产——环评30%重大变动与安全生产许可（首轮回复第 10-24 页，txt 行 388-920；二轮回复第 4-16 页，txt 行 59-608）",
+              "link": "/kb2024/874603-艾科维#首轮问题1-1-4-二轮问题1-关于超产及超品类生产——环评30-重大变动与安全生产许可-首轮回复第-10-24-页-txt-行-388-920-二轮回复第-4-16-页-txt-行-59-608"
+            },
+            {
+              "text": "首轮问题2：关于历史沿革——平台代持、国企职工持股限制与江苏股交展示（首轮回复第 42-57 页；txt 行 1938-2740）",
+              "link": "/kb2024/874603-艾科维#首轮问题2-关于历史沿革——平台代持、国企职工持股限制与江苏股交展示-首轮回复第-42-57-页-txt-行-1938-2740"
+            },
+            {
+              "text": "首轮问题3：关于安全生产——危化品资质与超量超范围生产（首轮回复第 58-67 页；txt 行 2738-3250）",
+              "link": "/kb2024/874603-艾科维#首轮问题3-关于安全生产——危化品资质与超量超范围生产-首轮回复第-58-67-页-txt-行-2738-3250"
+            },
+            {
+              "text": "二轮问题2：关于其他——同一控制合并杭州泰曦与个人卡（二轮回复第 17-21 页；txt 行 609-756）",
+              "link": "/kb2024/874603-艾科维#二轮问题2-关于其他——同一控制合并杭州泰曦与个人卡-二轮回复第-17-21-页-txt-行-609-756"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874603-艾科维#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874603-艾科维#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874605-尚华新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "河北尚华新材料股份有限公司（874605·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874605-尚华新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874605-尚华新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874605-尚华新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874605-尚华新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：历史沿革及特殊投资条款——实控人亲属突击入股与咨询机构溢价退出（首轮回复第 2-19 页；txt 行 48–859）",
+              "link": "/kb2024/874605-尚华新材#首轮问题-1-历史沿革及特殊投资条款——实控人亲属突击入股与咨询机构溢价退出-首轮回复第-2-19-页-txt-行-48–859"
+            },
+            {
+              "text": "首轮问题 2：公司治理——家族 98.47% 控制下的决策程序与董监高任职（首轮回复第 20-37 页；txt 行 860–1572）",
+              "link": "/kb2024/874605-尚华新材#首轮问题-2-公司治理——家族-98-47-控制下的决策程序与董监高任职-首轮回复第-20-37-页-txt-行-860–1572"
+            },
+            {
+              "text": "首轮问题 3／二轮问题 2：环保事项——超产能、以子公司名义报批与节能审查补办（首轮回复第 38-56 页、二轮回复第 21-23 页；首轮 txt 行 1573–2749、二轮 txt 行 780–880）",
+              "link": "/kb2024/874605-尚华新材#首轮问题-3-二轮问题-2-环保事项——超产能、以子公司名义报批与节能审查补办-首轮回复第-38-56-页、二轮回复第-21-23-页-首轮-txt-行-1573–2749、二轮-txt-行-780–880"
+            },
+            {
+              "text": "首轮问题 8：与原任职单位申龙塑业的竞业禁止与承继关系（首轮回复第 157-159 页；txt 行 5977–6170）",
+              "link": "/kb2024/874605-尚华新材#首轮问题-8-与原任职单位申龙塑业的竞业禁止与承继关系-首轮回复第-157-159-页-txt-行-5977–6170"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874605-尚华新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874605-尚华新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874606-西立股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "威海西立电子股份有限公司（874606·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874606-西立股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874606-西立股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874606-西立股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874606-西立股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题2：关于特殊投资条款——存续对赌的逐条合规与履约能力量化（首轮回复第 19-30 页；txt 行 848-1500）",
+              "link": "/kb2024/874606-西立股份#首轮问题2-关于特殊投资条款——存续对赌的逐条合规与履约能力量化-首轮回复第-19-30-页-txt-行-848-1500"
+            },
+            {
+              "text": "首轮问题1：关于历史沿革——国资投资人入股程序（首轮回复第 4-18 页；txt 行 71-848）",
+              "link": "/kb2024/874606-西立股份#首轮问题1-关于历史沿革——国资投资人入股程序-首轮回复第-4-18-页-txt-行-71-848"
+            },
+            {
+              "text": "首轮问题3：关于合法规范经营——环评补办与特种作业处罚（首轮回复第 31-39 页；txt 行 1500-1900）",
+              "link": "/kb2024/874606-西立股份#首轮问题3-关于合法规范经营——环评补办与特种作业处罚-首轮回复第-31-39-页-txt-行-1500-1900"
+            },
+            {
+              "text": "二轮问题3：关于信息披露——军工涉密信息豁免披露（二轮回复第 34 页起；txt 行 1546-1847）",
+              "link": "/kb2024/874606-西立股份#二轮问题3-关于信息披露——军工涉密信息豁免披露-二轮回复第-34-页起-txt-行-1546-1847"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874606-西立股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874606-西立股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874607-唇动食品": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "唇动食品股份有限公司（874607·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874607-唇动食品"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874607-唇动食品#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874607-唇动食品#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874607-唇动食品#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "问题2(1)：关于特殊投资条款——挂牌时点仍现行有效的上市对赌（第一轮，回复第 43-47 页；txt 行 1870-2050）",
+              "link": "/kb2024/874607-唇动食品#问题2-1-关于特殊投资条款——挂牌时点仍现行有效的上市对赌-第一轮-回复第-43-47-页-txt-行-1870-2050"
+            },
+            {
+              "text": "问题1：关于公司业务合规性——资质换证、刷单、关联外协与继受知识产权（第一轮，回复第 3-41 页；txt 行 70-1755）",
+              "link": "/kb2024/874607-唇动食品#问题1-关于公司业务合规性——资质换证、刷单、关联外协与继受知识产权-第一轮-回复第-3-41-页-txt-行-70-1755"
+            },
+            {
+              "text": "问题2(2)与问题8：员工持股平台与公司治理（第一轮，回复第 47-68 页及 165 页以后；txt 行 2050-2849、6139 以后）",
+              "link": "/kb2024/874607-唇动食品#问题2-2-与问题8-员工持股平台与公司治理-第一轮-回复第-47-68-页及-165-页以后-txt-行-2050-2849、6139-以后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874607-唇动食品#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874607-唇动食品#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874608-微特股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市微特精密科技股份有限公司（874608·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874608-微特股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874608-微特股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874608-微特股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874608-微特股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：历史沿革——债转股安排、国有股权程序与嵌套代持清理（首轮回复第 3-21 页；txt 行 75–1079）",
+              "link": "/kb2024/874608-微特股份#首轮问题-1-历史沿革——债转股安排、国有股权程序与嵌套代持清理-首轮回复第-3-21-页-txt-行-75–1079"
+            },
+            {
+              "text": "首轮问题 2／二轮问题 1：特殊投资条款——从委派权到残余条款的逐层清理（首轮回复第 22-39 页、二轮回复第 4-11 页；首轮 txt 行 1080–1754、二轮 txt 行 28–339）",
+              "link": "/kb2024/874608-微特股份#首轮问题-2-二轮问题-1-特殊投资条款——从委派权到残余条款的逐层清理-首轮回复第-22-39-页、二轮回复第-4-11-页-首轮-txt-行-1080–1754、二轮-txt-行-28–339"
+            },
+            {
+              "text": "首轮问题 3／二轮问题 2(1)：收购杰创博特与四维讯谷——代持还原、方案调整与定价（首轮回复第 40-51 页、二轮回复第 11-15 页；首轮 txt 行 1755–2261、二轮 txt 行 340–430）",
+              "link": "/kb2024/874608-微特股份#首轮问题-3-二轮问题-2-1-收购杰创博特与四维讯谷——代持还原、方案调整与定价-首轮回复第-40-51-页、二轮回复第-11-15-页-首轮-txt-行-1755–2261、二轮-txt-行-340–430"
+            },
+            {
+              "text": "首轮问题 4：合法规范经营——集体用地无证租赁、招投标与军工保密审查（首轮回复第 52-62 页；txt 行 2262–2872）",
+              "link": "/kb2024/874608-微特股份#首轮问题-4-合法规范经营——集体用地无证租赁、招投标与军工保密审查-首轮回复第-52-62-页-txt-行-2262–2872"
+            },
+            {
+              "text": "首轮问题 10(2)：实控人早期任职与独董合规（首轮回复第 199-210 页；txt 行 9100–9875）",
+              "link": "/kb2024/874608-微特股份#首轮问题-10-2-实控人早期任职与独董合规-首轮回复第-199-210-页-txt-行-9100–9875"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874608-微特股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874608-微特股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874609-恒信通": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽恒信通智能科技股份有限公司（874609·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874609-恒信通"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874609-恒信通#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874609-恒信通#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874609-恒信通#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：施工资质、劳务分包与无资质分包（首轮回复txt行56—4960，回复第3—47页）",
+              "link": "/kb2024/874609-恒信通#_1-首轮问题1-施工资质、劳务分包与无资质分包-首轮回复txt行56—4960-回复第3—47页"
+            },
+            {
+              "text": "2. 首轮问题5：历史沿革——机构股东预留激励、1元/股转让与代持核查（首轮回复txt行12059—14000，回复第256—272页）",
+              "link": "/kb2024/874609-恒信通#_2-首轮问题5-历史沿革——机构股东预留激励、1元-股转让与代持核查-首轮回复txt行12059—14000-回复第256—272页"
+            },
+            {
+              "text": "3. 二轮问题1：客户集中与区域集中的持续经营风险（二轮回复txt行56—1655，全文）",
+              "link": "/kb2024/874609-恒信通#_3-二轮问题1-客户集中与区域集中的持续经营风险-二轮回复txt行56—1655-全文"
+            },
+            {
+              "text": "4. 二轮问题2：应收账款催收与期后回款（二轮回复txt行1656—2971，全文）",
+              "link": "/kb2024/874609-恒信通#_4-二轮问题2-应收账款催收与期后回款-二轮回复txt行1656—2971-全文"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874609-恒信通#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874609-恒信通#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874611-北方实验": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北方实验室（沈阳）股份有限公司（874611·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874611-北方实验"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874611-北方实验#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874611-北方实验#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874611-北方实验#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 二轮问题1：预留股权代持的形成、演变、解除与\"股权明晰\"（二轮回复第4-17页；txt行55-712）",
+              "link": "/kb2024/874611-北方实验#_1-二轮问题1-预留股权代持的形成、演变、解除与-股权明晰-二轮回复第4-17页-txt行55-712"
+            },
+            {
+              "text": "2. 二轮问题2：辽检院国有股权变动程序瑕疵与省机关事务管理局确认效力（二轮回复第18-26页；txt行713-1250）",
+              "link": "/kb2024/874611-北方实验#_2-二轮问题2-辽检院国有股权变动程序瑕疵与省机关事务管理局确认效力-二轮回复第18-26页-txt行713-1250"
+            },
+            {
+              "text": "3. 实控人认定与持股平台表决权（法律意见书第24-40页\"六、公司的发起人或股东（实际控制人）\"；txt行1523-1540）",
+              "link": "/kb2024/874611-北方实验#_3-实控人认定与持股平台表决权-法律意见书第24-40页-六、公司的发起人或股东-实际控制人-txt行1523-1540"
+            },
+            {
+              "text": "4. 预留股权中的员工授予与分红清理（二轮回复第8-10页；txt行269-330；法律意见书txt行1780-1800）",
+              "link": "/kb2024/874611-北方实验#_4-预留股权中的员工授予与分红清理-二轮回复第8-10页-txt行269-330-法律意见书txt行1780-1800"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874611-北方实验#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874611-北方实验#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874612-佰家丽": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏佰家丽新材料科技股份有限公司（874612·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874612-佰家丽"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874612-佰家丽#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874612-佰家丽#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874612-佰家丽#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题4：历史沿革——代持形成演变解除、党政干部任职、职务发明与竞业、子公司注销（首轮回复txt行2401-3031）",
+              "link": "/kb2024/874612-佰家丽#_1-首轮问题4-历史沿革——代持形成演变解除、党政干部任职、职务发明与竞业、子公司注销-首轮回复txt行2401-3031"
+            },
+            {
+              "text": "2. 首轮问题5：经营合规性——环评重新报批、未批先建未验先投、排污登记（首轮回复txt行3032-3376）",
+              "link": "/kb2024/874612-佰家丽#_2-首轮问题5-经营合规性——环评重新报批、未批先建未验先投、排污登记-首轮回复txt行3032-3376"
+            },
+            {
+              "text": "3. 首轮问题6（1）（2）（3）：司法拍卖土地房产与抵押、专利继受取得、夫妻 100% 控股下治理有效性（首轮回复txt行3377-4538）",
+              "link": "/kb2024/874612-佰家丽#_3-首轮问题6-1-2-3-司法拍卖土地房产与抵押、专利继受取得、夫妻-100-控股下治理有效性-首轮回复txt行3377-4538"
+            },
+            {
+              "text": "4. 二轮问题3：代持追问——现金出资合理性、自有与自筹资金比例、未披露代持（二轮回复txt行1513-1771）",
+              "link": "/kb2024/874612-佰家丽#_4-二轮问题3-代持追问——现金出资合理性、自有与自筹资金比例、未披露代持-二轮回复txt行1513-1771"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874612-佰家丽#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874612-佰家丽#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874615-避泰电气": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江避泰电气科技股份有限公司（874615·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874615-避泰电气"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874615-避泰电气#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874615-避泰电气#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874615-避泰电气#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：实际控制人认定、历史沿革、代持还原与出资瑕疵（首轮回复第 3–23 页；txt 行 73–1003）",
+              "link": "/kb2024/874615-避泰电气#_1-首轮问题-1-实际控制人认定、历史沿革、代持还原与出资瑕疵-首轮回复第-3–23-页-txt-行-73–1003"
+            },
+            {
+              "text": "2. 首轮问题 2 之(1)(2)：与关联客户固力发的关联交易公允性及\"双向代持\"排查（首轮回复第 24–47 页；txt 行 1004–2036）",
+              "link": "/kb2024/874615-避泰电气#_2-首轮问题-2-之-1-2-与关联客户固力发的关联交易公允性及-双向代持-排查-首轮回复第-24–47-页-txt-行-1004–2036"
+            },
+            {
+              "text": "3. 首轮问题 8：社保及公积金大面积未缴（首轮回复第 129–133 页；txt 行 5805–6007）",
+              "link": "/kb2024/874615-避泰电气#_3-首轮问题-8-社保及公积金大面积未缴-首轮回复第-129–133-页-txt-行-5805–6007"
+            },
+            {
+              "text": "4. 首轮问题 9(1)：票据找零的合规性与整改（首轮回复第 134–138 页；txt 行 6008–6183）",
+              "link": "/kb2024/874615-避泰电气#_4-首轮问题-9-1-票据找零的合规性与整改-首轮回复第-134–138-页-txt-行-6008–6183"
+            },
+            {
+              "text": "5. 二轮问题 3：一致行动协议分歧解决机制的补充协议升级（二轮回复第 23–25 页；txt 行 901–1028）",
+              "link": "/kb2024/874615-避泰电气#_5-二轮问题-3-一致行动协议分歧解决机制的补充协议升级-二轮回复第-23–25-页-txt-行-901–1028"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874615-避泰电气#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874615-避泰电气#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874616-嘉利股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江嘉利（丽水）工业股份有限公司（874616·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874616-嘉利股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874616-嘉利股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874616-嘉利股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874616-嘉利股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：关联方重庆嘉利——潜在同业竞争与规避核查质疑（问询回复txt行65-957）",
+              "link": "/kb2024/874616-嘉利股份#_1-首轮问题1-关联方重庆嘉利——潜在同业竞争与规避核查质疑-问询回复txt行65-957"
+            },
+            {
+              "text": "2. 首轮问题2：历史沿革中的特殊投资条款——16 名股东分批恢复效力与特别并购权（问询回复txt行958-3400 附近）",
+              "link": "/kb2024/874616-嘉利股份#_2-首轮问题2-历史沿革中的特殊投资条款——16-名股东分批恢复效力与特别并购权-问询回复txt行958-3400-附近"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874616-嘉利股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874616-嘉利股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874618-润奥供电": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "润奥供电股份有限公司（874618·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874618-润奥供电"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874618-润奥供电#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874618-润奥供电#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874618-润奥供电#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：电力与建筑资质覆盖、违法分包整改与APP平台属性（首轮回复第3—44页；txt行60—1983）",
+              "link": "/kb2024/874618-润奥供电#_1-首轮问题1-电力与建筑资质覆盖、违法分包整改与app平台属性-首轮回复第3—44页-txt行60—1983"
+            },
+            {
+              "text": "2. 首轮问题2：两次股改往返、夫妻无偿转让与30次股权转让定价（首轮回复第45—69页；txt行1984—3070）",
+              "link": "/kb2024/874618-润奥供电#_2-首轮问题2-两次股改往返、夫妻无偿转让与30次股权转让定价-首轮回复第45—69页-txt行1984—3070"
+            },
+            {
+              "text": "3. 二轮问题1(1)(7)(8)：投标廉洁合规、首次股改未挂牌原因与无证房产（二轮回复第3—41页；txt行60—1500）",
+              "link": "/kb2024/874618-润奥供电#_3-二轮问题1-1-7-8-投标廉洁合规、首次股改未挂牌原因与无证房产-二轮回复第3—41页-txt行60—1500"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874618-润奥供电#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874618-润奥供电#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874619-图维科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江图维科技股份有限公司（874619·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874619-图维科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874619-图维科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874619-图维科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874619-图维科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：安全生产与建筑业企业资质（问询回复第 3–17 页；txt 行 113–824）",
+              "link": "/kb2024/874619-图维科技#_1-首轮问题-1-安全生产与建筑业企业资质-问询回复第-3–17-页-txt-行-113–824"
+            },
+            {
+              "text": "2. 首轮问题 2：招投标合规（问询回复第 18–37 页；txt 行 825–1899）",
+              "link": "/kb2024/874619-图维科技#_2-首轮问题-2-招投标合规-问询回复第-18–37-页-txt-行-825–1899"
+            },
+            {
+              "text": "3. 首轮问题 7(1)：员工持股平台唯途投资、杭州汇图的披露补正与合规性（问询回复第 130–140 页；txt 行 6079–6300）",
+              "link": "/kb2024/874619-图维科技#_3-首轮问题-7-1-员工持股平台唯途投资、杭州汇图的披露补正与合规性-问询回复第-130–140-页-txt-行-6079–6300"
+            },
+            {
+              "text": "4. 首轮问题 7(3)：特殊投资条款的终止与存续回购安排（问询回复第 178–186 页；txt 行 8645–9024）",
+              "link": "/kb2024/874619-图维科技#_4-首轮问题-7-3-特殊投资条款的终止与存续回购安排-问询回复第-178–186-页-txt-行-8645–9024"
+            },
+            {
+              "text": "5. 首轮问题 7(4)：前次挂牌事项（问询回复第 187–192 页；txt 行 9029–9240）",
+              "link": "/kb2024/874619-图维科技#_5-首轮问题-7-4-前次挂牌事项-问询回复第-187–192-页-txt-行-9029–9240"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874619-图维科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874619-图维科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874620-中矿岩土": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "徐州中矿岩土技术股份有限公司（874620·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874620-中矿岩土"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874620-中矿岩土#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874620-中矿岩土#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874620-中矿岩土#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题四：校办企业改制、国资划转与股权代持（回复第144–170页；首轮回复txt行6010–7048）",
+              "link": "/kb2024/874620-中矿岩土#_1-首轮问题四-校办企业改制、国资划转与股权代持-回复第144–170页-首轮回复txt行6010–7048"
+            },
+            {
+              "text": "2. 首轮问题五：合法规范经营——分包、资质、检测、房地产、土地用途、招投标（回复第171–209页；首轮回复txt行7049–8799）",
+              "link": "/kb2024/874620-中矿岩土#_2-首轮问题五-合法规范经营——分包、资质、检测、房地产、土地用途、招投标-回复第171–209页-首轮回复txt行7049–8799"
+            },
+            {
+              "text": "3. 首轮问题七：特殊投资条款——江苏高投回购与22名股东分担、新苏融合条款修订（回复第217–229页；首轮回复txt行8800–9660）",
+              "link": "/kb2024/874620-中矿岩土#_3-首轮问题七-特殊投资条款——江苏高投回购与22名股东分担、新苏融合条款修订-回复第217–229页-首轮回复txt行8800–9660"
+            },
+            {
+              "text": "4. 首轮问题十之2及二轮问题四：一致行动协议与共同实控人认定（回复第267–272页；首轮回复txt行10860–11050；二轮回复问题四节）",
+              "link": "/kb2024/874620-中矿岩土#_4-首轮问题十之2及二轮问题四-一致行动协议与共同实控人认定-回复第267–272页-首轮回复txt行10860–11050-二轮回复问题四节"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874620-中矿岩土#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874620-中矿岩土#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874623-天南电力": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏天南电力股份有限公司（874623·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874623-天南电力"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874623-天南电力#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874623-天南电力#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874623-天南电力#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "首轮问题 1：历史沿革及公司治理——三段代持的完整解除与省政府级别确认（首轮回复第 4-23 页；txt 行 63–968）",
+              "link": "/kb2024/874623-天南电力#首轮问题-1-历史沿革及公司治理——三段代持的完整解除与省政府级别确认-首轮回复第-4-23-页-txt-行-63–968"
+            },
+            {
+              "text": "首轮问题 2：经营合规性——未验先投、消防整改与招投标合规（首轮回复第 24-38 页；txt 行 971–1680）",
+              "link": "/kb2024/874623-天南电力#首轮问题-2-经营合规性——未验先投、消防整改与招投标合规-首轮回复第-24-38-页-txt-行-971–1680"
+            },
+            {
+              "text": "首轮问题 5(1)：集体建设用地租赁与无证房产（首轮回复第 85-87 页；txt 行 3543–3734）",
+              "link": "/kb2024/874623-天南电力#首轮问题-5-1-集体建设用地租赁与无证房产-首轮回复第-85-87-页-txt-行-3543–3734"
+            },
+            {
+              "text": "首轮问题 5(2)：外协、劳务外包与劳务派遣用工（首轮回复第 88-95 页；txt 行 3734–4041）",
+              "link": "/kb2024/874623-天南电力#首轮问题-5-2-外协、劳务外包与劳务派遣用工-首轮回复第-88-95-页-txt-行-3734–4041"
+            },
+            {
+              "text": "首轮问题 5(3)：继受专利权属与合作研发成果归属（首轮回复第 95-99 页；txt 行 4041–4160）",
+              "link": "/kb2024/874623-天南电力#首轮问题-5-3-继受专利权属与合作研发成果归属-首轮回复第-95-99-页-txt-行-4041–4160"
+            },
+            {
+              "text": "首轮问题 5(6)(7)：前次沪主板申报撤回、媒体质疑与限售/独董等治理事项（首轮回复第 109-121 页；txt 行 4676–4830、5027–5540）",
+              "link": "/kb2024/874623-天南电力#首轮问题-5-6-7-前次沪主板申报撤回、媒体质疑与限售-独董等治理事项-首轮回复第-109-121-页-txt-行-4676–4830、5027–5540"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874623-天南电力#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874623-天南电力#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874625-连科智造": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "临沂连科智能制造股份有限公司（874625·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874625-连科智造"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874625-连科智造#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874625-连科智造#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874625-连科智造#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：《科技有限公司股权转让协议》业绩条件式股权转让、连凯软件代持与关联交易；外商投资合规（回复第2–30页；txt行116–1316）",
+              "link": "/kb2024/874625-连科智造#_1-首轮问题1-《科技有限公司股权转让协议》业绩条件式股权转让、连凯软件代持与关联交易-外商投资合规-回复第2–30页-txt行116–1316"
+            },
+            {
+              "text": "2. 首轮问题2：实际控制人认定——报告期内王成田、报告期后周颖与王成田（回复第31–44页；txt行1375–2434）",
+              "link": "/kb2024/874625-连科智造#_2-首轮问题2-实际控制人认定——报告期内王成田、报告期后周颖与王成田-回复第31–44页-txt行1375–2434"
+            },
+            {
+              "text": "3. 首轮问题3：业务合规——资质（电力业务许可）、招投标、环保、无证房产（回复第56–88页；txt行2435–3341）",
+              "link": "/kb2024/874625-连科智造#_3-首轮问题3-业务合规——资质-电力业务许可-、招投标、环保、无证房产-回复第56–88页-txt行2435–3341"
+            },
+            {
+              "text": "4. 首轮问题9.二：员工持股平台临沂科斗股权激励（回复第203–208页；txt行8776–9128）",
+              "link": "/kb2024/874625-连科智造#_4-首轮问题9-二-员工持股平台临沂科斗股权激励-回复第203–208页-txt行8776–9128"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874625-连科智造#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874625-连科智造#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874629-佳音科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "宁波佳音机电科技股份有限公司（874629·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874629-佳音科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874629-佳音科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874629-佳音科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874629-佳音科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：前次挂牌期间股份代持的形成与还原、股权激励与股份支付（首轮回复第 1–22 页；txt 行 62–1107）",
+              "link": "/kb2024/874629-佳音科技#_1-首轮问题-1-前次挂牌期间股份代持的形成与还原、股权激励与股份支付-首轮回复第-1–22-页-txt-行-62–1107"
+            },
+            {
+              "text": "2. 首轮问题 2：无证房产与环保许可瑕疵（首轮回复第 23–33 页；txt 行 1108–1532）",
+              "link": "/kb2024/874629-佳音科技#_2-首轮问题-2-无证房产与环保许可瑕疵-首轮回复第-23–33-页-txt-行-1108–1532"
+            },
+            {
+              "text": "3. 首轮问题 3：境外子公司 ODI 合规与子公司员工持股（首轮回复第 34–44 页；txt 行 1533–2050）",
+              "link": "/kb2024/874629-佳音科技#_3-首轮问题-3-境外子公司-odi-合规与子公司员工持股-首轮回复第-34–44-页-txt-行-1533–2050"
+            },
+            {
+              "text": "4. 首轮问题 9：前次挂牌事项、公司治理、技术独立性与中介事项（首轮回复第 128–157 页；txt 行 5677–7250）",
+              "link": "/kb2024/874629-佳音科技#_4-首轮问题-9-前次挂牌事项、公司治理、技术独立性与中介事项-首轮回复第-128–157-页-txt-行-5677–7250"
+            },
+            {
+              "text": "5. 二轮问题 3：报告期末股权转让、劳动争议与一致行动协议（二轮回复第 28–35 页；txt 行 1172–1505）",
+              "link": "/kb2024/874629-佳音科技#_5-二轮问题-3-报告期末股权转让、劳动争议与一致行动协议-二轮回复第-28–35-页-txt-行-1172–1505"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874629-佳音科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874629-佳音科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874630-凯得智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东凯得智能科技股份有限公司（874630·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874630-凯得智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874630-凯得智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874630-凯得智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874630-凯得智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题5：实际控制人认定、共同实控人排除、治理僵局与股东借款（回复第91-110页；txt行3558-4226）",
+              "link": "/kb2024/874630-凯得智能#_1-首轮问题5-实际控制人认定、共同实控人排除、治理僵局与股东借款-回复第91-110页-txt行3558-4226"
+            },
+            {
+              "text": "2. 二轮问题2：《放弃谋求实际控制人承诺函》的有效性与可执行性（二轮回复第17-20页；txt行591-830）",
+              "link": "/kb2024/874630-凯得智能#_2-二轮问题2-《放弃谋求实际控制人承诺函》的有效性与可执行性-二轮回复第17-20页-txt行591-830"
+            },
+            {
+              "text": "3. 首轮问题6：子公司取得、畅想未来股权代持解除与电商平台刷单（回复第111-122页；txt行4227-4700）",
+              "link": "/kb2024/874630-凯得智能#_3-首轮问题6-子公司取得、畅想未来股权代持解除与电商平台刷单-回复第111-122页-txt行4227-4700"
+            },
+            {
+              "text": "4. 首轮问题7（1）：徐芳增资入股与\"股权明晰\"专项核查（回复第122-131页；txt行4700-5267）",
+              "link": "/kb2024/874630-凯得智能#_4-首轮问题7-1-徐芳增资入股与-股权明晰-专项核查-回复第122-131页-txt行4700-5267"
+            },
+            {
+              "text": "5. 首轮问题7（2）：珠海深瀚员工持股平台与《监管指引第6号》（回复第132-140页；txt行5268-5586）",
+              "link": "/kb2024/874630-凯得智能#_5-首轮问题7-2-珠海深瀚员工持股平台与《监管指引第6号》-回复第132-140页-txt行5268-5586"
+            },
+            {
+              "text": "6. 首轮问题7（3）：劳务外包与社保合规（回复第141-148页；txt行5587-5942）",
+              "link": "/kb2024/874630-凯得智能#_6-首轮问题7-3-劳务外包与社保合规-回复第141-148页-txt行5587-5942"
+            },
+            {
+              "text": "7. 首轮问题7（4）：凯得电器注销、继受专利与其层面历史代持（回复第148-162页；txt行5943-6164）",
+              "link": "/kb2024/874630-凯得智能#_7-首轮问题7-4-凯得电器注销、继受专利与其层面历史代持-回复第148-162页-txt行5943-6164"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874630-凯得智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874630-凯得智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874631-库珀新能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "库珀新能源股份有限公司（874631·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874631-库珀新能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874631-库珀新能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874631-库珀新能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874631-库珀新能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2：股权激励回购条款的定性——\"不属于特殊投资条款\"论证（首轮回复txt行1356—2130，回复第33—50页）",
+              "link": "/kb2024/874631-库珀新能#_1-首轮问题2-股权激励回购条款的定性——-不属于特殊投资条款-论证-首轮回复txt行1356—2130-回复第33—50页"
+            },
+            {
+              "text": "2. 首轮问题3：实控人控制34家公司、同业竞争与独立性（首轮回复txt行2131—3109，回复第50—67页）",
+              "link": "/kb2024/874631-库珀新能#_2-首轮问题3-实控人控制34家公司、同业竞争与独立性-首轮回复txt行2131—3109-回复第50—67页"
+            },
+            {
+              "text": "3. 首轮问题1：资质覆盖、招投标与外协外包激增（首轮回复txt行52—1355，回复第3—32页）",
+              "link": "/kb2024/874631-库珀新能#_3-首轮问题1-资质覆盖、招投标与外协外包激增-首轮回复txt行52—1355-回复第3—32页"
+            },
+            {
+              "text": "4. 二轮问题1：会计师事务所更换与中止—恢复审核程序（二轮回复txt行1—476，全文）",
+              "link": "/kb2024/874631-库珀新能#_4-二轮问题1-会计师事务所更换与中止—恢复审核程序-二轮回复txt行1—476-全文"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874631-库珀新能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874631-库珀新能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874633-远华新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东远华新材料股份有限公司（874633·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874633-远华新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874633-远华新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874633-远华新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874633-远华新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：历史沿革——实物出资与现金置换、外资进退、吸收合并、报告期后收购瑜之美（回复第2—25页；首轮txt行36—1084）",
+              "link": "/kb2024/874633-远华新材#_1-首轮问题1-历史沿革——实物出资与现金置换、外资进退、吸收合并、报告期后收购瑜之美-回复第2—25页-首轮txt行36—1084"
+            },
+            {
+              "text": "2. 首轮问题2：节能环保——30万元水污染处罚、排污许可与产业政策（回复第33—56页；首轮txt行1085—2207）",
+              "link": "/kb2024/874633-远华新材#_2-首轮问题2-节能环保——30万元水污染处罚、排污许可与产业政策-回复第33—56页-首轮txt行1085—2207"
+            },
+            {
+              "text": "3. 首轮问题3：公司治理——家族亲属任职、关联担保与资金占用回避表决瑕疵、董监高任职资格（回复第57—65页；首轮txt行2208—2567）",
+              "link": "/kb2024/874633-远华新材#_3-首轮问题3-公司治理——家族亲属任职、关联担保与资金占用回避表决瑕疵、董监高任职资格-回复第57—65页-首轮txt行2208—2567"
+            },
+            {
+              "text": "4. 首轮问题5：众塑联关联采购——定价公允性与供应商定性（回复第102—105页；首轮txt行4108—4260）",
+              "link": "/kb2024/874633-远华新材#_4-首轮问题5-众塑联关联采购——定价公允性与供应商定性-回复第102—105页-首轮txt行4108—4260"
+            },
+            {
+              "text": "5. 首轮问题7(1)：机械伤害生产安全事故处罚与特种作业管理（回复第135—139页；首轮txt行5441—5695）",
+              "link": "/kb2024/874633-远华新材#_5-首轮问题7-1-机械伤害生产安全事故处罚与特种作业管理-回复第135—139页-首轮txt行5441—5695"
+            },
+            {
+              "text": "6. 首轮问题7(2)：社保公积金大面积未缴、员工自愿放弃声明与挂牌条件测算（回复第139—144页；首轮txt行5699—5850）",
+              "link": "/kb2024/874633-远华新材#_6-首轮问题7-2-社保公积金大面积未缴、员工自愿放弃声明与挂牌条件测算-回复第139—144页-首轮txt行5699—5850"
+            },
+            {
+              "text": "7. 首轮问题7(3)(4)：合作研发成果归属与众金力对外投资兼职（回复第144—150页、第165—167页；首轮txt行5857—6023）",
+              "link": "/kb2024/874633-远华新材#_7-首轮问题7-3-4-合作研发成果归属与众金力对外投资兼职-回复第144—150页、第165—167页-首轮txt行5857—6023"
+            },
+            {
+              "text": "8. 首轮问题7(6)(10)③：通捷经贸资金占用与挂牌前滚存利润分配决议程序（回复第173—174页、第191—192页；首轮txt行5496—5502、7137—7168、7891—7902）",
+              "link": "/kb2024/874633-远华新材#_8-首轮问题7-6-10-3-通捷经贸资金占用与挂牌前滚存利润分配决议程序-回复第173—174页、第191—192页-首轮txt行5496—5502、7137—7168、7891—7902"
+            },
+            {
+              "text": "9. 二轮问题1：节能审查意见补办进展——三生产中心分类处置（回复第1—3页；二轮txt行40—165）",
+              "link": "/kb2024/874633-远华新材#_9-二轮问题1-节能审查意见补办进展——三生产中心分类处置-回复第1—3页-二轮txt行40—165"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874633-远华新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874633-远华新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874636-科视光学": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东科视光学技术股份有限公司（874636·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874636-科视光学"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874636-科视光学#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874636-科视光学#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874636-科视光学#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：特殊投资条款——回购、优先权利条款逐条对照\"1-8 对赌\"要求（首轮回复txt行76-1051）",
+              "link": "/kb2024/874636-科视光学#_1-首轮问题1-特殊投资条款——回购、优先权利条款逐条对照-1-8-对赌-要求-首轮回复txt行76-1051"
+            },
+            {
+              "text": "2. 首轮问题2：历史沿革——徐志赠与式出资、康视达承继与专利受让、设立代持还原、股东人数（首轮回复txt行1052-2956）",
+              "link": "/kb2024/874636-科视光学#_2-首轮问题2-历史沿革——徐志赠与式出资、康视达承继与专利受让、设立代持还原、股东人数-首轮回复txt行1052-2956"
+            },
+            {
+              "text": "3. 首轮问题3：业务合规性——租赁集体土地房产、环评验收与排污许可（首轮回复txt行2957-4172 附近区间，详见回复\"3.关于业务合规性\"）",
+              "link": "/kb2024/874636-科视光学#_3-首轮问题3-业务合规性——租赁集体土地房产、环评验收与排污许可-首轮回复txt行2957-4172-附近区间-详见回复-3-关于业务合规性"
+            },
+            {
+              "text": "4. 二轮问题1：特殊投资条款禁止性条款修改与回购能力追问（二轮回复txt行67-518）",
+              "link": "/kb2024/874636-科视光学#_4-二轮问题1-特殊投资条款禁止性条款修改与回购能力追问-二轮回复txt行67-518"
+            },
+            {
+              "text": "5. 二轮问题2：重要子公司锐视光电——两步收购定价、外资审批与税务（二轮回复txt行519-880）",
+              "link": "/kb2024/874636-科视光学#_5-二轮问题2-重要子公司锐视光电——两步收购定价、外资审批与税务-二轮回复txt行519-880"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874636-科视光学#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874636-科视光学#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874637-百瑞吉": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "常州百瑞吉生物医药股份有限公司（874637·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874637-百瑞吉"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874637-百瑞吉#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874637-百瑞吉#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874637-百瑞吉#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1（1）（2）（3）：医疗器械经营资质、招投标、线上销售与外协外包（回复第3—51页；首轮txt行76—2397）",
+              "link": "/kb2024/874637-百瑞吉#_1-首轮问题1-1-2-3-医疗器械经营资质、招投标、线上销售与外协外包-回复第3—51页-首轮txt行76—2397"
+            },
+            {
+              "text": "2. 首轮问题1(4)：社保公积金未足额缴纳与第三方代缴（回复第52—63页；首轮txt行2398—2892）",
+              "link": "/kb2024/874637-百瑞吉#_2-首轮问题1-4-社保公积金未足额缴纳与第三方代缴-回复第52—63页-首轮txt行2398—2892"
+            },
+            {
+              "text": "3. 首轮问题2(1)：历史沿革——代持核查、国资评估备案程序瑕疵、200人穿透（回复第64—71页；首轮txt行2893—3330）",
+              "link": "/kb2024/874637-百瑞吉#_3-首轮问题2-1-历史沿革——代持核查、国资评估备案程序瑕疵、200人穿透-回复第64—71页-首轮txt行2893—3330"
+            },
+            {
+              "text": "4. 首轮问题2(2)：特殊投资条款——现行有效回购条款、触发测算与指引1号逐项比对（回复第72—84页；首轮txt行3330—3990）",
+              "link": "/kb2024/874637-百瑞吉#_4-首轮问题2-2-特殊投资条款——现行有效回购条款、触发测算与指引1号逐项比对-回复第72—84页-首轮txt行3330—3990"
+            },
+            {
+              "text": "5. 首轮问题2(3)及五：国有股东认定、国资确认机关权限、上海千骥退出程序与流水核查（回复第84—105页；首轮txt行3990—4807）",
+              "link": "/kb2024/874637-百瑞吉#_5-首轮问题2-3-及五-国有股东认定、国资确认机关权限、上海千骥退出程序与流水核查-回复第84—105页-首轮txt行3990—4807"
+            },
+            {
+              "text": "6. 二轮问题2：特殊投资条款——申报上市前解除安排与回购触发风险提示（回复第8—11页；二轮txt行283—约520）",
+              "link": "/kb2024/874637-百瑞吉#_6-二轮问题2-特殊投资条款——申报上市前解除安排与回购触发风险提示-回复第8—11页-二轮txt行283—约520"
+            },
+            {
+              "text": "7. 首轮问题3(4)：商标行政诉讼、劳动仲裁与内控合规（回复第118—130页；首轮txt行5400—6052）",
+              "link": "/kb2024/874637-百瑞吉#_7-首轮问题3-4-商标行政诉讼、劳动仲裁与内控合规-回复第118—130页-首轮txt行5400—6052"
+            },
+            {
+              "text": "8. 首轮问题6(5)：推广商商业贿赂与风险隔离（回复第200—238页，律师部分第236—238页；首轮txt行9162—9215、10406—10826）",
+              "link": "/kb2024/874637-百瑞吉#_8-首轮问题6-5-推广商商业贿赂与风险隔离-回复第200—238页-律师部分第236—238页-首轮txt行9162—9215、10406—10826"
+            },
+            {
+              "text": "9. 首轮问题9(2)(3)⑤：租赁房产备案、无证房产核查与独立董事设置（回复第264—292页；首轮txt行11989—11992、12693—12820、13320—13400）",
+              "link": "/kb2024/874637-百瑞吉#_9-首轮问题9-2-3-5-租赁房产备案、无证房产核查与独立董事设置-回复第264—292页-首轮txt行11989—11992、12693—12820、13320—13400"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874637-百瑞吉#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874637-百瑞吉#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874638-八达光电": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "乐清市八达光电科技股份有限公司（874638·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874638-八达光电"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874638-八达光电#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874638-八达光电#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874638-八达光电#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1+二轮问题1：易瓦创投入公司体系与实控人创投企业金融属性隔离（首轮回复第3—13页；20240724 txt行50—520；二轮回复第3—14页；20240821 txt行45—320）",
+              "link": "/kb2024/874638-八达光电#_1-首轮问题1-二轮问题1-易瓦创投入公司体系与实控人创投企业金融属性隔离-首轮回复第3—13页-20240724-txt行50—520-二轮回复第3—14页-20240821-txt行45—320"
+            },
+            {
+              "text": "2. 首轮问题2：现金出资、对赌协议与加法壹号减资退出（首轮回复第13—24页；20240724 txt行524—1004）",
+              "link": "/kb2024/874638-八达光电#_2-首轮问题2-现金出资、对赌协议与加法壹号减资退出-首轮回复第13—24页-20240724-txt行524—1004"
+            },
+            {
+              "text": "3. 首轮问题3：资质空档、外协与劳务派遣（首轮回复第24—33页；20240724 txt行1005—1400）",
+              "link": "/kb2024/874638-八达光电#_3-首轮问题3-资质空档、外协与劳务派遣-首轮回复第24—33页-20240724-txt行1005—1400"
+            },
+            {
+              "text": "4. 首轮问题9(3)：董监高离任与关联交易非关联化（首轮回复第149—157页；20240724 txt行6246—6714）",
+              "link": "/kb2024/874638-八达光电#_4-首轮问题9-3-董监高离任与关联交易非关联化-首轮回复第149—157页-20240724-txt行6246—6714"
+            },
+            {
+              "text": "5. 三轮问题1：实控人创投企业对外投资的关联方认定（三轮回复第3—10页；20240920 txt行42—310）",
+              "link": "/kb2024/874638-八达光电#_5-三轮问题1-实控人创投企业对外投资的关联方认定-三轮回复第3—10页-20240920-txt行42—310"
+            },
+            {
+              "text": "6. 首轮问题9(5)：股权代持核查（首轮回复第159—163页；20240724 txt行6715—6900）",
+              "link": "/kb2024/874638-八达光电#_6-首轮问题9-5-股权代持核查-首轮回复第159—163页-20240724-txt行6715—6900"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874638-八达光电#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874638-八达光电#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874639-阿宽食品": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "四川白家阿宽食品产业股份有限公司（874639·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874639-阿宽食品"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874639-阿宽食品#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874639-阿宽食品#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874639-阿宽食品#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：特殊投资条款的两轮解除与公司减资回购定性（首轮回复第 3–17 页；txt 行 79–835）",
+              "link": "/kb2024/874639-阿宽食品#_1-首轮问题-1-特殊投资条款的两轮解除与公司减资回购定性-首轮回复第-3–17-页-txt-行-79–835"
+            },
+            {
+              "text": "2. 首轮问题 2：国有股权转让瑕疵、历次定价与代持还原（首轮回复第 18–51 页；txt 行 836–2432）",
+              "link": "/kb2024/874639-阿宽食品#_2-首轮问题-2-国有股权转让瑕疵、历次定价与代持还原-首轮回复第-18–51-页-txt-行-836–2432"
+            },
+            {
+              "text": "3. 首轮问题 3 及问题 8.1：食品安全合规与 IPO 撤回（首轮回复第 52–74、181–186 页；txt 行 2433–2900、8749–8900）",
+              "link": "/kb2024/874639-阿宽食品#_3-首轮问题-3-及问题-8-1-食品安全合规与-ipo-撤回-首轮回复第-52–74、181–186-页-txt-行-2433–2900、8749–8900"
+            },
+            {
+              "text": "4. 二轮问题 1：期后减资的程序瑕疵与补救（二轮回复第 4–22 页；txt 行 67–1030）",
+              "link": "/kb2024/874639-阿宽食品#_4-二轮问题-1-期后减资的程序瑕疵与补救-二轮回复第-4–22-页-txt-行-67–1030"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874639-阿宽食品#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874639-阿宽食品#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874646-天基生物": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北天基生物能源股份有限公司（874646·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874646-天基生物"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874646-天基生物#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874646-天基生物#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874646-天基生物#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2（2）（3）：餐厨废弃物处置特许经营权与业务资质（首轮回复txt行3665—4388，回复第93—107页）",
+              "link": "/kb2024/874646-天基生物#_1-首轮问题2-2-3-餐厨废弃物处置特许经营权与业务资质-首轮回复txt行3665—4388-回复第93—107页"
+            },
+            {
+              "text": "2. 首轮问题3：出资瑕疵的货币置换与追责时效论证（首轮回复txt行4389—4873，回复第108—118页）",
+              "link": "/kb2024/874646-天基生物#_2-首轮问题3-出资瑕疵的货币置换与追责时效论证-首轮回复txt行4389—4873-回复第108—118页"
+            },
+            {
+              "text": "3. 首轮问题7：夫妻共同实控下的公司治理、子公司与关联资金拆入（首轮回复txt行7361—8793，回复第181—214页）",
+              "link": "/kb2024/874646-天基生物#_3-首轮问题7-夫妻共同实控下的公司治理、子公司与关联资金拆入-首轮回复txt行7361—8793-回复第181—214页"
+            },
+            {
+              "text": "4. 二轮问题1：欧盟反倾销对持续经营与挂牌条件的影响（二轮回复txt行1—635，全文）",
+              "link": "/kb2024/874646-天基生物#_4-二轮问题1-欧盟反倾销对持续经营与挂牌条件的影响-二轮回复txt行1—635-全文"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874646-天基生物#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874646-天基生物#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874647-张恒春": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽张恒春药业股份有限公司（874647·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874647-张恒春"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874647-张恒春#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874647-张恒春#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874647-张恒春#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1(1)(2)(3)：零资产承债式兼并、闫永明犯罪影响与国资程序（首轮回复第4—15页；20240927 txt行60—420）",
+              "link": "/kb2024/874647-张恒春#_1-首轮问题1-1-2-3-零资产承债式兼并、闫永明犯罪影响与国资程序-首轮回复第4—15页-20240927-txt行60—420"
+            },
+            {
+              "text": "2. 首轮问题1(4)(7)：管理层收购、股权纠纷诉讼与红筹架构搭建拆除（首轮回复第15—53页；txt行380—2075）",
+              "link": "/kb2024/874647-张恒春#_2-首轮问题1-4-7-管理层收购、股权纠纷诉讼与红筹架构搭建拆除-首轮回复第15—53页-txt行380—2075"
+            },
+            {
+              "text": "3. 首轮问题2：奇圣胶囊案、药品质量处罚与召回、商标诉讼（首轮回复第69—117页；txt行2724—4612）",
+              "link": "/kb2024/874647-张恒春#_3-首轮问题2-奇圣胶囊案、药品质量处罚与召回、商标诉讼-首轮回复第69—117页-txt行2724—4612"
+            },
+            {
+              "text": "4. 首轮问题4：特殊投资条款的解除（首轮回复第125—133页；txt行4926—5220）",
+              "link": "/kb2024/874647-张恒春#_4-首轮问题4-特殊投资条款的解除-首轮回复第125—133页-txt行4926—5220"
+            },
+            {
+              "text": "5. 首轮问题3：重污染行业环保与未验先投（首轮回复第117—125页；txt行4613—4925）",
+              "link": "/kb2024/874647-张恒春#_5-首轮问题3-重污染行业环保与未验先投-首轮回复第117—125页-txt行4613—4925"
+            },
+            {
+              "text": "6. 首轮问题9(1)：高校教授任独立董事与核心技术职务发明（首轮回复第201—209页；txt行8373—8560）",
+              "link": "/kb2024/874647-张恒春#_6-首轮问题9-1-高校教授任独立董事与核心技术职务发明-首轮回复第201—209页-txt行8373—8560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874647-张恒春#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874647-张恒春#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874648-金鹏香料": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽金鹏香精香料股份有限公司（874648·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874648-金鹏香料"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874648-金鹏香料#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874648-金鹏香料#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874648-金鹏香料#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：重污染行业环保九项核查与在建项目环评（首轮回复第3—18页；txt行60—762）",
+              "link": "/kb2024/874648-金鹏香料#_1-首轮问题1-重污染行业环保九项核查与在建项目环评-首轮回复第3—18页-txt行60—762"
+            },
+            {
+              "text": "2. 首轮问题2：危化品资质、房产权属与环境违法处理（首轮回复第19—37页；txt行763—1542）",
+              "link": "/kb2024/874648-金鹏香料#_2-首轮问题2-危化品资质、房产权属与环境违法处理-首轮回复第19—37页-txt行763—1542"
+            },
+            {
+              "text": "3. 首轮问题3：家族代持五步还原与向实控人授予股权激励（首轮回复第38—100页；txt行1543—3013）",
+              "link": "/kb2024/874648-金鹏香料#_3-首轮问题3-家族代持五步还原与向实控人授予股权激励-首轮回复第38—100页-txt行1543—3013"
+            },
+            {
+              "text": "4. 首轮问题8(1)与二轮问题2：父子控制的公司治理与实控人个人卡收款（首轮回复第120—137页；txt行5277—5620；二轮回复第10—18页；txt行505—700）",
+              "link": "/kb2024/874648-金鹏香料#_4-首轮问题8-1-与二轮问题2-父子控制的公司治理与实控人个人卡收款-首轮回复第120—137页-txt行5277—5620-二轮回复第10—18页-txt行505—700"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874648-金鹏香料#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874648-金鹏香料#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874650-天祥股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "河南天祥新材料股份有限公司（874650·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874650-天祥股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874650-天祥股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874650-天祥股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874650-天祥股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3及二轮(1)：中小企业发展基金特殊投资条款（首轮回复第85–94页；首轮回复txt行3404–3960；二轮回复txt行2106–2205）",
+              "link": "/kb2024/874650-天祥股份#_1-首轮问题3及二轮-1-中小企业发展基金特殊投资条款-首轮回复第85–94页-首轮回复txt行3404–3960-二轮回复txt行2106–2205"
+            },
+            {
+              "text": "2. 首轮问题1及二轮(2)：无证房产与越界建房（首轮回复第3–46页；首轮回复txt行54–1782；二轮回复txt行2206–2320）",
+              "link": "/kb2024/874650-天祥股份#_2-首轮问题1及二轮-2-无证房产与越界建房-首轮回复第3–46页-首轮回复txt行54–1782-二轮回复txt行2206–2320"
+            },
+            {
+              "text": "3. 首轮问题2及二轮(3)(4)：股权代持、股权激励与国有出资瑕疵（首轮回复第47–84页；首轮回复txt行1783–3403；二轮回复txt行2211–2460）",
+              "link": "/kb2024/874650-天祥股份#_3-首轮问题2及二轮-3-4-股权代持、股权激励与国有出资瑕疵-首轮回复第47–84页-首轮回复txt行1783–3403-二轮回复txt行2211–2460"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874650-天祥股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874650-天祥股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874652-睿健医疗": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "四川睿健医疗科技股份有限公司（874652·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874652-睿健医疗"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874652-睿健医疗#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874652-睿健医疗#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874652-睿健医疗#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1（1）（2）：美宜科收购控股权与实控人变更（首轮回复 txt 行 70-490）",
+              "link": "/kb2024/874652-睿健医疗#_1-首轮问题-1-1-2-美宜科收购控股权与实控人变更-首轮回复-txt-行-70-490"
+            },
+            {
+              "text": "2. 首轮问题 1（4）：宁波正垚\"预留平台\"与 2024 年股权激励实施（首轮回复 txt 行 672-980）",
+              "link": "/kb2024/874652-睿健医疗#_2-首轮问题-1-4-宁波正垚-预留平台-与-2024-年股权激励实施-首轮回复-txt-行-672-980"
+            },
+            {
+              "text": "3. 首轮问题 1（5）：收购后大额分红与分红款流向（首轮回复 txt 行 983-1092）",
+              "link": "/kb2024/874652-睿健医疗#_3-首轮问题-1-5-收购后大额分红与分红款流向-首轮回复-txt-行-983-1092"
+            },
+            {
+              "text": "4. 首轮问题 2：未以欧赛医疗为申报主体（首轮回复 txt 行 2083-2408）",
+              "link": "/kb2024/874652-睿健医疗#_4-首轮问题-2-未以欧赛医疗为申报主体-首轮回复-txt-行-2083-2408"
+            },
+            {
+              "text": "5. 首轮问题 3：与普华和顺、乐普医疗的独立性（首轮回复 txt 行 2410-3484）",
+              "link": "/kb2024/874652-睿健医疗#_5-首轮问题-3-与普华和顺、乐普医疗的独立性-首轮回复-txt-行-2410-3484"
+            },
+            {
+              "text": "6. 首轮问题 4：12 家投资人特殊投资条款的解除、恢复与未解除清单（首轮回复 txt 行 3486-4624）",
+              "link": "/kb2024/874652-睿健医疗#_6-首轮问题-4-12-家投资人特殊投资条款的解除、恢复与未解除清单-首轮回复-txt-行-3486-4624"
+            },
+            {
+              "text": "7. 首轮问题 6：继受取得专利与尼普洛专利诉讼（首轮回复 txt 行 6046-6771）",
+              "link": "/kb2024/874652-睿健医疗#_7-首轮问题-6-继受取得专利与尼普洛专利诉讼-首轮回复-txt-行-6046-6771"
+            },
+            {
+              "text": "8. 首轮问题 5：医疗器械资质、超产能与第三方代缴社保（首轮回复 txt 行 4626-6044）",
+              "link": "/kb2024/874652-睿健医疗#_8-首轮问题-5-医疗器械资质、超产能与第三方代缴社保-首轮回复-txt-行-4626-6044"
+            },
+            {
+              "text": "9. 首轮问题 13（1）（2）：治理整改与二次申报一致性（首轮回复 txt 行 12512-末段）",
+              "link": "/kb2024/874652-睿健医疗#_9-首轮问题-13-1-2-治理整改与二次申报一致性-首轮回复-txt-行-12512-末段"
+            },
+            {
+              "text": "10. 二轮问题 3：关联转让条款义务主体与回购履约能力测算（二轮回复 txt 行 665-952）",
+              "link": "/kb2024/874652-睿健医疗#_10-二轮问题-3-关联转让条款义务主体与回购履约能力测算-二轮回复-txt-行-665-952"
+            },
+            {
+              "text": "11. 二轮问题 4：欧赛医疗超产能生产整改（二轮回复 txt 行 954-末段）",
+              "link": "/kb2024/874652-睿健医疗#_11-二轮问题-4-欧赛医疗超产能生产整改-二轮回复-txt-行-954-末段"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874652-睿健医疗#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874652-睿健医疗#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874655-中鹏科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东中鹏热能科技股份有限公司（874655·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874655-中鹏科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874655-中鹏科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874655-中鹏科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874655-中鹏科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：劳务外包合规与子公司安全生产事故（问询回复第 3–15 页；txt 行 58–611）",
+              "link": "/kb2024/874655-中鹏科技#_1-首轮问题-1-劳务外包合规与子公司安全生产事故-问询回复第-3–15-页-txt-行-58–611"
+            },
+            {
+              "text": "2. 首轮问题 2：特殊投资条款的清理与存续（问询回复第 16–26 页；txt 行 612–1170）",
+              "link": "/kb2024/874655-中鹏科技#_2-首轮问题-2-特殊投资条款的清理与存续-问询回复第-16–26-页-txt-行-612–1170"
+            },
+            {
+              "text": "3. 首轮问题 3：历史沿革、员工持股平台与新增股东（问询回复第 27–45 页；txt 行 1171–1977）",
+              "link": "/kb2024/874655-中鹏科技#_3-首轮问题-3-历史沿革、员工持股平台与新增股东-问询回复第-27–45-页-txt-行-1171–1977"
+            },
+            {
+              "text": "4. 首轮问题 11(4)：实控人亲属未认定为共同实控人（问询回复第 234–238 页；txt 行 10119–10303）",
+              "link": "/kb2024/874655-中鹏科技#_4-首轮问题-11-4-实控人亲属未认定为共同实控人-问询回复第-234–238-页-txt-行-10119–10303"
+            },
+            {
+              "text": "5. 首轮问题 11(1)：个人卡收付款与现金坐支（问询回复第 205–208 页；txt 行 8830–8970）",
+              "link": "/kb2024/874655-中鹏科技#_5-首轮问题-11-1-个人卡收付款与现金坐支-问询回复第-205–208-页-txt-行-8830–8970"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874655-中鹏科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874655-中鹏科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874656-达实智控": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市达实智控科技股份有限公司（874656·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874656-达实智控"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874656-达实智控#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874656-达实智控#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874656-达实智控#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1（4）（5）：惠州达实环评未批先建与排污合规（首轮回复第15—19页；20240802 txt行588—780）",
+              "link": "/kb2024/874656-达实智控#_1-首轮问题1-4-5-惠州达实环评未批先建与排污合规-首轮回复第15—19页-20240802-txt行588—780"
+            },
+            {
+              "text": "2. 首轮问题1（2）（3）：自有土地无房与租赁历史遗留违法建筑（首轮回复第7—14页；txt行338—520）",
+              "link": "/kb2024/874656-达实智控#_2-首轮问题1-2-3-自有土地无房与租赁历史遗留违法建筑-首轮回复第7—14页-txt行338—520"
+            },
+            {
+              "text": "3. 首轮问题1（6）：劳务派遣用工比例超限（首轮回复第20—22页；txt行783—905）",
+              "link": "/kb2024/874656-达实智控#_3-首轮问题1-6-劳务派遣用工比例超限-首轮回复第20—22页-txt行783—905"
+            },
+            {
+              "text": "4. 首轮问题1（7）：关联方Mania同业竞争的处置（首轮回复第22—25页；txt行895—1095）",
+              "link": "/kb2024/874656-达实智控#_4-首轮问题1-7-关联方mania同业竞争的处置-首轮回复第22—25页-txt行895—1095"
+            },
+            {
+              "text": "5. 首轮问题2：同股不同价增资、股权激励与代持解除（首轮回复第28—43页；txt行1096—1790）",
+              "link": "/kb2024/874656-达实智控#_5-首轮问题2-同股不同价增资、股权激励与代持解除-首轮回复第28—43页-txt行1096—1790"
+            },
+            {
+              "text": "6. 首轮问题6（1）：前次挂牌信息披露瑕疵与摘牌期间专项核查（首轮回复第157—165页；txt行6383—6790）",
+              "link": "/kb2024/874656-达实智控#_6-首轮问题6-1-前次挂牌信息披露瑕疵与摘牌期间专项核查-首轮回复第157—165页-txt行6383—6790"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874656-达实智控#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874656-达实智控#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874658-智汇新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "常州智汇新材科技股份有限公司（874658·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874658-智汇新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874658-智汇新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874658-智汇新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874658-智汇新材#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题四：设立时代持、还原路径与君合科技竞业禁止（首轮回复第59—79页；txt行2189—3121）",
+              "link": "/kb2024/874658-智汇新材#_1-首轮问题四-设立时代持、还原路径与君合科技竞业禁止-首轮回复第59—79页-txt行2189—3121"
+            },
+            {
+              "text": "2. 首轮问题五：顾飞共同实控人认定与氟锂时代同业竞争（首轮回复第80—85页；txt行3122—3312）",
+              "link": "/kb2024/874658-智汇新材#_2-首轮问题五-顾飞共同实控人认定与氟锂时代同业竞争-首轮回复第80—85页-txt行3122—3312"
+            },
+            {
+              "text": "3. 首轮问题七(二)(三)及二轮问题2：劳务派遣超比例、安全生产亡人事故、个人卡代付电费（首轮回复第110—118、103—109页；txt行4135—4483、3916—4134；二轮回复第14—20页；txt行447—560）",
+              "link": "/kb2024/874658-智汇新材#_3-首轮问题七-二-三-及二轮问题2-劳务派遣超比例、安全生产亡人事故、个人卡代付电费-首轮回复第110—118、103—109页-txt行4135—4483、3916—4134-二轮回复第14—20页-txt行447—560"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874658-智汇新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874658-智汇新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874659-深鹏科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东深鹏科技股份有限公司（874659·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874659-深鹏科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874659-深鹏科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874659-深鹏科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874659-深鹏科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1(1)及二轮问题1：创始股东代持的形成、还原与核查有效性（首轮回复第2–7页；首轮回复txt行70–470；二轮回复txt行42–260）",
+              "link": "/kb2024/874659-深鹏科技#_1-首轮问题1-1-及二轮问题1-创始股东代持的形成、还原与核查有效性-首轮回复第2–7页-首轮回复txt行70–470-二轮回复txt行42–260"
+            },
+            {
+              "text": "2. 首轮问题1(1)③：国资机构投资者东证宏德的程序与国有股权设置批复（首轮回复第6–8页；首轮回复txt行272–430）",
+              "link": "/kb2024/874659-深鹏科技#_2-首轮问题1-1-3-国资机构投资者东证宏德的程序与国有股权设置批复-首轮回复第6–8页-首轮回复txt行272–430"
+            },
+            {
+              "text": "3. 首轮问题1(2)：两次股权激励（鹏诚同创、深信共创）（首轮回复第8–25页；首轮回复txt行430–930）",
+              "link": "/kb2024/874659-深鹏科技#_3-首轮问题1-2-两次股权激励-鹏诚同创、深信共创-首轮回复第8–25页-首轮回复txt行430–930"
+            },
+            {
+              "text": "4. 首轮问题2：生产经营合规性（首轮回复第26–43页；首轮回复txt行930–1500）",
+              "link": "/kb2024/874659-深鹏科技#_4-首轮问题2-生产经营合规性-首轮回复第26–43页-首轮回复txt行930–1500"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874659-深鹏科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874659-深鹏科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874660-小鸟科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京小鸟科技股份有限公司（874660·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874660-小鸟科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874660-小鸟科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874660-小鸟科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874660-小鸟科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：摘牌后增资定价、2023 年股权激励与 200 人穿透（首轮回复 txt 行 68-1136）",
+              "link": "/kb2024/874660-小鸟科技#_1-首轮问题-1-摘牌后增资定价、2023-年股权激励与-200-人穿透-首轮回复-txt-行-68-1136"
+            },
+            {
+              "text": "2. 首轮问题 2：军工子公司资质、申报主体选择与子公司注销（首轮回复 txt 行 1138-1853）",
+              "link": "/kb2024/874660-小鸟科技#_2-首轮问题-2-军工子公司资质、申报主体选择与子公司注销-首轮回复-txt-行-1138-1853"
+            },
+            {
+              "text": "3. 首轮问题 3：外协、域名备案、租赁房产、招投标与商业贿赂（首轮回复 txt 行 1855-2828）",
+              "link": "/kb2024/874660-小鸟科技#_3-首轮问题-3-外协、域名备案、租赁房产、招投标与商业贿赂-首轮回复-txt-行-1855-2828"
+            },
+            {
+              "text": "4. 首轮问题 8：中电科关联销售与应收代垫款（首轮回复 txt 行 7335-7797）",
+              "link": "/kb2024/874660-小鸟科技#_4-首轮问题-8-中电科关联销售与应收代垫款-首轮回复-txt-行-7335-7797"
+            },
+            {
+              "text": "5. 首轮问题 9：前次挂牌一致性、特殊投资条款与金融负债、独董与专利纠纷（首轮回复 txt 行 7799-11150）",
+              "link": "/kb2024/874660-小鸟科技#_5-首轮问题-9-前次挂牌一致性、特殊投资条款与金融负债、独董与专利纠纷-首轮回复-txt-行-7799-11150"
+            },
+            {
+              "text": "6. 二轮问题 1：附恢复条件特殊投资条款与实控人回购履约测算（二轮回复 txt 行 65-614）",
+              "link": "/kb2024/874660-小鸟科技#_6-二轮问题-1-附恢复条件特殊投资条款与实控人回购履约测算-二轮回复-txt-行-65-614"
+            },
+            {
+              "text": "7. 二轮问题 5（2）：利亚德、奥拓电子、艾比森上市公司股东关联交易参照核查（二轮回复 txt 行 2987-3254）",
+              "link": "/kb2024/874660-小鸟科技#_7-二轮问题-5-2-利亚德、奥拓电子、艾比森上市公司股东关联交易参照核查-二轮回复-txt-行-2987-3254"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874660-小鸟科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874660-小鸟科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874661-宸芯科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "宸芯科技股份有限公司（874661·新三板）审核问询法律问题回溯（简版）",
+      "link": "/kb2024/874661-宸芯科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874661-宸芯科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874661-宸芯科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874661-宸芯科技#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874661-宸芯科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874661-宸芯科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874662-建工资源": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京建工资源循环利用股份有限公司（874662·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874662-建工资源"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874662-建工资源#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874662-建工资源#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874662-建工资源#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3：国资程序全链条、券商关联基金入股与国有股权设置批复（首轮回复第69—90页；txt行2844—3772）",
+              "link": "/kb2024/874662-建工资源#_1-首轮问题3-国资程序全链条、券商关联基金入股与国有股权设置批复-首轮回复第69—90页-txt行2844—3772"
+            },
+            {
+              "text": "2. 首轮问题1：与控股股东控制企业的同业竞争（首轮回复第4—30页；txt行63—1282）",
+              "link": "/kb2024/874662-建工资源#_2-首轮问题1-与控股股东控制企业的同业竞争-首轮回复第4—30页-txt行63—1282"
+            },
+            {
+              "text": "3. 首轮问题4与8：政府无偿用地/划拨用地与特殊投资条款效力中止（首轮回复第90—101、169—182页；txt行3773—4308、6842—7290）",
+              "link": "/kb2024/874662-建工资源#_3-首轮问题4与8-政府无偿用地-划拨用地与特殊投资条款效力中止-首轮回复第90—101、169—182页-txt行3773—4308、6842—7290"
+            },
+            {
+              "text": "4. 二轮问题1：会计师事务所被暂停证券业务后的更换（二轮回复第4—12页；txt行58—375）",
+              "link": "/kb2024/874662-建工资源#_4-二轮问题1-会计师事务所被暂停证券业务后的更换-二轮回复第4—12页-txt行58—375"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874662-建工资源#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874662-建工资源#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874663-时代高科": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市时代高科技设备股份有限公司（874663·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874663-时代高科"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874663-时代高科#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874663-时代高科#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874663-时代高科#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：实控人认定、国有股权、客户入股与前次申报未披露事项（首轮回复txt行54-2101）",
+              "link": "/kb2024/874663-时代高科#_1-首轮问题1-实控人认定、国有股权、客户入股与前次申报未披露事项-首轮回复txt行54-2101"
+            },
+            {
+              "text": "2. 首轮问题2 及二轮问题1：特殊投资条款——历史条款解除与回购履约能力（首轮回复txt行2102-2596；二轮回复txt行62-518）",
+              "link": "/kb2024/874663-时代高科#_2-首轮问题2-及二轮问题1-特殊投资条款——历史条款解除与回购履约能力-首轮回复txt行2102-2596-二轮回复txt行62-518"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874663-时代高科#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874663-时代高科#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874664-川力智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "成都川力智能流体设备股份有限公司（874664·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874664-川力智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874664-川力智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874664-川力智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874664-川力智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：历史沿革——非货币出资、股权转让定价、员工持股、代持及川力阀业收购（首轮回复txt行58-813）",
+              "link": "/kb2024/874664-川力智能#_1-首轮问题1-历史沿革——非货币出资、股权转让定价、员工持股、代持及川力阀业收购-首轮回复txt行58-813"
+            },
+            {
+              "text": "2. 首轮问题2：业务合规性——涉水许可、无证房产、招投标、委外加工与安全生产处罚（首轮回复txt行815-2067）",
+              "link": "/kb2024/874664-川力智能#_2-首轮问题2-业务合规性——涉水许可、无证房产、招投标、委外加工与安全生产处罚-首轮回复txt行815-2067"
+            },
+            {
+              "text": "3. 首轮问题7：子公司少数股东的关联关系、共同投资审议程序与定价公允性（首轮回复txt行9324-10043）",
+              "link": "/kb2024/874664-川力智能#_3-首轮问题7-子公司少数股东的关联关系、共同投资审议程序与定价公允性-首轮回复txt行9324-10043"
+            },
+            {
+              "text": "4. 二轮问题2：宜宾环保、昭通直饮水、临邛销售部关联交易公允性（二轮回复txt行1249-1429；律师未发表意见）",
+              "link": "/kb2024/874664-川力智能#_4-二轮问题2-宜宾环保、昭通直饮水、临邛销售部关联交易公允性-二轮回复txt行1249-1429-律师未发表意见"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874664-川力智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874664-川力智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874666-深圳中基": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市中基自动化股份有限公司（874666·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874666-深圳中基"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874666-深圳中基#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874666-深圳中基#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874666-深圳中基#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1 及二轮问题1：特殊投资条款——已触发的回购与业绩补偿、实控人履约能力与涉诉风险（首轮回复txt行70-1050；二轮回复txt行62-414）",
+              "link": "/kb2024/874666-深圳中基#_1-首轮问题1-及二轮问题1-特殊投资条款——已触发的回购与业绩补偿、实控人履约能力与涉诉风险-首轮回复txt行70-1050-二轮回复txt行62-414"
+            },
+            {
+              "text": "2. 首轮问题2：历史沿革——国资股东、产业资本入股、代持与员工持股平台（首轮回复txt行1051-3800 区间）",
+              "link": "/kb2024/874666-深圳中基#_2-首轮问题2-历史沿革——国资股东、产业资本入股、代持与员工持股平台-首轮回复txt行1051-3800-区间"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874666-深圳中基#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874666-深圳中基#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874667-小草数字": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "内蒙古小草数字农业生态股份有限公司（874667·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874667-小草数字"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874667-小草数字#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874667-小草数字#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874667-小草数字#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题一(1)：上市公司分拆沿革与非货币出资瑕疵（首轮回复第3—12页；txt行81—700）",
+              "link": "/kb2024/874667-小草数字#_1-首轮问题一-1-上市公司分拆沿革与非货币出资瑕疵-首轮回复第3—12页-txt行81—700"
+            },
+            {
+              "text": "2. 首轮问题一(2)：实控人认定、借款出资与15名隐名股东代持还原（首轮回复第12—30页；txt行700—1472）",
+              "link": "/kb2024/874667-小草数字#_2-首轮问题一-2-实控人认定、借款出资与15名隐名股东代持还原-首轮回复第12—30页-txt行700—1472"
+            },
+            {
+              "text": "3. 二轮问题一(2)(4)(5)：普天园林资金占用代偿、独立性与王召明控制追问（二轮回复第4—36页；txt行72—1308）",
+              "link": "/kb2024/874667-小草数字#_3-二轮问题一-2-4-5-普天园林资金占用代偿、独立性与王召明控制追问-二轮回复第4—36页-txt行72—1308"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874667-小草数字#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874667-小草数字#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874668-江锅股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏江锅智能装备股份有限公司（874668·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874668-江锅股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874668-江锅股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874668-江锅股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874668-江锅股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题7：无控股股东、无实际控制人的认定与规避监管排查（回复第130-153页；txt行5762-6830）",
+              "link": "/kb2024/874668-江锅股份#_1-首轮问题7-无控股股东、无实际控制人的认定与规避监管排查-回复第130-153页-txt行5762-6830"
+            },
+            {
+              "text": "2. 首轮问题8＋二轮问题1：国资程序瑕疵追溯整改与职工持股会双层代持清理（首轮回复第154-194页；txt行6831-8758；二轮回复第3-40页；txt行60-1782）",
+              "link": "/kb2024/874668-江锅股份#_2-首轮问题8-二轮问题1-国资程序瑕疵追溯整改与职工持股会双层代持清理-首轮回复第154-194页-txt行6831-8758-二轮回复第3-40页-txt行60-1782"
+            },
+            {
+              "text": "3. 首轮问题9（2）：特殊投资条款的终止与自始无效（回复第199-202页；txt行8945-9060）",
+              "link": "/kb2024/874668-江锅股份#_3-首轮问题9-2-特殊投资条款的终止与自始无效-回复第199-202页-txt行8945-9060"
+            },
+            {
+              "text": "4. 首轮问题9（1）（3）（4）：超环评产能、0元转让艾克沃与监检证书（回复第195-199、202-210页；txt行8872-8944、9062-9260）",
+              "link": "/kb2024/874668-江锅股份#_4-首轮问题9-1-3-4-超环评产能、0元转让艾克沃与监检证书-回复第195-199、202-210页-txt行8872-8944、9062-9260"
+            },
+            {
+              "text": "5. 首轮问题9（6）：四个员工持股平台股权激励（回复第210-220页前后；txt行9000前后）",
+              "link": "/kb2024/874668-江锅股份#_5-首轮问题9-6-四个员工持股平台股权激励-回复第210-220页前后-txt行9000前后"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874668-江锅股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874668-江锅股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874669-德硕科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江德硕科技股份有限公司（874669·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874669-德硕科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874669-德硕科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874669-德硕科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874669-德硕科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题6：实物出资瑕疵补正与员工持股平台（首轮回复第152—157页；txt行6262—6530）",
+              "link": "/kb2024/874669-德硕科技#_1-首轮问题6-实物出资瑕疵补正与员工持股平台-首轮回复第152—157页-txt行6262—6530"
+            },
+            {
+              "text": "2. 首轮问题9(1)与二轮问题5：实控人家族企业群同业竞争与德凯三企控制权转让（首轮回复第188—196页txt行7727—8200；二轮回复第42—57页）",
+              "link": "/kb2024/874669-德硕科技#_2-首轮问题9-1-与二轮问题5-实控人家族企业群同业竞争与德凯三企控制权转让-首轮回复第188—196页txt行7727—8200-二轮回复第42—57页"
+            },
+            {
+              "text": "3. 三轮问题2：德凯三企\"标准地\"投资建设合同条款规避的土地合规分析（三轮回复第12—22页；txt行560—870）",
+              "link": "/kb2024/874669-德硕科技#_3-三轮问题2-德凯三企-标准地-投资建设合同条款规避的土地合规分析-三轮回复第12—22页-txt行560—870"
+            },
+            {
+              "text": "4. 首轮问题9(3)：继受专利受让与金伯利电器授权经营（首轮回复第207—214页；txt行8674—9210）",
+              "link": "/kb2024/874669-德硕科技#_4-首轮问题9-3-继受专利受让与金伯利电器授权经营-首轮回复第207—214页-txt行8674—9210"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874669-德硕科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874669-德硕科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874671-吉宝股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江吉宝智能装备股份有限公司（874671·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874671-吉宝股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874671-吉宝股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874671-吉宝股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874671-吉宝股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1（1）：债权形成、债转股未评估瑕疵与 0 元代持还原转让（首轮回复 txt 行 81-580）",
+              "link": "/kb2024/874671-吉宝股份#_1-首轮问题-1-1-债权形成、债转股未评估瑕疵与-0-元代持还原转让-首轮回复-txt-行-81-580"
+            },
+            {
+              "text": "2. 首轮问题 1（3）：减资未编制资产负债表及财产清单的程序瑕疵（首轮回复 txt 行 580-660）",
+              "link": "/kb2024/874671-吉宝股份#_2-首轮问题-1-3-减资未编制资产负债表及财产清单的程序瑕疵-首轮回复-txt-行-580-660"
+            },
+            {
+              "text": "3. 首轮问题 1（4）：万林国际增资即退出与两步转手（首轮回复 txt 行 633-780）",
+              "link": "/kb2024/874671-吉宝股份#_3-首轮问题-1-4-万林国际增资即退出与两步转手-首轮回复-txt-行-633-780"
+            },
+            {
+              "text": "4. 首轮问题 1（2）（5）：员工持股平台与 200 人穿透（首轮回复 txt 行 560-780、900-1322）",
+              "link": "/kb2024/874671-吉宝股份#_4-首轮问题-1-2-5-员工持股平台与-200-人穿透-首轮回复-txt-行-560-780、900-1322"
+            },
+            {
+              "text": "5. 首轮问题 2：无证房产、环评未验收与资质覆盖（首轮回复 txt 行 1324-2072）",
+              "link": "/kb2024/874671-吉宝股份#_5-首轮问题-2-无证房产、环评未验收与资质覆盖-首轮回复-txt-行-1324-2072"
+            },
+            {
+              "text": "6. 首轮问题 7（1）：未成年女儿沈柏懿不认定共同实控人（首轮回复 txt 行 7939-8190）",
+              "link": "/kb2024/874671-吉宝股份#_6-首轮问题-7-1-未成年女儿沈柏懿不认定共同实控人-首轮回复-txt-行-7939-8190"
+            },
+            {
+              "text": "7. 首轮问题 7（2）：三亚圣港、产融鼎捷投资的 IPO 申报死线回购条款（首轮回复 txt 行 8190-8460）",
+              "link": "/kb2024/874671-吉宝股份#_7-首轮问题-7-2-三亚圣港、产融鼎捷投资的-ipo-申报死线回购条款-首轮回复-txt-行-8190-8460"
+            },
+            {
+              "text": "8. 首轮问题 7（6）：财务规范性——转贷、票据融资、第三方回款与微信收款（首轮回复 txt 行 8060-末段）",
+              "link": "/kb2024/874671-吉宝股份#_8-首轮问题-7-6-财务规范性——转贷、票据融资、第三方回款与微信收款-首轮回复-txt-行-8060-末段"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874671-吉宝股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874671-吉宝股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874675-明泰股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江明泰控股发展股份有限公司（874675·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874675-明泰股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874675-明泰股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874675-明泰股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874675-明泰股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：历史沿革——股权激励、减资程序与股权代持核查（回复第 4—13 页；txt 行 57—458）",
+              "link": "/kb2024/874675-明泰股份#_1-首轮问题-1-历史沿革——股权激励、减资程序与股权代持核查-回复第-4—13-页-txt-行-57—458"
+            },
+            {
+              "text": "2. 首轮问题 2：子公司收购中的子公司层面股权代持清理、业务资质与控制（回复第 14—29 页；txt 行 460—1050）",
+              "link": "/kb2024/874675-明泰股份#_2-首轮问题-2-子公司收购中的子公司层面股权代持清理、业务资质与控制-回复第-14—29-页-txt-行-460—1050"
+            },
+            {
+              "text": "3. 首轮问题 7(2)：公司治理——决策程序、董监高任职与实控人认定（回复第 77—94 页；txt 行 2933—3738）",
+              "link": "/kb2024/874675-明泰股份#_3-首轮问题-7-2-公司治理——决策程序、董监高任职与实控人认定-回复第-77—94-页-txt-行-2933—3738"
+            },
+            {
+              "text": "4. 首轮问题 7(3)：外协模式与关联外协（回复第 95—100 页；txt 行 3739—3997）",
+              "link": "/kb2024/874675-明泰股份#_4-首轮问题-7-3-外协模式与关联外协-回复第-95—100-页-txt-行-3739—3997"
+            },
+            {
+              "text": "5. 首轮问题 7(1)：前次主板申报撤回与媒体质疑（回复第 69—77 页；txt 行 2594—2932）",
+              "link": "/kb2024/874675-明泰股份#_5-首轮问题-7-1-前次主板申报撤回与媒体质疑-回复第-69—77-页-txt-行-2594—2932"
+            },
+            {
+              "text": "6. 首轮问题 7(4)：土地房屋用途、机构股东披露、独立董事与职业经历（回复第 101—121 页；txt 行 3998—4940）",
+              "link": "/kb2024/874675-明泰股份#_6-首轮问题-7-4-土地房屋用途、机构股东披露、独立董事与职业经历-回复第-101—121-页-txt-行-3998—4940"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874675-明泰股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874675-明泰股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874676-新大材料": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "胜利新大新材料股份有限公司（874676·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874676-新大材料"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874676-新大材料#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874676-新大材料#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874676-新大材料#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：历史沿革——集体企业改制、工会持股、股东人数超200人与代持（回复第3–57页；txt行60–2193）",
+              "link": "/kb2024/874676-新大材料#_1-首轮问题1-历史沿革——集体企业改制、工会持股、股东人数超200人与代持-回复第3–57页-txt行60–2193"
+            },
+            {
+              "text": "2. 首轮问题2：非货币出资——债转股与土地出资（回复第58–69页；txt行2194–2575）",
+              "link": "/kb2024/874676-新大材料#_2-首轮问题2-非货币出资——债转股与土地出资-回复第58–69页-txt行2194–2575"
+            },
+            {
+              "text": "3. 首轮问题3：无实际控制人认定（回复第70–101页；txt行2576–3763）",
+              "link": "/kb2024/874676-新大材料#_3-首轮问题3-无实际控制人认定-回复第70–101页-txt行2576–3763"
+            },
+            {
+              "text": "4. 首轮问题4：内部集资的合法合规性（回复第102–109页；txt行3764–4029）",
+              "link": "/kb2024/874676-新大材料#_4-首轮问题4-内部集资的合法合规性-回复第102–109页-txt行3764–4029"
+            },
+            {
+              "text": "5. 首轮问题5：生产经营及环保合规（回复第110–128页；txt行4030–5010）",
+              "link": "/kb2024/874676-新大材料#_5-首轮问题5-生产经营及环保合规-回复第110–128页-txt行4030–5010"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874676-新大材料#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874676-新大材料#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874677-唐兴科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽唐兴装备科技股份有限公司（874677·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874677-唐兴科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874677-唐兴科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874677-唐兴科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874677-唐兴科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 5：特殊投资条款——已解除四家与铜陵毅达存续承诺函（首轮回复 txt 行 3389-3557）",
+              "link": "/kb2024/874677-唐兴科技#_1-首轮问题-5-特殊投资条款——已解除四家与铜陵毅达存续承诺函-首轮回复-txt-行-3389-3557"
+            },
+            {
+              "text": "2. 首轮问题 6（1）：铜陵毅达入股价格与国资出资人穿透（首轮回复 txt 行 3559-3760）",
+              "link": "/kb2024/874677-唐兴科技#_2-首轮问题-6-1-铜陵毅达入股价格与国资出资人穿透-首轮回复-txt-行-3559-3760"
+            },
+            {
+              "text": "3. 首轮问题 6（2）：无证房产出资瑕疵与现金置换（首轮回复 txt 行 3760-3960）",
+              "link": "/kb2024/874677-唐兴科技#_3-首轮问题-6-2-无证房产出资瑕疵与现金置换-首轮回复-txt-行-3760-3960"
+            },
+            {
+              "text": "4. 首轮问题 6（3）：吸收合并海容川（首轮回复 txt 行 3960-4090）",
+              "link": "/kb2024/874677-唐兴科技#_4-首轮问题-6-3-吸收合并海容川-首轮回复-txt-行-3960-4090"
+            },
+            {
+              "text": "5. 首轮问题 6（4）（5）：员工持股平台与代持、200 人（首轮回复 txt 行 4090-4476）",
+              "link": "/kb2024/874677-唐兴科技#_5-首轮问题-6-4-5-员工持股平台与代持、200-人-首轮回复-txt-行-4090-4476"
+            },
+            {
+              "text": "6. 首轮问题 7（1）：马来西亚子公司 ODI 程序与外汇分红（首轮回复 txt 行 4620-4812）",
+              "link": "/kb2024/874677-唐兴科技#_6-首轮问题-7-1-马来西亚子公司-odi-程序与外汇分红-首轮回复-txt-行-4620-4812"
+            },
+            {
+              "text": "7. 首轮问题 7（2）（3）：创业板撤回转挂牌与租赁无证房产（首轮回复 txt 行 4814-5210）",
+              "link": "/kb2024/874677-唐兴科技#_7-首轮问题-7-2-3-创业板撤回转挂牌与租赁无证房产-首轮回复-txt-行-4814-5210"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874677-唐兴科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874677-唐兴科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874678-暨博医疗": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东暨博医疗集团股份有限公司（874678·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874678-暨博医疗"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874678-暨博医疗#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874678-暨博医疗#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874678-暨博医疗#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：业务及合规性——资质、用工、租赁、消防、广告、采购、医保、患者数据（首轮回复txt行40-4172，律师意见援引补充法律意见书（一））",
+              "link": "/kb2024/874678-暨博医疗#_1-首轮问题1-业务及合规性——资质、用工、租赁、消防、广告、采购、医保、患者数据-首轮回复txt行40-4172-律师意见援引补充法律意见书-一"
+            },
+            {
+              "text": "2. 首轮问题2：子公司架构及向实控人配偶梁爱群收购资产（首轮回复txt行4173-6025）",
+              "link": "/kb2024/874678-暨博医疗#_2-首轮问题2-子公司架构及向实控人配偶梁爱群收购资产-首轮回复txt行4173-6025"
+            },
+            {
+              "text": "3. 首轮问题3：历史沿革、员工持股、中博/忠大增资股份支付及博康企管份额代持（首轮回复txt行6026-7135）",
+              "link": "/kb2024/874678-暨博医疗#_3-首轮问题3-历史沿革、员工持股、中博-忠大增资股份支付及博康企管份额代持-首轮回复txt行6026-7135"
+            },
+            {
+              "text": "4. 二轮问题1：股权代持核查、异常入股与 17 号意见穿透追问（二轮回复txt行48-313，律师意见援引补充法律意见书（二））",
+              "link": "/kb2024/874678-暨博医疗#_4-二轮问题1-股权代持核查、异常入股与-17-号意见穿透追问-二轮回复txt行48-313-律师意见援引补充法律意见书-二"
+            },
+            {
+              "text": "5. 二轮问题2：划拨地/集体土地租赁、规划用途、消防、环评、医美、医患纠纷、医废与行政处罚重大违法认定（二轮回复txt行314-1889，律师意见援引补充法律意见书（二））",
+              "link": "/kb2024/874678-暨博医疗#_5-二轮问题2-划拨地-集体土地租赁、规划用途、消防、环评、医美、医患纠纷、医废与行政处罚重大违法认定-二轮回复txt行314-1889-律师意见援引补充法律意见书-二"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874678-暨博医疗#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874678-暨博医疗#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874679-正大种业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "襄阳正大种业股份有限公司（874679·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874679-正大种业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874679-正大种业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874679-正大种业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874679-正大种业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题一(1)(2)：外资入资程序、负面清单与代持规避外资持股比例限制（回复第 3—15 页；txt 行 130—608）",
+              "link": "/kb2024/874679-正大种业#_1-首轮问题一-1-2-外资入资程序、负面清单与代持规避外资持股比例限制-回复第-3—15-页-txt-行-130—608"
+            },
+            {
+              "text": "2. 首轮问题一(3)(4)(5)：平台份额代持解除、200 人穿透、集体资产与特殊投资条款（回复第 16—26 页；txt 行 610—1065）",
+              "link": "/kb2024/874679-正大种业#_2-首轮问题一-3-4-5-平台份额代持解除、200-人穿透、集体资产与特殊投资条款-回复第-16—26-页-txt-行-610—1065"
+            },
+            {
+              "text": "3. 首轮问题二：独立性——商标授权、与张掖谷大混同、董监高领薪与同业竞争（回复第 27—36 页；txt 行 1067—1484）",
+              "link": "/kb2024/874679-正大种业#_3-首轮问题二-独立性——商标授权、与张掖谷大混同、董监高领薪与同业竞争-回复第-27—36-页-txt-行-1067—1484"
+            },
+            {
+              "text": "4. 首轮问题三：业务资质、品种审定、合作研发授权与土地流转（回复第 37—60 页；txt 行 1485—2532）",
+              "link": "/kb2024/874679-正大种业#_4-首轮问题三-业务资质、品种审定、合作研发授权与土地流转-回复第-37—60-页-txt-行-1485—2532"
+            },
+            {
+              "text": "5. 首轮问题十(4)：报告期大额现金分红合规性（回复第 224—228 页；txt 行 9490—9644）",
+              "link": "/kb2024/874679-正大种业#_5-首轮问题十-4-报告期大额现金分红合规性-回复第-224—228-页-txt-行-9490—9644"
+            },
+            {
+              "text": "6. 首轮问题十二(1)：两项未决大额诉讼（回复第 244—247 页；txt 行 10296—10397）",
+              "link": "/kb2024/874679-正大种业#_6-首轮问题十二-1-两项未决大额诉讼-回复第-244—247-页-txt-行-10296—10397"
+            },
+            {
+              "text": "7. 二轮问题一：外资持股比例超限是否构成重大违法违规（回复第 4—11 页；二轮 txt 行 42—382）",
+              "link": "/kb2024/874679-正大种业#_7-二轮问题一-外资持股比例超限是否构成重大违法违规-回复第-4—11-页-二轮-txt-行-42—382"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874679-正大种业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874679-正大种业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874680-昂盛达": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "深圳市昂盛达电子股份有限公司（874680·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874680-昂盛达"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874680-昂盛达#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874680-昂盛达#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874680-昂盛达#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题2：历史沿革中的两例代持与1元转让链条（首轮回复第9—15页；20240829 txt行308—520）",
+              "link": "/kb2024/874680-昂盛达#_1-首轮问题2-历史沿革中的两例代持与1元转让链条-首轮回复第9—15页-20240829-txt行308—520"
+            },
+            {
+              "text": "2. 二轮问题3：诸葛炼20%持股未认定为共同实控人与规避限售质疑（二轮回复第37—43页；20240926 txt行1651—1890）",
+              "link": "/kb2024/874680-昂盛达#_2-二轮问题3-诸葛炼20-持股未认定为共同实控人与规避限售质疑-二轮回复第37—43页-20240926-txt行1651—1890"
+            },
+            {
+              "text": "3. 首轮问题1：家族100%持股下的治理规范（首轮回复第1—9页；20240829 txt行40—310）",
+              "link": "/kb2024/874680-昂盛达#_3-首轮问题1-家族100-持股下的治理规范-首轮回复第1—9页-20240829-txt行40—310"
+            },
+            {
+              "text": "4. 首轮问题7(2)：个人卡收付的整改闭环（首轮回复第116—118页；20240829 txt行4993—5120）",
+              "link": "/kb2024/874680-昂盛达#_4-首轮问题7-2-个人卡收付的整改闭环-首轮回复第116—118页-20240829-txt行4993—5120"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874680-昂盛达#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874680-昂盛达#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874681-经纬科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "郑州经纬科技实业股份有限公司（874681·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874681-经纬科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874681-经纬科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874681-经纬科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874681-经纬科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 6（1）：2019 年股权激励的退出与实控人上层收购（首轮回复 txt 行 5350-5700）",
+              "link": "/kb2024/874681-经纬科技#_1-首轮问题-6-1-2019-年股权激励的退出与实控人上层收购-首轮回复-txt-行-5350-5700"
+            },
+            {
+              "text": "2. 首轮问题 6（2）：2023 年第二次股权激励与份额代持（首轮回复 txt 行 5700-6074）",
+              "link": "/kb2024/874681-经纬科技#_2-首轮问题-6-2-2023-年第二次股权激励与份额代持-首轮回复-txt-行-5700-6074"
+            },
+            {
+              "text": "3. 首轮问题 7：历史沿革进出定价与平台代持核查（首轮回复 txt 行 6076-6524）",
+              "link": "/kb2024/874681-经纬科技#_3-首轮问题-7-历史沿革进出定价与平台代持核查-首轮回复-txt-行-6076-6524"
+            },
+            {
+              "text": "4. 首轮问题 8（1）：特殊投资条款终止协议与解除协议的效力（首轮回复 txt 行 6526-6620）",
+              "link": "/kb2024/874681-经纬科技#_4-首轮问题-8-1-特殊投资条款终止协议与解除协议的效力-首轮回复-txt-行-6526-6620"
+            },
+            {
+              "text": "5. 首轮问题 8（2）：子公司注销与参股公司股权转让（首轮回复 txt 行 6620-6900）",
+              "link": "/kb2024/874681-经纬科技#_5-首轮问题-8-2-子公司注销与参股公司股权转让-首轮回复-txt-行-6620-6900"
+            },
+            {
+              "text": "6. 首轮问题 8（7）：资金占用、个人卡与现金收付款（首轮回复 txt 行 6605-末段）",
+              "link": "/kb2024/874681-经纬科技#_6-首轮问题-8-7-资金占用、个人卡与现金收付款-首轮回复-txt-行-6605-末段"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874681-经纬科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874681-经纬科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874682-津移通信": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "天津七一二移动通信股份有限公司（874682·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874682-津移通信"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874682-津移通信#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874682-津移通信#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874682-津移通信#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1：通广工会持股与职工股权管理协会受托管理的清理（回复第 3—42 页；txt 行 65—1635）",
+              "link": "/kb2024/874682-津移通信#_1-首轮问题-1-通广工会持股与职工股权管理协会受托管理的清理-回复第-3—42-页-txt-行-65—1635"
+            },
+            {
+              "text": "2. 首轮问题 2：涉密信息系统集成资质的挂牌规范（回复第 43—52 页；txt 行 1636—2055）",
+              "link": "/kb2024/874682-津移通信#_2-首轮问题-2-涉密信息系统集成资质的挂牌规范-回复第-43—52-页-txt-行-1636—2055"
+            },
+            {
+              "text": "3. 首轮问题 3：上市公司子公司的决策、披露一致性与独立性（回复第 53—76 页；txt 行 2056—3177）",
+              "link": "/kb2024/874682-津移通信#_3-首轮问题-3-上市公司子公司的决策、披露一致性与独立性-回复第-53—76-页-txt-行-2056—3177"
+            },
+            {
+              "text": "4. 首轮问题 4 与问题 5(1)：国企员工持股平台合规与业务切换的国资程序（回复第 77—88、89—107 页；txt 行 3178—3739、3740—4171）",
+              "link": "/kb2024/874682-津移通信#_4-首轮问题-4-与问题-5-1-国企员工持股平台合规与业务切换的国资程序-回复第-77—88、89—107-页-txt-行-3178—3739、3740—4171"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874682-津移通信#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874682-津移通信#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874685-苏州双祺": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "苏州双祺自动化设备股份有限公司（874685·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874685-苏州双祺"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874685-苏州双祺#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874685-苏州双祺#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874685-苏州双祺#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 2(1)(2)：配偶不认定为共同实控人与\"为拿地增资、为股改减资\"（回复第 17—37 页；txt 行 824—3200）",
+              "link": "/kb2024/874685-苏州双祺#_1-首轮问题-2-1-2-配偶不认定为共同实控人与-为拿地增资、为股改减资-回复第-17—37-页-txt-行-824—3200"
+            },
+            {
+              "text": "2. 首轮问题 1(1)(2)：特种设备许可、类金融排除与招投标合规（回复第 3—16 页；txt 行 66—823）",
+              "link": "/kb2024/874685-苏州双祺#_2-首轮问题-1-1-2-特种设备许可、类金融排除与招投标合规-回复第-3—16-页-txt-行-66—823"
+            },
+            {
+              "text": "3. 首轮问题 1(4) 与 8-1：环保处罚、职务发明与竞业限制（回复第 14—16、176—187 页；txt 行 660—823、7163—7814）",
+              "link": "/kb2024/874685-苏州双祺#_3-首轮问题-1-4-与-8-1-环保处罚、职务发明与竞业限制-回复第-14—16、176—187-页-txt-行-660—823、7163—7814"
+            },
+            {
+              "text": "4. 首轮问题 8-2 与 8-3：员工持股平台苏州众祺与 5 次现金分红（回复第 187—208 页；txt 行 7815—8642）",
+              "link": "/kb2024/874685-苏州双祺#_4-首轮问题-8-2-与-8-3-员工持股平台苏州众祺与-5-次现金分红-回复第-187—208-页-txt-行-7815—8642"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874685-苏州双祺#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874685-苏州双祺#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874686-华景能源": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏华景智慧能源股份有限公司（874686·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874686-华景能源"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874686-华景能源#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874686-华景能源#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874686-华景能源#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：光伏业务资质与招投标合规（回复第4–23页；首轮回复txt行70–828）",
+              "link": "/kb2024/874686-华景能源#_1-首轮问题1-光伏业务资质与招投标合规-回复第4–23页-首轮回复txt行70–828"
+            },
+            {
+              "text": "2. 首轮问题2：历史沿革——壳公司、资产出资、国有股权程序瑕疵、明股实债与子公司代持（回复第24–59页；首轮回复txt行829–2110）",
+              "link": "/kb2024/874686-华景能源#_2-首轮问题2-历史沿革——壳公司、资产出资、国有股权程序瑕疵、明股实债与子公司代持-回复第24–59页-首轮回复txt行829–2110"
+            },
+            {
+              "text": "3. 首轮问题6(2)：易电通微网1,800万股股权质押（回复第209–212页；首轮回复txt行8614–8754）",
+              "link": "/kb2024/874686-华景能源#_3-首轮问题6-2-易电通微网1-800万股股权质押-回复第209–212页-首轮回复txt行8614–8754"
+            },
+            {
+              "text": "4. 首轮问题6(1)：房屋及土地——自有土地、屋顶租赁与国有林地（回复第194–208页；首轮回复txt行7975–8613）",
+              "link": "/kb2024/874686-华景能源#_4-首轮问题6-1-房屋及土地——自有土地、屋顶租赁与国有林地-回复第194–208页-首轮回复txt行7975–8613"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874686-华景能源#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874686-华景能源#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874688-华达通": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "惠州市华达通气体制造股份有限公司（874688·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874688-华达通"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874688-华达通#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874688-华达通#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874688-华达通#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：子公司华达石化历史沿革、国企改制与控制（回复第3–22页；首轮回复txt行63–870）",
+              "link": "/kb2024/874688-华达通#_1-首轮问题1-子公司华达石化历史沿革、国企改制与控制-回复第3–22页-首轮回复txt行63–870"
+            },
+            {
+              "text": "2. 首轮问题2：平价转让、连续增资与股权明晰（含代持专项核查）（回复第23–37页；首轮回复txt行871–1447）",
+              "link": "/kb2024/874688-华达通#_2-首轮问题2-平价转让、连续增资与股权明晰-含代持专项核查-回复第23–37页-首轮回复txt行871–1447"
+            },
+            {
+              "text": "3. 首轮问题3：危化品资质、划拨用地、无证房产、招投标与商业贿赂（回复第38–55页；首轮回复txt行1448–2294）",
+              "link": "/kb2024/874688-华达通#_3-首轮问题3-危化品资质、划拨用地、无证房产、招投标与商业贿赂-回复第38–55页-首轮回复txt行1448–2294"
+            },
+            {
+              "text": "4. 首轮问题4：两高事项与环保合规（回复第56–75页；首轮回复txt行2295–3186）",
+              "link": "/kb2024/874688-华达通#_4-首轮问题4-两高事项与环保合规-回复第56–75页-首轮回复txt行2295–3186"
+            },
+            {
+              "text": "5. 首轮问题9.1/9.2/9.3/9.4：前次申报、一致行动协议、聘请第三方、限售与治理（回复第150–174页；首轮回复txt行6367–7900）",
+              "link": "/kb2024/874688-华达通#_5-首轮问题9-1-9-2-9-3-9-4-前次申报、一致行动协议、聘请第三方、限售与治理-回复第150–174页-首轮回复txt行6367–7900"
+            },
+            {
+              "text": "6. 二轮问题3：划拨用地与无证房产追问、危废、节能审查、排污许可（二轮回复第41–86页；二轮回复txt行2031–4382）",
+              "link": "/kb2024/874688-华达通#_6-二轮问题3-划拨用地与无证房产追问、危废、节能审查、排污许可-二轮回复第41–86页-二轮回复txt行2031–4382"
+            },
+            {
+              "text": "7. 二轮问题4：华达石化改制定价公允性与国资审批权限（二轮回复第87–99页；二轮回复txt行4383–5026）",
+              "link": "/kb2024/874688-华达通#_7-二轮问题4-华达石化改制定价公允性与国资审批权限-二轮回复第87–99页-二轮回复txt行4383–5026"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874688-华达通#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874688-华达通#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874689-牙博士": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "牙博士医疗控股集团股份有限公司（874689·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874689-牙博士"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874689-牙博士#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874689-牙博士#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874689-牙博士#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题 1（1）-（5）：医保定点、业务与人员资质、个人信息、医疗纠纷、广告处罚（首轮回复 txt 行 62-2460）",
+              "link": "/kb2024/874689-牙博士#_1-首轮问题-1-1-5-医保定点、业务与人员资质、个人信息、医疗纠纷、广告处罚-首轮回复-txt-行-62-2460"
+            },
+            {
+              "text": "2. 首轮问题 1（8）：消防安全专项（首轮回复 txt 行 2463-2836）",
+              "link": "/kb2024/874689-牙博士#_2-首轮问题-1-8-消防安全专项-首轮回复-txt-行-2463-2836"
+            },
+            {
+              "text": "3. 首轮问题 2（1）：刘明非与陈国锋股权代持的两段式还原（首轮回复 txt 行 4636-4920）",
+              "link": "/kb2024/874689-牙博士#_3-首轮问题-2-1-刘明非与陈国锋股权代持的两段式还原-首轮回复-txt-行-4636-4920"
+            },
+            {
+              "text": "4. 首轮问题 2（2）：三个持股平台激励与实控人无偿出资（首轮回复 txt 行 4920-5300）",
+              "link": "/kb2024/874689-牙博士#_4-首轮问题-2-2-三个持股平台激励与实控人无偿出资-首轮回复-txt-行-4920-5300"
+            },
+            {
+              "text": "5. 首轮问题 2（3）（4）：乔治武股权转让诉讼与报告期后回购减资（首轮回复 txt 行 5300-5800）",
+              "link": "/kb2024/874689-牙博士#_5-首轮问题-2-3-4-乔治武股权转让诉讼与报告期后回购减资-首轮回复-txt-行-5300-5800"
+            },
+            {
+              "text": "6. 首轮问题 10：港交所申报差异、特殊投资条款清理与分红（首轮回复 txt 行 11052-末段）",
+              "link": "/kb2024/874689-牙博士#_6-首轮问题-10-港交所申报差异、特殊投资条款清理与分红-首轮回复-txt-行-11052-末段"
+            },
+            {
+              "text": "7. 首轮问题 3：51 家子公司的控制与合规（首轮回复 txt 行 5805-11050）",
+              "link": "/kb2024/874689-牙博士#_7-首轮问题-3-51-家子公司的控制与合规-首轮回复-txt-行-5805-11050"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874689-牙博士#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874689-牙博士#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/874690-博奇科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "武汉博奇科技股份有限公司（874690·新三板）审核问询法律问题回溯",
+      "link": "/kb2024/874690-博奇科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/874690-博奇科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/874690-博奇科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/874690-博奇科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题一：收购森织武汉——非货币出资、国资程序下的股权转让与换股收购（回复第 4—37 页；txt 行 73—1471）",
+              "link": "/kb2024/874690-博奇科技#_1-首轮问题一-收购森织武汉——非货币出资、国资程序下的股权转让与换股收购-回复第-4—37-页-txt-行-73—1471"
+            },
+            {
+              "text": "2. 首轮问题二：独立性——美国森织承诺、商标许可与裕大华系同业竞争（回复第 38—70 页；txt 行 1472—2992）",
+              "link": "/kb2024/874690-博奇科技#_2-首轮问题二-独立性——美国森织承诺、商标许可与裕大华系同业竞争-回复第-38—70-页-txt-行-1472—2992"
+            },
+            {
+              "text": "3. 首轮问题四与二轮问题二：65 名隐名股东代持的形成、存续与还原（首轮回复第 95—137 页 txt 行 4084—5962；二轮回复第 22—61 页 txt 行 857—2670）",
+              "link": "/kb2024/874690-博奇科技#_3-首轮问题四与二轮问题二-65-名隐名股东代持的形成、存续与还原-首轮回复第-95—137-页-txt-行-4084—5962-二轮回复第-22—61-页-txt-行-857—2670"
+            },
+            {
+              "text": "4. 首轮问题九(2)：劳务派遣用工超比例（回复第 203—214 页；txt 行 8953—9340）",
+              "link": "/kb2024/874690-博奇科技#_4-首轮问题九-2-劳务派遣用工超比例-回复第-203—214-页-txt-行-8953—9340"
+            },
+            {
+              "text": "5. 二轮问题三：与实控人武汉市国资委体系同业竞争的界定（二轮回复第 62—81 页；txt 行 2671—3456）",
+              "link": "/kb2024/874690-博奇科技#_5-二轮问题三-与实控人武汉市国资委体系同业竞争的界定-二轮回复第-62—81-页-txt-行-2671—3456"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/874690-博奇科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/874690-博奇科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920002-万达轴承": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏万达特种轴承股份有限公司（920002·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920002-万达轴承"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920002-万达轴承#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920002-万达轴承#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920002-万达轴承#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题6（1）：共同实际控制人认定、实控人未变更论证与经营稳定性（首轮，回复PDF第284—300页；txt行12349—13138）",
+              "link": "/kb2024/920002-万达轴承#_1-首轮问题6-1-共同实际控制人认定、实控人未变更论证与经营稳定性-首轮-回复pdf第284—300页-txt行12349—13138"
+            },
+            {
+              "text": "2. 首轮问题6（2）：两宗租赁集体建设用地权利状态差异的合理性、合规性（首轮，回复PDF第300—306页；txt行13139—13330）",
+              "link": "/kb2024/920002-万达轴承#_2-首轮问题6-2-两宗租赁集体建设用地权利状态差异的合理性、合规性-首轮-回复pdf第300—306页-txt行13139—13330"
+            },
+            {
+              "text": "3. 首轮问题6（3）⑤：销售佣金支付与商业贿赂排查（首轮，混合型子问；回复由保荐机构、申报会计师出具，txt行12390—12393、12593附近）",
+              "link": "/kb2024/920002-万达轴承#_3-首轮问题6-3-5-销售佣金支付与商业贿赂排查-首轮-混合型子问-回复由保荐机构、申报会计师出具-txt行12390—12393、12593附近"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920002-万达轴承#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920002-万达轴承#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920008-成电光信": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "成都成电光信科技股份有限公司（920008·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920008-成电光信"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920008-成电光信#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920008-成电光信#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920008-成电光信#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 二轮问题6（1）：控制权稳定性及公司治理机制有效性——一致行动协议及两次补充协议（二轮，回复PDF第8-1-159至8-1-162页；txt行6911—7050）",
+              "link": "/kb2024/920008-成电光信#_1-二轮问题6-1-控制权稳定性及公司治理机制有效性——一致行动协议及两次补充协议-二轮-回复pdf第8-1-159至8-1-162页-txt行6911—7050"
+            },
+            {
+              "text": "2. 二轮问题6（6）：军工生产经营资质与信息披露豁免（二轮，回复PDF第8-1-175至8-1-181页；txt行7606—7950）",
+              "link": "/kb2024/920008-成电光信#_2-二轮问题6-6-军工生产经营资质与信息披露豁免-二轮-回复pdf第8-1-175至8-1-181页-txt行7606—7950"
+            },
+            {
+              "text": "3. 落实函问题2：付丽代持股份的形成、解除及资金来源核查（落实函，回复PDF第15—17页；txt行724—900）",
+              "link": "/kb2024/920008-成电光信#_3-落实函问题2-付丽代持股份的形成、解除及资金来源核查-落实函-回复pdf第15—17页-txt行724—900"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920008-成电光信#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920008-成电光信#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920016-中草香料": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "安徽中草香料股份有限公司（920016·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920016-中草香料"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920016-中草香料#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920016-中草香料#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920016-中草香料#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 一轮问题4＋四轮问题2（2）：危化品业务环保与安全生产——百荷花火灾事故的重大违法认定（一轮回复PDF第8-1-1-68至8-1-1-93页，txt行2827—3991；四轮回复PDF第8-1-4-41至8-1-4-50页，txt行1680—2030）",
+              "link": "/kb2024/920016-中草香料#_1-一轮问题4-四轮问题2-2-危化品业务环保与安全生产——百荷花火灾事故的重大违法认定-一轮回复pdf第8-1-1-68至8-1-1-93页-txt行2827—3991-四轮回复pdf第8-1-4-41至8-1-4-50页-txt行1680—2030"
+            },
+            {
+              "text": "2. 一轮问题5＋二轮问题3＋四轮问题1＋落实函问题1：贝利化工关联交易全链条（一轮回复PDF第8-1-1-94至8-1-1-115页，txt行3992—4777；二轮回复PDF第8-1-2-95页起，txt行3699—3943；四轮回复txt行47—1679；落实函txt行55—196）",
+              "link": "/kb2024/920016-中草香料#_2-一轮问题5-二轮问题3-四轮问题1-落实函问题1-贝利化工关联交易全链条-一轮回复pdf第8-1-1-94至8-1-1-115页-txt行3992—4777-二轮回复pdf第8-1-2-95页起-txt行3699—3943-四轮回复txt行47—1679-落实函txt行55—196"
+            },
+            {
+              "text": "3. 一轮问题12（2）：对赌特殊投资约定清理与2022年定向发行（一轮回复PDF第8-1-1-366至8-1-1-381页；txt行15461—16158）",
+              "link": "/kb2024/920016-中草香料#_3-一轮问题12-2-对赌特殊投资约定清理与2022年定向发行-一轮回复pdf第8-1-1-366至8-1-1-381页-txt行15461—16158"
+            },
+            {
+              "text": "4. 一轮问题12（3）：部分房产未取得权属证明（一轮回复PDF第8-1-1-382至8-1-1-384页；txt行16159—16274）",
+              "link": "/kb2024/920016-中草香料#_4-一轮问题12-3-部分房产未取得权属证明-一轮回复pdf第8-1-1-382至8-1-1-384页-txt行16159—16274"
+            },
+            {
+              "text": "5. 一轮问题12（4）＋一轮问题1（1）：社保公积金合规与电子烟业务监管排除（一轮回复PDF第8-1-1-385至8-1-1-389页、第8-1-1-3至8-1-1-9页；txt行16275—16550、63—280）",
+              "link": "/kb2024/920016-中草香料#_5-一轮问题12-4-一轮问题1-1-社保公积金合规与电子烟业务监管排除-一轮回复pdf第8-1-1-385至8-1-1-389页、第8-1-1-3至8-1-1-9页-txt行16275—16550、63—280"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920016-中草香料#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920016-中草香料#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920019-铜冠矿建": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "铜陵有色金属集团铜冠矿山建设股份有限公司（920019·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920019-铜冠矿建"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920019-铜冠矿建#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920019-铜冠矿建#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920019-铜冠矿建#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 二轮问题5：关于安全生产——\"6·24\"冒顶事故、行政处罚与重大违法认定（回复txt行4824–5245，保荐机构与发行人律师发表意见）",
+              "link": "/kb2024/920019-铜冠矿建#_1-二轮问题5-关于安全生产——-6·24-冒顶事故、行政处罚与重大违法认定-回复txt行4824–5245-保荐机构与发行人律师发表意见"
+            },
+            {
+              "text": "2. 二轮问题1(3)：关联交易毛利率差异与关联方利益输送核查（回复txt行67–1282，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920019-铜冠矿建#_2-二轮问题1-3-关联交易毛利率差异与关联方利益输送核查-回复txt行67–1282-保荐机构、申报会计师核查"
+            },
+            {
+              "text": "3. 二轮问题2(3)(4)：外包依赖、分包商资质与境外/新设供应商关联关系核查（回复txt行1283–3117，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920019-铜冠矿建#_3-二轮问题2-3-4-外包依赖、分包商资质与境外-新设供应商关联关系核查-回复txt行1283–3117-保荐机构、申报会计师核查"
+            },
+            {
+              "text": "4. 二轮问题6：其他——米拉多关联交易中标与发行底价调整（回复txt行5246–5330）",
+              "link": "/kb2024/920019-铜冠矿建#_4-二轮问题6-其他——米拉多关联交易中标与发行底价调整-回复txt行5246–5330"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920019-铜冠矿建#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920019-铜冠矿建#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920060-万源通": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "昆山万源通电子科技股份有限公司（920060·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920060-万源通"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920060-万源通#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920060-万源通#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920060-万源通#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 落实函问题1(4)：昆山工厂、东台工厂排污许可产能与排污实际产能匹配（回复txt行1585–1620，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920060-万源通#_1-落实函问题1-4-昆山工厂、东台工厂排污许可产能与排污实际产能匹配-回复txt行1585–1620-保荐机构、申报会计师核查"
+            },
+            {
+              "text": "2. 落实函保荐专项：东台工厂前十大销售合同核查与实际投产进展（回复txt行2290–2470，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920060-万源通#_2-落实函保荐专项-东台工厂前十大销售合同核查与实际投产进展-回复txt行2290–2470-保荐机构、申报会计师核查"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920060-万源通#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920060-万源通#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920066-科拜尔": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "合肥科拜尔新材料股份有限公司（920066·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920066-科拜尔"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920066-科拜尔#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920066-科拜尔#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920066-科拜尔#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题4：关联交易必要性——材料科技收购定价与关联采购、拆借（回复txt行5035–5465，保荐机构、发行人律师发表意见）",
+              "link": "/kb2024/920066-科拜尔#_1-首轮问题4-关联交易必要性——材料科技收购定价与关联采购、拆借-回复txt行5035–5465-保荐机构、发行人律师发表意见"
+            },
+            {
+              "text": "2. 二轮问题4：材料科技股权转让合理性——福腾国际、跨境支付与212个账户流水核查（回复txt行4642–5506，保荐机构、发行人律师发表意见）",
+              "link": "/kb2024/920066-科拜尔#_2-二轮问题4-材料科技股权转让合理性——福腾国际、跨境支付与212个账户流水核查-回复txt行4642–5506-保荐机构、发行人律师发表意见"
+            },
+            {
+              "text": "3. 首轮问题12(1)：超产能生产的整改与重大违法认定（回复txt行14513–14660，发行人律师核查并发表意见）",
+              "link": "/kb2024/920066-科拜尔#_3-首轮问题12-1-超产能生产的整改与重大违法认定-回复txt行14513–14660-发行人律师核查并发表意见"
+            },
+            {
+              "text": "4. 首轮问题10：财务内控不规范（个人卡、现金交易、第三方回款、会计差错更正）与商业贿赂核查（回复txt行12152–13067，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920066-科拜尔#_4-首轮问题10-财务内控不规范-个人卡、现金交易、第三方回款、会计差错更正-与商业贿赂核查-回复txt行12152–13067-保荐机构、申报会计师核查"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920066-科拜尔#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920066-科拜尔#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920082-方正阀门": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "方正阀门集团股份有限公司（920082·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920082-方正阀门"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920082-方正阀门#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920082-方正阀门#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920082-方正阀门#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题1：控制权稳定性及股份回购（回复txt行67–560，保荐机构、发行人律师核查并发表意见）",
+              "link": "/kb2024/920082-方正阀门#_1-首轮问题1-控制权稳定性及股份回购-回复txt行67–560-保荐机构、发行人律师核查并发表意见"
+            },
+            {
+              "text": "2. 首轮问题4：关联交易真实合理性及程序合规性（回复txt行5149–6470，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920082-方正阀门#_2-首轮问题4-关联交易真实合理性及程序合规性-回复txt行5149–6470-保荐机构、申报会计师核查"
+            },
+            {
+              "text": "3. 首轮问题6：与方正加拿大持续发生交易的商业合理性——境外子公司股权转让与关联交易（回复txt行9667–10585，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920082-方正阀门#_3-首轮问题6-与方正加拿大持续发生交易的商业合理性——境外子公司股权转让与关联交易-回复txt行9667–10585-保荐机构、申报会计师核查"
+            },
+            {
+              "text": "4. 首轮问题8：向OEM厂商支付大额市场服务费的合理性（回复txt行11371–11970，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920082-方正阀门#_4-首轮问题8-向oem厂商支付大额市场服务费的合理性-回复txt行11371–11970-保荐机构、申报会计师核查"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920082-方正阀门#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920082-方正阀门#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920088-科力股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "新疆科力新技术发展股份有限公司（920088·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920088-科力股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920088-科力股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920088-科力股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920088-科力股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题3(1)(2)：安全生产与环保合规（回复txt行3501–5110附近，保荐机构、发行人律师核查并发表意见）",
+              "link": "/kb2024/920088-科力股份#_1-首轮问题3-1-2-安全生产与环保合规-回复txt行3501–5110附近-保荐机构、发行人律师核查并发表意见"
+            },
+            {
+              "text": "2. 首轮问题3(3)：欧亚地质产品质量赔偿与境外索赔风险（回复txt行5108–5300附近，保荐机构、发行人律师核查并发表意见）",
+              "link": "/kb2024/920088-科力股份#_2-首轮问题3-3-欧亚地质产品质量赔偿与境外索赔风险-回复txt行5108–5300附近-保荐机构、发行人律师核查并发表意见"
+            },
+            {
+              "text": "3. 首轮问题4：关联交易的真实、公允性——ESS/FE资金拆借、上海晟煜/秀熵交易与关联方识别（回复txt行6148–7005，保荐机构、发行人律师核查并发表意见）",
+              "link": "/kb2024/920088-科力股份#_3-首轮问题4-关联交易的真实、公允性——ess-fe资金拆借、上海晟煜-秀熵交易与关联方识别-回复txt行6148–7005-保荐机构、发行人律师核查并发表意见"
+            },
+            {
+              "text": "4. 落实函问题2：境外子公司内控有效性与资金流水补充核查（回复txt行131–1050，保荐机构、申报会计师核查并发表意见）",
+              "link": "/kb2024/920088-科力股份#_4-落实函问题2-境外子公司内控有效性与资金流水补充核查-回复txt行131–1050-保荐机构、申报会计师核查并发表意见"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920088-科力股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920088-科力股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920098-科隆新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "陕西科隆新材料科技股份有限公司（920098·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920098-科隆新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920098-科隆新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920098-科隆新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920098-科隆新材#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920098-科隆新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920098-科隆新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920099-瑞华技术": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "常州瑞华化工工程技术股份有限公司（920099·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920099-瑞华技术"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920099-瑞华技术#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920099-瑞华技术#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920099-瑞华技术#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 二轮问题5(3)：大额现金分红的合理性及分红资金去向（回复txt行3818–3944）",
+              "link": "/kb2024/920099-瑞华技术#_1-二轮问题5-3-大额现金分红的合理性及分红资金去向-回复txt行3818–3944"
+            },
+            {
+              "text": "2. 二轮问题5(4)：资金流水核查及实控人与供应商中原奥起的资金往来（回复txt行3947–4350）",
+              "link": "/kb2024/920099-瑞华技术#_2-二轮问题5-4-资金流水核查及实控人与供应商中原奥起的资金往来-回复txt行3947–4350"
+            },
+            {
+              "text": "3. 二轮问题5(5)：瑞凯装备劳务外包（回复txt行4468–4565）",
+              "link": "/kb2024/920099-瑞华技术#_3-二轮问题5-5-瑞凯装备劳务外包-回复txt行4468–4565"
+            },
+            {
+              "text": "4. 二轮问题5(6)：菏泽玉皇聚苯乙烯项目赔偿与预计负债（回复txt行4566–4877）",
+              "link": "/kb2024/920099-瑞华技术#_4-二轮问题5-6-菏泽玉皇聚苯乙烯项目赔偿与预计负债-回复txt行4566–4877"
+            },
+            {
+              "text": "5. 三轮问题1：业务模式合法合规与菏泽玉皇事故处罚风险、赔偿风险敞口（回复txt行61–1005，律师与保荐机构发表意见）",
+              "link": "/kb2024/920099-瑞华技术#_5-三轮问题1-业务模式合法合规与菏泽玉皇事故处罚风险、赔偿风险敞口-回复txt行61–1005-律师与保荐机构发表意见"
+            },
+            {
+              "text": "6. 三轮问题3(2)：订单获取合规性（招投标与商业贿赂，回复txt行1504–2057，发行人律师发表意见）",
+              "link": "/kb2024/920099-瑞华技术#_6-三轮问题3-2-订单获取合规性-招投标与商业贿赂-回复txt行1504–2057-发行人律师发表意见"
+            },
+            {
+              "text": "7. 三轮问题4(2)(3)：信息披露准确性与募投资金使用（回复txt行2063起，发行人律师发表意见）",
+              "link": "/kb2024/920099-瑞华技术#_7-三轮问题4-2-3-信息披露准确性与募投资金使用-回复txt行2063起-发行人律师发表意见"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920099-瑞华技术#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920099-瑞华技术#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920106-林泰新材": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "江苏林泰新材科技股份有限公司（920106·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920106-林泰新材"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920106-林泰新材#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920106-林泰新材#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920106-林泰新材#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920106-林泰新材#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920106-林泰新材#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920111-聚星科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "温州聚星科技股份有限公司（920111·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920111-聚星科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920111-聚星科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920111-聚星科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920111-聚星科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题6：应付票据增长较快和票据结算规范性——票据池合规与票据找零（回复txt行13913–15426，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920111-聚星科技#_1-首轮问题6-应付票据增长较快和票据结算规范性——票据池合规与票据找零-回复txt行13913–15426-保荐机构、申报会计师核查"
+            },
+            {
+              "text": "2. 二轮问题6(1)：对新加坡子公司增资事项——境外投资审批备案与外汇登记（回复txt行12037–12320，保荐机构、发行人律师发表意见）",
+              "link": "/kb2024/920111-聚星科技#_2-二轮问题6-1-对新加坡子公司增资事项——境外投资审批备案与外汇登记-回复txt行12037–12320-保荐机构、发行人律师发表意见"
+            },
+            {
+              "text": "3. 首轮问题8(1)：新设子公司温州聚讯——与贺志明合资的商业合理性、依赖与利益输送核查（回复txt行17646–18110附近，保荐机构、申报会计师核查）",
+              "link": "/kb2024/920111-聚星科技#_3-首轮问题8-1-新设子公司温州聚讯——与贺志明合资的商业合理性、依赖与利益输送核查-回复txt行17646–18110附近-保荐机构、申报会计师核查"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920111-聚星科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920111-聚星科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920118-太湖远大": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江太湖远大新材料股份有限公司（920118·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920118-太湖远大"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920118-太湖远大#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920118-太湖远大#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920118-太湖远大#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 三轮问题3（3）：与香港国品交易定价较低——比照关联交易披露与利益输送排查（三轮，回复PDF第125—129页；txt行3926—3927、5781—5990）",
+              "link": "/kb2024/920118-太湖远大#_1-三轮问题3-3-与香港国品交易定价较低——比照关联交易披露与利益输送排查-三轮-回复pdf第125—129页-txt行3926—3927、5781—5990"
+            },
+            {
+              "text": "2. 落实函问题1：销售人员、销售服务商大额交易对手方重名排查与银行流水核查（落实函，回复PDF第4—28页；txt行101—1160）",
+              "link": "/kb2024/920118-太湖远大#_2-落实函问题1-销售人员、销售服务商大额交易对手方重名排查与银行流水核查-落实函-回复pdf第4—28页-txt行101—1160"
+            },
+            {
+              "text": "3. 落实函问题2（3）：与西安交通大学合作研发成果知识产权归属（落实函，回复PDF第37—39页；txt行1711—1800）",
+              "link": "/kb2024/920118-太湖远大#_3-落实函问题2-3-与西安交通大学合作研发成果知识产权归属-落实函-回复pdf第37—39页-txt行1711—1800"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920118-太湖远大#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920118-太湖远大#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920123-芭薇股份": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "广东芭薇生物科技股份有限公司（920123·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920123-芭薇股份"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920123-芭薇股份#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920123-芭薇股份#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920123-芭薇股份#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 三轮问题1：大额第三方回款的真实性及核查情况（三轮，会计师版回复PDF第4—31页；txt行58—1440）",
+              "link": "/kb2024/920123-芭薇股份#_1-三轮问题1-大额第三方回款的真实性及核查情况-三轮-会计师版回复pdf第4—31页-txt行58—1440"
+            },
+            {
+              "text": "2. 落实函问题1（2）：发行人委托益普索开展终端调研的独立性与可信度（落实函，回复PDF第5—11页；txt行130—425）",
+              "link": "/kb2024/920123-芭薇股份#_2-落实函问题1-2-发行人委托益普索开展终端调研的独立性与可信度-落实函-回复pdf第5—11页-txt行130—425"
+            },
+            {
+              "text": "3. 兜底问：对照北交所规则的补充核查（三轮及落实函均出现；三轮txt约行1440后；落实函万联版txt行452—470、天职版行183—205）",
+              "link": "/kb2024/920123-芭薇股份#_3-兜底问-对照北交所规则的补充核查-三轮及落实函均出现-三轮txt约行1440后-落实函万联版txt行452—470、天职版行183—205"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920123-芭薇股份#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920123-芭薇股份#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920128-胜业电气": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "胜业电气股份有限公司（920128·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920128-胜业电气"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920128-胜业电气#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920128-胜业电气#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920128-胜业电气#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920128-胜业电气#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920128-胜业电气#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920403-康农种业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北康农种业股份有限公司（920403·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920403-康农种业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920403-康农种业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920403-康农种业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920403-康农种业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 一轮问题1：部分人员未认定为一致行动人的合理性（一轮回复第8-1-1-3页起；txt行75以下）",
+              "link": "/kb2024/920403-康农种业#_1-一轮问题1-部分人员未认定为一致行动人的合理性-一轮回复第8-1-1-3页起-txt行75以下"
+            },
+            {
+              "text": "2. 一轮问题3＋二轮问题1：植物新品种合作育种的权益归属与纠纷风险（一轮txt相应区间；二轮回复第8-2-1-3页起）",
+              "link": "/kb2024/920403-康农种业#_2-一轮问题3-二轮问题1-植物新品种合作育种的权益归属与纠纷风险-一轮txt相应区间-二轮回复第8-2-1-3页起"
+            },
+            {
+              "text": "3. 一轮问题5＋二轮问题2＋落实函问题2：转让四川康农股权的合理性及后续交易公允性（一轮回复第8-1-1-177页起，txt行7502以下）",
+              "link": "/kb2024/920403-康农种业#_3-一轮问题5-二轮问题2-落实函问题2-转让四川康农股权的合理性及后续交易公允性-一轮回复第8-1-1-177页起-txt行7502以下"
+            },
+            {
+              "text": "4. 一轮问题15（1）（2）（4）与落实函问题1：土地房产权属瑕疵、产品质量处罚与实控人任职合规（一轮回复第8-1-1-603页起，txt行24777以下；落实函第3页起）",
+              "link": "/kb2024/920403-康农种业#_4-一轮问题15-1-2-4-与落实函问题1-土地房产权属瑕疵、产品质量处罚与实控人任职合规-一轮回复第8-1-1-603页起-txt行24777以下-落实函第3页起"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920403-康农种业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920403-康农种业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920438-戈碧迦": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "湖北戈碧迦光电科技股份有限公司（920438·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920438-戈碧迦"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920438-戈碧迦#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920438-戈碧迦#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920438-戈碧迦#三、重点法律问题详述"
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920438-戈碧迦#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920438-戈碧迦#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920496-许昌智能": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "许昌智能继电器股份有限公司（920496·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920496-许昌智能"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920496-许昌智能#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920496-许昌智能#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920496-许昌智能#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 落实函问题1之（2）①—③：玉兰110kV变电站项目用地审批与\"未批先建\"合规（落实函回复txt行414–507）",
+              "link": "/kb2024/920496-许昌智能#_1-落实函问题1之-2-1—3-玉兰110kv变电站项目用地审批与-未批先建-合规-落实函回复txt行414–507"
+            },
+            {
+              "text": "2. 落实函问题1之（2）：与国电投许昌、许昌能源的关联交易确认及关联租赁定价公允性（落实函回复txt行246–700）",
+              "link": "/kb2024/920496-许昌智能#_2-落实函问题1之-2-与国电投许昌、许昌能源的关联交易确认及关联租赁定价公允性-落实函回复txt行246–700"
+            },
+            {
+              "text": "3. 落实函问题1之（1）：电力工程总承包业务模式下招投标与分包合规（落实函回复txt行59–242，子问题节录）",
+              "link": "/kb2024/920496-许昌智能#_3-落实函问题1之-1-电力工程总承包业务模式下招投标与分包合规-落实函回复txt行59–242-子问题节录"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920496-许昌智能#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920496-许昌智能#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920656-海昇药业": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江海昇药业股份有限公司（920656·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920656-海昇药业"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920656-海昇药业#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920656-海昇药业#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920656-海昇药业#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 首轮问题4：与巨化集团关系及经营独立性（首轮，会计师版回复PDF第4—10页；txt行86—303）",
+              "link": "/kb2024/920656-海昇药业#_1-首轮问题4-与巨化集团关系及经营独立性-首轮-会计师版回复pdf第4—10页-txt行86—303"
+            },
+            {
+              "text": "2. 首轮问题5：财务内控不规范情形及整改情况（首轮，会计师版回复PDF第10—37页；txt行303—1459）",
+              "link": "/kb2024/920656-海昇药业#_2-首轮问题5-财务内控不规范情形及整改情况-首轮-会计师版回复pdf第10—37页-txt行303—1459"
+            },
+            {
+              "text": "3. 二轮问题3：环保合规性及核查充分性——超环评批复产量/范围生产（二轮，回复PDF第27—35页；txt行928—1198）",
+              "link": "/kb2024/920656-海昇药业#_3-二轮问题3-环保合规性及核查充分性——超环评批复产量-范围生产-二轮-回复pdf第27—35页-txt行928—1198"
+            },
+            {
+              "text": "4. 二轮问题5（1）：实控人向主要供应商实控人出借款项及采购公允性（二轮，回复PDF第48—50页；txt行1662—1794）",
+              "link": "/kb2024/920656-海昇药业#_4-二轮问题5-1-实控人向主要供应商实控人出借款项及采购公允性-二轮-回复pdf第48—50页-txt行1662—1794"
+            },
+            {
+              "text": "5. 兜底问：对照北交所规则的补充核查（二轮问题6；三轮问题4；四轮问题2；落实函问题3；txt行2035—2045等）",
+              "link": "/kb2024/920656-海昇药业#_5-兜底问-对照北交所规则的补充核查-二轮问题6-三轮问题4-四轮问题2-落实函问题3-txt行2035—2045等"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920656-海昇药业#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920656-海昇药业#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920690-捷众科技": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "浙江捷众科技股份有限公司（920690·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920690-捷众科技"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920690-捷众科技#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920690-捷众科技#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920690-捷众科技#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 一轮问题1：实际控制人认定是否准确（一轮回复第8-1-2页起；txt行约90以下）",
+              "link": "/kb2024/920690-捷众科技#_1-一轮问题1-实际控制人认定是否准确-一轮回复第8-1-2页起-txt行约90以下"
+            },
+            {
+              "text": "2. 一轮问题4：独立董事任职及发行人的资金拆借（一轮回复第8-1-41页起；txt行1479以下）",
+              "link": "/kb2024/920690-捷众科技#_2-一轮问题4-独立董事任职及发行人的资金拆借-一轮回复第8-1-41页起-txt行1479以下"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920690-捷众科技#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920690-捷众科技#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920706-铁拓机械": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "福建省铁拓机械股份有限公司（920706·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920706-铁拓机械"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920706-铁拓机械#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920706-铁拓机械#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920706-铁拓机械#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 三轮问题1（3）（4）：融资租赁销售模式下两份买卖合同的效力衔接与设备权属（三轮，回复PDF第29—35页；txt行1094—1345）",
+              "link": "/kb2024/920706-铁拓机械#_1-三轮问题1-3-4-融资租赁销售模式下两份买卖合同的效力衔接与设备权属-三轮-回复pdf第29—35页-txt行1094—1345"
+            },
+            {
+              "text": "2. 三轮问题3：向俄罗斯销售大幅增长的可持续性——国际制裁风险披露（三轮，回复PDF第85—93页；txt行3569—3890）",
+              "link": "/kb2024/920706-铁拓机械#_2-三轮问题3-向俄罗斯销售大幅增长的可持续性——国际制裁风险披露-三轮-回复pdf第85—93页-txt行3569—3890"
+            },
+            {
+              "text": "3. 落实函问题1：汉中市公路局抢险救援中心、四川安迈连尼项目验收周期较长的支持性证据（落实函，回复PDF第4—6页；txt行60—160）",
+              "link": "/kb2024/920706-铁拓机械#_3-落实函问题1-汉中市公路局抢险救援中心、四川安迈连尼项目验收周期较长的支持性证据-落实函-回复pdf第4—6页-txt行60—160"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920706-铁拓机械#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920706-铁拓机械#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920806-云星宇": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "北京云星宇交通科技股份有限公司（920806·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920806-云星宇"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920806-云星宇#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920806-云星宇#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920806-云星宇#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 一轮问题3：关于关联交易的真实合理性及公允性（一轮回复第190页起；txt行8022以下）",
+              "link": "/kb2024/920806-云星宇#_1-一轮问题3-关于关联交易的真实合理性及公允性-一轮回复第190页起-txt行8022以下"
+            },
+            {
+              "text": "2. 一轮问题4：与工程公司等关联方之间的同业竞争及影响（一轮回复第254页起；txt行10528以下）",
+              "link": "/kb2024/920806-云星宇#_2-一轮问题4-与工程公司等关联方之间的同业竞争及影响-一轮回复第254页起-txt行10528以下"
+            },
+            {
+              "text": "3. 一轮问题12（2）（3）：房产合规与前次申报、行政处罚（一轮回复第733页起；txt行30820以下）",
+              "link": "/kb2024/920806-云星宇#_3-一轮问题12-2-3-房产合规与前次申报、行政处罚-一轮回复第733页起-txt行30820以下"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920806-云星宇#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920806-云星宇#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/920931-无锡鼎邦": [
+    {
+      "text": "返回栏目列表",
+      "link": "/kb2024/"
+    },
+    {
+      "text": "无锡鼎邦换热设备股份有限公司（920931·北交所）审核问询法律问题回溯",
+      "link": "/kb2024/920931-无锡鼎邦"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、公司与审核概况",
+          "link": "/kb2024/920931-无锡鼎邦#一、公司与审核概况"
+        },
+        {
+          "text": "二、法律问题总览",
+          "link": "/kb2024/920931-无锡鼎邦#二、法律问题总览"
+        },
+        {
+          "text": "三、重点法律问题详述",
+          "link": "/kb2024/920931-无锡鼎邦#三、重点法律问题详述",
+          "items": [
+            {
+              "text": "1. 二轮问题3：实际控制人股权是否清晰——兄弟财产分割、代持排除与借款多层周转（二轮，会计师版回复PDF第48—68页；txt行2062—2878）",
+              "link": "/kb2024/920931-无锡鼎邦#_1-二轮问题3-实际控制人股权是否清晰——兄弟财产分割、代持排除与借款多层周转-二轮-会计师版回复pdf第48—68页-txt行2062—2878"
+            },
+            {
+              "text": "2. 落实函问题1（1）（3）：股权交易定价与股份支付、无锡换热实控人认定与独立性、土地使用（落实函，回复PDF第3—33页；txt行50—1345）",
+              "link": "/kb2024/920931-无锡鼎邦#_2-落实函问题1-1-3-股权交易定价与股份支付、无锡换热实控人认定与独立性、土地使用-落实函-回复pdf第3—33页-txt行50—1345"
+            },
+            {
+              "text": "3. 二轮问题4（1）：特种设备监检证（二轮，问询原文见会计师版回复PDF第69页；txt行2879—2890；回复正文缺失【待核验】）",
+              "link": "/kb2024/920931-无锡鼎邦#_3-二轮问题4-1-特种设备监检证-二轮-问询原文见会计师版回复pdf第69页-txt行2879—2890-回复正文缺失【待核验】"
+            },
+            {
+              "text": "4. 落实函问题2：对照北交所规则的兜底核查（落实函，回复PDF第34页；txt行1346—1365）",
+              "link": "/kb2024/920931-无锡鼎邦#_4-落实函问题2-对照北交所规则的兜底核查-落实函-回复pdf第34页-txt行1346—1365"
+            }
+          ]
+        },
+        {
+          "text": "四、未纳入详述事项",
+          "link": "/kb2024/920931-无锡鼎邦#四、未纳入详述事项"
+        },
+        {
+          "text": "五、待核验/待补事项",
+          "link": "/kb2024/920931-无锡鼎邦#五、待核验-待补事项"
+        }
+      ]
+    }
+  ],
+  "/kb2024/": [
+    {
+      "text": "IPO与挂牌问询案例库·2024",
+      "link": "/kb2024/"
     }
   ],
   "/latest/": [

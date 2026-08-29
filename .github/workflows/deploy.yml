@@ -41,16 +41,19 @@ jobs:
           tutorials_sha=$(git ls-remote https://github.com/lennonli/licheng-AI-tutorials.git refs/heads/main | cut -f1)
           kb_sha=$(git ls-remote https://github.com/lennonli/ipo-inquiry-kb.git refs/heads/main | cut -f1)
           kb2025_sha=$(git ls-remote https://github.com/lennonli/ipo-inquiry-kb-2025.git refs/heads/main | cut -f1)
+          kb2024_sha=$(git ls-remote https://github.com/lennonli/ipo-inquiry-kb-2024.git refs/heads/main | cut -f1)
           test -n "$agents_sha"
           test -n "$skills_sha"
           test -n "$tutorials_sha"
           test -n "$kb_sha"
           test -n "$kb2025_sha"
+          test -n "$kb2024_sha"
           echo "SOURCE_AGENTS_SHA=$agents_sha" >> "$GITHUB_ENV"
           echo "SOURCE_SKILLS_SHA=$skills_sha" >> "$GITHUB_ENV"
           echo "SOURCE_TUTORIALS_SHA=$tutorials_sha" >> "$GITHUB_ENV"
           echo "SOURCE_KB_SHA=$kb_sha" >> "$GITHUB_ENV"
           echo "SOURCE_KB2025_SHA=$kb2025_sha" >> "$GITHUB_ENV"
+          echo "SOURCE_KB2024_SHA=$kb2024_sha" >> "$GITHUB_ENV"
 
       - name: Build and test site
         run: npm test
@@ -182,7 +185,8 @@ jobs:
               && curl --fail --silent --show-error https://ai.licheng.uk/feed.xml >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1 >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb/ >/dev/null \
-              && curl --fail --silent --show-error https://ai.licheng.uk/kb2025/ >/dev/null; then
+              && curl --fail --silent --show-error https://ai.licheng.uk/kb2025/ >/dev/null \
+              && curl --fail --silent --show-error https://ai.licheng.uk/kb2024/ >/dev/null; then
               exit 0
             fi
             sleep 10

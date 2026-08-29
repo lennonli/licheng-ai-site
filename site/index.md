@@ -59,4 +59,9 @@
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年上市/挂牌 430 家审核问询法律问题回溯（3,389 个详述问题），附年度总结报告。</span>
   </a>
+  <a class="home-card" href="/kb2024/">
+    <span class="home-card-index">08 / Cases 2024</span>
+    <span class="home-card-title">问询案例库 · 2024年度</span>
+    <span class="home-card-desc">2024 年上市/挂牌 386 家审核问询法律问题回溯（1,747 个详述问题），附年度总结报告。</span>
+  </a>
 </section>

@@ -1,5 +1,65 @@
 [
   {
+    "href": "/tutorials/company-monitoring-system-from-scratch",
+    "title": "公司舆情与法律风险监控系统·从零搭建教程（Agent 复刻指南）",
+    "summary": "版本：V1（20260827）｜适用读者：接手维护或在新环境复刻本系统的 AI Agent（ZCode 及同构 CLI 环境）；隐私声明：本文为通用教程，不含任何客户名称、证券代码、信用代码、人员姓名与邮箱地址；凡涉具体配置处均以占位符……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/enforcement-asset-discovery",
+    "title": "强制执行与财产线索教程",
+    "summary": "诉讼实战系列（三）｜适用：AI智能体（企查查/天眼查 + 网核留痕 + 定时任务监控）｜2026-08-27；用途：胜诉后把钱要回来——财产线索调查、执行文书起草、执行全程跟踪。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/litigation-evidence-arguments",
+    "title": "举证质证意见与代理词撰写教程",
+    "summary": "诉讼实战系列（八）｜适用：AI智能体（三性分析框架 + 类案口径检索 + 法条核验）｜2026-08-27；用途：对方证据的逐份质证、我方举证说明、代理词成稿。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/litigation-evidence-organization",
+    "title": "诉讼证据整理与证据目录制作教程",
+    "summary": "诉讼实战系列（六）｜适用：AI智能体（本地 OCR + 网核留痕 + docx）｜2026-08-27；用途：把一堆扫描件、照片、聊天记录变成结构规范、证明目的清晰的证据体系。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/litigation-moot-court",
+    "title": "AI 模拟法庭与庭审陪练教程",
+    "summary": "诉讼实战系列（一）｜适用：AI智能体（多子代理对抗演练）｜2026-08-27；用途：把整段提示词交给 AI（【】内替换为实际信息），在开庭前完成对抗演练与策略校验。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/litigation-pleadings-drafting",
+    "title": "起诉状、答辩状与上诉状起草教程",
+    "summary": "诉讼实战系列（七）｜适用：AI智能体（事实提取 + 金额试算 + 法条核验 + 模板复用）｜2026-08-27；用途：三类核心诉讼文书的 AI 辅助起草——以更优模板为基准，AI 做事实填充与调整完善。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/litigation-strategy-assessment",
+    "title": "诉讼策略与案件评估教程",
+    "summary": "诉讼实战系列（二）｜适用：AI智能体（元典/北大法宝案例检索 + 企查查/天眼查主体调查）｜2026-08-27；用途：起诉（或应诉）前，用量化依据回答\"打不打、怎么打、要多少\"。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/litigation-trial-outline-archiving",
+    "title": "庭审提纲、庭审提醒与诉讼归档教程",
+    "summary": "诉讼实战系列（九）｜适用：AI智能体（提纲生成 + 定时任务提醒 + 归档结构化）｜2026-08-27；用途：开庭前的最后一公里与结案后的最后一公里——提纲、提醒、归档闭环。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/mediation-negotiation",
+    "title": "AI 辅助调解与谈判教程",
+    "summary": "诉讼实战系列（五）｜适用：AI智能体（方案测算 + 角色扮演 + 协议起草）｜2026-08-27；用途：诉讼内外和解——利益分析、方案量化、对手模拟、协议成稿一条龙。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/post-trial-review",
+    "title": "庭后复盘与裁判文书深读教程",
+    "summary": "诉讼实战系列（四）｜适用：AI智能体（OCR 转写 + 类案检索 + 文书结构化）｜2026-08-27；用途：庭审结束后到收到判决书之后——复盘得失、深读裁判逻辑、决策是否上诉。",
+    "section": "AI 教程"
+  },
+  {
     "href": "/tutorials/listing-inquiry-annual-coldstart-prompt",
     "title": "任务提示词：A股上市+新三板挂牌公司审核问询法律问题回溯（年度批量，冷启动可复现版）",
     "summary": "用法：将本文件全文作为任务提示词交给具备 Bash+文件读写能力的 AI 代理（如 ZCode/Codex）。；本提示词自包含全部接口参数、坑与质量标准，无需任何预先准备的脚本。",

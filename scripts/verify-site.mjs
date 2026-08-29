@@ -133,7 +133,7 @@ for (const file of htmlFiles) {
   }
 }
 
-const articleFiles = htmlFiles.filter((file) => /\/(agents|skills|tutorials|kb|kb2025)\/.+\.html$/.test(file) && !/\/index\.html$/.test(file))
+const articleFiles = htmlFiles.filter((file) => /\/(agents|skills|tutorials|kb|kb2025|kb2024)\/.+\.html$/.test(file) && !/\/index\.html$/.test(file))
 for (const file of articleFiles) {
   const html = readFileSync(file, 'utf8')
   if (!html.includes('article-updated')) fail(`${routeFor(file)}: update date missing`)

@@ -100,8 +100,10 @@ export default defineConfig({
         items: [
           { text: '2026 年度案例库', link: '/kb/' },
           { text: '2025 年度案例库', link: '/kb2025/' },
+          { text: '2024 年度案例库', link: '/kb2024/' },
           { text: '2026 年度总结', link: '/kb/2026年度总结' },
-          { text: '2025 年度总结', link: '/kb2025/2025年度总结' }
+          { text: '2025 年度总结', link: '/kb2025/2025年度总结' },
+          { text: '2024 年度总结', link: '/kb2024/2024年度总结' }
         ]
       },
       { text: '实用工具', link: '/tools/' },

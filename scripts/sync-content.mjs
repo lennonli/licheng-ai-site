@@ -49,6 +49,12 @@ const sources = [
     name: 'IPO 问询案例 2025',
     repo: 'https://github.com/lennonli/ipo-inquiry-kb-2025.git',
     localRepo: path.resolve(root, '..', '21-IPO问询案例知识库-2025')
+  },
+  {
+    key: 'kb2024',
+    name: 'IPO 问询案例 2024',
+    repo: 'https://github.com/lennonli/ipo-inquiry-kb-2024.git',
+    localRepo: path.resolve(root, '..', '22-IPO问询案例知识库-2024')
   }
 ]
 
@@ -58,6 +64,7 @@ const sourceWebUrls = {
   tutorials: 'https://github.com/lennonli/licheng-AI-tutorials',
   kb: 'https://github.com/lennonli/ipo-inquiry-kb',
   kb2025: 'https://github.com/lennonli/ipo-inquiry-kb-2025',
+  kb2024: 'https://github.com/lennonli/ipo-inquiry-kb-2024',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -713,6 +720,11 @@ function writeGeneratedSidebar() {
       indexText: 'IPO与挂牌问询案例库·2025',
       destDir: kb2025Dest
     }),
+    ...buildSectionSidebar({
+      section: 'kb2024',
+      indexText: 'IPO与挂牌问询案例库·2024',
+      destDir: kb2024Dest
+    }),
     '/latest/': [{ text: '最新文章', link: '/latest/' }],
     '/tools/': [
       { text: '实用工具', link: '/tools/' },
@@ -735,7 +747,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'kb2024', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'public', 'tutorials'), { recursive: true, force: true })
@@ -803,8 +815,13 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年上市/挂牌 430 家审核问询法律问题回溯（3,389 个详述问题），附年度总结报告。</span>
   </a>
+  <a class="home-card" href="/kb2024/">
+    <span class="home-card-index">08 / Cases 2024</span>
+    <span class="home-card-title">问询案例库 · 2024年度</span>
+    <span class="home-card-desc">2024 年上市/挂牌 386 家审核问询法律问题回溯（1,747 个详述问题），附年度总结报告。</span>
+  </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">08 / Directory</span>
+    <span class="home-card-index">09 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
@@ -1125,6 +1142,14 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
   // 年度总结报告页（源仓 reports/ 下单文件）
   const reportsDir = path.join(src, 'reports')
   if (existsSync(reportsDir)) copyMarkdownFiles(reportsDir, dest)
+  if (key === 'kb2024') {
+    for (const name of readDirSafe(dest).filter((entry) => entry.endsWith('.md'))) {
+      const file = path.join(dest, name)
+      const markdown = readFileSync(file, 'utf8')
+      const normalized = markdown.replace(/（(https?:\/\/[^\s（）<>]+)）/g, '（<$1>）')
+      if (normalized !== markdown) writeFileSync(file, normalized)
+    }
+  }
   addArticleChromeToMarkdownFiles(dest, `${base}/`, sourceWebUrls[key], src, 'cases/')
 
   const boardGroups = new Map(kbBoardOrder.map((board) => [board, []]))
@@ -1140,7 +1165,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
 
 <p class="source-link">来源仓库：${sourceWebUrls[key].replace('https://github.com/', '')}（共 ${entries.length} 份案例）｜<a href="${base}/${annualFile.replace(/\.md$/, '')}">${annualTitle}</a></p>
 
-${aiTutorialSection(base, sourceWebUrls[key], key === 'kb' ? '920079-乔路铭' : '920116-星图测控')}
+${aiTutorialSection(base, sourceWebUrls[key], key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : '920002-万达轴承')}
 `
 
   for (const board of [...kbBoardOrder, '其他']) {
@@ -1187,6 +1212,20 @@ const kb2025Dest = buildKbYear({
   entries: kb2025Entries,
   annualFile: '2025年度总结.md',
   annualTitle: '📊 2025 年度总结报告'
+})
+
+// 2024 年度库（/kb2024/）
+const kb2024Src = path.join(cacheDir, 'kb2024')
+const kb2024IndexPath = path.join(kb2024Src, 'scripts', 'index.json')
+const kb2024Entries = existsSync(kb2024IndexPath) ? JSON.parse(readFileSync(kb2024IndexPath, 'utf8')) : []
+const kb2024Dest = buildKbYear({
+  key: 'kb2024',
+  base: '/kb2024',
+  title: 'IPO与挂牌审核问询案例库 · 2024年度',
+  lead: '2024 年上市/挂牌公司审核问询法律问题回溯（A股 100 家 + 新三板 286 家，详述 1,747 个法律问题），一司一文，沉淀"问询要点—回复与核查要点—执业提示"，办理同类项目时可直接检索论证范本与证据链思路。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: kb2024Entries,
+  annualFile: '2024年度总结.md',
+  annualTitle: '📊 2024 年度总结报告'
 })
 
 writeFileSync(path.join(siteDir, 'public', 'feed.xml'), rssFeed(latestArticles))
