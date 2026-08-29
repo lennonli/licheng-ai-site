@@ -2801,6 +2801,7 @@ body {
 }
 
 /* 课程表卡片右上角「课程PPT」入口按钮 */
+.vp-doc a.lc-hero-ppt-btn,
 .lc-hero-ppt-btn {
   position: absolute;
   top: 30px;
@@ -2820,6 +2821,7 @@ body {
   text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
+.vp-doc a.lc-hero-ppt-btn:hover,
 .lc-hero-ppt-btn:hover {
   background: rgba(159, 232, 112, 0.22);
   border-color: rgba(159, 232, 112, 0.65);
