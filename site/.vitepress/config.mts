@@ -10,6 +10,24 @@ function canonicalUrl(page: string) {
   return new URL(route || '/', siteOrigin).href
 }
 
+function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
+  if (env.path?.includes('__analytics-licheng-20260708')) return ''
+  if (!env.path?.includes('/kb2024/')) return md.render(src, env)
+
+  const fileName = env.path.split('/').pop() || ''
+  if (fileName === 'index.md' || fileName === '2024年度总结.md') return md.render(src, env)
+
+  const frontmatter = src.match(/^---\n([\s\S]*?)\n---/)
+  const metadata = frontmatter?.[1]
+    .split('\n')
+    .filter((line) => /^(company|short|code|board|tags):/.test(line.trim()))
+    .map((line) => line.replace(/^[^:]+:\s*/, '').replace(/^"|"$/g, '').trim())
+    .filter(Boolean)
+    .join(' | ')
+  const title = src.match(/^# .+$/m)?.[0] || ''
+  return md.render(`${title}\n\n${metadata}`, env)
+}
+
 export default defineConfig({
   lang: 'zh-CN',
   title: '李成律师法律AI工作站',
@@ -84,8 +102,7 @@ export default defineConfig({
           }
         },
         _render(src, env, md) {
-          if (env.path?.includes('__analytics-licheng-20260708')) return ''
-          return md.render(src, env)
+          return renderSearchSource(src, env, md)
         }
       }
     },
