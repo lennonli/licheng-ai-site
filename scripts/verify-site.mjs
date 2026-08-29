@@ -93,10 +93,11 @@ for (const file of htmlFiles) {
   const isImmersive = route.startsWith('/tutorial-views/')
   const isPrivateUtility = route.startsWith('/__analytics-')
   const isNotFound = route === '/404'
+  const noWechatContactRoutes = new Set(['/tools/course-ppt/'])
   if (!isImmersive && !isPrivateUtility) {
     const h1Count = (html.match(/<h1\b/g) || []).length
     if (!isNotFound && h1Count !== 1) fail(`${route}: expected one H1, found ${h1Count}`)
-    if (!isNotFound && !html.includes('wechat-contact')) fail(`${route}: WeChat contact section missing`)
+    if (!isNotFound && !noWechatContactRoutes.has(route) && !html.includes('wechat-contact')) fail(`${route}: WeChat contact section missing`)
     if (!/<link rel="canonical" href="https:\/\/ai\.licheng\.uk\//.test(html)) fail(`${route}: canonical missing`)
     if (!/<meta property="og:url"/.test(html)) fail(`${route}: og:url missing`)
   }
