@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>个人每日工作看板</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14231b;
+      --muted: #5e6f64;
+      --line: rgba(20, 35, 27, 0.14);
+      --paper: rgba(255, 255, 255, 0.9);
+      --panel: #f3f7f3;
+      --green: #0e6f3f;
+      --green-soft: rgba(14, 111, 63, 0.1);
+      --lime: #9fe870;
+      --gold: #c9a227;
+      --red: #b3402e;
+      --shadow: 0 18px 50px rgba(20, 35, 27, 0.1);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 40px 20px 64px;
+      color: var(--ink);
+      background: linear-gradient(160deg, #f6faf4 0%, #eef5ec 55%, #f8faf6 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; }
+    a.priv-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--muted); text-decoration: none; font-size: 14.5px;
+      border: 1px solid var(--line); border-radius: 999px;
+      padding: 6px 14px; background: var(--paper);
+    }
+    a.priv-back:hover { color: var(--green); border-color: var(--green); }
+
+    /* ---- 密码门 ---- */
+    .gate {
+      max-width: 420px; margin: 12vh auto 0; padding: 40px 36px 34px;
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: 24px; box-shadow: var(--shadow); text-align: center;
+    }
+    .gate .lock {
+      width: 58px; height: 58px; margin: 0 auto 18px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--green-soft); color: var(--green); font-size: 26px;
+    }
+    .gate h1 { margin: 0 0 8px; font-size: 24px; letter-spacing: .01em; }
+    .gate p.sub { margin: 0 0 24px; color: var(--muted); font-size: 14.5px; }
+    .gate input[type="password"] {
+      width: 100%; padding: 12px 16px; font-size: 16px;
+      border: 1px solid var(--line); border-radius: 12px;
+      background: #fff; color: var(--ink); outline: none;
+    }
+    .gate input[type="password"]:focus { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
+    .gate button {
+      width: 100%; margin-top: 14px; padding: 12px; font-size: 16px; font-weight: 700;
+      color: #fff; background: linear-gradient(135deg, #0e6f3f, #139657);
+      border: none; border-radius: 12px; cursor: pointer;
+      box-shadow: 0 10px 24px rgba(14, 111, 63, 0.25);
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+    .gate button:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(14, 111, 63, 0.32); }
+    .gate button:disabled { opacity: .6; cursor: wait; transform: none; }
+    .gate .err {
+      margin-top: 14px; color: var(--red); font-size: 14px;
+      min-height: 20px; text-align: left;
+    }
+    .gate label.remember {
+      display: flex; align-items: center; gap: 8px; justify-content: flex-start;
+      margin-top: 12px; color: var(--muted); font-size: 13.5px;
+    }
+
+    /* ---- 看板主体 ---- */
+    .board { display: none; }
+    .board-head {
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px;
+      margin: 18px 0 6px;
+    }
+    .board-head h1 { margin: 0; font-size: 30px; letter-spacing: .01em; }
+    .board-head .meta { color: var(--muted); font-size: 14px; }
+    .board-head .meta b { color: var(--green); }
+    .board-sub { color: var(--muted); font-size: 14px; margin: 0 0 22px; }
+
+    .section { margin: 0 0 26px; }
+    .section > h2 {
+      display: flex; align-items: center; gap: 10px;
+      margin: 0 0 14px; font-size: 20px;
+    }
+    .section > h2 .no {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-width: 30px; height: 30px; padding: 0 6px; border-radius: 9px;
+      background: var(--green); color: #fff; font-size: 14px; font-weight: 700;
+    }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+    .card {
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: 16px; padding: 16px 18px; box-shadow: 0 8px 22px rgba(20,35,27,.05);
+    }
+    .card h3 { margin: 0 0 6px; font-size: 16px; }
+    .card .freq {
+      display: inline-block; margin-left: 8px; padding: 1px 9px; border-radius: 999px;
+      background: var(--green-soft); color: var(--green); font-size: 12.5px; font-weight: 600;
+      vertical-align: middle;
+    }
+    .card p { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+    .card .status { margin-top: 10px; font-size: 13.5px; }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+    .dot.ok { background: var(--green); }
+    .dot.warn { background: var(--gold); }
+    .dot.bad { background: var(--red); }
+
+    ul.plain { list-style: none; margin: 0; padding: 0; }
+    ul.plain li {
+      background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+      padding: 12px 16px; margin-bottom: 10px; font-size: 15px;
+    }
+    ul.plain li .tag {
+      display: inline-block; margin-right: 8px; padding: 1px 9px; border-radius: 999px;
+      background: var(--panel); color: var(--muted); font-size: 12.5px;
+    }
+    .summary-list li { border-left: 4px solid var(--lime); }
+    .todo-list li { border-left: 4px solid var(--gold); }
+    .empty { color: var(--muted); font-size: 14px; padding: 12px 4px; }
+
+    .proj-table { width: 100%; border-collapse: collapse; background: var(--paper);
+      border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+      box-shadow: 0 8px 22px rgba(20,35,27,.05); }
+    .proj-table th, .proj-table td { padding: 11px 14px; border-bottom: 1px solid var(--line);
+      text-align: left; font-size: 14.5px; vertical-align: top; }
+    .proj-table th { background: var(--panel); font-weight: 650; white-space: nowrap; }
+    .proj-table tr:last-child td { border-bottom: none; }
+    .proj-table td:first-child { font-weight: 650; white-space: nowrap; }
+
+    .foot { margin-top: 34px; color: var(--muted); font-size: 13px; }
+    .foot button {
+      margin-left: 10px; padding: 4px 12px; font-size: 13px; cursor: pointer;
+      border: 1px solid var(--line); background: var(--paper); color: var(--muted);
+      border-radius: 999px;
+    }
+    .foot button:hover { color: var(--red); border-color: var(--red); }
+
+    @media (max-width: 640px) {
+      body { padding: 24px 14px 48px; }
+      .board-head h1 { font-size: 24px; }
+      .gate { margin-top: 6vh; padding: 30px 22px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="priv-back" href="/">← 返回工作站首页</a>
+
+  <!-- 密码门 -->
+  <div class="gate" id="gate">
+    <div class="lock">🔒</div>
+    <h1>个人每日工作看板</h1>
+    <p class="sub">此页面包含未公开的工作信息，请输入访问密码解密查看。</p>
+    <form id="gate-form">
+      <input type="password" id="pass" placeholder="访问密码" autocomplete="current-password" autofocus>
+      <button type="submit" id="unlock-btn">解锁看板</button>
+      <label class="remember"><input type="checkbox" id="remember" checked> 本次浏览器会话内保持解锁</label>
+      <div class="err" id="gate-err" role="alert"></div>
+    </form>
+  </div>
+
+  <!-- 看板 -->
+  <div class="board" id="board">
+    <div class="board-head">
+      <h1>个人每日工作看板</h1>
+      <span class="meta">数据日期 <b id="b-date">—</b> · 生成于 <span id="b-time">—</span></span>
+    </div>
+    <p class="board-sub">由 ZCode 定时任务每日 07:30 自动汇总生成，内容经脱敏与加密后发布。</p>
+
+    <section class="section">
+      <h2><span class="no">01</span>定时任务清单与状态</h2>
+      <div class="cards" id="c-cron"></div>
+    </section>
+
+    <section class="section">
+      <h2><span class="no">02</span>昨日工作总结</h2>
+      <ul class="plain summary-list" id="c-summary"></ul>
+    </section>
+
+    <section class="section">
+      <h2><span class="no">03</span>待办与跟进事项</h2>
+      <ul class="plain todo-list" id="c-todo"></ul>
+    </section>
+
+    <section class="section">
+      <h2><span class="no">04</span>在办项目速览</h2>
+      <table class="proj-table">
+        <thead><tr><th>项目</th><th>当前状态</th></tr></thead>
+        <tbody id="c-projects"></tbody>
+      </table>
+    </section>
+
+    <p class="foot">
+      数据来源：本机 ZCode 定时任务自动汇总 · 密文以 AES-256-GCM 加密传输与存储
+      <button id="lock-btn">锁定并清除会话密码</button>
+    </p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict'
+  var PASS_KEY = 'dashboard-pass'
+  var gate = document.getElementById('gate')
+  var board = document.getElementById('board')
+  var errEl = document.getElementById('gate-err')
+  var btn = document.getElementById('unlock-btn')
+  var passInput = document.getElementById('pass')
+  var rememberEl = document.getElementById('remember')
+
+  function b64ToBuf(b64) {
+    var bin = atob(b64)
+    var buf = new Uint8Array(bin.length)
+    for (var i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i)
+    return buf
+  }
+
+  function deriveKey(password, saltBuf, iterations) {
+    var enc = new TextEncoder()
+    return crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey'])
+      .then(function (material) {
+        return crypto.subtle.deriveKey(
+          { name: 'PBKDF2', salt: saltBuf, iterations: iterations, hash: 'SHA-256' },
+          material,
+          { name: 'AES-GCM', length: 256 },
+          false,
+          ['decrypt']
+        )
+      })
+  }
+
+  function decryptEnvelope(password, envelope) {
+    var salt = b64ToBuf(envelope.salt)
+    var iv = b64ToBuf(envelope.iv)
+    var data = b64ToBuf(envelope.data)
+    var iterations = parseInt(String(envelope.k || '').split('-').pop(), 10) || 250000
+    return deriveKey(password, salt, iterations).then(function (key) {
+      return crypto.subtle.decrypt({ name: 'AES-GCM', iv: iv }, key, data)
+    }).then(function (plain) {
+      return JSON.parse(new TextDecoder().decode(plain))
+    })
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]
+    })
+  }
+
+  function render(data) {
+    document.getElementById('b-date').textContent = esc(data.date || '')
+    document.getElementById('b-time').textContent = esc(data.generatedAt || '')
+
+    var cronHost = document.getElementById('c-cron')
+    cronHost.innerHTML = ''
+    if (!data.cronTasks || !data.cronTasks.length) {
+      cronHost.innerHTML = '<div class="card"><p>暂无任务数据。</p></div>'
+    } else {
+      data.cronTasks.forEach(function (t) {
+        var st = t.status || 'ok'
+        var dotCls = st === 'ok' ? 'ok' : (st === 'warn' ? 'warn' : 'bad')
+        var stText = t.statusNote || (st === 'ok' ? '运行正常' : (st === 'warn' ? '需关注' : '异常'))
+        var div = document.createElement('div')
+        div.className = 'card'
+        div.innerHTML = '<h3>' + esc(t.name) +
+          (t.schedule ? '<span class="freq">' + esc(t.schedule) + '</span>' : '') +
+          '</h3><p>' + esc(t.description || '') + '</p>' +
+          '<div class="status"><span class="dot ' + dotCls + '"></span>' + esc(stText) + '</div>'
+        cronHost.appendChild(div)
+      })
+    }
+
+    function fillList(id, items, withTag) {
+      var ul = document.getElementById(id)
+      ul.innerHTML = ''
+      if (!items || !items.length) {
+        ul.innerHTML = '<li class="empty">暂无事项。</li>'
+        return
+      }
+      items.forEach(function (it) {
+        var li = document.createElement('li')
+        var tag = (withTag && it.tag) ? '<span class="tag">' + esc(it.tag) + '</span>' : ''
+        li.innerHTML = tag + esc(it.text || it)
+        ul.appendChild(li)
+      })
+    }
+    fillList('c-summary', data.dailySummary, true)
+    fillList('c-todo', data.todos, true)
+
+    var tbody = document.getElementById('c-projects')
+    tbody.innerHTML = ''
+    if (!data.projects || !data.projects.length) {
+      tbody.innerHTML = '<tr><td colspan="2" class="empty">暂无项目数据。</td></tr>'
+    } else {
+      data.projects.forEach(function (p) {
+        var tr = document.createElement('tr')
+        tr.innerHTML = '<td>' + esc(p.name) + '</td><td>' + esc(p.status) + '</td>'
+        tbody.appendChild(tr)
+      })
+    }
+
+    gate.style.display = 'none'
+    board.style.display = 'block'
+  }
+
+  function tryUnlock(password) {
+    btn.disabled = true
+    errEl.textContent = ''
+    return fetch('./data.enc.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('数据文件加载失败（HTTP ' + res.status + '）')
+        return res.json()
+      })
+      .then(function (envelope) {
+        return decryptEnvelope(password, envelope).then(function (data) {
+          if (rememberEl.checked) {
+            try { sessionStorage.setItem(PASS_KEY, password) } catch (e) {}
+          }
+          render(data)
+        })
+      })
+      .catch(function () {
+        errEl.textContent = '密码错误或数据损坏，请重试。'
+        btn.disabled = false
+        passInput.select()
+      })
+  }
+
+  document.getElementById('gate-form').addEventListener('submit', function (ev) {
+    ev.preventDefault()
+    var pwd = passInput.value
+    if (!pwd) { errEl.textContent = '请输入密码。'; return }
+    tryUnlock(pwd)
+  })
+
+  document.getElementById('lock-btn').addEventListener('click', function () {
+    try { sessionStorage.removeItem(PASS_KEY) } catch (e) {}
+    location.reload()
+  })
+
+  // 会话内已解锁过则自动重试
+  try {
+    var saved = sessionStorage.getItem(PASS_KEY)
+    if (saved) {
+      rememberEl.checked = true
+      passInput.value = saved
+      tryUnlock(saved)
+    }
+  } catch (e) {}
+})()
+</script>
+</body>
+</html>

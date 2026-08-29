@@ -825,6 +825,11 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
+  <a class="home-card" href="/dashboard/">
+    <span class="home-card-index">10 / Dashboard</span>
+    <span class="home-card-title">个人每日工作看板</span>
+    <span class="home-card-desc">定时任务与个人工作进展的加密看板，密码访问，每日自动更新。</span>
+  </a>
 </section>
 `)
 
