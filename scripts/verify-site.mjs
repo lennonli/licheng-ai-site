@@ -103,7 +103,7 @@ for (const file of htmlFiles) {
   const route = routeFor(file)
   const html = readFileSync(file, 'utf8')
   const isImmersive = route.startsWith('/tutorial-views/')
-  const isPrivateUtility = route.startsWith('/__analytics-')
+  const isPrivateUtility = route.startsWith('/__analytics-') || route.startsWith('/dashboard')
   const isNotFound = route === '/404'
   const noWechatContactRoutes = new Set(['/tools/course-ppt/'])
   if (!isImmersive && !isPrivateUtility) {
