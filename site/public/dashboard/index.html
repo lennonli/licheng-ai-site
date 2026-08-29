@@ -147,6 +147,33 @@
     }
     .foot button:hover { color: var(--red); border-color: var(--red); }
 
+    /* ---- 统计概览条 ---- */
+    .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px; margin: 0 0 26px; }
+    .stat { background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+      padding: 14px 18px; box-shadow: 0 8px 22px rgba(20,35,27,.05); }
+    .stat b { display: block; font-size: 26px; line-height: 1.2; color: var(--green); }
+    .stat.warn b { color: var(--gold); }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .machine-badge {
+      display: inline-block; margin-left: 8px; padding: 1px 9px; border-radius: 999px;
+      background: var(--panel); color: var(--muted); font-size: 12px; font-weight: 600;
+      vertical-align: middle;
+    }
+    .card .meta-line { margin-top: 10px; font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .card .meta-line b { color: var(--ink); font-weight: 600; }
+    ul.plain li .item-time { color: var(--muted); font-size: 12.5px; margin-right: 8px; }
+    ul.plain li .item-detail { display: block; margin-top: 6px; color: var(--muted);
+      font-size: 13.5px; line-height: 1.6; }
+    ul.plain li .item-artifacts { display: block; margin-top: 6px; font-size: 12.5px;
+      color: var(--green); word-break: break-all; }
+    .prio { display: inline-block; margin-right: 8px; padding: 1px 9px; border-radius: 999px;
+      font-size: 12px; font-weight: 600; }
+    .prio.high { background: rgba(179,64,46,.12); color: var(--red); }
+    .prio.mid { background: rgba(201,162,39,.15); color: #8a6d10; }
+    .prio.low { background: var(--panel); color: var(--muted); }
+    .proj-table .sub { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+
     @media (max-width: 640px) {
       body { padding: 24px 14px 48px; }
       .board-head h1 { font-size: 24px; }
@@ -179,6 +206,8 @@
     </div>
     <p class="board-sub">由 Mac mini 定时任务每日 17:30 汇总发布（iMac 分片 17:00 先行更新，两机数据自动合并），内容加密后发布。</p>
 
+    <div class="stat-strip" id="c-stats"></div>
+
     <section class="section">
       <h2><span class="no">01</span>定时任务清单与状态</h2>
       <div class="cards" id="c-cron"></div>
@@ -197,7 +226,7 @@
     <section class="section">
       <h2><span class="no">04</span>在办项目速览</h2>
       <table class="proj-table">
-        <thead><tr><th>项目</th><th>当前状态</th></tr></thead>
+        <thead><tr><th style="width:18%">项目</th><th>当前状态</th><th style="width:30%">下一步</th><th style="width:12%">更新日期</th></tr></thead>
         <tbody id="c-projects"></tbody>
       </table>
     </section>
@@ -263,26 +292,54 @@
     document.getElementById('b-date').textContent = esc(data.date || '')
     document.getElementById('b-time').textContent = esc(data.generatedAt || '')
 
+    // 统计概览条
+    var tasks = data.cronTasks || []
+    var okCount = tasks.filter(function (t) { return (t.status || 'ok') === 'ok' }).length
+    var warnCount = tasks.length - okCount
+    var stats = [
+      { n: tasks.length, label: '定时任务', warn: false },
+      { n: warnCount, label: '需关注任务', warn: warnCount > 0 },
+      { n: (data.dailySummary || []).length, label: '昨日完成事项', warn: false },
+      { n: (data.todos || []).length, label: '待办跟进', warn: false },
+      { n: (data.projects || []).length, label: '在办项目', warn: false }
+    ]
+    var strip = document.getElementById('c-stats')
+    strip.innerHTML = ''
+    stats.forEach(function (s) {
+      var div = document.createElement('div')
+      div.className = 'stat' + (s.warn ? ' warn' : '')
+      div.innerHTML = '<b>' + s.n + '</b><span>' + esc(s.label) + '</span>'
+      strip.appendChild(div)
+    })
+
+    // 定时任务卡片（含最近执行明细）
     var cronHost = document.getElementById('c-cron')
     cronHost.innerHTML = ''
-    if (!data.cronTasks || !data.cronTasks.length) {
+    if (!tasks.length) {
       cronHost.innerHTML = '<div class="card"><p>暂无任务数据。</p></div>'
     } else {
-      data.cronTasks.forEach(function (t) {
+      tasks.forEach(function (t) {
         var st = t.status || 'ok'
         var dotCls = st === 'ok' ? 'ok' : (st === 'warn' ? 'warn' : 'bad')
         var stText = t.statusNote || (st === 'ok' ? '运行正常' : (st === 'warn' ? '需关注' : '异常'))
+        var machine = t.machine ? '<span class="machine-badge">' + esc(t.machine) + '</span>' : ''
         var div = document.createElement('div')
         div.className = 'card'
-        div.innerHTML = '<h3>' + esc(t.name) +
+        var meta = ''
+        if (t.lastRun) meta += '最近执行：<b>' + esc(t.lastRun) + '</b><br>'
+        if (t.lastResult) meta += '执行结果：' + esc(t.lastResult) + '<br>'
+        if (t.nextRun) meta += '下次执行：' + esc(t.nextRun)
+        div.innerHTML = '<h3>' + esc(t.name) + machine +
           (t.schedule ? '<span class="freq">' + esc(t.schedule) + '</span>' : '') +
           '</h3><p>' + esc(t.description || '') + '</p>' +
-          '<div class="status"><span class="dot ' + dotCls + '"></span>' + esc(stText) + '</div>'
+          '<div class="status"><span class="dot ' + dotCls + '"></span>' + esc(stText) + '</div>' +
+          (meta ? '<div class="meta-line">' + meta + '</div>' : '')
         cronHost.appendChild(div)
       })
     }
 
-    function fillList(id, items, withTag) {
+    // 列表通用填充：支持 time/detail/artifacts（总结）与 priority/due/source（待办）
+    function fillList(id, items) {
       var ul = document.getElementById(id)
       ul.innerHTML = ''
       if (!items || !items.length) {
@@ -291,22 +348,60 @@
       }
       items.forEach(function (it) {
         var li = document.createElement('li')
-        var tag = (withTag && it.tag) ? '<span class="tag">' + esc(it.tag) + '</span>' : ''
-        li.innerHTML = tag + esc(it.text || it)
+        if (typeof it === 'string') {
+          li.textContent = it
+        } else {
+          var head = ''
+          if (it.time) head += '<span class="item-time">' + esc(it.time) + '</span>'
+          if (it.tag) head += '<span class="tag">' + esc(it.tag) + '</span>'
+          if (it.machine) head += '<span class="machine-badge">' + esc(it.machine) + '</span>'
+          var prio = ''
+          if (it.priority) {
+            var cls = it.priority === '高' ? 'high' : (it.priority === '中' ? 'mid' : 'low')
+            prio = '<span class="prio ' + cls + '">' + esc(it.priority) + '</span>'
+          }
+          li.innerHTML = head + prio + esc(it.text || '')
+          if (it.detail) {
+            var d = document.createElement('span')
+            d.className = 'item-detail'
+            d.textContent = it.detail
+            li.appendChild(d)
+          }
+          var extra = []
+          if (it.due) extra.push('期限：' + it.due)
+          if (it.source) extra.push('来源：' + it.source)
+          if (extra.length) {
+            var ex = document.createElement('span')
+            ex.className = 'item-detail'
+            ex.textContent = extra.join(' · ')
+            li.appendChild(ex)
+          }
+          if (it.artifacts && it.artifacts.length) {
+            var a = document.createElement('span')
+            a.className = 'item-artifacts'
+            a.textContent = '产出物：' + it.artifacts.join('、')
+            li.appendChild(a)
+          }
+        }
         ul.appendChild(li)
       })
     }
-    fillList('c-summary', data.dailySummary, true)
-    fillList('c-todo', data.todos, true)
+    fillList('c-summary', data.dailySummary)
+    fillList('c-todo', data.todos)
 
+    // 项目表（状态 + 下一步 + 更新日期）
     var tbody = document.getElementById('c-projects')
     tbody.innerHTML = ''
     if (!data.projects || !data.projects.length) {
-      tbody.innerHTML = '<tr><td colspan="2" class="empty">暂无项目数据。</td></tr>'
+      tbody.innerHTML = '<tr><td colspan="4" class="empty">暂无项目数据。</td></tr>'
     } else {
       data.projects.forEach(function (p) {
         var tr = document.createElement('tr')
-        tr.innerHTML = '<td>' + esc(p.name) + '</td><td>' + esc(p.status) + '</td>'
+        var machine = p.machine ? '<span class="machine-badge">' + esc(p.machine) + '</span>' : ''
+        var status = esc(p.status || '')
+        if (p.detail) status += '<span class="sub">' + esc(p.detail) + '</span>'
+        tr.innerHTML = '<td>' + esc(p.name) + machine + '</td><td>' + status + '</td><td>' +
+          esc(p.nextStep || '—') + '</td><td>' + esc(p.updatedAt || data.date || '') + '</td>'
         tbody.appendChild(tr)
       })
     }
