@@ -2,6 +2,7 @@
 <BackButton fallback="/tools/" />
 
 <div class="lc-course-hero">
+  <a class="lc-hero-ppt-btn" href="/tools/course-ppt/" target="_blank" rel="noopener">课程PPT<span aria-hidden="true"> ↗</span></a>
   <span class="lc-course-kicker">Legal AI Training Program</span>
   <h1 class="lc-course-title">法律业务 AI 培训课程表 · 2026年8月</h1>
   <p class="lc-course-subtitle">面向法律业务场景的 AI 工具配置、自动化核查、合同审查、诉讼文书、台账监测、模板化成稿与交付边界培训。每门课均标注本站配套资料，课后可对照复练；课程与示例同步更新于本站 AGENTS 指令库与 AI 教程栏目。</p>

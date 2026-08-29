@@ -2799,3 +2799,35 @@ body {
   border-color: rgba(159, 232, 112, 0.35);
   background: linear-gradient(120deg, rgba(159, 232, 112, 0.13), rgba(159, 232, 112, 0.04) 65%);
 }
+
+/* 课程表卡片右上角「课程PPT」入口按钮 */
+.lc-hero-ppt-btn {
+  position: absolute;
+  top: 30px;
+  right: 36px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(246, 251, 239, 0.45);
+  background: rgba(246, 251, 239, 0.1);
+  color: #f6fbef;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.lc-hero-ppt-btn:hover {
+  background: rgba(159, 232, 112, 0.22);
+  border-color: rgba(159, 232, 112, 0.65);
+  color: #f6fbef;
+}
+@media (max-width: 720px) {
+  .lc-hero-ppt-btn {
+    position: static;
+    margin-bottom: 14px;
+  }
+}
