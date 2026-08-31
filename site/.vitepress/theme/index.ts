@@ -5,6 +5,7 @@ import BackButton from './BackButton.vue'
 import BackToTopButton from './BackToTopButton.vue'
 import HomeSearchBox from './HomeSearchBox.vue'
 import HomePopularPages from './HomePopularPages.vue'
+import InstallPrompt from './InstallPrompt.vue'
 import WeChatContact from './WeChatContact.vue'
 import './custom.css'
 
@@ -20,5 +21,6 @@ export default {
     app.component('BackButton', BackButton)
     app.component('HomeSearchBox', HomeSearchBox)
     app.component('HomePopularPages', HomePopularPages)
+    app.component('InstallPrompt', InstallPrompt)
   }
 }

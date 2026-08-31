@@ -254,11 +254,18 @@ function addArticleChromeToMarkdownFiles(dir, fallback, repoWebUrl, repoDir, sou
   }
 }
 
+// 不在网站展示的 skill（所内自用工具，仓库保留但不上站）
+const siteExcludedSkills = new Set(['company-monitor'])
+
 function listSkillDirs(src) {
   return readDirSafe(src)
     .filter((name) => {
       const full = path.join(src, name)
-      return statSync(full).isDirectory() && existsSync(path.join(full, 'SKILL.md'))
+      return (
+        !siteExcludedSkills.has(name) &&
+        statSync(full).isDirectory() &&
+        existsSync(path.join(full, 'SKILL.md'))
+      )
     })
     .sort()
 }
@@ -277,6 +284,8 @@ const titleOverrides = new Map([
   ['agents/法律PPT设计.md', '法律 PPT 设计指令'],
   ['skills/cnipa-patent-evidence-archive', 'CNIPA 专利证据归档'],
   ['skills/cnipa-trademark-evidence-archive', 'CNIPA 商标证据归档'],
+  ['skills/company-preliminary-analysis', '委托前公司初步分析报告'],
+  ['skills/contract-review', '合同审查'],
   ['skills/network-check-v3', '中国企业网络核查'],
   ['skills/wechat-gzh-format', '公众号文章排版'],
   ['tutorials/macos-codex-legal-workflow-setup.md', 'macOS + Codex 法律工作流环境安装教程'],
@@ -294,6 +303,8 @@ const summaryOverrides = new Map([
   ['agents/法律尽调报告提示词.md', '沉淀法律尽职调查报告提示词，当前重点覆盖股权历史沿革章节，适合指导工商内档核查、股权变动底稿拆分、历史沿革初稿起草和补充材料清单整理。'],
   ['skills/cnipa-patent-evidence-archive', '用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。'],
   ['skills/cnipa-trademark-evidence-archive', '用于从 CNIPA 商标网上检索系统归档商标详情页和商标流程页，适合商标核查、知识产权尽调和证据留存。'],
+  ['skills/company-preliminary-analysis', '用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。'],
+  ['skills/contract-review', '用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。'],
   ['skills/network-check-v3', '用于中国企业主体和风险网络核查，批量检索信用、处罚、失信、监管和公开网页信息，并保存可追溯的 PDF 证据文件。'],
   ['skills/wechat-gzh-format', '用于将文章内容排版为微信公众号 HTML 模板（法律AI工作站风格），并同步生成 120 字内文章摘要和 2.35:1 封面图，全内联样式一键复制粘贴进公众号编辑器。'],
   ['tutorials/macos-codex-legal-workflow-setup.md', '面向全新 macOS 和刚安装 Codex 的法律工作环境，覆盖 Homebrew、文档处理、PDF/OCR、Python 虚拟环境和 Codex 配置。'],
@@ -909,7 +920,7 @@ ensureDir(skillsDest)
 const skillDirs = listSkillDirs(skillsSrc)
 let skillsIndex = `${backButton('/')}# 法律业务 Skill 技能
 
-<p class="section-lead">这里汇总法律业务中可以复用的 Skill，覆盖证据归档、网络核查和常见实务自动化流程。</p>
+<p class="section-lead">这里汇总法律业务中可以复用的 Skill，覆盖证据归档、网络核查、委托前客户分析、合同审查和常见实务自动化流程。每个 Skill 详情页顶部提供一键安装提示词，复制发给智能体即可完成安装。</p>
 
 <p class="source-link">来源仓库：<a href="https://github.com/lennonli/licheng-skills" target="_blank" rel="noreferrer">lennonli/licheng-skills</a></p>
 
@@ -921,7 +932,9 @@ for (const dir of skillDirs) {
   const skillMd = stripYamlFrontmatter(readFileSync(path.join(skillsSrc, dir, 'SKILL.md'), 'utf8'))
   const skillKey = `skills/${dir}`
   const skillUpdatedAt = gitLastUpdated(skillsSrc, path.join(dir, 'SKILL.md'))
-  const page = `${backButton('/skills/')}${articleTools(githubBlobUrl(sourceWebUrls.skills, `${dir}/SKILL.md`), skillUpdatedAt)}# ${displayTitle(skillKey, dir, skillMd)}
+  const page = `${backButton('/skills/')}${articleTools(githubBlobUrl(sourceWebUrls.skills, `${dir}/SKILL.md`), skillUpdatedAt)}<InstallPrompt skill-name="${dir}" />
+
+# ${displayTitle(skillKey, dir, skillMd)}
 
 来源目录：\`${dir}/SKILL.md\`
 

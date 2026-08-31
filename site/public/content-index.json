@@ -1,8 +1,32 @@
 [
   {
+    "href": "/skills/contract-review",
+    "title": "合同审查",
+    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/skills/company-preliminary-analysis",
+    "title": "委托前公司初步分析报告",
+    "summary": "用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/tutorials/gzh-template-with-ai",
+    "title": "用AI做一个自己的公众号排版模板：四步搞定，附全部提示词",
+    "summary": "我现在的公众号文章排版，基本不花时间。；不是我买了什么排版工具，而是我让AI给我做了一个专属排版模板：文章写完，转成Markdown丢进去，出来一个网页，点一下「复制」，粘贴进公众号编辑器，标题、配色、卡片、金句、二维码全部就位。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/wechat-api-draft",
+    "title": "用微信API自动写公众号草稿：从凭证到入库，附完整代码",
+    "summary": "上一篇讲了怎么用AI做排版模板，文章排好之后，还有最后一步：粘贴进公众号后台。；一篇还好，如果你也像我一样，一次写一个系列（我最近一口气写了25篇），一篇篇粘贴、传封面、填摘要，就是纯粹的体力活。",
+    "section": "AI 教程"
+  },
+  {
     "href": "/skills/wechat-gzh-format",
-    "title": "公众号文章排版",
-    "summary": "用于将文章内容排版为微信公众号 HTML 模板（法律AI工作站风格），并同步生成 120 字内文章摘要和 2.35:1 封面图，全内联样式一键复制粘贴进公众号编辑器。",
+    "title": "微信公众号排版模板（法律AI工作站风格）",
+    "summary": "将任意文章内容（本地 md、网页链接或对话中的文字）排成与 ai.licheng.uk 一致的公众号 HTML。成品 = 一个自带「一键复制」按钮的本地 HTML 文件，用户点按钮复制后粘贴进公众号编辑器即完成排版。；取得文章内容（读文……",
     "section": "法律业务 Skill"
   },
   {
@@ -354,6 +378,12 @@
     "section": "AI 教程"
   },
   {
+    "href": "/agents/法律业务通用指令",
+    "title": "法律业务通用指令",
+    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
+    "section": "智能体指令"
+  },
+  {
     "href": "/tutorials/civil-litigation-evidence-organization",
     "title": "证据整理与证据目录",
     "summary": "民事诉讼 AI 实战系列·第二篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、保密分级、本地 OCR 工具链、反编造纪律、模板复用四步法都在那里，本篇不再重复。",
@@ -364,12 +394,6 @@
     "title": "任务：排查并修复这台 Mac 的代理分流配置",
     "summary": "复用说明：本文为跨机器复用的排查提示词模板。原始工作稿中的服务器公网 IP、tailnet IP、节点密码等真实凭证已脱敏为占位符，使用时自行替换；节点添加步骤由本人在客户端界面手动完成。；目标状态：国内网站直连、国外网站走 hyste……",
     "section": "AI 教程"
-  },
-  {
-    "href": "/skills/company-monitor",
-    "title": "公司舆情与法律风险监控 Skill（company-monitor）",
-    "summary": "定位：所内自用的线索发现工具，不作法律结论、不作对外交付文件。产出仅供李成律师内部参考。；监控对象：config/targets.yaml 中列明的全部主体（挂牌/上市主体及 IPO 在审主体，首次部署时逐一核验登记信息并录入）。",
-    "section": "法律业务 Skill"
   },
   {
     "href": "/tutorials/civil-litigation-closing-archive",
@@ -489,12 +513,6 @@
     "href": "/agents/AI-Agent辅助IPO股东穿透实操教程",
     "title": "AI Agent辅助IPO股东穿透核查与底稿归档实操教程",
     "summary": "以某新三板挂牌公司北交所IPO项目为样本 · AI工具：ZCode Agent ＋ 案牍AnduAI穿透报告 · 2026年8月；本教程按实际操作的时间顺序，复盘用AI Agent完成股东穿透底稿归档与资料跟踪的全流程，共十一个步骤。每……",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/法律业务通用指令",
-    "title": "法律业务通用指令",
-    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
     "section": "智能体指令"
   },
   {
