@@ -1,5 +1,191 @@
 [
   {
+    "href": "/skills/wechat-gzh-format",
+    "title": "公众号文章排版",
+    "summary": "用于将文章内容排版为微信公众号 HTML 模板（法律AI工作站风格），并同步生成 120 字内文章摘要和 2.35:1 封面图，全内联样式一键复制粘贴进公众号编辑器。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/tutorials/ai-basics-01-what-is-ai",
+    "title": "AI入门01｜我们今天说的AI，到底是什么？",
+    "summary": "人工智能，Artificial Intelligence，简称AI，其实是一个非常大的概念。；它并不是从ChatGPT出现以后才有。搜索推荐、语音识别、人脸识别、自动驾驶，都属于人工智能的不同应用。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-02-chatgpt-vs-llm",
+    "title": "AI入门02｜ChatGPT不是AI，大模型也不等于ChatGPT",
+    "summary": "很多人第一次接触AI，就是从ChatGPT开始。；理解AI世界的第一步，就是把“模型”和“产品”分开。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-03-how-llm-learns-to-speak",
+    "title": "AI入门03｜大模型到底是怎么“学会”说话的？",
+    "summary": "很多人第一次和大模型聊天，会有一种很强烈的感觉：；对于入门来说，可以从一个最核心的机制理解：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-04-next-token-prediction",
+    "title": "AI入门04｜AI是真的理解你，还是只是在预测下一个字？",
+    "summary": "知道大模型会预测下一个Token以后，很自然会出现一个问题：；那AI到底是真的理解我，还是只是在做概率预测？",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-05-why-ai-hallucinates",
+    "title": "AI入门05｜为什么AI会一本正经地胡说八道？",
+    "summary": "使用AI最危险的体验之一，不是它说“我不知道”。；看起来合理、表达完整，但事实并不存在或并不准确的内容。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-06-how-llm-is-trained",
+    "title": "AI入门06｜一个大模型，到底是怎么训练出来的？",
+    "summary": "前面讲过，大模型会通过预测下一个Token学习语言。；但一个今天可以正常聊天、推理和调用工具的大模型，并不是只做一次训练就结束。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-07-token-and-memory-limit",
+    "title": "AI入门07｜Token是什么？为什么它会影响AI能记住多少内容？",
+    "summary": "很多API按照Token计费，模型也经常写着支持几十万Token上下文。；模型不会直接把整篇文章当成一个整体处理。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-08-context",
+    "title": "AI入门08｜什么是上下文？为什么它可能比提示词更重要",
+    "summary": "前一篇讲了Token，也讲到一个词：；很多人刚开始用AI时，会把注意力主要放在“提示词怎么写”。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-09-prompt",
+    "title": "AI入门09｜提示词到底是什么？其实没有那么神秘",
+    "summary": "这一篇继续讲大家最熟悉、也最容易被“神化”的概念：；这些话有时有帮助，但真正决定结果的通常不是修饰词。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-10-well-defined-task",
+    "title": "AI入门10｜怎样给AI一个规范、完整的工作任务？",
+    "summary": "那怎样给AI交代一项相对完整的工作？；对于大多数任务，只要把几个关键要素说清楚：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-11-reasoning-and-speed",
+    "title": "AI入门11｜为什么有的AI回答很快，有的却要“想很久”？",
+    "summary": "同样是AI，有的几秒钟就回答，有的会显示“思考中”，还有的推理模式明显更慢。；改一句话、翻译、提取几个字段，这类任务比较直接。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-12-multimodal-ai",
+    "title": "AI入门12｜什么是多模态AI？为什么它不只会读文字了",
+    "summary": "今天越来越多AI已经不只是处理文字。；图片、截图、PDF、语音、视频、表格。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-13-what-is-agent",
+    "title": "AI入门13｜什么是AI智能体Agent？它和普通聊天AI有什么区别？",
+    "summary": "聊天AI主要负责回答问题，Agent更强调完成任务。；“读取这个文件夹里的全部合同，找出知识产权条款，比较差异，生成Excel并保存到输出目录。”",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-14-llm-and-agent",
+    "title": "AI入门14｜大模型和Agent到底是什么关系？",
+    "summary": "这一篇把一个特别容易混淆的问题讲清楚：；模型像“大脑”，Agent像配了工具和工作环境的工作人员。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-15-harness",
+    "title": "AI入门15｜Harness是什么？为什么同一个模型放在不同Agent里，效果会差很多？",
+    "summary": "同一个模型，放进不同Agent里，表现可能完全不同。；这个词目前并不是所有厂商都使用完全相同的严格定义，但在Agent语境里，可以先理解成：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-16-what-agent-can-do",
+    "title": "AI入门16｜Agent到底能做什么？从聊天到真正执行任务",
+    "summary": "前面已经讲了模型、Agent和Harness。；如果一项工作包含读取资料、分析、调用工具、生成结果等多个步骤，就很适合考虑Agent。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-17-tool-calling",
+    "title": "AI入门17｜什么是工具调用？为什么AI现在可以自己搜索、读文件、查数据库？",
+    "summary": "Agent之所以比普通聊天AI更像一个工作人员，一个关键原因是：；模型负责判断要做什么，工具负责真正去做。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-18-mcp",
+    "title": "AI入门18｜MCP是什么？为什么有些Agent把它叫“连接器”？",
+    "summary": "Model Context Protocol，模型上下文协议。；同时，一些AI产品特别是国内产品会把类似的外部集成功能直接叫：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-19-ai-knowledge-base",
+    "title": "AI入门19｜什么是AI知识库？把一堆文件丢进去并不等于知识库",
+    "summary": "你可以上传合同、制度、案例、法规、会议纪要和公司资料，然后让AI基于这些内容回答。；知识库是一套让AI能够在需要时找到正确资料的信息系统。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-20-kb-search-context-memory",
+    "title": "AI入门20｜知识库、搜索、上下文和记忆，到底有什么区别？",
+    "summary": "知识库、搜索、上下文和记忆，都和“给AI提供信息”有关，所以非常容易混淆。；搜索负责找外部信息，知识库负责查长期资料，上下文负责当前使用，记忆负责长期保留重要信息。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-21-subagent",
+    "title": "AI入门21｜什么是Subagent？它和多个Agent有什么区别？",
+    "summary": "Subagent，子代理或子智能体。；这个概念非常容易和“多个Agent”混在一起。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-22-multi-agent",
+    "title": "AI入门22｜什么是Multi-Agent？为什么要让多个Agent一起工作？",
+    "summary": "Multi-Agent是多个相对独立Agent之间进行分工、协作、交接或互相检查。；复杂工作不一定需要一个Agent从头做到尾。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-23-skill",
+    "title": "AI入门23｜Skill是什么？它和Prompt、Agent有什么区别？",
+    "summary": "前面已经讲过 Prompt，也讲过 Agent。；Prompt 是这一次让 AI 做什么，Skill 是一类事情通常应该怎么做，Agent 是真正负责执行任务的主体。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-24-ai-memory",
+    "title": "AI入门24｜什么是AI记忆？它和聊天记录、上下文、知识库有什么区别？",
+    "summary": "现在越来越多 AI 产品开始提供一个功能：；它可以让 AI 在新的对话里仍然知道一些过去的信息。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-25-embedding",
+    "title": "AI入门25｜Embedding是什么？为什么AI能找到“意思相近”的内容？",
+    "summary": "讲知识库和 RAG 时，经常会遇到一个词：；这个词听起来很数学，但普通用户不需要理解公式。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-26-rag",
+    "title": "AI入门26｜RAG是什么？为什么AI回答前要先找资料？",
+    "summary": "在知识库、企业AI和专业Agent里，经常会看到一个缩写：；Retrieval-Augmented Generation，检索增强生成。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-27-fine-tuning",
+    "title": "AI入门27｜Fine-tuning微调是什么？它和RAG、知识库有什么区别？",
+    "summary": "讲完RAG以后，还有一个经常被混在一起的词：；“我把公司资料上传进去，把模型微调一下。”",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-28-api",
+    "title": "AI入门28｜API是什么？为什么同一个大模型可以出现在很多产品里？",
+    "summary": "当你开始从ChatGPT走向Agent、自动化和各种AI工具以后，迟早会遇到一个词：；Application Programming Interface，应用程序编程接口。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-29-open-local-cloud-models",
+    "title": "AI入门29｜开源模型、本地模型和云端模型有什么区别？",
+    "summary": "接触AI稍微深入一点以后，经常会听到：；这些词经常混在一起，但其实讲的是不同问题。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-basics-30-finale",
+    "title": "AI入门30｜最终篇：从大模型到Agent，把今天的AI世界重新拼起来",
+    "summary": "这是《AI入门：从大模型到智能体》的最后一篇。；今天很多生成式AI能力，核心来自大模型。",
+    "section": "AI 教程"
+  },
+  {
     "href": "/tutorials/ai-priority-series-intro",
     "title": "AI优先｜开篇：建立自己的AI工作系统",
     "summary": "过去一段时间，我花了很多时间研究AI，也用了很多不同的模型、Agent、MCP、Skill、知识库和自动化工具。；真正重要的，不是知道多少AI工具，而是有没有建立一套适合自己的AI工作系统。",
@@ -168,12 +354,6 @@
     "section": "AI 教程"
   },
   {
-    "href": "/agents/法律业务通用指令",
-    "title": "法律业务通用指令",
-    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
-    "section": "智能体指令"
-  },
-  {
     "href": "/tutorials/civil-litigation-evidence-organization",
     "title": "证据整理与证据目录",
     "summary": "民事诉讼 AI 实战系列·第二篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、保密分级、本地 OCR 工具链、反编造纪律、模板复用四步法都在那里，本篇不再重复。",
@@ -309,6 +489,12 @@
     "href": "/agents/AI-Agent辅助IPO股东穿透实操教程",
     "title": "AI Agent辅助IPO股东穿透核查与底稿归档实操教程",
     "summary": "以某新三板挂牌公司北交所IPO项目为样本 · AI工具：ZCode Agent ＋ 案牍AnduAI穿透报告 · 2026年8月；本教程按实际操作的时间顺序，复盘用AI Agent完成股东穿透底稿归档与资料跟踪的全流程，共十一个步骤。每……",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/agents/法律业务通用指令",
+    "title": "法律业务通用指令",
+    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
     "section": "智能体指令"
   },
   {

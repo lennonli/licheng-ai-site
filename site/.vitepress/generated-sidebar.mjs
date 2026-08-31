@@ -1123,104 +1123,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "〇、指令效力与冲突解决",
-          "link": "/agents/法律业务通用指令#〇、指令效力与冲突解决"
+          "text": "一、角色定位与默认立场",
+          "link": "/agents/法律业务通用指令#一、角色定位与默认立场"
         },
         {
-          "text": "一、角色定位与利益立场",
-          "link": "/agents/法律业务通用指令#一、角色定位与利益立场"
+          "text": "二、保密与信息安全",
+          "link": "/agents/法律业务通用指令#二、保密与信息安全"
         },
         {
-          "text": "二、保密与脱敏红线",
-          "link": "/agents/法律业务通用指令#二、保密与脱敏红线"
+          "text": "三、语言、法域与法律依据核验",
+          "link": "/agents/法律业务通用指令#三、语言、法域与法律依据核验"
         },
         {
-          "text": "三、事实与法律依据核验（反编造红线）",
-          "link": "/agents/法律业务通用指令#三、事实与法律依据核验-反编造红线",
-          "items": [
-            {
-              "text": "（一）绝对禁止",
-              "link": "/agents/法律业务通用指令#一-绝对禁止"
-            },
-            {
-              "text": "（二）核验触发条件（满足其一即须检索）",
-              "link": "/agents/法律业务通用指令#二-核验触发条件-满足其一即须检索"
-            },
-            {
-              "text": "（三）核验路径与降级顺序",
-              "link": "/agents/法律业务通用指令#三-核验路径与降级顺序"
-            },
-            {
-              "text": "（四）法域与语言",
-              "link": "/agents/法律业务通用指令#四-法域与语言"
-            }
-          ]
+          "text": "四、反编造红线",
+          "link": "/agents/法律业务通用指令#四、反编造红线"
         },
         {
-          "text": "四、任务分流与执行流程",
-          "link": "/agents/法律业务通用指令#四、任务分流与执行流程",
-          "items": [
-            {
-              "text": "（一）通用流程",
-              "link": "/agents/法律业务通用指令#一-通用流程"
-            },
-            {
-              "text": "（二）按任务类型分流",
-              "link": "/agents/法律业务通用指令#二-按任务类型分流"
-            },
-            {
-              "text": "（三）停止并询问的条件",
-              "link": "/agents/法律业务通用指令#三-停止并询问的条件"
-            },
-            {
-              "text": "（四）修正与反馈处理",
-              "link": "/agents/法律业务通用指令#四-修正与反馈处理"
-            }
-          ]
+          "text": "五、执行流程",
+          "link": "/agents/法律业务通用指令#五、执行流程"
         },
         {
-          "text": "五、不确定性表述与风险分级",
-          "link": "/agents/法律业务通用指令#五、不确定性表述与风险分级",
-          "items": [
-            {
-              "text": "（一）确定性分级（法律结论必须择一标注）",
-              "link": "/agents/法律业务通用指令#一-确定性分级-法律结论必须择一标注"
-            },
-            {
-              "text": "（二）风险分级（合同审查、尽调、合规核查必须标注）",
-              "link": "/agents/法律业务通用指令#二-风险分级-合同审查、尽调、合规核查必须标注"
-            }
-          ]
+          "text": "六、文档修订模式",
+          "link": "/agents/法律业务通用指令#六、文档修订模式"
         },
         {
-          "text": "六、起草与修订规则",
-          "link": "/agents/法律业务通用指令#六、起草与修订规则",
-          "items": [
-            {
-              "text": "（一）起草默认值",
-              "link": "/agents/法律业务通用指令#一-起草默认值"
-            },
-            {
-              "text": "（二）合同条款编号规则（合同起草优先指令）",
-              "link": "/agents/法律业务通用指令#二-合同条款编号规则-合同起草优先指令"
-            },
-            {
-              "text": "（三）修订模式",
-              "link": "/agents/法律业务通用指令#三-修订模式"
-            },
-            {
-              "text": "（四）一致性校验（起草与修订完成后必须执行）",
-              "link": "/agents/法律业务通用指令#四-一致性校验-起草与修订完成后必须执行"
-            }
-          ]
+          "text": "七、起草默认值",
+          "link": "/agents/法律业务通用指令#七、起草默认值"
         },
         {
-          "text": "七、引用与出处格式",
-          "link": "/agents/法律业务通用指令#七、引用与出处格式"
-        },
-        {
-          "text": "八、Word 文档格式规范",
-          "link": "/agents/法律业务通用指令#八、word-文档格式规范",
+          "text": "八、Word 文档格式要求",
+          "link": "/agents/法律业务通用指令#八、word-文档格式要求",
           "items": [
             {
               "text": "（一）正文与标题",
@@ -1231,18 +1163,18 @@ export const generatedSidebar = {
               "link": "/agents/法律业务通用指令#二-表格"
             },
             {
-              "text": "（三）页面与其他",
-              "link": "/agents/法律业务通用指令#三-页面与其他"
+              "text": "（三）其他格式",
+              "link": "/agents/法律业务通用指令#三-其他格式"
             }
           ]
         },
         {
-          "text": "九、文件命名、版本与交付",
-          "link": "/agents/法律业务通用指令#九、文件命名、版本与交付"
+          "text": "九、律所名称与署名",
+          "link": "/agents/法律业务通用指令#九、律所名称与署名"
         },
         {
-          "text": "十、律所名称与署名",
-          "link": "/agents/法律业务通用指令#十、律所名称与署名"
+          "text": "十、法律分析与引证",
+          "link": "/agents/法律业务通用指令#十、法律分析与引证"
         },
         {
           "text": "十一、跨境与外国法事项",
@@ -1253,34 +1185,12 @@ export const generatedSidebar = {
           "link": "/agents/法律业务通用指令#十二、专业语气要求"
         },
         {
-          "text": "十三、多 Agent 协作规则",
-          "link": "/agents/法律业务通用指令#十三、多-agent-协作规则"
+          "text": "十三、法律业务多 Agent 核心规则",
+          "link": "/agents/法律业务通用指令#十三、法律业务多-agent-核心规则"
         },
         {
-          "text": "十四、交付前自检清单",
-          "link": "/agents/法律业务通用指令#十四、交付前自检清单"
-        },
-        {
-          "text": "附录 A：权威核验来源清单",
-          "link": "/agents/法律业务通用指令#附录-a-权威核验来源清单",
-          "items": [
-            {
-              "text": "（一）法律法规与效力状态",
-              "link": "/agents/法律业务通用指令#一-法律法规与效力状态"
-            },
-            {
-              "text": "（二）司法与案例",
-              "link": "/agents/法律业务通用指令#二-司法与案例"
-            },
-            {
-              "text": "（三）主体与监管",
-              "link": "/agents/法律业务通用指令#三-主体与监管"
-            }
-          ]
-        },
-        {
-          "text": "附录 B：本机文件处理与 OCR 工具",
-          "link": "/agents/法律业务通用指令#附录-b-本机文件处理与-ocr-工具"
+          "text": "十五、本机 OCR 工具使用",
+          "link": "/agents/法律业务通用指令#十五、本机-ocr-工具使用"
         }
       ]
     }
@@ -1948,6 +1858,41 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/skills/wechat-gzh-format": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "公众号文章排版",
+      "link": "/skills/wechat-gzh-format"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "工作流",
+          "link": "/skills/wechat-gzh-format#工作流"
+        },
+        {
+          "text": "同步生成摘要（默认随排版一起做）",
+          "link": "/skills/wechat-gzh-format#同步生成摘要-默认随排版一起做"
+        },
+        {
+          "text": "同步生成封面（默认随排版一起做）",
+          "link": "/skills/wechat-gzh-format#同步生成封面-默认随排版一起做"
+        },
+        {
+          "text": "设计规范速查",
+          "link": "/skills/wechat-gzh-format#设计规范速查"
+        },
+        {
+          "text": "公众号硬约束（违反会丢样式）",
+          "link": "/skills/wechat-gzh-format#公众号硬约束-违反会丢样式"
+        }
+      ]
+    }
+  ],
   "/skills/": [
     {
       "text": "法律业务 Skill 技能",
@@ -2610,6 +2555,1576 @@ export const generatedSidebar = {
         {
           "text": "参考资料",
           "link": "/tutorials/ai-agent-side-conversation#参考资料"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-01-what-is-ai": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门01｜我们今天说的AI，到底是什么？",
+      "link": "/tutorials/ai-basics-01-what-is-ai"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、今天的AI为什么和以前感觉不一样？",
+          "link": "/tutorials/ai-basics-01-what-is-ai#一、今天的ai为什么和以前感觉不一样"
+        },
+        {
+          "text": "二、大模型是什么？",
+          "link": "/tutorials/ai-basics-01-what-is-ai#二、大模型是什么"
+        },
+        {
+          "text": "三、ChatGPT就是AI吗？",
+          "link": "/tutorials/ai-basics-01-what-is-ai#三、chatgpt就是ai吗"
+        },
+        {
+          "text": "四、为什么知识工作者尤其需要理解这一轮AI？",
+          "link": "/tutorials/ai-basics-01-what-is-ai#四、为什么知识工作者尤其需要理解这一轮ai"
+        },
+        {
+          "text": "五、AI正在从“回答问题”走向“完成任务”",
+          "link": "/tutorials/ai-basics-01-what-is-ai#五、ai正在从-回答问题-走向-完成任务"
+        },
+        {
+          "text": "六、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-01-what-is-ai#六、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-02-chatgpt-vs-llm": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门02｜ChatGPT不是AI，大模型也不等于ChatGPT",
+      "link": "/tutorials/ai-basics-02-chatgpt-vs-llm"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、AI是最大的概念",
+          "link": "/tutorials/ai-basics-02-chatgpt-vs-llm#一、ai是最大的概念"
+        },
+        {
+          "text": "二、大模型是核心智能能力",
+          "link": "/tutorials/ai-basics-02-chatgpt-vs-llm#二、大模型是核心智能能力"
+        },
+        {
+          "text": "三、ChatGPT是产品",
+          "link": "/tutorials/ai-basics-02-chatgpt-vs-llm#三、chatgpt是产品"
+        },
+        {
+          "text": "四、同一个模型，放在不同产品里，体验可能完全不同",
+          "link": "/tutorials/ai-basics-02-chatgpt-vs-llm#四、同一个模型-放在不同产品里-体验可能完全不同"
+        },
+        {
+          "text": "五、用合同审查举个例子",
+          "link": "/tutorials/ai-basics-02-chatgpt-vs-llm#五、用合同审查举个例子"
+        },
+        {
+          "text": "六、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-02-chatgpt-vs-llm#六、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-03-how-llm-learns-to-speak": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门03｜大模型到底是怎么“学会”说话的？",
+      "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、从“下一个Token”开始",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#一、从-下一个token-开始"
+        },
+        {
+          "text": "二、生成答案也是一步一步发生的",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#二、生成答案也是一步一步发生的"
+        },
+        {
+          "text": "三、“高级自动补全”这个比喻对不对？",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#三、-高级自动补全-这个比喻对不对"
+        },
+        {
+          "text": "四、它是不是把所有文章都背下来了？",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#四、它是不是把所有文章都背下来了"
+        },
+        {
+          "text": "五、这也解释了为什么AI会出现幻觉",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#五、这也解释了为什么ai会出现幻觉"
+        },
+        {
+          "text": "六、训练和“它记住我”不是一回事",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#六、训练和-它记住我-不是一回事"
+        },
+        {
+          "text": "七、现代模型还会接受更多训练",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#七、现代模型还会接受更多训练"
+        },
+        {
+          "text": "八、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak#八、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-04-next-token-prediction": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门04｜AI是真的理解你，还是只是在预测下一个字？",
+      "link": "/tutorials/ai-basics-04-next-token-prediction"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么AI看起来很像“理解”了？",
+          "link": "/tutorials/ai-basics-04-next-token-prediction#一、为什么ai看起来很像-理解-了"
+        },
+        {
+          "text": "二、但它和人的理解仍然不是一回事",
+          "link": "/tutorials/ai-basics-04-next-token-prediction#二、但它和人的理解仍然不是一回事"
+        },
+        {
+          "text": "三、“说得像懂了”不代表结论正确",
+          "link": "/tutorials/ai-basics-04-next-token-prediction#三、-说得像懂了-不代表结论正确"
+        },
+        {
+          "text": "四、什么任务通常更可靠？",
+          "link": "/tutorials/ai-basics-04-next-token-prediction#四、什么任务通常更可靠"
+        },
+        {
+          "text": "五、律师尤其要注意这一点",
+          "link": "/tutorials/ai-basics-04-next-token-prediction#五、律师尤其要注意这一点"
+        },
+        {
+          "text": "六、一个非常实用的判断方法",
+          "link": "/tutorials/ai-basics-04-next-token-prediction#六、一个非常实用的判断方法"
+        },
+        {
+          "text": "七、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-04-next-token-prediction#七、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-05-why-ai-hallucinates": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门05｜为什么AI会一本正经地胡说八道？",
+      "link": "/tutorials/ai-basics-05-why-ai-hallucinates"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、什么是AI幻觉？",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#一、什么是ai幻觉"
+        },
+        {
+          "text": "二、为什么会出现幻觉？",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#二、为什么会出现幻觉"
+        },
+        {
+          "text": "三、为什么幻觉特别容易骗人？",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#三、为什么幻觉特别容易骗人"
+        },
+        {
+          "text": "四、哪些问题幻觉风险更高？",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#四、哪些问题幻觉风险更高"
+        },
+        {
+          "text": "五、哪些任务相对更可控？",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#五、哪些任务相对更可控"
+        },
+        {
+          "text": "六、怎么降低幻觉？",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#六、怎么降低幻觉"
+        },
+        {
+          "text": "七、可以要求AI区分三类内容",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#七、可以要求ai区分三类内容"
+        },
+        {
+          "text": "八、幻觉是不是说明AI不能用于专业工作？",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#八、幻觉是不是说明ai不能用于专业工作"
+        },
+        {
+          "text": "九、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-05-why-ai-hallucinates#九、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-06-how-llm-is-trained": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门06｜一个大模型，到底是怎么训练出来的？",
+      "link": "/tutorials/ai-basics-06-how-llm-is-trained"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、第一步：准备训练数据",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#一、第一步-准备训练数据"
+        },
+        {
+          "text": "二、第二步：预训练",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#二、第二步-预训练"
+        },
+        {
+          "text": "三、模型不是把训练材料原样存进数据库",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#三、模型不是把训练材料原样存进数据库"
+        },
+        {
+          "text": "四、第三步：指令训练",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#四、第三步-指令训练"
+        },
+        {
+          "text": "五、第四步：人类反馈和对齐",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#五、第四步-人类反馈和对齐"
+        },
+        {
+          "text": "六、第五步：强化推理、代码、工具和多模态能力",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#六、第五步-强化推理、代码、工具和多模态能力"
+        },
+        {
+          "text": "七、训练模型和建立知识库完全不同",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#七、训练模型和建立知识库完全不同"
+        },
+        {
+          "text": "八、每天聊天也通常不等于重新训练模型",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#八、每天聊天也通常不等于重新训练模型"
+        },
+        {
+          "text": "九、可以用“培养新员工”做一个比喻",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#九、可以用-培养新员工-做一个比喻"
+        },
+        {
+          "text": "十、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-06-how-llm-is-trained#十、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-07-token-and-memory-limit": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门07｜Token是什么？为什么它会影响AI能记住多少内容？",
+      "link": "/tutorials/ai-basics-07-token-and-memory-limit"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、Token不完全等于“一个字”或者“一个单词”",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#一、token不完全等于-一个字-或者-一个单词"
+        },
+        {
+          "text": "二、模型真正处理的是Token",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#二、模型真正处理的是token"
+        },
+        {
+          "text": "三、为什么Token会影响AI“能看多少”？",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#三、为什么token会影响ai-能看多少"
+        },
+        {
+          "text": "四、可以把上下文窗口想成一张工作桌",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#四、可以把上下文窗口想成一张工作桌"
+        },
+        {
+          "text": "五、为什么一个很长的对话有时会越来越不好用？",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#五、为什么一个很长的对话有时会越来越不好用"
+        },
+        {
+          "text": "六、Token还会影响成本",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#六、token还会影响成本"
+        },
+        {
+          "text": "七、普通用户需要每天精确计算Token吗？",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#七、普通用户需要每天精确计算token吗"
+        },
+        {
+          "text": "八、Token和记忆不是一回事",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#八、token和记忆不是一回事"
+        },
+        {
+          "text": "九、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-07-token-and-memory-limit#九、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-08-context": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门08｜什么是上下文？为什么它可能比提示词更重要",
+      "link": "/tutorials/ai-basics-08-context"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、上下文到底是什么？",
+          "link": "/tutorials/ai-basics-08-context#一、上下文到底是什么"
+        },
+        {
+          "text": "二、上下文不只是聊天记录",
+          "link": "/tutorials/ai-basics-08-context#二、上下文不只是聊天记录"
+        },
+        {
+          "text": "三、为什么上下文经常比提示词更重要？",
+          "link": "/tutorials/ai-basics-08-context#三、为什么上下文经常比提示词更重要"
+        },
+        {
+          "text": "四、律师工作尤其容易理解",
+          "link": "/tutorials/ai-basics-08-context#四、律师工作尤其容易理解"
+        },
+        {
+          "text": "五、普通工作也是一样",
+          "link": "/tutorials/ai-basics-08-context#五、普通工作也是一样"
+        },
+        {
+          "text": "六、给AI上下文，最直接的方法就是给材料",
+          "link": "/tutorials/ai-basics-08-context#六、给ai上下文-最直接的方法就是给材料"
+        },
+        {
+          "text": "七、但上下文也不是越多越好",
+          "link": "/tutorials/ai-basics-08-context#七、但上下文也不是越多越好"
+        },
+        {
+          "text": "八、上下文和知识库不是一回事",
+          "link": "/tutorials/ai-basics-08-context#八、上下文和知识库不是一回事"
+        },
+        {
+          "text": "九、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-08-context#九、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-09-prompt": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门09｜提示词到底是什么？其实没有那么神秘",
+      "link": "/tutorials/ai-basics-09-prompt"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、提示词不是“咒语”",
+          "link": "/tutorials/ai-basics-09-prompt#一、提示词不是-咒语"
+        },
+        {
+          "text": "二、一个好的提示词，核心是把任务说完整",
+          "link": "/tutorials/ai-basics-09-prompt#二、一个好的提示词-核心是把任务说完整"
+        },
+        {
+          "text": "三、提示词越长，不代表越好",
+          "link": "/tutorials/ai-basics-09-prompt#三、提示词越长-不代表越好"
+        },
+        {
+          "text": "四、很多“提示词问题”其实不是提示词问题",
+          "link": "/tutorials/ai-basics-09-prompt#四、很多-提示词问题-其实不是提示词问题"
+        },
+        {
+          "text": "五、律师工作里，提示词很像给助理交代任务",
+          "link": "/tutorials/ai-basics-09-prompt#五、律师工作里-提示词很像给助理交代任务"
+        },
+        {
+          "text": "六、一个简单通用模板",
+          "link": "/tutorials/ai-basics-09-prompt#六、一个简单通用模板"
+        },
+        {
+          "text": "七、提示词可以不断迭代",
+          "link": "/tutorials/ai-basics-09-prompt#七、提示词可以不断迭代"
+        },
+        {
+          "text": "八、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-09-prompt#八、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-10-well-defined-task": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门10｜怎样给AI一个规范、完整的工作任务？",
+      "link": "/tutorials/ai-basics-10-well-defined-task"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、先把输入说清楚",
+          "link": "/tutorials/ai-basics-10-well-defined-task#一、先把输入说清楚"
+        },
+        {
+          "text": "二、再说清楚具体动作",
+          "link": "/tutorials/ai-basics-10-well-defined-task#二、再说清楚具体动作"
+        },
+        {
+          "text": "三、告诉AI重点在哪里",
+          "link": "/tutorials/ai-basics-10-well-defined-task#三、告诉ai重点在哪里"
+        },
+        {
+          "text": "四、提前讲清楚边界",
+          "link": "/tutorials/ai-basics-10-well-defined-task#四、提前讲清楚边界"
+        },
+        {
+          "text": "五、定义最终输出",
+          "link": "/tutorials/ai-basics-10-well-defined-task#五、定义最终输出"
+        },
+        {
+          "text": "六、一个实用模板",
+          "link": "/tutorials/ai-basics-10-well-defined-task#六、一个实用模板"
+        },
+        {
+          "text": "七、复杂任务可以先让AI规划",
+          "link": "/tutorials/ai-basics-10-well-defined-task#七、复杂任务可以先让ai规划"
+        },
+        {
+          "text": "八、什么时候应该停下来问人？",
+          "link": "/tutorials/ai-basics-10-well-defined-task#八、什么时候应该停下来问人"
+        },
+        {
+          "text": "九、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-10-well-defined-task#九、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-11-reasoning-and-speed": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门11｜为什么有的AI回答很快，有的却要“想很久”？",
+      "link": "/tutorials/ai-basics-11-reasoning-and-speed"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、不是所有任务都需要深度思考",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#一、不是所有任务都需要深度思考"
+        },
+        {
+          "text": "二、什么是推理模型？",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#二、什么是推理模型"
+        },
+        {
+          "text": "三、为什么推理越强通常越慢？",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#三、为什么推理越强通常越慢"
+        },
+        {
+          "text": "四、什么是推理模式？",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#四、什么是推理模式"
+        },
+        {
+          "text": "五、律师工作怎么选？",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#五、律师工作怎么选"
+        },
+        {
+          "text": "六、高推理不能替代真实资料",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#六、高推理不能替代真实资料"
+        },
+        {
+          "text": "七、慢也不一定都在“思考”",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#七、慢也不一定都在-思考"
+        },
+        {
+          "text": "八、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-11-reasoning-and-speed#八、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-12-multimodal-ai": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门12｜什么是多模态AI？为什么它不只会读文字了",
+      "link": "/tutorials/ai-basics-12-multimodal-ai"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、什么叫“模态”？",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#一、什么叫-模态"
+        },
+        {
+          "text": "二、最直观的变化：AI开始“看得见”",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#二、最直观的变化-ai开始-看得见"
+        },
+        {
+          "text": "三、AI也越来越能够“听”",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#三、ai也越来越能够-听"
+        },
+        {
+          "text": "四、文件处理也可能涉及多模态",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#四、文件处理也可能涉及多模态"
+        },
+        {
+          "text": "五、多模态不只是“图片转文字”",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#五、多模态不只是-图片转文字"
+        },
+        {
+          "text": "六、对普通工作有什么意义？",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#六、对普通工作有什么意义"
+        },
+        {
+          "text": "七、但“能看”不等于一定看得对",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#七、但-能看-不等于一定看得对"
+        },
+        {
+          "text": "八、能给原文件时，尽量给原文件",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#八、能给原文件时-尽量给原文件"
+        },
+        {
+          "text": "九、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-12-multimodal-ai#九、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-13-what-is-agent": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门13｜什么是AI智能体Agent？它和普通聊天AI有什么区别？",
+      "link": "/tutorials/ai-basics-13-what-is-agent"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、聊天AI更像“你问我答”",
+          "link": "/tutorials/ai-basics-13-what-is-agent#一、聊天ai更像-你问我答"
+        },
+        {
+          "text": "二、Agent更像“给它一项工作”",
+          "link": "/tutorials/ai-basics-13-what-is-agent#二、agent更像-给它一项工作"
+        },
+        {
+          "text": "三、Agent为什么能做事？",
+          "link": "/tutorials/ai-basics-13-what-is-agent#三、agent为什么能做事"
+        },
+        {
+          "text": "四、用律师工作举例",
+          "link": "/tutorials/ai-basics-13-what-is-agent#四、用律师工作举例"
+        },
+        {
+          "text": "五、Agent通常会自己拆步骤",
+          "link": "/tutorials/ai-basics-13-what-is-agent#五、agent通常会自己拆步骤"
+        },
+        {
+          "text": "六、Agent不一定长得像聊天窗口",
+          "link": "/tutorials/ai-basics-13-what-is-agent#六、agent不一定长得像聊天窗口"
+        },
+        {
+          "text": "七、Agent也不是完全自主的“AI员工”",
+          "link": "/tutorials/ai-basics-13-what-is-agent#七、agent也不是完全自主的-ai员工"
+        },
+        {
+          "text": "八、一个简单判断",
+          "link": "/tutorials/ai-basics-13-what-is-agent#八、一个简单判断"
+        },
+        {
+          "text": "九、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-13-what-is-agent#九、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-14-llm-and-agent": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门14｜大模型和Agent到底是什么关系？",
+      "link": "/tutorials/ai-basics-14-llm-and-agent"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、大模型提供智能",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#一、大模型提供智能"
+        },
+        {
+          "text": "二、但只有“大脑”还不够完成真实工作",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#二、但只有-大脑-还不够完成真实工作"
+        },
+        {
+          "text": "三、Agent把模型和外部能力组织起来",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#三、agent把模型和外部能力组织起来"
+        },
+        {
+          "text": "四、同一个模型，放进不同Agent里，能力可能完全不同",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#四、同一个模型-放进不同agent里-能力可能完全不同"
+        },
+        {
+          "text": "五、换模型，不一定等于换Agent",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#五、换模型-不一定等于换agent"
+        },
+        {
+          "text": "六、同一个模型也可以进入很多产品和Agent",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#六、同一个模型也可以进入很多产品和agent"
+        },
+        {
+          "text": "七、律师工作举例",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#七、律师工作举例"
+        },
+        {
+          "text": "八、模型强，不代表Agent一定好用",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#八、模型强-不代表agent一定好用"
+        },
+        {
+          "text": "九、一个简化公式",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#九、一个简化公式"
+        },
+        {
+          "text": "十、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-14-llm-and-agent#十、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-15-harness": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门15｜Harness是什么？为什么同一个模型放在不同Agent里，效果会差很多？",
+      "link": "/tutorials/ai-basics-15-harness"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、Harness原本是什么意思？",
+          "link": "/tutorials/ai-basics-15-harness#一、harness原本是什么意思"
+        },
+        {
+          "text": "二、Harness的核心之一是Agent Loop",
+          "link": "/tutorials/ai-basics-15-harness#二、harness的核心之一是agent-loop"
+        },
+        {
+          "text": "三、为什么只有模型还不够？",
+          "link": "/tutorials/ai-basics-15-harness#三、为什么只有模型还不够"
+        },
+        {
+          "text": "四、Harness里通常会有什么？",
+          "link": "/tutorials/ai-basics-15-harness#四、harness里通常会有什么"
+        },
+        {
+          "text": "五、这解释了为什么同一模型表现差很多",
+          "link": "/tutorials/ai-basics-15-harness#五、这解释了为什么同一模型表现差很多"
+        },
+        {
+          "text": "六、用代码Agent最容易理解",
+          "link": "/tutorials/ai-basics-15-harness#六、用代码agent最容易理解"
+        },
+        {
+          "text": "七、律师工作也一样",
+          "link": "/tutorials/ai-basics-15-harness#七、律师工作也一样"
+        },
+        {
+          "text": "八、Harness和Agent是不是同一个东西？",
+          "link": "/tutorials/ai-basics-15-harness#八、harness和agent是不是同一个东西"
+        },
+        {
+          "text": "九、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-15-harness#九、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-16-what-agent-can-do": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门16｜Agent到底能做什么？从聊天到真正执行任务",
+      "link": "/tutorials/ai-basics-16-what-agent-can-do"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、处理文件",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#一、处理文件"
+        },
+        {
+          "text": "二、查资料",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#二、查资料"
+        },
+        {
+          "text": "三、做重复性整理",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#三、做重复性整理"
+        },
+        {
+          "text": "四、生成和修改文件",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#四、生成和修改文件"
+        },
+        {
+          "text": "五、运行代码和命令",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#五、运行代码和命令"
+        },
+        {
+          "text": "六、承担一整个任务链",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#六、承担一整个任务链"
+        },
+        {
+          "text": "七、律师工作中哪些适合Agent？",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#七、律师工作中哪些适合agent"
+        },
+        {
+          "text": "八、什么仍然应该保留给人？",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#八、什么仍然应该保留给人"
+        },
+        {
+          "text": "九、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-16-what-agent-can-do#九、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-17-tool-calling": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门17｜什么是工具调用？为什么AI现在可以自己搜索、读文件、查数据库？",
+      "link": "/tutorials/ai-basics-17-tool-calling"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、模型本身不能天然访问所有东西",
+          "link": "/tutorials/ai-basics-17-tool-calling#一、模型本身不能天然访问所有东西"
+        },
+        {
+          "text": "二、什么叫工具调用？",
+          "link": "/tutorials/ai-basics-17-tool-calling#二、什么叫工具调用"
+        },
+        {
+          "text": "三、工具可以是什么？",
+          "link": "/tutorials/ai-basics-17-tool-calling#三、工具可以是什么"
+        },
+        {
+          "text": "四、用律师工作举例",
+          "link": "/tutorials/ai-basics-17-tool-calling#四、用律师工作举例"
+        },
+        {
+          "text": "五、工具调用不等于联网搜索",
+          "link": "/tutorials/ai-basics-17-tool-calling#五、工具调用不等于联网搜索"
+        },
+        {
+          "text": "六、工具为什么能降低幻觉？",
+          "link": "/tutorials/ai-basics-17-tool-calling#六、工具为什么能降低幻觉"
+        },
+        {
+          "text": "七、工具也会失败",
+          "link": "/tutorials/ai-basics-17-tool-calling#七、工具也会失败"
+        },
+        {
+          "text": "八、工具越多不一定越好",
+          "link": "/tutorials/ai-basics-17-tool-calling#八、工具越多不一定越好"
+        },
+        {
+          "text": "九、工具调用还涉及权限",
+          "link": "/tutorials/ai-basics-17-tool-calling#九、工具调用还涉及权限"
+        },
+        {
+          "text": "十、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-17-tool-calling#十、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-18-mcp": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门18｜MCP是什么？为什么有些Agent把它叫“连接器”？",
+      "link": "/tutorials/ai-basics-18-mcp"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么Agent需要连接外部系统？",
+          "link": "/tutorials/ai-basics-18-mcp#一、为什么agent需要连接外部系统"
+        },
+        {
+          "text": "二、什么是连接器？",
+          "link": "/tutorials/ai-basics-18-mcp#二、什么是连接器"
+        },
+        {
+          "text": "三、那MCP是什么？",
+          "link": "/tutorials/ai-basics-18-mcp#三、那mcp是什么"
+        },
+        {
+          "text": "四、连接器不一定等于MCP",
+          "link": "/tutorials/ai-basics-18-mcp#四、连接器不一定等于mcp"
+        },
+        {
+          "text": "五、为什么需要统一标准？",
+          "link": "/tutorials/ai-basics-18-mcp#五、为什么需要统一标准"
+        },
+        {
+          "text": "六、什么是MCP Server？",
+          "link": "/tutorials/ai-basics-18-mcp#六、什么是mcp-server"
+        },
+        {
+          "text": "七、MCP不只是“工具”",
+          "link": "/tutorials/ai-basics-18-mcp#七、mcp不只是-工具"
+        },
+        {
+          "text": "八、MCP和API也不是一回事",
+          "link": "/tutorials/ai-basics-18-mcp#八、mcp和api也不是一回事"
+        },
+        {
+          "text": "九、看到连接器应该关注什么？",
+          "link": "/tutorials/ai-basics-18-mcp#九、看到连接器应该关注什么"
+        },
+        {
+          "text": "十、把几个概念串起来",
+          "link": "/tutorials/ai-basics-18-mcp#十、把几个概念串起来"
+        },
+        {
+          "text": "十一、这一篇只需要记住两句话",
+          "link": "/tutorials/ai-basics-18-mcp#十一、这一篇只需要记住两句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-19-ai-knowledge-base": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门19｜什么是AI知识库？把一堆文件丢进去并不等于知识库",
+      "link": "/tutorials/ai-basics-19-ai-knowledge-base"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么大模型还需要知识库？",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#一、为什么大模型还需要知识库"
+        },
+        {
+          "text": "二、知识库和直接上传文件有什么区别？",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#二、知识库和直接上传文件有什么区别"
+        },
+        {
+          "text": "三、AI通常不会把知识库全部读一遍",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#三、ai通常不会把知识库全部读一遍"
+        },
+        {
+          "text": "四、RAG是什么？",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#四、rag是什么"
+        },
+        {
+          "text": "五、为什么专业工作尤其需要知识库？",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#五、为什么专业工作尤其需要知识库"
+        },
+        {
+          "text": "六、最大的误区：越大越好",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#六、最大的误区-越大越好"
+        },
+        {
+          "text": "七、一个好的知识库要关注什么？",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#七、一个好的知识库要关注什么"
+        },
+        {
+          "text": "八、知识库应该让答案有出处",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#八、知识库应该让答案有出处"
+        },
+        {
+          "text": "九、知识库和训练模型不是一回事",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#九、知识库和训练模型不是一回事"
+        },
+        {
+          "text": "十、知识库也不等于记忆",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#十、知识库也不等于记忆"
+        },
+        {
+          "text": "十一、普通人怎么判断知识库好不好？",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#十一、普通人怎么判断知识库好不好"
+        },
+        {
+          "text": "十二、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-19-ai-knowledge-base#十二、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-20-kb-search-context-memory": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门20｜知识库、搜索、上下文和记忆，到底有什么区别？",
+      "link": "/tutorials/ai-basics-20-kb-search-context-memory"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、上下文：AI当前正在看的东西",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#一、上下文-ai当前正在看的东西"
+        },
+        {
+          "text": "二、搜索：去外部世界找信息",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#二、搜索-去外部世界找信息"
+        },
+        {
+          "text": "三、知识库：去长期资料池里找",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#三、知识库-去长期资料池里找"
+        },
+        {
+          "text": "四、记忆：保留长期有价值的信息",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#四、记忆-保留长期有价值的信息"
+        },
+        {
+          "text": "五、一个律师工作的例子",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#五、一个律师工作的例子"
+        },
+        {
+          "text": "六、它们不是互相替代",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#六、它们不是互相替代"
+        },
+        {
+          "text": "七、为什么最后都要进入上下文？",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#七、为什么最后都要进入上下文"
+        },
+        {
+          "text": "八、一个简单比喻",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#八、一个简单比喻"
+        },
+        {
+          "text": "九、这一篇只需要记住四句话",
+          "link": "/tutorials/ai-basics-20-kb-search-context-memory#九、这一篇只需要记住四句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-21-subagent": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门21｜什么是Subagent？它和多个Agent有什么区别？",
+      "link": "/tutorials/ai-basics-21-subagent"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、先回顾Agent",
+          "link": "/tutorials/ai-basics-21-subagent#一、先回顾agent"
+        },
+        {
+          "text": "二、Subagent是什么？",
+          "link": "/tutorials/ai-basics-21-subagent#二、subagent是什么"
+        },
+        {
+          "text": "三、为什么需要Subagent？",
+          "link": "/tutorials/ai-basics-21-subagent#三、为什么需要subagent"
+        },
+        {
+          "text": "四、Subagent还能减少上下文污染",
+          "link": "/tutorials/ai-basics-21-subagent#四、subagent还能减少上下文污染"
+        },
+        {
+          "text": "五、Subagent也可以专门负责复核",
+          "link": "/tutorials/ai-basics-21-subagent#五、subagent也可以专门负责复核"
+        },
+        {
+          "text": "六、Subagent和多个独立Agent到底有什么区别？",
+          "link": "/tutorials/ai-basics-21-subagent#六、subagent和多个独立agent到底有什么区别"
+        },
+        {
+          "text": "七、用律师事务所做比喻",
+          "link": "/tutorials/ai-basics-21-subagent#七、用律师事务所做比喻"
+        },
+        {
+          "text": "八、Subagent什么时候有价值？",
+          "link": "/tutorials/ai-basics-21-subagent#八、subagent什么时候有价值"
+        },
+        {
+          "text": "九、Subagent也不是越多越好",
+          "link": "/tutorials/ai-basics-21-subagent#九、subagent也不是越多越好"
+        },
+        {
+          "text": "十、主Agent仍然负责什么？",
+          "link": "/tutorials/ai-basics-21-subagent#十、主agent仍然负责什么"
+        },
+        {
+          "text": "十一、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-21-subagent#十一、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-22-multi-agent": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门22｜什么是Multi-Agent？为什么要让多个Agent一起工作？",
+      "link": "/tutorials/ai-basics-22-multi-agent"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么一个Agent还不够？",
+          "link": "/tutorials/ai-basics-22-multi-agent#一、为什么一个agent还不够"
+        },
+        {
+          "text": "二、Multi-Agent和Subagent最大的区别",
+          "link": "/tutorials/ai-basics-22-multi-agent#二、multi-agent和subagent最大的区别"
+        },
+        {
+          "text": "三、为什么使用多个Agent？",
+          "link": "/tutorials/ai-basics-22-multi-agent#三、为什么使用多个agent"
+        },
+        {
+          "text": "四、律师工作怎么用？",
+          "link": "/tutorials/ai-basics-22-multi-agent#四、律师工作怎么用"
+        },
+        {
+          "text": "五、多个Agent不一定同时运行",
+          "link": "/tutorials/ai-basics-22-multi-agent#五、多个agent不一定同时运行"
+        },
+        {
+          "text": "六、最大的难点其实是Handoff",
+          "link": "/tutorials/ai-basics-22-multi-agent#六、最大的难点其实是handoff"
+        },
+        {
+          "text": "七、为什么文件比聊天更适合交接？",
+          "link": "/tutorials/ai-basics-22-multi-agent#七、为什么文件比聊天更适合交接"
+        },
+        {
+          "text": "八、多个Agent还可以故意互相“挑错”",
+          "link": "/tutorials/ai-basics-22-multi-agent#八、多个agent还可以故意互相-挑错"
+        },
+        {
+          "text": "九、多模型不等于多Agent",
+          "link": "/tutorials/ai-basics-22-multi-agent#九、多模型不等于多agent"
+        },
+        {
+          "text": "十、Multi-Agent一定更好吗？",
+          "link": "/tutorials/ai-basics-22-multi-agent#十、multi-agent一定更好吗"
+        },
+        {
+          "text": "十一、一个成熟系统可能同时有两层",
+          "link": "/tutorials/ai-basics-22-multi-agent#十一、一个成熟系统可能同时有两层"
+        },
+        {
+          "text": "十二、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-22-multi-agent#十二、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-23-skill": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门23｜Skill是什么？它和Prompt、Agent有什么区别？",
+      "link": "/tutorials/ai-basics-23-skill"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么会出现 Skill？",
+          "link": "/tutorials/ai-basics-23-skill#一、为什么会出现-skill"
+        },
+        {
+          "text": "二、Skill 和 Prompt 有什么区别？",
+          "link": "/tutorials/ai-basics-23-skill#二、skill-和-prompt-有什么区别"
+        },
+        {
+          "text": "三、Skill 也不只是“一段很长的提示词”",
+          "link": "/tutorials/ai-basics-23-skill#三、skill-也不只是-一段很长的提示词"
+        },
+        {
+          "text": "四、Skill 和 Agent 也不是一回事",
+          "link": "/tutorials/ai-basics-23-skill#四、skill-和-agent-也不是一回事"
+        },
+        {
+          "text": "五、Skill 和工具也不同",
+          "link": "/tutorials/ai-basics-23-skill#五、skill-和工具也不同"
+        },
+        {
+          "text": "六、为什么 Skill 对 Agent 很重要？",
+          "link": "/tutorials/ai-basics-23-skill#六、为什么-skill-对-agent-很重要"
+        },
+        {
+          "text": "七、不同产品里的 Skill 可能不是同一个东西",
+          "link": "/tutorials/ai-basics-23-skill#七、不同产品里的-skill-可能不是同一个东西"
+        },
+        {
+          "text": "八、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-23-skill#八、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-24-ai-memory": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门24｜什么是AI记忆？它和聊天记录、上下文、知识库有什么区别？",
+      "link": "/tutorials/ai-basics-24-ai-memory"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么 AI 需要记忆？",
+          "link": "/tutorials/ai-basics-24-ai-memory#一、为什么-ai-需要记忆"
+        },
+        {
+          "text": "二、记忆不等于聊天记录",
+          "link": "/tutorials/ai-basics-24-ai-memory#二、记忆不等于聊天记录"
+        },
+        {
+          "text": "三、记忆也不等于上下文",
+          "link": "/tutorials/ai-basics-24-ai-memory#三、记忆也不等于上下文"
+        },
+        {
+          "text": "四、记忆和知识库有什么区别？",
+          "link": "/tutorials/ai-basics-24-ai-memory#四、记忆和知识库有什么区别"
+        },
+        {
+          "text": "五、什么信息值得记住？",
+          "link": "/tutorials/ai-basics-24-ai-memory#五、什么信息值得记住"
+        },
+        {
+          "text": "六、记忆也不是越多越好",
+          "link": "/tutorials/ai-basics-24-ai-memory#六、记忆也不是越多越好"
+        },
+        {
+          "text": "七、为什么记忆会让同一个 Agent 越来越顺手？",
+          "link": "/tutorials/ai-basics-24-ai-memory#七、为什么记忆会让同一个-agent-越来越顺手"
+        },
+        {
+          "text": "八、AI记忆和人的记忆不是一回事",
+          "link": "/tutorials/ai-basics-24-ai-memory#八、ai记忆和人的记忆不是一回事"
+        },
+        {
+          "text": "九、把几个概念放在一起",
+          "link": "/tutorials/ai-basics-24-ai-memory#九、把几个概念放在一起"
+        },
+        {
+          "text": "十、这一篇只需要记住一句话",
+          "link": "/tutorials/ai-basics-24-ai-memory#十、这一篇只需要记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-25-embedding": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门25｜Embedding是什么？为什么AI能找到“意思相近”的内容？",
+      "link": "/tutorials/ai-basics-25-embedding"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、传统搜索主要看“字面上像不像”",
+          "link": "/tutorials/ai-basics-25-embedding#一、传统搜索主要看-字面上像不像"
+        },
+        {
+          "text": "二、Embedding试图比较“意思像不像”",
+          "link": "/tutorials/ai-basics-25-embedding#二、embedding试图比较-意思像不像"
+        },
+        {
+          "text": "三、什么是“向量”？",
+          "link": "/tutorials/ai-basics-25-embedding#三、什么是-向量"
+        },
+        {
+          "text": "四、这和AI知识库有什么关系？",
+          "link": "/tutorials/ai-basics-25-embedding#四、这和ai知识库有什么关系"
+        },
+        {
+          "text": "五、Embedding不是大模型本身的“记忆”",
+          "link": "/tutorials/ai-basics-25-embedding#五、embedding不是大模型本身的-记忆"
+        },
+        {
+          "text": "六、Embedding也不会自动理解一切",
+          "link": "/tutorials/ai-basics-25-embedding#六、embedding也不会自动理解一切"
+        },
+        {
+          "text": "七、Embedding为什么值得普通用户了解？",
+          "link": "/tutorials/ai-basics-25-embedding#七、embedding为什么值得普通用户了解"
+        },
+        {
+          "text": "八、这一篇只需要记住两句话",
+          "link": "/tutorials/ai-basics-25-embedding#八、这一篇只需要记住两句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-26-rag": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门26｜RAG是什么？为什么AI回答前要先找资料？",
+      "link": "/tutorials/ai-basics-26-rag"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么大模型不能直接回答所有问题？",
+          "link": "/tutorials/ai-basics-26-rag#一、为什么大模型不能直接回答所有问题"
+        },
+        {
+          "text": "二、RAG的基本过程非常简单",
+          "link": "/tutorials/ai-basics-26-rag#二、rag的基本过程非常简单"
+        },
+        {
+          "text": "三、举个法律工作的例子",
+          "link": "/tutorials/ai-basics-26-rag#三、举个法律工作的例子"
+        },
+        {
+          "text": "四、RAG和知识库是什么关系？",
+          "link": "/tutorials/ai-basics-26-rag#四、rag和知识库是什么关系"
+        },
+        {
+          "text": "五、RAG和Embedding是什么关系？",
+          "link": "/tutorials/ai-basics-26-rag#五、rag和embedding是什么关系"
+        },
+        {
+          "text": "六、RAG不是训练模型",
+          "link": "/tutorials/ai-basics-26-rag#六、rag不是训练模型"
+        },
+        {
+          "text": "七、RAG也会出错",
+          "link": "/tutorials/ai-basics-26-rag#七、rag也会出错"
+        },
+        {
+          "text": "八、为什么RAG特别适合专业领域？",
+          "link": "/tutorials/ai-basics-26-rag#八、为什么rag特别适合专业领域"
+        },
+        {
+          "text": "九、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-26-rag#九、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-27-fine-tuning": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门27｜Fine-tuning微调是什么？它和RAG、知识库有什么区别？",
+      "link": "/tutorials/ai-basics-27-fine-tuning"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么叫“微调”？",
+          "link": "/tutorials/ai-basics-27-fine-tuning#一、为什么叫-微调"
+        },
+        {
+          "text": "二、微调通常想改变什么？",
+          "link": "/tutorials/ai-basics-27-fine-tuning#二、微调通常想改变什么"
+        },
+        {
+          "text": "三、微调不是最适合“塞最新知识”的方法",
+          "link": "/tutorials/ai-basics-27-fine-tuning#三、微调不是最适合-塞最新知识-的方法"
+        },
+        {
+          "text": "四、微调和RAG最核心的区别",
+          "link": "/tutorials/ai-basics-27-fine-tuning#四、微调和rag最核心的区别"
+        },
+        {
+          "text": "五、微调和Skill也不是一回事",
+          "link": "/tutorials/ai-basics-27-fine-tuning#五、微调和skill也不是一回事"
+        },
+        {
+          "text": "六、律师工作是不是一定要做法律模型微调？",
+          "link": "/tutorials/ai-basics-27-fine-tuning#六、律师工作是不是一定要做法律模型微调"
+        },
+        {
+          "text": "七、微调也有成本",
+          "link": "/tutorials/ai-basics-27-fine-tuning#七、微调也有成本"
+        },
+        {
+          "text": "八、为什么普通用户也应该知道“微调”？",
+          "link": "/tutorials/ai-basics-27-fine-tuning#八、为什么普通用户也应该知道-微调"
+        },
+        {
+          "text": "九、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-27-fine-tuning#九、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-28-api": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门28｜API是什么？为什么同一个大模型可以出现在很多产品里？",
+      "link": "/tutorials/ai-basics-28-api"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、网页聊天和API调用有什么区别？",
+          "link": "/tutorials/ai-basics-28-api#一、网页聊天和api调用有什么区别"
+        },
+        {
+          "text": "二、这就解释了为什么同一个模型会出现在很多产品里",
+          "link": "/tutorials/ai-basics-28-api#二、这就解释了为什么同一个模型会出现在很多产品里"
+        },
+        {
+          "text": "三、API Key是什么？",
+          "link": "/tutorials/ai-basics-28-api#三、api-key是什么"
+        },
+        {
+          "text": "四、API通常怎么收费？",
+          "link": "/tutorials/ai-basics-28-api#四、api通常怎么收费"
+        },
+        {
+          "text": "五、Agent为什么经常需要API？",
+          "link": "/tutorials/ai-basics-28-api#五、agent为什么经常需要api"
+        },
+        {
+          "text": "六、API和MCP有什么区别？",
+          "link": "/tutorials/ai-basics-28-api#六、api和mcp有什么区别"
+        },
+        {
+          "text": "七、为什么理解API对普通用户有价值？",
+          "link": "/tutorials/ai-basics-28-api#七、为什么理解api对普通用户有价值"
+        },
+        {
+          "text": "八、API并不代表“更高级”",
+          "link": "/tutorials/ai-basics-28-api#八、api并不代表-更高级"
+        },
+        {
+          "text": "九、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-28-api#九、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-29-open-local-cloud-models": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门29｜开源模型、本地模型和云端模型有什么区别？",
+      "link": "/tutorials/ai-basics-29-open-local-cloud-models"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、什么是云端模型？",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#一、什么是云端模型"
+        },
+        {
+          "text": "二、什么是本地模型？",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#二、什么是本地模型"
+        },
+        {
+          "text": "三、本地模型不一定是“开源模型”",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#三、本地模型不一定是-开源模型"
+        },
+        {
+          "text": "四、“开源模型”这个词其实也需要谨慎",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#四、-开源模型-这个词其实也需要谨慎"
+        },
+        {
+          "text": "五、什么是模型权重？",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#五、什么是模型权重"
+        },
+        {
+          "text": "六、本地模型最大的价值是什么？",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#六、本地模型最大的价值是什么"
+        },
+        {
+          "text": "七、云端模型为什么通常更强？",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#七、云端模型为什么通常更强"
+        },
+        {
+          "text": "八、是不是应该在本地跑一个大模型？",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#八、是不是应该在本地跑一个大模型"
+        },
+        {
+          "text": "九、还有一种常见方式：混合使用",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#九、还有一种常见方式-混合使用"
+        },
+        {
+          "text": "十、这一篇只需要记住三句话",
+          "link": "/tutorials/ai-basics-29-open-local-cloud-models#十、这一篇只需要记住三句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-basics-30-finale": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI入门30｜最终篇：从大模型到Agent，把今天的AI世界重新拼起来",
+      "link": "/tutorials/ai-basics-30-finale"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、最底层先是“模型”",
+          "link": "/tutorials/ai-basics-30-finale#一、最底层先是-模型"
+        },
+        {
+          "text": "二、模型工作离不开Token和上下文",
+          "link": "/tutorials/ai-basics-30-finale#二、模型工作离不开token和上下文"
+        },
+        {
+          "text": "三、Prompt负责告诉AI当前要做什么",
+          "link": "/tutorials/ai-basics-30-finale#三、prompt负责告诉ai当前要做什么"
+        },
+        {
+          "text": "四、大模型进一步进入Agent",
+          "link": "/tutorials/ai-basics-30-finale#四、大模型进一步进入agent"
+        },
+        {
+          "text": "五、Harness负责把Agent组织起来",
+          "link": "/tutorials/ai-basics-30-finale#五、harness负责把agent组织起来"
+        },
+        {
+          "text": "六、工具让Agent接触真实世界",
+          "link": "/tutorials/ai-basics-30-finale#六、工具让agent接触真实世界"
+        },
+        {
+          "text": "七、MCP和连接器负责“把外部能力接进来”",
+          "link": "/tutorials/ai-basics-30-finale#七、mcp和连接器负责-把外部能力接进来"
+        },
+        {
+          "text": "八、API让模型和服务进入各种软件",
+          "link": "/tutorials/ai-basics-30-finale#八、api让模型和服务进入各种软件"
+        },
+        {
+          "text": "九、知识库、Embedding和RAG负责“找资料”",
+          "link": "/tutorials/ai-basics-30-finale#九、知识库、embedding和rag负责-找资料"
+        },
+        {
+          "text": "十、记忆负责保存长期有价值的信息",
+          "link": "/tutorials/ai-basics-30-finale#十、记忆负责保存长期有价值的信息"
+        },
+        {
+          "text": "十一、Skill让Agent不必每次重新学方法",
+          "link": "/tutorials/ai-basics-30-finale#十一、skill让agent不必每次重新学方法"
+        },
+        {
+          "text": "十二、复杂任务还可以进一步拆给Subagent",
+          "link": "/tutorials/ai-basics-30-finale#十二、复杂任务还可以进一步拆给subagent"
+        },
+        {
+          "text": "十三、模型还可以通过微调进一步改变行为",
+          "link": "/tutorials/ai-basics-30-finale#十三、模型还可以通过微调进一步改变行为"
+        },
+        {
+          "text": "十四、这些模型可以运行在云端，也可以运行在本地",
+          "link": "/tutorials/ai-basics-30-finale#十四、这些模型可以运行在云端-也可以运行在本地"
+        },
+        {
+          "text": "十五、把整套关系压缩成一张文字地图",
+          "link": "/tutorials/ai-basics-30-finale#十五、把整套关系压缩成一张文字地图"
+        },
+        {
+          "text": "十六、AI入门真正需要学会的，不是背名词",
+          "link": "/tutorials/ai-basics-30-finale#十六、ai入门真正需要学会的-不是背名词"
+        },
+        {
+          "text": "十七、这个系列到这里结束",
+          "link": "/tutorials/ai-basics-30-finale#十七、这个系列到这里结束"
         }
       ]
     }
@@ -71157,6 +72672,10 @@ export const generatedSidebar = {
     {
       "text": "系列文章",
       "link": "/series/"
+    },
+    {
+      "text": "AI入门：从大模型到智能体",
+      "link": "/series/ai-basics/"
     },
     {
       "text": "AI优先：建立自己的AI工作系统",
