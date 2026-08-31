@@ -1123,36 +1123,104 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、角色定位与默认立场",
-          "link": "/agents/法律业务通用指令#一、角色定位与默认立场"
+          "text": "〇、指令效力与冲突解决",
+          "link": "/agents/法律业务通用指令#〇、指令效力与冲突解决"
         },
         {
-          "text": "二、保密与信息安全",
-          "link": "/agents/法律业务通用指令#二、保密与信息安全"
+          "text": "一、角色定位与利益立场",
+          "link": "/agents/法律业务通用指令#一、角色定位与利益立场"
         },
         {
-          "text": "三、语言、法域与法律依据核验",
-          "link": "/agents/法律业务通用指令#三、语言、法域与法律依据核验"
+          "text": "二、保密与脱敏红线",
+          "link": "/agents/法律业务通用指令#二、保密与脱敏红线"
         },
         {
-          "text": "四、反编造红线",
-          "link": "/agents/法律业务通用指令#四、反编造红线"
+          "text": "三、事实与法律依据核验（反编造红线）",
+          "link": "/agents/法律业务通用指令#三、事实与法律依据核验-反编造红线",
+          "items": [
+            {
+              "text": "（一）绝对禁止",
+              "link": "/agents/法律业务通用指令#一-绝对禁止"
+            },
+            {
+              "text": "（二）核验触发条件（满足其一即须检索）",
+              "link": "/agents/法律业务通用指令#二-核验触发条件-满足其一即须检索"
+            },
+            {
+              "text": "（三）核验路径与降级顺序",
+              "link": "/agents/法律业务通用指令#三-核验路径与降级顺序"
+            },
+            {
+              "text": "（四）法域与语言",
+              "link": "/agents/法律业务通用指令#四-法域与语言"
+            }
+          ]
         },
         {
-          "text": "五、执行流程",
-          "link": "/agents/法律业务通用指令#五、执行流程"
+          "text": "四、任务分流与执行流程",
+          "link": "/agents/法律业务通用指令#四、任务分流与执行流程",
+          "items": [
+            {
+              "text": "（一）通用流程",
+              "link": "/agents/法律业务通用指令#一-通用流程"
+            },
+            {
+              "text": "（二）按任务类型分流",
+              "link": "/agents/法律业务通用指令#二-按任务类型分流"
+            },
+            {
+              "text": "（三）停止并询问的条件",
+              "link": "/agents/法律业务通用指令#三-停止并询问的条件"
+            },
+            {
+              "text": "（四）修正与反馈处理",
+              "link": "/agents/法律业务通用指令#四-修正与反馈处理"
+            }
+          ]
         },
         {
-          "text": "六、文档修订模式",
-          "link": "/agents/法律业务通用指令#六、文档修订模式"
+          "text": "五、不确定性表述与风险分级",
+          "link": "/agents/法律业务通用指令#五、不确定性表述与风险分级",
+          "items": [
+            {
+              "text": "（一）确定性分级（法律结论必须择一标注）",
+              "link": "/agents/法律业务通用指令#一-确定性分级-法律结论必须择一标注"
+            },
+            {
+              "text": "（二）风险分级（合同审查、尽调、合规核查必须标注）",
+              "link": "/agents/法律业务通用指令#二-风险分级-合同审查、尽调、合规核查必须标注"
+            }
+          ]
         },
         {
-          "text": "七、起草默认值",
-          "link": "/agents/法律业务通用指令#七、起草默认值"
+          "text": "六、起草与修订规则",
+          "link": "/agents/法律业务通用指令#六、起草与修订规则",
+          "items": [
+            {
+              "text": "（一）起草默认值",
+              "link": "/agents/法律业务通用指令#一-起草默认值"
+            },
+            {
+              "text": "（二）合同条款编号规则（合同起草优先指令）",
+              "link": "/agents/法律业务通用指令#二-合同条款编号规则-合同起草优先指令"
+            },
+            {
+              "text": "（三）修订模式",
+              "link": "/agents/法律业务通用指令#三-修订模式"
+            },
+            {
+              "text": "（四）一致性校验（起草与修订完成后必须执行）",
+              "link": "/agents/法律业务通用指令#四-一致性校验-起草与修订完成后必须执行"
+            }
+          ]
         },
         {
-          "text": "八、Word 文档格式要求",
-          "link": "/agents/法律业务通用指令#八、word-文档格式要求",
+          "text": "七、引用与出处格式",
+          "link": "/agents/法律业务通用指令#七、引用与出处格式"
+        },
+        {
+          "text": "八、Word 文档格式规范",
+          "link": "/agents/法律业务通用指令#八、word-文档格式规范",
           "items": [
             {
               "text": "（一）正文与标题",
@@ -1163,18 +1231,18 @@ export const generatedSidebar = {
               "link": "/agents/法律业务通用指令#二-表格"
             },
             {
-              "text": "（三）其他格式",
-              "link": "/agents/法律业务通用指令#三-其他格式"
+              "text": "（三）页面与其他",
+              "link": "/agents/法律业务通用指令#三-页面与其他"
             }
           ]
         },
         {
-          "text": "九、律所名称与署名",
-          "link": "/agents/法律业务通用指令#九、律所名称与署名"
+          "text": "九、文件命名、版本与交付",
+          "link": "/agents/法律业务通用指令#九、文件命名、版本与交付"
         },
         {
-          "text": "十、法律分析与引证",
-          "link": "/agents/法律业务通用指令#十、法律分析与引证"
+          "text": "十、律所名称与署名",
+          "link": "/agents/法律业务通用指令#十、律所名称与署名"
         },
         {
           "text": "十一、跨境与外国法事项",
@@ -1185,12 +1253,34 @@ export const generatedSidebar = {
           "link": "/agents/法律业务通用指令#十二、专业语气要求"
         },
         {
-          "text": "十三、法律业务多 Agent 核心规则",
-          "link": "/agents/法律业务通用指令#十三、法律业务多-agent-核心规则"
+          "text": "十三、多 Agent 协作规则",
+          "link": "/agents/法律业务通用指令#十三、多-agent-协作规则"
         },
         {
-          "text": "十五、本机 OCR 工具使用",
-          "link": "/agents/法律业务通用指令#十五、本机-ocr-工具使用"
+          "text": "十四、交付前自检清单",
+          "link": "/agents/法律业务通用指令#十四、交付前自检清单"
+        },
+        {
+          "text": "附录 A：权威核验来源清单",
+          "link": "/agents/法律业务通用指令#附录-a-权威核验来源清单",
+          "items": [
+            {
+              "text": "（一）法律法规与效力状态",
+              "link": "/agents/法律业务通用指令#一-法律法规与效力状态"
+            },
+            {
+              "text": "（二）司法与案例",
+              "link": "/agents/法律业务通用指令#二-司法与案例"
+            },
+            {
+              "text": "（三）主体与监管",
+              "link": "/agents/法律业务通用指令#三-主体与监管"
+            }
+          ]
+        },
+        {
+          "text": "附录 B：本机文件处理与 OCR 工具",
+          "link": "/agents/法律业务通用指令#附录-b-本机文件处理与-ocr-工具"
         }
       ]
     }
@@ -1766,6 +1856,55 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/skills/company-monitor": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "公司舆情与法律风险监控 Skill（company-monitor）",
+      "link": "/skills/company-monitor"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、合规红线（每次运行均适用）",
+          "link": "/skills/company-monitor#一、合规红线-每次运行均适用"
+        },
+        {
+          "text": "二、数据源分档",
+          "link": "/skills/company-monitor#二、数据源分档",
+          "items": [
+            {
+              "text": "见微降级规则（固化）",
+              "link": "/skills/company-monitor#见微降级规则-固化"
+            }
+          ]
+        },
+        {
+          "text": "三、每日执行流程",
+          "link": "/skills/company-monitor#三、每日执行流程"
+        },
+        {
+          "text": "四、条目统一结构与去重指纹",
+          "link": "/skills/company-monitor#四、条目统一结构与去重指纹"
+        },
+        {
+          "text": "五、分级规则（带响应时限）",
+          "link": "/skills/company-monitor#五、分级规则-带响应时限"
+        },
+        {
+          "text": "六、日报模板",
+          "link": "/skills/company-monitor#六、日报模板"
+        },
+        {
+          "text": "七、约定",
+          "link": "/skills/company-monitor#七、约定"
+        }
+      ]
+    }
+  ],
   "/skills/network-check-v3": [
     {
       "text": "返回栏目列表",
@@ -1830,6 +1969,132 @@ export const generatedSidebar = {
         {
           "text": "内容索引",
           "link": "/tutorials/agent-instruction-tool-selection-training#内容索引"
+        }
+      ]
+    }
+  ],
+  "/tutorials/agent-permissions-guardrails": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜不要让AI自动化失控：给Agent设计权限、审批和兜底机制",
+      "link": "/tutorials/agent-permissions-guardrails"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、AI能力越强，越不能默认“全部放权”",
+          "link": "/tutorials/agent-permissions-guardrails#一、ai能力越强-越不能默认-全部放权"
+        },
+        {
+          "text": "二、最简单的原则：读取权限可以宽，写入权限要谨慎",
+          "link": "/tutorials/agent-permissions-guardrails#二、最简单的原则-读取权限可以宽-写入权限要谨慎"
+        },
+        {
+          "text": "三、不要只分“允许”和“不允许”，最好分三级",
+          "link": "/tutorials/agent-permissions-guardrails#三、不要只分-允许-和-不允许-最好分三级"
+        },
+        {
+          "text": "四、最好的自动化，不是取消审批，而是把审批放在关键节点",
+          "link": "/tutorials/agent-permissions-guardrails#四、最好的自动化-不是取消审批-而是把审批放在关键节点"
+        },
+        {
+          "text": "五、尽量让AI先生成“草稿”，而不是直接执行",
+          "link": "/tutorials/agent-permissions-guardrails#五、尽量让ai先生成-草稿-而不是直接执行"
+        },
+        {
+          "text": "六、可逆操作和不可逆操作一定要区分",
+          "link": "/tutorials/agent-permissions-guardrails#六、可逆操作和不可逆操作一定要区分"
+        },
+        {
+          "text": "七、文件系统最好默认“原件只读”",
+          "link": "/tutorials/agent-permissions-guardrails#七、文件系统最好默认-原件只读"
+        },
+        {
+          "text": "八、服务器和代码环境更要做隔离",
+          "link": "/tutorials/agent-permissions-guardrails#八、服务器和代码环境更要做隔离"
+        },
+        {
+          "text": "九、一定要保留日志",
+          "link": "/tutorials/agent-permissions-guardrails#九、一定要保留日志"
+        },
+        {
+          "text": "十、重要操作之前，先让AI备份",
+          "link": "/tutorials/agent-permissions-guardrails#十、重要操作之前-先让ai备份"
+        },
+        {
+          "text": "十一、不要只防止AI犯错，也要防止任务本身定义错",
+          "link": "/tutorials/agent-permissions-guardrails#十一、不要只防止ai犯错-也要防止任务本身定义错"
+        },
+        {
+          "text": "十二、异常情况不要让AI无限重试",
+          "link": "/tutorials/agent-permissions-guardrails#十二、异常情况不要让ai无限重试"
+        },
+        {
+          "text": "十三、自动化最重要的能力之一，其实是“拒绝继续”",
+          "link": "/tutorials/agent-permissions-guardrails#十三、自动化最重要的能力之一-其实是-拒绝继续"
+        },
+        {
+          "text": "十四、权限最好跟着任务走，而不是永久开放",
+          "link": "/tutorials/agent-permissions-guardrails#十四、权限最好跟着任务走-而不是永久开放"
+        },
+        {
+          "text": "十五、真正成熟的AI自动化，是“放手但不失控”",
+          "link": "/tutorials/agent-permissions-guardrails#十五、真正成熟的ai自动化-是-放手但不失控"
+        },
+        {
+          "text": "十六、AI系统越强，治理能力越重要",
+          "link": "/tutorials/agent-permissions-guardrails#十六、ai系统越强-治理能力越重要"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-acceptance-criteria": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜给AI设验收标准：不要只说“做完”，要定义什么叫“做好”",
+      "link": "/tutorials/ai-acceptance-criteria"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、不要只告诉AI“做什么”，还要告诉它“什么叫完成”",
+          "link": "/tutorials/ai-acceptance-criteria#一、不要只告诉ai-做什么-还要告诉它-什么叫完成"
+        },
+        {
+          "text": "二、验收标准最好在任务开始前写清楚",
+          "link": "/tutorials/ai-acceptance-criteria#二、验收标准最好在任务开始前写清楚"
+        },
+        {
+          "text": "三、法律工作尤其需要明确验收标准",
+          "link": "/tutorials/ai-acceptance-criteria#三、法律工作尤其需要明确验收标准"
+        },
+        {
+          "text": "四、输出格式本身也是验收标准",
+          "link": "/tutorials/ai-acceptance-criteria#四、输出格式本身也是验收标准"
+        },
+        {
+          "text": "五、可以让AI在交付前先自检",
+          "link": "/tutorials/ai-acceptance-criteria#五、可以让ai在交付前先自检"
+        },
+        {
+          "text": "六、复杂任务可以设置阶段验收",
+          "link": "/tutorials/ai-acceptance-criteria#六、复杂任务可以设置阶段验收"
+        },
+        {
+          "text": "七、最好的验收标准，应该可以重复使用",
+          "link": "/tutorials/ai-acceptance-criteria#七、最好的验收标准-应该可以重复使用"
+        },
+        {
+          "text": "八、AI做得好不好，很多时候取决于你有没有把“好”定义清楚",
+          "link": "/tutorials/ai-acceptance-criteria#八、ai做得好不好-很多时候取决于你有没有把-好-定义清楚"
         }
       ]
     }
@@ -2059,6 +2324,53 @@ export const generatedSidebar = {
         {
           "text": "参考资料",
           "link": "/tutorials/ai-agent-conversation-management#参考资料"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-agent-cultivation": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜养好一个AI智能体：经常用、持续用，让它越来越懂你",
+      "link": "/tutorials/ai-agent-cultivation"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、每次都从零开始，是最浪费AI的用法",
+          "link": "/tutorials/ai-agent-cultivation#一、每次都从零开始-是最浪费ai的用法"
+        },
+        {
+          "text": "二、主动记忆，比“超长上下文”更重要",
+          "link": "/tutorials/ai-agent-cultivation#二、主动记忆-比-超长上下文-更重要"
+        },
+        {
+          "text": "三、AI的记忆，应该让它自己逐渐形成",
+          "link": "/tutorials/ai-agent-cultivation#三、ai的记忆-应该让它自己逐渐形成"
+        },
+        {
+          "text": "四、所以我越来越不喜欢频繁换AI",
+          "link": "/tutorials/ai-agent-cultivation#四、所以我越来越不喜欢频繁换ai"
+        },
+        {
+          "text": "五、同一个AI，用得越久，理论上应该越值钱",
+          "link": "/tutorials/ai-agent-cultivation#五、同一个ai-用得越久-理论上应该越值钱"
+        },
+        {
+          "text": "六、“合为一体”，其实是减少沟通成本",
+          "link": "/tutorials/ai-agent-cultivation#六、-合为一体-其实是减少沟通成本"
+        },
+        {
+          "text": "七、但记忆不是越多越好",
+          "link": "/tutorials/ai-agent-cultivation#七、但记忆不是越多越好"
+        },
+        {
+          "text": "八、未来人与AI的差距，可能还包括“有没有养好自己的智能体”",
+          "link": "/tutorials/ai-agent-cultivation#八、未来人与ai的差距-可能还包括-有没有养好自己的智能体"
         }
       ]
     }
@@ -2302,6 +2614,256 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/ai-first-workflow": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜做任何工作前，先问一句：这个事能用AI完成吗？",
+      "link": "/tutorials/ai-first-workflow"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、以前是“我怎么做”，现在先想“AI怎么做”",
+          "link": "/tutorials/ai-first-workflow#一、以前是-我怎么做-现在先想-ai怎么做"
+        },
+        {
+          "text": "二、不要只把AI当成“聊天工具”",
+          "link": "/tutorials/ai-first-workflow#二、不要只把ai当成-聊天工具"
+        },
+        {
+          "text": "三、“AI优先”不是“AI包办”",
+          "link": "/tutorials/ai-first-workflow#三、-ai优先-不是-ai包办"
+        },
+        {
+          "text": "四、很多工作第一次是任务，第二次就应该考虑变成流程",
+          "link": "/tutorials/ai-first-workflow#四、很多工作第一次是任务-第二次就应该考虑变成流程"
+        },
+        {
+          "text": "五、接到工作后，我现在会先问五个问题",
+          "link": "/tutorials/ai-first-workflow#五、接到工作后-我现在会先问五个问题"
+        },
+        {
+          "text": "六、真正改变的，是工作的默认顺序",
+          "link": "/tutorials/ai-first-workflow#六、真正改变的-是工作的默认顺序"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-knowledge-base-quality": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜AI知识库不是越大越好：先解决质量、时效和可追溯性",
+      "link": "/tutorials/ai-knowledge-base-quality"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、知识库最危险的问题，不是缺资料，而是垃圾太多",
+          "link": "/tutorials/ai-knowledge-base-quality#一、知识库最危险的问题-不是缺资料-而是垃圾太多"
+        },
+        {
+          "text": "二、法律知识库尤其要重视“现行有效”",
+          "link": "/tutorials/ai-knowledge-base-quality#二、法律知识库尤其要重视-现行有效"
+        },
+        {
+          "text": "三、官方来源和二手材料一定要分层",
+          "link": "/tutorials/ai-knowledge-base-quality#三、官方来源和二手材料一定要分层"
+        },
+        {
+          "text": "四、高质量项目文件，往往比海量网上资料更值钱",
+          "link": "/tutorials/ai-knowledge-base-quality#四、高质量项目文件-往往比海量网上资料更值钱"
+        },
+        {
+          "text": "五、不是所有项目文件都应该进入长期知识库",
+          "link": "/tutorials/ai-knowledge-base-quality#五、不是所有项目文件都应该进入长期知识库"
+        },
+        {
+          "text": "六、知识沉淀最好增加一个“提炼”过程",
+          "link": "/tutorials/ai-knowledge-base-quality#六、知识沉淀最好增加一个-提炼-过程"
+        },
+        {
+          "text": "七、每一条重要知识，最好都能回到来源",
+          "link": "/tutorials/ai-knowledge-base-quality#七、每一条重要知识-最好都能回到来源"
+        },
+        {
+          "text": "八、知识库应该允许“淘汰”",
+          "link": "/tutorials/ai-knowledge-base-quality#八、知识库应该允许-淘汰"
+        },
+        {
+          "text": "九、可以给知识设置“可信度层级”",
+          "link": "/tutorials/ai-knowledge-base-quality#九、可以给知识设置-可信度层级"
+        },
+        {
+          "text": "十、知识库不是仓库，而应该是一套动态系统",
+          "link": "/tutorials/ai-knowledge-base-quality#十、知识库不是仓库-而应该是一套动态系统"
+        },
+        {
+          "text": "十一、知识库最终服务的是“调用”，不是“收藏”",
+          "link": "/tutorials/ai-knowledge-base-quality#十一、知识库最终服务的是-调用-不是-收藏"
+        },
+        {
+          "text": "十二、先做“小而准”，再做“大而全”",
+          "link": "/tutorials/ai-knowledge-base-quality#十二、先做-小而准-再做-大而全"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-memory-digital-asset": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜不要频繁换Agent：你的AI记忆本身就是数字资产",
+      "link": "/tutorials/ai-memory-digital-asset"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、一个Agent真正有价值的，不只是它背后的模型",
+          "link": "/tutorials/ai-memory-digital-asset#一、一个agent真正有价值的-不只是它背后的模型"
+        },
+        {
+          "text": "二、每换一个Agent，都可能重新交一次“培训费”",
+          "link": "/tutorials/ai-memory-digital-asset#二、每换一个agent-都可能重新交一次-培训费"
+        },
+        {
+          "text": "三、聊天记录不是最重要的，真正重要的是“沉淀出来的规则”",
+          "link": "/tutorials/ai-memory-digital-asset#三、聊天记录不是最重要的-真正重要的是-沉淀出来的规则"
+        },
+        {
+          "text": "四、所以AI记忆，本身就是数字资产",
+          "link": "/tutorials/ai-memory-digital-asset#四、所以ai记忆-本身就是数字资产"
+        },
+        {
+          "text": "五、真正应该追求的，不是“永远不换”，而是“能够迁移”",
+          "link": "/tutorials/ai-memory-digital-asset#五、真正应该追求的-不是-永远不换-而是-能够迁移"
+        },
+        {
+          "text": "六、模型可以经常换，核心工作系统不要经常换",
+          "link": "/tutorials/ai-memory-digital-asset#六、模型可以经常换-核心工作系统不要经常换"
+        },
+        {
+          "text": "七、真正值得“养”的，是你的AI工作体系",
+          "link": "/tutorials/ai-memory-digital-asset#七、真正值得-养-的-是你的ai工作体系"
+        },
+        {
+          "text": "八、不要每次都从零开始",
+          "link": "/tutorials/ai-memory-digital-asset#八、不要每次都从零开始"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-priority-series-intro": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜开篇：建立自己的AI工作系统",
+      "link": "/tutorials/ai-priority-series-intro"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "AI优先｜开篇：建立自己的AI工作系统",
+          "link": "/tutorials/ai-priority-series-intro"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-project-file-system": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜不要只做知识库：建立AI真正能用的项目文件系统",
+      "link": "/tutorials/ai-project-file-system"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、知识库解决“知道什么”，文件系统解决“现在干什么”",
+          "link": "/tutorials/ai-project-file-system#一、知识库解决-知道什么-文件系统解决-现在干什么"
+        },
+        {
+          "text": "二、文件放得乱，Agent再强也很难稳定工作",
+          "link": "/tutorials/ai-project-file-system#二、文件放得乱-agent再强也很难稳定工作"
+        },
+        {
+          "text": "三、一个项目最好有稳定的目录结构",
+          "link": "/tutorials/ai-project-file-system#三、一个项目最好有稳定的目录结构"
+        },
+        {
+          "text": "四、输入文件最好永远不要直接覆盖",
+          "link": "/tutorials/ai-project-file-system#四、输入文件最好永远不要直接覆盖"
+        },
+        {
+          "text": "五、项目目录里最好有一个“说明文件”",
+          "link": "/tutorials/ai-project-file-system#五、项目目录里最好有一个-说明文件"
+        },
+        {
+          "text": "六、任务也可以用文件来交接",
+          "link": "/tutorials/ai-project-file-system#六、任务也可以用文件来交接"
+        },
+        {
+          "text": "七、中间文件不是垃圾，而是AI工作的“底稿”",
+          "link": "/tutorials/ai-project-file-system#七、中间文件不是垃圾-而是ai工作的-底稿"
+        },
+        {
+          "text": "八、文件命名本身也是给AI看的",
+          "link": "/tutorials/ai-project-file-system#八、文件命名本身也是给ai看的"
+        },
+        {
+          "text": "九、知识库不要和项目原始材料混在一起",
+          "link": "/tutorials/ai-project-file-system#九、知识库不要和项目原始材料混在一起"
+        },
+        {
+          "text": "十、文件系统应该成为所有Agent的共同工作空间",
+          "link": "/tutorials/ai-project-file-system#十、文件系统应该成为所有agent的共同工作空间"
+        },
+        {
+          "text": "十一、真正成熟的AI工作流，应该尽量“文件驱动”",
+          "link": "/tutorials/ai-project-file-system#十一、真正成熟的ai工作流-应该尽量-文件驱动"
+        },
+        {
+          "text": "十二、AI工作系统的底座，其实还是文件",
+          "link": "/tutorials/ai-project-file-system#十二、ai工作系统的底座-其实还是文件"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-system-retrospective": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜AI工作系统一定要能复盘：别让AI重复犯同样的错",
+      "link": "/tutorials/ai-system-retrospective"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "AI优先｜AI工作系统一定要能复盘：别让AI重复犯同样的错",
+          "link": "/tutorials/ai-system-retrospective"
+        }
+      ]
+    }
+  ],
   "/tutorials/ai-task-handoff": [
     {
       "text": "返回栏目列表",
@@ -2329,6 +2891,1094 @@ export const generatedSidebar = {
         {
           "text": "两个提醒",
           "link": "/tutorials/ai-task-handoff#两个提醒"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-task-planning-first": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜复杂任务不要自己拆：先让AI做任务规划",
+      "link": "/tutorials/ai-task-planning-first"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、人最应该负责的是目标，不是所有步骤",
+          "link": "/tutorials/ai-task-planning-first#一、人最应该负责的是目标-不是所有步骤"
+        },
+        {
+          "text": "二、任务规划本身，也是AI非常适合做的工作",
+          "link": "/tutorials/ai-task-planning-first#二、任务规划本身-也是ai非常适合做的工作"
+        },
+        {
+          "text": "三、一个好的复杂任务，最好分成“规划”和“执行”两层",
+          "link": "/tutorials/ai-task-planning-first#三、一个好的复杂任务-最好分成-规划-和-执行-两层"
+        },
+        {
+          "text": "四、先让AI看全部材料，再决定怎么做",
+          "link": "/tutorials/ai-task-planning-first#四、先让ai看全部材料-再决定怎么做"
+        },
+        {
+          "text": "五、复杂任务要让AI识别依赖关系",
+          "link": "/tutorials/ai-task-planning-first#五、复杂任务要让ai识别依赖关系"
+        },
+        {
+          "text": "六、人不要陷入“微观管理”",
+          "link": "/tutorials/ai-task-planning-first#六、人不要陷入-微观管理"
+        },
+        {
+          "text": "七、复杂任务不是“一次跑到底”，而是设置关键检查点",
+          "link": "/tutorials/ai-task-planning-first#七、复杂任务不是-一次跑到底-而是设置关键检查点"
+        },
+        {
+          "text": "八、让AI自己维护任务状态",
+          "link": "/tutorials/ai-task-planning-first#八、让ai自己维护任务状态"
+        },
+        {
+          "text": "九、任务规划也应该沉淀成模板",
+          "link": "/tutorials/ai-task-planning-first#九、任务规划也应该沉淀成模板"
+        },
+        {
+          "text": "十、真正重要的是“任务设计能力”",
+          "link": "/tutorials/ai-task-planning-first#十、真正重要的是-任务设计能力"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-traceability-requirements": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜不要只让AI给结论：重要工作必须可追溯",
+      "link": "/tutorials/ai-traceability-requirements"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、最简单的做法：要求每个结论带来源",
+          "link": "/tutorials/ai-traceability-requirements#一、最简单的做法-要求每个结论带来源"
+        },
+        {
+          "text": "二、让AI把“事实、依据、判断”分开写",
+          "link": "/tutorials/ai-traceability-requirements#二、让ai把-事实、依据、判断-分开写"
+        },
+        {
+          "text": "三、长任务最好先生成一份“底稿表”",
+          "link": "/tutorials/ai-traceability-requirements#三、长任务最好先生成一份-底稿表"
+        },
+        {
+          "text": "四、法律依据不要只让AI“引用”，要让它“核验”",
+          "link": "/tutorials/ai-traceability-requirements#四、法律依据不要只让ai-引用-要让它-核验"
+        },
+        {
+          "text": "五、重要文件要让AI保留版本信息",
+          "link": "/tutorials/ai-traceability-requirements#五、重要文件要让ai保留版本信息"
+        },
+        {
+          "text": "六、最后让AI做一次“来源自检”",
+          "link": "/tutorials/ai-traceability-requirements#六、最后让ai做一次-来源自检"
+        },
+        {
+          "text": "七、把这些要求直接做成固定规则",
+          "link": "/tutorials/ai-traceability-requirements#七、把这些要求直接做成固定规则"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-work-method-finale": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜最终篇：真正的AI能力，不是会用AI，而是建立自己的AI工作方式",
+      "link": "/tutorials/ai-work-method-finale"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、整个系列的起点：不是AI万能，而是AI优先",
+          "link": "/tutorials/ai-work-method-finale#一、整个系列的起点-不是ai万能-而是ai优先"
+        },
+        {
+          "text": "二、然后，要从“使用AI”变成“养一个AI”",
+          "link": "/tutorials/ai-work-method-finale#二、然后-要从-使用ai-变成-养一个ai"
+        },
+        {
+          "text": "三、再往后，是从“聊天”变成“交任务”",
+          "link": "/tutorials/ai-work-method-finale#三、再往后-是从-聊天-变成-交任务"
+        },
+        {
+          "text": "四、重复工作，要逐渐从提示词升级成系统能力",
+          "link": "/tutorials/ai-work-method-finale#四、重复工作-要逐渐从提示词升级成系统能力"
+        },
+        {
+          "text": "五、一个Agent也不应该承担所有事情",
+          "link": "/tutorials/ai-work-method-finale#五、一个agent也不应该承担所有事情"
+        },
+        {
+          "text": "六、知识、文件和记忆，要逐渐从聊天框里拿出来",
+          "link": "/tutorials/ai-work-method-finale#六、知识、文件和记忆-要逐渐从聊天框里拿出来"
+        },
+        {
+          "text": "七、AI越主动，越需要边界",
+          "link": "/tutorials/ai-work-method-finale#七、ai越主动-越需要边界"
+        },
+        {
+          "text": "八、人的角色最终会发生变化",
+          "link": "/tutorials/ai-work-method-finale#八、人的角色最终会发生变化"
+        },
+        {
+          "text": "九、写到最后，我真正想建立的不是“AI工具箱”",
+          "link": "/tutorials/ai-work-method-finale#九、写到最后-我真正想建立的不是-ai工具箱"
+        },
+        {
+          "text": "十、这个系列最后只留下一个问题",
+          "link": "/tutorials/ai-work-method-finale#十、这个系列最后只留下一个问题"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-workflow-5-90-5": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜5%的时间设计，90%的时间等待，5%的时间复核",
+      "link": "/tutorials/ai-workflow-5-90-5"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、真正值得花时间的，是任务开始前的那5%",
+          "link": "/tutorials/ai-workflow-5-90-5#一、真正值得花时间的-是任务开始前的那5"
+        },
+        {
+          "text": "二、90%的时间，不应该再盯着AI",
+          "link": "/tutorials/ai-workflow-5-90-5#二、90-的时间-不应该再盯着ai"
+        },
+        {
+          "text": "三、真正的效率提升，来自“并行工作”",
+          "link": "/tutorials/ai-workflow-5-90-5#三、真正的效率提升-来自-并行工作"
+        },
+        {
+          "text": "四、最后的5%，反而比以前更重要",
+          "link": "/tutorials/ai-workflow-5-90-5#四、最后的5-反而比以前更重要"
+        },
+        {
+          "text": "五、不要把大量时间浪费在“陪AI工作”上",
+          "link": "/tutorials/ai-workflow-5-90-5#五、不要把大量时间浪费在-陪ai工作-上"
+        },
+        {
+          "text": "六、提示词不是聊天技巧，而是工作说明书",
+          "link": "/tutorials/ai-workflow-5-90-5#六、提示词不是聊天技巧-而是工作说明书"
+        },
+        {
+          "text": "七、未来真正稀缺的，可能不是执行能力",
+          "link": "/tutorials/ai-workflow-5-90-5#七、未来真正稀缺的-可能不是执行能力"
+        }
+      ]
+    }
+  ],
+  "/tutorials/build-ai-work-system": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜把零散的AI工具，组织成一套工作系统",
+      "link": "/tutorials/build-ai-work-system"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、先不要问用哪个AI，先问工作怎么流转",
+          "link": "/tutorials/build-ai-work-system#一、先不要问用哪个ai-先问工作怎么流转"
+        },
+        {
+          "text": "二、第一层：建立一个长期主智能体",
+          "link": "/tutorials/build-ai-work-system#二、第一层-建立一个长期主智能体"
+        },
+        {
+          "text": "三、第二层：准备两个以上可以执行任务的Agent",
+          "link": "/tutorials/build-ai-work-system#三、第二层-准备两个以上可以执行任务的agent"
+        },
+        {
+          "text": "四、第三层：把长期规则写下来",
+          "link": "/tutorials/build-ai-work-system#四、第三层-把长期规则写下来"
+        },
+        {
+          "text": "五、第四层：把高频工作做成Skill",
+          "link": "/tutorials/build-ai-work-system#五、第四层-把高频工作做成skill"
+        },
+        {
+          "text": "六、第五层：给AI接工具，而不是只给它知识",
+          "link": "/tutorials/build-ai-work-system#六、第五层-给ai接工具-而不是只给它知识"
+        },
+        {
+          "text": "七、第六层：建立自己的知识库",
+          "link": "/tutorials/build-ai-work-system#七、第六层-建立自己的知识库"
+        },
+        {
+          "text": "八、第七层：把文件系统设计好",
+          "link": "/tutorials/build-ai-work-system#八、第七层-把文件系统设计好"
+        },
+        {
+          "text": "九、第八层：一定要保留人工复核",
+          "link": "/tutorials/build-ai-work-system#九、第八层-一定要保留人工复核"
+        },
+        {
+          "text": "十、第九层：尽量让系统可迁移",
+          "link": "/tutorials/build-ai-work-system#十、第九层-尽量让系统可迁移"
+        },
+        {
+          "text": "十一、我的理想结构其实很简单",
+          "link": "/tutorials/build-ai-work-system#十一、我的理想结构其实很简单"
+        },
+        {
+          "text": "十二、不要追求一次搭完",
+          "link": "/tutorials/build-ai-work-system#十二、不要追求一次搭完"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-closing-archive": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "结案归档与知识沉淀",
+      "link": "/tutorials/civil-litigation-closing-archive"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-closing-archive#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-closing-archive#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、第一步：文书处理与结构化登记",
+          "link": "/tutorials/civil-litigation-closing-archive#三、第一步-文书处理与结构化登记"
+        },
+        {
+          "text": "四、第二步：卷宗目录生成",
+          "link": "/tutorials/civil-litigation-closing-archive#四、第二步-卷宗目录生成"
+        },
+        {
+          "text": "五、第三步：结案报告",
+          "link": "/tutorials/civil-litigation-closing-archive#五、第三步-结案报告"
+        },
+        {
+          "text": "六、第四步：执行衔接判断",
+          "link": "/tutorials/civil-litigation-closing-archive#六、第四步-执行衔接判断"
+        },
+        {
+          "text": "七、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-closing-archive#七、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "八、交付验收清单",
+          "link": "/tutorials/civil-litigation-closing-archive#八、交付验收清单"
+        },
+        {
+          "text": "九、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-closing-archive#九、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-closing-argument": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "代理词撰写",
+      "link": "/tutorials/civil-litigation-closing-argument"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-closing-argument#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-closing-argument#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、四联结构：代理词的骨架",
+          "link": "/tutorials/civil-litigation-closing-argument#三、四联结构-代理词的骨架"
+        },
+        {
+          "text": "四、证明标准：两个方向都要用",
+          "link": "/tutorials/civil-litigation-closing-argument#四、证明标准-两个方向都要用"
+        },
+        {
+          "text": "五、三件在代理词里被用得太少的事",
+          "link": "/tutorials/civil-litigation-closing-argument#五、三件在代理词里被用得太少的事",
+          "items": [
+            {
+              "text": "5.1 举证妨碍",
+              "link": "/tutorials/civil-litigation-closing-argument#_5-1-举证妨碍"
+            },
+            {
+              "text": "5.2 自认",
+              "link": "/tutorials/civil-litigation-closing-argument#_5-2-自认"
+            },
+            {
+              "text": "5.3 不能单独作为认定依据的五类证据",
+              "link": "/tutorials/civil-litigation-closing-argument#_5-3-不能单独作为认定依据的五类证据"
+            }
+          ]
+        },
+        {
+          "text": "六、主提示词（可整段复制）",
+          "link": "/tutorials/civil-litigation-closing-argument#六、主提示词-可整段复制"
+        },
+        {
+          "text": "七、二审与再审代理词专项",
+          "link": "/tutorials/civil-litigation-closing-argument#七、二审与再审代理词专项"
+        },
+        {
+          "text": "八、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-closing-argument#八、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "九、交付验收清单",
+          "link": "/tutorials/civil-litigation-closing-argument#九、交付验收清单"
+        },
+        {
+          "text": "十、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-closing-argument#十、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-enforcement": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "强制执行与财产线索",
+      "link": "/tutorials/civil-litigation-enforcement"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-enforcement#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-enforcement#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、第一步：被执行人全景画像",
+          "link": "/tutorials/civil-litigation-enforcement#三、第一步-被执行人全景画像"
+        },
+        {
+          "text": "四、第二步：财产线索清单与网核留痕",
+          "link": "/tutorials/civil-litigation-enforcement#四、第二步-财产线索清单与网核留痕"
+        },
+        {
+          "text": "五、第三步：执行文书起草与利息计算",
+          "link": "/tutorials/civil-litigation-enforcement#五、第三步-执行文书起草与利息计算",
+          "items": [
+            {
+              "text": "加倍部分债务利息怎么算",
+              "link": "/tutorials/civil-litigation-enforcement#加倍部分债务利息怎么算"
+            }
+          ]
+        },
+        {
+          "text": "六、第四步：追加被执行人的可行性判断",
+          "link": "/tutorials/civil-litigation-enforcement#六、第四步-追加被执行人的可行性判断"
+        },
+        {
+          "text": "七、第五步：执行全程跟踪（定时任务）",
+          "link": "/tutorials/civil-litigation-enforcement#七、第五步-执行全程跟踪-定时任务"
+        },
+        {
+          "text": "八、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-enforcement#八、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "九、交付验收清单",
+          "link": "/tutorials/civil-litigation-enforcement#九、交付验收清单"
+        },
+        {
+          "text": "十、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-enforcement#十、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-evidence-organization": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "证据整理与证据目录",
+      "link": "/tutorials/civil-litigation-evidence-organization"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-evidence-organization#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-evidence-organization#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、材料分级与处理位置",
+          "link": "/tutorials/civil-litigation-evidence-organization#三、材料分级与处理位置"
+        },
+        {
+          "text": "四、六步走",
+          "link": "/tutorials/civil-litigation-evidence-organization#四、六步走",
+          "items": [
+            {
+              "text": "第一步：材料清点与预分类",
+              "link": "/tutorials/civil-litigation-evidence-organization#第一步-材料清点与预分类"
+            },
+            {
+              "text": "第二步：OCR 提取与要素登记",
+              "link": "/tutorials/civil-litigation-evidence-organization#第二步-ocr-提取与要素登记"
+            },
+            {
+              "text": "第三步：证明目的倒推编组（本篇核心）",
+              "link": "/tutorials/civil-litigation-evidence-organization#第三步-证明目的倒推编组-本篇核心"
+            },
+            {
+              "text": "第四步：电子数据专项处理",
+              "link": "/tutorials/civil-litigation-evidence-organization#第四步-电子数据专项处理"
+            },
+            {
+              "text": "第五步：证据目录成稿与页码对照",
+              "link": "/tutorials/civil-litigation-evidence-organization#第五步-证据目录成稿与页码对照"
+            },
+            {
+              "text": "第六步：证据册 PDF 制作与页码编制",
+              "link": "/tutorials/civil-litigation-evidence-organization#第六步-证据册-pdf-制作与页码编制"
+            }
+          ]
+        },
+        {
+          "text": "五、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-evidence-organization#五、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "六、交付验收清单",
+          "link": "/tutorials/civil-litigation-evidence-organization#六、交付验收清单"
+        },
+        {
+          "text": "七、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-evidence-organization#七、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-moot-court": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "庭前对抗演练与庭审提纲",
+      "link": "/tutorials/civil-litigation-moot-court"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-moot-court#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-moot-court#二、开工前必须先有什么",
+          "items": [
+            {
+              "text": "保密怎么处理",
+              "link": "/tutorials/civil-litigation-moot-court#保密怎么处理"
+            }
+          ]
+        },
+        {
+          "text": "三、演练怎么搭：角色互不通气，各自读全卷",
+          "link": "/tutorials/civil-litigation-moot-court#三、演练怎么搭-角色互不通气-各自读全卷",
+          "items": [
+            {
+              "text": "3.1 对方代理律师（独立子代理）",
+              "link": "/tutorials/civil-litigation-moot-court#_3-1-对方代理律师-独立子代理"
+            },
+            {
+              "text": "3.2 承办法官（独立子代理）",
+              "link": "/tutorials/civil-litigation-moot-court#_3-2-承办法官-独立子代理"
+            },
+            {
+              "text": "3.3 完整模拟开庭（本篇核心，独立子代理扮审判长）",
+              "link": "/tutorials/civil-litigation-moot-court#_3-3-完整模拟开庭-本篇核心-独立子代理扮审判长"
+            },
+            {
+              "text": "3.4 对抗轮次（主对话）",
+              "link": "/tutorials/civil-litigation-moot-court#_3-4-对抗轮次-主对话"
+            },
+            {
+              "text": "3.5 验收（新会话，换模型更好）",
+              "link": "/tutorials/civil-litigation-moot-court#_3-5-验收-新会话-换模型更好"
+            }
+          ]
+        },
+        {
+          "text": "四、庭审提纲：按法定顺序排",
+          "link": "/tutorials/civil-litigation-moot-court#四、庭审提纲-按法定顺序排"
+        },
+        {
+          "text": "五、庭前提醒：五级设置",
+          "link": "/tutorials/civil-litigation-moot-court#五、庭前提醒-五级设置"
+        },
+        {
+          "text": "六、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-moot-court#六、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "七、交付验收清单",
+          "link": "/tutorials/civil-litigation-moot-court#七、交付验收清单"
+        },
+        {
+          "text": "八、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-moot-court#八、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-pleadings-drafting": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "起诉状、答辩状与上诉状起草",
+      "link": "/tutorials/civil-litigation-pleadings-drafting"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-pleadings-drafting#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-pleadings-drafting#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、主提示词（可整段复制）",
+          "link": "/tutorials/civil-litigation-pleadings-drafting#三、主提示词-可整段复制"
+        },
+        {
+          "text": "四、分步要点：律师在每一步看什么",
+          "link": "/tutorials/civil-litigation-pleadings-drafting#四、分步要点-律师在每一步看什么",
+          "items": [
+            {
+              "text": "第一步 事实要素与时间轴",
+              "link": "/tutorials/civil-litigation-pleadings-drafting#第一步-事实要素与时间轴"
+            },
+            {
+              "text": "第二步 金额试算",
+              "link": "/tutorials/civil-litigation-pleadings-drafting#第二步-金额试算"
+            },
+            {
+              "text": "第三步 程序核验",
+              "link": "/tutorials/civil-litigation-pleadings-drafting#第三步-程序核验"
+            },
+            {
+              "text": "第四步 文书起草",
+              "link": "/tutorials/civil-litigation-pleadings-drafting#第四步-文书起草"
+            },
+            {
+              "text": "第五步 核验与自检",
+              "link": "/tutorials/civil-litigation-pleadings-drafting#第五步-核验与自检"
+            }
+          ]
+        },
+        {
+          "text": "五、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-pleadings-drafting#五、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "六、交付验收清单",
+          "link": "/tutorials/civil-litigation-pleadings-drafting#六、交付验收清单"
+        },
+        {
+          "text": "七、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-pleadings-drafting#七、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-post-trial-review": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "庭后复盘与裁判文书深读",
+      "link": "/tutorials/civil-litigation-post-trial-review"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-post-trial-review#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-post-trial-review#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、第一步：庭审当日即办（当天必须完成）",
+          "link": "/tutorials/civil-litigation-post-trial-review#三、第一步-庭审当日即办-当天必须完成"
+        },
+        {
+          "text": "四、第二步：庭审复盘（交付物一）",
+          "link": "/tutorials/civil-litigation-post-trial-review#四、第二步-庭审复盘-交付物一"
+        },
+        {
+          "text": "五、第三步：裁判文书深读",
+          "link": "/tutorials/civil-litigation-post-trial-review#五、第三步-裁判文书深读"
+        },
+        {
+          "text": "六、第四步：上诉决策评估（交付物二）",
+          "link": "/tutorials/civil-litigation-post-trial-review#六、第四步-上诉决策评估-交付物二"
+        },
+        {
+          "text": "七、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-post-trial-review#七、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "八、交付验收清单",
+          "link": "/tutorials/civil-litigation-post-trial-review#八、交付验收清单"
+        },
+        {
+          "text": "九、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-post-trial-review#九、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-pretrial-assessment": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "诉前评估与诉讼策略",
+      "link": "/tutorials/civil-litigation-pretrial-assessment"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-pretrial-assessment#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-pretrial-assessment#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、主提示词（可整段复制）",
+          "link": "/tutorials/civil-litigation-pretrial-assessment#三、主提示词-可整段复制"
+        },
+        {
+          "text": "四、六步分解：律师在每一步看什么",
+          "link": "/tutorials/civil-litigation-pretrial-assessment#四、六步分解-律师在每一步看什么",
+          "items": [
+            {
+              "text": "第一步 材料清点与缺口",
+              "link": "/tutorials/civil-litigation-pretrial-assessment#第一步-材料清点与缺口"
+            },
+            {
+              "text": "第二步 程序前置事项",
+              "link": "/tutorials/civil-litigation-pretrial-assessment#第二步-程序前置事项"
+            },
+            {
+              "text": "第三步 请求权基础梳理",
+              "link": "/tutorials/civil-litigation-pretrial-assessment#第三步-请求权基础梳理"
+            },
+            {
+              "text": "第四步 类案裁判倾向",
+              "link": "/tutorials/civil-litigation-pretrial-assessment#第四步-类案裁判倾向"
+            },
+            {
+              "text": "第五步 对方主体与履行能力",
+              "link": "/tutorials/civil-litigation-pretrial-assessment#第五步-对方主体与履行能力"
+            },
+            {
+              "text": "第六步 金额试算与法条核验",
+              "link": "/tutorials/civil-litigation-pretrial-assessment#第六步-金额试算与法条核验"
+            }
+          ]
+        },
+        {
+          "text": "五、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-pretrial-assessment#五、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "六、交付验收清单",
+          "link": "/tutorials/civil-litigation-pretrial-assessment#六、交付验收清单"
+        },
+        {
+          "text": "七、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-pretrial-assessment#七、本篇涉及的法律依据-已核验"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-principles": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "诉讼 AI 工作总则",
+      "link": "/tutorials/civil-litigation-principles"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "〇、先说清楚这套教程要解决什么",
+          "link": "/tutorials/civil-litigation-principles#〇、先说清楚这套教程要解决什么"
+        },
+        {
+          "text": "一、能力边界：三档分工表",
+          "link": "/tutorials/civil-litigation-principles#一、能力边界-三档分工表"
+        },
+        {
+          "text": "二、保密分级与处理位置",
+          "link": "/tutorials/civil-litigation-principles#二、保密分级与处理位置",
+          "items": [
+            {
+              "text": "本机 OCR 工具链",
+              "link": "/tutorials/civil-litigation-principles#本机-ocr-工具链"
+            },
+            {
+              "text": "脱敏代号规则",
+              "link": "/tutorials/civil-litigation-principles#脱敏代号规则"
+            }
+          ]
+        },
+        {
+          "text": "三、反编造纪律",
+          "link": "/tutorials/civil-litigation-principles#三、反编造纪律",
+          "items": [
+            {
+              "text": "3.1 三条硬规则",
+              "link": "/tutorials/civil-litigation-principles#_3-1-三条硬规则"
+            },
+            {
+              "text": "3.2 AI 在法律引证上的三种典型错法",
+              "link": "/tutorials/civil-litigation-principles#_3-2-ai-在法律引证上的三种典型错法"
+            },
+            {
+              "text": "3.3【待核验】标记的使用规范",
+              "link": "/tutorials/civil-litigation-principles#_3-3【待核验】标记的使用规范"
+            },
+            {
+              "text": "3.4 可直接复制的引证核验提示词",
+              "link": "/tutorials/civil-litigation-principles#_3-4-可直接复制的引证核验提示词"
+            }
+          ]
+        },
+        {
+          "text": "四、模板复用：从\"叫 AI 用模板\"到\"AI 真的照着模板做\"",
+          "link": "/tutorials/civil-litigation-principles#四、模板复用-从-叫-ai-用模板-到-ai-真的照着模板做",
+          "items": [
+            {
+              "text": "四步法",
+              "link": "/tutorials/civil-litigation-principles#四步法"
+            },
+            {
+              "text": "什么时候不该用模板",
+              "link": "/tutorials/civil-litigation-principles#什么时候不该用模板"
+            }
+          ]
+        },
+        {
+          "text": "五、期限盯守",
+          "link": "/tutorials/civil-litigation-principles#五、期限盯守",
+          "items": [
+            {
+              "text": "5.1 三条建任务的规则",
+              "link": "/tutorials/civil-litigation-principles#_5-1-三条建任务的规则"
+            },
+            {
+              "text": "5.2 期限来源纪律",
+              "link": "/tutorials/civil-litigation-principles#_5-2-期限来源纪律"
+            },
+            {
+              "text": "5.3 期间计算的三个易错点",
+              "link": "/tutorials/civil-litigation-principles#_5-3-期间计算的三个易错点"
+            }
+          ]
+        },
+        {
+          "text": "六、交付验收：律师收 AI 稿时怎么看",
+          "link": "/tutorials/civil-litigation-principles#六、交付验收-律师收-ai-稿时怎么看",
+          "items": [
+            {
+              "text": "6.1 先抽检，后读内容",
+              "link": "/tutorials/civil-litigation-principles#_6-1-先抽检-后读内容"
+            },
+            {
+              "text": "6.2 六项验收清单",
+              "link": "/tutorials/civil-litigation-principles#_6-2-六项验收清单"
+            },
+            {
+              "text": "6.3 措辞降级检查",
+              "link": "/tutorials/civil-litigation-principles#_6-3-措辞降级检查"
+            }
+          ]
+        },
+        {
+          "text": "七、文件命名与版本",
+          "link": "/tutorials/civil-litigation-principles#七、文件命名与版本"
+        },
+        {
+          "text": "附录一：民事诉讼常用期限速查表",
+          "link": "/tutorials/civil-litigation-principles#附录一-民事诉讼常用期限速查表",
+          "items": [
+            {
+              "text": "一审阶段",
+              "link": "/tutorials/civil-litigation-principles#一审阶段"
+            },
+            {
+              "text": "保全",
+              "link": "/tutorials/civil-litigation-principles#保全"
+            },
+            {
+              "text": "上诉与再审",
+              "link": "/tutorials/civil-litigation-principles#上诉与再审"
+            },
+            {
+              "text": "执行",
+              "link": "/tutorials/civil-litigation-principles#执行"
+            },
+            {
+              "text": "实体期间",
+              "link": "/tutorials/civil-litigation-principles#实体期间"
+            }
+          ]
+        },
+        {
+          "text": "附录二：本篇引用的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-principles#附录二-本篇引用的法律依据-已核验"
+        },
+        {
+          "text": "附录三：全系列篇目与建议使用顺序",
+          "link": "/tutorials/civil-litigation-principles#附录三-全系列篇目与建议使用顺序"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-series-overview": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "民事诉讼 AI 实战系列",
+      "link": "/tutorials/civil-litigation-series-overview"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "怎么读这套东西",
+          "link": "/tutorials/civil-litigation-series-overview#怎么读这套东西"
+        },
+        {
+          "text": "篇目",
+          "link": "/tutorials/civil-litigation-series-overview#篇目"
+        },
+        {
+          "text": "每篇的结构",
+          "link": "/tutorials/civil-litigation-series-overview#每篇的结构"
+        },
+        {
+          "text": "三条贯穿全系列的规矩",
+          "link": "/tutorials/civil-litigation-series-overview#三条贯穿全系列的规矩"
+        },
+        {
+          "text": "关于法律依据的时效",
+          "link": "/tutorials/civil-litigation-series-overview#关于法律依据的时效"
+        },
+        {
+          "text": "脱敏说明",
+          "link": "/tutorials/civil-litigation-series-overview#脱敏说明"
+        }
+      ]
+    }
+  ],
+  "/tutorials/civil-litigation-trial-evidence": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "庭审举证与质证",
+      "link": "/tutorials/civil-litigation-trial-evidence"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、这一步真正难在哪",
+          "link": "/tutorials/civil-litigation-trial-evidence#一、这一步真正难在哪"
+        },
+        {
+          "text": "二、开工前必须先有什么",
+          "link": "/tutorials/civil-litigation-trial-evidence#二、开工前必须先有什么"
+        },
+        {
+          "text": "三、庭审举证：法庭上到底做什么",
+          "link": "/tutorials/civil-litigation-trial-evidence#三、庭审举证-法庭上到底做什么",
+          "items": [
+            {
+              "text": "3.1 举证顺序的设计",
+              "link": "/tutorials/civil-litigation-trial-evidence#_3-1-举证顺序的设计"
+            },
+            {
+              "text": "3.2 举证说明的三句话结构",
+              "link": "/tutorials/civil-litigation-trial-evidence#_3-2-举证说明的三句话结构"
+            },
+            {
+              "text": "3.3 原件的出示与核对记明",
+              "link": "/tutorials/civil-litigation-trial-evidence#_3-3-原件的出示与核对记明"
+            },
+            {
+              "text": "3.4 电子数据的当庭演示",
+              "link": "/tutorials/civil-litigation-trial-evidence#_3-4-电子数据的当庭演示"
+            },
+            {
+              "text": "3.5 证人出庭当日",
+              "link": "/tutorials/civil-litigation-trial-evidence#_3-5-证人出庭当日"
+            }
+          ]
+        },
+        {
+          "text": "四、当庭补充举证：六类情形与可照念的表述",
+          "link": "/tutorials/civil-litigation-trial-evidence#四、当庭补充举证-六类情形与可照念的表述",
+          "items": [
+            {
+              "text": "情形一：对方称\"未见原件，真实性不认可\"",
+              "link": "/tutorials/civil-litigation-trial-evidence#情形一-对方称-未见原件-真实性不认可"
+            },
+            {
+              "text": "情形二：对方否认签章或笔迹真实性",
+              "link": "/tutorials/civil-litigation-trial-evidence#情形二-对方否认签章或笔迹真实性"
+            },
+            {
+              "text": "情形三：对方当庭提出新的抗辩（已付款、已抵销、超过时效等）",
+              "link": "/tutorials/civil-litigation-trial-evidence#情形三-对方当庭提出新的抗辩-已付款、已抵销、超过时效等"
+            },
+            {
+              "text": "情形四：对方当庭提交新证据（突袭证据）",
+              "link": "/tutorials/civil-litigation-trial-evidence#情形四-对方当庭提交新证据-突袭证据"
+            },
+            {
+              "text": "情形五：法庭释明新的待证事实",
+              "link": "/tutorials/civil-litigation-trial-evidence#情形五-法庭释明新的待证事实"
+            },
+            {
+              "text": "情形六：我方逾期提交证据",
+              "link": "/tutorials/civil-litigation-trial-evidence#情形六-我方逾期提交证据"
+            },
+            {
+              "text": "附带：增加诉讼请求与反诉",
+              "link": "/tutorials/civil-litigation-trial-evidence#附带-增加诉讼请求与反诉"
+            },
+            {
+              "text": "附带：证据可能灭失时",
+              "link": "/tutorials/civil-litigation-trial-evidence#附带-证据可能灭失时"
+            }
+          ]
+        },
+        {
+          "text": "五、质证：逐份分析与措辞纪律",
+          "link": "/tutorials/civil-litigation-trial-evidence#五、质证-逐份分析与措辞纪律",
+          "items": [
+            {
+              "text": "5.1 四栏结构",
+              "link": "/tutorials/civil-litigation-trial-evidence#_5-1-四栏结构"
+            },
+            {
+              "text": "5.2 认定规则反过来就是质证角度",
+              "link": "/tutorials/civil-litigation-trial-evidence#_5-2-认定规则反过来就是质证角度"
+            },
+            {
+              "text": "5.3 电子数据的质证角度",
+              "link": "/tutorials/civil-litigation-trial-evidence#_5-3-电子数据的质证角度"
+            },
+            {
+              "text": "5.4 措辞纪律",
+              "link": "/tutorials/civil-litigation-trial-evidence#_5-4-措辞纪律"
+            },
+            {
+              "text": "5.5 盯住自认",
+              "link": "/tutorials/civil-litigation-trial-evidence#_5-5-盯住自认"
+            }
+          ]
+        },
+        {
+          "text": "六、闭庭前必须做的两件事",
+          "link": "/tutorials/civil-litigation-trial-evidence#六、闭庭前必须做的两件事"
+        },
+        {
+          "text": "七、主提示词（可整段复制）",
+          "link": "/tutorials/civil-litigation-trial-evidence#七、主提示词-可整段复制"
+        },
+        {
+          "text": "八、AI 在本环节的典型出错方式",
+          "link": "/tutorials/civil-litigation-trial-evidence#八、ai-在本环节的典型出错方式"
+        },
+        {
+          "text": "九、交付验收清单",
+          "link": "/tutorials/civil-litigation-trial-evidence#九、交付验收清单"
+        },
+        {
+          "text": "十、本篇涉及的法律依据（已核验）",
+          "link": "/tutorials/civil-litigation-trial-evidence#十、本篇涉及的法律依据-已核验"
         }
       ]
     }
@@ -2512,174 +4162,380 @@ export const generatedSidebar = {
       ]
     }
   ],
-  "/tutorials/company-monitoring-system-from-scratch": [
+  "/tutorials/company-monitoring-agent-tutorial": [
     {
       "text": "返回栏目列表",
       "link": "/tutorials/"
     },
     {
       "text": "公司舆情与法律风险监控系统·从零搭建教程（Agent 复刻指南）",
-      "link": "/tutorials/company-monitoring-system-from-scratch"
+      "link": "/tutorials/company-monitoring-agent-tutorial"
     },
     {
       "text": "本页目录",
       "items": [
         {
           "text": "0. 开工前必须与用户确认的三个决策点（阻塞项）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_0-开工前必须与用户确认的三个决策点-阻塞项"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_0-开工前必须与用户确认的三个决策点-阻塞项"
         },
         {
           "text": "1. 架构总览",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_1-架构总览"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_1-架构总览"
         },
         {
           "text": "2. 数据源分档与方法论",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_2-数据源分档与方法论"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_2-数据源分档与方法论"
         },
         {
           "text": "3. 环境前提清单",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_3-环境前提清单"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_3-环境前提清单"
         },
         {
           "text": "4. 目录结构（照此建好）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_4-目录结构-照此建好"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_4-目录结构-照此建好"
         },
         {
           "text": "5. 第一步：主体核验（反编造红线先行）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_5-第一步-主体核验-反编造红线先行"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_5-第一步-主体核验-反编造红线先行"
         },
         {
           "text": "6. 第二步：写 config/targets.yaml （模板）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_6-第二步-写-config-targets-yaml-模板"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_6-第二步-写-config-targets-yaml-模板"
         },
         {
           "text": "7. 第三步：写 SKILL.md （规则中枢，六节必写）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_7-第三步-写-skill-md-规则中枢-六节必写",
+          "link": "/tutorials/company-monitoring-agent-tutorial#_7-第三步-写-skill-md-规则中枢-六节必写",
           "items": [
             {
               "text": "7.1 合规红线（逐字写入，不可删减）",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_7-1-合规红线-逐字写入-不可删减"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_7-1-合规红线-逐字写入-不可删减"
             },
             {
               "text": "7.2 数据源分档与降级规则（固化成文字）",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_7-2-数据源分档与降级规则-固化成文字"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_7-2-数据源分档与降级规则-固化成文字"
             },
             {
               "text": "7.3 每日执行流程（十步 SOP）",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_7-3-每日执行流程-十步-sop"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_7-3-每日执行流程-十步-sop"
             },
             {
               "text": "7.4 分级规则（红橙黄＋响应时限）",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_7-4-分级规则-红橙黄-响应时限"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_7-4-分级规则-红橙黄-响应时限"
             },
             {
               "text": "7.5 条目结构与指纹规则",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_7-5-条目结构与指纹规则"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_7-5-条目结构与指纹规则"
             },
             {
               "text": "7.6 日报模板与全局约定",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_7-6-日报模板与全局约定"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_7-6-日报模板与全局约定"
             }
           ]
         },
         {
           "text": "8. 第四步：B 档与 C 档采集实现要点",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_8-第四步-b-档与-c-档采集实现要点",
+          "link": "/tutorials/company-monitoring-agent-tutorial#_8-第四步-b-档与-c-档采集实现要点",
           "items": [
             {
               "text": "8.1 去重引擎 dedup.py",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_8-1-去重引擎-dedup-py"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_8-1-去重引擎-dedup-py"
             },
             {
               "text": "8.2 社媒采集 fetchsocial.py （本系统最硬的骨头，三条血泪教训）",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_8-2-社媒采集-fetch-social-py-本系统最硬的骨头-三条血泪教训"
+              "link": "/tutorials/company-monitoring-agent-tutorial#_8-2-社媒采集-fetch-social-py-本系统最硬的骨头-三条血泪教训"
             },
             {
-              "text": "8.3 官方公告降级通道 fetchofficial.py",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_8-3-官方公告降级通道-fetch-official-py"
+              "text": "8.3 小红书通道（Agent-Reach ＋ OpenCLI，半自动）",
+              "link": "/tutorials/company-monitoring-agent-tutorial#_8-3-小红书通道-agent-reach-opencli-半自动"
             },
             {
-              "text": "8.4 交付管线三脚本（可从姊妹项目整体复制改配）",
-              "link": "/tutorials/company-monitoring-system-from-scratch#_8-4-交付管线三脚本-可从姊妹项目整体复制改配"
+              "text": "8.4 官方公告降级通道 fetchofficial.py",
+              "link": "/tutorials/company-monitoring-agent-tutorial#_8-4-官方公告降级通道-fetch-official-py"
+            },
+            {
+              "text": "8.5 交付管线三脚本（可从姊妹项目整体复制改配）",
+              "link": "/tutorials/company-monitoring-agent-tutorial#_8-5-交付管线三脚本-可从姊妹项目整体复制改配"
             }
           ]
         },
         {
           "text": "9. 第五步：Baseline 执行 SOP（首日一次性）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_9-第五步-baseline-执行-sop-首日一次性"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_9-第五步-baseline-执行-sop-首日一次性"
         },
         {
           "text": "10. 第六步：注册定时任务（只有这一个）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_10-第六步-注册定时任务-只有这一个"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_10-第六步-注册定时任务-只有这一个"
         },
         {
           "text": "11. 第七步：收尾检查清单（10 项全勾才算完工）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_11-第七步-收尾检查清单-10-项全勾才算完工"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_11-第七步-收尾检查清单-10-项全勾才算完工"
         },
         {
           "text": "12. 坑表速查（前一世代实践的全部学费）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_12-坑表速查-前一世代实践的全部学费"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_12-坑表速查-前一世代实践的全部学费"
         },
         {
           "text": "13. 定性与合规备忘（写给所有使用者）",
-          "link": "/tutorials/company-monitoring-system-from-scratch#_13-定性与合规备忘-写给所有使用者"
+          "link": "/tutorials/company-monitoring-agent-tutorial#_13-定性与合规备忘-写给所有使用者"
         }
       ]
     }
   ],
-  "/tutorials/enforcement-asset-discovery": [
+  "/tutorials/context-isolation-guide": [
     {
       "text": "返回栏目列表",
       "link": "/tutorials/"
     },
     {
-      "text": "强制执行与财产线索教程",
-      "link": "/tutorials/enforcement-asset-discovery"
+      "text": "AI优先｜不要把所有信息都塞给AI：学会上下文隔离",
+      "link": "/tutorials/context-isolation-guide"
     },
     {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/enforcement-asset-discovery#一、它能解决什么问题"
+          "text": "一、上下文不是越长越好",
+          "link": "/tutorials/context-isolation-guide#一、上下文不是越长越好"
         },
         {
-          "text": "二、输入材料",
-          "link": "/tutorials/enforcement-asset-discovery#二、输入材料"
+          "text": "二、一个对话，尽量只做一个专项任务",
+          "link": "/tutorials/context-isolation-guide#二、一个对话-尽量只做一个专项任务"
         },
         {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/enforcement-asset-discovery#三、ai智能体能力配置"
+          "text": "三、长期记忆和当前上下文，不是一回事",
+          "link": "/tutorials/context-isolation-guide#三、长期记忆和当前上下文-不是一回事"
         },
         {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/enforcement-asset-discovery#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：被执行人全景画像",
-              "link": "/tutorials/enforcement-asset-discovery#第一步-被执行人全景画像"
-            },
-            {
-              "text": "第二步：财产线索清单与网核留痕",
-              "link": "/tutorials/enforcement-asset-discovery#第二步-财产线索清单与网核留痕"
-            },
-            {
-              "text": "第三步：执行文书起草（模板复用）",
-              "link": "/tutorials/enforcement-asset-discovery#第三步-执行文书起草-模板复用"
-            },
-            {
-              "text": "第四步：执行全程跟踪（定时任务）",
-              "link": "/tutorials/enforcement-asset-discovery#第四步-执行全程跟踪-定时任务"
-            }
-          ]
+          "text": "四、项目之间尤其要隔离",
+          "link": "/tutorials/context-isolation-guide#四、项目之间尤其要隔离"
         },
         {
-          "text": "五、模板复用原则",
-          "link": "/tutorials/enforcement-asset-discovery#五、模板复用原则"
+          "text": "五、Subagent的一个重要价值，就是隔离上下文",
+          "link": "/tutorials/context-isolation-guide#五、subagent的一个重要价值-就是隔离上下文"
         },
         {
-          "text": "六、红线",
-          "link": "/tutorials/enforcement-asset-discovery#六、红线"
+          "text": "六、不是所有原始材料都要一直留在主上下文",
+          "link": "/tutorials/context-isolation-guide#六、不是所有原始材料都要一直留在主上下文"
+        },
+        {
+          "text": "七、上下文里最危险的，是“已经过时但还存在的信息”",
+          "link": "/tutorials/context-isolation-guide#七、上下文里最危险的-是-已经过时但还存在的信息"
+        },
+        {
+          "text": "八、不要把“记忆”当成“无限堆积”",
+          "link": "/tutorials/context-isolation-guide#八、不要把-记忆-当成-无限堆积"
+        },
+        {
+          "text": "九、可以建立三层上下文",
+          "link": "/tutorials/context-isolation-guide#九、可以建立三层上下文"
+        },
+        {
+          "text": "十、上下文隔离的目标，是让AI更专注",
+          "link": "/tutorials/context-isolation-guide#十、上下文隔离的目标-是让ai更专注"
+        },
+        {
+          "text": "十一、好的AI工作系统，既要会积累，也要会隔离",
+          "link": "/tutorials/context-isolation-guide#十一、好的ai工作系统-既要会积累-也要会隔离"
+        }
+      ]
+    }
+  ],
+  "/tutorials/define-output-before-work": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜先定义输出，再让AI开始工作",
+      "link": "/tutorials/define-output-before-work"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、输出决定AI应该怎么处理材料",
+          "link": "/tutorials/define-output-before-work#一、输出决定ai应该怎么处理材料"
+        },
+        {
+          "text": "二、不要让AI做完以后，再人工“搬运”",
+          "link": "/tutorials/define-output-before-work#二、不要让ai做完以后-再人工-搬运"
+        },
+        {
+          "text": "三、不同输出，对应不同工作深度",
+          "link": "/tutorials/define-output-before-work#三、不同输出-对应不同工作深度"
+        },
+        {
+          "text": "四、先设计表格字段，往往比先搜资料更重要",
+          "link": "/tutorials/define-output-before-work#四、先设计表格字段-往往比先搜资料更重要"
+        },
+        {
+          "text": "五、先定义最终文件，也能减少上下文混乱",
+          "link": "/tutorials/define-output-before-work#五、先定义最终文件-也能减少上下文混乱"
+        },
+        {
+          "text": "六、输出模板可以直接变成AI工作的骨架",
+          "link": "/tutorials/define-output-before-work#六、输出模板可以直接变成ai工作的骨架"
+        },
+        {
+          "text": "七、输出越明确，Subagent和工具也越容易分工",
+          "link": "/tutorials/define-output-before-work#七、输出越明确-subagent和工具也越容易分工"
+        },
+        {
+          "text": "八、真正完整的任务，应该从“交付物”倒推",
+          "link": "/tutorials/define-output-before-work#八、真正完整的任务-应该从-交付物-倒推"
+        }
+      ]
+    }
+  ],
+  "/tutorials/delegate-complete-tasks-to-agent": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜不要陪AI工作：学会把完整任务一次性交出去",
+      "link": "/tutorials/delegate-complete-tasks-to-agent"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、最浪费时间的，不是AI慢，而是人一直盯着它",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#一、最浪费时间的-不是ai慢-而是人一直盯着它"
+        },
+        {
+          "text": "二、一问一答，本质上还是人工流水线",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#二、一问一答-本质上还是人工流水线"
+        },
+        {
+          "text": "三、一个完整任务，至少要讲清六件事",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#三、一个完整任务-至少要讲清六件事"
+        },
+        {
+          "text": "四、好的提示词，不是写得长，而是让AI能独立干完",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#四、好的提示词-不是写得长-而是让ai能独立干完"
+        },
+        {
+          "text": "五、把“中途确认”改成“最终汇报”",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#五、把-中途确认-改成-最终汇报"
+        },
+        {
+          "text": "六、不要让人承担AI可以承担的项目管理工作",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#六、不要让人承担ai可以承担的项目管理工作"
+        },
+        {
+          "text": "七、复杂任务更应该一次性定义，而不是频繁干预",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#七、复杂任务更应该一次性定义-而不是频繁干预"
+        },
+        {
+          "text": "八、真正高效的人，会同时运行多个任务",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#八、真正高效的人-会同时运行多个任务"
+        },
+        {
+          "text": "九、什么时候不应该完全放手",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#九、什么时候不应该完全放手"
+        },
+        {
+          "text": "十、从“陪AI工作”到“管理AI工作”",
+          "link": "/tutorials/delegate-complete-tasks-to-agent#十、从-陪ai工作-到-管理ai工作"
+        }
+      ]
+    }
+  ],
+  "/tutorials/from-using-ai-to-managing-ai": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜以后我不再只学习怎么用AI，而要学习怎么管理AI",
+      "link": "/tutorials/from-using-ai-to-managing-ai"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、从“提问题”变成“下任务”",
+          "link": "/tutorials/from-using-ai-to-managing-ai#一、从-提问题-变成-下任务"
+        },
+        {
+          "text": "二、从“自己做”变成“安排谁做”",
+          "link": "/tutorials/from-using-ai-to-managing-ai#二、从-自己做-变成-安排谁做"
+        },
+        {
+          "text": "三、管理AI，首先要学会“放手”",
+          "link": "/tutorials/from-using-ai-to-managing-ai#三、管理ai-首先要学会-放手"
+        },
+        {
+          "text": "四、管理AI，也要知道什么时候不能放手",
+          "link": "/tutorials/from-using-ai-to-managing-ai#四、管理ai-也要知道什么时候不能放手"
+        },
+        {
+          "text": "五、好的管理，不只是安排任务，还要建立标准",
+          "link": "/tutorials/from-using-ai-to-managing-ai#五、好的管理-不只是安排任务-还要建立标准"
+        },
+        {
+          "text": "六、管理AI，还意味着要让它们能够协作和接手",
+          "link": "/tutorials/from-using-ai-to-managing-ai#六、管理ai-还意味着要让它们能够协作和接手"
+        },
+        {
+          "text": "七、管理AI的“成长”",
+          "link": "/tutorials/from-using-ai-to-managing-ai#七、管理ai的-成长"
+        },
+        {
+          "text": "八、人的价值正在从“执行能力”转向“组织能力”",
+          "link": "/tutorials/from-using-ai-to-managing-ai#八、人的价值正在从-执行能力-转向-组织能力"
+        },
+        {
+          "text": "九、未来真正值得练的，是“AI管理能力”",
+          "link": "/tutorials/from-using-ai-to-managing-ai#九、未来真正值得练的-是-ai管理能力"
+        }
+      ]
+    }
+  ],
+  "/tutorials/human-final-judgment": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜不要让AI替你做最终判断：把执行交给AI，把责任留给人",
+      "link": "/tutorials/human-final-judgment"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、AI最适合做“可标准化的执行”",
+          "link": "/tutorials/human-final-judgment#一、ai最适合做-可标准化的执行"
+        },
+        {
+          "text": "二、AI可以给建议，但不要让它代替你“拍板”",
+          "link": "/tutorials/human-final-judgment#二、ai可以给建议-但不要让它代替你-拍板"
+        },
+        {
+          "text": "三、法律工作里尤其要区分四类内容",
+          "link": "/tutorials/human-final-judgment#三、法律工作里尤其要区分四类内容"
+        },
+        {
+          "text": "四、最好的方式是让AI给“选项”，而不是替你做选择",
+          "link": "/tutorials/human-final-judgment#四、最好的方式是让ai给-选项-而不是替你做选择"
+        },
+        {
+          "text": "五、可以把“需要人工判断”直接写进任务",
+          "link": "/tutorials/human-final-judgment#五、可以把-需要人工判断-直接写进任务"
+        },
+        {
+          "text": "六、AI的目标不是替代专业判断，而是把判断前的工作做完",
+          "link": "/tutorials/human-final-judgment#六、ai的目标不是替代专业判断-而是把判断前的工作做完"
+        },
+        {
+          "text": "七、人最终要负责的是“例外”和“取舍”",
+          "link": "/tutorials/human-final-judgment#七、人最终要负责的是-例外-和-取舍"
+        },
+        {
+          "text": "八、所以AI越强，人越应该把时间留给判断",
+          "link": "/tutorials/human-final-judgment#八、所以ai越强-人越应该把时间留给判断"
         }
       ]
     }
@@ -3039,360 +4895,55 @@ export const generatedSidebar = {
       ]
     }
   ],
-  "/tutorials/litigation-evidence-arguments": [
+  "/tutorials/mac-proxy-troubleshooting": [
     {
       "text": "返回栏目列表",
       "link": "/tutorials/"
     },
     {
-      "text": "举证质证意见与代理词撰写教程",
-      "link": "/tutorials/litigation-evidence-arguments"
+      "text": "任务：排查并修复这台 Mac 的代理分流配置",
+      "link": "/tutorials/mac-proxy-troubleshooting"
     },
     {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/litigation-evidence-arguments#一、它能解决什么问题"
+          "text": "环境背景",
+          "link": "/tutorials/mac-proxy-troubleshooting#环境背景"
         },
         {
-          "text": "二、输入材料",
-          "link": "/tutorials/litigation-evidence-arguments#二、输入材料"
-        },
-        {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/litigation-evidence-arguments#三、ai智能体能力配置"
-        },
-        {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/litigation-evidence-arguments#四、标准工作流与提示词模板",
+          "text": "已确诊的三个冲突",
+          "link": "/tutorials/mac-proxy-troubleshooting#已确诊的三个冲突",
           "items": [
             {
-              "text": "第一步：对方证据逐份质证表（核心）",
-              "link": "/tutorials/litigation-evidence-arguments#第一步-对方证据逐份质证表-核心"
+              "text": "冲突 1：DNS 污染 —— 最关键，请优先查",
+              "link": "/tutorials/mac-proxy-troubleshooting#冲突-1-dns-污染-——-最关键-请优先查"
             },
             {
-              "text": "第二步：我方举证说明与补强",
-              "link": "/tutorials/litigation-evidence-arguments#第二步-我方举证说明与补强"
+              "text": "冲突 2：Shadowrocket 劫持 tailnet 路由",
+              "link": "/tutorials/mac-proxy-troubleshooting#冲突-2-shadowrocket-劫持-tailnet-路由"
             },
             {
-              "text": "第三步：代理词框架（核心）",
-              "link": "/tutorials/litigation-evidence-arguments#第三步-代理词框架-核心"
-            },
-            {
-              "text": "第四步：二审/再审代理词专项",
-              "link": "/tutorials/litigation-evidence-arguments#第四步-二审-再审代理词专项"
+              "text": "冲突 3：Tailscale 的 UDP 被 Shadowrocket 的 TUN 抓走",
+              "link": "/tutorials/mac-proxy-troubleshooting#冲突-3-tailscale-的-udp-被-shadowrocket-的-tun-抓走"
             }
           ]
         },
         {
-          "text": "五、模板复用原则",
-          "link": "/tutorials/litigation-evidence-arguments#五、模板复用原则"
+          "text": "目标架构，以及一条走不通的路",
+          "link": "/tutorials/mac-proxy-troubleshooting#目标架构-以及一条走不通的路"
         },
         {
-          "text": "六、红线",
-          "link": "/tutorials/litigation-evidence-arguments#六、红线"
-        }
-      ]
-    }
-  ],
-  "/tutorials/litigation-evidence-organization": [
-    {
-      "text": "返回栏目列表",
-      "link": "/tutorials/"
-    },
-    {
-      "text": "诉讼证据整理与证据目录制作教程",
-      "link": "/tutorials/litigation-evidence-organization"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/litigation-evidence-organization#一、它能解决什么问题"
+          "text": "如果这台机器还没配 hysteria2 节点",
+          "link": "/tutorials/mac-proxy-troubleshooting#如果这台机器还没配-hysteria2-节点"
         },
         {
-          "text": "二、输入材料",
-          "link": "/tutorials/litigation-evidence-organization#二、输入材料"
+          "text": "验收标准",
+          "link": "/tutorials/mac-proxy-troubleshooting#验收标准"
         },
         {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/litigation-evidence-organization#三、ai智能体能力配置"
-        },
-        {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/litigation-evidence-organization#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：材料清点与预分类",
-              "link": "/tutorials/litigation-evidence-organization#第一步-材料清点与预分类"
-            },
-            {
-              "text": "第二步：OCR 提取与关键信息登记",
-              "link": "/tutorials/litigation-evidence-organization#第二步-ocr-提取与关键信息登记"
-            },
-            {
-              "text": "第三步：证明目的倒推编组（核心）",
-              "link": "/tutorials/litigation-evidence-organization#第三步-证明目的倒推编组-核心"
-            },
-            {
-              "text": "第四步：证据目录成稿（模板复用）",
-              "link": "/tutorials/litigation-evidence-organization#第四步-证据目录成稿-模板复用"
-            },
-            {
-              "text": "第五步：双方证据比对（二审/复杂案件加做）",
-              "link": "/tutorials/litigation-evidence-organization#第五步-双方证据比对-二审-复杂案件加做"
-            }
-          ]
-        },
-        {
-          "text": "五、模板复用原则",
-          "link": "/tutorials/litigation-evidence-organization#五、模板复用原则"
-        },
-        {
-          "text": "六、红线",
-          "link": "/tutorials/litigation-evidence-organization#六、红线"
-        }
-      ]
-    }
-  ],
-  "/tutorials/litigation-moot-court": [
-    {
-      "text": "返回栏目列表",
-      "link": "/tutorials/"
-    },
-    {
-      "text": "AI 模拟法庭与庭审陪练教程",
-      "link": "/tutorials/litigation-moot-court"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/litigation-moot-court#一、它能解决什么问题"
-        },
-        {
-          "text": "二、输入材料",
-          "link": "/tutorials/litigation-moot-court#二、输入材料"
-        },
-        {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/litigation-moot-court#三、ai智能体能力配置"
-        },
-        {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/litigation-moot-court#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：案情脱敏摘要",
-              "link": "/tutorials/litigation-moot-court#第一步-案情脱敏摘要"
-            },
-            {
-              "text": "第二步：构建对方律师子代理（核心）",
-              "link": "/tutorials/litigation-moot-court#第二步-构建对方律师子代理-核心"
-            },
-            {
-              "text": "第三步：构建法官角色",
-              "link": "/tutorials/litigation-moot-court#第三步-构建法官角色"
-            },
-            {
-              "text": "第四步：对抗轮次演练",
-              "link": "/tutorials/litigation-moot-court#第四步-对抗轮次演练"
-            },
-            {
-              "text": "第五步：复盘与策略修正（交付物）",
-              "link": "/tutorials/litigation-moot-court#第五步-复盘与策略修正-交付物"
-            }
-          ]
-        },
-        {
-          "text": "五、文书类工作的模板复用原则",
-          "link": "/tutorials/litigation-moot-court#五、文书类工作的模板复用原则"
-        },
-        {
-          "text": "六、红线",
-          "link": "/tutorials/litigation-moot-court#六、红线"
-        }
-      ]
-    }
-  ],
-  "/tutorials/litigation-pleadings-drafting": [
-    {
-      "text": "返回栏目列表",
-      "link": "/tutorials/"
-    },
-    {
-      "text": "起诉状、答辩状与上诉状起草教程",
-      "link": "/tutorials/litigation-pleadings-drafting"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/litigation-pleadings-drafting#一、它能解决什么问题"
-        },
-        {
-          "text": "二、输入材料",
-          "link": "/tutorials/litigation-pleadings-drafting#二、输入材料"
-        },
-        {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/litigation-pleadings-drafting#三、ai智能体能力配置"
-        },
-        {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/litigation-pleadings-drafting#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：事实要素与时间轴提取",
-              "link": "/tutorials/litigation-pleadings-drafting#第一步-事实要素与时间轴提取"
-            },
-            {
-              "text": "第二步：诉讼请求金额试算（核心）",
-              "link": "/tutorials/litigation-pleadings-drafting#第二步-诉讼请求金额试算-核心"
-            },
-            {
-              "text": "第三步：管辖与程序核验",
-              "link": "/tutorials/litigation-pleadings-drafting#第三步-管辖与程序核验"
-            },
-            {
-              "text": "第四步：文书起草（模板复用，核心）",
-              "link": "/tutorials/litigation-pleadings-drafting#第四步-文书起草-模板复用-核心"
-            },
-            {
-              "text": "第五步：交付自检",
-              "link": "/tutorials/litigation-pleadings-drafting#第五步-交付自检"
-            }
-          ]
-        },
-        {
-          "text": "五、模板复用原则（本教程的核心方法）",
-          "link": "/tutorials/litigation-pleadings-drafting#五、模板复用原则-本教程的核心方法"
-        },
-        {
-          "text": "六、红线",
-          "link": "/tutorials/litigation-pleadings-drafting#六、红线"
-        }
-      ]
-    }
-  ],
-  "/tutorials/litigation-strategy-assessment": [
-    {
-      "text": "返回栏目列表",
-      "link": "/tutorials/"
-    },
-    {
-      "text": "诉讼策略与案件评估教程",
-      "link": "/tutorials/litigation-strategy-assessment"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/litigation-strategy-assessment#一、它能解决什么问题"
-        },
-        {
-          "text": "二、输入材料",
-          "link": "/tutorials/litigation-strategy-assessment#二、输入材料"
-        },
-        {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/litigation-strategy-assessment#三、ai智能体能力配置"
-        },
-        {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/litigation-strategy-assessment#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：请求权基础梳理",
-              "link": "/tutorials/litigation-strategy-assessment#第一步-请求权基础梳理"
-            },
-            {
-              "text": "第二步：类案裁判倾向分析（核心）",
-              "link": "/tutorials/litigation-strategy-assessment#第二步-类案裁判倾向分析-核心"
-            },
-            {
-              "text": "第三步：对方主体与履行能力调查",
-              "link": "/tutorials/litigation-strategy-assessment#第三步-对方主体与履行能力调查"
-            },
-            {
-              "text": "第四步：诉讼方案设计（交付物）",
-              "link": "/tutorials/litigation-strategy-assessment#第四步-诉讼方案设计-交付物"
-            }
-          ]
-        },
-        {
-          "text": "五、模板复用原则",
-          "link": "/tutorials/litigation-strategy-assessment#五、模板复用原则"
-        },
-        {
-          "text": "六、红线",
-          "link": "/tutorials/litigation-strategy-assessment#六、红线"
-        }
-      ]
-    }
-  ],
-  "/tutorials/litigation-trial-outline-archiving": [
-    {
-      "text": "返回栏目列表",
-      "link": "/tutorials/"
-    },
-    {
-      "text": "庭审提纲、庭审提醒与诉讼归档教程",
-      "link": "/tutorials/litigation-trial-outline-archiving"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/litigation-trial-outline-archiving#一、它能解决什么问题"
-        },
-        {
-          "text": "二、输入材料",
-          "link": "/tutorials/litigation-trial-outline-archiving#二、输入材料"
-        },
-        {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/litigation-trial-outline-archiving#三、ai智能体能力配置"
-        },
-        {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/litigation-trial-outline-archiving#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：庭审提纲（核心交付物一）",
-              "link": "/tutorials/litigation-trial-outline-archiving#第一步-庭审提纲-核心交付物一"
-            },
-            {
-              "text": "第二步：庭前提醒设置（定时任务）",
-              "link": "/tutorials/litigation-trial-outline-archiving#第二步-庭前提醒设置-定时任务"
-            },
-            {
-              "text": "第三步：庭后即时归集",
-              "link": "/tutorials/litigation-trial-outline-archiving#第三步-庭后即时归集"
-            },
-            {
-              "text": "第四步：结案归档（核心交付物二）",
-              "link": "/tutorials/litigation-trial-outline-archiving#第四步-结案归档-核心交付物二"
-            }
-          ]
-        },
-        {
-          "text": "五、模板复用原则",
-          "link": "/tutorials/litigation-trial-outline-archiving#五、模板复用原则"
-        },
-        {
-          "text": "六、红线",
-          "link": "/tutorials/litigation-trial-outline-archiving#六、红线"
-        },
-        {
-          "text": "诉讼实战系列完整导航（共九篇）",
-          "link": "/tutorials/litigation-trial-outline-archiving#诉讼实战系列完整导航-共九篇"
+          "text": "排查纪律",
+          "link": "/tutorials/mac-proxy-troubleshooting#排查纪律"
         }
       ]
     }
@@ -3565,63 +5116,124 @@ export const generatedSidebar = {
       ]
     }
   ],
-  "/tutorials/mediation-negotiation": [
+  "/tutorials/mcp-over-prompts": [
     {
       "text": "返回栏目列表",
       "link": "/tutorials/"
     },
     {
-      "text": "AI 辅助调解与谈判教程",
-      "link": "/tutorials/mediation-negotiation"
+      "text": "AI优先｜给AI接工具：为什么MCP比单纯提示词更重要",
+      "link": "/tutorials/mcp-over-prompts"
     },
     {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/mediation-negotiation#一、它能解决什么问题"
+          "text": "一、一个没有工具的AI，再聪明也有边界",
+          "link": "/tutorials/mcp-over-prompts#一、一个没有工具的ai-再聪明也有边界"
         },
         {
-          "text": "二、输入材料",
-          "link": "/tutorials/mediation-negotiation#二、输入材料"
+          "text": "二、提示词不能替代数据源",
+          "link": "/tutorials/mcp-over-prompts#二、提示词不能替代数据源"
         },
         {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/mediation-negotiation#三、ai智能体能力配置"
+          "text": "三、MCP最大的价值，是把外部能力标准化地接给Agent",
+          "link": "/tutorials/mcp-over-prompts#三、mcp最大的价值-是把外部能力标准化地接给agent"
         },
         {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/mediation-negotiation#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：利益图谱",
-              "link": "/tutorials/mediation-negotiation#第一步-利益图谱"
-            },
-            {
-              "text": "第二步：方案量化测算（核心）",
-              "link": "/tutorials/mediation-negotiation#第二步-方案量化测算-核心"
-            },
-            {
-              "text": "第三步：对手模拟谈判",
-              "link": "/tutorials/mediation-negotiation#第三步-对手模拟谈判"
-            },
-            {
-              "text": "第四步：谈判弹药准备",
-              "link": "/tutorials/mediation-negotiation#第四步-谈判弹药准备"
-            },
-            {
-              "text": "第五步：协议起草（模板复用）",
-              "link": "/tutorials/mediation-negotiation#第五步-协议起草-模板复用"
-            }
-          ]
+          "text": "四、Agent和普通聊天AI的差距，很大一部分就在“工具使用”",
+          "link": "/tutorials/mcp-over-prompts#四、agent和普通聊天ai的差距-很大一部分就在-工具使用"
         },
         {
-          "text": "五、模板复用原则",
-          "link": "/tutorials/mediation-negotiation#五、模板复用原则"
+          "text": "五、最好的状态，是不要人工搬运信息",
+          "link": "/tutorials/mcp-over-prompts#五、最好的状态-是不要人工搬运信息"
         },
         {
-          "text": "六、红线",
-          "link": "/tutorials/mediation-negotiation#六、红线"
+          "text": "六、MCP不是越多越好",
+          "link": "/tutorials/mcp-over-prompts#六、mcp不是越多越好"
+        },
+        {
+          "text": "七、工具最好有明确职责",
+          "link": "/tutorials/mcp-over-prompts#七、工具最好有明确职责"
+        },
+        {
+          "text": "八、专业工作尤其要注意“数据源优先级”",
+          "link": "/tutorials/mcp-over-prompts#八、专业工作尤其要注意-数据源优先级"
+        },
+        {
+          "text": "九、工具权限本身也要控制",
+          "link": "/tutorials/mcp-over-prompts#九、工具权限本身也要控制"
+        },
+        {
+          "text": "十、把“常用工具组合”做成工作流",
+          "link": "/tutorials/mcp-over-prompts#十、把-常用工具组合-做成工作流"
+        },
+        {
+          "text": "十一、最好的提示词，是能触发工具的提示词",
+          "link": "/tutorials/mcp-over-prompts#十一、最好的提示词-是能触发工具的提示词"
+        },
+        {
+          "text": "十二、从“会回答”到“会做事”",
+          "link": "/tutorials/mcp-over-prompts#十二、从-会回答-到-会做事"
+        }
+      ]
+    }
+  ],
+  "/tutorials/multi-agent-work-system": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜一个AI不够：建立自己的多Agent工作体系",
+      "link": "/tutorials/multi-agent-work-system"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么不要把所有工作都压在一个Agent上",
+          "link": "/tutorials/multi-agent-work-system#一、为什么不要把所有工作都压在一个agent上"
+        },
+        {
+          "text": "二、不同Agent，本来就适合做不同的事情",
+          "link": "/tutorials/multi-agent-work-system#二、不同agent-本来就适合做不同的事情"
+        },
+        {
+          "text": "三、主智能体不一定负责所有执行",
+          "link": "/tutorials/multi-agent-work-system#三、主智能体不一定负责所有执行"
+        },
+        {
+          "text": "四、多Agent最重要的能力之一，是“接手”",
+          "link": "/tutorials/multi-agent-work-system#四、多agent最重要的能力之一-是-接手"
+        },
+        {
+          "text": "五、对话记录不是最好的交接方式",
+          "link": "/tutorials/multi-agent-work-system#五、对话记录不是最好的交接方式"
+        },
+        {
+          "text": "六、多Agent还有一个价值：互相检查",
+          "link": "/tutorials/multi-agent-work-system#六、多agent还有一个价值-互相检查"
+        },
+        {
+          "text": "七、备用Agent应该真正保持可用",
+          "link": "/tutorials/multi-agent-work-system#七、备用agent应该真正保持可用"
+        },
+        {
+          "text": "八、Agent之间最好共享同一套外部工作规则",
+          "link": "/tutorials/multi-agent-work-system#八、agent之间最好共享同一套外部工作规则"
+        },
+        {
+          "text": "九、多Agent不是为了多，而是为了稳定",
+          "link": "/tutorials/multi-agent-work-system#九、多agent不是为了多-而是为了稳定"
+        },
+        {
+          "text": "十、独立Agent和Subagent要分清楚",
+          "link": "/tutorials/multi-agent-work-system#十、独立agent和subagent要分清楚"
+        },
+        {
+          "text": "十一、最终目标不是拥有很多AI，而是拥有一套可切换的工作系统",
+          "link": "/tutorials/multi-agent-work-system#十一、最终目标不是拥有很多ai-而是拥有一套可切换的工作系统"
         }
       ]
     }
@@ -3669,59 +5281,159 @@ export const generatedSidebar = {
       ]
     }
   ],
-  "/tutorials/post-trial-review": [
+  "/tutorials/opencode-rescue-agent-guide": [
     {
       "text": "返回栏目列表",
       "link": "/tutorials/"
     },
     {
-      "text": "庭后复盘与裁判文书深读教程",
-      "link": "/tutorials/post-trial-review"
+      "text": "别只装一个 AI Agent：我为什么把 OpenCode 当作“救援工具”",
+      "link": "/tutorials/opencode-rescue-agent-guide"
     },
     {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、它能解决什么问题",
-          "link": "/tutorials/post-trial-review#一、它能解决什么问题"
+          "text": "OpenCode 很适合充当“救援 Agent”",
+          "link": "/tutorials/opencode-rescue-agent-guide#opencode-很适合充当-救援-agent"
         },
         {
-          "text": "二、输入材料",
-          "link": "/tutorials/post-trial-review#二、输入材料"
+          "text": "两个 Agent，比一个 Agent 靠谱很多",
+          "link": "/tutorials/opencode-rescue-agent-guide#两个-agent-比一个-agent-靠谱很多"
         },
         {
-          "text": "三、AI智能体能力配置",
-          "link": "/tutorials/post-trial-review#三、ai智能体能力配置"
+          "text": "VPS 上也可以放一个 OpenCode",
+          "link": "/tutorials/opencode-rescue-agent-guide#vps-上也可以放一个-opencode"
         },
         {
-          "text": "四、标准工作流与提示词模板",
-          "link": "/tutorials/post-trial-review#四、标准工作流与提示词模板",
-          "items": [
-            {
-              "text": "第一步：庭审实录结构化",
-              "link": "/tutorials/post-trial-review#第一步-庭审实录结构化"
-            },
-            {
-              "text": "第二步：庭审复盘（交付物一）",
-              "link": "/tutorials/post-trial-review#第二步-庭审复盘-交付物一"
-            },
-            {
-              "text": "第三步：裁判文书深读",
-              "link": "/tutorials/post-trial-review#第三步-裁判文书深读"
-            },
-            {
-              "text": "第四步：上诉决策评估（交付物二）",
-              "link": "/tutorials/post-trial-review#第四步-上诉决策评估-交付物二"
-            }
-          ]
+          "text": "不一定每天用，但最好有一个",
+          "link": "/tutorials/opencode-rescue-agent-guide#不一定每天用-但最好有一个"
+        }
+      ]
+    }
+  ],
+  "/tutorials/prompt-layers-division": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜提示词、全局指令、项目指令、Skill，到底怎么分工？",
+      "link": "/tutorials/prompt-layers-division"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、全局指令：告诉AI“我长期怎么工作”",
+          "link": "/tutorials/prompt-layers-division#一、全局指令-告诉ai-我长期怎么工作"
         },
         {
-          "text": "五、模板复用原则",
-          "link": "/tutorials/post-trial-review#五、模板复用原则"
+          "text": "二、项目指令：告诉AI“这个项目怎么做”",
+          "link": "/tutorials/prompt-layers-division#二、项目指令-告诉ai-这个项目怎么做"
         },
         {
-          "text": "六、红线",
-          "link": "/tutorials/post-trial-review#六、红线"
+          "text": "三、提示词：告诉AI“这一次具体做什么”",
+          "link": "/tutorials/prompt-layers-division#三、提示词-告诉ai-这一次具体做什么"
+        },
+        {
+          "text": "四、Skill：告诉AI“这一类任务以后都怎么做”",
+          "link": "/tutorials/prompt-layers-division#四、skill-告诉ai-这一类任务以后都怎么做"
+        },
+        {
+          "text": "五、可以用一个法律项目来理解四层关系",
+          "link": "/tutorials/prompt-layers-division#五、可以用一个法律项目来理解四层关系"
+        },
+        {
+          "text": "六、一个简单判断方法：看它“多久会变”",
+          "link": "/tutorials/prompt-layers-division#六、一个简单判断方法-看它-多久会变"
+        },
+        {
+          "text": "七、不要把所有东西都塞进全局指令",
+          "link": "/tutorials/prompt-layers-division#七、不要把所有东西都塞进全局指令"
+        },
+        {
+          "text": "八、项目指令也不要写成任务流水账",
+          "link": "/tutorials/prompt-layers-division#八、项目指令也不要写成任务流水账"
+        },
+        {
+          "text": "九、Skill也不要写死项目内容",
+          "link": "/tutorials/prompt-layers-division#九、skill也不要写死项目内容"
+        },
+        {
+          "text": "十、最好的系统，是不同层之间互相引用",
+          "link": "/tutorials/prompt-layers-division#十、最好的系统-是不同层之间互相引用"
+        },
+        {
+          "text": "十一、提示词应该越来越短，而不是越来越长",
+          "link": "/tutorials/prompt-layers-division#十一、提示词应该越来越短-而不是越来越长"
+        },
+        {
+          "text": "十二、把四层分开，AI系统才真正可维护",
+          "link": "/tutorials/prompt-layers-division#十二、把四层分开-ai系统才真正可维护"
+        }
+      ]
+    }
+  ],
+  "/tutorials/prompt-to-automation-evolution": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜从提示词到自动化：一个AI任务应该怎样一步步进化",
+      "link": "/tutorials/prompt-to-automation-evolution"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、第一阶段：临时对话",
+          "link": "/tutorials/prompt-to-automation-evolution#一、第一阶段-临时对话"
+        },
+        {
+          "text": "二、第二阶段：把成功的提示词留下来",
+          "link": "/tutorials/prompt-to-automation-evolution#二、第二阶段-把成功的提示词留下来"
+        },
+        {
+          "text": "三、第三阶段：重复出现，就做成Skill",
+          "link": "/tutorials/prompt-to-automation-evolution#三、第三阶段-重复出现-就做成skill"
+        },
+        {
+          "text": "四、第四阶段：给Skill接上真正的工具",
+          "link": "/tutorials/prompt-to-automation-evolution#四、第四阶段-给skill接上真正的工具"
+        },
+        {
+          "text": "五、第五阶段：稳定步骤可以交给脚本",
+          "link": "/tutorials/prompt-to-automation-evolution#五、第五阶段-稳定步骤可以交给脚本"
+        },
+        {
+          "text": "六、第六阶段：不需要人启动，就做成定时任务",
+          "link": "/tutorials/prompt-to-automation-evolution#六、第六阶段-不需要人启动-就做成定时任务"
+        },
+        {
+          "text": "七、第七阶段：从定时执行变成条件触发",
+          "link": "/tutorials/prompt-to-automation-evolution#七、第七阶段-从定时执行变成条件触发"
+        },
+        {
+          "text": "八、最终目标是减少“人工启动次数”",
+          "link": "/tutorials/prompt-to-automation-evolution#八、最终目标是减少-人工启动次数"
+        },
+        {
+          "text": "九、不是所有任务都要自动化到底",
+          "link": "/tutorials/prompt-to-automation-evolution#九、不是所有任务都要自动化到底"
+        },
+        {
+          "text": "十、每次做完任务，都可以多问AI一句",
+          "link": "/tutorials/prompt-to-automation-evolution#十、每次做完任务-都可以多问ai一句"
+        },
+        {
+          "text": "十一、真正的AI复利，来自“以后不用再做一遍”",
+          "link": "/tutorials/prompt-to-automation-evolution#十一、真正的ai复利-来自-以后不用再做一遍"
+        },
+        {
+          "text": "十二、把工作逐渐变成系统",
+          "link": "/tutorials/prompt-to-automation-evolution#十二、把工作逐渐变成系统"
         }
       ]
     }
@@ -3741,6 +5453,206 @@ export const generatedSidebar = {
         {
           "text": "内容索引",
           "link": "/tutorials/proxy-clash-verge-full-guide#内容索引"
+        }
+      ]
+    }
+  ],
+  "/tutorials/scheduled-ai-digital-employee": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜能定时运行的AI，才真正开始像“数字员工”",
+      "link": "/tutorials/scheduled-ai-digital-employee"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、真正浪费时间的，往往不是执行，而是“记得去执行”",
+          "link": "/tutorials/scheduled-ai-digital-employee#一、真正浪费时间的-往往不是执行-而是-记得去执行"
+        },
+        {
+          "text": "二、定时任务最大的价值，是把“记忆成本”交出去",
+          "link": "/tutorials/scheduled-ai-digital-employee#二、定时任务最大的价值-是把-记忆成本-交出去"
+        },
+        {
+          "text": "三、最适合定时运行的，是那些“周期稳定、规则明确”的任务",
+          "link": "/tutorials/scheduled-ai-digital-employee#三、最适合定时运行的-是那些-周期稳定、规则明确-的任务"
+        },
+        {
+          "text": "四、法律工作里，其实有很多适合定时化的事情",
+          "link": "/tutorials/scheduled-ai-digital-employee#四、法律工作里-其实有很多适合定时化的事情"
+        },
+        {
+          "text": "五、定时任务还能解决“积累不连续”的问题",
+          "link": "/tutorials/scheduled-ai-digital-employee#五、定时任务还能解决-积累不连续-的问题"
+        },
+        {
+          "text": "六、比定时更进一步，是“条件触发”",
+          "link": "/tutorials/scheduled-ai-digital-employee#六、比定时更进一步-是-条件触发"
+        },
+        {
+          "text": "七、条件触发比定时任务更像“主动工作”",
+          "link": "/tutorials/scheduled-ai-digital-employee#七、条件触发比定时任务更像-主动工作"
+        },
+        {
+          "text": "八、自动运行不等于自动做最终决定",
+          "link": "/tutorials/scheduled-ai-digital-employee#八、自动运行不等于自动做最终决定"
+        },
+        {
+          "text": "九、一个成熟的定时任务，最好有“无事不打扰”机制",
+          "link": "/tutorials/scheduled-ai-digital-employee#九、一个成熟的定时任务-最好有-无事不打扰-机制"
+        },
+        {
+          "text": "十、定时任务最好输出“变化”，而不是重复全量信息",
+          "link": "/tutorials/scheduled-ai-digital-employee#十、定时任务最好输出-变化-而不是重复全量信息"
+        },
+        {
+          "text": "十一、Agent如果能长期运行，价值会完全不同",
+          "link": "/tutorials/scheduled-ai-digital-employee#十一、agent如果能长期运行-价值会完全不同"
+        },
+        {
+          "text": "十二、真正的数字员工，不是“像人聊天”，而是“不需要每次叫它”",
+          "link": "/tutorials/scheduled-ai-digital-employee#十二、真正的数字员工-不是-像人聊天-而是-不需要每次叫它"
+        }
+      ]
+    }
+  ],
+  "/tutorials/skill-from-repeated-work": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜重复三次的工作，就应该考虑做成Skill",
+      "link": "/tutorials/skill-from-repeated-work"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、很多人每天都在重复“训练AI”",
+          "link": "/tutorials/skill-from-repeated-work#一、很多人每天都在重复-训练ai"
+        },
+        {
+          "text": "二、提示词解决一次问题，Skill解决一类问题",
+          "link": "/tutorials/skill-from-repeated-work#二、提示词解决一次问题-skill解决一类问题"
+        },
+        {
+          "text": "三、什么工作最值得做成Skill",
+          "link": "/tutorials/skill-from-repeated-work#三、什么工作最值得做成skill"
+        },
+        {
+          "text": "四、Skill不是“高级提示词”",
+          "link": "/tutorials/skill-from-repeated-work#四、skill不是-高级提示词"
+        },
+        {
+          "text": "五、好的Skill，应该尽量减少人的中途参与",
+          "link": "/tutorials/skill-from-repeated-work#五、好的skill-应该尽量减少人的中途参与"
+        },
+        {
+          "text": "六、Skill最大的价值，是稳定",
+          "link": "/tutorials/skill-from-repeated-work#六、skill最大的价值-是稳定"
+        },
+        {
+          "text": "七、Skill还能帮助不同Agent共享同一种工作方式",
+          "link": "/tutorials/skill-from-repeated-work#七、skill还能帮助不同agent共享同一种工作方式"
+        },
+        {
+          "text": "八、Skill应该从真实工作里长出来",
+          "link": "/tutorials/skill-from-repeated-work#八、skill应该从真实工作里长出来"
+        },
+        {
+          "text": "九、失败的经验也应该写进Skill",
+          "link": "/tutorials/skill-from-repeated-work#九、失败的经验也应该写进skill"
+        },
+        {
+          "text": "十、Skill本质上是在保存你的工作经验",
+          "link": "/tutorials/skill-from-repeated-work#十、skill本质上是在保存你的工作经验"
+        },
+        {
+          "text": "十一、从提示词到Skill，是AI使用方式的分水岭",
+          "link": "/tutorials/skill-from-repeated-work#十一、从提示词到skill-是ai使用方式的分水岭"
+        }
+      ]
+    }
+  ],
+  "/tutorials/subagent-orchestration": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI优先｜善用Subagent：让一个主Agent同时调度多个子代理",
+      "link": "/tutorials/subagent-orchestration"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、Subagent本质上是“内部团队”",
+          "link": "/tutorials/subagent-orchestration#一、subagent本质上是-内部团队"
+        },
+        {
+          "text": "二、什么时候适合用Subagent",
+          "link": "/tutorials/subagent-orchestration#二、什么时候适合用subagent"
+        },
+        {
+          "text": "三、Subagent最大的价值，是并行",
+          "link": "/tutorials/subagent-orchestration#三、subagent最大的价值-是并行"
+        },
+        {
+          "text": "四、Subagent还能减少上下文污染",
+          "link": "/tutorials/subagent-orchestration#四、subagent还能减少上下文污染"
+        },
+        {
+          "text": "五、不要让所有子代理做同一件事",
+          "link": "/tutorials/subagent-orchestration#五、不要让所有子代理做同一件事"
+        },
+        {
+          "text": "六、可以让一个子代理专门唱反调",
+          "link": "/tutorials/subagent-orchestration#六、可以让一个子代理专门唱反调"
+        },
+        {
+          "text": "七、主Agent必须负责统一标准",
+          "link": "/tutorials/subagent-orchestration#七、主agent必须负责统一标准"
+        },
+        {
+          "text": "八、子代理的任务应该尽量小而明确",
+          "link": "/tutorials/subagent-orchestration#八、子代理的任务应该尽量小而明确"
+        },
+        {
+          "text": "九、不要无限制开Subagent",
+          "link": "/tutorials/subagent-orchestration#九、不要无限制开subagent"
+        },
+        {
+          "text": "十、Subagent和多Agent，解决的是两个不同问题",
+          "link": "/tutorials/subagent-orchestration#十、subagent和多agent-解决的是两个不同问题"
+        },
+        {
+          "text": "十一、未来真正重要的，不是“一个AI有多聪明”",
+          "link": "/tutorials/subagent-orchestration#十一、未来真正重要的-不是-一个ai有多聪明"
+        }
+      ]
+    }
+  ],
+  "/tutorials/temp-conversation-prompt-guide": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "如何写一个规范的临时对话提示词",
+      "link": "/tutorials/temp-conversation-prompt-guide"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "如何写一个规范的临时对话提示词",
+          "link": "/tutorials/temp-conversation-prompt-guide"
         }
       ]
     }
@@ -69239,6 +71151,20 @@ export const generatedSidebar = {
     {
       "text": "最新文章",
       "link": "/latest/"
+    }
+  ],
+  "/series/": [
+    {
+      "text": "系列文章",
+      "link": "/series/"
+    },
+    {
+      "text": "AI优先：建立自己的AI工作系统",
+      "link": "/series/ai-priority/"
+    },
+    {
+      "text": "民事诉讼 AI 实战系列",
+      "link": "/series/civil-litigation/"
     }
   ],
   "/tools/": [

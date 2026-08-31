@@ -1,0 +1,53 @@
+[
+  {
+    "id": "ai-priority",
+    "title": "AI优先：建立自己的AI工作系统",
+    "description": "从「不是AI万能，而是AI优先」出发，完整走一遍从工作习惯、任务交付、长期记忆、多Agent与Subagent、上下文隔离，到Skill、MCP、知识库、文件系统、自动化、权限治理、验收与可追溯的个人AI工作系统搭建路径：开篇＋25篇。",
+    "slugs": [
+      "ai-priority-series-intro",
+      "ai-first-workflow",
+      "ai-workflow-5-90-5",
+      "ai-agent-cultivation",
+      "ai-memory-digital-asset",
+      "build-ai-work-system",
+      "delegate-complete-tasks-to-agent",
+      "ai-task-planning-first",
+      "multi-agent-work-system",
+      "subagent-orchestration",
+      "context-isolation-guide",
+      "skill-from-repeated-work",
+      "prompt-layers-division",
+      "ai-project-file-system",
+      "ai-knowledge-base-quality",
+      "mcp-over-prompts",
+      "prompt-to-automation-evolution",
+      "scheduled-ai-digital-employee",
+      "agent-permissions-guardrails",
+      "ai-system-retrospective",
+      "ai-acceptance-criteria",
+      "define-output-before-work",
+      "ai-traceability-requirements",
+      "human-final-judgment",
+      "from-using-ai-to-managing-ai",
+      "ai-work-method-finale"
+    ]
+  },
+  {
+    "id": "civil-litigation",
+    "title": "民事诉讼 AI 实战系列",
+    "description": "按案件推进时间轴组织的民事诉讼AI工作法：诉讼AI工作总则，以及诉前评估、证据整理、起诉答辩上诉起草、庭审举证质证、庭前演练、代理词、庭后复盘、强制执行、结案归档九篇全流程。",
+    "slugs": [
+      "civil-litigation-series-overview",
+      "civil-litigation-principles",
+      "civil-litigation-pretrial-assessment",
+      "civil-litigation-evidence-organization",
+      "civil-litigation-pleadings-drafting",
+      "civil-litigation-trial-evidence",
+      "civil-litigation-moot-court",
+      "civil-litigation-closing-argument",
+      "civil-litigation-post-trial-review",
+      "civil-litigation-enforcement",
+      "civil-litigation-closing-archive"
+    ]
+  }
+]

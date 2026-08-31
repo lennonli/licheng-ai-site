@@ -112,6 +112,7 @@ export default defineConfig({
       { text: 'AGENTS 指令', link: '/agents/' },
       { text: 'Skill 技能', link: '/skills/' },
       { text: 'AI 教程', link: '/tutorials/' },
+      { text: '系列文章', link: '/series/' },
       {
         text: '问询案例',
         items: [

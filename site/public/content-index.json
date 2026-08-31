@@ -1,62 +1,260 @@
 [
   {
-    "href": "/tutorials/company-monitoring-system-from-scratch",
+    "href": "/tutorials/ai-priority-series-intro",
+    "title": "AI优先｜开篇：建立自己的AI工作系统",
+    "summary": "过去一段时间，我花了很多时间研究AI，也用了很多不同的模型、Agent、MCP、Skill、知识库和自动化工具。；真正重要的，不是知道多少AI工具，而是有没有建立一套适合自己的AI工作系统。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/define-output-before-work",
+    "title": "AI优先｜先定义输出，再让AI开始工作",
+    "summary": "我现在越来越喜欢一个很简单的AI工作习惯：；先别急着告诉AI怎么做，先把最终要交付什么想清楚。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-permissions-guardrails",
+    "title": "AI优先｜不要让AI自动化失控：给Agent设计权限、审批和兜底机制",
+    "summary": "真正成熟的AI工作系统，不应该每件事都等人来启动。；很多重复、稳定的任务，应该逐渐变成：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-acceptance-criteria",
+    "title": "AI优先｜给AI设验收标准：不要只说“做完”，要定义什么叫“做好”",
+    "summary": "很多AI任务最后效果不好，不一定是模型能力不够。；任务虽然交出去了，但没有提前定义“做到什么程度才算完成”。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-agent-cultivation",
+    "title": "AI优先｜养好一个AI智能体：经常用、持续用，让它越来越懂你",
+    "summary": "我现在越来越觉得，AI智能体不是“用一次算一次”的工具。；如果只是偶尔打开，问完一个问题就走，那它和搜索引擎、普通聊天机器人差别并不大。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-first-workflow",
+    "title": "AI优先｜做任何工作前，先问一句：这个事能用AI完成吗？",
+    "summary": "每接到一件事情，不是马上动手，而是先问一句：这个事能不能用AI完成？；不是“AI万能”，而是“AI优先”。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-knowledge-base-quality",
+    "title": "AI优先｜AI知识库不是越大越好：先解决质量、时效和可追溯性",
+    "summary": "一说到AI知识库，很多人的第一反应是：；把网上找到的文章、案例、报告一起塞进去。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-memory-digital-asset",
+    "title": "AI优先｜不要频繁换Agent：你的AI记忆本身就是数字资产",
+    "summary": "今天一个新模型，明天一个新Agent，后天又有一个更强的产品。；哪个新，就换哪个；哪个排行榜高，就用哪个。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-project-file-system",
+    "title": "AI优先｜不要只做知识库：建立AI真正能用的项目文件系统",
+    "summary": "很多人一说AI工作系统，第一反应就是：；但我现在越来越觉得，如果目标是让Agent真正参与日常工作，只有知识库远远不够。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-system-retrospective",
+    "title": "AI优先｜AI工作系统一定要能复盘：别让AI重复犯同样的错",
+    "summary": "AI工作系统真正有价值的地方，不只是把事情做完，而是：；如果AI今天审合同漏了一个风险，明天还继续漏；今天解决了一个Agent故障，下次遇到同样问题又重新排查，那说明虽然一直在用AI，但系统没有真正积累经验。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-task-planning-first",
+    "title": "AI优先｜复杂任务不要自己拆：先让AI做任务规划",
+    "summary": "不要陪AI工作，要学会把完整任务一次性交出去。；但一碰到复杂任务，很多人又会回到原来的工作方式。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-traceability-requirements",
+    "title": "AI优先｜不要只让AI给结论：重要工作必须可追溯",
+    "summary": "但在法律、财务、尽调、投资这类专业工作里，只有结论还不够。；所以我现在做重要任务时，会直接把“可追溯”写进任务要求里。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-work-method-finale",
+    "title": "AI优先｜最终篇：真正的AI能力，不是会用AI，而是建立自己的AI工作方式",
+    "summary": "看起来主题很多，但写到最后，我越来越觉得，这个系列真正想讲的其实只有一件事：；不要只学习怎么“用AI”，而要逐渐建立一套属于自己的AI工作方式。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-workflow-5-90-5",
+    "title": "AI优先｜5%的时间设计，90%的时间等待，5%的时间复核",
+    "summary": "用了AI一段时间以后，我越来越觉得，很多工作的最佳状态，不再是“人从头做到尾”。；5%的时间设计AI工作系统和提示词，90%的时间让AI执行，最后5%的时间复核。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/build-ai-work-system",
+    "title": "AI优先｜把零散的AI工具，组织成一套工作系统",
+    "summary": "用了AI一段时间以后，我越来越觉得，真正重要的不是“装了多少AI工具”。；所谓AI工作系统，不是某一个软件，也不是某一个模型。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/context-isolation-guide",
+    "title": "AI优先｜不要把所有信息都塞给AI：学会上下文隔离",
+    "summary": "用了AI一段时间以后，我越来越觉得，一个很容易被低估的问题是：；上下文太多，也会降低AI的工作质量。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/delegate-complete-tasks-to-agent",
+    "title": "AI优先｜不要陪AI工作：学会把完整任务一次性交出去",
+    "summary": "很多人用了AI以后，工作方式其实没有真正改变。；问AI一句、看一下结果、再补一句、再等一下、再改一句。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/from-using-ai-to-managing-ai",
+    "title": "AI优先｜以后我不再只学习怎么用AI，而要学习怎么管理AI",
+    "summary": "刚开始接触AI的时候，我最关心的是：；但用了很长一段时间以后，我越来越觉得，真正值得继续提升的能力已经变了。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/human-final-judgment",
+    "title": "AI优先｜不要让AI替你做最终判断：把执行交给AI，把责任留给人",
+    "summary": "我现在越来越倾向于把工作分成两部分：；这不是保守，而是专业工作本来就有不同层级。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/mcp-over-prompts",
+    "title": "AI优先｜给AI接工具：为什么MCP比单纯提示词更重要",
+    "summary": "很多人刚开始用AI时，主要精力都放在提示词上。；但用了Agent一段时间以后，我越来越觉得：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/multi-agent-work-system",
+    "title": "AI优先｜一个AI不够：建立自己的多Agent工作体系",
+    "summary": "用了AI一段时间以后，我越来越觉得：；真正稳定的AI工作方式，不应该只依赖一个Agent。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/prompt-layers-division",
+    "title": "AI优先｜提示词、全局指令、项目指令、Skill，到底怎么分工？",
+    "summary": "用了AI一段时间以后，很多人会慢慢积累出一堆东西：；这到底应该每次写在提示词里，还是放到全局指令？",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/prompt-to-automation-evolution",
+    "title": "AI优先｜从提示词到自动化：一个AI任务应该怎样一步步进化",
+    "summary": "用了AI一段时间以后，我越来越觉得：；一个任务，不应该永远停留在“每次重新问AI一遍”的阶段。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/scheduled-ai-digital-employee",
+    "title": "AI优先｜能定时运行的AI，才真正开始像“数字员工”",
+    "summary": "前面讲过，一个AI任务最理想的进化路径，大概是：；临时对话 → 提示词模板 → Skill → 工具调用 → 脚本 → 定时任务 → 条件触发。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/skill-from-repeated-work",
+    "title": "AI优先｜重复三次的工作，就应该考虑做成Skill",
+    "summary": "我现在越来越有一个很简单的判断标准：；如果一件事情已经重复做了三次，就应该考虑把它做成Skill。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/subagent-orchestration",
+    "title": "AI优先｜善用Subagent：让一个主Agent同时调度多个子代理",
+    "summary": "不要把整个工作系统只压在一个独立Agent上。；一个Agent内部，也不应该什么事情都自己从头做到尾。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/opencode-rescue-agent-guide",
+    "title": "别只装一个 AI Agent：我为什么把 OpenCode 当作“救援工具”",
+    "summary": "善用 OpenCode：给自己准备一个备用 AI Agent；现在越来越多的工作开始交给 AI Agent 处理：改代码、查配置、修环境、操作服务器、整理文件，甚至直接在电脑终端执行命令。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/temp-conversation-prompt-guide",
+    "title": "如何写一个规范的临时对话提示词",
+    "summary": "对于已经配置好全局指令、Skill 和 MCP 的本地 Agent，临时对话提示词不需要很长。它的作用不是重复告诉 AI“你是谁、应遵守什么规则”，而是明确这一次具体任务的几个变量。；任务 + 输入 + 工作内容 + 输出 + 落地位置。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/agents/法律业务通用指令",
+    "title": "法律业务通用指令",
+    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
+    "section": "智能体指令"
+  },
+  {
+    "href": "/tutorials/civil-litigation-evidence-organization",
+    "title": "证据整理与证据目录",
+    "summary": "民事诉讼 AI 实战系列·第二篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、保密分级、本地 OCR 工具链、反编造纪律、模板复用四步法都在那里，本篇不再重复。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/mac-proxy-troubleshooting",
+    "title": "任务：排查并修复这台 Mac 的代理分流配置",
+    "summary": "复用说明：本文为跨机器复用的排查提示词模板。原始工作稿中的服务器公网 IP、tailnet IP、节点密码等真实凭证已脱敏为占位符，使用时自行替换；节点添加步骤由本人在客户端界面手动完成。；目标状态：国内网站直连、国外网站走 hyste……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/skills/company-monitor",
+    "title": "公司舆情与法律风险监控 Skill（company-monitor）",
+    "summary": "定位：所内自用的线索发现工具，不作法律结论、不作对外交付文件。产出仅供李成律师内部参考。；监控对象：config/targets.yaml 中列明的全部主体（挂牌/上市主体及 IPO 在审主体，首次部署时逐一核验登记信息并录入）。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/tutorials/civil-litigation-closing-archive",
+    "title": "结案归档与知识沉淀",
+    "summary": "民事诉讼 AI 实战系列·第九篇｜2026-08-27；适用阶段：收到生效法律文书后至案件关闭",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-closing-argument",
+    "title": "代理词撰写",
+    "summary": "民事诉讼 AI 实战系列·第六篇｜2026-08-27；适用阶段：庭前搭框架，庭审后定稿提交",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-enforcement",
+    "title": "强制执行与财产线索",
+    "summary": "民事诉讼 AI 实战系列·第八篇｜2026-08-27；适用阶段：法律文书生效、履行期届满后",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-moot-court",
+    "title": "庭前对抗演练与庭审提纲",
+    "summary": "民事诉讼 AI 实战系列·第五篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、反编造纪律、期限盯守三条规则都在那里，本篇不再重复。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-pleadings-drafting",
+    "title": "起诉状、答辩状与上诉状起草",
+    "summary": "民事诉讼 AI 实战系列·第三篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、反编造纪律、模板复用四步法、期限速查表都在那里，本篇不再重复。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-post-trial-review",
+    "title": "庭后复盘与裁判文书深读",
+    "summary": "民事诉讼 AI 实战系列·第七篇｜2026-08-27；适用阶段：庭审结束当日至收到判决书后的上诉期内",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-pretrial-assessment",
+    "title": "诉前评估与诉讼策略",
+    "summary": "民事诉讼 AI 实战系列·第一篇｜2026-08-27；适用阶段：接受委托后至决定起诉（或确定应诉方案）前",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-principles",
+    "title": "诉讼 AI 工作总则",
+    "summary": "民事诉讼 AI 实战系列·总则｜2026-08-27；本篇是全系列的共用底座。能力边界、保密分级、反编造纪律、模板复用方法、期限盯守、交付验收、法律依据速查表都写在这里，后面九篇不再重复。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-series-overview",
+    "title": "民事诉讼 AI 实战系列",
+    "summary": "版本：2026-08-27｜作者：李成律师；面向中国大陆民事诉讼实务，讲的是\"把 AI 用在诉讼案件的哪一步、怎么用、怎么验收\"。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/civil-litigation-trial-evidence",
+    "title": "庭审举证与质证",
+    "summary": "民事诉讼 AI 实战系列·第四篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、反编造纪律、期限盯守都在那里，本篇不再重复。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/company-monitoring-agent-tutorial",
     "title": "公司舆情与法律风险监控系统·从零搭建教程（Agent 复刻指南）",
-    "summary": "版本：V1（20260827）｜适用读者：接手维护或在新环境复刻本系统的 AI Agent（ZCode 及同构 CLI 环境）；隐私声明：本文为通用教程，不含任何客户名称、证券代码、信用代码、人员姓名与邮箱地址；凡涉具体配置处均以占位符……",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/enforcement-asset-discovery",
-    "title": "强制执行与财产线索教程",
-    "summary": "诉讼实战系列（三）｜适用：AI智能体（企查查/天眼查 + 网核留痕 + 定时任务监控）｜2026-08-27；用途：胜诉后把钱要回来——财产线索调查、执行文书起草、执行全程跟踪。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/litigation-evidence-arguments",
-    "title": "举证质证意见与代理词撰写教程",
-    "summary": "诉讼实战系列（八）｜适用：AI智能体（三性分析框架 + 类案口径检索 + 法条核验）｜2026-08-27；用途：对方证据的逐份质证、我方举证说明、代理词成稿。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/litigation-evidence-organization",
-    "title": "诉讼证据整理与证据目录制作教程",
-    "summary": "诉讼实战系列（六）｜适用：AI智能体（本地 OCR + 网核留痕 + docx）｜2026-08-27；用途：把一堆扫描件、照片、聊天记录变成结构规范、证明目的清晰的证据体系。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/litigation-moot-court",
-    "title": "AI 模拟法庭与庭审陪练教程",
-    "summary": "诉讼实战系列（一）｜适用：AI智能体（多子代理对抗演练）｜2026-08-27；用途：把整段提示词交给 AI（【】内替换为实际信息），在开庭前完成对抗演练与策略校验。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/litigation-pleadings-drafting",
-    "title": "起诉状、答辩状与上诉状起草教程",
-    "summary": "诉讼实战系列（七）｜适用：AI智能体（事实提取 + 金额试算 + 法条核验 + 模板复用）｜2026-08-27；用途：三类核心诉讼文书的 AI 辅助起草——以更优模板为基准，AI 做事实填充与调整完善。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/litigation-strategy-assessment",
-    "title": "诉讼策略与案件评估教程",
-    "summary": "诉讼实战系列（二）｜适用：AI智能体（元典/北大法宝案例检索 + 企查查/天眼查主体调查）｜2026-08-27；用途：起诉（或应诉）前，用量化依据回答\"打不打、怎么打、要多少\"。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/litigation-trial-outline-archiving",
-    "title": "庭审提纲、庭审提醒与诉讼归档教程",
-    "summary": "诉讼实战系列（九）｜适用：AI智能体（提纲生成 + 定时任务提醒 + 归档结构化）｜2026-08-27；用途：开庭前的最后一公里与结案后的最后一公里——提纲、提醒、归档闭环。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/mediation-negotiation",
-    "title": "AI 辅助调解与谈判教程",
-    "summary": "诉讼实战系列（五）｜适用：AI智能体（方案测算 + 角色扮演 + 协议起草）｜2026-08-27；用途：诉讼内外和解——利益分析、方案量化、对手模拟、协议成稿一条龙。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/post-trial-review",
-    "title": "庭后复盘与裁判文书深读教程",
-    "summary": "诉讼实战系列（四）｜适用：AI智能体（OCR 转写 + 类案检索 + 文书结构化）｜2026-08-27；用途：庭审结束后到收到判决书之后——复盘得失、深读裁判逻辑、决策是否上诉。",
+    "summary": "版本：V2（20260827）｜适用读者：接手维护或在新环境复刻本系统的 AI Agent（ZCode 及同构 CLI 环境）；V2 变更：小红书渠道由\"周度人工抽查\"升级为 OpenCLI 半自动通道（Agent-Reach 工具链桥……",
     "section": "AI 教程"
   },
   {
@@ -111,12 +309,6 @@
     "href": "/agents/AI-Agent辅助IPO股东穿透实操教程",
     "title": "AI Agent辅助IPO股东穿透核查与底稿归档实操教程",
     "summary": "以某新三板挂牌公司北交所IPO项目为样本 · AI工具：ZCode Agent ＋ 案牍AnduAI穿透报告 · 2026年8月；本教程按实际操作的时间顺序，复盘用AI Agent完成股东穿透底稿归档与资料跟踪的全流程，共十一个步骤。每……",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/法律业务通用指令",
-    "title": "法律业务通用指令",
-    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
     "section": "智能体指令"
   },
   {

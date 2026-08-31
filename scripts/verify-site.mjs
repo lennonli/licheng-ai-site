@@ -53,8 +53,28 @@ const homeHtml = readFileSync(path.join(dist, 'index.html'), 'utf8')
 for (const required of ['wechat-contact', '联系李成律师', '/wechat-li-cheng.jpg', '扫码添加微信']) {
   if (!homeHtml.includes(required)) fail(`Homepage WeChat contact section is missing ${required}`)
 }
-for (const required of ['/tools/', '05 / Tools', '实用工具']) {
+for (const required of ['/tools/', '06 / Tools', '04 / Series', '实用工具']) {
   if (!homeHtml.includes(required)) fail(`Homepage tools entry is missing ${required}`)
+}
+
+const seriesIndexFile = targetFile('/series/')
+const aiPrioritySeriesFile = targetFile('/series/ai-priority/')
+const civilLitigationSeriesFile = targetFile('/series/civil-litigation/')
+if (!seriesIndexFile || !aiPrioritySeriesFile || !civilLitigationSeriesFile) {
+  fail('Series pages are incomplete')
+} else {
+  const seriesIndexHtml = readFileSync(seriesIndexFile, 'utf8')
+  for (const required of ['/series/ai-priority/', '/series/civil-litigation/', '系列列表']) {
+    if (!seriesIndexHtml.includes(required)) fail(`Series index is missing ${required}`)
+  }
+  const seriesCardCount = (seriesIndexHtml.match(/class="index-card"/g) || []).length
+  if (seriesCardCount !== 2) fail(`Series index expected 2 series cards, found ${seriesCardCount}`)
+  const aiPriorityHtml = readFileSync(aiPrioritySeriesFile, 'utf8')
+  const aiPriorityLinks = (aiPriorityHtml.match(/href="\/tutorials\//g) || []).length
+  if (aiPriorityLinks < 26) fail(`AI priority series expected at least 26 tutorial links, found ${aiPriorityLinks}`)
+  const civilLitigationHtml = readFileSync(civilLitigationSeriesFile, 'utf8')
+  const civilLitigationLinks = (civilLitigationHtml.match(/href="\/tutorials\//g) || []).length
+  if (civilLitigationLinks < 11) fail(`Civil litigation series expected at least 11 tutorial links, found ${civilLitigationLinks}`)
 }
 
 const toolsIndexFile = targetFile('/tools/')

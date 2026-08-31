@@ -39,34 +39,44 @@
     <span class="home-card-title">AI智能体安装、环境配置、各种技巧等教程</span>
     <span class="home-card-desc">覆盖 Codex 环境搭建、系统依赖、代理配置与日常使用技巧。</span>
   </a>
+  <a class="home-card" href="/series/">
+    <span class="home-card-index">04 / Series</span>
+    <span class="home-card-title">系列文章</span>
+    <span class="home-card-desc">同一主题按阅读顺序成系列，从系列目录进入逐篇学习。</span>
+  </a>
   <a class="home-card" href="/latest/">
-    <span class="home-card-index">04 / Updates</span>
+    <span class="home-card-index">05 / Updates</span>
     <span class="home-card-title">最新文章</span>
     <span class="home-card-desc">按更新日期倒序展示已经上传或更新的文章，直接跳转到具体页面。</span>
   </a>
   <a class="home-card" href="/tools/">
-    <span class="home-card-index">05 / Tools</span>
+    <span class="home-card-index">06 / Tools</span>
     <span class="home-card-title">实用工具</span>
     <span class="home-card-desc">集中整理可直接使用的法律工具和企业网络核查网站。</span>
   </a>
   <a class="home-card" href="/kb/">
-    <span class="home-card-index">06 / Cases 2026</span>
+    <span class="home-card-index">07 / Cases 2026</span>
     <span class="home-card-title">问询案例库 · 2026年度</span>
     <span class="home-card-desc">2026 年上市/挂牌 242 家审核问询法律问题回溯，按问询要点、回复口径与执业提示沉淀。</span>
   </a>
   <a class="home-card" href="/kb2025/">
-    <span class="home-card-index">07 / Cases 2025</span>
+    <span class="home-card-index">08 / Cases 2025</span>
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年上市/挂牌 430 家审核问询法律问题回溯（3,389 个详述问题），附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">08 / Cases 2024</span>
+    <span class="home-card-index">09 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年上市/挂牌 386 家审核问询法律问题回溯（1,747 个详述问题），附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">09 / Directory</span>
+    <span class="home-card-index">10 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
+  </a>
+  <a class="home-card" href="/dashboard/">
+    <span class="home-card-index">11 / Dashboard</span>
+    <span class="home-card-title">个人每日工作看板</span>
+    <span class="home-card-desc">定时任务与个人工作进展的加密看板，密码访问，每日自动更新。</span>
   </a>
 </section>
