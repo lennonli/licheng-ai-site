@@ -24,9 +24,7 @@ function renderSearchSource(src: string, env: { path?: string }, md: { render: (
   const frontmatter = src.match(/^---\n([\s\S]*?)\n---/)
   const metadata = frontmatter?.[1]
     .split('\n')
-    .filter((line) => (kbYear === '2023'
-      ? /^(short|code|board):/.test(line.trim())
-      : /^(company|short|code|board|tags):/.test(line.trim())))
+    .filter((line) => /^(company|short|code|board|tags):/.test(line.trim()))
     .map((line) => line.replace(/^[^:]+:\s*/, '').replace(/^"|"$/g, '').trim())
     .filter(Boolean)
     .join(' | ')
