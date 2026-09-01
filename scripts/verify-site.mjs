@@ -27,6 +27,8 @@ function routeFor(file) {
 function targetFile(pathname) {
   if (pathname === '/') return path.join(dist, 'index.html')
   const clean = decodeURIComponent(pathname).replace(/^\//, '').replace(/\/$/, '')
+  const direct = path.join(dist, clean)
+  if (existsSync(direct) && statSync(direct).isFile()) return direct
   const html = path.join(dist, `${clean}.html`)
   const index = path.join(dist, clean, 'index.html')
   if (existsSync(html)) return html
@@ -131,12 +133,13 @@ for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8')
   const isImmersive = route.startsWith('/tutorial-views/')
   const isPrivateUtility = route.startsWith('/__analytics-') || route.startsWith('/dashboard')
+  const isPresentation = route.startsWith('/series/') && route.endsWith('/presentation/')
   const isNotFound = route === '/404'
   const noWechatContactRoutes = new Set(['/tools/course-ppt/'])
   if (!isImmersive && !isPrivateUtility) {
     const h1Count = (html.match(/<h1\b/g) || []).length
     if (!isNotFound && h1Count !== 1) fail(`${route}: expected one H1, found ${h1Count}`)
-    if (!isNotFound && !noWechatContactRoutes.has(route) && !html.includes('wechat-contact')) fail(`${route}: WeChat contact section missing`)
+    if (!isNotFound && !noWechatContactRoutes.has(route) && !isPresentation && !html.includes('wechat-contact')) fail(`${route}: WeChat contact section missing`)
     if (!/<link rel="canonical" href="https:\/\/ai\.licheng\.uk\//.test(html)) fail(`${route}: canonical missing`)
     if (!/<meta property="og:url"/.test(html)) fail(`${route}: og:url missing`)
   }

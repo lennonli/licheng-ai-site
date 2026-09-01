@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10271d">
+    <title>AI 入门演讲版 01｜我们今天说的 AI，到底是什么？</title>
+    <meta name="description" content="AI 入门第 01 讲演讲版：一页讲清 AI、大模型、ChatGPT 与 Agent 的关系。">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ai.licheng.uk/series/ai-basics/presentation/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AI 入门演讲版 01｜我们今天说的 AI，到底是什么？">
+    <meta property="og:description" content="一页讲清 AI、大模型、ChatGPT 与 Agent 的关系。">
+    <meta property="og:url" content="https://ai.licheng.uk/series/ai-basics/presentation/">
+    <meta property="og:image" content="https://ai.licheng.uk/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI 入门演讲版 01｜我们今天说的 AI，到底是什么？">
+    <meta name="twitter:description" content="一页讲清 AI、大模型、ChatGPT 与 Agent 的关系。">
+    <meta name="twitter:image" content="https://ai.licheng.uk/og-image.jpg">
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09130f;
+        --bg-2: #10271d;
+        --ink: #f4faee;
+        --muted: #a9bcae;
+        --muted-2: #71877a;
+        --lime: #b8f493;
+        --lime-strong: #83df5d;
+        --mint: #dff7d0;
+        --cyan: #8bd9d3;
+        --amber: #f4c56d;
+        --line: rgba(223, 247, 208, 0.16);
+        --line-strong: rgba(223, 247, 208, 0.28);
+        --paper: #f3f7ef;
+        --paper-ink: #14231b;
+        --shadow: 0 26px 80px rgba(0, 0, 0, 0.28);
+        --ease: cubic-bezier(0.22, 0.75, 0.25, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-width: 320px;
+        min-height: 100%;
+        margin: 0;
+        background:
+          radial-gradient(circle at 10% 0%, rgba(131, 223, 93, 0.13), transparent 28rem),
+          radial-gradient(circle at 100% 100%, rgba(139, 217, 211, 0.09), transparent 32rem),
+          var(--bg);
+      }
+
+      body {
+        min-height: 100svh;
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+        overflow: hidden;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button {
+        font: inherit;
+      }
+
+      .deck-shell {
+        display: grid;
+        width: 100%;
+        height: 100svh;
+        min-height: 560px;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+        gap: clamp(12px, 1.8vh, 22px);
+        padding: clamp(14px, 2.2vw, 30px) clamp(16px, 3vw, 48px) clamp(14px, 2.4vh, 28px);
+      }
+
+      .deck-topbar,
+      .deck-control-bar {
+        width: min(100%, 1440px);
+        margin: 0 auto;
+      }
+
+      .deck-topbar {
+        display: grid;
+        grid-template-columns: minmax(190px, 1fr) auto minmax(190px, 1fr);
+        gap: 20px;
+        align-items: center;
+      }
+
+      .deck-brand,
+      .deck-top-link,
+      .deck-top-button,
+      .nav-button,
+      .dot-button,
+      .notes-close {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .deck-brand {
+        display: inline-flex;
+        width: fit-content;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 760;
+        text-decoration: none;
+        letter-spacing: 0.01em;
+      }
+
+      .brand-mark {
+        display: inline-grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-size: 16px;
+        background: var(--lime);
+        border-radius: 10px;
+        box-shadow: 0 8px 22px rgba(159, 232, 112, 0.2);
+      }
+
+      .brand-sub {
+        color: var(--muted-2);
+        font-weight: 620;
+      }
+
+      .deck-heading {
+        display: grid;
+        justify-items: center;
+        gap: 3px;
+        text-align: center;
+      }
+
+      .deck-overline,
+      .deck-counter,
+      .slide-index,
+      .slide-topic,
+      .slide-state,
+      .concept-panel-head,
+      .control-kicker,
+      .keyboard-hint,
+      .notes-kicker,
+      .notes-meta,
+      .takeaway-num {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      }
+
+      .deck-overline {
+        color: var(--muted-2);
+        font-size: 11px;
+        font-weight: 760;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .deck-counter {
+        color: var(--lime);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      .deck-top-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+      }
+
+      .deck-top-link,
+      .deck-top-button {
+        display: inline-flex;
+        min-height: 36px;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 8px 12px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 760;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        cursor: pointer;
+        transition: color 160ms ease, background 160ms ease, border-color 160ms ease, transform 160ms ease;
+      }
+
+      .deck-top-link:hover,
+      .deck-top-link:focus-visible,
+      .deck-top-button:hover,
+      .deck-top-button:focus-visible {
+        color: var(--ink);
+        background: rgba(184, 244, 147, 0.12);
+        border-color: rgba(184, 244, 147, 0.38);
+        transform: translateY(-1px);
+      }
+
+      .deck-top-button[aria-pressed="true"] {
+        color: var(--paper-ink);
+        background: var(--lime);
+        border-color: var(--lime);
+      }
+
+      .stage {
+        position: relative;
+        display: grid;
+        min-height: 0;
+        place-items: center;
+      }
+
+      .slide-viewport {
+        position: relative;
+        width: min(100%, 1400px, calc((100svh - 174px) * 1.7777778));
+        aspect-ratio: 16 / 9;
+        filter: drop-shadow(var(--shadow));
+        touch-action: pan-y;
+      }
+
+      .slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        padding: clamp(20px, 2.4vw, 36px);
+        background:
+          radial-gradient(circle at 86% 8%, rgba(159, 232, 112, 0.16), transparent 25rem),
+          linear-gradient(135deg, #173d2a 0%, #10271d 52%, #0d1e17 100%);
+        border: 1px solid var(--line-strong);
+        border-radius: clamp(22px, 2.5vw, 34px);
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(18px) scale(0.985);
+        transition: opacity 360ms var(--ease), transform 420ms var(--ease), visibility 360ms ease;
+        visibility: hidden;
+      }
+
+      .slide::before {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(223, 247, 208, 0.045) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(223, 247, 208, 0.045) 1px, transparent 1px);
+        background-size: 34px 34px;
+        mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.82), transparent 76%);
+        content: "";
+        pointer-events: none;
+      }
+
+      .slide::after {
+        position: absolute;
+        right: -0.06em;
+        bottom: -0.29em;
+        color: rgba(223, 247, 208, 0.035);
+        content: "01";
+        font-size: clamp(180px, 24vw, 360px);
+        font-weight: 900;
+        letter-spacing: -0.12em;
+        line-height: 1;
+        pointer-events: none;
+      }
+
+      .slide.is-active {
+        z-index: 1;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0) scale(1);
+        visibility: visible;
+      }
+
+      .slide-topline,
+      .slide-main,
+      .takeaway-grid,
+      .slide-source {
+        position: relative;
+        z-index: 1;
+      }
+
+      .slide-topline {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--muted-2);
+      }
+
+      .slide-index {
+        display: inline-grid;
+        width: 34px;
+        height: 26px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-size: 11px;
+        font-weight: 900;
+        background: var(--lime);
+        border-radius: 8px;
+      }
+
+      .slide-topic {
+        font-size: 11px;
+        font-weight: 760;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .slide-state {
+        margin-left: auto;
+        padding: 5px 9px;
+        color: var(--lime);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        border: 1px solid rgba(184, 244, 147, 0.32);
+        border-radius: 999px;
+        text-transform: uppercase;
+      }
+
+      .slide-body {
+        display: flex;
+        min-height: 0;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        padding: clamp(16px, 2.3vw, 28px) 0 clamp(10px, 1.2vw, 18px);
+      }
+
+      .slide-main {
+        display: grid;
+        grid-template-columns: minmax(0, 1.04fr) minmax(300px, 0.96fr);
+        gap: clamp(20px, 3vw, 48px);
+        align-items: center;
+      }
+
+      .slide-copy {
+        min-width: 0;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 16px;
+        color: var(--lime);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: clamp(10px, 1vw, 12px);
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        background: var(--lime);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(184, 244, 147, 0.1);
+      }
+
+      .slide h1 {
+        max-width: 700px;
+        margin: 0;
+        color: var(--ink);
+        font-size: clamp(40px, 4.05vw, 64px);
+        font-weight: 860;
+        letter-spacing: -0.055em;
+        line-height: 1.03;
+      }
+
+      .slide h1 span {
+        color: var(--lime);
+      }
+
+      .slide-lead {
+        max-width: 620px;
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: clamp(14px, 1.1vw, 17px);
+        line-height: 1.56;
+      }
+
+      .slide-lead strong {
+        color: var(--mint);
+        font-weight: 760;
+      }
+
+      .slide-quote {
+        display: flex;
+        max-width: 560px;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 16px;
+        padding: 10px 13px;
+        background: rgba(223, 247, 208, 0.07);
+        border-left: 2px solid var(--lime);
+        border-radius: 0 14px 14px 0;
+      }
+
+      .quote-mark {
+        color: var(--lime);
+        font-family: Georgia, serif;
+        font-size: 27px;
+        line-height: 0.75;
+      }
+
+      .slide-quote div {
+        display: grid;
+        gap: 4px;
+      }
+
+      .quote-label {
+        color: var(--muted-2);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .quote-text {
+        color: var(--mint);
+        font-size: clamp(12px, 0.95vw, 14px);
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      .concept-panel {
+        position: relative;
+        min-width: 0;
+        padding: clamp(15px, 1.5vw, 22px);
+        background: rgba(7, 19, 14, 0.42);
+        border: 1px solid var(--line);
+        border-radius: clamp(18px, 2vw, 28px);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      }
+
+      .concept-panel-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        color: var(--mint);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+      }
+
+      .panel-caption {
+        color: var(--muted-2);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .concept-map {
+        margin-top: 8px;
+      }
+
+      .concept-svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .concept-svg .connector {
+        fill: none;
+        stroke: rgba(184, 244, 147, 0.58);
+        stroke-dasharray: 4 6;
+        stroke-linecap: round;
+        stroke-width: 2;
+      }
+
+      .concept-svg .arrow-head {
+        fill: var(--lime);
+      }
+
+      .concept-svg .node-outer {
+        fill: rgba(223, 247, 208, 0.04);
+        stroke: rgba(223, 247, 208, 0.16);
+        stroke-width: 1;
+      }
+
+      .concept-svg .node-ai {
+        fill: rgba(184, 244, 147, 0.16);
+        stroke: rgba(184, 244, 147, 0.62);
+      }
+
+      .concept-svg .node-llm {
+        fill: rgba(139, 217, 211, 0.13);
+        stroke: rgba(139, 217, 211, 0.56);
+      }
+
+      .concept-svg .node-product {
+        fill: rgba(244, 197, 109, 0.14);
+        stroke: rgba(244, 197, 109, 0.58);
+      }
+
+      .concept-svg .node-agent {
+        fill: rgba(184, 244, 147, 0.13);
+        stroke: rgba(184, 244, 147, 0.56);
+      }
+
+      .concept-svg .node-overline {
+        fill: var(--muted);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+      }
+
+      .concept-svg .node-title {
+        fill: var(--ink);
+        font-size: 27px;
+        font-weight: 850;
+      }
+
+      .concept-svg .node-title-small {
+        fill: var(--ink);
+        font-size: 17px;
+        font-weight: 840;
+      }
+
+      .concept-svg .node-sub {
+        fill: var(--muted);
+        font-size: 10px;
+        font-weight: 650;
+      }
+
+      .concept-svg .edge-label {
+        fill: var(--muted-2);
+        font-size: 9px;
+        font-weight: 700;
+      }
+
+      .takeaway-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .takeaway {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 11px;
+        min-width: 0;
+        padding: 13px 14px;
+        background: rgba(223, 247, 208, 0.06);
+        border: 1px solid rgba(223, 247, 208, 0.11);
+        border-radius: 15px;
+      }
+
+      .takeaway:nth-child(2) {
+        background: rgba(139, 217, 211, 0.07);
+      }
+
+      .takeaway:nth-child(3) {
+        background: rgba(244, 197, 109, 0.07);
+      }
+
+      .takeaway-num {
+        color: var(--lime);
+        font-size: 11px;
+        font-weight: 850;
+      }
+
+      .takeaway:nth-child(2) .takeaway-num {
+        color: var(--cyan);
+      }
+
+      .takeaway:nth-child(3) .takeaway-num {
+        color: var(--amber);
+      }
+
+      .takeaway-copy {
+        display: grid;
+        min-width: 0;
+        gap: 4px;
+      }
+
+      .takeaway strong {
+        color: var(--ink);
+        font-size: clamp(12px, 1vw, 14px);
+        line-height: 1.35;
+      }
+
+      .takeaway span:last-child {
+        color: var(--muted-2);
+        font-size: clamp(10px, 0.86vw, 12px);
+        line-height: 1.45;
+      }
+
+      .slide-source {
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding-top: 13px;
+        color: var(--muted-2);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        line-height: 1.4;
+        border-top: 1px solid rgba(223, 247, 208, 0.12);
+      }
+
+      .slide-source a {
+        color: var(--lime);
+        font-weight: 760;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .slide-source a:hover,
+      .slide-source a:focus-visible {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .deck-control-bar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        gap: 20px;
+        align-items: center;
+      }
+
+      .control-summary {
+        display: grid;
+        min-width: 0;
+        gap: 4px;
+      }
+
+      .control-kicker {
+        color: var(--lime);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .control-caption {
+        max-width: 440px;
+        overflow: hidden;
+        color: var(--muted-2);
+        font-size: 12px;
+        line-height: 1.45;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .deck-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .nav-button {
+        display: inline-flex;
+        min-width: 42px;
+        min-height: 38px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 12px;
+        color: var(--ink);
+        font-size: 12px;
+        font-weight: 760;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        cursor: pointer;
+        transition: color 160ms ease, background 160ms ease, border-color 160ms ease, transform 160ms ease;
+      }
+
+      .nav-button:hover:not(:disabled),
+      .nav-button:focus-visible:not(:disabled) {
+        color: var(--paper-ink);
+        background: var(--lime);
+        border-color: var(--lime);
+        transform: translateY(-1px);
+      }
+
+      .nav-button:disabled {
+        color: var(--muted-2);
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      .dot-navigation {
+        display: flex;
+        max-width: min(38vw, 340px);
+        align-items: center;
+        gap: 6px;
+        padding: 0 5px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .dot-navigation::-webkit-scrollbar {
+        display: none;
+      }
+
+      .dot-button {
+        display: inline-grid;
+        width: 8px;
+        height: 8px;
+        flex: 0 0 auto;
+        padding: 0;
+        background: rgba(223, 247, 208, 0.26);
+        border: 0;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: width 180ms ease, background 180ms ease, transform 180ms ease;
+      }
+
+      .dot-button:hover,
+      .dot-button:focus-visible,
+      .dot-button[aria-selected="true"] {
+        width: 24px;
+        background: var(--lime);
+      }
+
+      .dot-button:focus-visible {
+        outline: 2px solid var(--mint);
+        outline-offset: 4px;
+      }
+
+      .keyboard-hint {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        align-items: center;
+        color: var(--muted-2);
+        font-size: 10px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      kbd {
+        display: inline-grid;
+        min-width: 21px;
+        height: 21px;
+        place-items: center;
+        padding: 0 5px;
+        color: var(--muted);
+        font-family: inherit;
+        font-size: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--line);
+        border-bottom-color: var(--line-strong);
+        border-radius: 5px;
+      }
+
+      .progress-rail {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        height: 3px;
+        background: rgba(223, 247, 208, 0.1);
+      }
+
+      .progress-value {
+        width: 3.34%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--lime-strong), var(--lime));
+        box-shadow: 0 0 18px rgba(184, 244, 147, 0.6);
+        transition: width 320ms var(--ease);
+      }
+
+      .notes-panel {
+        position: fixed;
+        top: 76px;
+        right: clamp(14px, 3vw, 48px);
+        z-index: 8;
+        width: min(390px, calc(100vw - 28px));
+        padding: 22px;
+        color: var(--paper-ink);
+        background: rgba(243, 247, 239, 0.98);
+        border: 1px solid rgba(20, 35, 27, 0.14);
+        border-radius: 22px;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 180ms ease, transform 220ms var(--ease);
+      }
+
+      .notes-panel:not([hidden]) {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .notes-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+
+      .notes-kicker {
+        margin: 0 0 5px;
+        color: #0e6f3f;
+        font-size: 10px;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .notes-panel h2 {
+        margin: 0;
+        color: var(--paper-ink);
+        font-size: 22px;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+      }
+
+      .notes-close {
+        display: inline-grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        padding: 0;
+        color: #59645c;
+        font-size: 19px;
+        background: rgba(20, 35, 27, 0.05);
+        border: 1px solid rgba(20, 35, 27, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .notes-close:hover,
+      .notes-close:focus-visible {
+        color: var(--paper-ink);
+        background: var(--lime);
+      }
+
+      .notes-list {
+        display: grid;
+        gap: 11px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .notes-list li {
+        display: grid;
+        grid-template-columns: 23px minmax(0, 1fr);
+        gap: 10px;
+        color: #59645c;
+        font-size: 13px;
+        line-height: 1.65;
+      }
+
+      .notes-list li::before {
+        display: grid;
+        width: 23px;
+        height: 23px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        font-weight: 850;
+        background: var(--lime);
+        border-radius: 7px;
+        content: counter(list-item, decimal-leading-zero);
+      }
+
+      .notes-meta {
+        margin: 17px 0 0;
+        padding-top: 13px;
+        color: #7d897f;
+        font-size: 10px;
+        line-height: 1.5;
+        border-top: 1px solid rgba(20, 35, 27, 0.1);
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--lime);
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 980px) {
+        .deck-topbar {
+          grid-template-columns: minmax(160px, 1fr) auto;
+        }
+
+        .deck-heading {
+          display: none;
+        }
+
+        .slide-main {
+          gap: 24px;
+        }
+
+        .slide h1 {
+          font-size: clamp(38px, 6vw, 62px);
+        }
+      }
+
+      @media (max-width: 760px) {
+        body {
+          overflow: auto;
+        }
+
+        .deck-shell {
+          height: auto;
+          min-height: 100svh;
+          grid-template-rows: auto minmax(0, 1fr) auto;
+          padding: 15px 14px 18px;
+        }
+
+        .deck-topbar {
+          gap: 10px;
+        }
+
+        .brand-sub,
+        .deck-top-link span,
+        .deck-top-button span {
+          display: none;
+        }
+
+        .deck-top-link,
+        .deck-top-button {
+          width: 36px;
+          padding: 8px;
+          font-size: 15px;
+        }
+
+        .deck-top-link::before {
+          content: "←";
+        }
+
+        .deck-top-button[data-action="notes"]::before {
+          content: "✦";
+        }
+
+        .deck-top-button[data-action="fullscreen"]::before {
+          content: "↗";
+        }
+
+        .slide-viewport {
+          width: 100%;
+          height: calc(100svh - 175px);
+          min-height: 560px;
+          aspect-ratio: auto;
+        }
+
+        .slide {
+          padding: 22px 20px 18px;
+          overflow-y: auto;
+        }
+
+        .slide-main {
+          grid-template-columns: 1fr;
+          gap: 22px;
+          align-items: start;
+        }
+
+        .slide-body {
+          justify-content: start;
+          padding: 20px 0 12px;
+        }
+
+        .slide h1 {
+          font-size: clamp(38px, 10vw, 58px);
+        }
+
+        .slide-lead {
+          font-size: 15px;
+        }
+
+        .concept-panel {
+          max-width: 520px;
+        }
+
+        .takeaway-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .takeaway {
+          padding: 12px 13px;
+        }
+
+        .deck-control-bar {
+          grid-template-columns: 1fr auto;
+          gap: 10px;
+        }
+
+        .control-summary,
+        .keyboard-hint {
+          display: none;
+        }
+
+        .deck-navigation {
+          justify-content: flex-end;
+        }
+
+        .dot-navigation {
+          max-width: 42vw;
+        }
+
+        .notes-panel {
+          top: 62px;
+          right: 14px;
+        }
+      }
+
+      @media (max-width: 430px) {
+        .deck-brand {
+          font-size: 12px;
+        }
+
+        .brand-mark {
+          width: 28px;
+          height: 28px;
+        }
+
+        .slide-topline {
+          gap: 7px;
+        }
+
+        .slide-topic {
+          font-size: 9px;
+        }
+
+        .slide-state {
+          padding: 4px 7px;
+          font-size: 9px;
+        }
+
+        .slide-source {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 7px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+
+      @media print {
+        html,
+        body {
+          background: #10271d;
+        }
+
+        body {
+          overflow: visible;
+        }
+
+        .deck-shell {
+          height: auto;
+          min-height: 100vh;
+        }
+
+        .deck-topbar,
+        .deck-control-bar,
+        .progress-rail,
+        .notes-panel {
+          display: none;
+        }
+
+        .stage {
+          min-height: 100vh;
+        }
+
+        .slide-viewport {
+          width: 100%;
+          max-width: 1400px;
+          aspect-ratio: 16 / 9;
+        }
+
+        .slide {
+          visibility: visible !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+
+        .slide:not(.is-active) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress-rail" aria-hidden="true"><div class="progress-value" id="progress-value"></div></div>
+
+    <main class="deck-shell" id="presentation">
+      <header class="deck-topbar">
+        <a class="deck-brand" href="/series/ai-basics/" aria-label="返回 AI 入门系列目录">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>李成律师 <span class="brand-sub">AI 工作站</span></span>
+        </a>
+
+        <div class="deck-heading" aria-live="polite">
+          <span class="deck-overline">AI 入门 · 从大模型到智能体</span>
+          <span class="deck-counter" id="deck-counter">01 / 30 · 样稿</span>
+        </div>
+
+        <nav class="deck-top-actions" aria-label="演示页工具">
+          <a class="deck-top-link" href="/series/ai-basics/"><span>返回系列</span></a>
+          <button class="deck-top-button" type="button" data-action="notes" aria-expanded="false" aria-controls="notes-panel"><span>讲者提示</span></button>
+          <button class="deck-top-button" type="button" data-action="fullscreen"><span>全屏</span></button>
+        </nav>
+      </header>
+
+      <section class="stage" aria-label="AI 入门演讲内容">
+        <div class="slide-viewport" id="slide-viewport">
+          <article class="slide slide-intro is-active" data-slide data-slide-id="ai-basics-01" aria-labelledby="slide-title-01" aria-hidden="false">
+            <div class="slide-watermark sr-only" aria-hidden="true">01</div>
+            <div class="slide-topline">
+              <span class="slide-index">01</span>
+              <span class="slide-topic">AI 入门系列 · 第 01 讲</span>
+              <span class="slide-state">样稿</span>
+            </div>
+
+            <div class="slide-body">
+              <div class="slide-main">
+                <div class="slide-copy">
+                  <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>第一件事：把概念分开</p>
+                  <h1 id="slide-title-01">我们今天说的<br><span>AI</span>，<br>到底是什么？</h1>
+                  <p class="slide-lead">AI 不是一个产品，也不只是聊天机器人。<strong>先把“AI、大模型、产品、Agent”四个词摆在正确位置，后面的世界才不会混在一起。</strong></p>
+
+                  <div class="slide-quote">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <div>
+                      <span class="quote-label">演讲开场</span>
+                      <span class="quote-text">今天不从工具开始，先从一张关系图开始。</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="concept-panel" aria-label="AI、大模型、产品和智能体的关系图">
+                  <div class="concept-panel-head">
+                    <span>一张图先记住</span>
+                    <span class="panel-caption">概念地图</span>
+                  </div>
+                  <div class="concept-map">
+                    <svg class="concept-svg" viewBox="0 0 640 386" role="img" aria-labelledby="concept-map-title concept-map-desc">
+                      <title id="concept-map-title">AI、大模型、产品与 Agent 的关系</title>
+                      <desc id="concept-map-desc">AI 是最外层的大概念，大模型是重要技术基础，ChatGPT 是使用模型的产品，Agent 则进一步结合工具和资料完成任务。</desc>
+                      <defs>
+                        <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                          <path class="arrow-head" d="M0,0 L8,4 L0,8 Z"></path>
+                        </marker>
+                      </defs>
+
+                      <path class="connector" d="M180 186 C208 186 216 144 252 144" marker-end="url(#arrow)"></path>
+                      <path class="connector" d="M424 137 C456 113 463 91 490 91" marker-end="url(#arrow)"></path>
+                      <path class="connector" d="M424 175 C457 211 463 259 490 259" marker-end="url(#arrow)"></path>
+                      <text class="edge-label" x="194" y="155">技术基础</text>
+                      <text class="edge-label" x="438" y="99">提供给人使用</text>
+                      <text class="edge-label" x="438" y="221">走向执行</text>
+
+                      <rect class="node-outer node-ai" x="28" y="56" width="154" height="254" rx="22"></rect>
+                      <text class="node-overline" x="54" y="96">大概念</text>
+                      <text class="node-title" x="52" y="151">AI</text>
+                      <text class="node-sub" x="53" y="179">Artificial</text>
+                      <text class="node-sub" x="53" y="195">Intelligence</text>
+                      <text class="node-sub" x="53" y="269">搜索 · 推荐 · 识别</text>
+                      <text class="node-sub" x="53" y="286">生成 · 决策 · 执行</text>
+
+                      <rect class="node-outer node-llm" x="252" y="84" width="172" height="122" rx="20"></rect>
+                      <text class="node-overline" x="276" y="119">技术基础</text>
+                      <text class="node-title-small" x="276" y="153">大模型 LLM</text>
+                      <text class="node-sub" x="276" y="180">学习语言、概念与模式</text>
+
+                      <rect class="node-outer node-product" x="490" y="43" width="122" height="100" rx="20"></rect>
+                      <text class="node-overline" x="512" y="76">产品</text>
+                      <text class="node-title-small" x="512" y="105">ChatGPT</text>
+                      <text class="node-sub" x="512" y="126">聊天 · 文件 · 工具</text>
+
+                      <rect class="node-outer node-agent" x="490" y="218" width="122" height="110" rx="20"></rect>
+                      <text class="node-overline" x="512" y="251">智能体</text>
+                      <text class="node-title" x="512" y="282">Agent</text>
+                      <text class="node-sub" x="512" y="305">把事情做完</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="takeaway-grid" aria-label="本页三个记忆点">
+                <div class="takeaway">
+                  <span class="takeaway-num">01</span>
+                  <span class="takeaway-copy"><strong>AI 是大概念</strong><span>搜索、推荐、识别、生成都可能是 AI。</span></span>
+                </div>
+                <div class="takeaway">
+                  <span class="takeaway-num">02</span>
+                  <span class="takeaway-copy"><strong>大模型是技术基础</strong><span>它学习语言、概念、关系和大量模式。</span></span>
+                </div>
+                <div class="takeaway">
+                  <span class="takeaway-num">03</span>
+                  <span class="takeaway-copy"><strong>产品不等于模型</strong><span>ChatGPT 是产品，Agent 走向完成任务。</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-source">
+              <span>讲演主线：从“回答问题”走向“完成任务”</span>
+              <a href="/tutorials/ai-basics-01-what-is-ai">阅读原文 ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="notes-panel" id="notes-panel" hidden aria-labelledby="notes-title">
+          <div class="notes-head">
+            <div>
+              <p class="notes-kicker">Speaker notes · 01</p>
+              <h2 id="notes-title">讲者提示</h2>
+            </div>
+            <button class="notes-close" type="button" aria-label="关闭讲者提示">×</button>
+          </div>
+          <ol class="notes-list">
+            <li>先问听众：你说的 AI，是指 ChatGPT，还是更大的那一整类技术？</li>
+            <li>指向关系图：AI 是伞，大模型是技术基础，ChatGPT 是产品，Agent 是“把事情做完”的方向。</li>
+            <li>用律师工作举例：读合同、查资料、比较版本，本质上都是文字、文件、规则和判断的处理。</li>
+            <li>最后承接下一篇：把“模型”和“产品”分开，才能继续理解今天的 AI 产品。</li>
+          </ol>
+          <p class="notes-meta">建议时长：2–3 分钟 · 本页为第一篇样稿</p>
+        </aside>
+      </section>
+
+      <footer class="deck-control-bar">
+        <div class="control-summary">
+          <span class="control-kicker">本页要点</span>
+          <span class="control-caption" id="slide-caption">AI 是一个大概念；大模型是技术基础；ChatGPT 是产品，Agent 走向完成任务。</span>
+        </div>
+
+        <nav class="deck-navigation" aria-label="演示页翻页导航">
+          <button class="nav-button" type="button" id="previous-slide" aria-label="上一页" disabled><span aria-hidden="true">←</span><span>上一页</span></button>
+          <div class="dot-navigation" id="dot-navigation" role="tablist" aria-label="演示页页面导航"></div>
+          <button class="nav-button" type="button" id="next-slide" aria-label="下一页" disabled><span>下一页</span><span aria-hidden="true">→</span></button>
+        </nav>
+
+        <div class="keyboard-hint" aria-label="键盘快捷键">
+          <span>使用</span><kbd>←</kbd><kbd>→</kbd><span>翻页</span>
+        </div>
+      </footer>
+    </main>
+
+    <p class="sr-only" id="slide-announcer" aria-live="polite">当前为 AI 入门第 01 讲样稿。</p>
+
+    <script>
+      (() => {
+        const deck = {
+          plannedTotal: 30,
+          slides: [
+            {
+              id: 'ai-basics-01',
+              page: 1,
+              chapter: 'AI 入门第 01 讲',
+              caption: 'AI 是一个大概念；大模型是技术基础；ChatGPT 是产品，Agent 走向完成任务。'
+            }
+          ]
+        }
+
+        const slideElements = Array.from(document.querySelectorAll('[data-slide]'))
+        const previousButton = document.querySelector('#previous-slide')
+        const nextButton = document.querySelector('#next-slide')
+        const dotNavigation = document.querySelector('#dot-navigation')
+        const counter = document.querySelector('#deck-counter')
+        const caption = document.querySelector('#slide-caption')
+        const progressValue = document.querySelector('#progress-value')
+        const announcer = document.querySelector('#slide-announcer')
+        const slideViewport = document.querySelector('#slide-viewport')
+        const notesPanel = document.querySelector('#notes-panel')
+        const notesToggle = document.querySelector('[data-action="notes"]')
+        const notesClose = document.querySelector('.notes-close')
+        const fullscreenButton = document.querySelector('[data-action="fullscreen"]')
+        let currentIndex = 0
+        let touchStartX = null
+
+        function clampIndex(index) {
+          return Math.max(0, Math.min(index, slideElements.length - 1))
+        }
+
+        function buildDotNavigation() {
+          dotNavigation.replaceChildren()
+          deck.slides.forEach((slide, index) => {
+            const dot = document.createElement('button')
+            dot.className = 'dot-button'
+            dot.type = 'button'
+            dot.role = 'tab'
+            dot.dataset.index = String(index)
+            dot.setAttribute('aria-label', `第 ${String(slide.page).padStart(2, '0')} 页：${slide.chapter}`)
+            dot.addEventListener('click', () => setActiveSlide(index))
+            dotNavigation.append(dot)
+          })
+        }
+
+        function setActiveSlide(nextIndex, updateHash = true) {
+          if (!slideElements.length) return
+          currentIndex = clampIndex(nextIndex)
+          const slide = deck.slides[currentIndex]
+          const slidePage = slide.page || currentIndex + 1
+          slideElements.forEach((element, index) => {
+            const active = index === currentIndex
+            element.classList.toggle('is-active', active)
+            element.setAttribute('aria-hidden', active ? 'false' : 'true')
+          })
+
+          counter.textContent = `${String(slidePage).padStart(2, '0')} / ${String(deck.plannedTotal).padStart(2, '0')} · 样稿`
+          caption.textContent = slide.caption
+          progressValue.style.width = `${Math.max(3.34, (slidePage / deck.plannedTotal) * 100)}%`
+          previousButton.disabled = currentIndex === 0
+          nextButton.disabled = currentIndex === slideElements.length - 1
+          Array.from(dotNavigation.children).forEach((dot, index) => {
+            dot.setAttribute('aria-selected', index === currentIndex ? 'true' : 'false')
+            dot.tabIndex = index === currentIndex ? 0 : -1
+          })
+          announcer.textContent = `${slide.chapter}，${slide.caption}`
+
+          if (updateHash) {
+            history.replaceState(null, '', `#${slidePage}`)
+          }
+        }
+
+        function move(delta) {
+          const nextIndex = currentIndex + delta
+          if (nextIndex < 0 || nextIndex >= slideElements.length) return
+          setActiveSlide(nextIndex)
+        }
+
+        function toggleNotes(force) {
+          const open = typeof force === 'boolean' ? force : notesPanel.hidden
+          notesPanel.hidden = !open
+          notesToggle.setAttribute('aria-expanded', open ? 'true' : 'false')
+          notesToggle.setAttribute('aria-pressed', open ? 'true' : 'false')
+          if (open) notesClose.focus()
+        }
+
+        async function toggleFullscreen() {
+          try {
+            if (document.fullscreenElement) {
+              await document.exitFullscreen()
+            } else {
+              await document.documentElement.requestFullscreen()
+            }
+          } catch {
+            announcer.textContent = '当前浏览器未开启全屏权限，可继续使用普通演示模式。'
+          }
+        }
+
+        previousButton.addEventListener('click', () => move(-1))
+        nextButton.addEventListener('click', () => move(1))
+        notesToggle.addEventListener('click', () => toggleNotes())
+        notesClose.addEventListener('click', () => toggleNotes(false))
+        fullscreenButton.addEventListener('click', toggleFullscreen)
+
+        document.addEventListener('fullscreenchange', () => {
+          const active = Boolean(document.fullscreenElement)
+          fullscreenButton.querySelector('span').textContent = active ? '退出全屏' : '全屏'
+          fullscreenButton.setAttribute('aria-pressed', active ? 'true' : 'false')
+        })
+
+        document.addEventListener('keydown', (event) => {
+          if (event.target.closest('input, textarea, select, [contenteditable="true"]')) return
+          if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
+            event.preventDefault()
+            move(-1)
+          } else if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') {
+            event.preventDefault()
+            move(1)
+          } else if (event.key === 'Home') {
+            event.preventDefault()
+            setActiveSlide(0)
+          } else if (event.key === 'End') {
+            event.preventDefault()
+            setActiveSlide(slideElements.length - 1)
+          } else if (event.key.toLowerCase() === 'n') {
+            event.preventDefault()
+            toggleNotes()
+          } else if (event.key.toLowerCase() === 'f') {
+            event.preventDefault()
+            toggleFullscreen()
+          } else if (event.key === 'Escape' && !notesPanel.hidden) {
+            toggleNotes(false)
+          }
+        })
+
+        slideViewport.addEventListener('touchstart', (event) => {
+          touchStartX = event.changedTouches[0]?.clientX ?? null
+        }, { passive: true })
+
+        slideViewport.addEventListener('touchend', (event) => {
+          if (touchStartX === null) return
+          const delta = event.changedTouches[0].clientX - touchStartX
+          touchStartX = null
+          if (Math.abs(delta) < 48) return
+          move(delta < 0 ? 1 : -1)
+        }, { passive: true })
+
+        slideViewport.addEventListener('click', (event) => {
+          if (event.target.closest('a, button, svg, .concept-panel, .takeaway')) return
+          const bounds = slideViewport.getBoundingClientRect()
+          move(event.clientX - bounds.left < bounds.width / 2 ? -1 : 1)
+        })
+
+        const requestedPage = Number.parseInt(window.location.hash.slice(1), 10)
+        const initialIndex = Number.isFinite(requestedPage) ? requestedPage - 1 : 0
+        buildDotNavigation()
+        setActiveSlide(initialIndex, false)
+      })()
+    </script>
+  </body>
+</html>

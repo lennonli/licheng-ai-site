@@ -579,6 +579,21 @@ ${items
 `
 }
 
+function seriesPresentationCard(presentation) {
+  if (!presentation?.href || !presentation?.title || !presentation?.description) return ''
+  const kicker = presentation.kicker || '演讲版'
+  return `<a class="series-presentation-card" href="${escapeHtml(presentation.href)}" target="_blank" rel="noreferrer">
+  <span class="series-presentation-card-glow" aria-hidden="true"></span>
+  <span class="series-presentation-card-copy">
+    <span class="series-presentation-card-kicker">${escapeHtml(kicker)}</span>
+    <span class="series-presentation-card-title">${escapeHtml(presentation.title)}</span>
+    <span class="series-presentation-card-desc">${escapeHtml(presentation.description)}</span>
+  </span>
+  <span class="series-presentation-card-action">打开演讲版 <span aria-hidden="true">↗</span></span>
+</a>
+`
+}
+
 const agentCategoryOrder = [
   '通用工作规则',
   'IPO 尽职调查',
@@ -1136,7 +1151,7 @@ for (const entry of seriesConfig) {
   if (!items.length) {
     throw new Error(`series.json: 系列 "${entry.id}" 没有任何篇目`)
   }
-  seriesEntries.push({ id: entry.id, title: entry.title, description: entry.description, items })
+  seriesEntries.push({ id: entry.id, title: entry.title, description: entry.description, presentation: entry.presentation, items })
 }
 
 if (seriesEntries.length) {
@@ -1170,6 +1185,8 @@ ${indexCardList(seriesCards)}
 <p class="section-lead">${escapeHtml(entry.description)}</p>
 
 <p class="source-link">共 ${entry.items.length} 篇 · 单篇页面收录于 <a href="/tutorials/">AI 教程</a>栏目 · 来源仓库：<a href="https://github.com/lennonli/licheng-AI-tutorials" target="_blank" rel="noreferrer">lennonli/licheng-AI-tutorials</a></p>
+
+${seriesPresentationCard(entry.presentation)}
 
 ## 系列目录
 
