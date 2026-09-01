@@ -59,19 +59,21 @@ for (const required of ['/tools/', '06 / Tools', '04 / Series', '实用工具'])
 
 const seriesIndexFile = targetFile('/series/')
 const aiBasicsSeriesFile = targetFile('/series/ai-basics/')
+const aiPracticeSeriesFile = targetFile('/series/ai-practice/')
 const aiPrioritySeriesFile = targetFile('/series/ai-priority/')
 const civilLitigationSeriesFile = targetFile('/series/civil-litigation/')
-if (!seriesIndexFile || !aiBasicsSeriesFile || !aiPrioritySeriesFile || !civilLitigationSeriesFile) {
+if (!seriesIndexFile || !aiBasicsSeriesFile || !aiPracticeSeriesFile || !aiPrioritySeriesFile || !civilLitigationSeriesFile) {
   fail('Series pages are incomplete')
 } else {
   const seriesIndexHtml = readFileSync(seriesIndexFile, 'utf8')
-  for (const required of ['/series/ai-basics/', '/series/ai-priority/', '/series/civil-litigation/', '系列列表']) {
+  for (const required of ['/series/ai-basics/', '/series/ai-practice/', '/series/ai-priority/', '/series/civil-litigation/', '系列列表']) {
     if (!seriesIndexHtml.includes(required)) fail(`Series index is missing ${required}`)
   }
   const seriesCardCount = (seriesIndexHtml.match(/class="index-card"/g) || []).length
-  if (seriesCardCount !== 3) fail(`Series index expected 3 series cards, found ${seriesCardCount}`)
+  if (seriesCardCount !== 4) fail(`Series index expected 4 series cards, found ${seriesCardCount}`)
   const seriesTocExpectations = [
     [aiBasicsSeriesFile, 30, 'AI basics series'],
+    [aiPracticeSeriesFile, 51, 'AI practice series'],
     [aiPrioritySeriesFile, 26, 'AI priority series'],
     [civilLitigationSeriesFile, 11, 'Civil litigation series']
   ]

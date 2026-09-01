@@ -1,5 +1,317 @@
 [
   {
+    "href": "/tutorials/agent-practice-46-litigation-finale",
+    "title": "AI实战46｜诉讼专题最终篇：律师的上限，就是AI的上限",
+    "summary": "前面的诉讼专题，从类案检索、案件分析、证据整理、起诉答辩、质证、庭审、代理词、判决分析一直做到上诉。AI几乎可以参与每个环节。但这一专题最后必须强调一句：律师的上限，就是AI的上限。；Agent可以读材料、查案例、算金额、参考模板、形成……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-01-delegate-complete-work",
+    "title": "AI实战01｜别再一句一句问AI：把一项完整工作直接交给Agent",
+    "summary": "很多人用AI，还是一句一句问：先总结，再改一下，再做个表。这样本质上还是人在带着AI走流程。真正适合Agent的方式，是把一项完整工作连同输入、目标、限制、输出和保存位置一次性交出去。；不要只说“帮我看看这些资料”。应该告诉Agent：……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-02-batch-file-processing",
+    "title": "AI实战02｜一次处理几十个文件：不要再一份一份上传给AI",
+    "summary": "几十份合同、底稿、证据或客户材料，如果仍然一份一份上传、逐个提问，AI带来的效率提升会非常有限。Agent真正适合的是把“文件夹”作为工作单位。；第一步不要急着总结。先让Agent列出文件总数、类型、目录结构、重复文件、无法读取文件和可……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-03-web-research",
+    "title": "AI实战03｜让Agent做网络研究：不要只让它“搜一下”",
+    "summary": "让Agent做网络研究，最差的提示词就是“帮我搜一下”。搜索只是动作，真正的研究还包括确定问题、选择来源、打开原文、去重、比较和形成可追溯结论。；例如研究一家公司，不要只写“查一下背景”，而应明确工商、股权、诉讼处罚、资质、知识产权、新……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-04-word-files",
+    "title": "AI实战04｜别让AI只在聊天框里写：直接让Agent生成和修改Word文件",
+    "summary": "很多AI写得很好，但最后还要把聊天框里的文字复制进Word、重新排版。对于Agent，这一步完全可以省掉：让它直接读取真实DOCX，在原格式基础上生成或修改文件。；合同修改、法律意见、报告更新，都可以要求Agent读取指定DOCX，识别……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-05-excel-files",
+    "title": "AI实战05｜让Agent直接处理Excel：不要只让AI给你一张Markdown表格",
+    "summary": "表格任务如果最后只得到一张Markdown表，很多真实工作仍然要人工重做。客户清单、合同台账、尽调表、财务数据整理，都应该直接让Agent处理真实Excel。；先读取所有工作表、表头、公式、隐藏列和已有格式，确认哪些区域可以改、哪些公式……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-06-version-diff",
+    "title": "AI实战06｜两份文件到底改了什么？让Agent直接做版本比对",
+    "summary": "合同、报告、问询回复更新几轮以后，人工逐页找差异很费时间。Agent很适合做“版本之间到底改了什么”的第一轮比对。；除了新增、删除和改写，还要识别金额、比例、日期、主体、责任、期限、条件等实质变化。一个“应”改成“可”，可能比整段新增文……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-07-scanned-pdfs",
+    "title": "AI实战07｜一堆扫描PDF怎么处理？让Agent先识别，再整理，再提取",
+    "summary": "扫描件、图片PDF、拍照证据最麻烦的地方，是内容不能稳定检索。处理这类材料最好固定成三步：先识别，再整理，再提取。；不要对所有PDF都盲目OCR。先区分可直接读取的文本PDF与扫描页，对真正无法提取文本的页面再做识别。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-08-email-to-project-pack",
+    "title": "AI实战08｜邮件和附件太乱？让Agent先整理成一个项目资料包",
+    "summary": "一个项目最初的资料经常散在几十封邮件和附件里。与其人工下载、改名、归类，不如让Agent先把邮件和附件整理成一个可继续工作的项目资料包。；客户经常把关键说明写在正文里，附件只放文件。整理时要同时提取发件人、时间、主题、正文关键说明和附件……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-09-meeting-minutes",
+    "title": "AI实战09｜开完会别自己整理：让Agent直接生成纪要和待办清单",
+    "summary": "开完会后最耗时间的往往不是会议本身，而是整理纪要、决定和待办。Agent可以在会议记录、录音转写或笔记基础上直接形成可执行结果。；“有人提议”不等于“会议已决定”。纪要必须明确哪些只是讨论意见，哪些已经确认，哪些形成具体行动。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-10-public-info-to-excel",
+    "title": "AI实战10｜别再手工复制网页：让Agent把公开信息直接整理成Excel",
+    "summary": "公开网站上的名单、公告、项目数据，经常需要手工复制进Excel。只要字段和来源规则明确，这类工作非常适合Agent批量抓取和整理。；例如公司、板块、日期、项目状态、律师事务所、公告链接。先定字段可以避免搜到一半才发现数据不可比较。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-11-evidence-index-timeline",
+    "title": "AI实战11｜几十份证据怎么整理？让Agent先做证据目录和时间线",
+    "summary": "诉讼材料一多，最先要解决的不是写起诉状，而是把证据和时间线理顺。Agent可以先替律师完成证据盘点、目录初稿和关键事实时间线。；逐份读取文件，识别证据名称、形成时间、主体、页码、主要内容和可能证明事项。不要只根据文件名命名，截图、聊天记……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-12-dd-inventory-gaps",
+    "title": "AI实战12｜尽调材料太多？先让Agent做资料盘点和缺失清单",
+    "summary": "尽调项目刚开始时，最容易直接陷入“看文件”。但真正高效的第一步，是先知道客户到底提供了什么、缺了什么、哪些材料可能有问题。；以既有尽调清单为基准，将客户材料对应到每个序号，区分已提供、部分提供、未提供、无法读取、版本异常。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-13-dd-folder-structure",
+    "title": "AI实战13｜别手工建尽调目录：让Agent按尽调清单序号直接生成文件夹",
+    "summary": "尽调目录本身已经有一套编号体系，就不要再让AI按照“公司、股权、资产、合同”等自己的理解重新设计文件夹。最稳定的做法是：让文件夹严格镜像尽调清单。；一级序号建立一级目录，二级序号放在对应一级目录下，三级继续向下。例如“1 公司基本情况”……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-14-auto-classify-materials",
+    "title": "AI实战14｜尽调目录建好了，再让Agent按清单自动归类客户材料",
+    "summary": "目录建好以后，下一步就是把客户发来的大量材料归进去。这里最重要的不是“自动移动”，而是保护原始材料、按内容归类，并且归档前后能够对账。；把客户原始文件放在独立目录，例如00-客户原始资料/。Agent只能复制到尽调目录，不得移动、删除或……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter",
+    "title": "AI实战15｜别让Agent一次写完整份尽调报告：一章一章改，写完一章就核一章",
+    "summary": "有成熟历史尽调报告时，最不推荐的做法是让Agent一次性重写整份报告。更稳妥的方式是：以历史模板为骨架，用新项目材料一章一章替换和核验。；历史成熟报告提供结构、编号、表格和表达习惯。但旧项目的公司、股东、金额、日期、风险和结论必须全部清……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-16-reverse-dd-checklist",
+    "title": "AI实战16｜尽调报告写出一稿后，让Agent反向生成补充尽调清单",
+    "summary": "尽调报告写出第一稿后，往往会发现第一轮清单没有问到的问题。这个时候最有效的动作不是继续硬写，而是让Agent从报告里的缺口反向生成第二轮补充尽调清单。；扫描【待核验】【待补充材料】【待客户确认】、Word批注、前后冲突和证据不足的结论，……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-17-update-affected-sections",
+    "title": "AI实战17｜客户补资料回来后，不要重做报告：只更新受影响的章节",
+    "summary": "客户第二轮补资料回来后，很多人会让AI“重新生成一份报告”。这会把已经人工确认的内容重新改乱。正确思路是先判断新增材料影响哪些章节，只改受影响部分。；新增材料先按原尽调清单编号归档，并记录新旧版本关系，再判断它影响哪些事实、待核验事项和……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-18-full-cross-check",
+    "title": "AI实战18｜尽调报告写完别急着发：先让Agent做一次全文交叉核对",
+    "summary": "尽调报告完成以后，最容易出现的不是某一章完全写错，而是章节之间、表格与正文之间、旧项目与新项目之间出现不一致。正式发出前，最好做两轮交叉核对。；检查主体、股权、历史沿革、金额、日期、表格与正文、章节结论、交叉引用、旧项目残留、未处理批注……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-19-major-issues-list",
+    "title": "AI实战19｜100页尽调报告怎么看？让Agent提炼重大问题清单",
+    "summary": "一份100页尽调报告对律师很重要，但对项目负责人、交易团队或客户来说，真正需要快速掌握的是：哪些问题会影响交易决定。Agent可以把长报告压缩成一份重大问题清单。；不是每章总结两句话，而是筛选可能影响交易价格、交割条件、交易文件保护、持……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-20-findings-to-contract-edits",
+    "title": "AI实战20｜尽调发现问题后，让Agent直接转成交易文件修改建议",
+    "summary": "尽调发现问题以后，不能只停留在“有风险”。交易律师真正要做的是把风险转成合同里的保护机制。Agent很适合先做风险到条款的映射。；把重大问题清单和现有SPA、投资协议等一起交给Agent，先找相关条款，避免重复增加已经存在的保护。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-21-kb-first-answers",
+    "title": "AI实战21｜别只靠模型记忆：让Agent先查知识库，再回答专业问题",
+    "summary": "专业问题如果只靠模型记忆，最危险的不是“不会答”，而是答得像真的。更稳妥的方式是：先查自己的知识库、案例库或MCP，再基于真实材料回答。；例如要研究“劳务派遣超比例”的IPO审核案例，应先在内部知识库中用核心词和同义词检索，再打开相关原……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-22-mcp-case-research",
+    "title": "AI实战22｜客户给了案情和底稿，让Agent通过法律数据库MCP直接做类案检索报告",
+    "summary": "客户把案情、合同和证据交过来后，类案检索不应只靠浏览器关键词。接入法律数据库MCP后，可以让Agent先理解本案，再围绕真正争议点多轮检索并形成正式类案报告。；Agent先从客户材料提炼法律关系、争议焦点和需要裁判的问题，再设计关键词。……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-23-securities-case-search",
+    "title": "AI实战23｜IPO遇到特殊法律问题？让Agent去证券数据库里找审核案例",
+    "summary": "IPO项目遇到无证房产、劳务派遣、历史代持等特殊问题时，最有价值的不是让AI给一个抽象法律答案，而是去看交易所过去到底怎么问、发行人和律师到底怎么答。；把当前问题的规模、持续时间、整改状态、占比、是否核心经营场所等关键事实交给Agent……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-24-verify-law-currency",
+    "title": "AI实战24｜法律文件里的法条别靠AI记：让Agent逐条核验是否最新有效",
+    "summary": "AI最容易在法律文件里“记住一个大概正确的法条”。正式文件不能接受这种误差。凡是涉及法条、司法解释、部门规章和监管规则，最好在提交前让Agent做一次逐条有效性核验。；扫描报告、合同、备忘录、起诉状或代理词，把法律文件名称、条号、引用内……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-25-law-evolution-diff",
+    "title": "AI实战25｜案件发生在旧法时期怎么办？让Agent自动做新旧法和法条沿革对比",
+    "summary": "案件发生在旧法时期，直接拿今天的法条去分析，很容易得出错误结论。新旧法问题最适合让Agent先做“关键日期—法规版本—过渡规则”的时间轴。；合同签订、行为发生、权利义务形成、争议发生、起诉或处罚等关键日期先确定。日期不清时先标记，不要急……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-26-legal-research-report",
+    "title": "AI实战26｜客户抛来一个复杂法律问题，让Agent直接做一份专项法律研究报告",
+    "summary": "客户经常会抛来一个无法用一句法条回答的问题：能不能做、风险多大、监管怎么看、类似案件怎么处理。这样的任务适合让Agent做真正的专项法律研究，而不是在聊天框里给一个即时结论。；先读取客户背景和材料，列出已确认事实、待确认事实以及真正需要……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-27-inquiry-to-task-list",
+    "title": "AI实战27｜IPO问询来了，先让Agent把整份问询函拆成核查任务清单",
+    "summary": "IPO问询函一来，最容易犯的错误是马上起草回复。真正高效的做法是先把整份问询拆成可执行的核查任务，确认每个小问需要谁提供什么。；一段问询里常包含“说明A、结合B分析C，并请律师发表明确意见”。Agent应逐句拆开，确保没有一个小要求被埋……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-28-inquiry-reply-framework",
+    "title": "AI实战28｜监管问询怎么回复？先让Agent查历史审核案例，再搭当前项目的回复框架",
+    "summary": "任务清单明确以后，真正起草某一道问询前，我更建议先查历史审核案例，看看交易所在类似事实下到底追问什么，再搭当前项目的回复框架。；先重新拆解本题所有子问题，再读取当前项目与本题有关的材料，不要一口气把整份回复交给Agent。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-29-inquiry-reply-review",
+    "title": "AI实战29｜问询回复写完后，换一个Agent逐题检查漏答、答非所问和明确意见",
+    "summary": "问询回复写完以后，起草Agent往往很难发现自己的漏答。重要题目最好换一个完全独立的Agent，把原问询和回复重新逐项对照。；不要直接给它现成任务表。让它自己重新拆一遍问询，形成新的子问题清单，再与回复逐项映射。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-30-cross-document-consistency",
+    "title": "AI实战30｜多家中介文件别各写各的：让Agent做一次跨文件一致性核对",
+    "summary": "IPO、再融资、新三板项目里，同一家公司会同时出现在招股说明书、法律意见书、审计报告、问询回复等多份文件中。真正危险的是不同中介描述成了“不同的公司”。；围绕主体信息、历史沿革、股权、客户供应商、重大合同、财务数据、资产、关联方、诉讼处……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-31-period-update-dd-list",
+    "title": "AI实战31｜报告期要更新了，先让Agent生成一份补充尽调清单",
+    "summary": "证券项目报告期更新前，不应先让企业“把最近的新资料都发来”。更高效的第一步，是让Agent基于上一期尽调成果，先生成一份新的“更新报告期补充尽调清单”，让企业知道哪些材料真的需要更新。；上一期已经完整核过的历史设立、早期增资、旧股权转让……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-32-incremental-verification",
+    "title": "AI实战32｜企业补完更新资料后，让Agent先做增量核查，再更新法律文件",
+    "summary": "企业按照更新清单补完资料以后，也不要马上让Agent修改法律意见书。先做增量核查：比较新旧报告期、重新跑一轮MCP和公开核查、形成变动表和更新计划，律师确认后再改文件。；把上一轮更新清单与实际新增资料逐项对应，标记已提供、部分提供、未提……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-33-litigation-analysis-report",
+    "title": "AI实战33｜拿到一个新案件后，先让Agent查类案，再做一份诉讼案件分析报告",
+    "summary": "拿到一个新诉讼案件、了解基本案情后，不建议马上写起诉状。先让Agent围绕争议焦点做系统类案检索，再形成一份案件分析报告。整个诉讼专题以一个买卖合同质量纠纷贯穿：卖方已交货，买方以货物有质量问题为由长期拖欠货款。；读取合同、订单、送货、……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-34-fact-evidence-issue-map",
+    "title": "AI实战34｜案件研究完成后，让Agent把证据整理成“事实—证据—争议焦点”对应表",
+    "summary": "案件分析完成后，下一步不要急着起草文书，而是把“我们想证明的事实”与手里的证据真正对应起来。诉讼不是只要法律上有道理，还要证明得出来。；识别每份材料的名称、形成时间、主体、主要内容、完整性、重复、版本、扫描质量和是否缺页。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-35-simulate-defense-attacks",
+    "title": "AI实战35｜起诉前先站到对方一边：让Agent模拟“质量问题”答辩和攻击路径",
+    "summary": "准备起诉前，再做一次对抗性检查：把全部材料交给Agent，让它暂时站到买方律师的立场，模拟“质量问题”答辩和攻击路径。目的不是预测对方每句话，而是提前暴露我方最危险的弱点。；卖方眼里是“交货后不付款”，买方可能把它讲成“卖方交付不合格产……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-36-complaint-from-template",
+    "title": "AI实战36｜起诉状不要从零写：把历史优质模板交给Agent直接改成新案件",
+    "summary": "前面的案件研究、证据整理和对方攻击路径做完后，才进入起诉状起草。最稳妥的方式不是让AI从零写，而是提供一份自己以前认可的同类起诉状模板，让Agent延续律师原有的结构、表达和Word格式。；历史模板可以提供诉讼请求表述、事实与理由结构、……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-37-complaint-review",
+    "title": "AI实战37｜起诉状写完别急着提交：让另一个Agent从被告和法官两个角度复核",
+    "summary": "起诉状初稿完成后，不要只查错别字。最好换一个没有参与主要起草的Agent，分别从“被告律师怎么攻击”和“法官第一次看是否看得明白”两个角度做提交前复核。；例如“全面履行”“验收合格”“从未提出质量异议”等是否比证据走得更远，诉请金额、违……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-38-defense-statement",
+    "title": "AI实战38｜如果你代理被告，怎样让Agent起草一份真正能用的答辩状",
+    "summary": "如果这次我们代理的是买方，也就是被告，答辩状同样不要让AI一句“尽量反驳原告”就开始写。真正能用的答辩状，应先逐项回应起诉状，再围绕质量问题建立完整的事实和证据链。；把诉讼请求和事实逐项列出，区分【认可】【不认可】【部分认可】【需补充说……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-39-defense-vs-attack-map",
+    "title": "AI实战39｜收到被告答辩状后，让Agent把真实答辩和之前的攻击路径逐项对照",
+    "summary": "立案后真正收到被告答辩状时，不要重新从头分析。前面已经做过对方攻击路径模拟，现在最有价值的是把“预测”和“真实答辩”逐项对照，快速识别哪些风险兑现、哪些没有出现、哪些是新增争议。；区分事实主张、法律观点、证据主张和金额主张，例如质量缺陷……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-40-evidence-examination",
+    "title": "AI实战40｜对方证据来了，先让Agent逐份做质证底稿，再形成正式质证意见",
+    "summary": "对方证据来了，不要直接让AI写一份“真实性、合法性、关联性均不认可”的模板式质证意见。更实用的做法是先逐份做质证底稿，研究清楚每份证据的证明目的、证据链缺口和我方反证，再形成正式意见。；逐份列证据编号、名称、页码、形成时间、制作主体和对……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-41-trial-outline",
+    "title": "AI实战41｜开庭前，让Agent把整个案件整理成一份庭审提纲",
+    "summary": "开庭前最实用的内部文件不是“庭审手册”，而是律师行业更常用的庭审提纲。它应当把庭上可能用到的信息尽量集中到一份文件里，减少律师在起诉状、证据目录、质证意见和案件分析之间来回翻找。；法官要求陈述诉请和事实理由时，律师可以直接看提纲。必须使……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-42-closing-argument",
+    "title": "AI实战42｜庭审结束后，让Agent根据庭审笔录起草代理词",
+    "summary": "庭审结束后，代理词不能简单把开庭前案件分析和庭审提纲再抄一遍。此时很多事项已经从“预测”变成“真实发生”，最重要的输入应当是庭审笔录或律师庭审记录。；提取法官实际归纳或重点追问的争议焦点、双方承认事实、实际答辩、质证结果、新观点和法院要……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-43-judgment-analysis-appeal",
+    "title": "AI实战43｜判决下来以后，让Agent拆解法院理由，再判断要不要上诉",
+    "summary": "一审判决下来以后，不要只让AI做判决摘要。把起诉状、答辩状、证据、庭审提纲、代理词和判决一起交给Agent，反向拆解法院到底采纳了什么、没有采纳什么，以及有没有值得上诉的错误。；区分法院认定的事实、归纳的争议焦点、证据采信、法律适用和最……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-44-appeal-drafting",
+    "title": "AI实战44｜决定上诉后，让Agent围绕“能改变结果的点”起草上诉状",
+    "summary": "只有在判决分析和上诉评估做完、律师真正决定上诉以后，才进入上诉状起草。二审文书最怕把一审代理词重新写一遍；上诉状应围绕“一审具体错在哪里、为什么会影响结果、二审应怎样改”展开。；是撤销某项货款扣减、提高违约金、支持质量损失还是全部改判。……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-45-templates-to-new-docs",
+    "title": "AI实战45｜标准化法律文书别每次重写：把旧模板交给Agent，直接生成新案件文件",
+    "summary": "律师日常还有大量结构固定、事实变量变化的标准化文书：执行申请书、执行异议、财产保全、鉴定申请、调查取证、延期举证、撤诉、变更诉请等。这类文件非常适合“历史成熟模板+新案件材料”直接生成。；旧模板提供标题、申请事项、事实理由、附件、落款、……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-47-scheduled-legal-briefing",
+    "title": "AI实战47｜别再每天自己刷法律资讯：让Agent定时生成专业法律简报",
+    "summary": "法律法规、司法解释、交易所规则、典型案例每天都在更新。如果仍靠律师自己刷官网、公众号和数据库，很容易漏，也很浪费时间。最基础的一类定时任务，就是让Agent每天自动筛选真正值得看的法律变化。；真正有价值的简报要回答：发生了什么、为什么值……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-48-weekly-project-inspection",
+    "title": "AI实战48｜项目不用天天自己盯：让Agent每周自动做一次项目巡检",
+    "summary": "长期IPO、尽调、并购、诉讼或顾问项目最容易出现的问题不是不会做，而是做着做着不知道还有什么没解决。第二类定时任务，可以让Agent每周自动做一次项目巡检。；读取尽调清单、任务表、法律意见书、问询回复、客户回复等，理解项目当前做到哪里。……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-49-continuous-monitoring",
+    "title": "AI实战49｜没变化别来打扰我：让Agent持续监控诉讼、处罚、监管和项目变化",
+    "summary": "有些事情不值得每天人工查，但一旦变化就很重要：客户新增诉讼处罚、公司股权和董监高变化、IPO出现新审核案例、法规从征求意见变成正式发布、许可证即将到期。最适合的模式是条件监控：没变化不打扰，有变化再通知。；第一次记录当前诉讼、处罚、工商……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-50-daily-morning-brief",
+    "title": "AI实战50｜每天早上，让Agent自动生成一份“律师工作晨报”",
+    "summary": "日历、邮件、项目文件、法律资讯、监控提醒分别看都不复杂，真正耗时间的是每天早上重新把这些信息拼成“今天应该做什么”。律师工作晨报就是把多个信息源自动汇总成一份当天可执行的工作入口。；它不是新闻简报，而是把日程、重要邮件、项目变化、监控触……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-series-overview",
+    "title": "《AI实战：把真实工作交给Agent》前50篇（最终版）",
+    "summary": "本包按最终确认顺序整理，共50篇。每篇均包含“直接复制的实战提示词”。；AI实战01｜别再一句一句问AI：把一项完整工作直接交给Agent",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-build-second-website-prompt",
+    "title": "让 AI 直接帮我搭建第二个网站",
+    "summary": "请你作为网站项目负责人，按照我现有网站 ai.licheng.uk 的基本方式，直接帮我搭建一个全新网站。；我不会写代码，也不希望自己安装软件、修改配置文件或敲命令。除非必须登录、授权或输入密码，其他工作请你直接完成。",
+    "section": "AI 教程"
+  },
+  {
     "href": "/skills/contract-review",
     "title": "合同审查",
     "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
@@ -25,8 +337,8 @@
   },
   {
     "href": "/skills/wechat-gzh-format",
-    "title": "微信公众号排版模板（法律AI工作站风格）",
-    "summary": "将任意文章内容（本地 md、网页链接或对话中的文字）排成与 ai.licheng.uk 一致的公众号 HTML。成品 = 一个自带「一键复制」按钮的本地 HTML 文件，用户点按钮复制后粘贴进公众号编辑器即完成排版。；取得文章内容（读文……",
+    "title": "公众号文章排版",
+    "summary": "用于将文章内容排版为微信公众号 HTML 模板（法律AI工作站风格），并同步生成 120 字内文章摘要和 2.35:1 封面图，全内联样式一键复制粘贴进公众号编辑器。",
     "section": "法律业务 Skill"
   },
   {
