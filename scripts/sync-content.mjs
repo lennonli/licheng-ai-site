@@ -55,6 +55,12 @@ const sources = [
     name: 'IPO 问询案例 2024',
     repo: 'https://github.com/lennonli/ipo-inquiry-kb-2024.git',
     localRepo: path.resolve(root, '..', '22-IPO问询案例知识库-2024')
+  },
+  {
+    key: 'kb2023',
+    name: 'IPO 问询案例 2023',
+    repo: 'https://github.com/lennonli/ipo-inquiry-kb-2023.git',
+    localRepo: path.resolve(root, '..', '23-IPO问询案例知识库-2023')
   }
 ]
 
@@ -65,6 +71,7 @@ const sourceWebUrls = {
   kb: 'https://github.com/lennonli/ipo-inquiry-kb',
   kb2025: 'https://github.com/lennonli/ipo-inquiry-kb-2025',
   kb2024: 'https://github.com/lennonli/ipo-inquiry-kb-2024',
+  kb2023: 'https://github.com/lennonli/ipo-inquiry-kb-2023',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -738,6 +745,11 @@ function writeGeneratedSidebar() {
       indexText: 'IPO与挂牌问询案例库·2024',
       destDir: kb2024Dest
     }),
+    ...buildSectionSidebar({
+      section: 'kb2023',
+      indexText: 'IPO与挂牌问询案例库·2023',
+      destDir: kb2023Dest
+    }),
     '/latest/': [{ text: '最新文章', link: '/latest/' }],
     '/series/': [
       { text: '系列文章', link: '/series/' },
@@ -837,6 +849,11 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-index">08 / Cases 2025</span>
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年上市/挂牌 430 家审核问询法律问题回溯（3,389 个详述问题），附年度总结报告。</span>
+  </a>
+  <a class="home-card" href="/kb2023/">
+    <span class="home-card-index">08 / Cases 2023</span>
+    <span class="home-card-title">问询案例库 · 2023年度</span>
+    <span class="home-card-desc">2023 年上市/挂牌 570 家审核问询法律问题回溯（3,915 个详述问题），附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2024/">
     <span class="home-card-index">09 / Cases 2024</span>
@@ -1234,6 +1251,13 @@ function aiTutorialSection(base, repoUrl, exampleCase) {
 `
 }
 
+function normalizePlainUrls(markdown) {
+  return markdown.replace(
+    /(?<![<(])https?:\/\/[A-Za-z0-9._~:/?#\[\]@!$&'*+,;=%-]+/g,
+    (url) => `<${url}>`
+  )
+}
+
 function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle }) {
   const dest = path.join(siteDir, key)
   const src = path.join(cacheDir, key)
@@ -1247,6 +1271,14 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
       const file = path.join(dest, name)
       const markdown = readFileSync(file, 'utf8')
       const normalized = markdown.replace(/（(https?:\/\/[^\s（）<>]+)）/g, '（<$1>）')
+      if (normalized !== markdown) writeFileSync(file, normalized)
+    }
+  }
+  if (key === 'kb2023') {
+    for (const name of readDirSafe(dest).filter((entry) => entry.endsWith('.md'))) {
+      const file = path.join(dest, name)
+      const markdown = readFileSync(file, 'utf8')
+      const normalized = normalizePlainUrls(markdown)
       if (normalized !== markdown) writeFileSync(file, normalized)
     }
   }
@@ -1265,7 +1297,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
 
 <p class="source-link">来源仓库：${sourceWebUrls[key].replace('https://github.com/', '')}（共 ${entries.length} 份案例）｜<a href="${base}/${annualFile.replace(/\.md$/, '')}">${annualTitle}</a></p>
 
-${aiTutorialSection(base, sourceWebUrls[key], key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : '920002-万达轴承')}
+${aiTutorialSection(base, sourceWebUrls[key], key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : key === 'kb2023' ? '920950-迅安科技' : '920002-万达轴承')}
 `
 
   for (const board of [...kbBoardOrder, '其他']) {
@@ -1326,6 +1358,20 @@ const kb2024Dest = buildKbYear({
   entries: kb2024Entries,
   annualFile: '2024年度总结.md',
   annualTitle: '📊 2024 年度总结报告'
+})
+
+// 2023 年度库（/kb2023/）
+const kb2023Src = path.join(cacheDir, 'kb2023')
+const kb2023IndexPath = path.join(kb2023Src, 'scripts', 'index.json')
+const kb2023Entries = existsSync(kb2023IndexPath) ? JSON.parse(readFileSync(kb2023IndexPath, 'utf8')) : []
+const kb2023Dest = buildKbYear({
+  key: 'kb2023',
+  base: '/kb2023',
+  title: 'IPO与挂牌审核问询案例库 · 2023年度',
+  lead: '2023 年上市/挂牌公司审核问询法律问题回溯（A股 313 家 + 新三板 257 家，详述 3,915 个法律问题），一司一文，沉淀"问询要点—回复与核查要点—执业提示"，办理同类项目时可直接检索论证范本与证据链思路。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: kb2023Entries,
+  annualFile: '2023年度总结.md',
+  annualTitle: '📊 2023 年度总结报告'
 })
 
 writeFileSync(path.join(siteDir, 'public', 'feed.xml'), rssFeed(latestArticles))

@@ -1054,5 +1054,11 @@
     "title": "CNIPA 专利证据归档",
     "summary": "用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。",
     "section": "法律业务 Skill"
+  },
+  {
+    "href": "/skills/company-monitor",
+    "title": "公司舆情与法律风险监控 Skill（company-monitor）",
+    "summary": "定位：所内自用的线索发现工具，不作法律结论、不作对外交付文件。产出仅供李成律师内部参考。；监控对象：config/targets.yaml 中列明的全部主体（挂牌/上市主体及 IPO 在审主体，首次部署时逐一核验登记信息并录入）。",
+    "section": "法律业务 Skill"
   }
 ]

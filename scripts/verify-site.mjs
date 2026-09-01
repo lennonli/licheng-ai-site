@@ -157,7 +157,8 @@ for (const file of htmlFiles) {
   const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((match) => decodeHtml(match[1])))
   for (const match of html.matchAll(/href="([^"]+)"/g)) {
     const raw = decodeHtml(match[1])
-    if (/%E3%80%82|%EF%BC%9B|%EF%BC%8C/i.test(raw)) fail(`${route}: malformed URL ${raw}`)
+    const target = raw.split('#', 1)[0]
+    if (/%E3%80%82|%EF%BC%9B|%EF%BC%8C/i.test(target)) fail(`${route}: malformed URL ${raw}`)
     let url
     try { url = new URL(raw, `https://ai.licheng.uk${route}`) } catch { continue }
     if (url.origin !== 'https://ai.licheng.uk') continue
@@ -172,7 +173,7 @@ for (const file of htmlFiles) {
   }
 }
 
-const articleFiles = htmlFiles.filter((file) => /\/(agents|skills|tutorials|kb|kb2025|kb2024)\/.+\.html$/.test(file) && !/\/index\.html$/.test(file))
+const articleFiles = htmlFiles.filter((file) => /\/(agents|skills|tutorials|kb|kb2025|kb2024|kb2023)\/.+\.html$/.test(file) && !/\/index\.html$/.test(file))
 for (const file of articleFiles) {
   const html = readFileSync(file, 'utf8')
   if (!html.includes('article-updated')) fail(`${routeFor(file)}: update date missing`)
