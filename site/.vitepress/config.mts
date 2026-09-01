@@ -10,12 +10,16 @@ function canonicalUrl(page: string) {
   return new URL(route || '/', siteOrigin).href
 }
 
+const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/']
+
 function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
   if (env.path?.includes('__analytics-licheng-20260708')) return ''
-  if (!env.path?.includes('/kb2024/')) return md.render(src, env)
+  const pagePath = env.path ?? ''
+  const isKbCasePage = KB_CASE_SECTIONS.some((section) => pagePath.includes(section))
+  if (!isKbCasePage) return md.render(src, env)
 
-  const fileName = env.path.split('/').pop() || ''
-  if (fileName === 'index.md' || fileName === '2024年度总结.md') return md.render(src, env)
+  const fileName = pagePath.split('/').pop() || ''
+  if (fileName === 'index.md' || /年度总结\.md$/.test(fileName)) return md.render(src, env)
 
   const frontmatter = src.match(/^---\n([\s\S]*?)\n---/)
   const metadata = frontmatter?.[1]
