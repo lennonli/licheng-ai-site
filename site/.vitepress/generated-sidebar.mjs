@@ -1123,104 +1123,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "〇、指令效力与冲突解决",
-          "link": "/agents/法律业务通用指令#〇、指令效力与冲突解决"
+          "text": "一、角色定位与默认立场",
+          "link": "/agents/法律业务通用指令#一、角色定位与默认立场"
         },
         {
-          "text": "一、角色定位与利益立场",
-          "link": "/agents/法律业务通用指令#一、角色定位与利益立场"
+          "text": "二、保密与信息安全",
+          "link": "/agents/法律业务通用指令#二、保密与信息安全"
         },
         {
-          "text": "二、保密与脱敏红线",
-          "link": "/agents/法律业务通用指令#二、保密与脱敏红线"
+          "text": "三、语言、法域与法律依据核验",
+          "link": "/agents/法律业务通用指令#三、语言、法域与法律依据核验"
         },
         {
-          "text": "三、事实与法律依据核验（反编造红线）",
-          "link": "/agents/法律业务通用指令#三、事实与法律依据核验-反编造红线",
-          "items": [
-            {
-              "text": "（一）绝对禁止",
-              "link": "/agents/法律业务通用指令#一-绝对禁止"
-            },
-            {
-              "text": "（二）核验触发条件（满足其一即须检索）",
-              "link": "/agents/法律业务通用指令#二-核验触发条件-满足其一即须检索"
-            },
-            {
-              "text": "（三）核验路径与降级顺序",
-              "link": "/agents/法律业务通用指令#三-核验路径与降级顺序"
-            },
-            {
-              "text": "（四）法域与语言",
-              "link": "/agents/法律业务通用指令#四-法域与语言"
-            }
-          ]
+          "text": "四、反编造红线",
+          "link": "/agents/法律业务通用指令#四、反编造红线"
         },
         {
-          "text": "四、任务分流与执行流程",
-          "link": "/agents/法律业务通用指令#四、任务分流与执行流程",
-          "items": [
-            {
-              "text": "（一）通用流程",
-              "link": "/agents/法律业务通用指令#一-通用流程"
-            },
-            {
-              "text": "（二）按任务类型分流",
-              "link": "/agents/法律业务通用指令#二-按任务类型分流"
-            },
-            {
-              "text": "（三）停止并询问的条件",
-              "link": "/agents/法律业务通用指令#三-停止并询问的条件"
-            },
-            {
-              "text": "（四）修正与反馈处理",
-              "link": "/agents/法律业务通用指令#四-修正与反馈处理"
-            }
-          ]
+          "text": "五、执行流程",
+          "link": "/agents/法律业务通用指令#五、执行流程"
         },
         {
-          "text": "五、不确定性表述与风险分级",
-          "link": "/agents/法律业务通用指令#五、不确定性表述与风险分级",
-          "items": [
-            {
-              "text": "（一）确定性分级（法律结论必须择一标注）",
-              "link": "/agents/法律业务通用指令#一-确定性分级-法律结论必须择一标注"
-            },
-            {
-              "text": "（二）风险分级（合同审查、尽调、合规核查必须标注）",
-              "link": "/agents/法律业务通用指令#二-风险分级-合同审查、尽调、合规核查必须标注"
-            }
-          ]
+          "text": "六、文档修订模式",
+          "link": "/agents/法律业务通用指令#六、文档修订模式"
         },
         {
-          "text": "六、起草与修订规则",
-          "link": "/agents/法律业务通用指令#六、起草与修订规则",
-          "items": [
-            {
-              "text": "（一）起草默认值",
-              "link": "/agents/法律业务通用指令#一-起草默认值"
-            },
-            {
-              "text": "（二）合同条款编号规则（合同起草优先指令）",
-              "link": "/agents/法律业务通用指令#二-合同条款编号规则-合同起草优先指令"
-            },
-            {
-              "text": "（三）修订模式",
-              "link": "/agents/法律业务通用指令#三-修订模式"
-            },
-            {
-              "text": "（四）一致性校验（起草与修订完成后必须执行）",
-              "link": "/agents/法律业务通用指令#四-一致性校验-起草与修订完成后必须执行"
-            }
-          ]
+          "text": "七、起草默认值",
+          "link": "/agents/法律业务通用指令#七、起草默认值"
         },
         {
-          "text": "七、引用与出处格式",
-          "link": "/agents/法律业务通用指令#七、引用与出处格式"
-        },
-        {
-          "text": "八、Word 文档格式规范",
-          "link": "/agents/法律业务通用指令#八、word-文档格式规范",
+          "text": "八、Word 文档格式要求",
+          "link": "/agents/法律业务通用指令#八、word-文档格式要求",
           "items": [
             {
               "text": "（一）正文与标题",
@@ -1231,18 +1163,18 @@ export const generatedSidebar = {
               "link": "/agents/法律业务通用指令#二-表格"
             },
             {
-              "text": "（三）页面与其他",
-              "link": "/agents/法律业务通用指令#三-页面与其他"
+              "text": "（三）其他格式",
+              "link": "/agents/法律业务通用指令#三-其他格式"
             }
           ]
         },
         {
-          "text": "九、文件命名、版本与交付",
-          "link": "/agents/法律业务通用指令#九、文件命名、版本与交付"
+          "text": "九、律所名称与署名",
+          "link": "/agents/法律业务通用指令#九、律所名称与署名"
         },
         {
-          "text": "十、律所名称与署名",
-          "link": "/agents/法律业务通用指令#十、律所名称与署名"
+          "text": "十、法律分析与引证",
+          "link": "/agents/法律业务通用指令#十、法律分析与引证"
         },
         {
           "text": "十一、跨境与外国法事项",
@@ -1253,34 +1185,12 @@ export const generatedSidebar = {
           "link": "/agents/法律业务通用指令#十二、专业语气要求"
         },
         {
-          "text": "十三、多 Agent 协作规则",
-          "link": "/agents/法律业务通用指令#十三、多-agent-协作规则"
+          "text": "十三、法律业务多 Agent 核心规则",
+          "link": "/agents/法律业务通用指令#十三、法律业务多-agent-核心规则"
         },
         {
-          "text": "十四、交付前自检清单",
-          "link": "/agents/法律业务通用指令#十四、交付前自检清单"
-        },
-        {
-          "text": "附录 A：权威核验来源清单",
-          "link": "/agents/法律业务通用指令#附录-a-权威核验来源清单",
-          "items": [
-            {
-              "text": "（一）法律法规与效力状态",
-              "link": "/agents/法律业务通用指令#一-法律法规与效力状态"
-            },
-            {
-              "text": "（二）司法与案例",
-              "link": "/agents/法律业务通用指令#二-司法与案例"
-            },
-            {
-              "text": "（三）主体与监管",
-              "link": "/agents/法律业务通用指令#三-主体与监管"
-            }
-          ]
-        },
-        {
-          "text": "附录 B：本机文件处理与 OCR 工具",
-          "link": "/agents/法律业务通用指令#附录-b-本机文件处理与-ocr-工具"
+          "text": "十五、本机 OCR 工具使用",
+          "link": "/agents/法律业务通用指令#十五、本机-ocr-工具使用"
         }
       ]
     }
@@ -1856,102 +1766,6 @@ export const generatedSidebar = {
       ]
     }
   ],
-  "/skills/company-preliminary-analysis": [
-    {
-      "text": "返回栏目列表",
-      "link": "/skills/"
-    },
-    {
-      "text": "委托前公司初步分析报告",
-      "link": "/skills/company-preliminary-analysis"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "第〇步：场景路由（先判断，再动手）",
-          "link": "/skills/company-preliminary-analysis#第〇步-场景路由-先判断-再动手"
-        },
-        {
-          "text": "第一步：信息采集",
-          "link": "/skills/company-preliminary-analysis#第一步-信息采集"
-        },
-        {
-          "text": "第二步：法规与案例核验（反编造红线）",
-          "link": "/skills/company-preliminary-analysis#第二步-法规与案例核验-反编造红线"
-        },
-        {
-          "text": "第三步：法律风险排查",
-          "link": "/skills/company-preliminary-analysis#第三步-法律风险排查"
-        },
-        {
-          "text": "第四步：章节组装",
-          "link": "/skills/company-preliminary-analysis#第四步-章节组装"
-        },
-        {
-          "text": "第五步：生成 docx 并自检",
-          "link": "/skills/company-preliminary-analysis#第五步-生成-docx-并自检"
-        }
-      ]
-    }
-  ],
-  "/skills/contract-review": [
-    {
-      "text": "返回栏目列表",
-      "link": "/skills/"
-    },
-    {
-      "text": "合同审查",
-      "link": "/skills/contract-review"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "角色定位与默认立场",
-          "link": "/skills/contract-review#角色定位与默认立场"
-        },
-        {
-          "text": "一、合同审查工作流",
-          "link": "/skills/contract-review#一、合同审查工作流",
-          "items": [
-            {
-              "text": "（一）先概述协议主要内容",
-              "link": "/skills/contract-review#一-先概述协议主要内容"
-            },
-            {
-              "text": "（二）再按风险等级进行审查",
-              "link": "/skills/contract-review#二-再按风险等级进行审查"
-            },
-            {
-              "text": "（三）补充缺失条款及完善建议",
-              "link": "/skills/contract-review#三-补充缺失条款及完善建议"
-            },
-            {
-              "text": "（四）同步进行文字、逻辑、格式及序号校对",
-              "link": "/skills/contract-review#四-同步进行文字、逻辑、格式及序号校对"
-            },
-            {
-              "text": "（五）最后提供给客户的简短汇报",
-              "link": "/skills/contract-review#五-最后提供给客户的简短汇报"
-            }
-          ]
-        },
-        {
-          "text": "文档修订模式",
-          "link": "/skills/contract-review#文档修订模式"
-        },
-        {
-          "text": "二、法律文件起草要求",
-          "link": "/skills/contract-review#二、法律文件起草要求"
-        },
-        {
-          "text": "三、Word 文档操作方式（不自带脚本）",
-          "link": "/skills/contract-review#三、word-文档操作方式-不自带脚本"
-        }
-      ]
-    }
-  ],
   "/skills/network-check-v3": [
     {
       "text": "返回栏目列表",
@@ -2147,16 +1961,24 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、把“问题”改成“任务”",
-          "link": "/tutorials/agent-practice-01-delegate-complete-work#一、把-问题-改成-任务"
+          "text": "一、从“问问题”变成“交任务”",
+          "link": "/tutorials/agent-practice-01-delegate-complete-work#一、从-问问题-变成-交任务"
         },
         {
-          "text": "二、输入和输出都要明确",
-          "link": "/tutorials/agent-practice-01-delegate-complete-work#二、输入和输出都要明确"
+          "text": "二、完整任务其实不需要写得很复杂",
+          "link": "/tutorials/agent-practice-01-delegate-complete-work#二、完整任务其实不需要写得很复杂"
         },
         {
-          "text": "三、让Agent自己处理中间步骤",
-          "link": "/tutorials/agent-practice-01-delegate-complete-work#三、让agent自己处理中间步骤"
+          "text": "三、复杂任务不用自己把每一步都拆完",
+          "link": "/tutorials/agent-practice-01-delegate-complete-work#三、复杂任务不用自己把每一步都拆完"
+        },
+        {
+          "text": "四、第一次最好从低风险任务开始",
+          "link": "/tutorials/agent-practice-01-delegate-complete-work#四、第一次最好从低风险任务开始"
+        },
+        {
+          "text": "五、怎么看任务是不是真的交出去了？",
+          "link": "/tutorials/agent-practice-01-delegate-complete-work#五、怎么看任务是不是真的交出去了"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2182,16 +2004,24 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先盘点，再批量处理",
-          "link": "/tutorials/agent-practice-02-batch-file-processing#一、先盘点-再批量处理"
+          "text": "一、什么任务最适合批量处理？",
+          "link": "/tutorials/agent-practice-02-batch-file-processing#一、什么任务最适合批量处理"
         },
         {
-          "text": "二、建立统一提取规则",
-          "link": "/tutorials/agent-practice-02-batch-file-processing#二、建立统一提取规则"
+          "text": "二、先盘点，再处理",
+          "link": "/tutorials/agent-practice-02-batch-file-processing#二、先盘点-再处理"
         },
         {
-          "text": "三、异常项单独拎出来",
-          "link": "/tutorials/agent-practice-02-batch-file-processing#三、异常项单独拎出来"
+          "text": "三、批量任务最好统一输出结构",
+          "link": "/tutorials/agent-practice-02-batch-file-processing#三、批量任务最好统一输出结构"
+        },
+        {
+          "text": "四、文件特别多时，先形成底稿",
+          "link": "/tutorials/agent-practice-02-batch-file-processing#四、文件特别多时-先形成底稿"
+        },
+        {
+          "text": "五、异常文件一定要让Agent告诉你",
+          "link": "/tutorials/agent-practice-02-batch-file-processing#五、异常文件一定要让agent告诉你"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2217,20 +2047,28 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先定义研究维度",
-          "link": "/tutorials/agent-practice-03-web-research#一、先定义研究维度"
+          "text": "一、先区分“搜索”和“研究”",
+          "link": "/tutorials/agent-practice-03-web-research#一、先区分-搜索-和-研究"
         },
         {
-          "text": "二、优先原始和权威来源",
-          "link": "/tutorials/agent-practice-03-web-research#二、优先原始和权威来源"
+          "text": "二、来源优先级很重要",
+          "link": "/tutorials/agent-practice-03-web-research#二、来源优先级很重要"
         },
         {
-          "text": "三、处理同名、重复和冲突",
-          "link": "/tutorials/agent-practice-03-web-research#三、处理同名、重复和冲突"
+          "text": "三、不要只相信搜索摘要",
+          "link": "/tutorials/agent-practice-03-web-research#三、不要只相信搜索摘要"
         },
         {
-          "text": "四、输出研究底稿而非网页摘抄",
-          "link": "/tutorials/agent-practice-03-web-research#四、输出研究底稿而非网页摘抄"
+          "text": "四、公司研究特别要注意“同名”和“重复”",
+          "link": "/tutorials/agent-practice-03-web-research#四、公司研究特别要注意-同名-和-重复"
+        },
+        {
+          "text": "五、“没搜到”不等于“不存在”",
+          "link": "/tutorials/agent-practice-03-web-research#五、-没搜到-不等于-不存在"
+        },
+        {
+          "text": "六、重要研究最好留下底稿",
+          "link": "/tutorials/agent-practice-03-web-research#六、重要研究最好留下底稿"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2256,16 +2094,32 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、直接操作真实文件",
-          "link": "/tutorials/agent-practice-04-word-files#一、直接操作真实文件"
+          "text": "一、不要只让AI“写内容”",
+          "link": "/tutorials/agent-practice-04-word-files#一、不要只让ai-写内容"
         },
         {
-          "text": "二、模板和原文件不要覆盖",
-          "link": "/tutorials/agent-practice-04-word-files#二、模板和原文件不要覆盖"
+          "text": "二、修改Word时，最好明确“保留什么”",
+          "link": "/tutorials/agent-practice-04-word-files#二、修改word时-最好明确-保留什么"
         },
         {
-          "text": "三、修改后要交付“文件+说明”",
-          "link": "/tutorials/agent-practice-04-word-files#三、修改后要交付-文件-说明"
+          "text": "三、不要覆盖原始文件",
+          "link": "/tutorials/agent-practice-04-word-files#三、不要覆盖原始文件"
+        },
+        {
+          "text": "四、Word任务最好同时生成“修改说明”",
+          "link": "/tutorials/agent-practice-04-word-files#四、word任务最好同时生成-修改说明"
+        },
+        {
+          "text": "五、生成新文件时，也要先定义结构",
+          "link": "/tutorials/agent-practice-04-word-files#五、生成新文件时-也要先定义结构"
+        },
+        {
+          "text": "六、真正适合Agent处理的Word任务很多",
+          "link": "/tutorials/agent-practice-04-word-files#六、真正适合agent处理的word任务很多"
+        },
+        {
+          "text": "七、Word实操里最重要的不是“写得漂亮”",
+          "link": "/tutorials/agent-practice-04-word-files#七、word实操里最重要的不是-写得漂亮"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2291,16 +2145,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先理解工作簿结构",
-          "link": "/tutorials/agent-practice-05-excel-files#一、先理解工作簿结构"
+          "text": "一、Excel任务不只是“生成一张表”",
+          "link": "/tutorials/agent-practice-05-excel-files#一、excel任务不只是-生成一张表"
         },
         {
-          "text": "二、让数据真正落入单元格",
-          "link": "/tutorials/agent-practice-05-excel-files#二、让数据真正落入单元格"
+          "text": "二、先告诉Agent：哪些数据不能动",
+          "link": "/tutorials/agent-practice-05-excel-files#二、先告诉agent-哪些数据不能动"
         },
         {
-          "text": "三、完成后做数据校验",
-          "link": "/tutorials/agent-practice-05-excel-files#三、完成后做数据校验"
+          "text": "三、数据整理最适合让Agent统一规则",
+          "link": "/tutorials/agent-practice-05-excel-files#三、数据整理最适合让agent统一规则"
+        },
+        {
+          "text": "四、不要让AI偷偷“猜数据”",
+          "link": "/tutorials/agent-practice-05-excel-files#四、不要让ai偷偷-猜数据"
+        },
+        {
+          "text": "五、公式和计算最好留在Excel里",
+          "link": "/tutorials/agent-practice-05-excel-files#五、公式和计算最好留在excel里"
+        },
+        {
+          "text": "六、多张表可以先合并，再分析",
+          "link": "/tutorials/agent-practice-05-excel-files#六、多张表可以先合并-再分析"
+        },
+        {
+          "text": "七、Excel特别适合做“中间工作底稿”",
+          "link": "/tutorials/agent-practice-05-excel-files#七、excel特别适合做-中间工作底稿"
+        },
+        {
+          "text": "八、最后一定要检查文件是不是真的能用",
+          "link": "/tutorials/agent-practice-05-excel-files#八、最后一定要检查文件是不是真的能用"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2326,16 +2200,32 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、不要只比较文字",
-          "link": "/tutorials/agent-practice-06-version-diff#一、不要只比较文字"
+          "text": "一、版本比对不是简单找“文字不同”",
+          "link": "/tutorials/agent-practice-06-version-diff#一、版本比对不是简单找-文字不同"
         },
         {
-          "text": "二、区分编辑性和实质性变化",
-          "link": "/tutorials/agent-practice-06-version-diff#二、区分编辑性和实质性变化"
+          "text": "二、最好同时让Agent做两层比对",
+          "link": "/tutorials/agent-practice-06-version-diff#二、最好同时让agent做两层比对"
         },
         {
-          "text": "三、把变化对应到影响",
-          "link": "/tutorials/agent-practice-06-version-diff#三、把变化对应到影响"
+          "text": "三、不要只看正文，数字和细节更容易出问题",
+          "link": "/tutorials/agent-practice-06-version-diff#三、不要只看正文-数字和细节更容易出问题"
+        },
+        {
+          "text": "四、合同以外也非常适合",
+          "link": "/tutorials/agent-practice-06-version-diff#四、合同以外也非常适合"
+        },
+        {
+          "text": "五、最好输出一张“修改清单”",
+          "link": "/tutorials/agent-practice-06-version-diff#五、最好输出一张-修改清单"
+        },
+        {
+          "text": "六、如果原文件本身有修订痕迹怎么办？",
+          "link": "/tutorials/agent-practice-06-version-diff#六、如果原文件本身有修订痕迹怎么办"
+        },
+        {
+          "text": "七、最好不要让Agent直接判断“可以接受”",
+          "link": "/tutorials/agent-practice-06-version-diff#七、最好不要让agent直接判断-可以接受"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2361,16 +2251,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先判断哪些文件需要识别",
-          "link": "/tutorials/agent-practice-07-scanned-pdfs#一、先判断哪些文件需要识别"
+          "text": "一、先判断是不是扫描件",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#一、先判断是不是扫描件"
         },
         {
-          "text": "二、识别后保留来源定位",
-          "link": "/tutorials/agent-practice-07-scanned-pdfs#二、识别后保留来源定位"
+          "text": "二、扫描件最适合先做“结构化提取”",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#二、扫描件最适合先做-结构化提取"
         },
         {
-          "text": "三、再做结构化整理",
-          "link": "/tutorials/agent-practice-07-scanned-pdfs#三、再做结构化整理"
+          "text": "三、合同扫描件可以先提取关键信息",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#三、合同扫描件可以先提取关键信息"
+        },
+        {
+          "text": "四、图片质量会直接影响结果",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#四、图片质量会直接影响结果"
+        },
+        {
+          "text": "五、重要字段最好保留“原始页码”",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#五、重要字段最好保留-原始页码"
+        },
+        {
+          "text": "六、扫描材料特别适合做“资料盘点”",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#六、扫描材料特别适合做-资料盘点"
+        },
+        {
+          "text": "七、证据材料也可以先做初步目录",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#七、证据材料也可以先做初步目录"
+        },
+        {
+          "text": "八、不要让识别结果直接替代原件",
+          "link": "/tutorials/agent-practice-07-scanned-pdfs#八、不要让识别结果直接替代原件"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2396,16 +2306,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、邮件正文也属于项目材料",
-          "link": "/tutorials/agent-practice-08-email-to-project-pack#一、邮件正文也属于项目材料"
+          "text": "一、不要一上来就分析内容",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#一、不要一上来就分析内容"
         },
         {
-          "text": "二、识别版本和缺失附件",
-          "link": "/tutorials/agent-practice-08-email-to-project-pack#二、识别版本和缺失附件"
+          "text": "二、先把邮件和附件变成一张资料清单",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#二、先把邮件和附件变成一张资料清单"
         },
         {
-          "text": "三、形成项目入口",
-          "link": "/tutorials/agent-practice-08-email-to-project-pack#三、形成项目入口"
+          "text": "三、版本关系特别值得让Agent先判断",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#三、版本关系特别值得让agent先判断"
+        },
+        {
+          "text": "四、还可以顺便整理“材料缺口”",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#四、还可以顺便整理-材料缺口"
+        },
+        {
+          "text": "五、邮件正文里的信息也不要丢",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#五、邮件正文里的信息也不要丢"
+        },
+        {
+          "text": "六、最终最好形成两个成果",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#六、最终最好形成两个成果"
+        },
+        {
+          "text": "七、律师工作里尤其常见",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#七、律师工作里尤其常见"
+        },
+        {
+          "text": "八、普通办公也完全一样",
+          "link": "/tutorials/agent-practice-08-email-to-project-pack#八、普通办公也完全一样"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2431,16 +2361,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、区分讨论、决定和待办",
-          "link": "/tutorials/agent-practice-09-meeting-minutes#一、区分讨论、决定和待办"
+          "text": "一、不要只让AI“总结会议”",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#一、不要只让ai-总结会议"
         },
         {
-          "text": "二、待办要有责任人和期限",
-          "link": "/tutorials/agent-practice-09-meeting-minutes#二、待办要有责任人和期限"
+          "text": "二、先把所有会议材料一起给Agent",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#二、先把所有会议材料一起给agent"
         },
         {
-          "text": "三、把未决问题单独留下",
-          "link": "/tutorials/agent-practice-09-meeting-minutes#三、把未决问题单独留下"
+          "text": "三、一定要区分“讨论过”和“已经决定”",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#三、一定要区分-讨论过-和-已经决定"
+        },
+        {
+          "text": "四、待办事项要尽量结构化",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#四、待办事项要尽量结构化"
+        },
+        {
+          "text": "五、长会议不一定需要逐字整理",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#五、长会议不一定需要逐字整理"
+        },
+        {
+          "text": "六、律师场景里可以再多提取一层",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#六、律师场景里可以再多提取一层"
+        },
+        {
+          "text": "七、会议纪要最好和待办表分开",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#七、会议纪要最好和待办表分开"
+        },
+        {
+          "text": "八、Agent整理以后，人只需要重点检查三件事",
+          "link": "/tutorials/agent-practice-09-meeting-minutes#八、agent整理以后-人只需要重点检查三件事"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2466,16 +2416,32 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先定义字段再开始搜",
-          "link": "/tutorials/agent-practice-10-public-info-to-excel#一、先定义字段再开始搜"
+          "text": "一、先确定你到底要哪些字段",
+          "link": "/tutorials/agent-practice-10-public-info-to-excel#一、先确定你到底要哪些字段"
         },
         {
-          "text": "二、每条数据保留来源",
-          "link": "/tutorials/agent-practice-10-public-info-to-excel#二、每条数据保留来源"
+          "text": "二、不要让Agent写30段公司简介",
+          "link": "/tutorials/agent-practice-10-public-info-to-excel#二、不要让agent写30段公司简介"
         },
         {
-          "text": "三、不要把搜索结果当事实",
-          "link": "/tutorials/agent-practice-10-public-info-to-excel#三、不要把搜索结果当事实"
+          "text": "三、最好保留每条信息的来源",
+          "link": "/tutorials/agent-practice-10-public-info-to-excel#三、最好保留每条信息的来源"
+        },
+        {
+          "text": "四、不同来源冲突时不要自行选一个",
+          "link": "/tutorials/agent-practice-10-public-info-to-excel#四、不同来源冲突时不要自行选一个"
+        },
+        {
+          "text": "五、很适合做哪些任务？",
+          "link": "/tutorials/agent-practice-10-public-info-to-excel#五、很适合做哪些任务"
+        },
+        {
+          "text": "六、资料量大时可以分两步",
+          "link": "/tutorials/agent-practice-10-public-info-to-excel#六、资料量大时可以分两步"
+        },
+        {
+          "text": "七、不要忽略“采集日期”",
+          "link": "/tutorials/agent-practice-10-public-info-to-excel#七、不要忽略-采集日期"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2501,16 +2467,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、证据目录先从“材料是什么”开始",
-          "link": "/tutorials/agent-practice-11-evidence-index-timeline#一、证据目录先从-材料是什么-开始"
+          "text": "一、不要一开始就让AI判断案件输赢",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#一、不要一开始就让ai判断案件输赢"
         },
         {
-          "text": "二、时间线和证据目录要互相对应",
-          "link": "/tutorials/agent-practice-11-evidence-index-timeline#二、时间线和证据目录要互相对应"
+          "text": "二、先生成一份证据目录",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#二、先生成一份证据目录"
         },
         {
-          "text": "三、冲突和缺口提前暴露",
-          "link": "/tutorials/agent-practice-11-evidence-index-timeline#三、冲突和缺口提前暴露"
+          "text": "三、“证明目的”不要写得太绝对",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#三、-证明目的-不要写得太绝对"
+        },
+        {
+          "text": "四、再生成一条案件时间线",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#四、再生成一条案件时间线"
+        },
+        {
+          "text": "五、特别注意日期冲突",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#五、特别注意日期冲突"
+        },
+        {
+          "text": "六、聊天截图要特别谨慎",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#六、聊天截图要特别谨慎"
+        },
+        {
+          "text": "七、录音和长聊天可以先提炼关键片段",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#七、录音和长聊天可以先提炼关键片段"
+        },
+        {
+          "text": "八、整理完成以后，再进入法律分析",
+          "link": "/tutorials/agent-practice-11-evidence-index-timeline#八、整理完成以后-再进入法律分析"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2536,16 +2522,40 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先对照尽调清单盘点",
-          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#一、先对照尽调清单盘点"
+          "text": "一、不要一收到材料就让AI写尽调报告",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#一、不要一收到材料就让ai写尽调报告"
         },
         {
-          "text": "二、不要只看文件名判断已提供",
-          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#二、不要只看文件名判断已提供"
+          "text": "二、先按尽调主题给材料分类",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#二、先按尽调主题给材料分类"
         },
         {
-          "text": "三、输出可以直接发给客户的缺失清单",
-          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#三、输出可以直接发给客户的缺失清单"
+          "text": "三、再把“已提供”和“应提供”进行比较",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#三、再把-已提供-和-应提供-进行比较"
+        },
+        {
+          "text": "四、注意“有文件”不等于“资料完整”",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#四、注意-有文件-不等于-资料完整"
+        },
+        {
+          "text": "五、版本问题在尽调里特别常见",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#五、版本问题在尽调里特别常见"
+        },
+        {
+          "text": "六、还可以顺便提取关键基础信息",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#六、还可以顺便提取关键基础信息"
+        },
+        {
+          "text": "七、最实用的成果通常是一张“尽调资料清单”",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#七、最实用的成果通常是一张-尽调资料清单"
+        },
+        {
+          "text": "八、Agent生成的缺失清单不能机械照搬",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#八、agent生成的缺失清单不能机械照搬"
+        },
+        {
+          "text": "九、资料盘点做完以后，再进入深度审查",
+          "link": "/tutorials/agent-practice-12-dd-inventory-gaps#九、资料盘点做完以后-再进入深度审查"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2571,16 +2581,40 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、尽调清单序号就是文件夹序号",
-          "link": "/tutorials/agent-practice-13-dd-folder-structure#一、尽调清单序号就是文件夹序号"
+          "text": "一、这里不是让Agent重新设计目录",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#一、这里不是让agent重新设计目录"
         },
         {
-          "text": "二、清单没有下级编号，就不要让Agent发明",
-          "link": "/tutorials/agent-practice-13-dd-folder-structure#二、清单没有下级编号-就不要让agent发明"
+          "text": "二、一级序号建一级文件夹，二级序号建二级文件夹",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#二、一级序号建一级文件夹-二级序号建二级文件夹"
         },
         {
-          "text": "三、后续所有工作都沿用同一编号",
-          "link": "/tutorials/agent-practice-13-dd-folder-structure#三、后续所有工作都沿用同一编号"
+          "text": "三、为什么一定要保留原来的序号",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#三、为什么一定要保留原来的序号"
+        },
+        {
+          "text": "四、尽调清单其实可以直接变成整个项目的文件骨架",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#四、尽调清单其实可以直接变成整个项目的文件骨架"
+        },
+        {
+          "text": "五、清单没有下一级编号，就不要让Agent自己增加",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#五、清单没有下一级编号-就不要让agent自己增加"
+        },
+        {
+          "text": "六、文件夹名称最好同时保留“序号 + 事项名称”",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#六、文件夹名称最好同时保留-序号-事项名称"
+        },
+        {
+          "text": "七、建完以后，让Agent把目录树打印出来",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#七、建完以后-让agent把目录树打印出来"
+        },
+        {
+          "text": "八、这样做以后，后面的资料整理就简单很多",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#八、这样做以后-后面的资料整理就简单很多"
+        },
+        {
+          "text": "九、这一步最好在项目一开始就完成",
+          "link": "/tutorials/agent-practice-13-dd-folder-structure#九、这一步最好在项目一开始就完成"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2606,16 +2640,60 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、原始资料先锁住",
-          "link": "/tutorials/agent-practice-14-auto-classify-materials#一、原始资料先锁住"
+          "text": "一、归档前，先把原始资料保护好",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#一、归档前-先把原始资料保护好"
         },
         {
-          "text": "二、按实际内容对应清单序号",
-          "link": "/tutorials/agent-practice-14-auto-classify-materials#二、按实际内容对应清单序号"
+          "text": "二、正式归档前，先做一次文件盘点",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#二、正式归档前-先做一次文件盘点"
         },
         {
-          "text": "三、归档后必须对账",
-          "link": "/tutorials/agent-practice-14-auto-classify-materials#三、归档后必须对账"
+          "text": "三、确认尽调目录已经正确建立",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#三、确认尽调目录已经正确建立"
+        },
+        {
+          "text": "四、归档标准还是原来的尽调清单",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#四、归档标准还是原来的尽调清单"
+        },
+        {
+          "text": "五、不要只根据文件名归类",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#五、不要只根据文件名归类"
+        },
+        {
+          "text": "六、归档时只复制，不直接移动原文件",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#六、归档时只复制-不直接移动原文件"
+        },
+        {
+          "text": "七、一个文件可能同时对应多个尽调事项",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#七、一个文件可能同时对应多个尽调事项"
+        },
+        {
+          "text": "八、无法判断的文件不要强行塞进去",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#八、无法判断的文件不要强行塞进去"
+        },
+        {
+          "text": "九、归档时可以顺手识别重复和版本",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#九、归档时可以顺手识别重复和版本"
+        },
+        {
+          "text": "十、文件名可以规范，但必须保留原始文件名",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#十、文件名可以规范-但必须保留原始文件名"
+        },
+        {
+          "text": "十一、归档以后，先生成“材料索引表”",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#十一、归档以后-先生成-材料索引表"
+        },
+        {
+          "text": "十二、归档完成后，一定要做数量核对",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#十二、归档完成后-一定要做数量核对"
+        },
+        {
+          "text": "十三、最后再检查几类异常材料",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#十三、最后再检查几类异常材料"
+        },
+        {
+          "text": "十四、完整流程其实只有四步",
+          "link": "/tutorials/agent-practice-14-auto-classify-materials#十四、完整流程其实只有四步"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2641,20 +2719,48 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、模板不是从零起草",
-          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#一、模板不是从零起草"
+          "text": "一、为什么不建议一次性改完整份报告",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#一、为什么不建议一次性改完整份报告"
         },
         {
-          "text": "二、一次只处理一个章节",
-          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#二、一次只处理一个章节"
+          "text": "二、一次只给Agent一个明确章节",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#二、一次只给agent一个明确章节"
         },
         {
-          "text": "三、不确定内容直接留在报告里",
-          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#三、不确定内容直接留在报告里"
+          "text": "三、每完成一章，先自己检查一遍",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#三、每完成一章-先自己检查一遍"
         },
         {
-          "text": "四、最后再做全篇一致性",
-          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#四、最后再做全篇一致性"
+          "text": "四、下一章继续在同一份报告上修改",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#四、下一章继续在同一份报告上修改"
+        },
+        {
+          "text": "五、每一章只读取真正相关的材料",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#五、每一章只读取真正相关的材料"
+        },
+        {
+          "text": "六、旧模板只保留结构和表达，不保留旧项目事实",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#六、旧模板只保留结构和表达-不保留旧项目事实"
+        },
+        {
+          "text": "七、不能确认的内容，直接留在报告里",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#七、不能确认的内容-直接留在报告里"
+        },
+        {
+          "text": "八、有问题的地方也直接在当前章节暴露出来",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#八、有问题的地方也直接在当前章节暴露出来"
+        },
+        {
+          "text": "九、每章完成以后，最好让Agent自己先检查一次",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#九、每章完成以后-最好让agent自己先检查一次"
+        },
+        {
+          "text": "十、报告可以按这样的顺序逐步完成",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#十、报告可以按这样的顺序逐步完成"
+        },
+        {
+          "text": "十一、这种方式看起来慢，其实往往更快",
+          "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter#十一、这种方式看起来慢-其实往往更快"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2680,20 +2786,48 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先抓报告里的未决标记",
-          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#一、先抓报告里的未决标记"
+          "text": "一、为什么补充尽调清单最好在报告一稿以后做",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#一、为什么补充尽调清单最好在报告一稿以后做"
         },
         {
-          "text": "二、先回头查现有资料，避免重复要",
-          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#二、先回头查现有资料-避免重复要"
+          "text": "二、让Agent重点找报告里的“未完成位置”",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#二、让agent重点找报告里的-未完成位置"
         },
         {
-          "text": "三、把要求写得能直接回复",
-          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#三、把要求写得能直接回复"
+          "text": "三、不要只根据报告文字，也要和现有资料再核对一遍",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#三、不要只根据报告文字-也要和现有资料再核对一遍"
         },
         {
-          "text": "四、继续沿用原尽调清单编号",
-          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#四、继续沿用原尽调清单编号"
+          "text": "四、把“缺资料”和“需要客户确认”分开",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#四、把-缺资料-和-需要客户确认-分开"
+        },
+        {
+          "text": "五、补充要求一定要具体",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#五、补充要求一定要具体"
+        },
+        {
+          "text": "六、最好继续沿用原来的尽调序号",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#六、最好继续沿用原来的尽调序号"
+        },
+        {
+          "text": "七、已经提供过的材料不要重复索取",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#七、已经提供过的材料不要重复索取"
+        },
+        {
+          "text": "八、材料之间存在冲突，也可以直接形成补充问题",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#八、材料之间存在冲突-也可以直接形成补充问题"
+        },
+        {
+          "text": "九、补充清单最好做成客户可以直接回复的表格",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#九、补充清单最好做成客户可以直接回复的表格"
+        },
+        {
+          "text": "十、补充资料回来以后，再继续更新报告",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#十、补充资料回来以后-再继续更新报告"
+        },
+        {
+          "text": "十一、补充尽调清单可以不止一轮",
+          "link": "/tutorials/agent-practice-16-reverse-dd-checklist#十一、补充尽调清单可以不止一轮"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2719,20 +2853,44 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先归档再更新",
-          "link": "/tutorials/agent-practice-17-update-affected-sections#一、先归档再更新"
+          "text": "一、先判断新材料到底影响哪些章节",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#一、先判断新材料到底影响哪些章节"
         },
         {
-          "text": "二、只解决有材料依据的问题",
-          "link": "/tutorials/agent-practice-17-update-affected-sections#二、只解决有材料依据的问题"
+          "text": "二、先把补充资料归档，再改报告",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#二、先把补充资料归档-再改报告"
         },
         {
-          "text": "三、保留已确认内容",
-          "link": "/tutorials/agent-practice-17-update-affected-sections#三、保留已确认内容"
+          "text": "三、先解决原来报告里的“待核验”",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#三、先解决原来报告里的-待核验"
         },
         {
-          "text": "四、每轮留下更新说明",
-          "link": "/tutorials/agent-practice-17-update-affected-sections#四、每轮留下更新说明"
+          "text": "四、有了新材料，也可能产生新的问题",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#四、有了新材料-也可能产生新的问题"
+        },
+        {
+          "text": "五、尽量在原来的报告版本上继续修改",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#五、尽量在原来的报告版本上继续修改"
+        },
+        {
+          "text": "六、一次还是只处理一个或几个相关章节",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#六、一次还是只处理一个或几个相关章节"
+        },
+        {
+          "text": "七、修改时最好说明“这次改了什么”",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#七、修改时最好说明-这次改了什么"
+        },
+        {
+          "text": "八、不要让Agent删除原有问题而不说明",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#八、不要让agent删除原有问题而不说明"
+        },
+        {
+          "text": "九、客户补了“新版文件”，要注意旧版和新版关系",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#九、客户补了-新版文件-要注意旧版和新版关系"
+        },
+        {
+          "text": "十、第二轮以后，报告会越来越接近最终版本",
+          "link": "/tutorials/agent-practice-17-update-affected-sections#十、第二轮以后-报告会越来越接近最终版本"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2758,16 +2916,60 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、第一轮由起草Agent自检",
-          "link": "/tutorials/agent-practice-18-full-cross-check#一、第一轮由起草agent自检"
+          "text": "一、这次不要让Agent继续“写”",
+          "link": "/tutorials/agent-practice-18-full-cross-check#一、这次不要让agent继续-写"
         },
         {
-          "text": "二、第二轮换一个独立Agent",
-          "link": "/tutorials/agent-practice-18-full-cross-check#二、第二轮换一个独立agent"
+          "text": "二、最好不要只让“写报告的Agent”检查自己",
+          "link": "/tutorials/agent-practice-18-full-cross-check#二、最好不要只让-写报告的agent-检查自己"
         },
         {
-          "text": "三、先出问题表，不要直接改",
-          "link": "/tutorials/agent-practice-18-full-cross-check#三、先出问题表-不要直接改"
+          "text": "三、第二个Agent最好同时拿到“报告 + 提纲”",
+          "link": "/tutorials/agent-practice-18-full-cross-check#三、第二个agent最好同时拿到-报告-提纲"
+        },
+        {
+          "text": "四、第一类重点：同一个事实前后是否一致",
+          "link": "/tutorials/agent-practice-18-full-cross-check#四、第一类重点-同一个事实前后是否一致"
+        },
+        {
+          "text": "五、数字尤其需要单独检查",
+          "link": "/tutorials/agent-practice-18-full-cross-check#五、数字尤其需要单独检查"
+        },
+        {
+          "text": "六、第二类重点：有没有旧项目内容残留",
+          "link": "/tutorials/agent-practice-18-full-cross-check#六、第二类重点-有没有旧项目内容残留"
+        },
+        {
+          "text": "七、第三类重点：报告和尽调提纲有没有对应完整",
+          "link": "/tutorials/agent-practice-18-full-cross-check#七、第三类重点-报告和尽调提纲有没有对应完整"
+        },
+        {
+          "text": "八、第四类重点：待核验事项是不是已经处理完",
+          "link": "/tutorials/agent-practice-18-full-cross-check#八、第四类重点-待核验事项是不是已经处理完"
+        },
+        {
+          "text": "九、反过来也要检查：有没有过早删掉“待核验”",
+          "link": "/tutorials/agent-practice-18-full-cross-check#九、反过来也要检查-有没有过早删掉-待核验"
+        },
+        {
+          "text": "十、第五类重点：不同章节的结论有没有打架",
+          "link": "/tutorials/agent-practice-18-full-cross-check#十、第五类重点-不同章节的结论有没有打架"
+        },
+        {
+          "text": "十一、第六类重点：章节编号和交叉引用",
+          "link": "/tutorials/agent-practice-18-full-cross-check#十一、第六类重点-章节编号和交叉引用"
+        },
+        {
+          "text": "十二、可以采用“两轮复核”",
+          "link": "/tutorials/agent-practice-18-full-cross-check#十二、可以采用-两轮复核"
+        },
+        {
+          "text": "十三、先生成问题清单，不要直接改",
+          "link": "/tutorials/agent-practice-18-full-cross-check#十三、先生成问题清单-不要直接改"
+        },
+        {
+          "text": "十四、最后再做格式整理",
+          "link": "/tutorials/agent-practice-18-full-cross-check#十四、最后再做格式整理"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2793,16 +2995,66 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、不要做普通摘要",
-          "link": "/tutorials/agent-practice-19-major-issues-list#一、不要做普通摘要"
+          "text": "一、重大问题清单不是“尽调报告摘要”",
+          "link": "/tutorials/agent-practice-19-major-issues-list#一、重大问题清单不是-尽调报告摘要"
         },
         {
-          "text": "二、按处理方式分类",
-          "link": "/tutorials/agent-practice-19-major-issues-list#二、按处理方式分类"
+          "text": "二、先从报告里找“问题”，而不是找“内容”",
+          "link": "/tutorials/agent-practice-19-major-issues-list#二、先从报告里找-问题-而不是找-内容"
         },
         {
-          "text": "三、风险等级要说明理由",
-          "link": "/tutorials/agent-practice-19-major-issues-list#三、风险等级要说明理由"
+          "text": "三、可以把问题分成几个类型",
+          "link": "/tutorials/agent-practice-19-major-issues-list#三、可以把问题分成几个类型",
+          "items": [
+            {
+              "text": "交易前需要解决",
+              "link": "/tutorials/agent-practice-19-major-issues-list#交易前需要解决"
+            },
+            {
+              "text": "交易文件需要保护",
+              "link": "/tutorials/agent-practice-19-major-issues-list#交易文件需要保护"
+            },
+            {
+              "text": "需要进一步核验",
+              "link": "/tutorials/agent-practice-19-major-issues-list#需要进一步核验"
+            },
+            {
+              "text": "持续关注",
+              "link": "/tutorials/agent-practice-19-major-issues-list#持续关注"
+            }
+          ]
+        },
+        {
+          "text": "四、风险等级不要只让AI凭感觉打分",
+          "link": "/tutorials/agent-practice-19-major-issues-list#四、风险等级不要只让ai凭感觉打分"
+        },
+        {
+          "text": "五、每个问题都要告诉客户“影响是什么”",
+          "link": "/tutorials/agent-practice-19-major-issues-list#五、每个问题都要告诉客户-影响是什么"
+        },
+        {
+          "text": "六、最好继续给出“怎么处理”",
+          "link": "/tutorials/agent-practice-19-major-issues-list#六、最好继续给出-怎么处理"
+        },
+        {
+          "text": "七、问题一定要能够回到原报告",
+          "link": "/tutorials/agent-practice-19-major-issues-list#七、问题一定要能够回到原报告"
+        },
+        {
+          "text": "八、不要为了“显得专业”把所有事情都列成重大问题",
+          "link": "/tutorials/agent-practice-19-major-issues-list#八、不要为了-显得专业-把所有事情都列成重大问题"
+        },
+        {
+          "text": "九、最好控制在“一眼能看完”",
+          "link": "/tutorials/agent-practice-19-major-issues-list#九、最好控制在-一眼能看完"
+        },
+        {
+          "text": "十、最好再由律师删一轮",
+          "link": "/tutorials/agent-practice-19-major-issues-list#十、最好再由律师删一轮"
+        },
+        {
+          "text": "十一、这一步也可以继续用第二个Agent复核",
+          "link": "/tutorials/agent-practice-19-major-issues-list#十一、这一步也可以继续用第二个agent复核"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2828,20 +3080,66 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先看现有交易文件有没有覆盖",
-          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#一、先看现有交易文件有没有覆盖"
+          "text": "一、不要让重大问题清单停在Excel里",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#一、不要让重大问题清单停在excel里"
         },
         {
-          "text": "二、把风险转成具体机制",
-          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#二、把风险转成具体机制"
+          "text": "二、先判断问题应该放进哪类交易机制",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#二、先判断问题应该放进哪类交易机制",
+          "items": [
+            {
+              "text": "交割先决条件",
+              "link": "/tutorials/agent-practice-20-findings-to-contract-edits#交割先决条件"
+            },
+            {
+              "text": "陈述与保证",
+              "link": "/tutorials/agent-practice-20-findings-to-contract-edits#陈述与保证"
+            },
+            {
+              "text": "特别赔偿",
+              "link": "/tutorials/agent-practice-20-findings-to-contract-edits#特别赔偿"
+            },
+            {
+              "text": "承诺事项",
+              "link": "/tutorials/agent-practice-20-findings-to-contract-edits#承诺事项"
+            },
+            {
+              "text": "价格或付款安排",
+              "link": "/tutorials/agent-practice-20-findings-to-contract-edits#价格或付款安排"
+            }
+          ]
         },
         {
-          "text": "三、明确交易立场",
-          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#三、明确交易立场"
+          "text": "三、一个问题可能同时需要多个保护措施",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#三、一个问题可能同时需要多个保护措施"
         },
         {
-          "text": "四、先出方案表，再改协议",
-          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#四、先出方案表-再改协议"
+          "text": "四、最好直接对照现有交易文件来改",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#四、最好直接对照现有交易文件来改"
+        },
+        {
+          "text": "五、输出最好做到“问题—条款”一一对应",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#五、输出最好做到-问题—条款-一一对应"
+        },
+        {
+          "text": "六、不要让Agent脱离买方或卖方立场",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#六、不要让agent脱离买方或卖方立场"
+        },
+        {
+          "text": "七、不要直接让Agent写一整份新协议",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#七、不要直接让agent写一整份新协议"
+        },
+        {
+          "text": "八、先让Agent提出修改建议，再决定是否落到正文",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#八、先让agent提出修改建议-再决定是否落到正文"
+        },
+        {
+          "text": "九、不是所有尽调问题都要写进交易文件",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#九、不是所有尽调问题都要写进交易文件"
+        },
+        {
+          "text": "十、这一步完成以后，尽调才真正进入交易",
+          "link": "/tutorials/agent-practice-20-findings-to-contract-edits#十、这一步完成以后-尽调才真正进入交易"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2867,20 +3165,48 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先检索，不要先下结论",
-          "link": "/tutorials/agent-practice-21-kb-first-answers#一、先检索-不要先下结论"
+          "text": "一、先告诉Agent：不要凭模型记忆回答",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#一、先告诉agent-不要凭模型记忆回答"
         },
         {
-          "text": "二、检索后必须读原文",
-          "link": "/tutorials/agent-practice-21-kb-first-answers#二、检索后必须读原文"
+          "text": "二、专业研究最好先找“类似案例”",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#二、专业研究最好先找-类似案例"
         },
         {
-          "text": "三、案例要比较，不要只罗列",
-          "link": "/tutorials/agent-practice-21-kb-first-answers#三、案例要比较-不要只罗列"
+          "text": "三、找到案例以后，不要只看搜索结果摘要",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#三、找到案例以后-不要只看搜索结果摘要"
         },
         {
-          "text": "四、找不到也要如实说",
-          "link": "/tutorials/agent-practice-21-kb-first-answers#四、找不到也要如实说"
+          "text": "四、案例研究最好统一成固定字段",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#四、案例研究最好统一成固定字段"
+        },
+        {
+          "text": "五、不要只找“最像的一个案例”",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#五、不要只找-最像的一个案例"
+        },
+        {
+          "text": "六、重点不是“别人怎么写”，而是“别人为什么这么写”",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#六、重点不是-别人怎么写-而是-别人为什么这么写"
+        },
+        {
+          "text": "七、一定要保留案例出处",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#七、一定要保留案例出处"
+        },
+        {
+          "text": "八、知识库没有找到，不等于没有案例",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#八、知识库没有找到-不等于没有案例"
+        },
+        {
+          "text": "九、内部项目库也可以这样用",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#九、内部项目库也可以这样用"
+        },
+        {
+          "text": "十、法规库也可以采用同样的方式",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#十、法规库也可以采用同样的方式"
+        },
+        {
+          "text": "十一、真正好用的知识库任务通常是“检索 + 阅读 + 对比 + 结论”",
+          "link": "/tutorials/agent-practice-21-kb-first-answers#十一、真正好用的知识库任务通常是-检索-阅读-对比-结论"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2906,20 +3232,78 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先读案情再定检索词",
-          "link": "/tutorials/agent-practice-22-mcp-case-research#一、先读案情再定检索词"
+          "text": "一、不要直接告诉Agent一个关键词就开始搜",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#一、不要直接告诉agent一个关键词就开始搜"
         },
         {
-          "text": "二、检索要迭代",
-          "link": "/tutorials/agent-practice-22-mcp-case-research#二、检索要迭代"
+          "text": "二、让Agent先形成“检索问题”",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#二、让agent先形成-检索问题"
         },
         {
-          "text": "三、逐案核验基本信息",
-          "link": "/tutorials/agent-practice-22-mcp-case-research#三、逐案核验基本信息"
+          "text": "三、MCP真正解决的是“让Agent自己调用法律数据库”",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#三、mcp真正解决的是-让agent自己调用法律数据库"
         },
         {
-          "text": "四、不要用案例数量投票",
-          "link": "/tutorials/agent-practice-22-mcp-case-research#四、不要用案例数量投票"
+          "text": "四、第一次检索不要追求“直接命中答案”",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#四、第一次检索不要追求-直接命中答案"
+        },
+        {
+          "text": "五、一定要让Agent真正阅读裁判文书",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#五、一定要让agent真正阅读裁判文书"
+        },
+        {
+          "text": "六、筛案例时，最重要的不是“法律问题一样”，而是事实够不够像",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#六、筛案例时-最重要的不是-法律问题一样-而是事实够不够像"
+        },
+        {
+          "text": "七、不要只挑“支持我方”的案例",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#七、不要只挑-支持我方-的案例"
+        },
+        {
+          "text": "八、如果接入多个法律数据库，可以交叉检索",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#八、如果接入多个法律数据库-可以交叉检索"
+        },
+        {
+          "text": "九、最终不要只交付“案例列表”",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#九、最终不要只交付-案例列表",
+          "items": [
+            {
+              "text": "1. 本案基本情况",
+              "link": "/tutorials/agent-practice-22-mcp-case-research#_1-本案基本情况"
+            },
+            {
+              "text": "2. 核心检索问题",
+              "link": "/tutorials/agent-practice-22-mcp-case-research#_2-核心检索问题"
+            },
+            {
+              "text": "3. 检索范围和方法",
+              "link": "/tutorials/agent-practice-22-mcp-case-research#_3-检索范围和方法"
+            },
+            {
+              "text": "4. 重点案例",
+              "link": "/tutorials/agent-practice-22-mcp-case-research#_4-重点案例"
+            },
+            {
+              "text": "5. 横向比较",
+              "link": "/tutorials/agent-practice-22-mcp-case-research#_5-横向比较"
+            },
+            {
+              "text": "6. 对本案的启示",
+              "link": "/tutorials/agent-practice-22-mcp-case-research#_6-对本案的启示"
+            }
+          ]
+        },
+        {
+          "text": "十、案例检索报告一定要保留原始出处",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#十、案例检索报告一定要保留原始出处"
+        },
+        {
+          "text": "十一、客户提供的材料还可以反过来帮助Agent继续检索",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#十一、客户提供的材料还可以反过来帮助agent继续检索"
+        },
+        {
+          "text": "十二、最后还是要由律师判断“这个案例到底能不能用”",
+          "link": "/tutorials/agent-practice-22-mcp-case-research#十二、最后还是要由律师判断-这个案例到底能不能用"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2945,20 +3329,78 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先描述当前项目事实",
-          "link": "/tutorials/agent-practice-23-securities-case-search#一、先描述当前项目事实"
+          "text": "一、证券业务研究和普通法律检索不太一样",
+          "link": "/tutorials/agent-practice-23-securities-case-search#一、证券业务研究和普通法律检索不太一样"
         },
         {
-          "text": "二、用证券数据库做同义词扩展",
-          "link": "/tutorials/agent-practice-23-securities-case-search#二、用证券数据库做同义词扩展"
+          "text": "二、比如项目出现“违章建筑”",
+          "link": "/tutorials/agent-practice-23-securities-case-search#二、比如项目出现-违章建筑"
         },
         {
-          "text": "三、提取监管真正关心的内容",
-          "link": "/tutorials/agent-practice-23-securities-case-search#三、提取监管真正关心的内容"
+          "text": "三、不要只搜“违章建筑”四个字",
+          "link": "/tutorials/agent-practice-23-securities-case-search#三、不要只搜-违章建筑-四个字"
         },
         {
-          "text": "四、成功上市不等于该问题被无条件认可",
-          "link": "/tutorials/agent-practice-23-securities-case-search#四、成功上市不等于该问题被无条件认可"
+          "text": "四、让Agent重点找“被问询过”的案例",
+          "link": "/tutorials/agent-practice-23-securities-case-search#四、让agent重点找-被问询过-的案例"
+        },
+        {
+          "text": "五、不要只提取发行人的回复，重点看律师怎么发表意见",
+          "link": "/tutorials/agent-practice-23-securities-case-search#五、不要只提取发行人的回复-重点看律师怎么发表意见"
+        },
+        {
+          "text": "六、真正有价值的是比较“什么情况下能够过”",
+          "link": "/tutorials/agent-practice-23-securities-case-search#六、真正有价值的是比较-什么情况下能够过"
+        },
+        {
+          "text": "七、还要区分不同板块和不同阶段",
+          "link": "/tutorials/agent-practice-23-securities-case-search#七、还要区分不同板块和不同阶段"
+        },
+        {
+          "text": "八、最好同时看“最近案例”和“典型案例”",
+          "link": "/tutorials/agent-practice-23-securities-case-search#八、最好同时看-最近案例-和-典型案例"
+        },
+        {
+          "text": "九、不要把“成功上市”简单理解成这个问题被监管认可",
+          "link": "/tutorials/agent-practice-23-securities-case-search#九、不要把-成功上市-简单理解成这个问题被监管认可"
+        },
+        {
+          "text": "十、最终最好形成一份“证券审核案例检索报告”",
+          "link": "/tutorials/agent-practice-23-securities-case-search#十、最终最好形成一份-证券审核案例检索报告",
+          "items": [
+            {
+              "text": "1. 当前项目问题",
+              "link": "/tutorials/agent-practice-23-securities-case-search#_1-当前项目问题"
+            },
+            {
+              "text": "2. 需要解决的审核问题",
+              "link": "/tutorials/agent-practice-23-securities-case-search#_2-需要解决的审核问题"
+            },
+            {
+              "text": "3. 检索方式",
+              "link": "/tutorials/agent-practice-23-securities-case-search#_3-检索方式"
+            },
+            {
+              "text": "4. 重点案例",
+              "link": "/tutorials/agent-practice-23-securities-case-search#_4-重点案例"
+            },
+            {
+              "text": "5. 横向比较",
+              "link": "/tutorials/agent-practice-23-securities-case-search#_5-横向比较"
+            },
+            {
+              "text": "6. 对当前项目的启示",
+              "link": "/tutorials/agent-practice-23-securities-case-search#_6-对当前项目的启示"
+            }
+          ]
+        },
+        {
+          "text": "十一、这种方法可以处理大量证券法律问题",
+          "link": "/tutorials/agent-practice-23-securities-case-search#十一、这种方法可以处理大量证券法律问题"
+        },
+        {
+          "text": "十二、证券数据库MCP真正改变的是研究方式",
+          "link": "/tutorials/agent-practice-23-securities-case-search#十二、证券数据库mcp真正改变的是研究方式"
         },
         {
           "text": "直接复制的实战提示词",
@@ -2984,20 +3426,52 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先把所有引用抽出来",
-          "link": "/tutorials/agent-practice-24-verify-law-currency#一、先把所有引用抽出来"
+          "text": "一、先让Agent把文件里的所有法律依据找出来",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#一、先让agent把文件里的所有法律依据找出来"
         },
         {
-          "text": "二、优先专业法规库，失败就回官方来源",
-          "link": "/tutorials/agent-practice-24-verify-law-currency#二、优先专业法规库-失败就回官方来源"
+          "text": "二、然后通过法规MCP逐条核验",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#二、然后通过法规mcp逐条核验"
         },
         {
-          "text": "三、有效不等于适用",
-          "link": "/tutorials/agent-practice-24-verify-law-currency#三、有效不等于适用"
+          "text": "三、要特别检查“法律还有效，但条号变了”",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#三、要特别检查-法律还有效-但条号变了"
         },
         {
-          "text": "四、先报告问题，不要悄悄改",
-          "link": "/tutorials/agent-practice-24-verify-law-currency#四、先报告问题-不要悄悄改"
+          "text": "四、法规失效以后，不要只告诉我“已废止”",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#四、法规失效以后-不要只告诉我-已废止"
+        },
+        {
+          "text": "五、还要注意“文件形成时间”",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#五、还要注意-文件形成时间"
+        },
+        {
+          "text": "六、MCP如果挂了，不要让整个任务停下来",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#六、mcp如果挂了-不要让整个任务停下来"
+        },
+        {
+          "text": "七、官方来源优先于普通网页搜索结果",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#七、官方来源优先于普通网页搜索结果"
+        },
+        {
+          "text": "八、合同里的法条也值得这样检查",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#八、合同里的法条也值得这样检查"
+        },
+        {
+          "text": "九、最好把“有效性”和“适用性”分开检查",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#九、最好把-有效性-和-适用性-分开检查"
+        },
+        {
+          "text": "十、让Agent直接定位到文件具体位置",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#十、让agent直接定位到文件具体位置"
+        },
+        {
+          "text": "十一、最终最好形成一份“法律依据核验表”",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#十一、最终最好形成一份-法律依据核验表"
+        },
+        {
+          "text": "十二、重要文件还可以再做一次“第二Agent复核”",
+          "link": "/tutorials/agent-practice-24-verify-law-currency#十二、重要文件还可以再做一次-第二agent复核"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3023,20 +3497,48 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先建立事实时间轴",
-          "link": "/tutorials/agent-practice-25-law-evolution-diff#一、先建立事实时间轴"
+          "text": "一、先确定几个关键时间点",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#一、先确定几个关键时间点"
         },
         {
-          "text": "二、把法规沿革串起来",
-          "link": "/tutorials/agent-practice-25-law-evolution-diff#二、把法规沿革串起来"
+          "text": "二、先查“当时有效的版本”，再查现行版本",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#二、先查-当时有效的版本-再查现行版本"
         },
         {
-          "text": "三、比较的是法律效果，不只是条号",
-          "link": "/tutorials/agent-practice-25-law-evolution-diff#三、比较的是法律效果-不只是条号"
+          "text": "三、最好让Agent直接做一张法条沿革表",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#三、最好让agent直接做一张法条沿革表"
         },
         {
-          "text": "四、特别检查过渡条款",
-          "link": "/tutorials/agent-practice-25-law-evolution-diff#四、特别检查过渡条款"
+          "text": "四、重点不是条号变化，而是规则有没有变",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#四、重点不是条号变化-而是规则有没有变"
+        },
+        {
+          "text": "五、还要查有没有专门的过渡条款",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#五、还要查有没有专门的过渡条款"
+        },
+        {
+          "text": "六、如果是行政处罚，还要特别看“从旧兼从轻”",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#六、如果是行政处罚-还要特别看-从旧兼从轻"
+        },
+        {
+          "text": "七、合同和民商事案件，也要注意法律施行时间",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#七、合同和民商事案件-也要注意法律施行时间"
+        },
+        {
+          "text": "八、司法解释也可能出现版本问题",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#八、司法解释也可能出现版本问题"
+        },
+        {
+          "text": "九、MCP优先，官方来源继续兜底",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#九、mcp优先-官方来源继续兜底"
+        },
+        {
+          "text": "十、最后不要只给“适用旧法”一个结论",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#十、最后不要只给-适用旧法-一个结论"
+        },
+        {
+          "text": "十一、最好直接服务于当前法律文件",
+          "link": "/tutorials/agent-practice-25-law-evolution-diff#十一、最好直接服务于当前法律文件"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3062,20 +3564,52 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先把事实和问题拆开",
-          "link": "/tutorials/agent-practice-26-legal-research-report#一、先把事实和问题拆开"
+          "text": "一、先让Agent读客户材料，而不是马上搜索",
+          "link": "/tutorials/agent-practice-26-legal-research-report#一、先让agent读客户材料-而不是马上搜索"
         },
         {
-          "text": "二、至少做四层检索",
-          "link": "/tutorials/agent-practice-26-legal-research-report#二、至少做四层检索"
+          "text": "二、先拆成几个具体法律问题",
+          "link": "/tutorials/agent-practice-26-legal-research-report#二、先拆成几个具体法律问题"
         },
         {
-          "text": "三、不同来源相互验证",
-          "link": "/tutorials/agent-practice-26-legal-research-report#三、不同来源相互验证"
+          "text": "三、第一层：查现行法律法规",
+          "link": "/tutorials/agent-practice-26-legal-research-report#三、第一层-查现行法律法规"
         },
         {
-          "text": "四、研究报告要给行动答案",
-          "link": "/tutorials/agent-practice-26-legal-research-report#四、研究报告要给行动答案"
+          "text": "四、第二层：查司法案例",
+          "link": "/tutorials/agent-practice-26-legal-research-report#四、第二层-查司法案例"
+        },
+        {
+          "text": "五、第三层：证券或者监管问题，再查监管案例",
+          "link": "/tutorials/agent-practice-26-legal-research-report#五、第三层-证券或者监管问题-再查监管案例"
+        },
+        {
+          "text": "六、第四层：再查自己的知识库",
+          "link": "/tutorials/agent-practice-26-legal-research-report#六、第四层-再查自己的知识库"
+        },
+        {
+          "text": "七、不同来源之间要互相验证",
+          "link": "/tutorials/agent-practice-26-legal-research-report#七、不同来源之间要互相验证"
+        },
+        {
+          "text": "八、对客户最重要的是“结论和路径”",
+          "link": "/tutorials/agent-practice-26-legal-research-report#八、对客户最重要的是-结论和路径"
+        },
+        {
+          "text": "九、报告格式不要让Agent自己发挥",
+          "link": "/tutorials/agent-practice-26-legal-research-report#九、报告格式不要让agent自己发挥"
+        },
+        {
+          "text": "十、可以先出研究底稿，再形成正式报告",
+          "link": "/tutorials/agent-practice-26-legal-research-report#十、可以先出研究底稿-再形成正式报告"
+        },
+        {
+          "text": "十一、重要结论最好能回到来源",
+          "link": "/tutorials/agent-practice-26-legal-research-report#十一、重要结论最好能回到来源"
+        },
+        {
+          "text": "十二、这种任务特别适合直接交给Agent完整执行",
+          "link": "/tutorials/agent-practice-26-legal-research-report#十二、这种任务特别适合直接交给agent完整执行"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3101,20 +3635,70 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、把大问题拆到最小问",
-          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#一、把大问题拆到最小问"
+          "text": "一、不要一上来就让Agent写问询回复",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#一、不要一上来就让agent写问询回复"
         },
         {
-          "text": "二、按任务类型分工",
-          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#二、按任务类型分工"
+          "text": "二、先把每一道问询拆成最小问题",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#二、先把每一道问询拆成最小问题"
         },
         {
-          "text": "三、区分公司说明和律师意见",
-          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#三、区分公司说明和律师意见"
+          "text": "三、再把每个小问题变成“需要做什么”",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#三、再把每个小问题变成-需要做什么"
         },
         {
-          "text": "四、先形成任务清单，再写回复",
-          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#四、先形成任务清单-再写回复"
+          "text": "四、最好把任务分成几种类型",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#四、最好把任务分成几种类型",
+          "items": [
+            {
+              "text": "事实核查",
+              "link": "/tutorials/agent-practice-27-inquiry-to-task-list#事实核查"
+            },
+            {
+              "text": "补充资料",
+              "link": "/tutorials/agent-practice-27-inquiry-to-task-list#补充资料"
+            },
+            {
+              "text": "客户说明",
+              "link": "/tutorials/agent-practice-27-inquiry-to-task-list#客户说明"
+            },
+            {
+              "text": "法律研究",
+              "link": "/tutorials/agent-practice-27-inquiry-to-task-list#法律研究"
+            },
+            {
+              "text": "中介核查",
+              "link": "/tutorials/agent-practice-27-inquiry-to-task-list#中介核查"
+            }
+          ]
+        },
+        {
+          "text": "五、要特别区分“公司回答什么”和“律师核查什么”",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#五、要特别区分-公司回答什么-和-律师核查什么"
+        },
+        {
+          "text": "六、需要查案例的问题，直接标出来",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#六、需要查案例的问题-直接标出来"
+        },
+        {
+          "text": "七、问询里要求“发表明确意见”的，一定单独标记",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#七、问询里要求-发表明确意见-的-一定单独标记"
+        },
+        {
+          "text": "八、最好直接形成一张项目任务表",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#八、最好直接形成一张项目任务表"
+        },
+        {
+          "text": "九、还可以从任务表直接生成补充资料清单",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#九、还可以从任务表直接生成补充资料清单"
+        },
+        {
+          "text": "十、第一轮先拆任务，第二轮再开始写回复",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#十、第一轮先拆任务-第二轮再开始写回复"
+        },
+        {
+          "text": "十一、问询回复本身也建议逐题处理",
+          "link": "/tutorials/agent-practice-27-inquiry-to-task-list#十一、问询回复本身也建议逐题处理"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3140,20 +3724,82 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、一次只处理一道问询",
-          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#一、一次只处理一道问询"
+          "text": "一、一次还是只处理一道问询",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#一、一次还是只处理一道问询"
         },
         {
-          "text": "二、先查案例再搭框架",
-          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#二、先查案例再搭框架"
+          "text": "二、先重新拆清楚这一题到底问了什么",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#二、先重新拆清楚这一题到底问了什么"
         },
         {
-          "text": "三、案例只能学论证路径",
-          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#三、案例只能学论证路径"
+          "text": "三、然后去找历史同类审核案例",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#三、然后去找历史同类审核案例"
         },
         {
-          "text": "四、事实先行，结论后置",
-          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#四、事实先行-结论后置"
+          "text": "四、先总结“监管关注点”，再考虑怎么写",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#四、先总结-监管关注点-再考虑怎么写"
+        },
+        {
+          "text": "五、不要照抄“成功上市项目”的回复",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#五、不要照抄-成功上市项目-的回复"
+        },
+        {
+          "text": "六、再根据当前事实搭“回复框架”",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#六、再根据当前事实搭-回复框架",
+          "items": [
+            {
+              "text": "第一部分：基本情况",
+              "link": "/tutorials/agent-practice-28-inquiry-reply-framework#第一部分-基本情况"
+            },
+            {
+              "text": "第二部分：形成原因",
+              "link": "/tutorials/agent-practice-28-inquiry-reply-framework#第二部分-形成原因"
+            },
+            {
+              "text": "第三部分：处罚和拆除风险",
+              "link": "/tutorials/agent-practice-28-inquiry-reply-framework#第三部分-处罚和拆除风险"
+            },
+            {
+              "text": "第四部分：对生产经营的影响",
+              "link": "/tutorials/agent-practice-28-inquiry-reply-framework#第四部分-对生产经营的影响"
+            },
+            {
+              "text": "第五部分：整改和保障措施",
+              "link": "/tutorials/agent-practice-28-inquiry-reply-framework#第五部分-整改和保障措施"
+            },
+            {
+              "text": "第六部分：中介机构核查",
+              "link": "/tutorials/agent-practice-28-inquiry-reply-framework#第六部分-中介机构核查"
+            },
+            {
+              "text": "第七部分：明确意见",
+              "link": "/tutorials/agent-practice-28-inquiry-reply-framework#第七部分-明确意见"
+            }
+          ]
+        },
+        {
+          "text": "七、客户材料不够，就不要提前把结论写死",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#七、客户材料不够-就不要提前把结论写死"
+        },
+        {
+          "text": "八、问询回复应该“事实在前，结论在后”",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#八、问询回复应该-事实在前-结论在后"
+        },
+        {
+          "text": "九、律师意见一定要对应监管要求",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#九、律师意见一定要对应监管要求"
+        },
+        {
+          "text": "十、案例引用不用堆太多",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#十、案例引用不用堆太多"
+        },
+        {
+          "text": "十一、写完一道，先复核一道",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#十一、写完一道-先复核一道"
+        },
+        {
+          "text": "十二、完整流程其实是",
+          "link": "/tutorials/agent-practice-28-inquiry-reply-framework#十二、完整流程其实是"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3179,20 +3825,56 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、复核Agent先独立拆题",
-          "link": "/tutorials/agent-practice-29-inquiry-reply-review#一、复核agent先独立拆题"
+          "text": "一、为什么最好换一个Agent",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#一、为什么最好换一个agent"
         },
         {
-          "text": "二、重点找四类问题",
-          "link": "/tutorials/agent-practice-29-inquiry-reply-review#二、重点找四类问题"
+          "text": "二、先重新拆问询，不要相信原来的拆法",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#二、先重新拆问询-不要相信原来的拆法"
         },
         {
-          "text": "三、再核数据和材料支撑",
-          "link": "/tutorials/agent-practice-29-inquiry-reply-review#三、再核数据和材料支撑"
+          "text": "三、最好生成“问题—回答”对应表",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#三、最好生成-问题—回答-对应表"
         },
         {
-          "text": "四、可以模拟监管追问",
-          "link": "/tutorials/agent-practice-29-inquiry-reply-review#四、可以模拟监管追问"
+          "text": "四、重点找“写了很多，其实没回答”",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#四、重点找-写了很多-其实没回答"
+        },
+        {
+          "text": "五、检查所有“发表明确意见”的要求",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#五、检查所有-发表明确意见-的要求"
+        },
+        {
+          "text": "六、检查是不是用案例代替了当前项目事实",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#六、检查是不是用案例代替了当前项目事实"
+        },
+        {
+          "text": "七、专门检查数字和表格",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#七、专门检查数字和表格"
+        },
+        {
+          "text": "八、重要事实最好和原申报文件再对一次",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#八、重要事实最好和原申报文件再对一次"
+        },
+        {
+          "text": "九、检查“结论是不是太强”",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#九、检查-结论是不是太强"
+        },
+        {
+          "text": "十、也要检查“结论是不是太弱”",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#十、也要检查-结论是不是太弱"
+        },
+        {
+          "text": "十一、不要让第二个Agent一发现问题就自动改",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#十一、不要让第二个agent一发现问题就自动改"
+        },
+        {
+          "text": "十二、最后再让它模拟一次监管追问",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#十二、最后再让它模拟一次监管追问"
+        },
+        {
+          "text": "十三、完整的复核流程就是",
+          "link": "/tutorials/agent-practice-29-inquiry-reply-review#十三、完整的复核流程就是"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3218,20 +3900,94 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、统一抽取同一事项",
-          "link": "/tutorials/agent-practice-30-cross-document-consistency#一、统一抽取同一事项"
+          "text": "一、这次不是检查某一份文件，而是把几份文件放在一起检查",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#一、这次不是检查某一份文件-而是把几份文件放在一起检查"
         },
         {
-          "text": "二、先统一口径再判断冲突",
-          "link": "/tutorials/agent-practice-30-cross-document-consistency#二、先统一口径再判断冲突"
+          "text": "二、第一类最值得检查的是基础公司信息",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#二、第一类最值得检查的是基础公司信息"
         },
         {
-          "text": "三、检查“遗漏型不一致”",
-          "link": "/tutorials/agent-practice-30-cross-document-consistency#三、检查-遗漏型不一致"
+          "text": "三、历史沿革尤其适合跨文件检查",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#三、历史沿革尤其适合跨文件检查"
         },
         {
-          "text": "四、发现冲突后回到底稿",
-          "link": "/tutorials/agent-practice-30-cross-document-consistency#四、发现冲突后回到底稿"
+          "text": "四、股权数据一定要重点核对",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#四、股权数据一定要重点核对"
+        },
+        {
+          "text": "五、业务和重大合同也可以互相校验",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#五、业务和重大合同也可以互相校验"
+        },
+        {
+          "text": "六、财务数字不要简单要求“完全一样”",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#六、财务数字不要简单要求-完全一样"
+        },
+        {
+          "text": "七、专业分工不同，也不能机械要求表述完全一致",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#七、专业分工不同-也不能机械要求表述完全一致"
+        },
+        {
+          "text": "八、特别关注“一边披露了，另一边完全没写”",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#八、特别关注-一边披露了-另一边完全没写"
+        },
+        {
+          "text": "九、还要关注不同文件的截止日期",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#九、还要关注不同文件的截止日期"
+        },
+        {
+          "text": "十、最好先定义一张“跨文件核对清单”",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#十、最好先定义一张-跨文件核对清单",
+          "items": [
+            {
+              "text": "主体信息",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#主体信息"
+            },
+            {
+              "text": "历史沿革",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#历史沿革"
+            },
+            {
+              "text": "财务数据",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#财务数据"
+            },
+            {
+              "text": "主要资产",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#主要资产"
+            },
+            {
+              "text": "重大业务事项",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#重大业务事项"
+            },
+            {
+              "text": "法律风险",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#法律风险"
+            },
+            {
+              "text": "人员信息",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#人员信息"
+            },
+            {
+              "text": "其他重要披露",
+              "link": "/tutorials/agent-practice-30-cross-document-consistency#其他重要披露"
+            }
+          ]
+        },
+        {
+          "text": "十一、输出最好是一张“跨文件差异表”",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#十一、输出最好是一张-跨文件差异表"
+        },
+        {
+          "text": "十二、最好先找问题，不要让Agent直接修改所有文件",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#十二、最好先找问题-不要让agent直接修改所有文件"
+        },
+        {
+          "text": "十三、不同Agent还可以分别站在不同中介视角检查",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#十三、不同agent还可以分别站在不同中介视角检查"
+        },
+        {
+          "text": "十四、这项工作特别适合在申报前和每轮更新后做",
+          "link": "/tutorials/agent-practice-30-cross-document-consistency#十四、这项工作特别适合在申报前和每轮更新后做"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3257,24 +4013,90 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、不是把旧清单原样再发一遍",
-          "link": "/tutorials/agent-practice-31-period-update-dd-list#一、不是把旧清单原样再发一遍"
+          "text": "一、不要把上一期尽调清单原样再发一遍",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#一、不要把上一期尽调清单原样再发一遍"
         },
         {
-          "text": "二、先读上一期成果再出清单",
-          "link": "/tutorials/agent-practice-31-period-update-dd-list#二、先读上一期成果再出清单"
+          "text": "二、先让Agent把上一期项目完整看一遍",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#二、先让agent把上一期项目完整看一遍"
         },
         {
-          "text": "三、重点识别动态资料",
-          "link": "/tutorials/agent-practice-31-period-update-dd-list#三、重点识别动态资料"
+          "text": "三、重点找那些“会随着时间变化”的资料",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#三、重点找那些-会随着时间变化-的资料",
+          "items": [
+            {
+              "text": "工商和公司治理",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#工商和公司治理"
+            },
+            {
+              "text": "股权情况",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#股权情况"
+            },
+            {
+              "text": "资质许可",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#资质许可"
+            },
+            {
+              "text": "主要资产",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#主要资产"
+            },
+            {
+              "text": "重大合同",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#重大合同"
+            },
+            {
+              "text": "诉讼、仲裁和行政处罚",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#诉讼、仲裁和行政处罚"
+            },
+            {
+              "text": "劳动用工",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#劳动用工"
+            },
+            {
+              "text": "关联方和关联交易",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#关联方和关联交易"
+            },
+            {
+              "text": "对外担保、借款和重大负债",
+              "link": "/tutorials/agent-practice-31-period-update-dd-list#对外担保、借款和重大负债"
+            }
+          ]
         },
         {
-          "text": "四、把上一期未决和到期事项带进来",
-          "link": "/tutorials/agent-practice-31-period-update-dd-list#四、把上一期未决和到期事项带进来"
+          "text": "四、还要检查上一期有哪些“待核验事项”",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#四、还要检查上一期有哪些-待核验事项"
         },
         {
-          "text": "五、要求要写具体",
-          "link": "/tutorials/agent-practice-31-period-update-dd-list#五、要求要写具体"
+          "text": "五、尤其要检查“已经到期”的事项",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#五、尤其要检查-已经到期-的事项"
+        },
+        {
+          "text": "六、清单一定要写得具体，不要只写“请更新”",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#六、清单一定要写得具体-不要只写-请更新"
+        },
+        {
+          "text": "七、最好区分“必须提供”和“如有变化请提供”",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#七、最好区分-必须提供-和-如有变化请提供"
+        },
+        {
+          "text": "八、清单里最好直接设置企业回复栏",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#八、清单里最好直接设置企业回复栏"
+        },
+        {
+          "text": "九、尽量沿用原来的尽调清单编号",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#九、尽量沿用原来的尽调清单编号"
+        },
+        {
+          "text": "十、还可以让Agent先预测“这一次最可能变化的项目”",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#十、还可以让agent先预测-这一次最可能变化的项目"
+        },
+        {
+          "text": "十一、这一步做完以后，再向企业正式要资料",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#十一、这一步做完以后-再向企业正式要资料"
+        },
+        {
+          "text": "十二、企业补资料回来以后，才进入下一阶段",
+          "link": "/tutorials/agent-practice-31-period-update-dd-list#十二、企业补资料回来以后-才进入下一阶段"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3300,24 +4122,86 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先核对企业是否把清单答完",
-          "link": "/tutorials/agent-practice-32-incremental-verification#一、先核对企业是否把清单答完"
+          "text": "一、先把“上一期”和“本期新增”放在一起看",
+          "link": "/tutorials/agent-practice-32-incremental-verification#一、先把-上一期-和-本期新增-放在一起看"
         },
         {
-          "text": "二、识别新增、变更、到期和新进展",
-          "link": "/tutorials/agent-practice-32-incremental-verification#二、识别新增、变更、到期和新进展"
+          "text": "二、先检查企业是不是把清单里的资料都交回来了",
+          "link": "/tutorials/agent-practice-32-incremental-verification#二、先检查企业是不是把清单里的资料都交回来了"
         },
         {
-          "text": "三、企业材料之外再做外部更新核查",
-          "link": "/tutorials/agent-practice-32-incremental-verification#三、企业材料之外再做外部更新核查"
+          "text": "三、再让Agent识别真正发生变化的事项",
+          "link": "/tutorials/agent-practice-32-incremental-verification#三、再让agent识别真正发生变化的事项"
         },
         {
-          "text": "四、先生成报告期变动表和更新计划",
-          "link": "/tutorials/agent-practice-32-incremental-verification#四、先生成报告期变动表和更新计划"
+          "text": "四、企业材料之外，还要再跑一轮MCP和公开核查",
+          "link": "/tutorials/agent-practice-32-incremental-verification#四、企业材料之外-还要再跑一轮mcp和公开核查"
         },
         {
-          "text": "五、确认后只更新受影响章节",
-          "link": "/tutorials/agent-practice-32-incremental-verification#五、确认后只更新受影响章节"
+          "text": "五、MCP用不了，就自动切换到官方渠道",
+          "link": "/tutorials/agent-practice-32-incremental-verification#五、mcp用不了-就自动切换到官方渠道"
+        },
+        {
+          "text": "六、最好先生成一张“报告期变动表”",
+          "link": "/tutorials/agent-practice-32-incremental-verification#六、最好先生成一张-报告期变动表"
+        },
+        {
+          "text": "七、不要只找“新增”，还要找“旧事项的新状态”",
+          "link": "/tutorials/agent-practice-32-incremental-verification#七、不要只找-新增-还要找-旧事项的新状态"
+        },
+        {
+          "text": "八、然后再生成“补充法律尽调更新计划”",
+          "link": "/tutorials/agent-practice-32-incremental-verification#八、然后再生成-补充法律尽调更新计划",
+          "items": [
+            {
+              "text": "1. 公司治理",
+              "link": "/tutorials/agent-practice-32-incremental-verification#_1-公司治理"
+            },
+            {
+              "text": "2. 重大合同",
+              "link": "/tutorials/agent-practice-32-incremental-verification#_2-重大合同"
+            },
+            {
+              "text": "3. 诉讼仲裁",
+              "link": "/tutorials/agent-practice-32-incremental-verification#_3-诉讼仲裁"
+            },
+            {
+              "text": "4. 经营资质",
+              "link": "/tutorials/agent-practice-32-incremental-verification#_4-经营资质"
+            }
+          ]
+        },
+        {
+          "text": "九、律师先确认计划，再开始执行",
+          "link": "/tutorials/agent-practice-32-incremental-verification#九、律师先确认计划-再开始执行"
+        },
+        {
+          "text": "十、更新时只处理受影响的章节",
+          "link": "/tutorials/agent-practice-32-incremental-verification#十、更新时只处理受影响的章节"
+        },
+        {
+          "text": "十一、可以直接在上一版本基础上做“增量修改”",
+          "link": "/tutorials/agent-practice-32-incremental-verification#十一、可以直接在上一版本基础上做-增量修改"
+        },
+        {
+          "text": "十二、报告格式继续遵守原项目模板和通用指令",
+          "link": "/tutorials/agent-practice-32-incremental-verification#十二、报告格式继续遵守原项目模板和通用指令"
+        },
+        {
+          "text": "十三、原来的“待核验”也要逐项重新检查",
+          "link": "/tutorials/agent-practice-32-incremental-verification#十三、原来的-待核验-也要逐项重新检查"
+        },
+        {
+          "text": "十四、新资料也可能推翻上一期的判断",
+          "link": "/tutorials/agent-practice-32-incremental-verification#十四、新资料也可能推翻上一期的判断"
+        },
+        {
+          "text": "十五、更新完成后，再让Agent比较新旧版本",
+          "link": "/tutorials/agent-practice-32-incremental-verification#十五、更新完成后-再让agent比较新旧版本"
+        },
+        {
+          "text": "十六、完整流程应该是这样",
+          "link": "/tutorials/agent-practice-32-incremental-verification#十六、完整流程应该是这样"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3343,20 +4227,98 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先整理事实，再提炼法律问题",
-          "link": "/tutorials/agent-practice-33-litigation-analysis-report#一、先整理事实-再提炼法律问题"
+          "text": "一、不要一上来就问AI“这个案子能不能赢”",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#一、不要一上来就问ai-这个案子能不能赢"
         },
         {
-          "text": "二、类案检索要围绕真正争议点",
-          "link": "/tutorials/agent-practice-33-litigation-analysis-report#二、类案检索要围绕真正争议点"
+          "text": "二、先让Agent把案件事实整理清楚",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#二、先让agent把案件事实整理清楚"
         },
         {
-          "text": "三、同时找支持和不支持我方的案件",
-          "link": "/tutorials/agent-practice-33-litigation-analysis-report#三、同时找支持和不支持我方的案件"
+          "text": "三、再让Agent提炼真正需要检索的法律问题",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#三、再让agent提炼真正需要检索的法律问题"
         },
         {
-          "text": "四、回到本案分析证据",
-          "link": "/tutorials/agent-practice-33-litigation-analysis-report#四、回到本案分析证据"
+          "text": "四、通过法律数据库MCP做多轮类案检索",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#四、通过法律数据库mcp做多轮类案检索"
+        },
+        {
+          "text": "五、不要只找支持我方的案例",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#五、不要只找支持我方的案例"
+        },
+        {
+          "text": "六、案例筛选最重要的是“事实相似”",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#六、案例筛选最重要的是-事实相似"
+        },
+        {
+          "text": "七、一定要看法院“为什么这么判”",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#七、一定要看法院-为什么这么判"
+        },
+        {
+          "text": "八、最好同时关注法院层级和审级",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#八、最好同时关注法院层级和审级"
+        },
+        {
+          "text": "九、类案检索结束以后，再回到当前案件",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#九、类案检索结束以后-再回到当前案件"
+        },
+        {
+          "text": "十、诉讼案件分析报告不要只写法律结论",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#十、诉讼案件分析报告不要只写法律结论",
+          "items": [
+            {
+              "text": "1. 案件基本情况",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_1-案件基本情况"
+            },
+            {
+              "text": "2. 事实时间线",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_2-事实时间线"
+            },
+            {
+              "text": "3. 核心争议问题",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_3-核心争议问题"
+            },
+            {
+              "text": "4. 法律依据",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_4-法律依据"
+            },
+            {
+              "text": "5. 类案检索结果",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_5-类案检索结果"
+            },
+            {
+              "text": "6. 类案横向比较",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_6-类案横向比较"
+            },
+            {
+              "text": "7. 当前案件分析",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_7-当前案件分析"
+            },
+            {
+              "text": "8. 初步诉讼策略",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_8-初步诉讼策略"
+            },
+            {
+              "text": "9. 待核验事项",
+              "link": "/tutorials/agent-practice-33-litigation-analysis-report#_9-待核验事项"
+            }
+          ]
+        },
+        {
+          "text": "十一、最好把“证据情况”一起放进分析",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#十一、最好把-证据情况-一起放进分析"
+        },
+        {
+          "text": "十二、把“有利因素”和“不利因素”都写出来",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#十二、把-有利因素-和-不利因素-都写出来"
+        },
+        {
+          "text": "十三、最终报告格式继续调用通用法律文件格式",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#十三、最终报告格式继续调用通用法律文件格式"
+        },
+        {
+          "text": "十四、这份报告可以成为后面整个诉讼工作的基础",
+          "link": "/tutorials/agent-practice-33-litigation-analysis-report#十四、这份报告可以成为后面整个诉讼工作的基础"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3382,24 +4344,66 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先盘点全部证据",
-          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#一、先盘点全部证据"
+          "text": "一、不要只做一份传统证据目录",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#一、不要只做一份传统证据目录"
         },
         {
-          "text": "二、从争议焦点反推待证明事实",
-          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#二、从争议焦点反推待证明事实"
+          "text": "二、先让Agent把全部证据盘一遍",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#二、先让agent把全部证据盘一遍"
         },
         {
-          "text": "三、判断证明力度和缺口",
-          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#三、判断证明力度和缺口"
+          "text": "三、再从案件分析报告里提取“需要证明的事实”",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#三、再从案件分析报告里提取-需要证明的事实"
         },
         {
-          "text": "四、同时找对我方不利的证据",
-          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#四、同时找对我方不利的证据"
+          "text": "四、把证据放到“事实”下面，而不是只按文件排序",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#四、把证据放到-事实-下面-而不是只按文件排序",
+          "items": [
+            {
+              "text": "事实一：双方约定2026年5月31日前交付",
+              "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#事实一-双方约定2026年5月31日前交付"
+            },
+            {
+              "text": "事实二：对方未按期交付",
+              "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#事实二-对方未按期交付"
+            }
+          ]
         },
         {
-          "text": "五、形成三份成果",
-          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#五、形成三份成果"
+          "text": "五、每个争议焦点都要检查证据够不够",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#五、每个争议焦点都要检查证据够不够"
+        },
+        {
+          "text": "六、最好给证据做一个初步“证明力度”判断",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#六、最好给证据做一个初步-证明力度-判断"
+        },
+        {
+          "text": "七、重点找“只有客户说，没有证据”的事实",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#七、重点找-只有客户说-没有证据-的事实"
+        },
+        {
+          "text": "八、还要检查证据之间有没有互相冲突",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#八、还要检查证据之间有没有互相冲突"
+        },
+        {
+          "text": "九、证据本身也要看真实性和完整性问题",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#九、证据本身也要看真实性和完整性问题"
+        },
+        {
+          "text": "十、最好顺便生成一份“补证清单”",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#十、最好顺便生成一份-补证清单"
+        },
+        {
+          "text": "十一、还可以提前判断对方可能用什么证据反驳",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#十一、还可以提前判断对方可能用什么证据反驳"
+        },
+        {
+          "text": "十二、最后形成三份成果最实用",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#十二、最后形成三份成果最实用"
+        },
+        {
+          "text": "十三、这样后面写诉状时会简单很多",
+          "link": "/tutorials/agent-practice-34-fact-evidence-issue-map#十三、这样后面写诉状时会简单很多"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3425,20 +4429,60 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先让Agent重讲一遍对方的案件故事",
-          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#一、先让agent重讲一遍对方的案件故事"
+          "text": "一、为什么起诉前要先模拟对方",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#一、为什么起诉前要先模拟对方"
         },
         {
-          "text": "二、重点推演质量纠纷的攻击线",
-          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#二、重点推演质量纠纷的攻击线"
+          "text": "二、先让Agent完整模拟对方的“案件故事”",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#二、先让agent完整模拟对方的-案件故事"
         },
         {
-          "text": "三、专门攻击我方证据",
-          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#三、专门攻击我方证据"
+          "text": "三、第一条攻击路径：货物到底有没有质量问题",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#三、第一条攻击路径-货物到底有没有质量问题"
         },
         {
-          "text": "四、挑出最危险的三个点",
-          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#四、挑出最危险的三个点"
+          "text": "四、第二条攻击路径：买方有没有及时提出质量异议",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#四、第二条攻击路径-买方有没有及时提出质量异议"
+        },
+        {
+          "text": "五、第三条攻击路径：卖方有没有“承认”质量问题",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#五、第三条攻击路径-卖方有没有-承认-质量问题"
+        },
+        {
+          "text": "六、第四条攻击路径：买方会拿什么证明“质量有问题”",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#六、第四条攻击路径-买方会拿什么证明-质量有问题"
+        },
+        {
+          "text": "七、第五条攻击路径：质量问题到底是谁造成的",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#七、第五条攻击路径-质量问题到底是谁造成的"
+        },
+        {
+          "text": "八、第六条攻击路径：买方有没有权拒付全部货款",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#八、第六条攻击路径-买方有没有权拒付全部货款"
+        },
+        {
+          "text": "九、第七条攻击路径：买方会不会提出反诉",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#九、第七条攻击路径-买方会不会提出反诉"
+        },
+        {
+          "text": "十、最重要的是让Agent攻击我们的证据",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#十、最重要的是让agent攻击我们的证据"
+        },
+        {
+          "text": "十一、最好让Agent形成一张“对方攻击路径表”",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#十一、最好让agent形成一张-对方攻击路径表"
+        },
+        {
+          "text": "十二、再让Agent挑出“最危险的三个问题”",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#十二、再让agent挑出-最危险的三个问题"
+        },
+        {
+          "text": "十三、模拟完成以后，再做一次补证",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#十三、模拟完成以后-再做一次补证"
+        },
+        {
+          "text": "十四、这一步的目标不是证明“对方一定会这么答”",
+          "link": "/tutorials/agent-practice-35-simulate-defense-attacks#十四、这一步的目标不是证明-对方一定会这么答"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3464,24 +4508,66 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、模板只学写法，不继承旧案事实",
-          "link": "/tutorials/agent-practice-36-complaint-from-template#一、模板只学写法-不继承旧案事实"
+          "text": "一、不要让AI自己决定“起诉状应该怎么写”",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#一、不要让ai自己决定-起诉状应该怎么写"
         },
         {
-          "text": "二、同时提供当前案件成果",
-          "link": "/tutorials/agent-practice-36-complaint-from-template#二、同时提供当前案件成果"
+          "text": "二、模板只学“写法”，不能继承旧案件事实",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#二、模板只学-写法-不能继承旧案件事实"
         },
         {
-          "text": "三、诉讼请求先单独核",
-          "link": "/tutorials/agent-practice-36-complaint-from-template#三、诉讼请求先单独核"
+          "text": "三、起诉状最好同时给Agent几类输入",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#三、起诉状最好同时给agent几类输入",
+          "items": [
+            {
+              "text": "当前案件材料",
+              "link": "/tutorials/agent-practice-36-complaint-from-template#当前案件材料"
+            },
+            {
+              "text": "案件分析报告",
+              "link": "/tutorials/agent-practice-36-complaint-from-template#案件分析报告"
+            },
+            {
+              "text": "事实—证据对应表",
+              "link": "/tutorials/agent-practice-36-complaint-from-template#事实—证据对应表"
+            },
+            {
+              "text": "对方答辩和攻击路径",
+              "link": "/tutorials/agent-practice-36-complaint-from-template#对方答辩和攻击路径"
+            }
+          ]
         },
         {
-          "text": "四、质量争议不要无视",
-          "link": "/tutorials/agent-practice-36-complaint-from-template#四、质量争议不要无视"
+          "text": "四、诉讼请求要先单独核对",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#四、诉讼请求要先单独核对"
         },
         {
-          "text": "五、起草后做证据反查和模板残留检查",
-          "link": "/tutorials/agent-practice-36-complaint-from-template#五、起草后做证据反查和模板残留检查"
+          "text": "五、质量纠纷案件，事实部分不要回避“质量争议”",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#五、质量纠纷案件-事实部分不要回避-质量争议"
+        },
+        {
+          "text": "六、只把有证据支持的事实写成确定事实",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#六、只把有证据支持的事实写成确定事实"
+        },
+        {
+          "text": "七、起诉状不要写成法律研究报告",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#七、起诉状不要写成法律研究报告"
+        },
+        {
+          "text": "八、最好先出初稿，再做一次“证据反查”",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#八、最好先出初稿-再做一次-证据反查"
+        },
+        {
+          "text": "九、还要拿前面的“对方攻击路径”回来检查一次",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#九、还要拿前面的-对方攻击路径-回来检查一次"
+        },
+        {
+          "text": "十、最好让Agent直接修改Word模板",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#十、最好让agent直接修改word模板"
+        },
+        {
+          "text": "十一、人工重点复核几个地方",
+          "link": "/tutorials/agent-practice-36-complaint-from-template#十一、人工重点复核几个地方"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3507,20 +4593,60 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、被告视角重点找可被反证打掉的表述",
-          "link": "/tutorials/agent-practice-37-complaint-review#一、被告视角重点找可被反证打掉的表述"
+          "text": "一、第一轮：站在被告律师角度攻击起诉状",
+          "link": "/tutorials/agent-practice-37-complaint-review#一、第一轮-站在被告律师角度攻击起诉状"
         },
         {
-          "text": "二、法官视角重点看事实链是否完整",
-          "link": "/tutorials/agent-practice-37-complaint-review#二、法官视角重点看事实链是否完整"
+          "text": "二、重点攻击“质量问题”这条主线",
+          "link": "/tutorials/agent-practice-37-complaint-review#二、重点攻击-质量问题-这条主线"
         },
         {
-          "text": "三、把关键事实和证据再对应一次",
-          "link": "/tutorials/agent-practice-37-complaint-review#三、把关键事实和证据再对应一次"
+          "text": "三、检查诉讼请求有没有给对方留下明显攻击点",
+          "link": "/tutorials/agent-practice-37-complaint-review#三、检查诉讼请求有没有给对方留下明显攻击点"
         },
         {
-          "text": "四、先出问题清单，不要直接改",
-          "link": "/tutorials/agent-practice-37-complaint-review#四、先出问题清单-不要直接改"
+          "text": "四、检查事实是不是写得“比证据更强”",
+          "link": "/tutorials/agent-practice-37-complaint-review#四、检查事实是不是写得-比证据更强"
+        },
+        {
+          "text": "五、再让Agent模拟一份简短答辩提纲",
+          "link": "/tutorials/agent-practice-37-complaint-review#五、再让agent模拟一份简短答辩提纲"
+        },
+        {
+          "text": "六、第二轮：站到法官角度重新看",
+          "link": "/tutorials/agent-practice-37-complaint-review#六、第二轮-站到法官角度重新看"
+        },
+        {
+          "text": "七、法官首先会看：诉讼请求到底清不清楚",
+          "link": "/tutorials/agent-practice-37-complaint-review#七、法官首先会看-诉讼请求到底清不清楚"
+        },
+        {
+          "text": "八、法官还会看：你的故事有没有断点",
+          "link": "/tutorials/agent-practice-37-complaint-review#八、法官还会看-你的故事有没有断点"
+        },
+        {
+          "text": "九、法官会问：你每一个关键事实有什么证据",
+          "link": "/tutorials/agent-practice-37-complaint-review#九、法官会问-你每一个关键事实有什么证据"
+        },
+        {
+          "text": "十、法官还会特别关注“质量争议到底是什么”",
+          "link": "/tutorials/agent-practice-37-complaint-review#十、法官还会特别关注-质量争议到底是什么"
+        },
+        {
+          "text": "十一、最好生成一份“提交前复核清单”",
+          "link": "/tutorials/agent-practice-37-complaint-review#十一、最好生成一份-提交前复核清单"
+        },
+        {
+          "text": "十二、最好用第二个Agent做，而不是原Agent自己复核",
+          "link": "/tutorials/agent-practice-37-complaint-review#十二、最好用第二个agent做-而不是原agent自己复核"
+        },
+        {
+          "text": "十三、复核阶段先不要让它自己改",
+          "link": "/tutorials/agent-practice-37-complaint-review#十三、复核阶段先不要让它自己改"
+        },
+        {
+          "text": "十四、确认以后，再回到原起诉状做最后修改",
+          "link": "/tutorials/agent-practice-37-complaint-review#十四、确认以后-再回到原起诉状做最后修改"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3546,24 +4672,86 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先拆原告每个主张",
-          "link": "/tutorials/agent-practice-38-defense-statement#一、先拆原告每个主张"
+          "text": "一、答辩状一定要先围绕原告的起诉状来写",
+          "link": "/tutorials/agent-practice-38-defense-statement#一、答辩状一定要先围绕原告的起诉状来写"
         },
         {
-          "text": "二、质量抗辩必须具体",
-          "link": "/tutorials/agent-practice-38-defense-statement#二、质量抗辩必须具体"
+          "text": "二、不要为了答辩而否认所有事实",
+          "link": "/tutorials/agent-practice-38-defense-statement#二、不要为了答辩而否认所有事实"
         },
         {
-          "text": "三、解释为什么质量问题影响付款",
-          "link": "/tutorials/agent-practice-38-defense-statement#三、解释为什么质量问题影响付款"
+          "text": "三、质量纠纷里，第一步先确定“质量标准”",
+          "link": "/tutorials/agent-practice-38-defense-statement#三、质量纠纷里-第一步先确定-质量标准"
         },
         {
-          "text": "四、损失和反诉单独判断",
-          "link": "/tutorials/agent-practice-38-defense-statement#四、损失和反诉单独判断"
+          "text": "四、第二步要把“质量问题”写具体",
+          "link": "/tutorials/agent-practice-38-defense-statement#四、第二步要把-质量问题-写具体"
         },
         {
-          "text": "五、仍然用历史优质答辩状模板",
-          "link": "/tutorials/agent-practice-38-defense-statement#五、仍然用历史优质答辩状模板"
+          "text": "五、第三步重点整理“质量异议时间线”",
+          "link": "/tutorials/agent-practice-38-defense-statement#五、第三步重点整理-质量异议时间线"
+        },
+        {
+          "text": "六、第四步检查卖方有没有实际处理过质量问题",
+          "link": "/tutorials/agent-practice-38-defense-statement#六、第四步检查卖方有没有实际处理过质量问题"
+        },
+        {
+          "text": "七、真正关键的是解释：为什么没有支付剩余货款",
+          "link": "/tutorials/agent-practice-38-defense-statement#七、真正关键的是解释-为什么没有支付剩余货款"
+        },
+        {
+          "text": "八、如果要主张损失，一定不要只写一个总金额",
+          "link": "/tutorials/agent-practice-38-defense-statement#八、如果要主张损失-一定不要只写一个总金额"
+        },
+        {
+          "text": "九、还要判断：只是答辩，还是需要提出反诉",
+          "link": "/tutorials/agent-practice-38-defense-statement#九、还要判断-只是答辩-还是需要提出反诉"
+        },
+        {
+          "text": "十、答辩状不要把所有不利事实藏掉",
+          "link": "/tutorials/agent-practice-38-defense-statement#十、答辩状不要把所有不利事实藏掉"
+        },
+        {
+          "text": "十一、可以先让Agent做一张“原告诉请—我方答辩”对应表",
+          "link": "/tutorials/agent-practice-38-defense-statement#十一、可以先让agent做一张-原告诉请—我方答辩-对应表"
+        },
+        {
+          "text": "十二、同样优先提供一份以前满意的答辩状模板",
+          "link": "/tutorials/agent-practice-38-defense-statement#十二、同样优先提供一份以前满意的答辩状模板"
+        },
+        {
+          "text": "十三、先形成“答辩框架”，确认以后再写全文",
+          "link": "/tutorials/agent-practice-38-defense-statement#十三、先形成-答辩框架-确认以后再写全文",
+          "items": [
+            {
+              "text": "答辩观点一",
+              "link": "/tutorials/agent-practice-38-defense-statement#答辩观点一"
+            },
+            {
+              "text": "答辩观点二",
+              "link": "/tutorials/agent-practice-38-defense-statement#答辩观点二"
+            },
+            {
+              "text": "答辩观点三",
+              "link": "/tutorials/agent-practice-38-defense-statement#答辩观点三"
+            },
+            {
+              "text": "答辩观点四",
+              "link": "/tutorials/agent-practice-38-defense-statement#答辩观点四"
+            },
+            {
+              "text": "答辩观点五",
+              "link": "/tutorials/agent-practice-38-defense-statement#答辩观点五"
+            }
+          ]
+        },
+        {
+          "text": "十四、答辩状初稿完成以后，再做一次“证据反查”",
+          "link": "/tutorials/agent-practice-38-defense-statement#十四、答辩状初稿完成以后-再做一次-证据反查"
+        },
+        {
+          "text": "十五、最后再让另一个Agent站在原告角度攻击一次",
+          "link": "/tutorials/agent-practice-38-defense-statement#十五、最后再让另一个agent站在原告角度攻击一次"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3589,24 +4777,74 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先把真实答辩拆成最小主张",
-          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#一、先把真实答辩拆成最小主张"
+          "text": "一、不要收到答辩状以后重新从头分析",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#一、不要收到答辩状以后重新从头分析"
         },
         {
-          "text": "二、与起诉前模拟表逐项对应",
-          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#二、与起诉前模拟表逐项对应"
+          "text": "二、先让Agent把答辩状拆成一条一条的具体主张",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#二、先让agent把答辩状拆成一条一条的具体主张"
         },
         {
-          "text": "三、对方新证据单独分析",
-          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#三、对方新证据单独分析"
+          "text": "三、再和起诉前的“模拟攻击路径”进行对照",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#三、再和起诉前的-模拟攻击路径-进行对照"
         },
         {
-          "text": "四、真实答辩可能改变案件结构",
-          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#四、真实答辩可能改变案件结构"
+          "text": "四、最重要的是找“新增攻击点”",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#四、最重要的是找-新增攻击点"
         },
         {
-          "text": "五、形成案件策略更新",
-          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#五、形成案件策略更新"
+          "text": "五、区分“纯粹抗辩”和“需要证据支持的事实主张”",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#五、区分-纯粹抗辩-和-需要证据支持的事实主张"
+        },
+        {
+          "text": "六、对方引用的证据，要单独拿出来分析",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#六、对方引用的证据-要单独拿出来分析"
+        },
+        {
+          "text": "七、特别检查对方有没有拿我方材料反过来使用",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#七、特别检查对方有没有拿我方材料反过来使用"
+        },
+        {
+          "text": "八、对方如果提出损失，一定要拆开算",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#八、对方如果提出损失-一定要拆开算"
+        },
+        {
+          "text": "九、如果对方准备反诉，要提前重新评估案件结构",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#九、如果对方准备反诉-要提前重新评估案件结构"
+        },
+        {
+          "text": "十、把答辩观点重新对应到证据表",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#十、把答辩观点重新对应到证据表"
+        },
+        {
+          "text": "十一、这时候还要重新跑一次类案检索",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#十一、这时候还要重新跑一次类案检索"
+        },
+        {
+          "text": "十二、最后重新形成一版“案件策略更新”",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#十二、最后重新形成一版-案件策略更新",
+          "items": [
+            {
+              "text": "风险提高",
+              "link": "/tutorials/agent-practice-39-defense-vs-attack-map#风险提高"
+            },
+            {
+              "text": "新增风险",
+              "link": "/tutorials/agent-practice-39-defense-vs-attack-map#新增风险"
+            },
+            {
+              "text": "暂时降低",
+              "link": "/tutorials/agent-practice-39-defense-vs-attack-map#暂时降低"
+            },
+            {
+              "text": "下一步重点",
+              "link": "/tutorials/agent-practice-39-defense-vs-attack-map#下一步重点"
+            }
+          ]
+        },
+        {
+          "text": "十三、真实答辩出来以后，前面的“模拟”也完成了它的价值",
+          "link": "/tutorials/agent-practice-39-defense-vs-attack-map#十三、真实答辩出来以后-前面的-模拟-也完成了它的价值"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3632,24 +4870,70 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先盘点证据和证明目的",
-          "link": "/tutorials/agent-practice-40-evidence-examination#一、先盘点证据和证明目的"
+          "text": "一、先把对方证据完整盘点一遍",
+          "link": "/tutorials/agent-practice-40-evidence-examination#一、先把对方证据完整盘点一遍"
         },
         {
-          "text": "二、质证重点是“能证明到什么程度”",
-          "link": "/tutorials/agent-practice-40-evidence-examination#二、质证重点是-能证明到什么程度"
+          "text": "二、质证首先要看“证明目的”",
+          "link": "/tutorials/agent-practice-40-evidence-examination#二、质证首先要看-证明目的"
         },
         {
-          "text": "三、质量检测重点看样品对应",
-          "link": "/tutorials/agent-practice-40-evidence-examination#三、质量检测重点看样品对应"
+          "text": "三、不要只做“三性”模板式质证",
+          "link": "/tutorials/agent-practice-40-evidence-examination#三、不要只做-三性-模板式质证"
         },
         {
-          "text": "四、聊天、维修和损失都要看完整链条",
-          "link": "/tutorials/agent-practice-40-evidence-examination#四、聊天、维修和损失都要看完整链条"
+          "text": "四、质量纠纷里，要重点检查“样品和本案货物能不能对应”",
+          "link": "/tutorials/agent-practice-40-evidence-examination#四、质量纠纷里-要重点检查-样品和本案货物能不能对应"
         },
         {
-          "text": "五、先底稿，律师确认后再套自己的质证模板",
-          "link": "/tutorials/agent-practice-40-evidence-examination#五、先底稿-律师确认后再套自己的质证模板"
+          "text": "五、还要区分“内部质量记录”和“客观检测结果”",
+          "link": "/tutorials/agent-practice-40-evidence-examination#五、还要区分-内部质量记录-和-客观检测结果"
+        },
+        {
+          "text": "六、微信聊天记录要看完整上下文",
+          "link": "/tutorials/agent-practice-40-evidence-examination#六、微信聊天记录要看完整上下文"
+        },
+        {
+          "text": "七、维修、更换也不一定等于承认全部质量责任",
+          "link": "/tutorials/agent-practice-40-evidence-examination#七、维修、更换也不一定等于承认全部质量责任"
+        },
+        {
+          "text": "八、下游客户投诉和索赔要单独拆开",
+          "link": "/tutorials/agent-practice-40-evidence-examination#八、下游客户投诉和索赔要单独拆开"
+        },
+        {
+          "text": "九、对方的损失计算表，最好拆到最细",
+          "link": "/tutorials/agent-practice-40-evidence-examination#九、对方的损失计算表-最好拆到最细"
+        },
+        {
+          "text": "十、还要检查证据之间能不能互相对应",
+          "link": "/tutorials/agent-practice-40-evidence-examination#十、还要检查证据之间能不能互相对应"
+        },
+        {
+          "text": "十一、最好逐份形成“质证底稿”",
+          "link": "/tutorials/agent-practice-40-evidence-examination#十一、最好逐份形成-质证底稿",
+          "items": [
+            {
+              "text": "对方证据3：第三方检测报告",
+              "link": "/tutorials/agent-practice-40-evidence-examination#对方证据3-第三方检测报告"
+            }
+          ]
+        },
+        {
+          "text": "十二、再把每份对方证据和我方证据对应起来",
+          "link": "/tutorials/agent-practice-40-evidence-examination#十二、再把每份对方证据和我方证据对应起来"
+        },
+        {
+          "text": "十三、正式质证意见最好继续沿用自己的历史模板",
+          "link": "/tutorials/agent-practice-40-evidence-examination#十三、正式质证意见最好继续沿用自己的历史模板"
+        },
+        {
+          "text": "十四、先出底稿，再出正式版本",
+          "link": "/tutorials/agent-practice-40-evidence-examination#十四、先出底稿-再出正式版本"
+        },
+        {
+          "text": "十五、质量案件尤其要提前标记“可能需要鉴定”的问题",
+          "link": "/tutorials/agent-practice-40-evidence-examination#十五、质量案件尤其要提前标记-可能需要鉴定-的问题"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3675,28 +4959,118 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、直接把最终版起诉状全文放进去",
-          "link": "/tutorials/agent-practice-41-trial-outline#一、直接把最终版起诉状全文放进去"
+          "text": "一、庭审提纲不是重新写一遍案件分析报告",
+          "link": "/tutorials/agent-practice-41-trial-outline#一、庭审提纲不是重新写一遍案件分析报告"
         },
         {
-          "text": "二、证据目录也全文纳入",
-          "link": "/tutorials/agent-practice-41-trial-outline#二、证据目录也全文纳入"
+          "text": "二、我习惯把起诉状全文直接放进庭审提纲",
+          "link": "/tutorials/agent-practice-41-trial-outline#二、我习惯把起诉状全文直接放进庭审提纲"
         },
         {
-          "text": "三、按照真实庭审流程组织",
-          "link": "/tutorials/agent-practice-41-trial-outline#三、按照真实庭审流程组织"
+          "text": "三、证据目录也最好全文放进去",
+          "link": "/tutorials/agent-practice-41-trial-outline#三、证据目录也最好全文放进去"
         },
         {
-          "text": "四、提前模拟最难的问题",
-          "link": "/tutorials/agent-practice-41-trial-outline#四、提前模拟最难的问题"
+          "text": "四、然后按照法庭调查顺序准备发言",
+          "link": "/tutorials/agent-practice-41-trial-outline#四、然后按照法庭调查顺序准备发言",
+          "items": [
+            {
+              "text": "原告陈述",
+              "link": "/tutorials/agent-practice-41-trial-outline#原告陈述"
+            }
+          ]
         },
         {
-          "text": "五、增加速查信息",
-          "link": "/tutorials/agent-practice-41-trial-outline#五、增加速查信息"
+          "text": "五、提前预测法官会归纳哪些争议焦点",
+          "link": "/tutorials/agent-practice-41-trial-outline#五、提前预测法官会归纳哪些争议焦点"
         },
         {
-          "text": "六、继续沿用自己的庭审提纲模板",
-          "link": "/tutorials/agent-practice-41-trial-outline#六、继续沿用自己的庭审提纲模板"
+          "text": "六、每个争议焦点下面直接放我方庭审观点",
+          "link": "/tutorials/agent-practice-41-trial-outline#六、每个争议焦点下面直接放我方庭审观点",
+          "items": [
+            {
+              "text": "关于货物质量问题",
+              "link": "/tutorials/agent-practice-41-trial-outline#关于货物质量问题"
+            }
+          ]
+        },
+        {
+          "text": "七、预测法官会问什么，并提前准备答案",
+          "link": "/tutorials/agent-practice-41-trial-outline#七、预测法官会问什么-并提前准备答案"
+        },
+        {
+          "text": "八、尤其要预测法官最容易追问的不利问题",
+          "link": "/tutorials/agent-practice-41-trial-outline#八、尤其要预测法官最容易追问的不利问题"
+        },
+        {
+          "text": "九、还要预测对方律师会怎么质疑",
+          "link": "/tutorials/agent-practice-41-trial-outline#九、还要预测对方律师会怎么质疑"
+        },
+        {
+          "text": "十、不要只预测问题，还要注明“回答到什么程度”",
+          "link": "/tutorials/agent-practice-41-trial-outline#十、不要只预测问题-还要注明-回答到什么程度"
+        },
+        {
+          "text": "十一、法庭调查阶段也要提前准备我方陈述",
+          "link": "/tutorials/agent-practice-41-trial-outline#十一、法庭调查阶段也要提前准备我方陈述",
+          "items": [
+            {
+              "text": "法庭调查阶段我方重点陈述",
+              "link": "/tutorials/agent-practice-41-trial-outline#法庭调查阶段我方重点陈述"
+            }
+          ]
+        },
+        {
+          "text": "十二、举证和质证部分直接嵌进去",
+          "link": "/tutorials/agent-practice-41-trial-outline#十二、举证和质证部分直接嵌进去",
+          "items": [
+            {
+              "text": "对方证据三：第三方检测报告",
+              "link": "/tutorials/agent-practice-41-trial-outline#对方证据三-第三方检测报告"
+            }
+          ]
+        },
+        {
+          "text": "十三、法庭辩论阶段要另外准备一版发言",
+          "link": "/tutorials/agent-practice-41-trial-outline#十三、法庭辩论阶段要另外准备一版发言",
+          "items": [
+            {
+              "text": "第一，本案的基本事实非常明确",
+              "link": "/tutorials/agent-practice-41-trial-outline#第一-本案的基本事实非常明确"
+            },
+            {
+              "text": "第二，对方提出质量问题，但现有证据不能证明其有权拒付全部货款",
+              "link": "/tutorials/agent-practice-41-trial-outline#第二-对方提出质量问题-但现有证据不能证明其有权拒付全部货款"
+            },
+            {
+              "text": "第三，对方主张损失缺乏完整证据链",
+              "link": "/tutorials/agent-practice-41-trial-outline#第三-对方主张损失缺乏完整证据链"
+            },
+            {
+              "text": "第四，请求法院依法支持我方诉讼请求",
+              "link": "/tutorials/agent-practice-41-trial-outline#第四-请求法院依法支持我方诉讼请求"
+            }
+          ]
+        },
+        {
+          "text": "十四、最后陈述也可以提前准备",
+          "link": "/tutorials/agent-practice-41-trial-outline#十四、最后陈述也可以提前准备"
+        },
+        {
+          "text": "十五、庭审提纲里最好专门做一个“关键数字表”",
+          "link": "/tutorials/agent-practice-41-trial-outline#十五、庭审提纲里最好专门做一个-关键数字表"
+        },
+        {
+          "text": "十六、关键时间也单独做一张表",
+          "link": "/tutorials/agent-practice-41-trial-outline#十六、关键时间也单独做一张表"
+        },
+        {
+          "text": "十七、最好还是给Agent一份自己以前的庭审提纲模板",
+          "link": "/tutorials/agent-practice-41-trial-outline#十七、最好还是给agent一份自己以前的庭审提纲模板"
+        },
+        {
+          "text": "十八、最终目标是：开庭时主要只看这一份文件",
+          "link": "/tutorials/agent-practice-41-trial-outline#十八、最终目标是-开庭时主要只看这一份文件"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3722,24 +5096,104 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先整理庭上真正发生了什么",
-          "link": "/tutorials/agent-practice-42-closing-argument#一、先整理庭上真正发生了什么"
+          "text": "一、代理词不要直接根据开庭前的案件分析报告写",
+          "link": "/tutorials/agent-practice-42-closing-argument#一、代理词不要直接根据开庭前的案件分析报告写"
         },
         {
-          "text": "二、重点找对方承认和前后变化",
-          "link": "/tutorials/agent-practice-42-closing-argument#二、重点找对方承认和前后变化"
+          "text": "二、先让Agent把庭审里真正发生了什么整理出来",
+          "link": "/tutorials/agent-practice-42-closing-argument#二、先让agent把庭审里真正发生了什么整理出来"
         },
         {
-          "text": "三、法官反复问的就是代理词重点",
-          "link": "/tutorials/agent-practice-42-closing-argument#三、法官反复问的就是代理词重点"
+          "text": "三、重点提取“对方庭上的承认”",
+          "link": "/tutorials/agent-practice-42-closing-argument#三、重点提取-对方庭上的承认"
         },
         {
-          "text": "四、围绕庭后真实争议重新收束",
-          "link": "/tutorials/agent-practice-42-closing-argument#四、围绕庭后真实争议重新收束"
+          "text": "四、也要找对方前后表述有没有变化",
+          "link": "/tutorials/agent-practice-42-closing-argument#四、也要找对方前后表述有没有变化"
         },
         {
-          "text": "五、先框架再全文",
-          "link": "/tutorials/agent-practice-42-closing-argument#五、先框架再全文"
+          "text": "五、法官反复问的问题，通常就是代理词要重点回答的问题",
+          "link": "/tutorials/agent-practice-42-closing-argument#五、法官反复问的问题-通常就是代理词要重点回答的问题"
+        },
+        {
+          "text": "六、代理词应该围绕庭审后的真实争议焦点重新组织",
+          "link": "/tutorials/agent-practice-42-closing-argument#六、代理词应该围绕庭审后的真实争议焦点重新组织",
+          "items": [
+            {
+              "text": "第一，买方能否证明涉案货物存在足以影响付款义务的质量问题",
+              "link": "/tutorials/agent-practice-42-closing-argument#第一-买方能否证明涉案货物存在足以影响付款义务的质量问题"
+            },
+            {
+              "text": "第二，即使部分货物存在质量问题，买方是否有权拒绝支付全部剩余货款",
+              "link": "/tutorials/agent-practice-42-closing-argument#第二-即使部分货物存在质量问题-买方是否有权拒绝支付全部剩余货款"
+            },
+            {
+              "text": "第三，买方主张的损失是否真实、确定，并与涉案货物存在因果关系",
+              "link": "/tutorials/agent-practice-42-closing-argument#第三-买方主张的损失是否真实、确定-并与涉案货物存在因果关系"
+            }
+          ]
+        },
+        {
+          "text": "七、质量问题一定要回到“证明到了什么程度”",
+          "link": "/tutorials/agent-practice-42-closing-argument#七、质量问题一定要回到-证明到了什么程度"
+        },
+        {
+          "text": "八、特别要利用“部分质量问题”和“全部拒付货款”之间的比例关系",
+          "link": "/tutorials/agent-practice-42-closing-argument#八、特别要利用-部分质量问题-和-全部拒付货款-之间的比例关系"
+        },
+        {
+          "text": "九、买方主张损失，就要重新检查庭审中到底证明了多少",
+          "link": "/tutorials/agent-practice-42-closing-argument#九、买方主张损失-就要重新检查庭审中到底证明了多少"
+        },
+        {
+          "text": "十、庭审中出现的新事实要特别谨慎",
+          "link": "/tutorials/agent-practice-42-closing-argument#十、庭审中出现的新事实要特别谨慎"
+        },
+        {
+          "text": "十一、如果法院允许庭后补充材料，要同步形成补证清单",
+          "link": "/tutorials/agent-practice-42-closing-argument#十一、如果法院允许庭后补充材料-要同步形成补证清单"
+        },
+        {
+          "text": "十二、代理词最好继续提供自己的历史优质模板",
+          "link": "/tutorials/agent-practice-42-closing-argument#十二、代理词最好继续提供自己的历史优质模板"
+        },
+        {
+          "text": "十三、代理词不要重复起诉状",
+          "link": "/tutorials/agent-practice-42-closing-argument#十三、代理词不要重复起诉状"
+        },
+        {
+          "text": "十四、最好先形成代理词框架，律师确认后再写全文",
+          "link": "/tutorials/agent-practice-42-closing-argument#十四、最好先形成代理词框架-律师确认后再写全文",
+          "items": [
+            {
+              "text": "一、双方对合同成立、货物交付及剩余货款事实基本不存在争议",
+              "link": "/tutorials/agent-practice-42-closing-argument#一、双方对合同成立、货物交付及剩余货款事实基本不存在争议"
+            },
+            {
+              "text": "二、被告现有证据不足以证明涉案全部货物存在足以拒付全部货款的质量问题",
+              "link": "/tutorials/agent-practice-42-closing-argument#二、被告现有证据不足以证明涉案全部货物存在足以拒付全部货款的质量问题"
+            },
+            {
+              "text": "三、售后维修不等于原告承认全部产品存在质量缺陷",
+              "link": "/tutorials/agent-practice-42-closing-argument#三、售后维修不等于原告承认全部产品存在质量缺陷"
+            },
+            {
+              "text": "四、被告关于质量损失的主张缺乏完整的事实和证据基础",
+              "link": "/tutorials/agent-practice-42-closing-argument#四、被告关于质量损失的主张缺乏完整的事实和证据基础"
+            },
+            {
+              "text": "五、被告长期占有并使用涉案货物，却拒绝支付剩余货款，不具有充分依据",
+              "link": "/tutorials/agent-practice-42-closing-argument#五、被告长期占有并使用涉案货物-却拒绝支付剩余货款-不具有充分依据"
+            }
+          ]
+        },
+        {
+          "text": "十五、完成以后再让另一个Agent做一次“法官视角压缩”",
+          "link": "/tutorials/agent-practice-42-closing-argument#十五、完成以后再让另一个agent做一次-法官视角压缩"
+        },
+        {
+          "text": "十六、完整流程可以这样做",
+          "link": "/tutorials/agent-practice-42-closing-argument#十六、完整流程可以这样做"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3765,28 +5219,92 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先拆法院的事实、焦点和结论",
-          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#一、先拆法院的事实、焦点和结论"
+          "text": "一、先把判决拆成三个部分",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#一、先把判决拆成三个部分",
+          "items": [
+            {
+              "text": "第一部分：法院认定的事实",
+              "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#第一部分-法院认定的事实"
+            },
+            {
+              "text": "第二部分：法院认定的争议焦点",
+              "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#第二部分-法院认定的争议焦点"
+            },
+            {
+              "text": "第三部分：法院的最终判断",
+              "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#第三部分-法院的最终判断"
+            }
+          ]
         },
         {
-          "text": "二、与双方核心观点逐项对照",
-          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#二、与双方核心观点逐项对照"
+          "text": "二、不要只看法院“支持谁”，要看法院接受了谁的逻辑",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#二、不要只看法院-支持谁-要看法院接受了谁的逻辑"
         },
         {
-          "text": "三、特别找判决没回应和论证跳跃",
-          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#三、特别找判决没回应和论证跳跃"
+          "text": "三、把判决和我方代理观点逐项对照",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#三、把判决和我方代理观点逐项对照"
         },
         {
-          "text": "四、法律适用重新核",
-          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#四、法律适用重新核"
+          "text": "四、再把被告的核心抗辩也逐项对照",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#四、再把被告的核心抗辩也逐项对照"
         },
         {
-          "text": "五、上诉点按强中弱评估",
-          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#五、上诉点按强中弱评估"
+          "text": "五、重点找“法院没有回应”的观点",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#五、重点找-法院没有回应-的观点"
         },
         {
-          "text": "六、也可以做案件复盘",
-          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#六、也可以做案件复盘"
+          "text": "六、还要找法院有没有“事实认定跳跃”",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#六、还要找法院有没有-事实认定跳跃"
+        },
+        {
+          "text": "七、法律适用也要单独核验",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#七、法律适用也要单独核验"
+        },
+        {
+          "text": "八、准备上诉时最好重新做一次类案检索",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#八、准备上诉时最好重新做一次类案检索"
+        },
+        {
+          "text": "九、不要因为输了就自动建议上诉",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#九、不要因为输了就自动建议上诉"
+        },
+        {
+          "text": "十、上诉分析最好分成“强、中、弱”",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#十、上诉分析最好分成-强、中、弱",
+          "items": [
+            {
+              "text": "强上诉点",
+              "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#强上诉点"
+            },
+            {
+              "text": "中等上诉点",
+              "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#中等上诉点"
+            },
+            {
+              "text": "弱上诉点",
+              "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#弱上诉点"
+            }
+          ]
+        },
+        {
+          "text": "十一、还要判断有没有新证据可以进入二审",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#十一、还要判断有没有新证据可以进入二审"
+        },
+        {
+          "text": "十二、如果决定不上诉，也可以让Agent做案件复盘",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#十二、如果决定不上诉-也可以让agent做案件复盘"
+        },
+        {
+          "text": "十三、如果决定上诉，再让Agent起草上诉状",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#十三、如果决定上诉-再让agent起草上诉状"
+        },
+        {
+          "text": "十四、判决分析最好输出两份文件",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#十四、判决分析最好输出两份文件"
+        },
+        {
+          "text": "十五、完整流程可以这样做",
+          "link": "/tutorials/agent-practice-43-judgment-analysis-appeal#十五、完整流程可以这样做"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3812,28 +5330,100 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先明确想改变什么结果",
-          "link": "/tutorials/agent-practice-44-appeal-drafting#一、先明确想改变什么结果"
+          "text": "一、上诉状不是把一审代理词重新写一遍",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#一、上诉状不是把一审代理词重新写一遍"
         },
         {
-          "text": "二、每个上诉请求对应一个具体错误",
-          "link": "/tutorials/agent-practice-44-appeal-drafting#二、每个上诉请求对应一个具体错误"
+          "text": "二、先确定“上诉结果”想达到什么",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#二、先确定-上诉结果-想达到什么"
         },
         {
-          "text": "三、质量纠纷重点抓证明范围",
-          "link": "/tutorials/agent-practice-44-appeal-drafting#三、质量纠纷重点抓证明范围"
+          "text": "三、每一个上诉请求都要对应具体的一审错误",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#三、每一个上诉请求都要对应具体的一审错误"
         },
         {
-          "text": "四、不要强行否定所有不利事实",
-          "link": "/tutorials/agent-practice-44-appeal-drafting#四、不要强行否定所有不利事实"
+          "text": "四、上诉理由最好按“错误类型”拆开",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#四、上诉理由最好按-错误类型-拆开",
+          "items": [
+            {
+              "text": "事实认定问题",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#事实认定问题"
+            },
+            {
+              "text": "证据采信问题",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#证据采信问题"
+            },
+            {
+              "text": "法律适用问题",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#法律适用问题"
+            },
+            {
+              "text": "程序问题",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#程序问题"
+            }
+          ]
         },
         {
-          "text": "五、先做上诉框架并筛强弱",
-          "link": "/tutorials/agent-practice-44-appeal-drafting#五、先做上诉框架并筛强弱"
+          "text": "五、质量纠纷里尤其要盯住“证明范围”",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#五、质量纠纷里尤其要盯住-证明范围"
         },
         {
-          "text": "六、模板和二审法官复核",
-          "link": "/tutorials/agent-practice-44-appeal-drafting#六、模板和二审法官复核"
+          "text": "六、上诉状要抓住“事实到结论之间的跳跃”",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#六、上诉状要抓住-事实到结论之间的跳跃"
+        },
+        {
+          "text": "七、不要把所有一审不利事实都强行否定",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#七、不要把所有一审不利事实都强行否定"
+        },
+        {
+          "text": "八、上诉理由一定要结合一审判决原文",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#八、上诉理由一定要结合一审判决原文"
+        },
+        {
+          "text": "九、决定上诉以后，类案检索还可以再精确一轮",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#九、决定上诉以后-类案检索还可以再精确一轮"
+        },
+        {
+          "text": "十、如果有二审新证据，要单独设计使用方式",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#十、如果有二审新证据-要单独设计使用方式"
+        },
+        {
+          "text": "十一、最好仍然提供一份历史优质上诉状模板",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#十一、最好仍然提供一份历史优质上诉状模板"
+        },
+        {
+          "text": "十二、最好先形成“上诉理由框架”，律师确认后再展开",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#十二、最好先形成-上诉理由框架-律师确认后再展开",
+          "items": [
+            {
+              "text": "上诉理由一",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#上诉理由一"
+            },
+            {
+              "text": "上诉理由二",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#上诉理由二"
+            },
+            {
+              "text": "上诉理由三",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#上诉理由三"
+            },
+            {
+              "text": "上诉理由四",
+              "link": "/tutorials/agent-practice-44-appeal-drafting#上诉理由四"
+            }
+          ]
+        },
+        {
+          "text": "十三、上诉理由不宜过多，重点要明显",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#十三、上诉理由不宜过多-重点要明显"
+        },
+        {
+          "text": "十四、起草完成以后，再让另一个Agent模拟二审法官",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#十四、起草完成以后-再让另一个agent模拟二审法官"
+        },
+        {
+          "text": "十五、整个上诉状起草流程可以这样走",
+          "link": "/tutorials/agent-practice-44-appeal-drafting#十五、整个上诉状起草流程可以这样走"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3859,28 +5449,64 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、模板负责怎么写，新材料负责写什么",
-          "link": "/tutorials/agent-practice-45-templates-to-new-docs#一、模板负责怎么写-新材料负责写什么"
+          "text": "一、标准化文件最适合“模板 + 新案件材料”",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#一、标准化文件最适合-模板-新案件材料"
         },
         {
-          "text": "二、先从新案件原始材料提取变量",
-          "link": "/tutorials/agent-practice-45-templates-to-new-docs#二、先从新案件原始材料提取变量"
+          "text": "二、这种方法最大的价值，是延续自己的工作习惯",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#二、这种方法最大的价值-是延续自己的工作习惯"
         },
         {
-          "text": "三、不要做机械姓名替换",
-          "link": "/tutorials/agent-practice-45-templates-to-new-docs#三、不要做机械姓名替换"
+          "text": "三、模板负责“怎么写”，新案件材料负责“写什么”",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#三、模板负责-怎么写-新案件材料负责-写什么"
         },
         {
-          "text": "四、直接修改Word并另存",
-          "link": "/tutorials/agent-practice-45-templates-to-new-docs#四、直接修改word并另存"
+          "text": "四、先让Agent从新案件材料里提取“变量”",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#四、先让agent从新案件材料里提取-变量"
         },
         {
-          "text": "五、最后做两轮检查",
-          "link": "/tutorials/agent-practice-45-templates-to-new-docs#五、最后做两轮检查"
+          "text": "五、Agent不能只做“姓名替换”",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#五、agent不能只做-姓名替换"
         },
         {
-          "text": "六、逐步建立自己的模板库",
-          "link": "/tutorials/agent-practice-45-templates-to-new-docs#六、逐步建立自己的模板库"
+          "text": "六、最重要的是直接读取具有法律效力的原始文件",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#六、最重要的是直接读取具有法律效力的原始文件"
+        },
+        {
+          "text": "七、执行异议、鉴定申请等文件也是同样的做法",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#七、执行异议、鉴定申请等文件也是同样的做法"
+        },
+        {
+          "text": "八、标准化文件最好直接在原Word格式上修改",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#八、标准化文件最好直接在原word格式上修改"
+        },
+        {
+          "text": "九、一定要做一次“旧项目残留检查”",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#九、一定要做一次-旧项目残留检查"
+        },
+        {
+          "text": "十、再做一次“新案件数据一致性检查”",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#十、再做一次-新案件数据一致性检查"
+        },
+        {
+          "text": "十一、没有材料支持的内容不要让AI自动补",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#十一、没有材料支持的内容不要让ai自动补"
+        },
+        {
+          "text": "十二、如果经常使用，可以把模板做成自己的“法律文书模板库”",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#十二、如果经常使用-可以把模板做成自己的-法律文书模板库"
+        },
+        {
+          "text": "十三、甚至可以让Agent自动帮你选模板",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#十三、甚至可以让agent自动帮你选模板"
+        },
+        {
+          "text": "十四、对于标准化文件，不需要每次重新做复杂法律研究",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#十四、对于标准化文件-不需要每次重新做复杂法律研究"
+        },
+        {
+          "text": "十五、整个流程其实可以非常简单",
+          "link": "/tutorials/agent-practice-45-templates-to-new-docs#十五、整个流程其实可以非常简单"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3914,20 +5540,46 @@ export const generatedSidebar = {
           "link": "/tutorials/agent-practice-46-litigation-finale#二、ai越能写-律师越要会审"
         },
         {
-          "text": "三、审核重点看五件事",
-          "link": "/tutorials/agent-practice-46-litigation-finale#三、审核重点看五件事"
+          "text": "三、审核AI法律文件，我重点看五件事",
+          "link": "/tutorials/agent-practice-46-litigation-finale#三、审核ai法律文件-我重点看五件事",
+          "items": [
+            {
+              "text": "第一，事实是不是真的",
+              "link": "/tutorials/agent-practice-46-litigation-finale#第一-事实是不是真的"
+            },
+            {
+              "text": "第二，证据够不够",
+              "link": "/tutorials/agent-practice-46-litigation-finale#第二-证据够不够"
+            },
+            {
+              "text": "第三，结论有没有走得太远",
+              "link": "/tutorials/agent-practice-46-litigation-finale#第三-结论有没有走得太远"
+            },
+            {
+              "text": "第四，策略是不是我们真正想要的",
+              "link": "/tutorials/agent-practice-46-litigation-finale#第四-策略是不是我们真正想要的"
+            },
+            {
+              "text": "第五，有没有漏掉真正重要的问题",
+              "link": "/tutorials/agent-practice-46-litigation-finale#第五-有没有漏掉真正重要的问题"
+            }
+          ]
         },
         {
-          "text": "四、AI可以互审，最后一关仍是律师",
-          "link": "/tutorials/agent-practice-46-litigation-finale#四、ai可以互审-最后一关仍是律师"
+          "text": "四、AI可以互相复核，但最后一关必须是律师",
+          "link": "/tutorials/agent-practice-46-litigation-finale#四、ai可以互相复核-但最后一关必须是律师"
         },
         {
           "text": "五、历史模板也只是模板",
           "link": "/tutorials/agent-practice-46-litigation-finale#五、历史模板也只是模板"
         },
         {
-          "text": "六、律师真正需要提升的是验收能力",
-          "link": "/tutorials/agent-practice-46-litigation-finale#六、律师真正需要提升的是验收能力"
+          "text": "六、律师真正需要提升的，会越来越是“验收能力”",
+          "link": "/tutorials/agent-practice-46-litigation-finale#六、律师真正需要提升的-会越来越是-验收能力"
+        },
+        {
+          "text": "七、同一个AI，不同律师用出来完全不是一个水平",
+          "link": "/tutorials/agent-practice-46-litigation-finale#七、同一个ai-不同律师用出来完全不是一个水平"
         },
         {
           "text": "直接复制的实战提示词",
@@ -3953,28 +5605,80 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、不要只是“每天总结法律新闻”",
-          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#一、不要只是-每天总结法律新闻"
+          "text": "一、不要让AI只是每天给你“搜新闻”",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#一、不要让ai只是每天给你-搜新闻"
         },
         {
-          "text": "二、限定业务领域和来源",
-          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#二、限定业务领域和来源"
+          "text": "二、先确定自己真正关心哪些领域",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#二、先确定自己真正关心哪些领域"
         },
         {
-          "text": "三、只看新增和变化",
-          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#三、只看新增和变化"
+          "text": "三、信息来源最好提前限定",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#三、信息来源最好提前限定"
         },
         {
-          "text": "四、明确文件状态和生效时间",
-          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#四、明确文件状态和生效时间"
+          "text": "四、每天只看“新增和变化”",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#四、每天只看-新增和变化"
         },
         {
-          "text": "五、增加实务影响和项目关联",
-          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#五、增加实务影响和项目关联"
+          "text": "五、法律法规要区分几个不同状态",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#五、法律法规要区分几个不同状态"
         },
         {
-          "text": "六、当天没重要更新就说没有",
-          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#六、当天没重要更新就说没有"
+          "text": "六、最好告诉我“什么时候开始生效”",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#六、最好告诉我-什么时候开始生效"
+        },
+        {
+          "text": "七、监管动态不要只转标题",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#七、监管动态不要只转标题"
+        },
+        {
+          "text": "八、案例也不要只是每天堆几十个",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#八、案例也不要只是每天堆几十个"
+        },
+        {
+          "text": "九、每条信息最好增加一个“实务影响”",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#九、每条信息最好增加一个-实务影响",
+          "items": [
+            {
+              "text": "某司法解释正式发布",
+              "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#某司法解释正式发布"
+            },
+            {
+              "text": "交易所发布新的审核指引",
+              "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#交易所发布新的审核指引"
+            }
+          ]
+        },
+        {
+          "text": "十、还可以和自己正在做的项目关联起来",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#十、还可以和自己正在做的项目关联起来"
+        },
+        {
+          "text": "十一、最后只给一个简洁版本，不要每天写成研究报告",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#十一、最后只给一个简洁版本-不要每天写成研究报告",
+          "items": [
+            {
+              "text": "今日必须看",
+              "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#今日必须看"
+            },
+            {
+              "text": "值得关注",
+              "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#值得关注"
+            },
+            {
+              "text": "与当前项目直接相关",
+              "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#与当前项目直接相关"
+            }
+          ]
+        },
+        {
+          "text": "十二、真正重要的变化，再单独展开研究",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#十二、真正重要的变化-再单独展开研究"
+        },
+        {
+          "text": "十三、定时任务最大的价值是“持续”",
+          "link": "/tutorials/agent-practice-47-scheduled-legal-briefing#十三、定时任务最大的价值是-持续"
         },
         {
           "text": "直接复制的实战提示词",
@@ -4000,28 +5704,84 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、第一次先建立项目基准状态",
-          "link": "/tutorials/agent-practice-48-weekly-project-inspection#一、第一次先建立项目基准状态"
+          "text": "一、项目巡检不是“总结一下本周做了什么”",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#一、项目巡检不是-总结一下本周做了什么"
         },
         {
-          "text": "二、检查资料和待办",
-          "link": "/tutorials/agent-practice-48-weekly-project-inspection#二、检查资料和待办"
+          "text": "二、先告诉Agent项目的“基准状态”",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#二、先告诉agent项目的-基准状态"
         },
         {
-          "text": "三、检查新增材料有没有真正进入成果",
-          "link": "/tutorials/agent-practice-48-weekly-project-inspection#三、检查新增材料有没有真正进入成果"
+          "text": "三、第一件事：检查客户资料有没有补齐",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#三、第一件事-检查客户资料有没有补齐"
         },
         {
-          "text": "四、检查版本和跨文件同步",
-          "link": "/tutorials/agent-practice-48-weekly-project-inspection#四、检查版本和跨文件同步"
+          "text": "四、第二件事：检查报告里还有多少“待处理标记”",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#四、第二件事-检查报告里还有多少-待处理标记"
         },
         {
-          "text": "五、检查期限和长期卡点",
-          "link": "/tutorials/agent-practice-48-weekly-project-inspection#五、检查期限和长期卡点"
+          "text": "五、第三件事：检查新增材料有没有真正进入工作成果",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#五、第三件事-检查新增材料有没有真正进入工作成果"
         },
         {
-          "text": "六、最后给下周优先级和律师确认项",
-          "link": "/tutorials/agent-practice-48-weekly-project-inspection#六、最后给下周优先级和律师确认项"
+          "text": "六、第四件事：检查项目文件有没有版本混乱",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#六、第四件事-检查项目文件有没有版本混乱"
+        },
+        {
+          "text": "七、第五件事：检查不同文件之间有没有不同步",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#七、第五件事-检查不同文件之间有没有不同步"
+        },
+        {
+          "text": "八、第六件事：检查临近期限",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#八、第六件事-检查临近期限",
+          "items": [
+            {
+              "text": "7天内必须处理",
+              "link": "/tutorials/agent-practice-48-weekly-project-inspection#_7天内必须处理"
+            },
+            {
+              "text": "14天内关注",
+              "link": "/tutorials/agent-practice-48-weekly-project-inspection#_14天内关注"
+            },
+            {
+              "text": "30天内提前准备",
+              "link": "/tutorials/agent-practice-48-weekly-project-inspection#_30天内提前准备"
+            }
+          ]
+        },
+        {
+          "text": "九、第七件事：找“连续没有进展”的问题",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#九、第七件事-找-连续没有进展-的问题"
+        },
+        {
+          "text": "十、每周巡检最好只输出“变化”和“异常”",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#十、每周巡检最好只输出-变化-和-异常"
+        },
+        {
+          "text": "十一、最后给一个明确的“下周优先事项”",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#十一、最后给一个明确的-下周优先事项",
+          "items": [
+            {
+              "text": "下周优先处理",
+              "link": "/tutorials/agent-practice-48-weekly-project-inspection#下周优先处理"
+            }
+          ]
+        },
+        {
+          "text": "十二、哪些事情必须单独列给律师确认",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#十二、哪些事情必须单独列给律师确认"
+        },
+        {
+          "text": "十三、这个任务特别适合设置成“每周五自动跑一次”",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#十三、这个任务特别适合设置成-每周五自动跑一次"
+        },
+        {
+          "text": "十四、不同项目可以设置不同巡检重点",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#十四、不同项目可以设置不同巡检重点"
+        },
+        {
+          "text": "十五、定时巡检真正解决的是“项目失忆”",
+          "link": "/tutorials/agent-practice-48-weekly-project-inspection#十五、定时巡检真正解决的是-项目失忆"
         },
         {
           "text": "直接复制的实战提示词",
@@ -4047,24 +5807,92 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先建立基准状态",
-          "link": "/tutorials/agent-practice-49-continuous-monitoring#一、先建立基准状态"
+          "text": "一、条件监控和普通定时任务不一样",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#一、条件监控和普通定时任务不一样"
         },
         {
-          "text": "二、通知不仅要说“变了”",
-          "link": "/tutorials/agent-practice-49-continuous-monitoring#二、通知不仅要说-变了"
+          "text": "二、最典型的是监控客户和交易对方的诉讼、处罚",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#二、最典型的是监控客户和交易对方的诉讼、处罚"
         },
         {
-          "text": "三、先定义什么变化值得通知",
-          "link": "/tutorials/agent-practice-49-continuous-monitoring#三、先定义什么变化值得通知"
+          "text": "三、不要只告诉我“新增一宗诉讼”",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#三、不要只告诉我-新增一宗诉讼"
         },
         {
-          "text": "四、不同用途拆成不同监控",
-          "link": "/tutorials/agent-practice-49-continuous-monitoring#四、不同用途拆成不同监控"
+          "text": "四、IPO和证券项目特别适合监控“新审核案例”",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#四、ipo和证券项目特别适合监控-新审核案例"
         },
         {
-          "text": "五、公开变化只是线索",
-          "link": "/tutorials/agent-practice-49-continuous-monitoring#五、公开变化只是线索"
+          "text": "五、诉讼案件也可以做状态监控",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#五、诉讼案件也可以做状态监控"
+        },
+        {
+          "text": "六、还可以监控法规“从征求意见到正式生效”",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#六、还可以监控法规-从征求意见到正式生效"
+        },
+        {
+          "text": "七、许可证、合同和承诺期限也可以监控",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#七、许可证、合同和承诺期限也可以监控"
+        },
+        {
+          "text": "八、最有价值的是“变化前后对比”",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#八、最有价值的是-变化前后对比",
+          "items": [
+            {
+              "text": "上一次",
+              "link": "/tutorials/agent-practice-49-continuous-monitoring#上一次"
+            },
+            {
+              "text": "本次",
+              "link": "/tutorials/agent-practice-49-continuous-monitoring#本次"
+            },
+            {
+              "text": "变化",
+              "link": "/tutorials/agent-practice-49-continuous-monitoring#变化"
+            },
+            {
+              "text": "建议",
+              "link": "/tutorials/agent-practice-49-continuous-monitoring#建议"
+            }
+          ]
+        },
+        {
+          "text": "九、设置监控时一定要先定义“什么变化值得通知”",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#九、设置监控时一定要先定义-什么变化值得通知"
+        },
+        {
+          "text": "十、最好给变化设置风险等级",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#十、最好给变化设置风险等级",
+          "items": [
+            {
+              "text": "高优先级",
+              "link": "/tutorials/agent-practice-49-continuous-monitoring#高优先级"
+            },
+            {
+              "text": "中优先级",
+              "link": "/tutorials/agent-practice-49-continuous-monitoring#中优先级"
+            },
+            {
+              "text": "低优先级",
+              "link": "/tutorials/agent-practice-49-continuous-monitoring#低优先级"
+            }
+          ]
+        },
+        {
+          "text": "十一、如果变化影响现有项目，还要直接指出“要改哪里”",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#十一、如果变化影响现有项目-还要直接指出-要改哪里"
+        },
+        {
+          "text": "十二、一个监控任务不要塞太多对象",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#十二、一个监控任务不要塞太多对象"
+        },
+        {
+          "text": "十三、这种任务最适合“持续运行”",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#十三、这种任务最适合-持续运行"
+        },
+        {
+          "text": "十四、但监控结果不能直接替代正式核查",
+          "link": "/tutorials/agent-practice-49-continuous-monitoring#十四、但监控结果不能直接替代正式核查"
         },
         {
           "text": "直接复制的实战提示词",
@@ -4090,32 +5918,98 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、晨报回答“今天怎么工作”",
-          "link": "/tutorials/agent-practice-50-daily-morning-brief#一、晨报回答-今天怎么工作"
+          "text": "一、晨报不是新闻简报，而是“今天怎么安排工作”",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#一、晨报不是新闻简报-而是-今天怎么安排工作"
         },
         {
-          "text": "二、日程不只列时间，还要列准备事项",
-          "link": "/tutorials/agent-practice-50-daily-morning-brief#二、日程不只列时间-还要列准备事项"
+          "text": "二、第一部分：今天有哪些日程",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#二、第一部分-今天有哪些日程",
+          "items": [
+            {
+              "text": "今日安排",
+              "link": "/tutorials/agent-practice-50-daily-morning-brief#今日安排"
+            }
+          ]
         },
         {
-          "text": "三、邮件只筛需要行动的",
-          "link": "/tutorials/agent-practice-50-daily-morning-brief#三、邮件只筛需要行动的"
+          "text": "三、第二部分：哪些邮件真正值得处理",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#三、第二部分-哪些邮件真正值得处理",
+          "items": [
+            {
+              "text": "重要邮件",
+              "link": "/tutorials/agent-practice-50-daily-morning-brief#重要邮件"
+            }
+          ]
         },
         {
-          "text": "四、项目和监控只报变化",
-          "link": "/tutorials/agent-practice-50-daily-morning-brief#四、项目和监控只报变化"
+          "text": "四、第三部分：正在做的项目发生了什么变化",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#四、第三部分-正在做的项目发生了什么变化",
+          "items": [
+            {
+              "text": "项目动态",
+              "link": "/tutorials/agent-practice-50-daily-morning-brief#项目动态"
+            }
+          ]
         },
         {
-          "text": "五、统一扫描期限",
-          "link": "/tutorials/agent-practice-50-daily-morning-brief#五、统一扫描期限"
+          "text": "五、第四部分：监控任务有没有触发",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#五、第四部分-监控任务有没有触发",
+          "items": [
+            {
+              "text": "今日监控提醒",
+              "link": "/tutorials/agent-practice-50-daily-morning-brief#今日监控提醒"
+            }
+          ]
         },
         {
-          "text": "六、最后只给3—5个今日优先事项",
-          "link": "/tutorials/agent-practice-50-daily-morning-brief#六、最后只给3—5个今日优先事项"
+          "text": "六、第五部分：今天真正值得关注的法律变化",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#六、第五部分-今天真正值得关注的法律变化"
         },
         {
-          "text": "七、解决的问题第二天消失",
-          "link": "/tutorials/agent-practice-50-daily-morning-brief#七、解决的问题第二天消失"
+          "text": "七、第六部分：统一检查近期截止日期",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#七、第六部分-统一检查近期截止日期",
+          "items": [
+            {
+              "text": "临近期限",
+              "link": "/tutorials/agent-practice-50-daily-morning-brief#临近期限"
+            }
+          ]
+        },
+        {
+          "text": "八、第七部分：只给我今天最重要的三到五件事",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#八、第七部分-只给我今天最重要的三到五件事",
+          "items": [
+            {
+              "text": "今日优先事项",
+              "link": "/tutorials/agent-practice-50-daily-morning-brief#今日优先事项"
+            }
+          ]
+        },
+        {
+          "text": "九、把“需要律师决定”的问题单独列出来",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#九、把-需要律师决定-的问题单独列出来",
+          "items": [
+            {
+              "text": "需要律师确认",
+              "link": "/tutorials/agent-practice-50-daily-morning-brief#需要律师确认"
+            }
+          ]
+        },
+        {
+          "text": "十、已经解决的问题不要第二天继续出现",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#十、已经解决的问题不要第二天继续出现"
+        },
+        {
+          "text": "十一、不同类型律师的晨报可以完全不同",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#十一、不同类型律师的晨报可以完全不同"
+        },
+        {
+          "text": "十二、晨报也不一定只在早上",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#十二、晨报也不一定只在早上"
+        },
+        {
+          "text": "十三、这类任务真正的关键是把多个信息源汇总起来",
+          "link": "/tutorials/agent-practice-50-daily-morning-brief#十三、这类任务真正的关键是把多个信息源汇总起来"
         },
         {
           "text": "直接复制的实战提示词",
