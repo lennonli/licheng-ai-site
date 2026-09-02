@@ -325,15 +325,16 @@
         flex: 1;
         flex-direction: column;
         justify-content: center;
+        overflow: hidden;
         gap: 16px;
         padding: clamp(16px, 2.3vw, 28px) 0 clamp(10px, 1.2vw, 18px);
       }
 
       .slide-main {
-        display: grid;
-        grid-template-columns: minmax(0, 1.04fr) minmax(300px, 0.96fr);
-        gap: clamp(20px, 3vw, 48px);
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(14px, 1.9vh, 22px);
+        align-items: stretch;
       }
 
       .slide-copy {
@@ -362,13 +363,23 @@
       }
 
       .slide h1 {
-        max-width: 700px;
+        max-width: 1150px;
         margin: 0;
         color: var(--ink);
-        font-size: clamp(40px, 4.05vw, 64px);
-        font-weight: 860;
-        letter-spacing: -0.055em;
-        line-height: 1.03;
+        font-size: calc(clamp(26px, 3vw, 44px) * var(--fit, 1));
+        font-weight: 830;
+        letter-spacing: -0.035em;
+        line-height: 1.22;
+      }
+
+      .slide-strong {
+        display: block;
+        margin-top: 10px;
+        color: var(--lime);
+        font-size: calc(clamp(16px, 1.6vw, 24px) * var(--fit, 1));
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 1.45;
       }
 
       .slide h1 span {
@@ -428,10 +439,16 @@
         line-height: 1.5;
       }
 
+      .slide-main .concept-panel {
+        width: 100%;
+        max-width: 1150px;
+        margin: 0 auto;
+      }
+
       .concept-panel {
         position: relative;
         min-width: 0;
-        padding: clamp(15px, 1.5vw, 22px);
+        padding: clamp(13px, 1.3vw, 20px);
         background: rgba(7, 19, 14, 0.42);
         border: 1px solid var(--line);
         border-radius: clamp(18px, 2vw, 28px);
@@ -466,6 +483,13 @@
         height: auto;
       }
 
+      .slide-intro .concept-svg {
+        width: auto;
+        max-width: 100%;
+        max-height: 35vh;
+        margin: 0 auto;
+      }
+
       .visual-body {
         display: grid;
         gap: 10px;
@@ -473,8 +497,14 @@
       }
 
       .visual-flow {
-        display: grid;
-        gap: 7px;
+        display: flex;
+        gap: 8px;
+        align-items: stretch;
+      }
+
+      .visual-flow-step {
+        flex: 1 1 0;
+        min-width: 0;
       }
 
       .visual-flow-step {
@@ -543,11 +573,12 @@
 
       .visual-flow-arrow {
         display: grid;
-        height: 9px;
+        flex: 0 0 auto;
         place-items: center;
         color: var(--lime);
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1;
+        transform: rotate(-90deg);
       }
 
       .visual-compare {
@@ -655,7 +686,8 @@
 
       .visual-layer-stack {
         display: grid;
-        gap: 7px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
       }
 
       .visual-layer {
@@ -762,7 +794,8 @@
 
       .visual-formula-explain {
         display: grid;
-        gap: 6px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 9px;
       }
 
       .visual-formula-explain div {
@@ -782,7 +815,8 @@
 
       .visual-checklist {
         display: grid;
-        gap: 7px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
       }
 
       .visual-check-item {
@@ -990,7 +1024,24 @@
       .takeaway-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .takeaway { position: relative; }
+
+      .takeaway:not(:last-child)::after {
+        content: '→';
+        position: absolute;
+        top: 50%;
+        right: -19px;
+        transform: translateY(-50%);
+        color: var(--lime);
+        font-size: 15px;
+        font-weight: 900;
+        z-index: 2;
       }
 
       .takeaway {
@@ -998,7 +1049,7 @@
         grid-template-columns: auto minmax(0, 1fr);
         gap: 11px;
         min-width: 0;
-        padding: 13px 14px;
+        padding: 11px 13px;
         background: rgba(223, 247, 208, 0.06);
         border: 1px solid rgba(223, 247, 208, 0.11);
         border-radius: 15px;
@@ -1093,13 +1144,14 @@
       }
 
       .control-caption {
-        max-width: 440px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        max-width: 520px;
         overflow: hidden;
         color: var(--muted-2);
         font-size: 12px;
         line-height: 1.45;
-        text-overflow: ellipsis;
-        white-space: nowrap;
       }
 
       .deck-navigation {
@@ -1364,7 +1416,7 @@
         }
 
         .slide h1 {
-          font-size: clamp(38px, 6vw, 62px);
+          font-size: clamp(24px, 4.4vw, 34px);
         }
       }
 
@@ -1433,7 +1485,7 @@
         }
 
         .slide h1 {
-          font-size: clamp(38px, 10vw, 58px);
+          font-size: clamp(22px, 5.5vw, 30px);
         }
 
         .slide-lead {
@@ -1563,6 +1615,18 @@
           display: none;
         }
       }
+    
+      @media (max-width: 760px) {
+        .takeaway-grid { gap: 16px; }
+
+        .takeaway:not(:last-child)::after {
+          content: '↓';
+          top: auto;
+          right: 50%;
+          bottom: -15px;
+          transform: translateX(50%);
+        }
+      }
     </style>
   </head>
   <body>
@@ -1600,17 +1664,7 @@
             <div class="slide-body">
               <div class="slide-main">
                 <div class="slide-copy">
-                  <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>第一件事：把概念分开</p>
-                  <h1 id="slide-title-01">我们今天说的<br><span>AI</span>，<br>到底是什么？</h1>
-                  <p class="slide-lead">AI 不是一个产品，也不只是聊天机器人。<strong>先把“AI、大模型、产品、Agent”四个词摆在正确位置，后面的世界才不会混在一起。</strong></p>
-
-                  <div class="slide-quote">
-                    <span class="quote-mark" aria-hidden="true">“</span>
-                    <div>
-                      <span class="quote-label">演讲开场</span>
-                      <span class="quote-text">今天不从工具开始，先从一张关系图开始。</span>
-                    </div>
-                  </div>
+                  <h1 id="slide-title-01">AI 不是一个产品，也不只是聊天机器人。<span class="slide-strong">先把“AI、大模型、产品、Agent”四个词摆在正确位置，后面的世界才不会混在一起。</span></h1>
                 </div>
 
                 <div class="concept-panel" aria-label="AI、大模型、产品和智能体的关系图">
@@ -1659,21 +1713,6 @@
                       <text class="node-sub" x="512" y="305">把事情做完</text>
                     </svg>
                   </div>
-                </div>
-              </div>
-
-              <div class="takeaway-grid" aria-label="本页三个记忆点">
-                <div class="takeaway">
-                  <span class="takeaway-num">01</span>
-                  <span class="takeaway-copy"><strong>AI 是大概念</strong><span>搜索、推荐、识别、生成都可能是 AI。</span></span>
-                </div>
-                <div class="takeaway">
-                  <span class="takeaway-num">02</span>
-                  <span class="takeaway-copy"><strong>大模型是技术基础</strong><span>它学习语言、概念、关系和大量模式。</span></span>
-                </div>
-                <div class="takeaway">
-                  <span class="takeaway-num">03</span>
-                  <span class="takeaway-copy"><strong>产品不等于模型</strong><span>ChatGPT 是产品，Agent 走向完成任务。</span></span>
                 </div>
               </div>
             </div>
@@ -1771,7 +1810,7 @@
               takeaways: [
                 ['一步一步生成', '答案不是先完整写好再一次性吐出来。'],
                 ['学到的是模式', '不是把每篇材料原样存成一个可精确查询的文件。'],
-                ['训练不等于记忆我', '聊天历史、记忆和知识库是不同机制。']
+                ['训练不等于“记住我”', '聊天历史、记忆和知识库是不同机制。']
               ],
               sourceNote: '讲演主线：预测机制如何长出通用能力', source: '/tutorials/ai-basics-03-how-llm-learns-to-speak',
               notes: ['把“下一个 Token”讲成模型每一步要接上的下一块内容。', '强调规模、数据和训练方法让它远超普通输入法。', '顺带埋下幻觉伏笔：看起来合理，不等于事实已经核验。'], duration: '2–3 分钟'
@@ -2313,7 +2352,7 @@
         }
 
         function renderVisual(visual) {
-          const heading = `<div class="concept-panel-head"><span>${escapeHtml(visual.title)}</span><span class="panel-caption">${escapeHtml(visual.caption)}</span></div>`
+          const heading = (visual.title || visual.caption) ? `<div class="concept-panel-head"><span>${escapeHtml(visual.title || '')}</span><span class="panel-caption">${escapeHtml(visual.caption || '')}</span></div>` : ''
           let body = ''
 
           if (visual.kind === 'flow') {
@@ -2340,13 +2379,37 @@
 
         function renderSlide(slide) {
           const page = String(slide.page).padStart(2, '0')
-          return `<article class="slide slide-layout-${escapeHtml(slide.visual.kind)}" data-slide data-slide-id="${escapeHtml(slide.id)}" data-slide-number="${page}" aria-labelledby="slide-title-${page}" aria-hidden="true"><div class="slide-topline"><span class="slide-index">${page}</span><span class="slide-topic">${escapeHtml(slide.chapter)}</span><span class="slide-state">${escapeHtml(slide.state || '演讲版')}</span></div><div class="slide-body"><div class="slide-main"><div class="slide-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>${escapeHtml(slide.eyebrow || '这一页只记住一件事')}</p><h1 id="slide-title-${page}">${renderTitle(slide.titleLines)}</h1><p class="slide-lead">${escapeHtml(slide.lead)} <strong>${escapeHtml(slide.leadStrong)}</strong></p><div class="slide-quote"><span class="quote-mark" aria-hidden="true">“</span><div><span class="quote-label">${escapeHtml(slide.quoteLabel)}</span><span class="quote-text">${escapeHtml(slide.quote)}</span></div></div></div>${renderVisual(slide.visual)}</div><div class="takeaway-grid" aria-label="本页三个记忆点">${slide.takeaways.map((takeaway, index) => `<div class="takeaway"><span class="takeaway-num">${String(index + 1).padStart(2, '0')}</span><span class="takeaway-copy"><strong>${escapeHtml(takeaway[0])}</strong><span>${escapeHtml(takeaway[1])}</span></span></div>`).join('')}</div></div><div class="slide-source"><span>${escapeHtml(slide.sourceNote)}</span><a href="${escapeHtml(slide.source)}">阅读原文 ↗</a></div></article>`
+          const visualHtml = slide.visual ? renderVisual(slide.visual) : ''
+          return `<article class="slide" data-slide data-slide-id="${escapeHtml(slide.id)}" data-slide-number="${page}" aria-labelledby="slide-title-${page}" aria-hidden="true"><div class="slide-topline"><span class="slide-index">${page}</span><span class="slide-topic">${escapeHtml(slide.chapter)}</span><span class="slide-state">${escapeHtml(slide.state || '演讲版')}</span></div><div class="slide-body"><div class="slide-main"><h1 id="slide-title-${page}">${escapeHtml(slide.lead)}<span class="slide-strong">${escapeHtml(slide.leadStrong)}</span></h1>${visualHtml}</div><ol class="takeaway-grid" aria-label="本页要点（按顺序）">${slide.takeaways.map((takeaway, index) => `<li class="takeaway"><span class="takeaway-num">${index + 1}</span><span class="takeaway-copy"><strong>${escapeHtml(takeaway[0])}</strong><span>${escapeHtml(takeaway[1])}</span></span></li>`).join('')}</ol></div><div class="slide-source"><span>${escapeHtml(slide.sourceNote)}</span><a href="${escapeHtml(slide.source)}">阅读原文 ↗</a></div></article>`
         }
 
         const slideViewport = document.querySelector('#slide-viewport')
         slideViewport.insertAdjacentHTML('beforeend', deck.slides.slice(1).map(renderSlide).join(''))
 
+        function fitSlideTitles() {
+          slideElements.forEach((slideEl) => {
+            const body = slideEl.querySelector('.slide-body')
+            if (!body) return
+            const h1 = slideEl.querySelector('h1')
+            if (!h1) return
+            h1.style.removeProperty('--fit')
+            for (const k of [1, 0.93, 0.86, 0.8, 0.74, 0.68, 0.62]) {
+              h1.style.setProperty('--fit', k)
+              if (body.scrollHeight <= body.clientHeight + 1) break
+            }
+          })
+        }
+        let fitResizeTimer = null
+        window.addEventListener('resize', () => {
+          clearTimeout(fitResizeTimer)
+          fitResizeTimer = setTimeout(fitSlideTitles, 150)
+        })
+        document.addEventListener('fullscreenchange', () => setTimeout(fitSlideTitles, 120))
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => fitSlideTitles())
+        setTimeout(fitSlideTitles, 500)
+
         const slideElements = Array.from(document.querySelectorAll('[data-slide]'))
+        fitSlideTitles()
         const previousButton = document.querySelector('#previous-slide')
         const nextButton = document.querySelector('#next-slide')
         const dotNavigation = document.querySelector('#dot-navigation')
@@ -2384,7 +2447,7 @@
 
         function updateNotes(slide) {
           notesKicker.textContent = `Speaker notes · ${String(slide.page).padStart(2, '0')}`
-          notesList.replaceChildren(...slide.notes.map((note) => {
+          notesList.replaceChildren(...(slide.quote ? [slide.quoteLabel + '：' + slide.quote, ...slide.notes] : slide.notes).map((note) => {
             const item = document.createElement('li')
             item.textContent = note
             return item
@@ -2404,7 +2467,7 @@
           })
 
           counter.textContent = `${String(slidePage).padStart(2, '0')} / ${String(deck.plannedTotal).padStart(2, '0')} · ${slide.state || '演讲版'}`
-          caption.textContent = slide.caption
+          caption.textContent = slide.caption || slide.lead || ''
           progressValue.style.width = `${Math.max(3.34, (slidePage / deck.plannedTotal) * 100)}%`
           previousButton.disabled = currentIndex === 0
           nextButton.disabled = currentIndex === slideElements.length - 1
