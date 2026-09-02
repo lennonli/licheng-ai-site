@@ -39,39 +39,27 @@ const sources = [
     localRepo: path.resolve(root, '..', 'licheng-AI-tutorials')
   },
   {
-    key: 'kb',
-    name: 'IPO 问询案例',
+    key: 'kbmono',
+    name: 'IPO 问询案例库（2023-2026）',
     repo: 'https://github.com/lennonli/ipo-inquiry-kb.git',
     localRepo: path.resolve(root, '..', '19-IPO问询案例知识库')
-  },
-  {
-    key: 'kb2025',
-    name: 'IPO 问询案例 2025',
-    repo: 'https://github.com/lennonli/ipo-inquiry-kb-2025.git',
-    localRepo: path.resolve(root, '..', '21-IPO问询案例知识库-2025')
-  },
-  {
-    key: 'kb2024',
-    name: 'IPO 问询案例 2024',
-    repo: 'https://github.com/lennonli/ipo-inquiry-kb-2024.git',
-    localRepo: path.resolve(root, '..', '22-IPO问询案例知识库-2024')
-  },
-  {
-    key: 'kb2023',
-    name: 'IPO 问询案例 2023',
-    repo: 'https://github.com/lennonli/ipo-inquiry-kb-2023.git',
-    localRepo: path.resolve(root, '..', '23-IPO问询案例知识库-2023')
   }
 ]
+
+// monorepo 中各年度库所在子目录（网站板块 key → monorepo 子目录）
+function kbYearCacheSrc(key) {
+  const yearDir = key === 'kb' ? '2026' : key.replace(/^kb/, '')
+  return path.join(cacheDir, 'kbmono', yearDir)
+}
 
 const sourceWebUrls = {
   agents: 'https://github.com/lennonli/licheng-AGENTS.md',
   skills: 'https://github.com/lennonli/licheng-skills',
   tutorials: 'https://github.com/lennonli/licheng-AI-tutorials',
   kb: 'https://github.com/lennonli/ipo-inquiry-kb',
-  kb2025: 'https://github.com/lennonli/ipo-inquiry-kb-2025',
-  kb2024: 'https://github.com/lennonli/ipo-inquiry-kb-2024',
-  kb2023: 'https://github.com/lennonli/ipo-inquiry-kb-2023',
+  kb2025: 'https://github.com/lennonli/ipo-inquiry-kb',
+  kb2024: 'https://github.com/lennonli/ipo-inquiry-kb',
+  kb2023: 'https://github.com/lennonli/ipo-inquiry-kb',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -1329,7 +1317,7 @@ function normalizePlainUrls(markdown) {
 
 function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle }) {
   const dest = path.join(siteDir, key)
-  const src = path.join(cacheDir, key)
+  const src = kbYearCacheSrc(key)
   ensureDir(dest)
   copyMarkdownFiles(path.join(src, 'cases'), dest)
   // 年度总结报告页（源仓 reports/ 下单文件）
@@ -1388,7 +1376,7 @@ ${aiTutorialSection(base, sourceWebUrls[key], key === 'kb' ? '920079-乔路铭' 
 }
 
 // 2026 年度库（/kb/）
-const kbSrc = path.join(cacheDir, 'kb')
+const kbSrc = kbYearCacheSrc('kb')
 const kbIndexPath = path.join(kbSrc, 'scripts', 'index.json')
 const kbEntries = existsSync(kbIndexPath) ? JSON.parse(readFileSync(kbIndexPath, 'utf8')) : []
 const kbDest = buildKbYear({
@@ -1402,7 +1390,7 @@ const kbDest = buildKbYear({
 })
 
 // 2025 年度库（/kb2025/）
-const kb2025Src = path.join(cacheDir, 'kb2025')
+const kb2025Src = kbYearCacheSrc('kb2025')
 const kb2025IndexPath = path.join(kb2025Src, 'scripts', 'index.json')
 const kb2025Entries = existsSync(kb2025IndexPath) ? JSON.parse(readFileSync(kb2025IndexPath, 'utf8')) : []
 const kb2025Dest = buildKbYear({
@@ -1416,7 +1404,7 @@ const kb2025Dest = buildKbYear({
 })
 
 // 2024 年度库（/kb2024/）
-const kb2024Src = path.join(cacheDir, 'kb2024')
+const kb2024Src = kbYearCacheSrc('kb2024')
 const kb2024IndexPath = path.join(kb2024Src, 'scripts', 'index.json')
 const kb2024Entries = existsSync(kb2024IndexPath) ? JSON.parse(readFileSync(kb2024IndexPath, 'utf8')) : []
 const kb2024Dest = buildKbYear({
@@ -1430,7 +1418,7 @@ const kb2024Dest = buildKbYear({
 })
 
 // 2023 年度库（/kb2023/）
-const kb2023Src = path.join(cacheDir, 'kb2023')
+const kb2023Src = kbYearCacheSrc('kb2023')
 const kb2023IndexPath = path.join(kb2023Src, 'scripts', 'index.json')
 const kb2023Entries = existsSync(kb2023IndexPath) ? JSON.parse(readFileSync(kb2023IndexPath, 'utf8')) : []
 const kb2023Dest = buildKbYear({
