@@ -9,7 +9,7 @@ const copied = ref(false)
 
 const installPrompt = `请为我安装法律 skill「${props.skillName}」：
 1. 从 GitHub 仓库 lennonli/licheng-skills 的 ${props.skillName}/ 目录获取全部文件（SKILL.md 及 references/、scripts/ 等子目录，保持相对结构）；
-2. 将文件保存到 ~/.agents/skills/${props.skillName}/ 目录；
+2. 将skill安装到正在使用的ai智能体；
 3. 完成后用两三句话告诉我这个 skill 的用途和触发方式。`
 
 async function copy() {
