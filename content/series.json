@@ -43,6 +43,23 @@
     ]
   },
   {
+    "id": "ai-infra",
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "description": "从零把 AI 变成日常法律工作基础设施的十个步骤：订阅顶级大模型、选择成熟智能体、选对电脑、配好律师 MCP、把 GitHub 真正用起来、搭远程工作环境、进阶到 VPS、要不要部署本地大模型、做好备份防止一夜归零，最后一步是别再继续搭了，让它自己跑起来。",
+    "slugs": [
+      "ai-infra-01-subscribe-top-model",
+      "ai-infra-02-choose-mature-agent",
+      "ai-infra-03-apple-over-windows",
+      "ai-infra-04-lawyer-mcp",
+      "ai-infra-05-github-in-practice",
+      "ai-infra-06-remote-work-env",
+      "ai-infra-07-vps",
+      "ai-infra-08-local-model",
+      "ai-infra-09-backup",
+      "ai-infra-10-let-it-run"
+    ]
+  },
+  {
     "id": "ai-practice",
     "title": "AI实战：把真实工作交给Agent",
     "description": "50篇可直接落地的法律AI实战：文件与日常事务、尽职调查全流程、法律研究与IPO问询、诉讼专题（以买卖合同质量纠纷为贯穿示例）与定时任务，每篇均附可直接复制的实战提示词。",

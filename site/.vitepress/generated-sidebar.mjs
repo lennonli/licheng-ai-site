@@ -8540,6 +8540,512 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/ai-infra-01-subscribe-top-model": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第一步：花钱订阅一个顶级的大模型大脑",
+      "link": "/tutorials/ai-infra-01-subscribe-top-model"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、模型能力，决定了 AI 工作的上限",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#一、模型能力-决定了-ai-工作的上限"
+        },
+        {
+          "text": "二、法律工作尤其吃模型能力",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#二、法律工作尤其吃模型能力"
+        },
+        {
+          "text": "三、专业工作里，模型贵一点其实是最便宜的",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#三、专业工作里-模型贵一点其实是最便宜的"
+        },
+        {
+          "text": "四、不要一开始就想着“一个便宜模型解决所有问题”",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#四、不要一开始就想着-一个便宜模型解决所有问题"
+        },
+        {
+          "text": "五、我的做法：主力模型一定要舍得花钱",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#五、我的做法-主力模型一定要舍得花钱"
+        },
+        {
+          "text": "六、AI基建，不要从工具开始，要从“大脑”开始",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#六、ai基建-不要从工具开始-要从-大脑-开始"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-02-choose-mature-agent": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第二步：为大模型配一个好用的智能体",
+      "link": "/tutorials/ai-infra-02-choose-mature-agent"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、大模型和智能体不是一回事",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#一、大模型和智能体不是一回事"
+        },
+        {
+          "text": "二、为什么我越来越倾向于选择“用的人多的”",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#二、为什么我越来越倾向于选择-用的人多的"
+        },
+        {
+          "text": "三、用的人多，最大的优势不是“流行”，而是生态",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#三、用的人多-最大的优势不是-流行-而是生态"
+        },
+        {
+          "text": "四、法律工作尤其应该优先考虑“稳定”，而不是“新奇”",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#四、法律工作尤其应该优先考虑-稳定-而不是-新奇"
+        },
+        {
+          "text": "五、不要频繁换智能体",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#五、不要频繁换智能体"
+        },
+        {
+          "text": "六、我会怎么选",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#六、我会怎么选"
+        },
+        {
+          "text": "七、不要追求“最强智能体”，先找到自己的主力智能体",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#七、不要追求-最强智能体-先找到自己的主力智能体"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-03-apple-over-windows": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第三步：不是广告，但 Apple 电脑真的比 Windows 好用",
+      "link": "/tutorials/ai-infra-03-apple-over-windows"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、以前选电脑看软件，现在选电脑还要看 AI",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#一、以前选电脑看软件-现在选电脑还要看-ai"
+        },
+        {
+          "text": "二、Mac 最舒服的地方，是“开箱就是一个很好用的开发环境”",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#二、mac-最舒服的地方-是-开箱就是一个很好用的开发环境"
+        },
+        {
+          "text": "三、很多 AI 工具，本身就天然偏向 Mac/Linux 生态",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#三、很多-ai-工具-本身就天然偏向-mac-linux-生态"
+        },
+        {
+          "text": "四、Mac 特别适合“不会编程，但敢让 AI 编程”的人",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#四、mac-特别适合-不会编程-但敢让-ai-编程-的人"
+        },
+        {
+          "text": "五、对于律师，内存和硬盘尽量买大一点",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#五、对于律师-内存和硬盘尽量买大一点"
+        },
+        {
+          "text": "六、Mac mini其实特别适合做一台“AI常驻主机”",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#六、mac-mini其实特别适合做一台-ai常驻主机"
+        },
+        {
+          "text": "七、当然，Windows并不是不能用",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#七、当然-windows并不是不能用"
+        },
+        {
+          "text": "八、电脑不是最重要的，但它决定你每天折不折腾",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#八、电脑不是最重要的-但它决定你每天折不折腾"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-04-lawyer-mcp": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第四步：给智能体配好 MCP，律师尤其不能只靠模型“凭记忆回答”",
+      "link": "/tutorials/ai-infra-04-lawyer-mcp"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么模型再强，也不能只靠“大脑里的知识”",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#一、为什么模型再强-也不能只靠-大脑里的知识"
+        },
+        {
+          "text": "二、MCP可以简单理解成：给AI接上专业数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#二、mcp可以简单理解成-给ai接上专业数据库"
+        },
+        {
+          "text": "三、律师第一个必配的：法律法规数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#三、律师第一个必配的-法律法规数据库"
+        },
+        {
+          "text": "四、第二个必配的：案例数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#四、第二个必配的-案例数据库"
+        },
+        {
+          "text": "五、做证券业务的律师，还需要一套证券业务数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#五、做证券业务的律师-还需要一套证券业务数据库"
+        },
+        {
+          "text": "六、这也是为什么我一直想把自己的资料做成 MCP",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#六、这也是为什么我一直想把自己的资料做成-mcp"
+        },
+        {
+          "text": "七、MCP真正解决的，不是“让AI知道更多”，而是“让AI有依据”",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#七、mcp真正解决的-不是-让ai知道更多-而是-让ai有依据"
+        },
+        {
+          "text": "八、接了MCP也不代表AI就不会幻觉",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#八、接了mcp也不代表ai就不会幻觉"
+        },
+        {
+          "text": "九、我的律师Agent，至少会准备这几类“外部大脑”",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#九、我的律师agent-至少会准备这几类-外部大脑"
+        },
+        {
+          "text": "十、第四步的核心：不要让AI闭着眼睛回答专业问题",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#十、第四步的核心-不要让ai闭着眼睛回答专业问题"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-05-github-in-practice": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第五步：注册一个 GitHub 账号，并真正把它用起来",
+      "link": "/tutorials/ai-infra-05-github-in-practice"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、先讲清楚：GitHub 到底是什么？",
+          "link": "/tutorials/ai-infra-05-github-in-practice#一、先讲清楚-github-到底是什么"
+        },
+        {
+          "text": "二、为什么 AI 时代，GitHub 不再只是程序员的东西",
+          "link": "/tutorials/ai-infra-05-github-in-practice#二、为什么-ai-时代-github-不再只是程序员的东西"
+        },
+        {
+          "text": "三、对我来说，GitHub 第一个重要用途：管理 Skill",
+          "link": "/tutorials/ai-infra-05-github-in-practice#三、对我来说-github-第一个重要用途-管理-skill"
+        },
+        {
+          "text": "四、第二个重要用途：建立自己的知识库",
+          "link": "/tutorials/ai-infra-05-github-in-practice#四、第二个重要用途-建立自己的知识库"
+        },
+        {
+          "text": "五、而且知识库可以不断更新",
+          "link": "/tutorials/ai-infra-05-github-in-practice#五、而且知识库可以不断更新"
+        },
+        {
+          "text": "六、GitHub 还有一个特别重要的功能：多台电脑同步",
+          "link": "/tutorials/ai-infra-05-github-in-practice#六、github-还有一个特别重要的功能-多台电脑同步"
+        },
+        {
+          "text": "七、GitHub 还可以保存很多 AI 的“基础设施配置”",
+          "link": "/tutorials/ai-infra-05-github-in-practice#七、github-还可以保存很多-ai-的-基础设施配置"
+        },
+        {
+          "text": "八、以后很多 AI 工具，本身也是从 GitHub 开始的",
+          "link": "/tutorials/ai-infra-05-github-in-practice#八、以后很多-ai-工具-本身也是从-github-开始的"
+        },
+        {
+          "text": "九、以后甚至可以让 GitHub 自动帮你干活",
+          "link": "/tutorials/ai-infra-05-github-in-practice#九、以后甚至可以让-github-自动帮你干活"
+        },
+        {
+          "text": "十、律师使用 GitHub，有一个问题必须特别注意：保密",
+          "link": "/tutorials/ai-infra-05-github-in-practice#十、律师使用-github-有一个问题必须特别注意-保密"
+        },
+        {
+          "text": "十一、不要把 GitHub 理解成另外一个网盘",
+          "link": "/tutorials/ai-infra-05-github-in-practice#十一、不要把-github-理解成另外一个网盘"
+        },
+        {
+          "text": "十二、GitHub 可能会成为个人 AI 系统的“中央仓库”",
+          "link": "/tutorials/ai-infra-05-github-in-practice#十二、github-可能会成为个人-ai-系统的-中央仓库"
+        },
+        {
+          "text": "十三、所以第五步不是“学编程”，只是先注册一个账号",
+          "link": "/tutorials/ai-infra-05-github-in-practice#十三、所以第五步不是-学编程-只是先注册一个账号"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-06-remote-work-env": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第六步：搭一个远程工作环境，让AI可以一直干活",
+      "link": "/tutorials/ai-infra-06-remote-work-env"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、AI工作和以前最大的区别：很多任务不是几分钟能完成的",
+          "link": "/tutorials/ai-infra-06-remote-work-env#一、ai工作和以前最大的区别-很多任务不是几分钟能完成的"
+        },
+        {
+          "text": "二、Agent时代，一个非常重要的工作习惯：任务丢给AI，人先走",
+          "link": "/tutorials/ai-infra-06-remote-work-env#二、agent时代-一个非常重要的工作习惯-任务丢给ai-人先走"
+        },
+        {
+          "text": "三、你不在电脑旁边，怎么知道AI干到哪里了？",
+          "link": "/tutorials/ai-infra-06-remote-work-env#三、你不在电脑旁边-怎么知道ai干到哪里了"
+        },
+        {
+          "text": "四、手机开始变成“AI监工”",
+          "link": "/tutorials/ai-infra-06-remote-work-env#四、手机开始变成-ai监工"
+        },
+        {
+          "text": "五、为什么我会比较推荐UU远程",
+          "link": "/tutorials/ai-infra-06-remote-work-env#五、为什么我会比较推荐uu远程"
+        },
+        {
+          "text": "六、远程控制真正重要的不是“远程办公”，而是“远程管理Agent”",
+          "link": "/tutorials/ai-infra-06-remote-work-env#六、远程控制真正重要的不是-远程办公-而是-远程管理agent"
+        },
+        {
+          "text": "七、这也是为什么我前面会推荐Mac mini",
+          "link": "/tutorials/ai-infra-06-remote-work-env#七、这也是为什么我前面会推荐mac-mini"
+        },
+        {
+          "text": "八、对于律师来说，这种模式其实特别合适",
+          "link": "/tutorials/ai-infra-06-remote-work-env#八、对于律师来说-这种模式其实特别合适"
+        },
+        {
+          "text": "九、真正需要解决的是“电脑不要轻易停下来”",
+          "link": "/tutorials/ai-infra-06-remote-work-env#九、真正需要解决的是-电脑不要轻易停下来"
+        },
+        {
+          "text": "十、如果再进一步，可以把远程桌面和Tailscale配合起来",
+          "link": "/tutorials/ai-infra-06-remote-work-env#十、如果再进一步-可以把远程桌面和tailscale配合起来"
+        },
+        {
+          "text": "十一、远程控制也要注意安全",
+          "link": "/tutorials/ai-infra-06-remote-work-env#十一、远程控制也要注意安全"
+        },
+        {
+          "text": "十二、AI基建真正的目标，是让“机器时间”和“人的时间”分离",
+          "link": "/tutorials/ai-infra-06-remote-work-env#十二、ai基建真正的目标-是让-机器时间-和-人的时间-分离"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-07-vps": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第七步：进阶到 VPS——没有一台长期在线的 Mac mini，也可以给 AI 准备一台“永不关机的电脑”",
+      "link": "/tutorials/ai-infra-07-vps"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、先解释一下：VPS到底是什么？",
+          "link": "/tutorials/ai-infra-07-vps#一、先解释一下-vps到底是什么"
+        },
+        {
+          "text": "二、为什么Agent时代，VPS开始变得有价值",
+          "link": "/tutorials/ai-infra-07-vps#二、为什么agent时代-vps开始变得有价值"
+        },
+        {
+          "text": "三、如果没有长期放Mac mini的环境，VPS尤其合适",
+          "link": "/tutorials/ai-infra-07-vps#三、如果没有长期放mac-mini的环境-vps尤其合适"
+        },
+        {
+          "text": "四、VPS最大的优势：24小时在线",
+          "link": "/tutorials/ai-infra-07-vps#四、vps最大的优势-24小时在线"
+        },
+        {
+          "text": "五、第二个优势：你在哪里都可以访问",
+          "link": "/tutorials/ai-infra-07-vps#五、第二个优势-你在哪里都可以访问"
+        },
+        {
+          "text": "六、第三个优势：非常适合运行“服务型”的东西",
+          "link": "/tutorials/ai-infra-07-vps#六、第三个优势-非常适合运行-服务型-的东西"
+        },
+        {
+          "text": "七、VPS还有一个好处：便宜",
+          "link": "/tutorials/ai-infra-07-vps#七、vps还有一个好处-便宜"
+        },
+        {
+          "text": "八、但是VPS有一个很大的问题：它不是你的电脑",
+          "link": "/tutorials/ai-infra-07-vps#八、但是vps有一个很大的问题-它不是你的电脑"
+        },
+        {
+          "text": "九、千万不要把重要资料“唯一一份”放在VPS上",
+          "link": "/tutorials/ai-infra-07-vps#九、千万不要把重要资料-唯一一份-放在vps上"
+        },
+        {
+          "text": "十、VPS最容易被忽略的另一个问题：安全",
+          "link": "/tutorials/ai-infra-07-vps#十、vps最容易被忽略的另一个问题-安全"
+        },
+        {
+          "text": "十一、律师使用VPS，还要额外考虑客户数据",
+          "link": "/tutorials/ai-infra-07-vps#十一、律师使用vps-还要额外考虑客户数据"
+        },
+        {
+          "text": "十二、VPS还有一个缺点：学习成本比Mac高",
+          "link": "/tutorials/ai-infra-07-vps#十二、vps还有一个缺点-学习成本比mac高"
+        },
+        {
+          "text": "十三、VPS和Mac mini到底怎么选？",
+          "link": "/tutorials/ai-infra-07-vps#十三、vps和mac-mini到底怎么选"
+        },
+        {
+          "text": "十四、我比较喜欢的架构其实是“本地工作，云端运行”",
+          "link": "/tutorials/ai-infra-07-vps#十四、我比较喜欢的架构其实是-本地工作-云端运行"
+        },
+        {
+          "text": "十五、服务器真正应该“无状态化”",
+          "link": "/tutorials/ai-infra-07-vps#十五、服务器真正应该-无状态化"
+        },
+        {
+          "text": "十六、所以VPS是进阶选项，不是必修课",
+          "link": "/tutorials/ai-infra-07-vps#十六、所以vps是进阶选项-不是必修课"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-08-local-model": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第八步（进阶）：要不要部署本地大模型？",
+      "link": "/tutorials/ai-infra-08-local-model"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、什么叫本地大模型？",
+          "link": "/tutorials/ai-infra-08-local-model#一、什么叫本地大模型"
+        },
+        {
+          "text": "二、律师为什么可能需要它？",
+          "link": "/tutorials/ai-infra-08-local-model#二、律师为什么可能需要它"
+        },
+        {
+          "text": "三、不要为了“本地”牺牲工作质量",
+          "link": "/tutorials/ai-infra-08-local-model#三、不要为了-本地-牺牲工作质量"
+        },
+        {
+          "text": "四、我反而更看好“本地知识库”",
+          "link": "/tutorials/ai-infra-08-local-model#四、我反而更看好-本地知识库"
+        },
+        {
+          "text": "五、本地模型的代价也很明显",
+          "link": "/tutorials/ai-infra-08-local-model#五、本地模型的代价也很明显"
+        },
+        {
+          "text": "六、本地运行也不等于绝对安全",
+          "link": "/tutorials/ai-infra-08-local-model#六、本地运行也不等于绝对安全"
+        },
+        {
+          "text": "七、我的选择：把它当作备用大脑",
+          "link": "/tutorials/ai-infra-08-local-model#七、我的选择-把它当作备用大脑"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-09-backup": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第九步：做好备份，别让你的AI工作系统一夜归零",
+      "link": "/tutorials/ai-infra-09-backup"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、AI时代，最值钱的可能已经不是某一个文件",
+          "link": "/tutorials/ai-infra-09-backup#一、ai时代-最值钱的可能已经不是某一个文件"
+        },
+        {
+          "text": "二、GitHub特别适合备份Skill、脚本和配置",
+          "link": "/tutorials/ai-infra-09-backup#二、github特别适合备份skill、脚本和配置"
+        },
+        {
+          "text": "三、客户文件不要因为方便就全部扔GitHub",
+          "link": "/tutorials/ai-infra-09-backup#三、客户文件不要因为方便就全部扔github"
+        },
+        {
+          "text": "四、Mac最简单的办法：把Time Machine用起来",
+          "link": "/tutorials/ai-infra-09-backup#四、mac最简单的办法-把time-machine用起来"
+        },
+        {
+          "text": "五、VPS更不能当成“永久硬盘”",
+          "link": "/tutorials/ai-infra-09-backup#五、vps更不能当成-永久硬盘"
+        },
+        {
+          "text": "六、我比较认可一个简单原则：重要内容至少有三份",
+          "link": "/tutorials/ai-infra-09-backup#六、我比较认可一个简单原则-重要内容至少有三份"
+        },
+        {
+          "text": "七、还有一类很容易忘：账号和恢复信息",
+          "link": "/tutorials/ai-infra-09-backup#七、还有一类很容易忘-账号和恢复信息"
+        },
+        {
+          "text": "八、最理想的状态：换一台电脑，也能快速恢复",
+          "link": "/tutorials/ai-infra-09-backup#八、最理想的状态-换一台电脑-也能快速恢复"
+        },
+        {
+          "text": "九、备份不是为了防止电脑坏，而是保护你积累出来的AI能力",
+          "link": "/tutorials/ai-infra-09-backup#九、备份不是为了防止电脑坏-而是保护你积累出来的ai能力"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-infra-10-let-it-run": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI基建的第十步：别再继续搭了，让它自己跑起来",
+      "link": "/tutorials/ai-infra-10-let-it-run"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "AI基建的第十步：别再继续搭了，让它自己跑起来",
+          "link": "/tutorials/ai-infra-10-let-it-run"
+        }
+      ]
+    }
+  ],
   "/tutorials/ai-knowledge-base-quality": [
     {
       "text": "返回栏目列表",
@@ -114191,6 +114697,10 @@ export const generatedSidebar = {
     {
       "text": "AI入门：从大模型到智能体",
       "link": "/series/ai-basics/"
+    },
+    {
+      "text": "AI基建十步：把AI变成日常工作的基础设施",
+      "link": "/series/ai-infra/"
     },
     {
       "text": "AI实战：把真实工作交给Agent",

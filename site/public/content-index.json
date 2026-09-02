@@ -1,5 +1,71 @@
 [
   {
+    "href": "/tutorials/ai-infra-01-subscribe-top-model",
+    "title": "AI基建的第一步：花钱订阅一个顶级的大模型大脑",
+    "summary": "很多人开始搭建自己的 AI 工作系统时，第一反应是研究提示词、MCP、知识库、Agent，甚至先买服务器。；但如果让我重新从零开始搭一套 AI 工作系统，我做的第一件事其实非常简单：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-02-choose-mature-agent",
+    "title": "AI基建的第二步：为大模型配一个好用的智能体",
+    "summary": "上一篇讲的是，大模型是 AI 工作系统的“大脑”。；如果想让 AI 真正开始干活，还需要给这个大脑配上“手和脚”。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-03-apple-over-windows",
+    "title": "AI基建的第三步：不是广告，但 Apple 电脑真的比 Windows 好用",
+    "summary": "前两篇分别讲了两件事：第一，先给自己配一个足够强的大模型“大脑”；第二，再选一个成熟、稳定、用户多的智能体。；我的结论可能有一点主观，但这是我实际折腾各种 AI 工具之后越来越强烈的感受：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-04-lawyer-mcp",
+    "title": "AI基建的第四步：给智能体配好 MCP，律师尤其不能只靠模型“凭记忆回答”",
+    "summary": "前三步解决的是三个问题：给自己准备一个足够强的大模型“大脑”；给这个大脑配一个稳定、成熟的智能体；准备一台适合 Agent 长期工作的电脑。；因为对于普通聊天，模型知道得多不多，也许只是体验问题。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-05-github-in-practice",
+    "title": "AI基建的第五步：注册一个 GitHub 账号，并真正把它用起来",
+    "summary": "前面几步，我们已经把 AI 工作系统最基础的东西搭起来了：大模型、智能体、电脑和 MCP。；到了第五步，我建议做一件很多非技术人员以前完全不会考虑的事情：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-06-remote-work-env",
+    "title": "AI基建的第六步：搭一个远程工作环境，让AI可以一直干活",
+    "summary": "前面几步，我们已经把 AI 工作系统的大框架搭出来了：大模型、智能体、电脑、MCP、GitHub。；到了第六步，我越来越觉得还有一个东西非常重要：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-07-vps",
+    "title": "AI基建的第七步：进阶到 VPS——没有一台长期在线的 Mac mini，也可以给 AI 准备一台“永不关机的电脑”",
+    "summary": "我的理想状态其实很简单：在家里或者办公室放一台 Mac mini，长期插电、长期联网，上面跑 Agent、MCP、脚本和各种自动化任务。人在外面的时候，用手机远程看看进度。；但现实中，并不是每个人都有这样的条件。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-08-local-model",
+    "title": "AI基建的第八步（进阶）：要不要部署本地大模型？",
+    "summary": "前面已经讲了大模型、Agent、Mac、MCP、GitHub、远程环境和 VPS。；绝大多数人其实不需要部署本地大模型。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-09-backup",
+    "title": "AI基建的第九步：做好备份，别让你的AI工作系统一夜归零",
+    "summary": "前面几步，我们已经把一套 AI 工作环境慢慢搭起来了：大模型、Agent、Mac、MCP、GitHub、远程控制、VPS、本地大模型。；做到这里以后，其实会出现一个新的问题：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-10-let-it-run",
+    "title": "AI基建的第十步：别再继续搭了，让它自己跑起来",
+    "summary": "前面已经搭了模型、Agent、Mac、MCP、GitHub、远程环境、VPS、本地模型和备份。；做到这里以后，我觉得最重要的反而不是继续装新东西，而是：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/skills/contract-review",
+    "title": "合同审查",
+    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
+    "section": "法律业务 Skill"
+  },
+  {
     "href": "/agents/为什么这些规则要写进全局指令",
     "title": "为什么这些规则要写进全局指令",
     "summary": "本文先列出通用指令的条款原文，再说明这一条为什么写在全局指令里，而不是放在项目指令里、或者每次对话时口头交代。；对应版本：V3。文中客户信息一律以【】占位。",
@@ -316,12 +382,6 @@
     "title": "让 AI 直接帮我搭建第二个网站",
     "summary": "请你作为网站项目负责人，按照我现有网站 ai.licheng.uk 的基本方式，直接帮我搭建一个全新网站。；我不会写代码，也不希望自己安装软件、修改配置文件或敲命令。除非必须登录、授权或输入密码，其他工作请你直接完成。",
     "section": "AI 教程"
-  },
-  {
-    "href": "/skills/contract-review",
-    "title": "合同审查",
-    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
-    "section": "法律业务 Skill"
   },
   {
     "href": "/skills/company-preliminary-analysis",
