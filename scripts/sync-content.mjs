@@ -193,6 +193,19 @@ function encodeGitHubPath(relativePath) {
     .join('/')
 }
 
+function writeCopySource(repoDir, relativePath, section, slug) {
+  const sourcePath = path.join(repoDir, relativePath)
+  if (!existsSync(sourcePath)) {
+    console.warn(`Copy source file not found: ${sourcePath}`)
+    return ''
+  }
+
+  const copyPath = path.join(siteDir, 'public', 'copy', section, `${slug}.md`)
+  ensureDir(path.dirname(copyPath))
+  writeFileSync(copyPath, readFileSync(sourcePath, 'utf8'))
+  return `/copy/${encodeGitHubPath(`${section}/${slug}.md`)}`
+}
+
 function githubBlobUrl(repoWebUrl, relativePath) {
   return `${repoWebUrl}/blob/main/${encodeGitHubPath(relativePath)}`
 }
@@ -249,15 +262,40 @@ function withSeoFrontmatter(markdown, description, updatedAt) {
   return `---\n${lines.join('\n')}\n---\n\n${markdown}`
 }
 
-function addArticleChromeToMarkdownFiles(dir, fallback, repoWebUrl, repoDir, sourcePrefix = '') {
+function addArticleChromeToMarkdownFiles(
+  dir,
+  fallback,
+  repoWebUrl,
+  repoDir,
+  sourcePrefix = '',
+  copyUrlBase = '',
+  copySourceDir = repoDir
+) {
+  const normalizedPrefix = sourcePrefix.replace(/\/+$/, '')
   for (const name of readDirSafe(dir).sort()) {
     if (!name.endsWith('.md') || name === 'index.md') continue
     const file = path.join(dir, name)
-    const sourcePath = sourcePrefix ? `${sourcePrefix}/${name}` : name
+    const sourcePath = normalizedPrefix ? `${normalizedPrefix}/${name}` : name
+    const copySourcePath = copyUrlBase && normalizedPrefix === 'cases' && !existsSync(path.join(copySourceDir, sourcePath))
+      ? `reports/${name}`
+      : sourcePath
     const updatedAt = gitLastUpdated(repoDir, sourcePath)
     const markdown = readFileSync(file, 'utf8')
     const summary = summarizeMarkdown(`${path.basename(dir)}/${name}`, markdown)
-    writeFileSync(file, withArticleChrome(withSeoFrontmatter(markdown, summary, updatedAt), fallback, githubBlobUrl(repoWebUrl, sourcePath), updatedAt))
+    const copyUrl = copyUrlBase
+      ? writeCopySource(copySourceDir, copySourcePath, copyUrlBase, name.replace(/\.md$/, ''))
+      : ''
+    writeFileSync(
+      file,
+      withArticleChrome(
+        withSeoFrontmatter(markdown, summary, updatedAt),
+        fallback,
+        githubBlobUrl(repoWebUrl, sourcePath),
+        updatedAt,
+        '',
+        copyUrl
+      )
+    )
   }
 }
 
@@ -798,6 +836,8 @@ rmSync(path.join(siteDir, 'series'), { recursive: true, force: true })
 rmSync(path.join(siteDir, 'public', 'tutorials'), { recursive: true, force: true })
 rmSync(path.join(siteDir, 'public', 'tutorial-views'), { recursive: true, force: true })
 rmSync(path.join(siteDir, 'public', 'tutorial-copy'), { recursive: true, force: true })
+rmSync(path.join(siteDir, 'public', 'copy'), { recursive: true, force: true })
+ensureDir(path.join(siteDir, 'public', 'copy'))
 
 writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
   <div class="home-hero-copy">
@@ -894,7 +934,7 @@ const agentsSrc = path.join(cacheDir, 'agents')
 const agentsDest = path.join(siteDir, 'agents')
 ensureDir(agentsDest)
 copyMarkdownFiles(agentsSrc, agentsDest)
-addArticleChromeToMarkdownFiles(agentsDest, '/agents/', sourceWebUrls.agents, agentsSrc)
+addArticleChromeToMarkdownFiles(agentsDest, '/agents/', sourceWebUrls.agents, agentsSrc, '', 'agents', agentsSrc)
 
 let agentsIndex = `${backButton('/')}# 智能体通用指令和项目指令
 
@@ -964,7 +1004,8 @@ for (const dir of skillDirs) {
   const skillMd = stripYamlFrontmatter(readFileSync(path.join(skillsSrc, dir, 'SKILL.md'), 'utf8'))
   const skillKey = `skills/${dir}`
   const skillUpdatedAt = gitLastUpdated(skillsSrc, path.join(dir, 'SKILL.md'))
-  const page = `${backButton('/skills/')}${articleTools(githubBlobUrl(sourceWebUrls.skills, `${dir}/SKILL.md`), skillUpdatedAt)}<InstallPrompt skill-name="${dir}" />
+  const copyUrl = writeCopySource(skillsSrc, path.join(dir, 'SKILL.md'), 'skills', dir)
+  const page = `${backButton('/skills/')}${articleTools(githubBlobUrl(sourceWebUrls.skills, `${dir}/SKILL.md`), skillUpdatedAt, '', copyUrl)}<InstallPrompt skill-name="${dir}" />
 
 # ${displayTitle(skillKey, dir, skillMd)}
 
@@ -1065,7 +1106,18 @@ if (existsSync(localTutorialsSrc)) {
     const updatedAt = gitLastUpdated(source.repoDir, source.relativePath)
     const markdown = readFileSync(file, 'utf8')
     const summary = summarizeMarkdown(`tutorials/${name}`, markdown)
-    writeFileSync(file, withArticleChrome(withSeoFrontmatter(markdown, summary, updatedAt), '/tutorials/', githubBlobUrl(repoWebUrl, source.relativePath), updatedAt))
+    const copyUrl = writeCopySource(source.repoDir, source.relativePath, 'tutorials', cleanTutorialSlug(name))
+    writeFileSync(
+      file,
+      withArticleChrome(
+        withSeoFrontmatter(markdown, summary, updatedAt),
+        '/tutorials/',
+        githubBlobUrl(repoWebUrl, source.relativePath),
+        updatedAt,
+        '',
+        copyUrl
+      )
+    )
   }
 }
 
@@ -1299,7 +1351,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
       if (normalized !== markdown) writeFileSync(file, normalized)
     }
   }
-  addArticleChromeToMarkdownFiles(dest, `${base}/`, sourceWebUrls[key], src, 'cases/')
+  addArticleChromeToMarkdownFiles(dest, `${base}/`, sourceWebUrls[key], src, 'cases/', key, src)
 
   const boardGroups = new Map(kbBoardOrder.map((board) => [board, []]))
   for (const entry of entries) {

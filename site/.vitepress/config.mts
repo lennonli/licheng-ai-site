@@ -39,6 +39,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
+  srcExclude: ['public/copy/**'],
   sitemap: { hostname: siteOrigin },
   transformHead({ page, title, description }) {
     const canonical = canonicalUrl(page)

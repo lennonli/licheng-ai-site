@@ -1,5 +1,5 @@
 <template>
-  <section class="article-tools" aria-label="文章工具">
+  <section class="article-tools" aria-label="文章工具" :copy-url="copyUrl">
     <button class="article-tool-button" type="button" :disabled="!copyReady" @click="copyArticle">
       <span class="article-tool-icon" aria-hidden="true">⧉</span>
       <span>{{ copyLabel }}</span>
@@ -222,23 +222,40 @@ async function copyArticle() {
   const article = document.querySelector('.vp-doc')
   if (!article) return
 
-  const clone = article.cloneNode(true)
-  if (!(clone instanceof HTMLElement)) return
-
-  clone.querySelectorAll('.back-button, .article-tools, .header-anchor, button, iframe').forEach((node) => node.remove())
-  clone.querySelectorAll('img').forEach((image) => {
-    const replacement = document.createElement('span')
-    replacement.textContent = image.getAttribute('alt') || ''
-    image.replaceWith(replacement)
-  })
   try {
-    const immersiveText = copySourceText.value
-    const text = [clone.innerText.trim(), immersiveText]
-      .filter(Boolean)
-      .join('\n\n')
-      .replace(/\n{3,}/g, '\n\n')
-      .replace(/[ \t]+\n/g, '\n')
-      .trim()
+    let text = copySourceText.value
+    if (!text) {
+      const clone = article.cloneNode(true)
+      if (!(clone instanceof HTMLElement)) return
+
+      clone.querySelectorAll('.back-button, .article-tools, .article-copy-buffer, .header-anchor, button, iframe').forEach((node) => node.remove())
+      clone.querySelectorAll('img').forEach((image) => {
+        const replacement = document.createElement('span')
+        replacement.textContent = image.getAttribute('alt') || ''
+        image.replaceWith(replacement)
+      })
+
+      const buffer = document.createElement('div')
+      buffer.className = 'article-copy-buffer'
+      buffer.style.position = 'fixed'
+      buffer.style.left = '-9999px'
+      buffer.style.top = '0'
+      buffer.style.width = '1px'
+      buffer.style.height = '1px'
+      buffer.style.overflow = 'hidden'
+      buffer.appendChild(clone)
+      document.body.appendChild(buffer)
+      try {
+        text = clone.innerText.trim()
+      } finally {
+        buffer.remove()
+      }
+
+      text = text
+        .replace(/\n{3,}/g, '\n\n')
+        .replace(/[ \t]+\n/g, '\n')
+        .trim()
+    }
     await writeClipboardText(text)
     copyLabel.value = '已复制'
   } catch {
@@ -254,7 +271,7 @@ async function copyArticle() {
 async function fetchCopyText(url: string) {
   const response = await fetch(url, { credentials: 'same-origin' })
   if (!response.ok) throw new Error(`Copy source responded with ${response.status}`)
-  return (await response.text()).trim()
+  return await response.text()
 }
 
 async function writeClipboardText(text: string) {

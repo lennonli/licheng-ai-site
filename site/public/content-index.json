@@ -1,5 +1,11 @@
 [
   {
+    "href": "/agents/为什么这些规则要写进全局指令",
+    "title": "为什么这些规则要写进全局指令",
+    "summary": "本文先列出通用指令的条款原文，再说明这一条为什么写在全局指令里，而不是放在项目指令里、或者每次对话时口头交代。；对应版本：V3。文中客户信息一律以【】占位。",
+    "section": "智能体指令"
+  },
+  {
     "href": "/tutorials/agent-practice-01-delegate-complete-work",
     "title": "AI实战01｜别再一句一句问AI：把一项完整工作直接交给Agent",
     "summary": "很多人已经天天用AI，但使用方式仍然是：；最后还要自己复制到Word、整理格式、保存文件。",
@@ -310,6 +316,18 @@
     "title": "让 AI 直接帮我搭建第二个网站",
     "summary": "请你作为网站项目负责人，按照我现有网站 ai.licheng.uk 的基本方式，直接帮我搭建一个全新网站。；我不会写代码，也不希望自己安装软件、修改配置文件或敲命令。除非必须登录、授权或输入密码，其他工作请你直接完成。",
     "section": "AI 教程"
+  },
+  {
+    "href": "/skills/contract-review",
+    "title": "合同审查",
+    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/skills/company-preliminary-analysis",
+    "title": "委托前公司初步分析报告",
+    "summary": "用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。",
+    "section": "法律业务 Skill"
   },
   {
     "href": "/tutorials/gzh-template-with-ai",
@@ -678,6 +696,12 @@
     "section": "AI 教程"
   },
   {
+    "href": "/agents/法律业务通用指令",
+    "title": "法律业务通用指令",
+    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
+    "section": "智能体指令"
+  },
+  {
     "href": "/tutorials/civil-litigation-evidence-organization",
     "title": "证据整理与证据目录",
     "summary": "民事诉讼 AI 实战系列·第二篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、保密分级、本地 OCR 工具链、反编造纪律、模板复用四步法都在那里，本篇不再重复。",
@@ -807,12 +831,6 @@
     "href": "/agents/AI-Agent辅助IPO股东穿透实操教程",
     "title": "AI Agent辅助IPO股东穿透核查与底稿归档实操教程",
     "summary": "以某新三板挂牌公司北交所IPO项目为样本 · AI工具：ZCode Agent ＋ 案牍AnduAI穿透报告 · 2026年8月；本教程按实际操作的时间顺序，复盘用AI Agent完成股东穿透底稿归档与资料跟踪的全流程，共十一个步骤。每……",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/法律业务通用指令",
-    "title": "法律业务通用指令",
-    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
     "section": "智能体指令"
   },
   {
