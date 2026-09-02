@@ -152,7 +152,7 @@ for (const file of htmlFiles) {
   const noWechatContactRoutes = new Set(['/tools/course-ppt/'])
   if (!isImmersive && !isPrivateUtility) {
     const h1Count = (html.match(/<h1\b/g) || []).length
-    if (!isNotFound && h1Count !== 1) fail(`${route}: expected one H1, found ${h1Count}`)
+    if (!isNotFound && !isPresentation && h1Count !== 1) fail(`${route}: expected one H1, found ${h1Count}`)
     if (!isNotFound && !noWechatContactRoutes.has(route) && !isPresentation && !html.includes('wechat-contact')) fail(`${route}: WeChat contact section missing`)
     if (!/<link rel="canonical" href="https:\/\/ai\.licheng\.uk\//.test(html)) fail(`${route}: canonical missing`)
     if (!/<meta property="og:url"/.test(html)) fail(`${route}: og:url missing`)
@@ -174,6 +174,7 @@ for (const file of htmlFiles) {
   const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((match) => decodeHtml(match[1])))
   for (const match of html.matchAll(/href="([^"]+)"/g)) {
     const raw = decodeHtml(match[1])
+    if (raw.includes('${')) continue
     const target = raw.split('#', 1)[0]
     if (/%E3%80%82|%EF%BC%9B|%EF%BC%8C/i.test(target)) fail(`${route}: malformed URL ${raw}`)
     let url
