@@ -1,0 +1,3825 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10271d">
+    <title>AI 优先演讲版｜建立自己的 AI 工作系统 | 李成律师</title>
+    <meta name="description" content="AI 优先 26 页演讲版：从工作习惯、任务交付、Agent、Skill、工具、自动化到验收和人的判断，每页一个主题，适合直接演讲。">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ai.licheng.uk/series/ai-priority/presentation/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AI 优先演讲版｜建立自己的 AI 工作系统 | 李成律师">
+    <meta property="og:description" content="AI 优先 26 页演讲版：每页一个主题，配有示意图、记忆点和讲者提示。">
+    <meta property="og:url" content="https://ai.licheng.uk/series/ai-priority/presentation/">
+    <meta property="og:image" content="https://ai.licheng.uk/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI 优先演讲版｜建立自己的 AI 工作系统 | 李成律师">
+    <meta name="twitter:description" content="AI 优先 26 页演讲版：每页一个主题，配有示意图、记忆点和讲者提示。">
+    <meta name="twitter:image" content="https://ai.licheng.uk/og-image.jpg">
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09130f;
+        --bg-2: #10271d;
+        --ink: #f4faee;
+        --muted: #a9bcae;
+        --muted-2: #71877a;
+        --lime: #b8f493;
+        --lime-strong: #83df5d;
+        --mint: #dff7d0;
+        --cyan: #8bd9d3;
+        --amber: #f4c56d;
+        --line: rgba(223, 247, 208, 0.16);
+        --line-strong: rgba(223, 247, 208, 0.28);
+        --paper: #f3f7ef;
+        --paper-ink: #14231b;
+        --shadow: 0 26px 80px rgba(0, 0, 0, 0.28);
+        --ease: cubic-bezier(0.22, 0.75, 0.25, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-width: 320px;
+        min-height: 100%;
+        margin: 0;
+        background:
+          radial-gradient(circle at 10% 0%, rgba(131, 223, 93, 0.13), transparent 28rem),
+          radial-gradient(circle at 100% 100%, rgba(139, 217, 211, 0.09), transparent 32rem),
+          var(--bg);
+      }
+
+      body {
+        min-height: 100svh;
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+        overflow: hidden;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button {
+        font: inherit;
+      }
+
+      .deck-shell {
+        display: grid;
+        width: 100%;
+        height: 100svh;
+        min-height: 560px;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+        gap: clamp(12px, 1.8vh, 22px);
+        padding: clamp(14px, 2.2vw, 30px) clamp(16px, 3vw, 48px) clamp(14px, 2.4vh, 28px);
+      }
+
+      .deck-topbar,
+      .deck-control-bar {
+        width: min(100%, 1440px);
+        margin: 0 auto;
+      }
+
+      .deck-topbar {
+        display: grid;
+        grid-template-columns: minmax(190px, 1fr) auto minmax(190px, 1fr);
+        gap: 20px;
+        align-items: center;
+      }
+
+      .deck-brand,
+      .deck-top-link,
+      .deck-top-button,
+      .nav-button,
+      .dot-button,
+      .notes-close {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .deck-brand {
+        display: inline-flex;
+        width: fit-content;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 760;
+        text-decoration: none;
+        letter-spacing: 0.01em;
+      }
+
+      .brand-mark {
+        display: inline-grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-size: 16px;
+        background: var(--lime);
+        border-radius: 10px;
+        box-shadow: 0 8px 22px rgba(159, 232, 112, 0.2);
+      }
+
+      .brand-sub {
+        color: var(--muted-2);
+        font-weight: 620;
+      }
+
+      .deck-heading {
+        display: grid;
+        justify-items: center;
+        gap: 3px;
+        text-align: center;
+      }
+
+      .deck-overline,
+      .deck-counter,
+      .slide-index,
+      .slide-topic,
+      .slide-state,
+      .concept-panel-head,
+      .control-kicker,
+      .keyboard-hint,
+      .notes-kicker,
+      .notes-meta,
+      .takeaway-num {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      }
+
+      .deck-overline {
+        color: var(--muted-2);
+        font-size: 11px;
+        font-weight: 760;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .deck-counter {
+        color: var(--lime);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      .deck-top-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+      }
+
+      .deck-top-link,
+      .deck-top-button {
+        display: inline-flex;
+        min-height: 36px;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 8px 12px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 760;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        cursor: pointer;
+        transition: color 160ms ease, background 160ms ease, border-color 160ms ease, transform 160ms ease;
+      }
+
+      .deck-top-link:hover,
+      .deck-top-link:focus-visible,
+      .deck-top-button:hover,
+      .deck-top-button:focus-visible {
+        color: var(--ink);
+        background: rgba(184, 244, 147, 0.12);
+        border-color: rgba(184, 244, 147, 0.38);
+        transform: translateY(-1px);
+      }
+
+      .deck-top-button[aria-pressed="true"] {
+        color: var(--paper-ink);
+        background: var(--lime);
+        border-color: var(--lime);
+      }
+
+      .stage {
+        position: relative;
+        display: grid;
+        min-height: 0;
+        place-items: center;
+      }
+
+      .slide-viewport {
+        position: relative;
+        width: min(100%, 1400px, calc((100svh - 174px) * 1.7777778));
+        aspect-ratio: 16 / 9;
+        filter: drop-shadow(var(--shadow));
+        touch-action: pan-y;
+      }
+
+      .slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        padding: clamp(20px, 2.4vw, 36px);
+        background:
+          radial-gradient(circle at 86% 8%, rgba(159, 232, 112, 0.16), transparent 25rem),
+          linear-gradient(135deg, #173d2a 0%, #10271d 52%, #0d1e17 100%);
+        border: 1px solid var(--line-strong);
+        border-radius: clamp(22px, 2.5vw, 34px);
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(18px) scale(0.985);
+        transition: opacity 360ms var(--ease), transform 420ms var(--ease), visibility 360ms ease;
+        visibility: hidden;
+      }
+
+      .slide::before {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(223, 247, 208, 0.045) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(223, 247, 208, 0.045) 1px, transparent 1px);
+        background-size: 34px 34px;
+        mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.82), transparent 76%);
+        content: "";
+        pointer-events: none;
+      }
+
+      .slide::after {
+        position: absolute;
+        right: -0.06em;
+        bottom: -0.29em;
+        color: rgba(223, 247, 208, 0.035);
+        content: attr(data-slide-number);
+        font-size: clamp(180px, 24vw, 360px);
+        font-weight: 900;
+        letter-spacing: -0.12em;
+        line-height: 1;
+        pointer-events: none;
+      }
+
+      .slide.is-active {
+        z-index: 1;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0) scale(1);
+        visibility: visible;
+      }
+
+      .slide-topline,
+      .slide-main,
+      .takeaway-grid,
+      .slide-source {
+        position: relative;
+        z-index: 1;
+      }
+
+      .slide-topline {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--muted-2);
+      }
+
+      .slide-index {
+        display: inline-grid;
+        width: 34px;
+        height: 26px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-size: 11px;
+        font-weight: 900;
+        background: var(--lime);
+        border-radius: 8px;
+      }
+
+      .slide-topic {
+        font-size: 11px;
+        font-weight: 760;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .slide-state {
+        margin-left: auto;
+        padding: 5px 9px;
+        color: var(--lime);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        border: 1px solid rgba(184, 244, 147, 0.32);
+        border-radius: 999px;
+        text-transform: uppercase;
+      }
+
+      .slide-body {
+        display: flex;
+        min-height: 0;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        padding: clamp(16px, 2.3vw, 28px) 0 clamp(10px, 1.2vw, 18px);
+      }
+
+      .slide-main {
+        display: grid;
+        grid-template-columns: minmax(0, 1.04fr) minmax(300px, 0.96fr);
+        gap: clamp(20px, 3vw, 48px);
+        align-items: center;
+      }
+
+      .slide-copy {
+        min-width: 0;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 16px;
+        color: var(--lime);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: clamp(10px, 1vw, 12px);
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        background: var(--lime);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(184, 244, 147, 0.1);
+      }
+
+      .slide h1 {
+        max-width: 700px;
+        margin: 0;
+        color: var(--ink);
+        font-size: clamp(40px, 4.05vw, 64px);
+        font-weight: 860;
+        letter-spacing: -0.055em;
+        line-height: 1.03;
+      }
+
+      .slide h1 span {
+        color: var(--lime);
+      }
+
+      .slide-lead {
+        max-width: 620px;
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: clamp(14px, 1.1vw, 17px);
+        line-height: 1.56;
+      }
+
+      .slide-lead strong {
+        color: var(--mint);
+        font-weight: 760;
+      }
+
+      .slide-quote {
+        display: flex;
+        max-width: 560px;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 16px;
+        padding: 10px 13px;
+        background: rgba(223, 247, 208, 0.07);
+        border-left: 2px solid var(--lime);
+        border-radius: 0 14px 14px 0;
+      }
+
+      .quote-mark {
+        color: var(--lime);
+        font-family: Georgia, serif;
+        font-size: 27px;
+        line-height: 0.75;
+      }
+
+      .slide-quote div {
+        display: grid;
+        gap: 4px;
+      }
+
+      .quote-label {
+        color: var(--muted-2);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .quote-text {
+        color: var(--mint);
+        font-size: clamp(12px, 0.95vw, 14px);
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      .concept-panel {
+        position: relative;
+        min-width: 0;
+        padding: clamp(15px, 1.5vw, 22px);
+        background: rgba(7, 19, 14, 0.42);
+        border: 1px solid var(--line);
+        border-radius: clamp(18px, 2vw, 28px);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      }
+
+      .concept-panel-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        color: var(--mint);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+      }
+
+      .panel-caption {
+        color: var(--muted-2);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .concept-map {
+        margin-top: 8px;
+      }
+
+      .concept-svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .visual-body {
+        display: grid;
+        gap: 10px;
+        margin-top: 13px;
+      }
+
+      .visual-flow {
+        display: grid;
+        gap: 7px;
+      }
+
+      .visual-flow-step {
+        display: grid;
+        grid-template-columns: 28px minmax(0, 1fr);
+        gap: 10px;
+        align-items: start;
+        padding: 10px 11px;
+        background: rgba(223, 247, 208, 0.055);
+        border: 1px solid rgba(223, 247, 208, 0.12);
+        border-radius: 13px;
+      }
+
+      .visual-flow-step:nth-of-type(3n + 2) {
+        background: rgba(139, 217, 211, 0.07);
+        border-color: rgba(139, 217, 211, 0.16);
+      }
+
+      .visual-flow-step:nth-of-type(3n + 3) {
+        background: rgba(244, 197, 109, 0.07);
+        border-color: rgba(244, 197, 109, 0.16);
+      }
+
+      .visual-step-num {
+        display: inline-grid;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        font-weight: 900;
+        background: var(--lime);
+        border-radius: 8px;
+      }
+
+      .visual-flow-step:nth-of-type(3n + 2) .visual-step-num {
+        background: var(--cyan);
+      }
+
+      .visual-flow-step:nth-of-type(3n + 3) .visual-step-num {
+        background: var(--amber);
+      }
+
+      .visual-flow-step strong,
+      .visual-layer strong,
+      .visual-check-item strong {
+        display: block;
+        color: var(--ink);
+        font-size: 13px;
+        line-height: 1.3;
+      }
+
+      .visual-flow-step small,
+      .visual-layer small,
+      .visual-check-item span,
+      .visual-compare-col li,
+      .visual-grid-card span,
+      .visual-map-node span,
+      .visual-scale-label {
+        display: block;
+        color: var(--muted-2);
+        font-size: 10px;
+        line-height: 1.45;
+      }
+
+      .visual-flow-arrow {
+        display: grid;
+        height: 9px;
+        place-items: center;
+        color: var(--lime);
+        font-size: 12px;
+        line-height: 1;
+      }
+
+      .visual-compare {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .visual-compare.is-three {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .visual-compare.is-three .visual-compare-col {
+        padding: 10px;
+      }
+
+      .visual-compare-col {
+        min-width: 0;
+        padding: 12px;
+        background: rgba(223, 247, 208, 0.05);
+        border: 1px solid rgba(223, 247, 208, 0.13);
+        border-radius: 14px;
+      }
+
+      .visual-compare-col.is-cyan {
+        background: rgba(139, 217, 211, 0.07);
+        border-color: rgba(139, 217, 211, 0.18);
+      }
+
+      .visual-compare-col.is-amber {
+        background: rgba(244, 197, 109, 0.07);
+        border-color: rgba(244, 197, 109, 0.18);
+      }
+
+      .visual-compare-col.is-lime {
+        background: rgba(184, 244, 147, 0.08);
+        border-color: rgba(184, 244, 147, 0.2);
+      }
+
+      .visual-compare-col h3,
+      .visual-grid-card h3,
+      .visual-map-node h3 {
+        margin: 0 0 9px;
+        color: var(--ink);
+        font-size: 14px;
+        line-height: 1.25;
+      }
+
+      .visual-compare-tag,
+      .visual-grid-tag,
+      .visual-map-tag {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--lime);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 9px;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .visual-compare-col.is-cyan .visual-compare-tag,
+      .visual-grid-card:nth-child(2) .visual-grid-tag,
+      .visual-map-node:nth-child(2) .visual-map-tag {
+        color: var(--cyan);
+      }
+
+      .visual-compare-col.is-amber .visual-compare-tag,
+      .visual-grid-card:nth-child(3) .visual-grid-tag,
+      .visual-map-node:nth-child(3) .visual-map-tag {
+        color: var(--amber);
+      }
+
+      .visual-compare-col ul {
+        display: grid;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .visual-compare-col li {
+        position: relative;
+        padding-left: 12px;
+      }
+
+      .visual-compare-col li::before {
+        position: absolute;
+        top: 0.54em;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background: var(--lime);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .visual-compare-col.is-cyan li::before {
+        background: var(--cyan);
+      }
+
+      .visual-compare-col.is-amber li::before {
+        background: var(--amber);
+      }
+
+      .visual-layer-stack {
+        display: grid;
+        gap: 7px;
+      }
+
+      .visual-layer {
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 10px;
+        align-items: center;
+        padding: 10px 12px;
+        background: rgba(223, 247, 208, 0.055);
+        border: 1px solid rgba(223, 247, 208, 0.13);
+        border-radius: 12px;
+      }
+
+      .visual-layer:nth-child(2) {
+        margin-left: 14px;
+        background: rgba(139, 217, 211, 0.07);
+        border-color: rgba(139, 217, 211, 0.16);
+      }
+
+      .visual-layer:nth-child(3) {
+        margin-left: 28px;
+        background: rgba(244, 197, 109, 0.07);
+        border-color: rgba(244, 197, 109, 0.16);
+      }
+
+      .visual-layer:nth-child(4) {
+        margin-left: 42px;
+        background: rgba(184, 244, 147, 0.08);
+        border-color: rgba(184, 244, 147, 0.19);
+      }
+
+      .visual-layer-index {
+        display: inline-grid;
+        width: 29px;
+        height: 29px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        font-weight: 900;
+        background: var(--lime);
+        border-radius: 8px;
+      }
+
+      .visual-layer:nth-child(2) .visual-layer-index {
+        background: var(--cyan);
+      }
+
+      .visual-layer:nth-child(3) .visual-layer-index {
+        background: var(--amber);
+      }
+
+      .visual-layer:nth-child(4) .visual-layer-index {
+        background: var(--mint);
+      }
+
+      .visual-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .visual-grid-card {
+        min-width: 0;
+        min-height: 78px;
+        padding: 12px;
+        background: rgba(223, 247, 208, 0.055);
+        border: 1px solid rgba(223, 247, 208, 0.13);
+        border-radius: 14px;
+      }
+
+      .visual-grid-card:nth-child(2) {
+        background: rgba(139, 217, 211, 0.07);
+        border-color: rgba(139, 217, 211, 0.16);
+      }
+
+      .visual-grid-card:nth-child(3) {
+        background: rgba(244, 197, 109, 0.07);
+        border-color: rgba(244, 197, 109, 0.16);
+      }
+
+      .visual-grid-card:nth-child(4) {
+        background: rgba(184, 244, 147, 0.08);
+        border-color: rgba(184, 244, 147, 0.19);
+      }
+
+      .visual-formula {
+        display: grid;
+        gap: 11px;
+        padding: 17px;
+        background: rgba(184, 244, 147, 0.08);
+        border: 1px solid rgba(184, 244, 147, 0.24);
+        border-radius: 16px;
+      }
+
+      .visual-formula-equation {
+        color: var(--mint);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: clamp(14px, 1.4vw, 20px);
+        font-weight: 850;
+        letter-spacing: -0.02em;
+        line-height: 1.35;
+      }
+
+      .visual-formula-explain {
+        display: grid;
+        gap: 6px;
+      }
+
+      .visual-formula-explain div {
+        display: grid;
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 8px;
+        align-items: baseline;
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1.4;
+      }
+
+      .visual-formula-explain strong {
+        color: var(--lime);
+        font-size: 10px;
+      }
+
+      .visual-checklist {
+        display: grid;
+        gap: 7px;
+      }
+
+      .visual-check-item {
+        display: grid;
+        grid-template-columns: 25px minmax(0, 1fr);
+        gap: 10px;
+        align-items: start;
+        padding: 10px 11px;
+        background: rgba(223, 247, 208, 0.055);
+        border: 1px solid rgba(223, 247, 208, 0.12);
+        border-radius: 12px;
+      }
+
+      .visual-check-item::before {
+        display: grid;
+        width: 24px;
+        height: 24px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-size: 13px;
+        font-weight: 900;
+        background: var(--lime);
+        border-radius: 7px;
+        content: "✓";
+      }
+
+      .visual-check-item:nth-child(2)::before {
+        background: var(--cyan);
+      }
+
+      .visual-check-item:nth-child(3)::before {
+        background: var(--amber);
+      }
+
+      .visual-check-item:nth-child(4)::before {
+        background: var(--mint);
+      }
+
+      .visual-map {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .visual-map-center {
+        grid-column: 1 / -1;
+        padding: 15px;
+        color: var(--paper-ink);
+        text-align: center;
+        background: var(--lime);
+        border-radius: 14px;
+      }
+
+      .visual-map-center strong {
+        display: block;
+        font-size: 17px;
+        line-height: 1.2;
+      }
+
+      .visual-map-center span {
+        display: block;
+        margin-top: 4px;
+        color: rgba(20, 35, 27, 0.66);
+        font-size: 10px;
+      }
+
+      .visual-map-node {
+        min-width: 0;
+        padding: 11px;
+        background: rgba(223, 247, 208, 0.055);
+        border: 1px solid rgba(223, 247, 208, 0.13);
+        border-radius: 13px;
+      }
+
+      .visual-map-node h3 {
+        margin-bottom: 5px;
+        font-size: 12px;
+      }
+
+      .visual-map-node span {
+        font-size: 9px;
+      }
+
+      .visual-scale {
+        display: grid;
+        gap: 10px;
+      }
+
+      .visual-scale-bar {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        min-height: 52px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+      }
+
+      .visual-scale-bar span {
+        display: grid;
+        place-items: center;
+        padding: 8px;
+        color: var(--paper-ink);
+        font-size: 11px;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .visual-scale-bar span:nth-child(1) {
+        background: var(--cyan);
+      }
+
+      .visual-scale-bar span:nth-child(2) {
+        background: var(--lime);
+      }
+
+      .visual-scale-bar span:nth-child(3) {
+        background: var(--amber);
+      }
+
+      .visual-scale-legend {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 9px;
+      }
+
+      .visual-scale-legend div {
+        display: grid;
+        gap: 3px;
+      }
+
+      .visual-scale-legend strong {
+        color: var(--ink);
+        font-size: 11px;
+      }
+
+      .concept-svg .connector {
+        fill: none;
+        stroke: rgba(184, 244, 147, 0.58);
+        stroke-dasharray: 4 6;
+        stroke-linecap: round;
+        stroke-width: 2;
+      }
+
+      .concept-svg .arrow-head {
+        fill: var(--lime);
+      }
+
+      .concept-svg .node-outer {
+        fill: rgba(223, 247, 208, 0.04);
+        stroke: rgba(223, 247, 208, 0.16);
+        stroke-width: 1;
+      }
+
+      .concept-svg .node-ai {
+        fill: rgba(184, 244, 147, 0.16);
+        stroke: rgba(184, 244, 147, 0.62);
+      }
+
+      .concept-svg .node-llm {
+        fill: rgba(139, 217, 211, 0.13);
+        stroke: rgba(139, 217, 211, 0.56);
+      }
+
+      .concept-svg .node-product {
+        fill: rgba(244, 197, 109, 0.14);
+        stroke: rgba(244, 197, 109, 0.58);
+      }
+
+      .concept-svg .node-agent {
+        fill: rgba(184, 244, 147, 0.13);
+        stroke: rgba(184, 244, 147, 0.56);
+      }
+
+      .concept-svg .node-overline {
+        fill: var(--muted);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+      }
+
+      .concept-svg .node-title {
+        fill: var(--ink);
+        font-size: 27px;
+        font-weight: 850;
+      }
+
+      .concept-svg .node-title-small {
+        fill: var(--ink);
+        font-size: 17px;
+        font-weight: 840;
+      }
+
+      .concept-svg .node-sub {
+        fill: var(--muted);
+        font-size: 10px;
+        font-weight: 650;
+      }
+
+      .concept-svg .edge-label {
+        fill: var(--muted-2);
+        font-size: 9px;
+        font-weight: 700;
+      }
+
+      .takeaway-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .takeaway {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 11px;
+        min-width: 0;
+        padding: 13px 14px;
+        background: rgba(223, 247, 208, 0.06);
+        border: 1px solid rgba(223, 247, 208, 0.11);
+        border-radius: 15px;
+      }
+
+      .takeaway:nth-child(2) {
+        background: rgba(139, 217, 211, 0.07);
+      }
+
+      .takeaway:nth-child(3) {
+        background: rgba(244, 197, 109, 0.07);
+      }
+
+      .takeaway-num {
+        color: var(--lime);
+        font-size: 11px;
+        font-weight: 850;
+      }
+
+      .takeaway:nth-child(2) .takeaway-num {
+        color: var(--cyan);
+      }
+
+      .takeaway:nth-child(3) .takeaway-num {
+        color: var(--amber);
+      }
+
+      .takeaway-copy {
+        display: grid;
+        min-width: 0;
+        gap: 4px;
+      }
+
+      .takeaway strong {
+        color: var(--ink);
+        font-size: clamp(12px, 1vw, 14px);
+        line-height: 1.35;
+      }
+
+      .takeaway span:last-child {
+        color: var(--muted-2);
+        font-size: clamp(10px, 0.86vw, 12px);
+        line-height: 1.45;
+      }
+
+      .slide-source {
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding-top: 13px;
+        color: var(--muted-2);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        line-height: 1.4;
+        border-top: 1px solid rgba(223, 247, 208, 0.12);
+      }
+
+      .slide-source a {
+        color: var(--lime);
+        font-weight: 760;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .slide-source a:hover,
+      .slide-source a:focus-visible {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .deck-control-bar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        gap: 20px;
+        align-items: center;
+      }
+
+      .control-summary {
+        display: grid;
+        min-width: 0;
+        gap: 4px;
+      }
+
+      .control-kicker {
+        color: var(--lime);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .control-caption {
+        max-width: 440px;
+        overflow: hidden;
+        color: var(--muted-2);
+        font-size: 12px;
+        line-height: 1.45;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .deck-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .nav-button {
+        display: inline-flex;
+        min-width: 42px;
+        min-height: 38px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 12px;
+        color: var(--ink);
+        font-size: 12px;
+        font-weight: 760;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        cursor: pointer;
+        transition: color 160ms ease, background 160ms ease, border-color 160ms ease, transform 160ms ease;
+      }
+
+      .nav-button:hover:not(:disabled),
+      .nav-button:focus-visible:not(:disabled) {
+        color: var(--paper-ink);
+        background: var(--lime);
+        border-color: var(--lime);
+        transform: translateY(-1px);
+      }
+
+      .nav-button:disabled {
+        color: var(--muted-2);
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      .dot-navigation {
+        display: flex;
+        max-width: min(38vw, 340px);
+        align-items: center;
+        gap: 6px;
+        padding: 0 5px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .dot-navigation::-webkit-scrollbar {
+        display: none;
+      }
+
+      .dot-button {
+        display: inline-grid;
+        width: 8px;
+        height: 8px;
+        flex: 0 0 auto;
+        padding: 0;
+        background: rgba(223, 247, 208, 0.26);
+        border: 0;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: width 180ms ease, background 180ms ease, transform 180ms ease;
+      }
+
+      .dot-button:hover,
+      .dot-button:focus-visible,
+      .dot-button[aria-selected="true"] {
+        width: 24px;
+        background: var(--lime);
+      }
+
+      .dot-button:focus-visible {
+        outline: 2px solid var(--mint);
+        outline-offset: 4px;
+      }
+
+      .keyboard-hint {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        align-items: center;
+        color: var(--muted-2);
+        font-size: 10px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      kbd {
+        display: inline-grid;
+        min-width: 21px;
+        height: 21px;
+        place-items: center;
+        padding: 0 5px;
+        color: var(--muted);
+        font-family: inherit;
+        font-size: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--line);
+        border-bottom-color: var(--line-strong);
+        border-radius: 5px;
+      }
+
+      .progress-rail {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        height: 3px;
+        background: rgba(223, 247, 208, 0.1);
+      }
+
+      .progress-value {
+        width: 3.85%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--lime-strong), var(--lime));
+        box-shadow: 0 0 18px rgba(184, 244, 147, 0.6);
+        transition: width 320ms var(--ease);
+      }
+
+      .notes-panel {
+        position: fixed;
+        top: 76px;
+        right: clamp(14px, 3vw, 48px);
+        z-index: 8;
+        width: min(390px, calc(100vw - 28px));
+        padding: 22px;
+        color: var(--paper-ink);
+        background: rgba(243, 247, 239, 0.98);
+        border: 1px solid rgba(20, 35, 27, 0.14);
+        border-radius: 22px;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 180ms ease, transform 220ms var(--ease);
+      }
+
+      .notes-panel:not([hidden]) {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .notes-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+      }
+
+      .notes-kicker {
+        margin: 0 0 5px;
+        color: #0e6f3f;
+        font-size: 10px;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .notes-panel h2 {
+        margin: 0;
+        color: var(--paper-ink);
+        font-size: 22px;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+      }
+
+      .notes-close {
+        display: inline-grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        padding: 0;
+        color: #59645c;
+        font-size: 19px;
+        background: rgba(20, 35, 27, 0.05);
+        border: 1px solid rgba(20, 35, 27, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .notes-close:hover,
+      .notes-close:focus-visible {
+        color: var(--paper-ink);
+        background: var(--lime);
+      }
+
+      .notes-list {
+        display: grid;
+        gap: 11px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .notes-list li {
+        display: grid;
+        grid-template-columns: 23px minmax(0, 1fr);
+        gap: 10px;
+        color: #59645c;
+        font-size: 13px;
+        line-height: 1.65;
+      }
+
+      .notes-list li::before {
+        display: grid;
+        width: 23px;
+        height: 23px;
+        place-items: center;
+        color: var(--paper-ink);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10px;
+        font-weight: 850;
+        background: var(--lime);
+        border-radius: 7px;
+        content: counter(list-item, decimal-leading-zero);
+      }
+
+      .notes-meta {
+        margin: 17px 0 0;
+        padding-top: 13px;
+        color: #7d897f;
+        font-size: 10px;
+        line-height: 1.5;
+        border-top: 1px solid rgba(20, 35, 27, 0.1);
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--lime);
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 980px) {
+        .deck-topbar {
+          grid-template-columns: minmax(160px, 1fr) auto;
+        }
+
+        .deck-heading {
+          display: none;
+        }
+
+        .slide-main {
+          gap: 24px;
+        }
+
+        .slide h1 {
+          font-size: clamp(38px, 6vw, 62px);
+        }
+      }
+
+      @media (max-width: 760px) {
+        body {
+          overflow: auto;
+        }
+
+        .deck-shell {
+          height: auto;
+          min-height: 100svh;
+          grid-template-rows: auto minmax(0, 1fr) auto;
+          padding: 15px 14px 18px;
+        }
+
+        .deck-topbar {
+          gap: 10px;
+        }
+
+        .brand-sub,
+        .deck-top-link span,
+        .deck-top-button span {
+          display: none;
+        }
+
+        .deck-top-link,
+        .deck-top-button {
+          width: 36px;
+          padding: 8px;
+          font-size: 15px;
+        }
+
+        .deck-top-link::before {
+          content: "←";
+        }
+
+        .deck-top-button[data-action="notes"]::before {
+          content: "✦";
+        }
+
+        .deck-top-button[data-action="fullscreen"]::before {
+          content: "↗";
+        }
+
+        .slide-viewport {
+          width: 100%;
+          height: calc(100svh - 175px);
+          min-height: 560px;
+          aspect-ratio: auto;
+        }
+
+        .slide {
+          padding: 22px 20px 18px;
+          overflow-y: auto;
+        }
+
+        .slide-main {
+          grid-template-columns: 1fr;
+          gap: 22px;
+          align-items: start;
+        }
+
+        .slide-body {
+          justify-content: start;
+          padding: 20px 0 12px;
+        }
+
+        .slide h1 {
+          font-size: clamp(38px, 10vw, 58px);
+        }
+
+        .slide-lead {
+          font-size: 15px;
+        }
+
+        .concept-panel {
+          max-width: 520px;
+        }
+
+        .visual-compare.is-three {
+          grid-template-columns: 1fr;
+        }
+
+        .takeaway-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .takeaway {
+          padding: 12px 13px;
+        }
+
+        .deck-control-bar {
+          grid-template-columns: 1fr auto;
+          gap: 10px;
+        }
+
+        .control-summary,
+        .keyboard-hint {
+          display: none;
+        }
+
+        .deck-navigation {
+          justify-content: flex-end;
+        }
+
+        .dot-navigation {
+          max-width: 42vw;
+        }
+
+        .notes-panel {
+          top: 62px;
+          right: 14px;
+        }
+      }
+
+      @media (max-width: 430px) {
+        .deck-brand {
+          font-size: 12px;
+        }
+
+        .brand-mark {
+          width: 28px;
+          height: 28px;
+        }
+
+        .slide-topline {
+          gap: 7px;
+        }
+
+        .slide-topic {
+          font-size: 9px;
+        }
+
+        .slide-state {
+          padding: 4px 7px;
+          font-size: 9px;
+        }
+
+        .slide-source {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 7px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+
+      @media print {
+        html,
+        body {
+          background: #10271d;
+        }
+
+        body {
+          overflow: visible;
+        }
+
+        .deck-shell {
+          height: auto;
+          min-height: 100vh;
+        }
+
+        .deck-topbar,
+        .deck-control-bar,
+        .progress-rail,
+        .notes-panel {
+          display: none;
+        }
+
+        .stage {
+          min-height: 100vh;
+        }
+
+        .slide-viewport {
+          width: 100%;
+          max-width: 1400px;
+          aspect-ratio: 16 / 9;
+        }
+
+        .slide {
+          visibility: visible !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+
+        .slide:not(.is-active) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress-rail" aria-hidden="true"><div class="progress-value" id="progress-value"></div></div>
+
+    <main class="deck-shell" id="presentation">
+      <header class="deck-topbar">
+        <a class="deck-brand" href="/series/ai-priority/" aria-label="返回 AI 优先系列目录">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>李成律师 <span class="brand-sub">AI 工作站</span></span>
+        </a>
+
+        <div class="deck-heading" aria-live="polite">
+          <span class="deck-overline">AI 优先 · 建立自己的 AI 工作系统</span>
+          <span class="deck-counter" id="deck-counter">01 / 26 · 演讲版</span>
+        </div>
+
+        <nav class="deck-top-actions" aria-label="演示页工具">
+          <a class="deck-top-link" href="/series/ai-priority/"><span>返回系列</span></a>
+          <button class="deck-top-button" type="button" data-action="notes" aria-expanded="false" aria-controls="notes-panel"><span>讲者提示</span></button>
+          <button class="deck-top-button" type="button" data-action="fullscreen"><span>全屏</span></button>
+        </nav>
+      </header>
+
+      <section class="stage" aria-label="AI 优先演讲内容">
+        <div class="slide-viewport" id="slide-viewport">
+                    <article class="slide slide-intro is-active" data-slide data-slide-id="ai-priority-01" data-slide-number="01" aria-labelledby="slide-title-01" aria-hidden="false">
+            <div class="slide-watermark sr-only" aria-hidden="true">01</div>
+            <div class="slide-topline">
+              <span class="slide-index">01</span>
+              <span class="slide-topic">AI 优先系列 · 开篇</span>
+              <span class="slide-state">开篇</span>
+            </div>
+
+            <div class="slide-body">
+              <div class="slide-main">
+                <div class="slide-copy">
+                  <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>先改变工作的默认顺序</p>
+                  <h1 id="slide-title-01"><span>AI 优先，</span><br>不是 AI 万能<br>是工作先想 AI</h1>
+                  <p class="slide-lead">AI 优先不是把所有事情都交给 AI，而是每接到一项工作，先判断它能否被 AI 化、流程化、复用。<strong>从“人先做”转向“AI 先做”，再由人完成判断与责任。</strong></p>
+
+                  <div class="slide-quote">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <div>
+                      <span class="quote-label">演讲开场</span>
+                      <span class="quote-text">今天不从工具开始，先从工作方式开始。</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="concept-panel" aria-label="AI 工作系统的关系图">
+                  <div class="concept-panel-head">
+                    <span>一张图先记住</span>
+                    <span class="panel-caption">工作系统</span>
+                  </div>
+                  <div class="concept-map">
+                    <svg class="concept-svg" viewBox="0 0 640 386" role="img" aria-labelledby="priority-map-title priority-map-desc">
+                      <title id="priority-map-title">AI 优先工作系统的关系</title>
+                      <desc id="priority-map-desc">从任务入口开始，由 AI 组织执行，最后由人完成来源核验、边界判断和责任承担。</desc>
+                      <defs>
+                        <marker id="priority-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                          <path class="arrow-head" d="M0,0 L8,4 L0,8 Z"></path>
+                        </marker>
+                      </defs>
+
+                      <path class="connector" d="M182 183 C218 183 224 136 254 136" marker-end="url(#priority-arrow)"></path>
+                      <path class="connector" d="M424 136 C458 136 464 94 492 94" marker-end="url(#priority-arrow)"></path>
+                      <path class="connector" d="M424 174 C458 206 464 268 492 268" marker-end="url(#priority-arrow)"></path>
+                      <text class="edge-label" x="198" y="151">先设计</text>
+                      <text class="edge-label" x="440" y="105">去执行</text>
+                      <text class="edge-label" x="440" y="235">回验收</text>
+
+                      <rect class="node-outer node-ai" x="28" y="56" width="154" height="254" rx="22"></rect>
+                      <text class="node-overline" x="54" y="96">工作入口</text>
+                      <text class="node-title" x="52" y="151">任务</text>
+                      <text class="node-sub" x="53" y="183">客户文件 · 问题</text>
+                      <text class="node-sub" x="53" y="200">项目 · 目标 · 期限</text>
+                      <text class="node-sub" x="53" y="269">先问：AI 能做什么？</text>
+                      <text class="node-sub" x="53" y="286">再决定：人做什么？</text>
+
+                      <rect class="node-outer node-llm" x="252" y="84" width="172" height="122" rx="20"></rect>
+                      <text class="node-overline" x="276" y="119">工作系统</text>
+                      <text class="node-title-small" x="276" y="153">设计 · 调度</text>
+                      <text class="node-sub" x="276" y="180">Agent · Skill · 工具</text>
+
+                      <rect class="node-outer node-product" x="490" y="43" width="122" height="100" rx="20"></rect>
+                      <text class="node-overline" x="512" y="76">执行</text>
+                      <text class="node-title-small" x="512" y="105">AI 工作</text>
+                      <text class="node-sub" x="512" y="126">读取 · 分析 · 生成</text>
+
+                      <rect class="node-outer node-agent" x="490" y="218" width="122" height="110" rx="20"></rect>
+                      <text class="node-overline" x="512" y="251">人</text>
+                      <text class="node-title" x="512" y="282">验收</text>
+                      <text class="node-sub" x="512" y="305">判断 · 责任</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="takeaway-grid" aria-label="本页三个记忆点">
+                <div class="takeaway">
+                  <span class="takeaway-num">01</span>
+                  <span class="takeaway-copy"><strong>AI 优先是顺序</strong><span>先问能不能 AI 化，而不是先自己动手。</span></span>
+                </div>
+                <div class="takeaway">
+                  <span class="takeaway-num">02</span>
+                  <span class="takeaway-copy"><strong>系统比工具重要</strong><span>模型、Agent、规则、资料和文件要组织起来。</span></span>
+                </div>
+                <div class="takeaway">
+                  <span class="takeaway-num">03</span>
+                  <span class="takeaway-copy"><strong>人不退出工作</strong><span>人把时间留给判断、决策和最终责任。</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-source">
+              <span>系列主线：从“使用 AI”走向“管理 AI”，再回到人的判断</span>
+              <a href="/tutorials/ai-priority-series-intro">阅读原文 ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="notes-panel" id="notes-panel" hidden aria-labelledby="notes-title">
+          <div class="notes-head">
+            <div>
+              <p class="notes-kicker" id="notes-kicker">Speaker notes · 01</p>
+              <h2 id="notes-title">讲者提示</h2>
+            </div>
+            <button class="notes-close" type="button" aria-label="关闭讲者提示">×</button>
+          </div>
+          <ol class="notes-list" id="notes-list"></ol>
+          <p class="notes-meta" id="notes-meta">建议时长：3–4 分钟</p>
+        </aside>
+      </section>
+
+      <footer class="deck-control-bar">
+        <div class="control-summary">
+          <span class="control-kicker">本页要点</span>
+          <span class="control-caption" id="slide-caption">真正重要的不是知道多少工具，而是建立一套可以长期积累、持续升级的 AI 工作系统。</span>
+        </div>
+
+        <nav class="deck-navigation" aria-label="演示页翻页导航">
+          <button class="nav-button" type="button" id="previous-slide" aria-label="上一页" disabled><span aria-hidden="true">←</span><span>上一页</span></button>
+          <div class="dot-navigation" id="dot-navigation" role="tablist" aria-label="演示页页面导航"></div>
+          <button class="nav-button" type="button" id="next-slide" aria-label="下一页" disabled><span>下一页</span><span aria-hidden="true">→</span></button>
+        </nav>
+
+        <div class="keyboard-hint" aria-label="键盘快捷键">
+          <span>使用</span><kbd>←</kbd><kbd>→</kbd><span>翻页</span>
+        </div>
+      </footer>
+    </main>
+
+    <p class="sr-only" id="slide-announcer" aria-live="polite">当前为 AI 优先第 01 讲。</p>
+
+    <script>
+      (() => {
+        const deck = {
+  "plannedTotal": 26,
+  "slides": [
+    {
+      "id": "ai-priority-01",
+      "page": 1,
+      "chapter": "AI 优先第 01 讲",
+      "state": "开篇",
+      "title": "AI 优先，不是 AI 万能",
+      "titleLines": [
+        {
+          "text": "AI 优先，",
+          "accent": true
+        },
+        {
+          "text": "不是 AI 万能",
+          "accent": false
+        },
+        {
+          "text": "是工作先想 AI",
+          "accent": false
+        }
+      ],
+      "eyebrow": "先改变工作的默认顺序",
+      "lead": "AI 优先不是把所有事情都交给 AI，而是每接到一项工作，先判断它能否被 AI 化、流程化、复用。",
+      "leadStrong": "从“人先做”转向“AI 先做”，再由人完成判断与责任。",
+      "quoteLabel": "演讲开场",
+      "quote": "今天不从工具开始，先从工作方式开始。",
+      "caption": "真正重要的不是知道多少工具，而是建立一套可以长期积累、持续升级的 AI 工作系统。",
+      "visual": {
+        "kind": "map",
+        "title": "一套工作系统",
+        "caption": "从任务进入，到成果交付",
+        "center": [
+          "AI 工作系统",
+          "让执行交给 AI，让判断留在人手里"
+        ],
+        "nodes": [
+          {
+            "tag": "START",
+            "title": "任务入口",
+            "detail": "客户文件 · 问题 · 项目"
+          },
+          {
+            "tag": "SYSTEM",
+            "title": "AI 执行",
+            "detail": "Agent · 工具 · Skill · 自动化"
+          },
+          {
+            "tag": "JUDGMENT",
+            "title": "人的验收",
+            "detail": "来源 · 边界 · 取舍 · 责任"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "AI 优先是顺序",
+          "先问能不能 AI 化，而不是先自己动手。"
+        ],
+        [
+          "系统比工具重要",
+          "模型、Agent、规则、资料和文件要组织起来。"
+        ],
+        [
+          "人不退出工作",
+          "人把时间留给判断、决策和最终责任。"
+        ]
+      ],
+      "sourceNote": "系列主线：从“使用 AI”走向“管理 AI”，再回到人的判断",
+      "source": "/tutorials/ai-priority-series-intro",
+      "notes": [
+        "先问听众：你平时接到一件工作，是先自己打开文件，还是先判断 AI 能做什么？",
+        "强调“AI 优先”不是“AI 包办”；它改变的是工作开始时的默认顺序。",
+        "用律师工作举例：整理文件、检索资料、生成初稿可以交给 AI，最终判断仍然由人负责。",
+        "告诉听众：这个系列不是工具清单，而是一套可以长期积累、迁移和升级的工作方式。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-02",
+      "page": 2,
+      "chapter": "AI 优先第 02 讲",
+      "state": "演讲版",
+      "title": "做任何工作前，先问一句：能不能用 AI？",
+      "titleLines": [
+        {
+          "text": "做任何工作前，",
+          "accent": false
+        },
+        {
+          "text": "先问一句",
+          "accent": true
+        },
+        {
+          "text": "能不能用 AI？",
+          "accent": false
+        }
+      ],
+      "eyebrow": "把 AI 放到工作的起点",
+      "lead": "把“我怎么做”改成“AI 能先做什么”，工作就从手工执行进入任务设计。",
+      "leadStrong": "不能全部完成，也可以先交出 80% 的机械工作。",
+      "quoteLabel": "核心判断",
+      "quote": "不是 AI 万能，而是 AI 优先。",
+      "caption": "接到工作以后，先判断能否直接交给 AI、批量化、流程化或复用。",
+      "visual": {
+        "kind": "flow",
+        "title": "AI 优先的四步",
+        "caption": "先判断，再执行",
+        "items": [
+          {
+            "title": "接到工作",
+            "detail": "先停一下，不要立即逐项手工处理。"
+          },
+          {
+            "title": "判断可 AI 化",
+            "detail": "直接完成，或先完成 80% 的机械部分。"
+          },
+          {
+            "title": "交给合适节点",
+            "detail": "Agent、工具、脚本或知识库各司其职。"
+          },
+          {
+            "title": "人做把关",
+            "detail": "核对事实、取舍风险、承担最终责任。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "先问能不能做",
+          "改变工作的默认顺序，比记住更多提示词更重要。"
+        ],
+        [
+          "尽量给原始材料",
+          "让 Agent 直接读文件，减少人工复制、转述和遗漏。"
+        ],
+        [
+          "一次工作留下资产",
+          "成功的步骤可以变成模板、Skill、脚本或工作流。"
+        ]
+      ],
+      "sourceNote": "工作习惯：先思考能否 AI 化、流程化、自动化和复用",
+      "source": "/tutorials/ai-first-workflow",
+      "notes": [
+        "把听众熟悉的场景列出来：合同审阅、法律研究、尽调、问询整理、诉讼材料。",
+        "强调 AI 不一定要包办全部；先处理机械工作，已经能改变效率结构。",
+        "提醒尽量提供原始文件，让 Agent 直接读取，而不是由人先复制粘贴。",
+        "最后问一句：这次工作以后还会不会发生？如果会，就要考虑沉淀成流程。"
+      ],
+      "duration": "2–3 分钟"
+    },
+    {
+      "id": "ai-priority-03",
+      "page": 3,
+      "chapter": "AI 优先第 03 讲",
+      "state": "演讲版",
+      "title": "5% 设计，90% 执行，5% 复核",
+      "titleLines": [
+        {
+          "text": "5% 设计，",
+          "accent": true
+        },
+        {
+          "text": "90% 执行，",
+          "accent": false
+        },
+        {
+          "text": "5% 复核",
+          "accent": false
+        }
+      ],
+      "eyebrow": "把时间从执行移到设计",
+      "lead": "5%、90%、5% 不是严格的数学比例，而是一种新的工作方式：人少做重复劳动，多做任务设计和最后判断。",
+      "leadStrong": "先把输入、工具、约束、输出和验收说清楚。",
+      "quoteLabel": "工作节奏",
+      "quote": "设计清楚以后，让 AI 安静执行，最后回来复核。",
+      "caption": "高效不是一直盯着 AI，而是把设计和复核做得更准确。",
+      "visual": {
+        "kind": "formula",
+        "title": "一项任务的时间分配",
+        "caption": "从陪伴执行，到管理交付",
+        "equation": "设计 5%  +  执行 90%  +  复核 5%",
+        "parts": [
+          {
+            "label": "设计",
+            "detail": "输入、任务、工具、边界和交付物"
+          },
+          {
+            "label": "执行",
+            "detail": "读取、检索、分析、生成和整理"
+          },
+          {
+            "label": "复核",
+            "detail": "事实、依据、格式、风险和客户利益"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "开始前先设计",
+          "明确材料在哪里、重点看什么、结果放在哪里。"
+        ],
+        [
+          "执行时可以离开",
+          "复杂任务运行期间，人可以并行推进其他工作。"
+        ],
+        [
+          "最后 5% 更重要",
+          "最终文件、法律依据和关键结论必须逐项复核。"
+        ]
+      ],
+      "sourceNote": "工作方式：设计任务、并行执行、回来验收",
+      "source": "/tutorials/ai-workflow-5-90-5",
+      "notes": [
+        "先说明这不是精确计时，而是把人的时间从机械执行转移到设计和判断。",
+        "一个完整任务至少要交代输入、目标、工具、约束、输出和验收标准。",
+        "执行阶段不要把自己变成 AI 的鼠标；能让它自行完成的，就让它自行完成。",
+        "复核不是形式动作，法律依据、事实来源、文件完整性和客户利益都要看。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-04",
+      "page": 4,
+      "chapter": "AI 优先第 04 讲",
+      "state": "演讲版",
+      "title": "养一个 AI，让它越来越懂你",
+      "titleLines": [
+        {
+          "text": "养一个 AI，",
+          "accent": true
+        },
+        {
+          "text": "让它越来越懂你",
+          "accent": false
+        }
+      ],
+      "eyebrow": "长期使用，才会形成优势",
+      "lead": "每次从零解释职业、立场和偏好，等于反复培训同一个助手。",
+      "leadStrong": "持续使用和主动记忆，才会让 AI 从临时工具变成长期协作者。",
+      "quoteLabel": "留给听众的问题",
+      "quote": "下一次对话，它还知不知道你是谁？",
+      "caption": "把职业、偏好、项目和判断方式逐渐沉淀为可复用的长期记忆。",
+      "visual": {
+        "kind": "layers",
+        "title": "一个长期智能体，逐渐知道什么",
+        "caption": "从身份，到工作习惯",
+        "items": [
+          {
+            "title": "你是谁",
+            "detail": "职业、客户立场和长期业务背景。"
+          },
+          {
+            "title": "你怎么工作",
+            "detail": "语言、格式、修改尺度和复核习惯。"
+          },
+          {
+            "title": "你在做什么",
+            "detail": "持续项目、常用工具和工作节奏。"
+          },
+          {
+            "title": "你已经决定什么",
+            "detail": "稳定规则、历史判断和常见错误。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "记忆不是聊天记录",
+          "重要的是沉淀出下一次可以直接使用的规则。"
+        ],
+        [
+          "连续使用有复利",
+          "AI 越理解你的工作方式，沟通成本越低。"
+        ],
+        [
+          "记忆要主动形成",
+          "稳定偏好和长期规则值得留下，一次性要求不必堆积。"
+        ]
+      ],
+      "sourceNote": "长期关系：经常用、持续用，让 AI 越来越懂自己",
+      "source": "/tutorials/ai-agent-cultivation",
+      "notes": [
+        "举几个常见的重复解释：我是律师、代表甲方、中文回复、不要大改商业条款。",
+        "说明长期智能体的价值不是“记得越多越好”，而是知道哪些规则稳定且值得复用。",
+        "把记忆和超长上下文区分开：不是把所有聊天都塞回当前任务。",
+        "最后强调：先养好一个 AI，再考虑不断追逐新的模型和产品。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-05",
+      "page": 5,
+      "chapter": "AI 优先第 05 讲",
+      "state": "演讲版",
+      "title": "你的 AI 记忆，本身就是数字资产",
+      "titleLines": [
+        {
+          "text": "你的 AI 记忆，",
+          "accent": false
+        },
+        {
+          "text": "本身就是数字资产",
+          "accent": true
+        }
+      ],
+      "eyebrow": "不要只比较模型排行榜",
+      "lead": "新模型会不断出现，但换掉一个熟悉的 Agent，可能连同工作规则、偏好和经验一起丢掉。",
+      "leadStrong": "模型可以换，核心工作系统要能迁移。",
+      "quoteLabel": "重新计算成本",
+      "quote": "换掉一个已经用熟的 Agent，你到底丢掉了什么？",
+      "caption": "真正有价值的，不只是模型能力，还有已经形成的工作协议和长期经验。",
+      "visual": {
+        "kind": "compare",
+        "columns": [
+          {
+            "tone": "cyan",
+            "tag": "可以变化",
+            "title": "模型能力",
+            "items": [
+              "速度与价格",
+              "推理与上下文",
+              "产品和工具入口"
+            ]
+          },
+          {
+            "tone": "lime",
+            "tag": "应该沉淀",
+            "title": "工作资产",
+            "items": [
+              "长期规则与偏好",
+              "提示词、Skill、脚本",
+              "项目经验与历史判断"
+            ]
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "记忆建立有成本",
+          "每换一次 Agent，都可能重新解释职业、流程和边界。"
+        ],
+        [
+          "资产要放在自己手里",
+          "规则、Skill、脚本和知识库应当独立保存。"
+        ],
+        [
+          "追求可迁移",
+          "可以更换模型，但不要把工作系统锁死在单一入口。"
+        ]
+      ],
+      "sourceNote": "系统资产：把沉淀下来的工作协议从聊天记录里带走",
+      "source": "/tutorials/ai-memory-digital-asset",
+      "notes": [
+        "引导听众不要只看模型强弱，还要问：这个 Agent 到底有多了解我的工作？",
+        "工作协议包括修改尺度、法律依据核验、文件命名和输出格式等稳定规则。",
+        "把重要内容保存成独立文档、Skill、脚本和知识库，避免只能在聊天记录中寻找。",
+        "这不是拒绝换模型，而是让更换模型时，已经积累的工作资产仍然在自己手里。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-06",
+      "page": 6,
+      "chapter": "AI 优先第 06 讲",
+      "state": "演讲版",
+      "title": "工具很多，系统要成形",
+      "titleLines": [
+        {
+          "text": "工具很多，",
+          "accent": false
+        },
+        {
+          "text": "系统要成形",
+          "accent": true
+        }
+      ],
+      "eyebrow": "先设计工作如何流转",
+      "lead": "AI 工作系统不是某一个软件，也不是某一个模型，而是一组可以共同完成工作的组件。",
+      "leadStrong": "模型、Agent、规则、资料、文件和人工复核要连成一条路径。",
+      "quoteLabel": "系统思维",
+      "quote": "先设计工作流，再选择工具。",
+      "caption": "从任务进入、资料处理，到最终交付，所有节点都应该有位置。",
+      "visual": {
+        "kind": "map",
+        "title": "AI 工作系统的三条主线",
+        "caption": "能力、信息与工作流",
+        "center": [
+          "自己的 AI 工作系统",
+          "把工具组织成可交付的流程"
+        ],
+        "nodes": [
+          {
+            "tag": "CAPABILITY",
+            "title": "能力节点",
+            "detail": "模型 · Agent · Subagent · 备用入口"
+          },
+          {
+            "tag": "KNOWLEDGE",
+            "title": "信息底座",
+            "detail": "记忆 · 知识库 · 项目文件 · 来源"
+          },
+          {
+            "tag": "WORKFLOW",
+            "title": "执行流程",
+            "detail": "Prompt · Skill · MCP · 自动化 · 复核"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "先看工作怎么进出",
+          "收到文件以后，谁读取、谁分析、谁交付？"
+        ],
+        [
+          "不同节点各有职责",
+          "不要让一个 Agent 既做所有执行，又承担所有检查。"
+        ],
+        [
+          "系统要保留人的位置",
+          "边界、验收和最终责任不能被工具吞掉。"
+        ]
+      ],
+      "sourceNote": "系统结构：模型 + Agent + 记忆 + 规则 + 工具 + 文件 + 复核",
+      "source": "/tutorials/build-ai-work-system",
+      "notes": [
+        "把“AI 工作系统”讲成组合，而不是让听众去寻找一个万能软件。",
+        "从一个法律项目走一遍：收到文件、识别任务、检索、分析、生成、复核和交付。",
+        "提醒准备两个以上可执行的 Agent，重要工作要有备用与接手能力。",
+        "最后回到原则：工具可以变化，工作流和长期资产要能保留下来。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-07",
+      "page": 7,
+      "chapter": "AI 优先第 07 讲",
+      "state": "演讲版",
+      "title": "不要陪 AI 工作：把完整任务交出去",
+      "titleLines": [
+        {
+          "text": "不要陪 AI 工作：",
+          "accent": true
+        },
+        {
+          "text": "把完整任务交出去",
+          "accent": false
+        }
+      ],
+      "eyebrow": "从一问一答，走向任务交付",
+      "lead": "如果不断问一句、看一下、再补一句，人仍然在做人工流水线。",
+      "leadStrong": "执行型任务要一次讲清目标、材料、边界和交付结果。",
+      "quoteLabel": "工作动作",
+      "quote": "任务交出去以后，你可以离开。",
+      "caption": "讨论型对话适合一问一答；执行型工作要让 Agent 自行完成并统一汇报。",
+      "visual": {
+        "kind": "flow",
+        "title": "一次性交付的五件事",
+        "caption": "让 AI 知道何时算完成",
+        "items": [
+          {
+            "title": "输入材料",
+            "detail": "文件、文件夹、数据和版本范围。"
+          },
+          {
+            "title": "任务目标",
+            "detail": "要解决什么问题，重点看哪些内容。"
+          },
+          {
+            "title": "立场与约束",
+            "detail": "代表谁、哪些不能改、哪些必须核验。"
+          },
+          {
+            "title": "输出与位置",
+            "detail": "文件格式、结构、命名和保存路径。"
+          },
+          {
+            "title": "验收与汇报",
+            "detail": "完成标准、缺口和待人工确认事项。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "完整任务不是长提示词",
+          "关键是不能缺少决定性信息。"
+        ],
+        [
+          "中途确认改成最终汇报",
+          "能自行判断的步骤，让 AI 自己继续。"
+        ],
+        [
+          "人管理目标和边界",
+          "不要承担 AI 可以承担的项目管理工作。"
+        ]
+      ],
+      "sourceNote": "任务交付：把“陪 AI 做”改成“定义任务、最后验收”",
+      "source": "/tutorials/delegate-complete-tasks-to-agent",
+      "notes": [
+        "先让听众回忆自己是否经常在 AI 执行过程中不断补充指令。",
+        "一个完整任务至少要有输入、任务、立场、约束、输出和路径。",
+        "把不重要的中途确认取消，不能确定的问题记录下来，最后统一汇报。",
+        "强调不是所有任务都能放手；重大法律判断、不可逆操作和正式发送要保留人工节点。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-08",
+      "page": 8,
+      "chapter": "AI 优先第 08 讲",
+      "state": "演讲版",
+      "title": "复杂任务，先让 AI 做规划",
+      "titleLines": [
+        {
+          "text": "复杂任务，",
+          "accent": false
+        },
+        {
+          "text": "先让 AI 做规划",
+          "accent": true
+        }
+      ],
+      "eyebrow": "人定方向，AI 设计路径",
+      "lead": "复杂任务不是把自己拆成更忙的项目经理；先让 AI 读全材料、找缺口、排依赖。",
+      "leadStrong": "人负责目标和边界，AI 负责规划、执行和状态维护。",
+      "quoteLabel": "开始前先问",
+      "quote": "这个任务应该怎么做？",
+      "caption": "先盘点材料和依赖关系，再决定步骤、工具、检查点和输出结构。",
+      "visual": {
+        "kind": "flow",
+        "title": "复杂任务的规划链",
+        "caption": "先规划，后执行",
+        "items": [
+          {
+            "title": "盘点材料",
+            "detail": "扫描全部文件，识别类型、版本和缺口。"
+          },
+          {
+            "title": "拆解任务",
+            "detail": "把目标分成阶段、模块和可交付成果。"
+          },
+          {
+            "title": "识别依赖",
+            "detail": "判断先后顺序、并行机会和关键前置条件。"
+          },
+          {
+            "title": "设置检查点",
+            "detail": "在资料、框架和初步结论处设置少量复核。"
+          },
+          {
+            "title": "按计划执行",
+            "detail": "非关键问题自行判断，重大不确定事项汇报。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "先让 AI 看全局",
+          "复杂任务中，缺失材料和版本冲突往往藏在目录里。"
+        ],
+        [
+          "依赖关系要显式",
+          "清洗数据、识别版本和确认名单可能决定后续步骤。"
+        ],
+        [
+          "不要微观管理",
+          "只在关键节点检查方向，不要逐步替 AI 点击。"
+        ]
+      ],
+      "sourceNote": "复杂任务：从“自己拆步骤”升级到“让 AI 先做规划”",
+      "source": "/tutorials/ai-task-planning-first",
+      "notes": [
+        "举尽调、IPO 问询、合同包审阅、监管研究和诉讼材料整理等复杂任务。",
+        "复杂任务开始时，最重要的不是马上执行，而是知道材料是否完整、版本是否冲突。",
+        "可以要求 AI 先输出计划、信息缺口、工具方案、输出结构和验收清单。",
+        "计划不是一次跑到底；设置关键检查点，让人控制方向而不是控制每一步。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-09",
+      "page": 9,
+      "chapter": "AI 优先第 09 讲",
+      "state": "演讲版",
+      "title": "一个 AI 不够：建立多 Agent 体系",
+      "titleLines": [
+        {
+          "text": "一个 AI 不够：",
+          "accent": true
+        },
+        {
+          "text": "建立多 Agent 体系",
+          "accent": false
+        }
+      ],
+      "eyebrow": "稳定性来自可切换",
+      "lead": "稳定的工作系统不应只依赖一个入口；不同 Agent 可以承担不同能力，关键时还能接手。",
+      "leadStrong": "多 Agent 的价值首先是稳定、备份和容灾。",
+      "quoteLabel": "系统目标",
+      "quote": "不是拥有越多 AI，而是拥有可切换的工作系统。",
+      "caption": "让独立 Agent 形成互补，而不是简单堆叠数量。",
+      "visual": {
+        "kind": "compare",
+        "columnsCount": 3,
+        "columns": [
+          {
+            "tone": "lime",
+            "tag": "主线",
+            "title": "主 Agent",
+            "items": [
+              "理解长期背景",
+              "定义任务与标准",
+              "汇总最终成果"
+            ]
+          },
+          {
+            "tone": "cyan",
+            "tag": "专长",
+            "title": "执行 Agent",
+            "items": [
+              "写作、代码或检索",
+              "调用不同工具",
+              "处理专项任务"
+            ]
+          },
+          {
+            "tone": "amber",
+            "tag": "保障",
+            "title": "备用 / 复核",
+            "items": [
+              "接手卡住的任务",
+              "检查关键结论",
+              "保持系统可用"
+            ]
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "不同 Agent 有定位",
+          "模型、工具、环境和擅长任务可以不同。"
+        ],
+        [
+          "重要工具要有备份",
+          "一个入口故障，不应让整个工作系统停摆。"
+        ],
+        [
+          "交接要留下状态",
+          "目标、进度、文件路径和待处理事项必须可见。"
+        ]
+      ],
+      "sourceNote": "多 Agent：切换、接手、互相检查，让系统更稳定",
+      "source": "/tutorials/multi-agent-work-system",
+      "notes": [
+        "先区分多个独立 Agent 和一个 Agent 内部调用的 Subagent。",
+        "举例说明：一个适合写作，一个适合代码，一个适合搜索或本地环境排查。",
+        "多 Agent 不是为了炫技，而是为了备份、接手和互相检查。",
+        "提醒交接不能只依赖聊天记录，必须明确留下目标、状态、文件和下一步。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-10",
+      "page": 10,
+      "chapter": "AI 优先第 10 讲",
+      "state": "演讲版",
+      "title": "让一个主 Agent，组织内部团队",
+      "titleLines": [
+        {
+          "text": "让一个主 Agent，",
+          "accent": false
+        },
+        {
+          "text": "组织内部团队",
+          "accent": true
+        }
+      ],
+      "eyebrow": "Subagent 解决内部协作",
+      "lead": "多 Agent 是独立节点之间协作；Subagent 是一个主 Agent 内部做分工。",
+      "leadStrong": "复杂任务可以并行处理，也可以用隔离上下文减少相互干扰。",
+      "quoteLabel": "一个比喻",
+      "quote": "主 Agent 像项目负责人，Subagent 像内部专项小组。",
+      "caption": "把一个复杂任务拆成几个明确、可并行、可汇总的子任务。",
+      "visual": {
+        "kind": "map",
+        "title": "主 Agent 如何调度 Subagent",
+        "caption": "分工、并行、汇总",
+        "center": [
+          "主 Agent",
+          "统一目标、标准与最终输出"
+        ],
+        "nodes": [
+          {
+            "tag": "RESEARCH",
+            "title": "资料检索",
+            "detail": "按来源和主题搜集候选材料"
+          },
+          {
+            "tag": "ANALYSIS",
+            "title": "专项分析",
+            "detail": "各自处理一个清晰的专业模块"
+          },
+          {
+            "tag": "CHALLENGE",
+            "title": "反方复核",
+            "detail": "专门找遗漏、冲突和不成立之处"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "适合天然可拆的任务",
+          "大批量搜索、模块化分析和独立文件处理都适合并行。"
+        ],
+        [
+          "子代理要小而明确",
+          "任务边界越清楚，结果越容易比较和汇总。"
+        ],
+        [
+          "主 Agent 负责统一",
+          "不能只收集结果，还要解决冲突并承担最终交付。"
+        ]
+      ],
+      "sourceNote": "Subagent：一个主 Agent 内部的分工与并行机制",
+      "source": "/tutorials/subagent-orchestration",
+      "notes": [
+        "先回顾上一页：多 Agent 是多个独立智能体；本页是一个主 Agent 内部的团队。",
+        "举资料检索、合同条款专项分析、反方挑错三个子任务。",
+        "子代理只拿到自己需要的材料，可以降低上下文污染和重复工作。",
+        "最后强调主 Agent 不能把责任推给子代理，必须统一标准、处理冲突和完成汇总。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-11",
+      "page": 11,
+      "chapter": "AI 优先第 11 讲",
+      "state": "演讲版",
+      "title": "上下文不是仓库：要学会隔离",
+      "titleLines": [
+        {
+          "text": "上下文不是仓库：",
+          "accent": true
+        },
+        {
+          "text": "要学会隔离",
+          "accent": false
+        }
+      ],
+      "eyebrow": "信息越多，不一定越好",
+      "lead": "把历史聊天、项目资料和临时想法全部塞进一个对话，不会自动带来更高质量。",
+      "leadStrong": "当前做什么，就只让 AI 看真正相关的信息。",
+      "quoteLabel": "核心原则",
+      "quote": "少一点无关信息，往往多一点有效判断。",
+      "caption": "长期规则、项目背景、当前任务和专项材料应当分层管理。",
+      "visual": {
+        "kind": "layers",
+        "title": "三层上下文结构",
+        "caption": "积累，也要隔离",
+        "items": [
+          {
+            "title": "长期规则",
+            "detail": "稳定身份、偏好、工作原则和边界。"
+          },
+          {
+            "title": "项目背景",
+            "detail": "客户、交易、案件和当前项目状态。"
+          },
+          {
+            "title": "当前任务",
+            "detail": "这一轮要解决的问题和交付标准。"
+          },
+          {
+            "title": "专项材料",
+            "detail": "与本次任务直接相关的文件、版本和来源。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "一个对话尽量一个专项",
+          "减少无关历史对当前判断的干扰。"
+        ],
+        [
+          "记忆不等于上下文",
+          "长期规则要按需提供，不是无限堆积。"
+        ],
+        [
+          "过时信息更危险",
+          "旧版本和旧结论留在上下文里，可能比缺信息更糟。"
+        ]
+      ],
+      "sourceNote": "上下文治理：让 AI 只看到当前任务真正需要的内容",
+      "source": "/tutorials/context-isolation-guide",
+      "notes": [
+        "问听众：如果把十个项目、历史结论和新任务放在一个对话里，AI 会不会更聪明？",
+        "解释上下文污染：信息太多、版本混杂和无关背景都会降低聚焦能力。",
+        "可以建立长期规则、项目背景、当前任务和专项材料四个层次。",
+        "Subagent 的价值之一，就是只给它完成专项所需的上下文。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-12",
+      "page": 12,
+      "chapter": "AI 优先第 12 讲",
+      "state": "演讲版",
+      "title": "重复三次的工作，就该考虑做成 Skill",
+      "titleLines": [
+        {
+          "text": "重复三次的工作，",
+          "accent": false
+        },
+        {
+          "text": "就该考虑做成 Skill",
+          "accent": true
+        }
+      ],
+      "eyebrow": "把经验变成可调用的能力",
+      "lead": "第一次摸索，第二次改进；重复第三次还在重写要求，说明工作已经值得标准化。",
+      "leadStrong": "Prompt 解决一次问题，Skill 解决一类问题。",
+      "quoteLabel": "判断标准",
+      "quote": "不要反复用临时对话解决长期重复的问题。",
+      "caption": "Skill 把真实工作中的步骤、工具、检查和失败经验保存下来。",
+      "visual": {
+        "kind": "flow",
+        "title": "从一次任务到 Skill",
+        "caption": "让经验产生复利",
+        "items": [
+          {
+            "title": "第一次摸索",
+            "detail": "找到可行方法，记录输入和输出。"
+          },
+          {
+            "title": "第二次优化",
+            "detail": "删掉无效步骤，补上容易遗漏的要求。"
+          },
+          {
+            "title": "第三次重复",
+            "detail": "仍然要重新解释，说明流程已经稳定。"
+          },
+          {
+            "title": "固化成 Skill",
+            "detail": "把步骤、工具、顺序和验收变成能力。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "Prompt 是一次任务",
+          "当前要做什么，通常只服务这一轮交付。"
+        ],
+        [
+          "Skill 是一类流程",
+          "以后遇到同类问题，可以按照固定方法执行。"
+        ],
+        [
+          "失败经验也要写入",
+          "把过去踩过的坑变成下一次的护栏。"
+        ]
+      ],
+      "sourceNote": "能力沉淀：从临时提示词走向稳定、可复用的 Skill",
+      "source": "/tutorials/skill-from-repeated-work",
+      "notes": [
+        "用合同审查举例：第一次摸索，第二次优化，第三次还在重复解释就应该标准化。",
+        "强调 Skill 不只是更长的提示词，它可以包含工具、执行顺序和检查标准。",
+        "真正好的 Skill 要减少中途参与，让 AI 能够稳定完成一类任务。",
+        "Skill 是把个人经验保存下来，也让不同 Agent 可以共享同一种工作方式。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-13",
+      "page": 13,
+      "chapter": "AI 优先第 13 讲",
+      "state": "演讲版",
+      "title": "四层规则，各自管好一件事",
+      "titleLines": [
+        {
+          "text": "四层规则，",
+          "accent": true
+        },
+        {
+          "text": "各自管好一件事",
+          "accent": false
+        }
+      ],
+      "eyebrow": "不要把所有要求塞进一次提示词",
+      "lead": "长期原则、项目规则、当前任务和重复流程如果混在一起，系统会越来越难维护。",
+      "leadStrong": "分层以后，提示词反而会越来越短。",
+      "quoteLabel": "四层分工",
+      "quote": "全局管长期，项目管当前，提示词管这一次，Skill 管这一类。",
+      "caption": "看一条规则多久会变化，就能判断它应该放在哪一层。",
+      "visual": {
+        "kind": "layers",
+        "title": "AI 工作规则的四层结构",
+        "caption": "从长期，到一次任务",
+        "items": [
+          {
+            "title": "全局指令",
+            "detail": "跨项目长期有效的身份、原则和底线。"
+          },
+          {
+            "title": "项目指令",
+            "detail": "当前客户、案件或交易的特殊背景与要求。"
+          },
+          {
+            "title": "当前提示词",
+            "detail": "这一轮具体要做什么，以及本次交付。"
+          },
+          {
+            "title": "Skill",
+            "detail": "反复出现的任务流程、工具和验收方法。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "全局不是任务流水账",
+          "只放稳定、跨项目和长期有效的规则。"
+        ],
+        [
+          "项目规则要及时切换",
+          "代表谁、当前目标和特殊限制不应污染其他项目。"
+        ],
+        [
+          "提示词可以变短",
+          "流程已经固化后，只需补充本次任务的变化部分。"
+        ]
+      ],
+      "sourceNote": "规则分层：把长期原则、项目背景、任务和流程分开",
+      "source": "/tutorials/prompt-layers-division",
+      "notes": [
+        "举例说明“法律依据要核验现行有效”适合放长期规则，“代表甲方”可能属于项目规则。",
+        "当前提示词只描述这一次要做什么；Skill 描述以后遇到这一类事情怎么做。",
+        "提醒不要把所有内容都塞进全局指令，否则系统会难以迁移和维护。",
+        "分层的判断方法很简单：看这条规则多久会变、影响范围有多大。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-14",
+      "page": 14,
+      "chapter": "AI 优先第 14 讲",
+      "state": "演讲版",
+      "title": "知识库之外，还要有项目文件系统",
+      "titleLines": [
+        {
+          "text": "知识库之外，",
+          "accent": false
+        },
+        {
+          "text": "还要有项目文件系统",
+          "accent": true
+        }
+      ],
+      "eyebrow": "让 Agent 找得到现在要做什么",
+      "lead": "知识库解决“过去知道什么”，文件系统解决“现在正在做什么”。",
+      "leadStrong": "当前项目的输入、状态、底稿和成果要有稳定位置。",
+      "quoteLabel": "两个比喻",
+      "quote": "知识库像图书馆，项目文件系统像办公桌。",
+      "caption": "文件结构本身就是给 Agent 的工作说明。",
+      "visual": {
+        "kind": "map",
+        "title": "一个可工作的项目空间",
+        "caption": "原始材料不覆盖，成果可追踪",
+        "center": [
+          "项目文件系统",
+          "让当前任务可以被找到、接手和复核"
+        ],
+        "nodes": [
+          {
+            "tag": "INPUT",
+            "title": "原始材料",
+            "detail": "合同、邮件、证据和最新版本"
+          },
+          {
+            "tag": "WORK",
+            "title": "工作底稿",
+            "detail": "清单、提取表、分析和中间成果"
+          },
+          {
+            "tag": "OUTPUT",
+            "title": "交付成果",
+            "detail": "修改稿、报告、说明和待确认项"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "原件默认只读",
+          "输入文件不要被中间处理直接覆盖。"
+        ],
+        [
+          "说明文件很重要",
+          "项目目标、结构、版本和当前状态要有明确入口。"
+        ],
+        [
+          "中间文件不是垃圾",
+          "它们记录过程，也帮助 Agent 交接和人复核。"
+        ]
+      ],
+      "sourceNote": "文件驱动：让项目目录成为所有 Agent 的共同工作空间",
+      "source": "/tutorials/ai-project-file-system",
+      "notes": [
+        "先区分知识库和项目文件夹：一个沉淀过去，一个承载当前工作。",
+        "以尽调或合同项目为例，说明原始材料、工作底稿和交付成果应当分开。",
+        "文件命名、版本和说明文件对 Agent 同样重要，不要把目录当成杂物间。",
+        "成熟的工作流要尽量文件驱动，让另一个 Agent 能够接手当前状态。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-15",
+      "page": 15,
+      "chapter": "AI 优先第 15 讲",
+      "state": "演讲版",
+      "title": "知识库越大，不一定越好",
+      "titleLines": [
+        {
+          "text": "知识库越大，",
+          "accent": false
+        },
+        {
+          "text": "不一定越好",
+          "accent": true
+        }
+      ],
+      "eyebrow": "先解决质量、时效和来源",
+      "lead": "知识库最大的风险不是缺资料，而是垃圾太多、旧资料混入和来源无法回到原文。",
+      "leadStrong": "真正有用的是可调用、可核验、会淘汰的知识。",
+      "quoteLabel": "知识库原则",
+      "quote": "不是收藏更多，而是让正确的知识在需要时被找到。",
+      "caption": "高质量知识要有来源、时间、版本、效力状态和可信度层级。",
+      "visual": {
+        "kind": "compare",
+        "columnsCount": 3,
+        "columns": [
+          {
+            "tone": "lime",
+            "tag": "第一关",
+            "title": "来源清楚",
+            "items": [
+              "官方与原始材料优先",
+              "保留出处和定位",
+              "区分一手与二手"
+            ]
+          },
+          {
+            "tone": "cyan",
+            "tag": "第二关",
+            "title": "时间有效",
+            "items": [
+              "标注发布日期",
+              "识别旧版本",
+              "允许过时内容淘汰"
+            ]
+          },
+          {
+            "tone": "amber",
+            "tag": "第三关",
+            "title": "能够追溯",
+            "items": [
+              "结论回到原文",
+              "重要事实可复核",
+              "调用时知道可信度"
+            ]
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "先筛选再导入",
+          "高质量项目文件往往比海量网上资料更有价值。"
+        ],
+        [
+          "法律资料重视现行有效",
+          "旧规则、旧案例和失效文件不能混作当前依据。"
+        ],
+        [
+          "知识库服务调用",
+          "不是越大越好，而是需要时能准确找到。"
+        ]
+      ],
+      "sourceNote": "知识治理：质量、时效、来源和可追溯性比数量重要",
+      "source": "/tutorials/ai-knowledge-base-quality",
+      "notes": [
+        "问听众：把一万份资料都上传，AI 是否就一定能答对？答案是否定的。",
+        "法律知识库要关注官方来源、发布日期、现行有效状态和版本关系。",
+        "项目经验进入长期知识库前，最好经过提炼，区分事实、经验和暂时结论。",
+        "知识库应当允许淘汰和更新，最终目标是稳定调用，而不是收藏。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-16",
+      "page": 16,
+      "chapter": "AI 优先第 16 讲",
+      "state": "演讲版",
+      "title": "给 AI 接上工具，不要只优化提示词",
+      "titleLines": [
+        {
+          "text": "给 AI 接上工具，",
+          "accent": true
+        },
+        {
+          "text": "不要只优化提示词",
+          "accent": false
+        }
+      ],
+      "eyebrow": "让 AI 真正接触外部世界",
+      "lead": "提示词告诉 AI 怎么想，工具决定它能接触什么真实信息、完成什么操作。",
+      "leadStrong": "MCP 的价值，是把外部能力标准化地接给 Agent。",
+      "quoteLabel": "能力边界",
+      "quote": "没有工具的 AI，再聪明也有边界。",
+      "caption": "数据源、浏览器、文件、数据库和操作权限，决定 Agent 能否把任务做完。",
+      "visual": {
+        "kind": "flow",
+        "title": "从问题到可核验结果",
+        "caption": "减少人工搬运",
+        "items": [
+          {
+            "title": "提出任务",
+            "detail": "说明目标、材料、范围和完成标准。"
+          },
+          {
+            "title": "Agent 选工具",
+            "detail": "判断需要搜索、文件、数据库或脚本。"
+          },
+          {
+            "title": "MCP 连接能力",
+            "detail": "按统一接口读取数据或执行受控操作。"
+          },
+          {
+            "title": "回到工作流",
+            "detail": "带来源、版本和结果继续分析与交付。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "提示词不能代替数据源",
+          "要求核验的同时，要给 AI 能够核验的工具。"
+        ],
+        [
+          "工具要有明确职责",
+          "不是越多越好，工具集合过大也会增加判断成本。"
+        ],
+        [
+          "权限决定风险",
+          "能读、能写、能发、能删，要分别管理。"
+        ]
+      ],
+      "sourceNote": "工具接入：让 Agent 少搬运信息，多完成实际操作",
+      "source": "/tutorials/mcp-over-prompts",
+      "notes": [
+        "先用“搜索网页”和“查数据库”说明，提示词无法替代实时数据源。",
+        "再解释 MCP：它更像连接 Agent 和外部能力的共同接口。",
+        "法律工作中，不能只说“请核验现行有效”，还要让 Agent 真的连接到可靠来源。",
+        "提醒工具越多不一定越强，职责、数据源优先级和权限都要清楚。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-17",
+      "page": 17,
+      "chapter": "AI 优先第 17 讲",
+      "state": "演讲版",
+      "title": "一个任务，要不断向自动化进化",
+      "titleLines": [
+        {
+          "text": "一个任务，",
+          "accent": false
+        },
+        {
+          "text": "要不断向自动化进化",
+          "accent": true
+        }
+      ],
+      "eyebrow": "让一次成功变成长期基础设施",
+      "lead": "一个任务不应该永远停留在每次重新问一遍；重复出现，就应该不断向前进化。",
+      "leadStrong": "每一步都减少下一次的人工启动成本。",
+      "quoteLabel": "进化路径",
+      "quote": "临时对话 → 模板 → Skill → 工具 / 脚本 → 自动化。",
+      "caption": "不是所有工作都要一步到位，但每次成功都可以再自动化一步。",
+      "visual": {
+        "kind": "flow",
+        "title": "AI 任务的七级进化",
+        "caption": "从手工启动，到系统运行",
+        "items": [
+          {
+            "title": "临时对话",
+            "detail": "一次性问题，先把任务跑通。"
+          },
+          {
+            "title": "提示词模板",
+            "detail": "留下输入、约束和交付结构。"
+          },
+          {
+            "title": "Skill",
+            "detail": "重复流程变成可调用能力。"
+          },
+          {
+            "title": "工具与脚本",
+            "detail": "把稳定操作交给程序和接口。"
+          },
+          {
+            "title": "定时或条件触发",
+            "detail": "让系统按时间或事件主动运行。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "先跑通，再固化",
+          "不要一开始就追求复杂自动化。"
+        ],
+        [
+          "每次留下成功路径",
+          "输入、目标、工具、输出和验收都可以成为模板。"
+        ],
+        [
+          "目标是少启动一次",
+          "真正的复利来自以后不用再做一遍。"
+        ]
+      ],
+      "sourceNote": "任务进化：从临时对话走向工具、脚本和自动化",
+      "source": "/tutorials/prompt-to-automation-evolution",
+      "notes": [
+        "把路径完整讲一遍：临时对话、提示词模板、Skill、工具、脚本、定时任务、条件触发。",
+        "判断一项工作处于哪一级，就能知道下一步该优化什么。",
+        "强调先把任务跑通、留下成功方法，再考虑脚本和自动化。",
+        "自动化的目标不是让 AI 无限制行动，而是减少重复启动和低价值巡视。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-18",
+      "page": 18,
+      "chapter": "AI 优先第 18 讲",
+      "state": "演讲版",
+      "title": "能定时运行的 AI，才像数字员工",
+      "titleLines": [
+        {
+          "text": "能定时运行的 AI，",
+          "accent": true
+        },
+        {
+          "text": "才像数字员工",
+          "accent": false
+        }
+      ],
+      "eyebrow": "把“记得去做”交给系统",
+      "lead": "如果每次都要人记得打开 AI，它仍然是被动工具。",
+      "leadStrong": "固定、稳定、低风险的任务可以按时间运行，并只汇报真正的变化。",
+      "quoteLabel": "主动工作",
+      "quote": "从“你来用它”，变成“它按规则工作”。",
+      "caption": "定时任务把记忆成本交给系统，条件触发则进一步感知变化。",
+      "visual": {
+        "kind": "formula",
+        "title": "数字员工的基本条件",
+        "caption": "稳定运行，变化才值得打扰",
+        "equation": "时间触发  +  稳定规则  +  变化汇报  =  数字员工",
+        "parts": [
+          {
+            "label": "时间触发",
+            "detail": "每天、每周或每月自动启动。"
+          },
+          {
+            "label": "稳定规则",
+            "detail": "输入、频率、处理方式和输出结构明确。"
+          },
+          {
+            "label": "变化汇报",
+            "detail": "无事不打扰，有变化才进入人工视野。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "适合周期稳定的任务",
+          "法规更新、项目状态、知识库维护和定期备份。"
+        ],
+        [
+          "从定时走向条件触发",
+          "有新邮件、新文件、报错或状态变化时再启动。"
+        ],
+        [
+          "自动发现不等于自动决策",
+          "系统可以先整理和分析，关键判断留给人。"
+        ]
+      ],
+      "sourceNote": "持续运行：把低价值巡视和固定启动交给 AI",
+      "source": "/tutorials/scheduled-ai-digital-employee",
+      "notes": [
+        "先问听众：每天最容易忘记做、但又必须持续做的工作有哪些？",
+        "定时任务最适合周期稳定、输入稳定、规则稳定、输出稳定的场景。",
+        "成熟的自动化要有无事不打扰机制，重点汇报变化而不是重复全量信息。",
+        "最后强调条件触发和人工确认：主动工作不等于自动做最终决定。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-19",
+      "page": 19,
+      "chapter": "AI 优先第 19 讲",
+      "state": "演讲版",
+      "title": "AI 越主动，权限越要清楚",
+      "titleLines": [
+        {
+          "text": "AI 越主动，",
+          "accent": true
+        },
+        {
+          "text": "权限越要清楚",
+          "accent": false
+        }
+      ],
+      "eyebrow": "自动化必须有边界",
+      "lead": "自动化解决启动成本，也把错误放大的可能性带进来。",
+      "leadStrong": "读取相对宽，写入分级，不可逆操作保留人工闸门。",
+      "quoteLabel": "安全底线",
+      "quote": "能力越强，边界越清楚。",
+      "caption": "不要只分允许与不允许，要把执行、审批和禁止分成不同层级。",
+      "visual": {
+        "kind": "compare",
+        "columnsCount": 3,
+        "columns": [
+          {
+            "tone": "lime",
+            "tag": "可自动",
+            "title": "自行执行",
+            "items": [
+              "读取与搜索",
+              "整理与分析",
+              "生成草稿与报告"
+            ]
+          },
+          {
+            "tone": "amber",
+            "tag": "需审批",
+            "title": "确认后执行",
+            "items": [
+              "覆盖或修改正式文件",
+              "发送、发布、提交",
+              "改服务器或业务配置"
+            ]
+          },
+          {
+            "tone": "cyan",
+            "tag": "不直连",
+            "title": "原则上禁止",
+            "items": [
+              "删除核心资料",
+              "不可逆生产操作",
+              "未经审核的正式结论"
+            ]
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "读写权限分开",
+          "能查看，不代表能修改、删除、发送或发布。"
+        ],
+        [
+          "审批放在关键节点",
+          "普通步骤自动执行，重要动作集中确认。"
+        ],
+        [
+          "先备份再操作",
+          "原件只读、日志留存和可回滚是基本兜底。"
+        ]
+      ],
+      "sourceNote": "权限治理：让自动化有审批、有日志、有退路",
+      "source": "/tutorials/agent-permissions-guardrails",
+      "notes": [
+        "举覆盖原件、误删资料、发错邮件和改到生产环境等错误场景。",
+        "最简单的原则是：读取权限可以相对宽，写入权限要谨慎分级。",
+        "把动作分为 AI 可自行做、准备后人工确认、原则上不直连三层。",
+        "提醒还要防止任务本身定义错：权限和验收都不能替代人的目标判断。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-20",
+      "page": 20,
+      "chapter": "AI 优先第 20 讲",
+      "state": "演讲版",
+      "title": "让每次交付，都成为下一次的经验",
+      "titleLines": [
+        {
+          "text": "让每次交付，",
+          "accent": false
+        },
+        {
+          "text": "都成为下一次的经验",
+          "accent": true
+        }
+      ],
+      "eyebrow": "系统必须会复盘",
+      "lead": "AI 工作系统真正的价值，不只是把事情做完，而是每做完一次，下一次应该做得更好。",
+      "leadStrong": "纠正一次，最好永久升级一次。",
+      "quoteLabel": "复盘动作",
+      "quote": "这次有什么值得留下？",
+      "caption": "错误写成护栏，经验写进规则，流程变成 Skill，重复劳动交给自动化。",
+      "visual": {
+        "kind": "flow",
+        "title": "一次复盘的闭环",
+        "caption": "把经验写回系统",
+        "items": [
+          {
+            "title": "完成任务",
+            "detail": "先交付结果，也保留过程和问题记录。"
+          },
+          {
+            "title": "找出问题",
+            "detail": "哪里错、哪里慢、哪里需要人工补救。"
+          },
+          {
+            "title": "写回系统",
+            "detail": "更新全局规则、项目指令、Skill 或知识库。"
+          },
+          {
+            "title": "下一次升级",
+            "detail": "同样的任务少教一次，少错一次，少做一步。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "经验要有去处",
+          "长期规则、项目要求、Skill 和知识库各自承接不同内容。"
+        ],
+        [
+          "错误要变护栏",
+          "把“不要这样做”写成固定检查和边界。"
+        ],
+        [
+          "复盘不是写总结",
+          "关键是让下一次执行真的发生变化。"
+        ]
+      ],
+      "sourceNote": "AI 复利：同样的事情，下一次越来越不需要重新教",
+      "source": "/tutorials/ai-system-retrospective",
+      "notes": [
+        "先区分复盘和写总结：复盘要改变下一次的工作方式。",
+        "问五个问题：错在哪里、慢在哪里、什么有效、什么会重复、什么能自动化。",
+        "把答案写回正确层级：全局指令、项目指令、Skill、知识库或脚本。",
+        "用“纠正一次，永久升级一次”收束这一页。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-21",
+      "page": 21,
+      "chapter": "AI 优先第 21 讲",
+      "state": "演讲版",
+      "title": "先定义什么叫做好，再让 AI 开始",
+      "titleLines": [
+        {
+          "text": "先定义什么叫做好，",
+          "accent": true
+        },
+        {
+          "text": "再让 AI 开始",
+          "accent": false
+        }
+      ],
+      "eyebrow": "把复核标准提前",
+      "lead": "很多结果不理想，不是模型不够强，而是从未说清楚什么叫完成。",
+      "leadStrong": "验收标准要在执行开始前写进任务。",
+      "quoteLabel": "核心区别",
+      "quote": "要做什么，和做到什么程度才合格，不是一回事。",
+      "caption": "目标、事实、格式和风险都可以提前变成可检查的验收项。",
+      "visual": {
+        "kind": "checklist",
+        "title": "交付前的四道验收",
+        "caption": "把“做好”变成可检查",
+        "items": [
+          {
+            "title": "目标完成？",
+            "detail": "是否覆盖了任务目标和全部指定范围。"
+          },
+          {
+            "title": "事实可核？",
+            "detail": "重要事实、依据和数据是否能够回到来源。"
+          },
+          {
+            "title": "格式可交？",
+            "detail": "指定文件、结构、命名和保存位置是否正确。"
+          },
+          {
+            "title": "风险待审？",
+            "detail": "不确定事项、重大风险和人工判断是否单列。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "验收标准前置",
+          "不要等 AI 做完以后，才发现双方理解的“完成”不同。"
+        ],
+        [
+          "法律工作更要具体",
+          "客户立场、现行依据、最小修改和来源都要写清楚。"
+        ],
+        [
+          "让 AI 先自检",
+          "交付前按标准检查文件、字段、引用和未解决事项。"
+        ]
+      ],
+      "sourceNote": "质量控制：把“做好”写成 AI 可以执行和复核的标准",
+      "source": "/tutorials/ai-acceptance-criteria",
+      "notes": [
+        "用“帮我审一下合同”说明模糊任务：代表谁、改到什么程度、输出什么都没有说。",
+        "验收标准既包括内容，也包括格式、来源、版本和人工确认事项。",
+        "复杂任务可以阶段验收：资料完整、分析框架、初步结论、最终交付。",
+        "好的验收标准可以反复使用，最终会成为 Skill 和工作流的一部分。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-22",
+      "page": 22,
+      "chapter": "AI 优先第 22 讲",
+      "state": "演讲版",
+      "title": "先定义输出，再倒推怎么做",
+      "titleLines": [
+        {
+          "text": "先定义输出，",
+          "accent": true
+        },
+        {
+          "text": "再倒推怎么做",
+          "accent": false
+        }
+      ],
+      "eyebrow": "交付物决定工作深度",
+      "lead": "同一句“研究一下”，可能要微信回复、备忘录、Excel 或正式文书；输出不同，处理深度完全不同。",
+      "leadStrong": "先明确最终交付物，再决定需要哪些资料、工具和步骤。",
+      "quoteLabel": "任务设计",
+      "quote": "不要先忙着做，先想清楚最后要交什么。",
+      "caption": "最终文件、字段和结构一旦明确，Subagent 与工具也更容易分工。",
+      "visual": {
+        "kind": "layers",
+        "title": "从交付物倒推任务",
+        "caption": "输出是整个流程的骨架",
+        "items": [
+          {
+            "title": "最终交付物",
+            "detail": "微信回复、备忘录、Word、Excel 或风险清单。"
+          },
+          {
+            "title": "字段与结构",
+            "detail": "需要哪些栏目、章节、表格和表达层级。"
+          },
+          {
+            "title": "必要信息",
+            "detail": "为了填满交付物，需要哪些事实和法律依据。"
+          },
+          {
+            "title": "分工与工具",
+            "detail": "谁检索、谁分析、谁生成、谁验收。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "输出不只是格式",
+          "它还决定分析深度、依据要求和人工复核程度。"
+        ],
+        [
+          "先建字段再找资料",
+          "尤其是案例表、尽调表和问询清单。"
+        ],
+        [
+          "交付物可以反推过程",
+          "从最终成果倒推输入、工具、分工和检查点。"
+        ]
+      ],
+      "sourceNote": "输出倒推：先设计最终成果，再组织资料和执行过程",
+      "source": "/tutorials/define-output-before-work",
+      "notes": [
+        "举同一个法律问题可能只要一句微信回复，也可能要正式法律备忘录。",
+        "如果先定最终文件和字段，AI 就知道需要多深的事实梳理和法律核验。",
+        "表格类任务尤其要先把字段设计好，再开始检索和填充。",
+        "输出结构还会反过来决定如何拆给 Subagent、工具和不同执行节点。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-23",
+      "page": 23,
+      "chapter": "AI 优先第 23 讲",
+      "state": "演讲版",
+      "title": "结论必须能回去：事实、依据、判断",
+      "titleLines": [
+        {
+          "text": "结论必须能回去：",
+          "accent": true
+        },
+        {
+          "text": "事实、依据、判断",
+          "accent": false
+        }
+      ],
+      "eyebrow": "重要工作必须可追溯",
+      "lead": "AI 很擅长快速给结论，但专业工作真正重要的是：这个结论能不能被重新验证。",
+      "leadStrong": "事实、依据、判断分开写，才能知道错在材料、规则还是分析尺度。",
+      "quoteLabel": "最低要求",
+      "quote": "每个重要结论，都要有来源、依据和可复核的路径。",
+      "caption": "来源、页码、条款、版本和效力状态，构成可追溯的工作底稿。",
+      "visual": {
+        "kind": "flow",
+        "title": "一条可追溯的结论链",
+        "caption": "从原始材料到专业判断",
+        "items": [
+          {
+            "title": "事实提取",
+            "detail": "原始文件实际记载了什么。"
+          },
+          {
+            "title": "来源定位",
+            "detail": "文件名、页码、条款或数据位置。"
+          },
+          {
+            "title": "依据核验",
+            "detail": "法律、法规、合同或案例是否真实有效。"
+          },
+          {
+            "title": "分析判断",
+            "detail": "基于事实和依据得出什么结论。"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "结论要带来源",
+          "无法定位的内容，不应直接作为确定结论。"
+        ],
+        [
+          "法律依据要核验",
+          "不仅要引用，还要确认名称、条款和现行有效状态。"
+        ],
+        [
+          "版本必须留痕",
+          "明确本次分析以哪个文件版本为准。"
+        ]
+      ],
+      "sourceNote": "可追溯：结论 + 来源 + 依据 + 待确认事项",
+      "source": "/tutorials/ai-traceability-requirements",
+      "notes": [
+        "先举“公司存在劳动风险”这样的结论，追问依据哪份文件、哪一页、哪条法律。",
+        "把事实、依据、判断三层分开，复核时才能快速定位问题。",
+        "长任务可以先生成底稿表，统一保留来源文件、版本和定位。",
+        "无法核验的内容进入待确认清单，不要让 AI 自行补全。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-24",
+      "page": 24,
+      "chapter": "AI 优先第 24 讲",
+      "state": "演讲版",
+      "title": "执行交给 AI，责任留在人手里",
+      "titleLines": [
+        {
+          "text": "执行交给 AI，",
+          "accent": true
+        },
+        {
+          "text": "责任留在人手里",
+          "accent": false
+        }
+      ],
+      "eyebrow": "AI 优先，不等于 AI 拍板",
+      "lead": "法律、交易和谈判不只是信息处理，还包括客户立场、商业策略和责任承担。",
+      "leadStrong": "把执行交给 AI，把最终拍板留给人。",
+      "quoteLabel": "人的位置",
+      "quote": "AI 负责扩大选项，人负责做选择。",
+      "caption": "可标准化的执行交给 AI；例外、冲突和取舍回到专业判断。",
+      "visual": {
+        "kind": "compare",
+        "columnsCount": 3,
+        "columns": [
+          {
+            "tone": "lime",
+            "tag": "AI 执行",
+            "title": "处理材料",
+            "items": [
+              "整理与提取",
+              "检索与比对",
+              "生成初稿与清单"
+            ]
+          },
+          {
+            "tone": "cyan",
+            "tag": "AI 建议",
+            "title": "扩大选项",
+            "items": [
+              "列出方案",
+              "比较风险利弊",
+              "标记不确定事项"
+            ]
+          },
+          {
+            "tone": "amber",
+            "tag": "人来决定",
+            "title": "最终判断",
+            "items": [
+              "客户利益取舍",
+              "谈判与商业策略",
+              "正式结论与责任"
+            ]
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "执行适合标准化",
+          "规则明确、结果可复核的工作最适合交给 AI。"
+        ],
+        [
+          "建议不等于决定",
+          "让 AI 给方案、风险和利弊，不要替人拍板。"
+        ],
+        [
+          "人负责例外与取舍",
+          "重大法律判断、商业决策和对外责任不能外包。"
+        ]
+      ],
+      "sourceNote": "责任边界：AI 做判断前的准备，人承担最终专业判断",
+      "source": "/tutorials/human-final-judgment",
+      "notes": [
+        "先把“所有判断都交给 AI”作为错误命题，再转到执行和判断的区分。",
+        "法律工作中，事实提取、法规检索、初稿和清单可以大量自动化。",
+        "涉及客户利益、谈判策略、重大风险和正式发送时，要求 AI 列选项，不要自行确定。",
+        "AI 越强，人越应该把时间留给判断、沟通、谈判和责任。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-25",
+      "page": 25,
+      "chapter": "AI 优先第 25 讲",
+      "state": "演讲版",
+      "title": "从使用 AI，走向管理 AI",
+      "titleLines": [
+        {
+          "text": "从使用 AI，",
+          "accent": false
+        },
+        {
+          "text": "走向管理 AI",
+          "accent": true
+        }
+      ],
+      "eyebrow": "人的能力正在换挡",
+      "lead": "当 AI 能调用工具、并行执行和长期运行，核心问题就从“会不会问”变成“该让谁做”。",
+      "leadStrong": "人的价值从执行能力，转向组织、验收和责任。",
+      "quoteLabel": "能力升级",
+      "quote": "不是只会用 AI，而是知道怎样安排 AI 工作。",
+      "caption": "把模糊需求变成任务，调度合适资源，建立标准并保留接手机制。",
+      "visual": {
+        "kind": "map",
+        "title": "AI 管理能力",
+        "caption": "布置、调度、验收",
+        "center": [
+          "AI 管理能力",
+          "让多个能力节点围绕目标协作"
+        ],
+        "nodes": [
+          {
+            "tag": "ASSIGN",
+            "title": "布置任务",
+            "detail": "目标 · 材料 · 约束 · 交付物"
+          },
+          {
+            "tag": "ORCHESTRATE",
+            "title": "调度协作",
+            "detail": "Agent · Subagent · 工具 · 接手"
+          },
+          {
+            "tag": "GOVERN",
+            "title": "标准与边界",
+            "detail": "权限 · 验收 · 来源 · 人工判断"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "从提问题到下任务",
+          "让 AI 知道输入、目标、标准和完成条件。"
+        ],
+        [
+          "从自己做到安排谁做",
+          "根据能力和风险分配给 Agent、工具或脚本。"
+        ],
+        [
+          "管理包含放手与收回",
+          "边界清楚时放手，重大判断和高风险操作收回。"
+        ]
+      ],
+      "sourceNote": "角色升级：从 AI 使用者变成任务设计者与 AI 管理者",
+      "source": "/tutorials/from-using-ai-to-managing-ai",
+      "notes": [
+        "回顾最初的问题：哪个模型最强、提示词怎么写，正在变成次级问题。",
+        "现在要问的是：任务交给谁、给哪些资料、要不要并行、哪里必须审批。",
+        "管理 AI 既包括放手，也包括知道什么时候不能放手。",
+        "最后强调管理还包含标准、协作、交接、备份和成长。"
+      ],
+      "duration": "3–4 分钟"
+    },
+    {
+      "id": "ai-priority-26",
+      "page": 26,
+      "chapter": "AI 优先第 26 讲",
+      "state": "收束",
+      "title": "真正的 AI 能力，是建立自己的工作方式",
+      "titleLines": [
+        {
+          "text": "真正的 AI 能力，",
+          "accent": false
+        },
+        {
+          "text": "是建立自己的工作方式",
+          "accent": true
+        }
+      ],
+      "eyebrow": "把整套方法带回自己的工作",
+      "lead": "从工作顺序到系统结构，从自动化到权限，从验收再回到判断，这套方法最终不是工具箱。",
+      "leadStrong": "它是一种可以迁移、积累和持续升级的工作方式。",
+      "quoteLabel": "演讲收束",
+      "quote": "不要只学会使用 AI，要建立自己的 AI 工作方式。",
+      "caption": "AI 优先、系统积累、自动执行、可追溯验收，最后回到人的判断。",
+      "visual": {
+        "kind": "map",
+        "title": "自己的 AI 工作方式",
+        "caption": "顺序 · 系统 · 判断",
+        "center": [
+          "自己的 AI 工作方式",
+          "让同样的工作下一次更少重新开始"
+        ],
+        "nodes": [
+          {
+            "tag": "START",
+            "title": "AI 优先",
+            "detail": "先判断、先设计、先交任务"
+          },
+          {
+            "tag": "COMPOUND",
+            "title": "系统积累",
+            "detail": "记忆、Skill、文件、知识与自动化"
+          },
+          {
+            "tag": "OWNERSHIP",
+            "title": "人的判断",
+            "detail": "来源、边界、取舍、责任与复核"
+          }
+        ]
+      },
+      "takeaways": [
+        [
+          "先改变顺序",
+          "接到任务先问 AI 能做什么，再决定自己做什么。"
+        ],
+        [
+          "让系统产生复利",
+          "规则、经验、流程和工具要沉淀、迁移和升级。"
+        ],
+        [
+          "把判断留在人手里",
+          "AI 可以更主动，但人的责任边界必须更清楚。"
+        ]
+      ],
+      "sourceNote": "系列收束：从“会用 AI”走向“建立自己的 AI 工作方式”",
+      "source": "/tutorials/ai-work-method-finale",
+      "notes": [
+        "不要再增加新名词，带听众沿着“顺序、系统、判断”三条线回看全系列。",
+        "AI 优先改变开始工作的顺序；系统积累让经验产生复利；自动化减少启动成本。",
+        "越主动的 AI 越需要权限、验收、来源和人工判断。",
+        "最后留下行动问题：你的工作中，哪一个可重复环节最适合先交给 AI？"
+      ],
+      "duration": "4–5 分钟"
+    }
+  ]
+}
+
+        function escapeHtml(value) {
+          return String(value).replace(/[&<>"']/g, (character) => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+          })[character])
+        }
+
+        function renderTitle(lines) {
+          return lines.map((line) => line.accent ? `<span>${escapeHtml(line.text)}</span>` : escapeHtml(line.text)).join('<br>')
+        }
+
+        function renderVisual(visual) {
+          const heading = `<div class="concept-panel-head"><span>${escapeHtml(visual.title)}</span><span class="panel-caption">${escapeHtml(visual.caption)}</span></div>`
+          let body = ''
+
+          if (visual.kind === 'flow') {
+            body = `<div class="visual-flow">${visual.items.map((item, index) => `${index ? '<div class="visual-flow-arrow" aria-hidden="true">↓</div>' : ''}<div class="visual-flow-step"><span class="visual-step-num">${String(index + 1).padStart(2, '0')}</span><div><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.detail)}</small></div></div>`).join('')}</div>`
+          } else if (visual.kind === 'compare') {
+            const compareClass = visual.columnsCount === 3 ? 'visual-compare is-three' : 'visual-compare'
+            body = `<div class="${compareClass}">${visual.columns.map((column) => `<div class="visual-compare-col is-${escapeHtml(column.tone || 'lime')}"><span class="visual-compare-tag">${escapeHtml(column.tag)}</span><h3>${escapeHtml(column.title)}</h3><ul>${column.items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`).join('')}</div>`
+          } else if (visual.kind === 'layers') {
+            body = `<div class="visual-layer-stack">${visual.items.map((item, index) => `<div class="visual-layer"><span class="visual-layer-index">${String(index + 1).padStart(2, '0')}</span><div><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.detail)}</small></div></div>`).join('')}</div>`
+          } else if (visual.kind === 'grid') {
+            body = `<div class="visual-grid">${visual.items.map((item) => `<div class="visual-grid-card"><span class="visual-grid-tag">${escapeHtml(item.tag)}</span><h3>${escapeHtml(item.title)}</h3><span>${escapeHtml(item.detail)}</span></div>`).join('')}</div>`
+          } else if (visual.kind === 'formula') {
+            body = `<div class="visual-formula"><div class="visual-formula-equation">${escapeHtml(visual.equation)}</div><div class="visual-formula-explain">${visual.parts.map((part) => `<div><strong>${escapeHtml(part.label)}</strong><span>${escapeHtml(part.detail)}</span></div>`).join('')}</div></div>`
+          } else if (visual.kind === 'checklist') {
+            body = `<div class="visual-checklist">${visual.items.map((item) => `<div class="visual-check-item"><div><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.detail)}</span></div></div>`).join('')}</div>`
+          } else if (visual.kind === 'map') {
+            body = `<div class="visual-map"><div class="visual-map-center"><strong>${escapeHtml(visual.center[0])}</strong><span>${escapeHtml(visual.center[1])}</span></div>${visual.nodes.map((node) => `<div class="visual-map-node"><span class="visual-map-tag">${escapeHtml(node.tag)}</span><h3>${escapeHtml(node.title)}</h3><span>${escapeHtml(node.detail)}</span></div>`).join('')}</div>`
+          } else if (visual.kind === 'scale') {
+            body = `<div class="visual-scale"><div class="visual-scale-bar">${visual.segments.map((segment) => `<span>${escapeHtml(segment.title)}</span>`).join('')}</div><div class="visual-scale-legend">${visual.segments.map((segment) => `<div><strong>${escapeHtml(segment.title)}</strong><span class="visual-scale-label">${escapeHtml(segment.detail)}</span></div>`).join('')}</div></div>`
+          }
+
+          return `<div class="concept-panel visual-panel"><div class="concept-map">${heading}<div class="visual-body">${body}</div></div></div>`
+        }
+
+        function renderSlide(slide) {
+          const page = String(slide.page).padStart(2, '0')
+          return `<article class="slide slide-layout-${escapeHtml(slide.visual.kind)}" data-slide data-slide-id="${escapeHtml(slide.id)}" data-slide-number="${page}" aria-labelledby="slide-title-${page}" aria-hidden="true"><div class="slide-topline"><span class="slide-index">${page}</span><span class="slide-topic">${escapeHtml(slide.chapter)}</span><span class="slide-state">${escapeHtml(slide.state || '演讲版')}</span></div><div class="slide-body"><div class="slide-main"><div class="slide-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>${escapeHtml(slide.eyebrow || '这一页只记住一件事')}</p><h1 id="slide-title-${page}">${renderTitle(slide.titleLines)}</h1><p class="slide-lead">${escapeHtml(slide.lead)} <strong>${escapeHtml(slide.leadStrong)}</strong></p><div class="slide-quote"><span class="quote-mark" aria-hidden="true">“</span><div><span class="quote-label">${escapeHtml(slide.quoteLabel)}</span><span class="quote-text">${escapeHtml(slide.quote)}</span></div></div></div>${renderVisual(slide.visual)}</div><div class="takeaway-grid" aria-label="本页三个记忆点">${slide.takeaways.map((takeaway, index) => `<div class="takeaway"><span class="takeaway-num">${String(index + 1).padStart(2, '0')}</span><span class="takeaway-copy"><strong>${escapeHtml(takeaway[0])}</strong><span>${escapeHtml(takeaway[1])}</span></span></div>`).join('')}</div></div><div class="slide-source"><span>${escapeHtml(slide.sourceNote)}</span><a href="${escapeHtml(slide.source)}">阅读原文 ↗</a></div></article>`
+        }
+
+        const slideViewport = document.querySelector('#slide-viewport')
+        slideViewport.insertAdjacentHTML('beforeend', deck.slides.slice(1).map(renderSlide).join(''))
+
+        const slideElements = Array.from(document.querySelectorAll('[data-slide]'))
+        const previousButton = document.querySelector('#previous-slide')
+        const nextButton = document.querySelector('#next-slide')
+        const dotNavigation = document.querySelector('#dot-navigation')
+        const counter = document.querySelector('#deck-counter')
+        const caption = document.querySelector('#slide-caption')
+        const progressValue = document.querySelector('#progress-value')
+        const announcer = document.querySelector('#slide-announcer')
+        const notesPanel = document.querySelector('#notes-panel')
+        const notesToggle = document.querySelector('[data-action="notes"]')
+        const notesClose = document.querySelector('.notes-close')
+        const notesKicker = document.querySelector('#notes-kicker')
+        const notesList = document.querySelector('#notes-list')
+        const notesMeta = document.querySelector('#notes-meta')
+        const fullscreenButton = document.querySelector('[data-action="fullscreen"]')
+        let currentIndex = 0
+        let touchStartX = null
+
+        function clampIndex(index) {
+          return Math.max(0, Math.min(index, slideElements.length - 1))
+        }
+
+        function buildDotNavigation() {
+          dotNavigation.replaceChildren()
+          deck.slides.forEach((slide, index) => {
+            const dot = document.createElement('button')
+            dot.className = 'dot-button'
+            dot.type = 'button'
+            dot.role = 'tab'
+            dot.dataset.index = String(index)
+            dot.setAttribute('aria-label', `第 ${String(slide.page).padStart(2, '0')} 页：${slide.chapter}`)
+            dot.addEventListener('click', () => setActiveSlide(index))
+            dotNavigation.append(dot)
+          })
+        }
+
+        function updateNotes(slide) {
+          notesKicker.textContent = `Speaker notes · ${String(slide.page).padStart(2, '0')}`
+          notesList.replaceChildren(...slide.notes.map((note) => {
+            const item = document.createElement('li')
+            item.textContent = note
+            return item
+          }))
+          notesMeta.textContent = `建议时长：${slide.duration}`
+        }
+
+        function setActiveSlide(nextIndex, updateHash = true) {
+          if (!slideElements.length) return
+          currentIndex = clampIndex(nextIndex)
+          const slide = deck.slides[currentIndex]
+          const slidePage = slide.page || currentIndex + 1
+          slideElements.forEach((element, index) => {
+            const active = index === currentIndex
+            element.classList.toggle('is-active', active)
+            element.setAttribute('aria-hidden', active ? 'false' : 'true')
+          })
+
+          counter.textContent = `${String(slidePage).padStart(2, '0')} / ${String(deck.plannedTotal).padStart(2, '0')} · ${slide.state || '演讲版'}`
+          caption.textContent = slide.caption
+          progressValue.style.width = `${Math.max(3.85, (slidePage / deck.plannedTotal) * 100)}%`
+          previousButton.disabled = currentIndex === 0
+          nextButton.disabled = currentIndex === slideElements.length - 1
+          Array.from(dotNavigation.children).forEach((dot, index) => {
+            dot.setAttribute('aria-selected', index === currentIndex ? 'true' : 'false')
+            dot.tabIndex = index === currentIndex ? 0 : -1
+          })
+          updateNotes(slide)
+          announcer.textContent = `${slide.chapter}，${slide.caption}`
+          document.title = `AI 优先演讲版 ${String(slide.page).padStart(2, '0')}｜${slide.title || slide.chapter}`
+
+          if (updateHash) {
+            history.replaceState(null, '', `#${slidePage}`)
+          }
+        }
+
+        function move(delta) {
+          const nextIndex = currentIndex + delta
+          if (nextIndex < 0 || nextIndex >= slideElements.length) return
+          setActiveSlide(nextIndex)
+        }
+
+        function toggleNotes(force) {
+          const open = typeof force === 'boolean' ? force : notesPanel.hidden
+          notesPanel.hidden = !open
+          notesToggle.setAttribute('aria-expanded', open ? 'true' : 'false')
+          notesToggle.setAttribute('aria-pressed', open ? 'true' : 'false')
+          if (open) notesClose.focus()
+        }
+
+        async function toggleFullscreen() {
+          try {
+            if (document.fullscreenElement) {
+              await document.exitFullscreen()
+            } else {
+              await document.documentElement.requestFullscreen()
+            }
+          } catch {
+            announcer.textContent = '当前浏览器未开启全屏权限，可继续使用普通演示模式。'
+          }
+        }
+
+        previousButton.addEventListener('click', () => move(-1))
+        nextButton.addEventListener('click', () => move(1))
+        notesToggle.addEventListener('click', () => toggleNotes())
+        notesClose.addEventListener('click', () => toggleNotes(false))
+        fullscreenButton.addEventListener('click', toggleFullscreen)
+
+        document.addEventListener('fullscreenchange', () => {
+          const active = Boolean(document.fullscreenElement)
+          fullscreenButton.querySelector('span').textContent = active ? '退出全屏' : '全屏'
+          fullscreenButton.setAttribute('aria-pressed', active ? 'true' : 'false')
+        })
+
+        document.addEventListener('keydown', (event) => {
+          if (event.target.closest('input, textarea, select, [contenteditable="true"]')) return
+          if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
+            event.preventDefault()
+            move(-1)
+          } else if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') {
+            event.preventDefault()
+            move(1)
+          } else if (event.key === 'Home') {
+            event.preventDefault()
+            setActiveSlide(0)
+          } else if (event.key === 'End') {
+            event.preventDefault()
+            setActiveSlide(slideElements.length - 1)
+          } else if (event.key.toLowerCase() === 'n') {
+            event.preventDefault()
+            toggleNotes()
+          } else if (event.key.toLowerCase() === 'f') {
+            event.preventDefault()
+            toggleFullscreen()
+          } else if (event.key === 'Escape' && !notesPanel.hidden) {
+            toggleNotes(false)
+          }
+        })
+
+        slideViewport.addEventListener('touchstart', (event) => {
+          touchStartX = event.changedTouches[0]?.clientX ?? null
+        }, { passive: true })
+
+        slideViewport.addEventListener('touchend', (event) => {
+          if (touchStartX === null) return
+          const delta = event.changedTouches[0].clientX - touchStartX
+          touchStartX = null
+          if (Math.abs(delta) < 48) return
+          move(delta < 0 ? 1 : -1)
+        }, { passive: true })
+
+        slideViewport.addEventListener('click', (event) => {
+          if (event.target.closest('a, button, svg, .concept-panel, .takeaway')) return
+          const bounds = slideViewport.getBoundingClientRect()
+          move(event.clientX - bounds.left < bounds.width / 2 ? -1 : 1)
+        })
+
+        window.addEventListener('hashchange', () => {
+          const requestedPage = Number.parseInt(window.location.hash.slice(1), 10)
+          if (Number.isFinite(requestedPage)) setActiveSlide(requestedPage - 1, false)
+        })
+
+        const requestedPage = Number.parseInt(window.location.hash.slice(1), 10)
+        const initialIndex = Number.isFinite(requestedPage) ? requestedPage - 1 : 0
+        buildDotNavigation()
+        setActiveSlide(initialIndex, false)
+      })()
+    </script>
+  </body>
+</html>

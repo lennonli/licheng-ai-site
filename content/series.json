@@ -104,6 +104,12 @@
     "id": "ai-priority",
     "title": "AI优先：建立自己的AI工作系统",
     "description": "从「不是AI万能，而是AI优先」出发，完整走一遍从工作习惯、任务交付、长期记忆、多Agent与Subagent、上下文隔离，到Skill、MCP、知识库、文件系统、自动化、权限治理、验收与可追溯的个人AI工作系统搭建路径：开篇＋25篇。",
+    "presentation": {
+      "href": "/series/ai-priority/presentation/index.html",
+      "kicker": "演讲版 · 26 页完整课",
+      "title": "把 AI 优先讲成一套工作系统",
+      "description": "按文章顺序把 AI 优先拆成 26 页演讲内容；从工作习惯、任务交付到自动化、验收和人的判断，每页一个主题。"
+    },
     "slugs": [
       "ai-priority-series-intro",
       "ai-first-workflow",

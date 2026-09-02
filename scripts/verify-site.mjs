@@ -69,6 +69,7 @@ const civilLitigationSeriesFile = targetFile('/series/civil-litigation/')
   } else {
     const seriesIndexHtml = readFileSync(seriesIndexFile, 'utf8')
     const aiBasicsSeriesHtml = readFileSync(aiBasicsSeriesFile, 'utf8')
+    const aiPrioritySeriesHtml = readFileSync(aiPrioritySeriesFile, 'utf8')
   for (const required of ['/series/ai-basics/', '/series/ai-practice/', '/series/ai-priority/', '/series/civil-litigation/', '系列列表']) {
     if (!seriesIndexHtml.includes(required)) fail(`Series index is missing ${required}`)
   }
@@ -92,10 +93,23 @@ const civilLitigationSeriesFile = targetFile('/series/civil-litigation/')
   } else {
     const presentationHtml = readFileSync(presentationFile, 'utf8')
     if (!aiBasicsSeriesHtml.includes('series-presentation-card')) fail('AI basics series presentation card is missing')
-    const slideDataCount = (presentationHtml.match(/id: 'ai-basics-\d{2}'/g) || []).length
+    const slideDataCount = (presentationHtml.match(/(?:id":\s*"|id:\s*')ai-basics-\d{2}/g) || []).length
     if (slideDataCount !== 30) fail(`AI basics presentation expected 30 slide data entries, found ${slideDataCount}`)
     for (const required of ['slideViewport.insertAdjacentHTML', 'previous-slide', 'next-slide', 'notes-panel', 'visual-flow', 'visual-map']) {
       if (!presentationHtml.includes(required)) fail(`AI basics presentation is missing ${required}`)
+    }
+  }
+
+  const priorityPresentationFile = targetFile('/series/ai-priority/presentation/')
+  if (!priorityPresentationFile) {
+    fail('AI priority presentation page is missing')
+  } else {
+    const presentationHtml = readFileSync(priorityPresentationFile, 'utf8')
+    if (!aiPrioritySeriesHtml.includes('series-presentation-card')) fail('AI priority series presentation card is missing')
+    const slideDataCount = (presentationHtml.match(/(?:id":\s*"|id:\s*')ai-priority-\d{2}/g) || []).length
+    if (slideDataCount !== 26) fail(`AI priority presentation expected 26 slide data entries, found ${slideDataCount}`)
+    for (const required of ['slideViewport.insertAdjacentHTML', 'previous-slide', 'next-slide', 'notes-panel', 'visual-flow', 'visual-map']) {
+      if (!presentationHtml.includes(required)) fail(`AI priority presentation is missing ${required}`)
     }
   }
 }
