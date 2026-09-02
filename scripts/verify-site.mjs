@@ -64,10 +64,11 @@ const aiBasicsSeriesFile = targetFile('/series/ai-basics/')
 const aiPracticeSeriesFile = targetFile('/series/ai-practice/')
 const aiPrioritySeriesFile = targetFile('/series/ai-priority/')
 const civilLitigationSeriesFile = targetFile('/series/civil-litigation/')
-if (!seriesIndexFile || !aiBasicsSeriesFile || !aiPracticeSeriesFile || !aiPrioritySeriesFile || !civilLitigationSeriesFile) {
-  fail('Series pages are incomplete')
-} else {
-  const seriesIndexHtml = readFileSync(seriesIndexFile, 'utf8')
+  if (!seriesIndexFile || !aiBasicsSeriesFile || !aiPracticeSeriesFile || !aiPrioritySeriesFile || !civilLitigationSeriesFile) {
+    fail('Series pages are incomplete')
+  } else {
+    const seriesIndexHtml = readFileSync(seriesIndexFile, 'utf8')
+    const aiBasicsSeriesHtml = readFileSync(aiBasicsSeriesFile, 'utf8')
   for (const required of ['/series/ai-basics/', '/series/ai-practice/', '/series/ai-priority/', '/series/civil-litigation/', '系列列表']) {
     if (!seriesIndexHtml.includes(required)) fail(`Series index is missing ${required}`)
   }
