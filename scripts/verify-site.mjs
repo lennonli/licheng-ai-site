@@ -84,6 +84,19 @@ if (!seriesIndexFile || !aiBasicsSeriesFile || !aiPracticeSeriesFile || !aiPrior
     const linkCount = (html.match(/href="\/tutorials\//g) || []).length
     if (linkCount < minLinks) fail(`${label} expected at least ${minLinks} tutorial links, found ${linkCount}`)
   }
+
+  const presentationFile = targetFile('/series/ai-basics/presentation/')
+  if (!presentationFile) {
+    fail('AI basics presentation page is missing')
+  } else {
+    const presentationHtml = readFileSync(presentationFile, 'utf8')
+    if (!aiBasicsSeriesHtml.includes('series-presentation-card')) fail('AI basics series presentation card is missing')
+    const slideDataCount = (presentationHtml.match(/id: 'ai-basics-\d{2}'/g) || []).length
+    if (slideDataCount !== 30) fail(`AI basics presentation expected 30 slide data entries, found ${slideDataCount}`)
+    for (const required of ['slideViewport.insertAdjacentHTML', 'previous-slide', 'next-slide', 'notes-panel', 'visual-flow', 'visual-map']) {
+      if (!presentationHtml.includes(required)) fail(`AI basics presentation is missing ${required}`)
+    }
+  }
 }
 
 const toolsIndexFile = targetFile('/tools/')

@@ -5,9 +5,9 @@
     "description": "面向非技术读者的30篇AI通识课：从AI与大模型、训练原理、下一字预测、幻觉、Token与上下文、提示词，到Agent、Harness、工具调用、MCP、知识库、Subagent、Multi-Agent、Skill、记忆、Embedding、RAG、微调、API与开源/本地/云端模型，最终篇把整个AI世界重新拼成一张图。",
     "presentation": {
       "href": "/series/ai-basics/presentation/index.html",
-      "kicker": "演讲版 · 第 01 页样稿",
+      "kicker": "演讲版 · 30 页完整课",
       "title": "把 AI 入门讲给别人听",
-      "description": "一页讲清 AI、大模型、ChatGPT 与 Agent 的关系；确认样稿后，再按文章顺序补齐其余页面。"
+      "description": "按文章顺序把 AI 入门拆成 30 页演讲内容；每页一个主题，配有示意图、记忆点和讲者提示。"
     },
     "slugs": [
       "ai-basics-01-what-is-ai",
