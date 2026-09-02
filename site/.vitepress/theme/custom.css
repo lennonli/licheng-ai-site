@@ -2943,3 +2943,72 @@ body {
     margin-bottom: 14px;
   }
 }
+
+/* 智能体安装提示词卡片 */
+.agent-install-card {
+  margin: -8px 0 20px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(14, 111, 63, 0.35);
+  background: linear-gradient(135deg, rgba(159, 232, 112, 0.1), rgba(159, 232, 112, 0.04));
+}
+
+.vp-doc .agent-install-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #2b7a4d;
+  margin-bottom: 6px;
+}
+
+.dark .vp-doc .agent-install-label {
+  color: #9fe870;
+}
+
+.vp-doc .agent-install-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--lc-c-muted, #59645c);
+  margin-bottom: 10px;
+}
+
+.vp-doc .agent-install-prompt {
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(159, 232, 112, 0.1);
+  border: 1px solid rgba(14, 111, 63, 0.18);
+  color: var(--lc-c-ink, #14231b);
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+.dark .vp-doc .agent-install-prompt {
+  background: rgba(159, 232, 112, 0.06);
+  border-color: rgba(159, 232, 112, 0.2);
+}
+
+.agent-install-btn {
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0e6f3f, #139657);
+  box-shadow: 0 6px 18px rgba(14, 111, 63, 0.22);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.agent-install-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(14, 111, 63, 0.3);
+}
+
+.agent-install-btn:active {
+  transform: translateY(0);
+}
