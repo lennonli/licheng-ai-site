@@ -1348,14 +1348,21 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
     boardGroups.get(board).push(entry)
   }
 
-  let indexMd = `${backButton('/')}# ${title}
+  const sourceLine = `<p class="source-link">来源仓库：${sourceWebUrls[key].replace('https://github.com/', '')}（共 ${entries.length} 份案例）｜<a href="${base}/${annualFile.replace(/\.md$/, '')}">${annualTitle}</a></p>`
+  const tutorialExample = key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : key === 'kb2023' ? '920950-迅安科技' : '920002-万达轴承'
+  const legacyHead = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n${sourceLine}\n\n${aiTutorialSection(base, sourceWebUrls[key], tutorialExample)}\n\n`
 
-<p class="section-lead">${lead}</p>
-
-<p class="source-link">来源仓库：${sourceWebUrls[key].replace('https://github.com/', '')}（共 ${entries.length} 份案例）｜<a href="${base}/${annualFile.replace(/\.md$/, '')}">${annualTitle}</a></p>
-
-${aiTutorialSection(base, sourceWebUrls[key], key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : key === 'kb2023' ? '920950-迅安科技' : '920002-万达轴承')}
-`
+  let indexMd
+  if (key === 'kb') {
+    // 「问询案例」主入口：页面主体为完整 AI 调用教程（存于 monorepo 根 AI调用教程.md），案例目录附后
+    const tutorialPath = path.join(cacheDir, 'kbmono', 'AI调用教程.md')
+    const tutorial = existsSync(tutorialPath) ? readFileSync(tutorialPath, 'utf8').trim() : ''
+    indexMd = tutorial
+      ? `${backButton('/')}\n\n${tutorial}\n\n## 案例目录\n\n${sourceLine}\n\n`
+      : legacyHead
+  } else {
+    indexMd = legacyHead
+  }
 
   for (const board of [...kbBoardOrder, '其他']) {
     const rows = (boardGroups.get(board) || [])
