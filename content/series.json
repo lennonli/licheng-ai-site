@@ -157,6 +157,17 @@
     ]
   },
   {
+    "id": "ai-notes",
+    "title": "AI札记",
+    "description": "记录一些关于AI、Agent和未来工作方式的零散思考：来自真实使用过程中的突然发现，不追求完整体系，每篇只讲一个观点。",
+    "slugs": [
+      "ai-notes-01-agent-project-navigation",
+      "ai-notes-02-agent-first-workday",
+      "ai-notes-03-office-software-as-mcp",
+      "ai-notes-04-ai-file-search"
+    ]
+  },
+  {
     "id": "civil-litigation",
     "title": "民事诉讼 AI 实战系列",
     "description": "按案件推进时间轴组织的民事诉讼AI工作法：诉讼AI工作总则，以及诉前评估、证据整理、起诉答辩上诉起草、庭审举证质证、庭前演练、代理词、庭后复盘、强制执行、结案归档九篇全流程。",
