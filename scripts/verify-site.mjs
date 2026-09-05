@@ -64,23 +64,25 @@ const aiBasicsSeriesFile = targetFile('/series/ai-basics/')
 const aiInfraSeriesFile = targetFile('/series/ai-infra/')
 const aiPracticeSeriesFile = targetFile('/series/ai-practice/')
 const aiPrioritySeriesFile = targetFile('/series/ai-priority/')
+const aiNotesSeriesFile = targetFile('/series/ai-notes/')
 const civilLitigationSeriesFile = targetFile('/series/civil-litigation/')
-  if (!seriesIndexFile || !aiBasicsSeriesFile || !aiInfraSeriesFile || !aiPracticeSeriesFile || !aiPrioritySeriesFile || !civilLitigationSeriesFile) {
-    fail('Series pages are incomplete')
-  } else {
-    const seriesIndexHtml = readFileSync(seriesIndexFile, 'utf8')
-    const aiBasicsSeriesHtml = readFileSync(aiBasicsSeriesFile, 'utf8')
-    const aiPrioritySeriesHtml = readFileSync(aiPrioritySeriesFile, 'utf8')
-  for (const required of ['/series/ai-basics/', '/series/ai-infra/', '/series/ai-practice/', '/series/ai-priority/', '/series/civil-litigation/', '系列列表']) {
+if (!seriesIndexFile || !aiBasicsSeriesFile || !aiInfraSeriesFile || !aiPracticeSeriesFile || !aiPrioritySeriesFile || !aiNotesSeriesFile || !civilLitigationSeriesFile) {
+  fail('Series pages are incomplete')
+} else {
+  const seriesIndexHtml = readFileSync(seriesIndexFile, 'utf8')
+  const aiBasicsSeriesHtml = readFileSync(aiBasicsSeriesFile, 'utf8')
+  const aiPrioritySeriesHtml = readFileSync(aiPrioritySeriesFile, 'utf8')
+  for (const required of ['/series/ai-basics/', '/series/ai-infra/', '/series/ai-practice/', '/series/ai-priority/', '/series/ai-notes/', '/series/civil-litigation/', '系列列表']) {
     if (!seriesIndexHtml.includes(required)) fail(`Series index is missing ${required}`)
   }
   const seriesCardCount = (seriesIndexHtml.match(/class="index-card"/g) || []).length
-  if (seriesCardCount !== 5) fail(`Series index expected 4 series cards, found ${seriesCardCount}`)
+  if (seriesCardCount !== 6) fail(`Series index expected 6 series cards, found ${seriesCardCount}`)
   const seriesTocExpectations = [
     [aiBasicsSeriesFile, 30, 'AI basics series'],
     [aiInfraSeriesFile, 10, 'AI infra series'],
     [aiPracticeSeriesFile, 51, 'AI practice series'],
     [aiPrioritySeriesFile, 26, 'AI priority series'],
+    [aiNotesSeriesFile, 4, 'AI notes series'],
     [civilLitigationSeriesFile, 11, 'Civil litigation series']
   ]
   for (const [file, minLinks, label] of seriesTocExpectations) {
