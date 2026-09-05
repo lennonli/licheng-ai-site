@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { generatedSidebar } from './generated-sidebar.mjs'
+import { generatedSidebar, generatedReading } from './generated-sidebar.mjs'
 
 const siteOrigin = 'https://ai.licheng.uk'
 
@@ -13,7 +13,7 @@ function canonicalUrl(page: string) {
 const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/']
 
 function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
-  if (env.path?.includes('__analytics-licheng-20260708')) return ''
+  if (/__analytics-|\/dashboard\//.test(env.path || '')) return ''
   const pagePath = env.path ?? ''
   const isKbCasePage = KB_CASE_SECTIONS.some((section) => pagePath.includes(section))
   if (!isKbCasePage) return md.render(src, env)
@@ -21,18 +21,16 @@ function renderSearchSource(src: string, env: { path?: string }, md: { render: (
   const fileName = pagePath.split('/').pop() || ''
   if (fileName === 'index.md' || /年度总结\.md$/.test(fileName)) return md.render(src, env)
 
-  const frontmatter = src.match(/^---\n([\s\S]*?)\n---/)
-  const metadata = frontmatter?.[1]
-    .split('\n')
-    .filter((line) => /^(company|short|code|board|tags):/.test(line.trim()))
-    .map((line) => line.replace(/^[^:]+:\s*/, '').replace(/^"|"$/g, '').trim())
-    .filter(Boolean)
-    .join(' | ')
+  // Index the metadata and legal issue overview, not only company names.
   const title = src.match(/^# .+$/m)?.[0] || ''
-  return md.render(`${title}\n\n${metadata}`, env)
+  const metadata = src.match(/^---\n([\s\S]*?)\n---/)?.[1] || ''
+  const overview = src.match(/^## [^\n]*(?:法律问题总览|法律问题汇总|问询概览)[^\n]*\n([\s\S]*?)(?=^## |$(?![\s\S]))/m)?.[1] || ''
+  const headings = (src.match(/^#{2,4} .+$/gm) || []).join('\n\n')
+  return md.render(`${title}\n\n${metadata.replace(/^[^:]+:/gm, '')}\n\n${overview.slice(0, 14000)}\n\n${headings}`, env)
 }
 
 export default defineConfig({
+  vite: { server: { host: '0.0.0.0', allowedHosts: ['terminal.local'] } },
   lang: 'zh-CN',
   title: '李成律师法律AI工作站',
   description: '李成律师（上海市锦天城（深圳）律师事务所）法律AI工作站：分享 IPO、北交所上市、尽职调查等资本市场法律业务的 AI 智能体指令、Skills 与工作流教程。',
@@ -40,7 +38,27 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: false,
   srcExclude: ['public/copy/**'],
-  sitemap: { hostname: siteOrigin },
+  sitemap: {
+    hostname: siteOrigin,
+    transformItems: (items) => items.filter((item) => !/__analytics-|dashboard|404/.test(item.url))
+  },
+  transformPageData(pageData) {
+    const route = '/' + pageData.relativePath.replace(/index\.md$/, '').replace(/\.md$/, '')
+    const section = '/' + pageData.relativePath.split('/')[0] + '/'
+    // Keep each page's outline in its own chunk, never serialise every page into @siteData.
+    pageData.frontmatter.pageSidebar = generatedSidebar[route] || generatedSidebar[section] || []
+    const reading = generatedReading[route]
+    pageData.frontmatter.prev = reading?.prev || false
+    pageData.frontmatter.next = reading?.next || false
+    if (reading) {
+      pageData.frontmatter.reading = reading
+      pageData.frontmatter.pageSidebar = [
+        { text: reading.title, link: reading.parent },
+        ...pageData.frontmatter.pageSidebar.slice(1)
+      ]
+    }
+    if (route === '/') pageData.frontmatter.lastUpdated = false
+  },
   transformHead({ page, title, description }) {
     const canonical = canonicalUrl(page)
     const pageDescription = description || `${title}—李成律师法律AI工作站内容页面。`
@@ -83,7 +101,7 @@ export default defineConfig({
     darkModeSwitchLabel: '外观',
     lightModeSwitchTitle: '切换至浅色主题',
     darkModeSwitchTitle: '切换至深色主题',
-    docFooter: { prev: '上一页', next: '下一页' },
+    docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdated: { text: '更新日期' },
     search: {
       provider: 'local',
@@ -114,24 +132,26 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '最新文章', link: '/latest/' },
-      { text: 'AGENTS 指令', link: '/agents/' },
-      { text: 'Skill 技能', link: '/skills/' },
-      { text: 'AI 教程', link: '/tutorials/' },
       { text: '系列文章', link: '/series/' },
-      { text: '知识库SKILL', link: '/kbskill/' },
-      { text: '实用工具', link: '/tools/' },
-      { text: 'AI 网站导航', link: '/tools/ai-directory' },
-      { text: 'GitHub', link: 'https://github.com/lennonli' }
+      { text: '指令与技能', items: [
+        { text: 'AGENTS 指令', link: '/agents/' },
+        { text: '法律业务技能', link: '/skills/' },
+        { text: 'AI 工具教程', link: '/tutorials/' }
+      ] },
+      { text: '法律知识库', items: [
+        { text: '2026 年案例库', link: '/kb/' },
+        { text: '2025 年案例库', link: '/kb2025/' },
+        { text: '2024 年案例库', link: '/kb2024/' },
+        { text: '2023 年案例库', link: '/kb2023/' },
+        { text: '知识库使用教程', link: '/kbskill/' }
+      ] },
+      { text: '实用工具', items: [
+        { text: '工具总览', link: '/tools/' },
+        { text: 'AI 网站导航', link: '/tools/ai-directory' },
+        { text: '企业网核网站', link: '/tools/network-check-sites' }
+      ] }
     ],
-    sidebar: {
-      '/kbskill/': [
-        {
-          text: '知识库SKILL',
-          items: [{ text: 'AI 调用教程', link: '/kbskill/' }]
-        }
-      ],
-      ...generatedSidebar
-    },
+    sidebar: {},
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lennonli' }
     ],

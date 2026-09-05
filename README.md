@@ -14,7 +14,7 @@
 
 ```bash
 npm ci
-npm run dev
+npm run dev:sync
 ```
 
 ## 构建

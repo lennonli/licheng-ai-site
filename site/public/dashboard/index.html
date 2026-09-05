@@ -191,9 +191,9 @@
     <h1>个人每日工作看板</h1>
     <p class="sub">此页面包含未公开的工作信息，请输入访问密码解密查看。</p>
     <form id="gate-form">
-      <input type="password" id="pass" placeholder="访问密码" autocomplete="current-password" autofocus>
+      <input type="password" id="pass" aria-label="访问密码" placeholder="访问密码" autocomplete="current-password" autofocus>
       <button type="submit" id="unlock-btn">解锁看板</button>
-      <label class="remember"><input type="checkbox" id="remember" checked> 本次浏览器会话内保持解锁</label>
+      <p class="sub">关闭或刷新页面后需要重新输入密码。</p>
       <div class="err" id="gate-err" role="alert"></div>
     </form>
   </div>
@@ -233,7 +233,7 @@
 
     <p class="foot">
       数据来源：本机 ZCode 定时任务自动汇总 · 密文以 AES-256-GCM 加密传输与存储
-      <button id="lock-btn">锁定并清除会话密码</button>
+      <button id="lock-btn">锁定看板</button>
     </p>
   </div>
 </div>
@@ -247,7 +247,7 @@
   var errEl = document.getElementById('gate-err')
   var btn = document.getElementById('unlock-btn')
   var passInput = document.getElementById('pass')
-  var rememberEl = document.getElementById('remember')
+  try { sessionStorage.removeItem(PASS_KEY) } catch (e) {}
 
   function b64ToBuf(b64) {
     var bin = atob(b64)
@@ -420,9 +420,7 @@
       })
       .then(function (envelope) {
         return decryptEnvelope(password, envelope).then(function (data) {
-          if (rememberEl.checked) {
-            try { sessionStorage.setItem(PASS_KEY, password) } catch (e) {}
-          }
+          passInput.value = ''
           render(data)
         })
       })
@@ -445,15 +443,6 @@
     location.reload()
   })
 
-  // 会话内已解锁过则自动重试
-  try {
-    var saved = sessionStorage.getItem(PASS_KEY)
-    if (saved) {
-      rememberEl.checked = true
-      passInput.value = saved
-      tryUnlock(saved)
-    }
-  } catch (e) {}
 })()
 </script>
 </body>

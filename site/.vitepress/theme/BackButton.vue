@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useData } from 'vitepress'
+const { frontmatter } = useData()
 const props = withDefaults(
   defineProps<{
     fallback?: string
@@ -8,14 +11,13 @@ const props = withDefaults(
   }
 )
 
-function goBack() {
-  window.location.href = props.fallback
-}
+const destination = computed(() => frontmatter.value.reading?.parent || props.fallback)
+const label = computed(() => frontmatter.value.reading ? '返回系列目录' : destination.value === '/' ? '返回首页' : '返回栏目目录')
 </script>
 
 <template>
-  <button class="back-button" type="button" @click="goBack">
+  <a class="back-button" :href="destination">
     <span aria-hidden="true">←</span>
-    <span>返回上一级</span>
-  </button>
+    <span>{{ label }}</span>
+  </a>
 </template>

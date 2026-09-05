@@ -18,7 +18,10 @@ function json(body, status = 200, extra = {}) {
 async function readJsonBody(request) {
   const raw = await request.text()
   if (raw.length > MAX_BODY_BYTES) return { tooLarge: true, data: {} }
-  try { return { tooLarge: false, data: JSON.parse(raw) } } catch { return { tooLarge: false, data: {} } }
+  try {
+    const data = JSON.parse(raw)
+    return { tooLarge: false, data: data && typeof data === 'object' && !Array.isArray(data) ? data : {} }
+  } catch { return { tooLarge: false, data: {} } }
 }
 
 function limited(ip) {
@@ -70,13 +73,18 @@ async function onRequest(context) {
   }
 
   if (request.method === 'POST') {
+    const origin = request.headers.get('origin')
+    if (origin && origin !== url.origin) return json({ error: 'Origin not allowed' }, 403)
+    if (!request.headers.get('content-type')?.toLowerCase().startsWith('application/json')) {
+      return json({ error: 'Expected application/json' }, 415)
+    }
     const ip = request.headers.get('cf-connecting-ip') || 'unknown'
     if (limited(ip)) return json({ error: 'Too many requests' }, 429, { 'retry-after': '600' })
 
     const body = await readJsonBody(request)
     if (body.tooLarge) return json({ error: 'Request body too large' }, 413)
 
-    const content = String(body.data.content || '').trim().replace(/\s+/g, ' ')
+    const content = (typeof body.data.content === 'string' ? body.data.content : '').trim().replace(/\s+/g, ' ')
     if (content.length < MIN_CONTENT) return json({ error: '内容太短，请至少写 6 个字' }, 400)
     if (content.length > MAX_CONTENT) return json({ error: '内容超过 500 字上限' }, 400)
 

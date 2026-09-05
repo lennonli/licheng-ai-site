@@ -3012,3 +3012,33 @@ body {
 .agent-install-btn:active {
   transform: translateY(0);
 }
+
+/* Audit: compact entry points, readable tools, and explicit filter state. */
+.reading-context { display:flex; flex-wrap:wrap; gap:8px 20px; margin:0 0 20px; padding:12px 16px; border:1px solid var(--lc-c-line); border-radius:12px; font-size:14px; }
+.reading-context a { color:var(--vp-c-brand-1); }
+.reading-context span { color:var(--lc-c-muted); }
+.vp-doc .article-source-url { display:none; }
+.vp-doc .home-hero { padding-top:12px; padding-bottom:12px; }
+.vp-doc .home-hero-copy { min-height:260px; }
+.vp-doc .home-hero h1 { font-size:clamp(32px,4vw,52px); line-height:1.2; }
+.vp-doc .home-card { min-height:180px; }
+.vp-doc .home-card:nth-child(5) { grid-column:auto; }
+.vp-doc .home-card-title { font-size:20px; }
+.case-filter { display:flex; flex-wrap:wrap; gap:12px; margin:24px 0; padding:20px; border:1px solid var(--lc-c-line); border-radius:16px; background:var(--vp-c-bg-soft); }
+.case-filter label { display:flex; flex-direction:column; gap:6px; font-size:14px; flex:1 1 190px; }
+.case-filter input,.case-filter select { width:100%; min-height:44px; padding:8px 12px; color:var(--vp-c-text-1); background:var(--vp-c-bg); border:1px solid var(--vp-c-divider); border-radius:8px; font-size:16px; }
+.case-filter button { align-self:flex-end; min-height:44px; padding:8px 16px; border:1px solid var(--vp-c-divider); border-radius:8px; }
+.case-filter p { width:100%; margin:0; font-size:14px; }
+.case-filter-hint { color:var(--vp-c-text-2); }
+.case-directory [hidden] { display:none !important; }
+.vp-doc nav[aria-label="案例库年度"] { display:flex; flex-wrap:wrap; gap:12px; }
+.vp-doc nav [aria-current="page"] { font-weight:700; text-decoration:underline; }
+.case-filter :focus-visible,.reading-context a:focus-visible { outline:2px solid var(--vp-c-brand-1); outline-offset:3px; }
+@media(max-width:640px) {
+ .vp-doc .home-hero-copy { min-height:0; }
+ .vp-doc .home-hero-panel { display:none; }
+ .vp-doc .home-card { min-height:150px; }
+ .reading-context { margin-top:12px; }
+ .case-filter { padding:14px; }
+ .case-filter label { flex-basis:100%; }
+}

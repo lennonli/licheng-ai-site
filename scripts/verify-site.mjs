@@ -52,6 +52,13 @@ if (!existsSync(wechatQrFile)) {
 }
 
 const homeHtml = readFileSync(path.join(dist, 'index.html'), 'utf8')
+if (Buffer.byteLength(homeHtml) > 250_000) fail('Homepage exceeds 250 KB; check accidental site-wide sidebar serialisation')
+if (homeHtml.includes('href="/dashboard/"')) fail('Private dashboard must not be promoted on public homepage')
+for (const file of files.filter((file) => /\.(?:md|html|txt|json|js)$/.test(file))) {
+  const text = readFileSync(file, 'utf8')
+  if (/\bBearer\s+[A-Za-z0-9_.-]{24,}/.test(text)) fail(`${path.relative(dist, file)}: credential-shaped Bearer value in public output`)
+  if (/-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----/.test(text)) fail(`${path.relative(dist, file)}: private key material in public output`)
+}
 for (const required of ['wechat-contact', '联系李成律师', '/wechat-li-cheng.jpg', '扫码添加微信']) {
   if (!homeHtml.includes(required)) fail(`Homepage WeChat contact section is missing ${required}`)
 }
