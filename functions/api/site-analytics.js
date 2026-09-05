@@ -84,7 +84,9 @@ export async function onRequest(context) {
       ...(normalized.error ? { error: normalized.error } : {}),
       // Return enough paths for the client to discard assets, landing pages,
       // and section indexes before selecting the five most-read articles.
-      topPages: (normalized.topPages || []).slice(0, 25)
+      topPages: (normalized.topPages || [])
+        .filter((item) => /^\/(?:agents|skills|tutorials|kb(?:202[345])?)\/[^/?#]+$/.test(item.label || ''))
+        .slice(0, 25)
     }, 200, { 'cache-control': 'public, max-age=86400, s-maxage=86400' })
   }
 

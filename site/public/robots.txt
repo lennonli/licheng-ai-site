@@ -2,4 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /__analytics-licheng-20260708/
 
+Disallow: /dashboard/
+Disallow: /copy/
+Disallow: /tutorial-copy/
+
 Sitemap: https://ai.licheng.uk/sitemap.xml

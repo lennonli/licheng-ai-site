@@ -1,35 +1,44 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onBeforeUnmount } from 'vue'
 
 const props = defineProps({
   skillName: { type: String, required: true }
 })
 
 const copied = ref(false)
+const failed = ref(false)
+let resetTimer
 
-const installPrompt = `请为我安装法律 skill「${props.skillName}」：
+const installPrompt = computed(() => `请为我安装法律 skill「${props.skillName}」：
 1. 从 GitHub 仓库 lennonli/licheng-skills 的 ${props.skillName}/ 目录获取全部文件（SKILL.md 及 references/、scripts/ 等子目录，保持相对结构）；
 2. 将skill安装到正在使用的ai智能体；
-3. 完成后用两三句话告诉我这个 skill 的用途和触发方式。`
+3. 完成后用两三句话告诉我这个 skill 的用途和触发方式。`)
 
 async function copy() {
+  failed.value = false
+  let success = false
   try {
-    await navigator.clipboard.writeText(installPrompt)
+    await navigator.clipboard.writeText(installPrompt.value)
+    success = true
   } catch {
     const ta = document.createElement('textarea')
-    ta.value = installPrompt
+    ta.value = installPrompt.value
     ta.style.position = 'fixed'
     ta.style.opacity = '0'
     document.body.appendChild(ta)
     ta.select()
-    document.execCommand('copy')
+    try { success = document.execCommand('copy') } catch { success = false }
     document.body.removeChild(ta)
   }
-  copied.value = true
-  setTimeout(() => {
+  copied.value = success
+  failed.value = !success
+  clearTimeout(resetTimer)
+  resetTimer = setTimeout(() => {
     copied.value = false
+    failed.value = false
   }, 2000)
 }
+onBeforeUnmount(() => clearTimeout(resetTimer))
 </script>
 
 <template>
@@ -37,7 +46,7 @@ async function copy() {
     <div class="install-prompt-head">
       <span class="install-prompt-title">一键安装：复制下面的提示词发给你的智能体</span>
       <button class="install-prompt-btn" type="button" @click="copy">
-        {{ copied ? '已复制 ✓' : '复制提示词' }}
+        <span aria-live="polite">{{ copied ? '已复制' : failed ? '复制失败，请手动选择下方文字' : '复制提示词' }}</span>
       </button>
     </div>
     <pre class="install-prompt-code">{{ installPrompt }}</pre>

@@ -96,11 +96,11 @@ The script:
 Example Node REPL invocation:
 
 ```js
-const { exportCnipaTrademarkPdfs } = await import("/Users/licheng/.codex/skills/cnipa-trademark-evidence-archive/scripts/export-cnipa-trademark-pdfs.mjs");
+const { exportCnipaTrademarkPdfs } = await import("/Users/your-name/.codex/skills/cnipa-trademark-evidence-archive/scripts/export-cnipa-trademark-pdfs.mjs");
 const result = await exportCnipaTrademarkPdfs({
-  applicantName: "深圳潜行创新科技有限公司",
-  trademarkNumbers: ["87649562", "86982451"],
-  outputRoot: "/Users/licheng/Downloads/深圳潜行创新科技有限公司"
+  applicantName: "示例科技有限公司",
+  trademarkNumbers: ["00000000", "00000000"],
+  outputRoot: "/Users/your-name/Downloads/示例科技有限公司"
 });
 nodeRepl.write(JSON.stringify(result, null, 2));
 ```

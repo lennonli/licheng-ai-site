@@ -11,6 +11,7 @@ import {
   writeFileSync
 } from 'node:fs'
 import path from 'node:path'
+import { sanitizePublicText, sanitizePublicTree } from './public-content.mjs'
 import { createMarkdownRenderer } from 'vitepress'
 
 const root = process.cwd()
@@ -190,7 +191,7 @@ function writeCopySource(repoDir, relativePath, section, slug) {
 
   const copyPath = path.join(siteDir, 'public', 'copy', section, `${slug}.md`)
   ensureDir(path.dirname(copyPath))
-  writeFileSync(copyPath, readFileSync(sourcePath, 'utf8'))
+  writeFileSync(copyPath, sanitizePublicText(readFileSync(sourcePath, 'utf8'), { publicCase: /^kb/.test(section) }))
   return `/copy/${encodeGitHubPath(`${section}/${slug}.md`)}`
 }
 
@@ -267,7 +268,9 @@ function addArticleChromeToMarkdownFiles(
     const copySourcePath = copyUrlBase && normalizedPrefix === 'cases' && !existsSync(path.join(copySourceDir, sourcePath))
       ? `reports/${name}`
       : sourcePath
-    const updatedAt = gitLastUpdated(repoDir, sourcePath)
+    const gitSourcePath = /\/kb(?:202[345])?\/$/.test(fallback) ? `${path.basename(repoDir)}/${copySourcePath}` : sourcePath
+    const gitRepoDir = /\/kb(?:202[345])?\/$/.test(fallback) ? path.dirname(repoDir) : repoDir
+    const updatedAt = gitLastUpdated(gitRepoDir, gitSourcePath)
     const markdown = readFileSync(file, 'utf8')
     const summary = summarizeMarkdown(`${path.basename(dir)}/${name}`, markdown)
     const copyUrl = copyUrlBase
@@ -278,7 +281,7 @@ function addArticleChromeToMarkdownFiles(
       withArticleChrome(
         withSeoFrontmatter(markdown, summary, updatedAt),
         fallback,
-        githubBlobUrl(repoWebUrl, sourcePath),
+        githubBlobUrl(repoWebUrl, gitSourcePath),
         updatedAt,
         '',
         copyUrl
@@ -755,6 +758,18 @@ function buildSectionSidebar({ section, indexText, destDir }) {
 }
 
 function writeGeneratedSidebar() {
+  const reading = {}
+  for (const entry of seriesEntries) {
+    entry.items.forEach((item, index) => {
+      if (reading[item.href]) throw new Error(`Article belongs to multiple reading chains: ${item.href}`)
+      reading[item.href] = {
+        title: entry.title, index: index + 1, total: entry.items.length,
+        parent: `/series/${entry.id}/`,
+        prev: index ? { text: entry.items[index - 1].title, link: entry.items[index - 1].href } : false,
+        next: index + 1 < entry.items.length ? { text: entry.items[index + 1].title, link: entry.items[index + 1].href } : false
+      }
+    })
+  }
   const sidebar = {
     ...buildSectionSidebar({
       section: 'agents',
@@ -806,7 +821,7 @@ function writeGeneratedSidebar() {
 
   writeFileSync(
     path.join(siteDir, '.vitepress', 'generated-sidebar.mjs'),
-    `export const generatedSidebar = ${JSON.stringify(sidebar, null, 2)}\n`
+    `export const generatedSidebar = ${JSON.stringify(sidebar, null, 2)}\nexport const generatedReading = ${JSON.stringify(reading, null, 2)}\n`
   )
 }
 
@@ -817,7 +832,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'kb2024', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'kb2024', 'kb2023', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'series'), { recursive: true, force: true })
@@ -855,17 +870,17 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
 <section class="home-grid" aria-label="内容入口">
   <a class="home-card" href="/agents/">
     <span class="home-card-index">01 / Agents</span>
-    <span class="home-card-title">智能体通用指令和项目指令共享</span>
+    <span class="home-card-title">智能体指令</span>
     <span class="home-card-desc">沉淀通用 AGENTS 指令、项目约束与法律工作默认规则。</span>
   </a>
   <a class="home-card" href="/skills/">
     <span class="home-card-index">02 / Skills</span>
-    <span class="home-card-title">法律业务skill技能共享</span>
+    <span class="home-card-title">法律业务技能</span>
     <span class="home-card-desc">汇总合同审查、网络核查、知识产权证据归档等可复用技能。</span>
   </a>
   <a class="home-card" href="/tutorials/">
     <span class="home-card-index">03 / Tutorials</span>
-    <span class="home-card-title">AI智能体安装、环境配置、各种技巧等教程</span>
+    <span class="home-card-title">AI 工具教程</span>
     <span class="home-card-desc">覆盖 Codex 环境搭建、系统依赖、代理配置与日常使用技巧。</span>
   </a>
   <a class="home-card" href="/series/">
@@ -886,33 +901,29 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
   <a class="home-card" href="/kb/">
     <span class="home-card-index">07 / Cases 2026</span>
     <span class="home-card-title">问询案例库 · 2026年度</span>
-    <span class="home-card-desc">2026 年上市/挂牌 242 家审核问询法律问题回溯，按问询要点、回复口径与执业提示沉淀。</span>
+    <span class="home-card-desc">2026 年审核问询案例，按问询要点、回复口径与执业提示沉淀。</span>
   </a>
   <a class="home-card" href="/kb2025/">
     <span class="home-card-index">08 / Cases 2025</span>
     <span class="home-card-title">问询案例库 · 2025年度</span>
-    <span class="home-card-desc">2025 年上市/挂牌 430 家审核问询法律问题回溯（3,389 个详述问题），附年度总结报告。</span>
-  </a>
-  <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">08 / Cases 2023</span>
-    <span class="home-card-title">问询案例库 · 2023年度</span>
-    <span class="home-card-desc">2023 年上市/挂牌 570 家审核问询法律问题回溯（3,915 个详述问题），附年度总结报告。</span>
+    <span class="home-card-desc">2025 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2024/">
     <span class="home-card-index">09 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
-    <span class="home-card-desc">2024 年上市/挂牌 386 家审核问询法律问题回溯（1,747 个详述问题），附年度总结报告。</span>
+    <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
+  </a>
+  <a class="home-card" href="/kb2023/">
+    <span class="home-card-index">10 / Cases 2023</span>
+    <span class="home-card-title">问询案例库 · 2023年度</span>
+    <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">10 / Directory</span>
+    <span class="home-card-index">11 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
-  <a class="home-card" href="/dashboard/">
-    <span class="home-card-index">11 / Dashboard</span>
-    <span class="home-card-title">个人每日工作看板</span>
-    <span class="home-card-desc">定时任务与个人工作进展的加密看板，密码访问，每日自动更新。</span>
-  </a>
+
 </section>
 `)
 
@@ -1200,7 +1211,7 @@ if (seriesEntries.length) {
   const seriesCards = seriesEntries.map((entry) => ({
     href: `/series/${entry.id}/`,
     title: entry.title,
-    summary: `${entry.description}（共 ${entry.items.length} 篇）`
+    summary: `${entry.description}（共 ${entry.items.length} 页（含系列导读））`
   }))
   writeFileSync(
     path.join(seriesDest, 'index.md'),
@@ -1224,7 +1235,7 @@ ${indexCardList(seriesCards)}
 
 <p class="section-lead">${escapeHtml(entry.description)}</p>
 
-<p class="source-link">共 ${entry.items.length} 篇 · 单篇页面收录于 <a href="/tutorials/">AI 教程</a>栏目 · 来源仓库：<a href="https://github.com/lennonli/licheng-AI-tutorials" target="_blank" rel="noreferrer">lennonli/licheng-AI-tutorials</a></p>
+<p class="source-link">共 ${entry.items.length} 页（含系列导读） · 单篇页面收录于 <a href="/tutorials/">AI 教程</a>栏目 · 来源仓库：<a href="https://github.com/lennonli/licheng-AI-tutorials" target="_blank" rel="noreferrer">lennonli/licheng-AI-tutorials</a></p>
 
 ${seriesPresentationCard(entry.presentation)}
 
@@ -1340,6 +1351,18 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
     }
   }
   addArticleChromeToMarkdownFiles(dest, `${base}/`, sourceWebUrls[key], src, 'cases/', key, src)
+  // A few legacy case files can contain unusual front matter or line endings
+  // that make the normal pass skip them. Keep the article contract explicit:
+  // every public case page must expose source, share, and update controls.
+  for (const name of readDirSafe(dest).filter((entry) => entry.endsWith('.md') && entry !== 'index.md')) {
+    const file = path.join(dest, name)
+    const markdown = readFileSync(file, 'utf8')
+    if (markdown.includes('<ArticleTools ')) continue
+    const sourcePath = existsSync(path.join(src, 'cases', name)) ? `cases/${name}` : `reports/${name}`
+    const updatedAt = gitLastUpdated(src, sourcePath)
+    const copyUrl = writeCopySource(src, sourcePath, key, name.replace(/\.md$/, ''))
+    writeFileSync(file, withArticleChrome(withSeoFrontmatter(markdown, summarizeMarkdown(name, markdown), updatedAt), `${base}/`, githubBlobUrl(sourceWebUrls[key], sourcePath), updatedAt, '', copyUrl))
+  }
 
   const boardGroups = new Map(kbBoardOrder.map((board) => [board, []]))
   for (const entry of entries) {
@@ -1352,17 +1375,9 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
   const tutorialExample = key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : key === 'kb2023' ? '920950-迅安科技' : '920002-万达轴承'
   const legacyHead = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n${sourceLine}\n\n${aiTutorialSection(base, sourceWebUrls[key], tutorialExample)}\n\n`
 
-  let indexMd
-  if (key === 'kb') {
-    // 「问询案例」主入口：页面主体为完整 AI 调用教程（存于 monorepo 根 AI调用教程.md），案例目录附后
-    const tutorialPath = path.join(cacheDir, 'kbmono', 'AI调用教程.md')
-    const tutorial = existsSync(tutorialPath) ? readFileSync(tutorialPath, 'utf8').trim() : ''
-    indexMd = tutorial
-      ? `${backButton('/')}\n\n${tutorial}\n\n## 案例目录\n\n${sourceLine}\n\n`
-      : legacyHead
-  } else {
-    indexMd = legacyHead
-  }
+  const yearLinks = [['kb', '2026'], ['kb2025', '2025'], ['kb2024', '2024'], ['kb2023', '2023']]
+    .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>${year} 年</a>`).join(' · ')
+  let indexMd = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n<nav aria-label="案例库年度">${yearLinks}</nav>\n\n${sourceLine}\n\n[安装知识库技能与 MCP 使用教程](/kbskill/)\n\n<CaseFilter />\n\n<div class="case-directory">\n\n`
 
   for (const board of [...kbBoardOrder, '其他']) {
     const rows = (boardGroups.get(board) || [])
@@ -1378,6 +1393,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
     indexMd += '\n'
   }
 
+  indexMd += '\n</div>\n'
   writeFileSync(path.join(dest, 'index.md'), indexMd)
   return dest
 }
@@ -1444,6 +1460,7 @@ writeFileSync(
   `${JSON.stringify({ generatedAt: new Date().toISOString(), sources: Object.fromEntries(sourceRevisions) }, null, 2)}\n`
 )
 
+console.log(`Public content sanitised: ${sanitizePublicTree(siteDir)} files`)
 writeGeneratedSidebar()
 
 console.log('Content synced.')

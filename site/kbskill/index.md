@@ -98,7 +98,7 @@ description: IPO问询案例库（2023-2026，1,600+ 份，持续更新）与证
    python3 ~/.agents/skills/ipo-kb/kb_search.py list
    首次运行会自动把知识库主仓（github.com/lennonli/ipo-inquiry-kb，约百余 MB）
    克隆到 ~/ipo-inquiry-kb 并列出四库及各自案例数（当前合计 1,600+，随库更新增长）。
-   本机已有知识库克隆的会自动识别（含 ~/Documents/Macbook-pro项目/19-IPO问询案例知识库），
+   本机已有知识库克隆的会自动识别（含 ~/ipo-inquiry-kb），
    也可用环境变量 IPO_KB_ROOT 显式指定路径。
    若网络不通导致克隆失败，按脚本输出的指引排除网络问题后重跑即可。
 
@@ -119,7 +119,7 @@ python3 ~/.agents/skills/ipo-kb/kb_search.py update 同步最新内容。
 
 ### 方式二：MCP 方式——配置远程服务（适合测试与检索法规库）
 
-将下面的提示词整段复制给 AI 智能体即可完成安装：
+先向维护者申请访问令牌，将 `YOUR_MCP_ACCESS_TOKEN` 替换为自己的令牌。不要公开转发填写后的配置。
 
 ```text
 请在我的客户端中配置名为 legal-knowledge 的远程 MCP 服务（法律知识库检索），参数如下：
@@ -127,7 +127,7 @@ python3 ~/.agents/skills/ipo-kb/kb_search.py update 同步最新内容。
 - 服务名称：legal-knowledge
 - Transport：HTTP / Streamable HTTP (SSE)
 - URL：https://mcp.licheng.uk/mcp
-- 请求头：Authorization: Bearer fde8305ebf9a067394c40f12894022453d10ae31b74da1579cf8182192271e0f
+- 请求头：Authorization: Bearer YOUR_MCP_ACCESS_TOKEN
 
 JSON 配置（适用于 ZCode/Claude 等支持 mcpServers 的客户端，按你的客户端格式适配；
 Codex 写入 config.toml 的 [mcp_servers.legal-knowledge]，url + http_headers 字段）：
@@ -136,7 +136,7 @@ Codex 写入 config.toml 的 [mcp_servers.legal-knowledge]，url + http_headers 
     "legal-knowledge": {
       "type": "http",
       "url": "https://mcp.licheng.uk/mcp",
-      "headers": { "Authorization": "Bearer fde8305ebf9a067394c40f12894022453d10ae31b74da1579cf8182192271e0f" }
+      "headers": { "Authorization": "Bearer YOUR_MCP_ACCESS_TOKEN" }
     }
   }
 }
@@ -171,5 +171,5 @@ TLS 握手失败或 HTTP 530，多因服务机休眠、网络波动或 CDN 解�
 - 技能包发布于 `lennonli/licheng-skills` 的 `ipo-kb/`，修改技能时须同步更新
   本机 `~/.agents/skills/ipo-kb` 与技能仓两处（本机路径解析已通用化：IPO_KB_ROOT 环境变量优先）；
 - MCP 索引缓存约 10 分钟、正文缓存约 6 小时，重大更新后可在服务机上重启服务立即生效；
-- MCP 的 Bearer Token 如轮换，需同步更新各客户端配置与本教程两处安装提示词；
+- 访问令牌请向维护者申请，通过私下渠道接收；本教程只保留占位符，请勿将真实令牌提交到公开仓库；
 - 本教程同时维护三处：本机 workspace 存档、网站 `/kbskill/` 页面、主仓 `AI调用教程.md`，内容保持一致。

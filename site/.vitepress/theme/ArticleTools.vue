@@ -1,11 +1,12 @@
 <template>
   <section class="article-tools" aria-label="文章工具" :copy-url="copyUrl">
-    <button class="article-tool-button" type="button" :disabled="!copyReady" @click="copyArticle">
+    <button class="article-tool-button" type="button" @click="copyArticle">
       <span class="article-tool-icon" aria-hidden="true">⧉</span>
-      <span>{{ copyLabel }}</span>
+      <span aria-live="polite">{{ copyLabel }}</span>
     </button>
     <button
       class="article-tool-button"
+      ref="shareTrigger"
       type="button"
       aria-haspopup="dialog"
       :aria-expanded="sharePanelOpen"
@@ -111,7 +112,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useRoute } from 'vitepress'
 
 const props = defineProps<{
   githubUrl: string
@@ -121,10 +123,11 @@ const props = defineProps<{
 }>()
 
 const copyLabel = ref('复制全文')
-const copyReady = ref(!props.copyUrl)
 const copySourceText = ref('')
 const copyBuffer = ref<HTMLTextAreaElement>()
 const sharePanel = ref<HTMLElement>()
+const shareTrigger = ref<HTMLButtonElement>()
+const route = useRoute()
 const sharePanelOpen = ref(false)
 const shareUrl = ref('')
 const shareTitle = ref('')
@@ -150,19 +153,21 @@ const shareLinks = computed(() => {
   }
 })
 
-onMounted(async () => {
+function updateShareContext() {
+  if (typeof window === 'undefined') return
   shareUrl.value = `${window.location.origin}${window.location.pathname}`
   shareTitle.value = document.title.split(' | ')[0]?.trim() || '李成律师法律AI工作站'
-  nativeShareAvailable.value = typeof navigator.share === 'function'
+  qrCodeUrl.value = ''
+  sharePanelOpen.value = false
+  copySourceText.value = ''
+  copyLabel.value = '复制全文'
+}
 
-  if (!props.copyUrl) return
-  try {
-    copySourceText.value = await fetchCopyText(props.copyUrl)
-    copyReady.value = true
-  } catch {
-    copyLabel.value = '全文加载失败'
-  }
+onMounted(() => {
+  updateShareContext()
+  nativeShareAvailable.value = typeof navigator.share === 'function'
 })
+watch(() => route.path, () => nextTick(updateShareContext))
 
 onBeforeUnmount(() => {
   window.clearTimeout(resetTimer)
@@ -178,6 +183,7 @@ async function toggleSharePanel() {
 
 function closeSharePanel() {
   sharePanelOpen.value = false
+  shareTrigger.value?.focus({ preventScroll: true })
 }
 
 async function ensureQrCode() {
@@ -224,6 +230,11 @@ async function copyArticle() {
 
   try {
     let text = copySourceText.value
+    if (!text && props.copyUrl) {
+      copyLabel.value = '正在读取…'
+      text = await fetchCopyText(props.copyUrl)
+      copySourceText.value = text
+    }
     if (!text) {
       const clone = article.cloneNode(true)
       if (!(clone instanceof HTMLElement)) return
@@ -269,7 +280,7 @@ async function copyArticle() {
 }
 
 async function fetchCopyText(url: string) {
-  const response = await fetch(url, { credentials: 'same-origin' })
+  const response = await fetch(url, { credentials: 'same-origin', signal: AbortSignal.timeout(15000) })
   if (!response.ok) throw new Error(`Copy source responded with ${response.status}`)
   return await response.text()
 }
