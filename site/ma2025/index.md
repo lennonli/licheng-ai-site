@@ -19,11 +19,11 @@
 <div class="index-card-list">
   <a class="index-card" href="/ma2025/688293-上海奥浦迈生">
     <span class="index-card-title">上海奥浦迈生物科技股份有限公司（688293）</span>
-    <span class="index-card-desc">上海市方达律师事务所｜注册生效 2025-12-31｜混合｜交易金额 145050.07万元（最终交易作价；其中现金对价71001.37万元、股份对价约74048.70万元；另配套募资36205万元） 万元</span>
+    <span class="index-card-desc">上海市方达律师事务所｜注册生效 2025-12-31｜混合｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/688126-上海硅产业集">
     <span class="index-card-title">上海硅产业集团股份有限公司（688126）</span>
-    <span class="index-card-desc">北京市嘉源律师事务所｜注册生效 2025-09-23｜混合｜交易金额 703962.15万元（总对价7039621536.73元，其中现金324065009.98元、股份6715556526.75元；另配套募资21.05亿元） 万元</span>
+    <span class="index-card-desc">北京市嘉源律师事务所｜注册生效 2025-09-23｜混合｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/688143-武汉长盈通光">
     <span class="index-card-title">武汉长盈通光电技术股份有限公司（688143）</span>
@@ -44,11 +44,11 @@
 <div class="index-card-list">
   <a class="index-card" href="/ma2025/300473-德尔股份">
     <span class="index-card-title">阜新德尔汽车部件股份有限公司（300473）</span>
-    <span class="index-card-desc">北京市汉坤律师事务所｜注册生效 2025-12-17｜发股｜交易金额 27000.00万元（交易价格，不含配套募资；另配套募资不超过8270.00万元） 万元</span>
+    <span class="index-card-desc">北京市汉坤律师事务所｜注册生效 2025-12-17｜发股｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/300277-海联讯">
     <span class="index-card-title">海联讯（300277）</span>
-    <span class="index-card-desc">国浩律师（杭州）事务所、浙江天册律师事务所｜注册生效 2025-09-26｜发股｜交易金额 不适用（换股吸收合并，换股比例1:1，不涉及现金对价；吸并方异议股东收购请求权现金对价上限27331.12万元） 万元</span>
+    <span class="index-card-desc">国浩律师（杭州）事务所、浙江天册律师事务所｜注册生效 2025-09-26｜发股｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/301297-富乐德">
     <span class="index-card-title">安徽富乐德科技发展股份有限公司（301297）</span>
@@ -69,27 +69,27 @@
 <div class="index-card-list">
   <a class="index-card" href="/ma2025/000878-云南铜业">
     <span class="index-card-title">云南铜业股份有限公司（000878）</span>
-    <span class="index-card-desc">北京市中伦律师事务所｜注册生效 2025-12-31｜发股｜交易金额 232351.05万元（2323510480.00元，全股份支付；另向中铝集团、中国铜业发行股份募集配套资金） 万元</span>
+    <span class="index-card-desc">北京市中伦律师事务所｜注册生效 2025-12-31｜发股｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/000973-佛塑科技">
     <span class="index-card-title">佛山佛塑科技集团股份有限公司（000973）</span>
-    <span class="index-card-desc">北京大成律师事务所｜注册生效 2025-12-31｜混合｜交易金额 508000.00万元（交易价格，不含配套募资；另向控股股东配募不超过100000.00万元） 万元</span>
+    <span class="index-card-desc">北京大成律师事务所｜注册生效 2025-12-31｜混合｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/002379-宏创控股">
     <span class="index-card-title">山东宏创铝业控股股份有限公司（002379）</span>
-    <span class="index-card-desc">北京市天元律师事务所｜注册生效 2025-12-31｜发股｜交易金额 6351793.54万元（宏拓实业100%股权交易作价，全股份支付） 万元</span>
+    <span class="index-card-desc">北京市天元律师事务所｜注册生效 2025-12-31｜发股｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/002761-浙江建投">
     <span class="index-card-title">浙江省建设投资集团股份有限公司（002761）</span>
-    <span class="index-card-desc">浙江天册律师事务所｜注册生效 2025-12-31｜发股｜交易金额 128318.03万元（1283180295.38元，全股份支付；另向国资运营公司发行股份募集配套资金，发行63113604股） 万元</span>
+    <span class="index-card-desc">浙江天册律师事务所｜注册生效 2025-12-31｜发股｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/003013-地铁设计">
     <span class="index-card-title">广州地铁设计研究院股份有限公司（003013）</span>
-    <span class="index-card-desc">北京市中伦律师事务所｜注册生效 2025-12-31｜发股｜交易金额 51110.00万元（工程咨询公司100%股权，全股份支付；另向不超过35名特定投资者募集配套资金） 万元</span>
+    <span class="index-card-desc">北京市中伦律师事务所｜注册生效 2025-12-31｜发股｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/000958-电投产融">
     <span class="index-card-title">国家电投集团产融控股股份有限公司（000958）</span>
-    <span class="index-card-desc">北京市中伦律师事务所｜注册生效 2025-12-26｜混合｜交易金额 置入资产5539371.08万元，置出资产1510828.45万元（差额以股份支付4028542.63万元；另配套募资不超过500000.00万元） 万元</span>
+    <span class="index-card-desc">北京市中伦律师事务所｜注册生效 2025-12-26｜混合｜交易金额 待核验 万元</span>
   </a>
   <a class="index-card" href="/ma2025/002736-国信证券">
     <span class="index-card-title">国信证券股份有限公司（002736）</span>
