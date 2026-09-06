@@ -44,6 +44,12 @@ const sources = [
     name: 'IPO 问询案例库（2023-2026）',
     repo: 'https://github.com/lennonli/ipo-inquiry-kb.git',
     localRepo: path.resolve(root, '..', '19-IPO问询案例知识库')
+  },
+  {
+    key: 'ma2026',
+    name: '并购重组案例 2026',
+    repo: 'https://github.com/lennonli/ma-restructuring-kb-2026.git',
+    localRepo: path.resolve(root, '..', '25-并购重组案例知识库-2026')
   }
 ]
 
@@ -61,6 +67,7 @@ const sourceWebUrls = {
   kb2025: 'https://github.com/lennonli/ipo-inquiry-kb',
   kb2024: 'https://github.com/lennonli/ipo-inquiry-kb',
   kb2023: 'https://github.com/lennonli/ipo-inquiry-kb',
+  ma2026: 'https://github.com/lennonli/ma-restructuring-kb-2026',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -797,6 +804,11 @@ function writeGeneratedSidebar() {
       destDir: kb2025Dest
     }),
     ...buildSectionSidebar({
+      section: 'ma2026',
+      indexText: '并购重组案例库·2026',
+      destDir: ma2026Dest
+    }),
+    ...buildSectionSidebar({
       section: 'kb2024',
       indexText: 'IPO与挂牌问询案例库·2024',
       destDir: kb2024Dest
@@ -832,7 +844,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'kb2024', 'kb2023', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'kb2024', 'kb2023', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'series'), { recursive: true, force: true })
@@ -907,6 +919,11 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-index">08 / Cases 2025</span>
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年审核问询案例，附年度总结报告。</span>
+  </a>
+  <a class="home-card" href="/ma2026/">
+    <span class="home-card-index">09 / MA Cases 2026</span>
+    <span class="home-card-title">并购重组案例库 · 2026年度</span>
+    <span class="home-card-desc">2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/kb2024/">
     <span class="home-card-index">09 / Cases 2024</span>
@@ -1281,6 +1298,14 @@ ${latestArticleList(latestArticles)}
 const kbBoardOrder = ['北交所', '科创板', '深市创业板', '沪市主板', '深市主板', '新三板']
 
 function aiTutorialSection(base, repoUrl, exampleCase) {
+  const isMa = base === '/ma2026'
+  const libraryType = isMa ? '并购重组审核法律问题案例库' : 'IPO/挂牌审核问询法律问题案例库'
+  const exampleTopics = isMa ? '“业绩承诺与补偿”与“支付方式与发股定价”' : '“股权代持”与“特殊投资条款”'
+  const institutionLabel = isMa ? '上市公司与' : '发行人与'
+  const indexFields = isMa ? '板块/交易类型/支付方式/律师' : '板块/法律类别/律所'
+  const scenario = isMa
+    ? '我在办一个上市公司重大资产重组项目，请从该案例库中找出交易必要性、支付方式、业绩承诺或关联交易的同类案例，总结监管关注要点、回复论证框架和证据清单。'
+    : '我在办一个北交所 IPO 项目，发行人历史上有亲属代持（已还原、无书面代持协议）。请从该案例库的北交所案例中找出同类情形，总结监管关注要点、回复论证框架和证据清单，并指出我需要补充核查的事项。'
   return `## 如何用 AI 智能体使用本案例库
 
 本库是纯 Markdown 公开知识库，任何 AI 智能体都能直接消费。按场景选一种即可。
@@ -1289,17 +1314,17 @@ function aiTutorialSection(base, repoUrl, exampleCase) {
 
 把某篇案例页网址发给支持联网读取的 AI（ChatGPT、Claude、Gemini、豆包、DeepSeek 等），让它定向提取。可直接复制的提示词：
 
-> 请阅读 https://ai.licheng.uk${base}/${exampleCase} 一文，提取其中"股权代持"与"特殊投资条款"问题的：①问询要点；②发行人与中介机构的回复论证思路；③执业提示。用表格输出，并单独列出本案证据链构成。
+> 请阅读 https://ai.licheng.uk${base}/${exampleCase} 一文，提取其中${exampleTopics}问题的：①问询要点；②${institutionLabel}中介机构的回复论证思路；③执业提示。用表格输出，并单独列出本案证据链构成。
 
 ### 方式二：让 AI 检索整个案例库
 
 把检索需求连同库地址一起发给 AI（适合"找同类案例、对比口径"）。提示词模板：
 
-> 这是一个 IPO/挂牌审核问询法律问题案例库：https://ai.licheng.uk${base}/ （GitHub 源仓库 ${repoUrl} ，含 scripts/index.json 元数据索引，可按板块/法律类别/律所筛选）。请查找涉及"劳务派遣超比例"的案例，逐案输出公司、板块、问询要点、回复口径，并对比各案论证差异。
+> 这是一个${libraryType}：https://ai.licheng.uk${base}/ （GitHub 源仓库 ${repoUrl} ，含 scripts/index.json 元数据索引，可按${indexFields}筛选）。请查找同一法律问题或交易安排的案例，逐案输出公司、板块、问询要点、回复口径，并对比各案论证差异。
 
 场景化示例：
 
-> 我在办一个北交所 IPO 项目，发行人历史上有亲属代持（已还原、无书面代持协议）。请从该案例库的北交所案例中找出同类情形，总结监管关注要点、回复论证框架和证据清单，并指出我需要补充核查的事项。
+> ${scenario}
 
 ### 方式三：终端智能体本地检索（Claude Code / Codex / ZCode 等）
 
@@ -1326,9 +1351,10 @@ function normalizePlainUrls(markdown) {
   )
 }
 
-function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle }) {
+function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle, sourceDir = null }) {
+  const isMa = key === 'ma2026'
   const dest = path.join(siteDir, key)
-  const src = kbYearCacheSrc(key)
+  const src = sourceDir || kbYearCacheSrc(key)
   ensureDir(dest)
   copyMarkdownFiles(path.join(src, 'cases'), dest)
   // 年度总结报告页（源仓 reports/ 下单文件）
@@ -1372,24 +1398,38 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle 
   }
 
   const sourceLine = `<p class="source-link">来源仓库：${sourceWebUrls[key].replace('https://github.com/', '')}（共 ${entries.length} 份案例）｜<a href="${base}/${annualFile.replace(/\.md$/, '')}">${annualTitle}</a></p>`
-  const tutorialExample = key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : key === 'kb2023' ? '920950-迅安科技' : '920002-万达轴承'
+  const tutorialExample = key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : key === 'ma2026' ? '000100-TCL科技' : key === 'kb2023' ? '920950-迅安科技' : '920002-万达轴承'
   const legacyHead = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n${sourceLine}\n\n${aiTutorialSection(base, sourceWebUrls[key], tutorialExample)}\n\n`
 
-  const yearLinks = [['kb', '2026'], ['kb2025', '2025'], ['kb2024', '2024'], ['kb2023', '2023']]
-    .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>${year} 年</a>`).join(' · ')
+  const yearLinks = isMa
+    ? '<a href="/ma2026/" aria-current="page">并购重组 2026 年</a>'
+    : [['kb', '2026'], ['kb2025', '2025'], ['kb2024', '2024'], ['kb2023', '2023']]
+      .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>${year} 年</a>`).join(' · ')
   let indexMd = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n<nav aria-label="案例库年度">${yearLinks}</nav>\n\n${sourceLine}\n\n[安装知识库技能与 MCP 使用教程](/kbskill/)\n\n<CaseFilter />\n\n<div class="case-directory">\n\n`
 
   for (const board of [...kbBoardOrder, '其他']) {
     const rows = (boardGroups.get(board) || [])
       .slice()
-      .sort((a, b) => (b.listing_date || '').localeCompare(a.listing_date || ''))
+      .sort((a, b) => {
+        const dateField = isMa ? 'registered_date' : 'listing_date'
+        return (b[dateField] || '').localeCompare(a[dateField] || '')
+      })
     if (!rows.length) continue
     indexMd += `## ${board}（${rows.length}）\n\n`
-    indexMd += indexCardList(rows.map((entry) => ({
-      href: `${base}/${entry.file.replace(/\.md$/, '')}`,
-      title: `${entry.company}${entry.code ? `（${entry.code}）` : '（在审）'}`,
-      summary: `${entry.lawyer || '律所未载明'}${entry.listing_date ? `｜${board === '新三板' ? '挂牌' : '上市'} ${entry.listing_date}` : ''}｜${(entry.tags || []).slice(0, 6).join(' / ')}`
-    })))
+    indexMd += indexCardList(rows.map((entry) => {
+      const dateLabel = isMa
+        ? `注册生效 ${entry.registered_date || '待核验'}`
+        : (entry.listing_date ? `｜${board === '新三板' ? '挂牌' : '上市'} ${entry.listing_date}` : '')
+      const amount = entry.deal_amount === '' || entry.deal_amount == null ? '待核验' : entry.deal_amount
+      const summary = isMa
+        ? `${entry.lawyer || '律所未载明'}｜${dateLabel}｜${entry.pay_method || '支付方式待核验'}｜交易金额 ${amount} 万元`
+        : `${entry.lawyer || '律所未载明'}${dateLabel}｜${(entry.tags || []).slice(0, 6).join(' / ')}`
+      return {
+        href: `${base}/${entry.file.replace(/\.md$/, '')}`,
+        title: `${entry.company}${entry.code ? `（${entry.code}）` : '（在审）'}`,
+        summary
+      }
+    }))
     indexMd += '\n'
   }
 
@@ -1424,6 +1464,21 @@ const kb2025Dest = buildKbYear({
   entries: kb2025Entries,
   annualFile: '2025年度总结.md',
   annualTitle: '📊 2025 年度总结报告'
+})
+
+// 2026 年并购重组年度库（/ma2026/）
+const ma2026Src = path.join(cacheDir, 'ma2026')
+const ma2026IndexPath = path.join(ma2026Src, 'scripts', 'index.json')
+const ma2026Entries = existsSync(ma2026IndexPath) ? JSON.parse(readFileSync(ma2026IndexPath, 'utf8')) : []
+const ma2026Dest = buildKbYear({
+  key: 'ma2026',
+  base: '/ma2026',
+  title: '并购重组审核案例库 · 2026年度',
+  lead: '2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），一案一文，沉淀交易方案、支付方式、交易金额、问询要点与律师核查结论。可用站内搜索按公司简称、代码、交易类型、支付方式或法律问题关键词检索。',
+  entries: ma2026Entries,
+  annualFile: '2026年度总结.md',
+  annualTitle: '📊 2026 年度总结报告',
+  sourceDir: ma2026Src
 })
 
 // 2024 年度库（/kb2024/）

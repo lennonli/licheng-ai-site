@@ -64,6 +64,11 @@
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年审核问询案例，附年度总结报告。</span>
   </a>
+  <a class="home-card" href="/ma2026/">
+    <span class="home-card-index">09 / MA Cases 2026</span>
+    <span class="home-card-title">并购重组案例库 · 2026年度</span>
+    <span class="home-card-desc">2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
+  </a>
   <a class="home-card" href="/kb2024/">
     <span class="home-card-index">09 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>

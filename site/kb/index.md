@@ -4,7 +4,7 @@
 
 <p class="section-lead">2026 年上市/挂牌公司审核问询法律问题回溯，一司一文，沉淀"问询要点—回复与核查要点—执业提示"，办理同类项目时可直接检索论证范本与证据链思路。可用站内搜索按公司简称、代码或法律问题关键词检索。</p>
 
-<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 242 份案例）｜<a href="/kb/2026年度总结">📊 2026 年度总结报告</a></p>
+<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 250 份案例）｜<a href="/kb/2026年度总结">📊 2026 年度总结报告</a></p>
 
 ## 如何用 AI 智能体使用本案例库
 
@@ -14,13 +14,13 @@
 
 把某篇案例页网址发给支持联网读取的 AI（ChatGPT、Claude、Gemini、豆包、DeepSeek 等），让它定向提取。可直接复制的提示词：
 
-> 请阅读 https://ai.licheng.uk/kb/920079-乔路铭 一文，提取其中"股权代持"与"特殊投资条款"问题的：①问询要点；②发行人与中介机构的回复论证思路；③执业提示。用表格输出，并单独列出本案证据链构成。
+> 请阅读 https://ai.licheng.uk/kb/920079-乔路铭 一文，提取其中“股权代持”与“特殊投资条款”问题的：①问询要点；②发行人与中介机构的回复论证思路；③执业提示。用表格输出，并单独列出本案证据链构成。
 
 ### 方式二：让 AI 检索整个案例库
 
 把检索需求连同库地址一起发给 AI（适合"找同类案例、对比口径"）。提示词模板：
 
-> 这是一个 IPO/挂牌审核问询法律问题案例库：https://ai.licheng.uk/kb/ （GitHub 源仓库 https://github.com/lennonli/ipo-inquiry-kb ，含 scripts/index.json 元数据索引，可按板块/法律类别/律所筛选）。请查找涉及"劳务派遣超比例"的案例，逐案输出公司、板块、问询要点、回复口径，并对比各案论证差异。
+> 这是一个IPO/挂牌审核问询法律问题案例库：https://ai.licheng.uk/kb/ （GitHub 源仓库 https://github.com/lennonli/ipo-inquiry-kb ，含 scripts/index.json 元数据索引，可按板块/法律类别/律所筛选）。请查找同一法律问题或交易安排的案例，逐案输出公司、板块、问询要点、回复口径，并对比各案论证差异。
 
 场景化示例：
 
@@ -42,9 +42,13 @@
 注意：案例内容基于公开披露文件提炼，正式援引问询回复口径前请回交易所官网或见微数据核对公告原文。
 
 
-## 北交所（52）
+## 北交所（53）
 
 <div class="index-card-list">
+  <a class="index-card" href="/kb/920288-华大海天">
+    <span class="index-card-title">杭州华大海天科技股份有限公司（920288）</span>
+    <span class="index-card-desc">北京市天元律师事务所｜上市 2026-08-28｜上市公司持续监管 / 信息披露 / 历史沿革与股权变动 / 国资监管 / 审计类 / 承诺事项</span>
+  </a>
   <a class="index-card" href="/kb/920093-信胜科技">
     <span class="index-card-title">浙江信胜科技股份有限公司（920093）</span>
     <span class="index-card-desc">浙江天册律师事务所｜上市 2026-08-21｜公司治理与内控 / 关联交易与关联方 / 劳动与社会保障 / 募集资金运用 / 同业竞争 / 土地房产与租赁</span>
@@ -467,9 +471,33 @@
   </a>
 </div>
 
-## 新三板（142）
+## 新三板（149）
 
 <div class="index-card-list">
+  <a class="index-card" href="/kb/875015-同心智医">
+    <span class="index-card-title">同心智医科技（875015）</span>
+    <span class="index-card-desc">挂牌申请人律师北京市中伦律师事务所｜挂牌 2026-08-31｜AI 医疗器械注册监管 / 互联网诊疗监管 / 公司治理与内控 / 公司赎回义务自始无效确认 / 内部监督机构设置 / 医疗器械广告</span>
+  </a>
+  <a class="index-card" href="/kb/875208-燎原装备">
+    <span class="index-card-title">江阴燎原新能源装备股份有限公司（875208）</span>
+    <span class="index-card-desc">江苏世纪同仁律师事务所｜挂牌 2026-08-31｜主办券商私募子公司入股合规 / 会计师核查 / 信息披露 / 公司治理与内控 / 关联交易与关联方 / 利益冲突审查</span>
+  </a>
+  <a class="index-card" href="/kb/875189-高光新材">
+    <span class="index-card-title">江苏高光新材料科技股份有限公司（875189）</span>
+    <span class="index-card-desc">江苏世纪同仁律师事务所｜挂牌 2026-08-28｜200 人穿透 / 公司治理与内控 / 区域性股权市场合规 / 危化品管理 / 历史沿革与股权变动 / 外资股东备案</span>
+  </a>
+  <a class="index-card" href="/kb/875238-天圣华">
+    <span class="index-card-title">北京天圣华信息技术股份有限公司（875238）</span>
+    <span class="index-card-desc">北京市中伦律师事务所｜挂牌 2026-08-26｜200 人穿透 / 军工事项审查豁免 / 历史沿革与股权变动 / 商业秘密 / 回购义务与支付能力 / 境外架构与外汇</span>
+  </a>
+  <a class="index-card" href="/kb/875157-博益鑫成">
+    <span class="index-card-title">博益鑫成高分子材料股份有限公司（875157）</span>
+    <span class="index-card-desc">上海锦天城律师事务所｜挂牌 2026-08-25｜历史沿革与股权变动 / 回购能力与控制权风险 / 土地房产与租赁 / 境外架构与外汇 / 子公司披露 / 定价与股份支付以财务核查为主主办券商及会计师核查</span>
+  </a>
+  <a class="index-card" href="/kb/875198-长春爱康">
+    <span class="index-card-title">长春爱康医疗器械股份有限公司（875198）</span>
+    <span class="index-card-desc">北京市百瑞律师事务所｜挂牌 2026-08-25｜主办券商及会计师核查 / 公司治理与内控 / 关联交易与关联方 / 历史沿革与股权变动 / 同业竞争 / 土地房产与租赁</span>
+  </a>
   <a class="index-card" href="/kb/875123-星泰股份">
     <span class="index-card-title">浙江星泰模塑科技股份有限公司（875123）</span>
     <span class="index-card-desc">北京市天元律师事务所｜挂牌 2026-08-18｜与台州金界混同排查 / 代付工程款转售水电整改 / 关联交易与关联方 / 内部制度建设 / 外商投资企业认定 / 派生分立资产划分</span>
@@ -489,6 +517,10 @@
   <a class="index-card" href="/kb/875173-康泰装备">
     <span class="index-card-title">青岛康泰装备科技股份有限公司（875173）</span>
     <span class="index-card-desc">北京德恒（济南）律师事务所｜挂牌 2026-08-05｜④供应商为会计师 / 公司治理与内控 / 关联交易与关联方 / 劳动与社会保障 / 历史沿革与股权变动 / 反商业贿赂</span>
+  </a>
+  <a class="index-card" href="/kb/875127-芯来科技">
+    <span class="index-card-title">芯来智融半导体科技（875127）</span>
+    <span class="index-card-desc">广东信达律师事务所｜挂牌 2026-08-04｜1-22 / 200 人穿透 / BVI NST Holdings / ODI 发改 / 《4-7》专项意见 / 不确定对象发行</span>
   </a>
   <a class="index-card" href="/kb/875128-隆胜四海">
     <span class="index-card-title">湖北隆胜四海新材料股份有限公司（875128）</span>
