@@ -615,101 +615,6 @@ export const generatedSidebar = {
       ]
     }
   ],
-  "/agents/为什么这些规则要写进全局指令": [
-    {
-      "text": "返回栏目列表",
-      "link": "/agents/"
-    },
-    {
-      "text": "为什么这些规则要写进全局指令",
-      "link": "/agents/为什么这些规则要写进全局指令"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "——《法律业务通用指令》逐条说明",
-          "link": "/agents/为什么这些规则要写进全局指令#——《法律业务通用指令》逐条说明"
-        },
-        {
-          "text": "开篇：指令分三层，怎么分",
-          "link": "/agents/为什么这些规则要写进全局指令#开篇-指令分三层-怎么分"
-        },
-        {
-          "text": "第〇章 指令效力与冲突解决",
-          "link": "/agents/为什么这些规则要写进全局指令#第〇章-指令效力与冲突解决"
-        },
-        {
-          "text": "第一章 角色定位与利益立场",
-          "link": "/agents/为什么这些规则要写进全局指令#第一章-角色定位与利益立场"
-        },
-        {
-          "text": "第二章 保密与脱敏红线",
-          "link": "/agents/为什么这些规则要写进全局指令#第二章-保密与脱敏红线"
-        },
-        {
-          "text": "第三章 事实与法律依据核验（反编造红线）",
-          "link": "/agents/为什么这些规则要写进全局指令#第三章-事实与法律依据核验-反编造红线"
-        },
-        {
-          "text": "第四章 任务分流与执行流程",
-          "link": "/agents/为什么这些规则要写进全局指令#第四章-任务分流与执行流程"
-        },
-        {
-          "text": "第五章 不确定性表述与风险分级",
-          "link": "/agents/为什么这些规则要写进全局指令#第五章-不确定性表述与风险分级"
-        },
-        {
-          "text": "第六章 起草与修订规则",
-          "link": "/agents/为什么这些规则要写进全局指令#第六章-起草与修订规则"
-        },
-        {
-          "text": "第七章 引用与出处格式",
-          "link": "/agents/为什么这些规则要写进全局指令#第七章-引用与出处格式"
-        },
-        {
-          "text": "第八章 Word 文档格式规范",
-          "link": "/agents/为什么这些规则要写进全局指令#第八章-word-文档格式规范"
-        },
-        {
-          "text": "第九章 文件命名、版本与交付",
-          "link": "/agents/为什么这些规则要写进全局指令#第九章-文件命名、版本与交付"
-        },
-        {
-          "text": "第十章 律所名称与署名",
-          "link": "/agents/为什么这些规则要写进全局指令#第十章-律所名称与署名"
-        },
-        {
-          "text": "第十一章 跨境与外国法事项",
-          "link": "/agents/为什么这些规则要写进全局指令#第十一章-跨境与外国法事项"
-        },
-        {
-          "text": "第十二章 专业语气要求",
-          "link": "/agents/为什么这些规则要写进全局指令#第十二章-专业语气要求"
-        },
-        {
-          "text": "第十三章 多 Agent 协作规则",
-          "link": "/agents/为什么这些规则要写进全局指令#第十三章-多-agent-协作规则"
-        },
-        {
-          "text": "第十四章 交付前自检清单",
-          "link": "/agents/为什么这些规则要写进全局指令#第十四章-交付前自检清单"
-        },
-        {
-          "text": "附录 A 权威核验来源清单",
-          "link": "/agents/为什么这些规则要写进全局指令#附录-a-权威核验来源清单"
-        },
-        {
-          "text": "附录 B 本机文件处理与 OCR 工具",
-          "link": "/agents/为什么这些规则要写进全局指令#附录-b-本机文件处理与-ocr-工具"
-        },
-        {
-          "text": "结尾：什么不该写进全局",
-          "link": "/agents/为什么这些规则要写进全局指令#结尾-什么不该写进全局"
-        }
-      ]
-    }
-  ],
   "/agents/元典企业信息库股东穿透核查提示词": [
     {
       "text": "返回栏目列表",
@@ -1218,104 +1123,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "〇、指令效力与冲突解决",
-          "link": "/agents/法律业务通用指令#〇、指令效力与冲突解决"
+          "text": "一、角色定位与默认立场",
+          "link": "/agents/法律业务通用指令#一、角色定位与默认立场"
         },
         {
-          "text": "一、角色定位与利益立场",
-          "link": "/agents/法律业务通用指令#一、角色定位与利益立场"
+          "text": "二、保密与信息安全",
+          "link": "/agents/法律业务通用指令#二、保密与信息安全"
         },
         {
-          "text": "二、保密与脱敏红线",
-          "link": "/agents/法律业务通用指令#二、保密与脱敏红线"
+          "text": "三、语言、法域与法律依据核验",
+          "link": "/agents/法律业务通用指令#三、语言、法域与法律依据核验"
         },
         {
-          "text": "三、事实与法律依据核验（反编造红线）",
-          "link": "/agents/法律业务通用指令#三、事实与法律依据核验-反编造红线",
-          "items": [
-            {
-              "text": "（一）绝对禁止",
-              "link": "/agents/法律业务通用指令#一-绝对禁止"
-            },
-            {
-              "text": "（二）核验触发条件（满足其一即须检索）",
-              "link": "/agents/法律业务通用指令#二-核验触发条件-满足其一即须检索"
-            },
-            {
-              "text": "（三）核验路径与降级顺序",
-              "link": "/agents/法律业务通用指令#三-核验路径与降级顺序"
-            },
-            {
-              "text": "（四）法域与语言",
-              "link": "/agents/法律业务通用指令#四-法域与语言"
-            }
-          ]
+          "text": "四、反编造红线",
+          "link": "/agents/法律业务通用指令#四、反编造红线"
         },
         {
-          "text": "四、任务分流与执行流程",
-          "link": "/agents/法律业务通用指令#四、任务分流与执行流程",
-          "items": [
-            {
-              "text": "（一）通用流程",
-              "link": "/agents/法律业务通用指令#一-通用流程"
-            },
-            {
-              "text": "（二）按任务类型分流",
-              "link": "/agents/法律业务通用指令#二-按任务类型分流"
-            },
-            {
-              "text": "（三）停止并询问的条件",
-              "link": "/agents/法律业务通用指令#三-停止并询问的条件"
-            },
-            {
-              "text": "（四）修正与反馈处理",
-              "link": "/agents/法律业务通用指令#四-修正与反馈处理"
-            }
-          ]
+          "text": "五、执行流程",
+          "link": "/agents/法律业务通用指令#五、执行流程"
         },
         {
-          "text": "五、不确定性表述与风险分级",
-          "link": "/agents/法律业务通用指令#五、不确定性表述与风险分级",
-          "items": [
-            {
-              "text": "（一）确定性分级（法律结论必须择一标注）",
-              "link": "/agents/法律业务通用指令#一-确定性分级-法律结论必须择一标注"
-            },
-            {
-              "text": "（二）风险分级（合同审查、尽调、合规核查必须标注）",
-              "link": "/agents/法律业务通用指令#二-风险分级-合同审查、尽调、合规核查必须标注"
-            }
-          ]
+          "text": "六、文档修订模式",
+          "link": "/agents/法律业务通用指令#六、文档修订模式"
         },
         {
-          "text": "六、起草与修订规则",
-          "link": "/agents/法律业务通用指令#六、起草与修订规则",
-          "items": [
-            {
-              "text": "（一）起草默认值",
-              "link": "/agents/法律业务通用指令#一-起草默认值"
-            },
-            {
-              "text": "（二）合同条款编号规则（合同起草优先指令）",
-              "link": "/agents/法律业务通用指令#二-合同条款编号规则-合同起草优先指令"
-            },
-            {
-              "text": "（三）修订模式",
-              "link": "/agents/法律业务通用指令#三-修订模式"
-            },
-            {
-              "text": "（四）一致性校验（起草与修订完成后必须执行）",
-              "link": "/agents/法律业务通用指令#四-一致性校验-起草与修订完成后必须执行"
-            }
-          ]
+          "text": "七、起草默认值",
+          "link": "/agents/法律业务通用指令#七、起草默认值"
         },
         {
-          "text": "七、引用与出处格式",
-          "link": "/agents/法律业务通用指令#七、引用与出处格式"
-        },
-        {
-          "text": "八、Word 文档格式规范",
-          "link": "/agents/法律业务通用指令#八、word-文档格式规范",
+          "text": "八、Word 文档格式要求",
+          "link": "/agents/法律业务通用指令#八、word-文档格式要求",
           "items": [
             {
               "text": "（一）正文与标题",
@@ -1326,18 +1163,18 @@ export const generatedSidebar = {
               "link": "/agents/法律业务通用指令#二-表格"
             },
             {
-              "text": "（三）页面与其他",
-              "link": "/agents/法律业务通用指令#三-页面与其他"
+              "text": "（三）其他格式",
+              "link": "/agents/法律业务通用指令#三-其他格式"
             }
           ]
         },
         {
-          "text": "九、文件命名、版本与交付",
-          "link": "/agents/法律业务通用指令#九、文件命名、版本与交付"
+          "text": "九、律所名称与署名",
+          "link": "/agents/法律业务通用指令#九、律所名称与署名"
         },
         {
-          "text": "十、律所名称与署名",
-          "link": "/agents/法律业务通用指令#十、律所名称与署名"
+          "text": "十、法律分析与引证",
+          "link": "/agents/法律业务通用指令#十、法律分析与引证"
         },
         {
           "text": "十一、跨境与外国法事项",
@@ -1348,34 +1185,12 @@ export const generatedSidebar = {
           "link": "/agents/法律业务通用指令#十二、专业语气要求"
         },
         {
-          "text": "十三、多 Agent 协作规则",
-          "link": "/agents/法律业务通用指令#十三、多-agent-协作规则"
+          "text": "十三、法律业务多 Agent 核心规则",
+          "link": "/agents/法律业务通用指令#十三、法律业务多-agent-核心规则"
         },
         {
-          "text": "十四、交付前自检清单",
-          "link": "/agents/法律业务通用指令#十四、交付前自检清单"
-        },
-        {
-          "text": "附录 A：权威核验来源清单",
-          "link": "/agents/法律业务通用指令#附录-a-权威核验来源清单",
-          "items": [
-            {
-              "text": "（一）法律法规与效力状态",
-              "link": "/agents/法律业务通用指令#一-法律法规与效力状态"
-            },
-            {
-              "text": "（二）司法与案例",
-              "link": "/agents/法律业务通用指令#二-司法与案例"
-            },
-            {
-              "text": "（三）主体与监管",
-              "link": "/agents/法律业务通用指令#三-主体与监管"
-            }
-          ]
-        },
-        {
-          "text": "附录 B：本机文件处理与 OCR 工具",
-          "link": "/agents/法律业务通用指令#附录-b-本机文件处理与-ocr-工具"
+          "text": "十五、本机 OCR 工具使用",
+          "link": "/agents/法律业务通用指令#十五、本机-ocr-工具使用"
         }
       ]
     }
@@ -1947,102 +1762,6 @@ export const generatedSidebar = {
         {
           "text": "失败运行经验",
           "link": "/skills/cnipa-trademark-evidence-archive#lessons-from-failed-runs"
-        }
-      ]
-    }
-  ],
-  "/skills/company-preliminary-analysis": [
-    {
-      "text": "返回栏目列表",
-      "link": "/skills/"
-    },
-    {
-      "text": "委托前公司初步分析报告",
-      "link": "/skills/company-preliminary-analysis"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "第〇步：场景路由（先判断，再动手）",
-          "link": "/skills/company-preliminary-analysis#第〇步-场景路由-先判断-再动手"
-        },
-        {
-          "text": "第一步：信息采集",
-          "link": "/skills/company-preliminary-analysis#第一步-信息采集"
-        },
-        {
-          "text": "第二步：法规与案例核验（反编造红线）",
-          "link": "/skills/company-preliminary-analysis#第二步-法规与案例核验-反编造红线"
-        },
-        {
-          "text": "第三步：法律风险排查",
-          "link": "/skills/company-preliminary-analysis#第三步-法律风险排查"
-        },
-        {
-          "text": "第四步：章节组装",
-          "link": "/skills/company-preliminary-analysis#第四步-章节组装"
-        },
-        {
-          "text": "第五步：生成 docx 并自检",
-          "link": "/skills/company-preliminary-analysis#第五步-生成-docx-并自检"
-        }
-      ]
-    }
-  ],
-  "/skills/contract-review": [
-    {
-      "text": "返回栏目列表",
-      "link": "/skills/"
-    },
-    {
-      "text": "合同审查",
-      "link": "/skills/contract-review"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "角色定位与默认立场",
-          "link": "/skills/contract-review#角色定位与默认立场"
-        },
-        {
-          "text": "一、合同审查工作流",
-          "link": "/skills/contract-review#一、合同审查工作流",
-          "items": [
-            {
-              "text": "（一）先概述协议主要内容",
-              "link": "/skills/contract-review#一-先概述协议主要内容"
-            },
-            {
-              "text": "（二）再按风险等级进行审查",
-              "link": "/skills/contract-review#二-再按风险等级进行审查"
-            },
-            {
-              "text": "（三）补充缺失条款及完善建议",
-              "link": "/skills/contract-review#三-补充缺失条款及完善建议"
-            },
-            {
-              "text": "（四）同步进行文字、逻辑、格式及序号校对",
-              "link": "/skills/contract-review#四-同步进行文字、逻辑、格式及序号校对"
-            },
-            {
-              "text": "（五）最后提供给客户的简短汇报",
-              "link": "/skills/contract-review#五-最后提供给客户的简短汇报"
-            }
-          ]
-        },
-        {
-          "text": "文档修订模式",
-          "link": "/skills/contract-review#文档修订模式"
-        },
-        {
-          "text": "二、法律文件起草要求",
-          "link": "/skills/contract-review#二、法律文件起草要求"
-        },
-        {
-          "text": "三、Word 文档操作方式（不自带脚本）",
-          "link": "/skills/contract-review#三、word-文档操作方式-不自带脚本"
         }
       ]
     }
@@ -117419,4 +117138,1768 @@ export const generatedSidebar = {
       "link": "/tools/ai-directory"
     }
   ]
+}
+export const generatedReading = {
+  "/tutorials/ai-basics-01-what-is-ai": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 1,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": false,
+    "next": {
+      "text": "AI入门02｜ChatGPT不是AI，大模型也不等于ChatGPT",
+      "link": "/tutorials/ai-basics-02-chatgpt-vs-llm"
+    }
+  },
+  "/tutorials/ai-basics-02-chatgpt-vs-llm": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 2,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门01｜我们今天说的AI，到底是什么？",
+      "link": "/tutorials/ai-basics-01-what-is-ai"
+    },
+    "next": {
+      "text": "AI入门03｜大模型到底是怎么“学会”说话的？",
+      "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak"
+    }
+  },
+  "/tutorials/ai-basics-03-how-llm-learns-to-speak": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 3,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门02｜ChatGPT不是AI，大模型也不等于ChatGPT",
+      "link": "/tutorials/ai-basics-02-chatgpt-vs-llm"
+    },
+    "next": {
+      "text": "AI入门04｜AI是真的理解你，还是只是在预测下一个字？",
+      "link": "/tutorials/ai-basics-04-next-token-prediction"
+    }
+  },
+  "/tutorials/ai-basics-04-next-token-prediction": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 4,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门03｜大模型到底是怎么“学会”说话的？",
+      "link": "/tutorials/ai-basics-03-how-llm-learns-to-speak"
+    },
+    "next": {
+      "text": "AI入门05｜为什么AI会一本正经地胡说八道？",
+      "link": "/tutorials/ai-basics-05-why-ai-hallucinates"
+    }
+  },
+  "/tutorials/ai-basics-05-why-ai-hallucinates": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 5,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门04｜AI是真的理解你，还是只是在预测下一个字？",
+      "link": "/tutorials/ai-basics-04-next-token-prediction"
+    },
+    "next": {
+      "text": "AI入门06｜一个大模型，到底是怎么训练出来的？",
+      "link": "/tutorials/ai-basics-06-how-llm-is-trained"
+    }
+  },
+  "/tutorials/ai-basics-06-how-llm-is-trained": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 6,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门05｜为什么AI会一本正经地胡说八道？",
+      "link": "/tutorials/ai-basics-05-why-ai-hallucinates"
+    },
+    "next": {
+      "text": "AI入门07｜Token是什么？为什么它会影响AI能记住多少内容？",
+      "link": "/tutorials/ai-basics-07-token-and-memory-limit"
+    }
+  },
+  "/tutorials/ai-basics-07-token-and-memory-limit": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 7,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门06｜一个大模型，到底是怎么训练出来的？",
+      "link": "/tutorials/ai-basics-06-how-llm-is-trained"
+    },
+    "next": {
+      "text": "AI入门08｜什么是上下文？为什么它可能比提示词更重要",
+      "link": "/tutorials/ai-basics-08-context"
+    }
+  },
+  "/tutorials/ai-basics-08-context": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 8,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门07｜Token是什么？为什么它会影响AI能记住多少内容？",
+      "link": "/tutorials/ai-basics-07-token-and-memory-limit"
+    },
+    "next": {
+      "text": "AI入门09｜提示词到底是什么？其实没有那么神秘",
+      "link": "/tutorials/ai-basics-09-prompt"
+    }
+  },
+  "/tutorials/ai-basics-09-prompt": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 9,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门08｜什么是上下文？为什么它可能比提示词更重要",
+      "link": "/tutorials/ai-basics-08-context"
+    },
+    "next": {
+      "text": "AI入门10｜怎样给AI一个规范、完整的工作任务？",
+      "link": "/tutorials/ai-basics-10-well-defined-task"
+    }
+  },
+  "/tutorials/ai-basics-10-well-defined-task": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 10,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门09｜提示词到底是什么？其实没有那么神秘",
+      "link": "/tutorials/ai-basics-09-prompt"
+    },
+    "next": {
+      "text": "AI入门11｜为什么有的AI回答很快，有的却要“想很久”？",
+      "link": "/tutorials/ai-basics-11-reasoning-and-speed"
+    }
+  },
+  "/tutorials/ai-basics-11-reasoning-and-speed": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 11,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门10｜怎样给AI一个规范、完整的工作任务？",
+      "link": "/tutorials/ai-basics-10-well-defined-task"
+    },
+    "next": {
+      "text": "AI入门12｜什么是多模态AI？为什么它不只会读文字了",
+      "link": "/tutorials/ai-basics-12-multimodal-ai"
+    }
+  },
+  "/tutorials/ai-basics-12-multimodal-ai": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 12,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门11｜为什么有的AI回答很快，有的却要“想很久”？",
+      "link": "/tutorials/ai-basics-11-reasoning-and-speed"
+    },
+    "next": {
+      "text": "AI入门13｜什么是AI智能体Agent？它和普通聊天AI有什么区别？",
+      "link": "/tutorials/ai-basics-13-what-is-agent"
+    }
+  },
+  "/tutorials/ai-basics-13-what-is-agent": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 13,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门12｜什么是多模态AI？为什么它不只会读文字了",
+      "link": "/tutorials/ai-basics-12-multimodal-ai"
+    },
+    "next": {
+      "text": "AI入门14｜大模型和Agent到底是什么关系？",
+      "link": "/tutorials/ai-basics-14-llm-and-agent"
+    }
+  },
+  "/tutorials/ai-basics-14-llm-and-agent": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 14,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门13｜什么是AI智能体Agent？它和普通聊天AI有什么区别？",
+      "link": "/tutorials/ai-basics-13-what-is-agent"
+    },
+    "next": {
+      "text": "AI入门15｜Harness是什么？为什么同一个模型放在不同Agent里，效果会差很多？",
+      "link": "/tutorials/ai-basics-15-harness"
+    }
+  },
+  "/tutorials/ai-basics-15-harness": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 15,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门14｜大模型和Agent到底是什么关系？",
+      "link": "/tutorials/ai-basics-14-llm-and-agent"
+    },
+    "next": {
+      "text": "AI入门16｜Agent到底能做什么？从聊天到真正执行任务",
+      "link": "/tutorials/ai-basics-16-what-agent-can-do"
+    }
+  },
+  "/tutorials/ai-basics-16-what-agent-can-do": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 16,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门15｜Harness是什么？为什么同一个模型放在不同Agent里，效果会差很多？",
+      "link": "/tutorials/ai-basics-15-harness"
+    },
+    "next": {
+      "text": "AI入门17｜什么是工具调用？为什么AI现在可以自己搜索、读文件、查数据库？",
+      "link": "/tutorials/ai-basics-17-tool-calling"
+    }
+  },
+  "/tutorials/ai-basics-17-tool-calling": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 17,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门16｜Agent到底能做什么？从聊天到真正执行任务",
+      "link": "/tutorials/ai-basics-16-what-agent-can-do"
+    },
+    "next": {
+      "text": "AI入门18｜MCP是什么？为什么有些Agent把它叫“连接器”？",
+      "link": "/tutorials/ai-basics-18-mcp"
+    }
+  },
+  "/tutorials/ai-basics-18-mcp": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 18,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门17｜什么是工具调用？为什么AI现在可以自己搜索、读文件、查数据库？",
+      "link": "/tutorials/ai-basics-17-tool-calling"
+    },
+    "next": {
+      "text": "AI入门19｜什么是AI知识库？把一堆文件丢进去并不等于知识库",
+      "link": "/tutorials/ai-basics-19-ai-knowledge-base"
+    }
+  },
+  "/tutorials/ai-basics-19-ai-knowledge-base": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 19,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门18｜MCP是什么？为什么有些Agent把它叫“连接器”？",
+      "link": "/tutorials/ai-basics-18-mcp"
+    },
+    "next": {
+      "text": "AI入门20｜知识库、搜索、上下文和记忆，到底有什么区别？",
+      "link": "/tutorials/ai-basics-20-kb-search-context-memory"
+    }
+  },
+  "/tutorials/ai-basics-20-kb-search-context-memory": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 20,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门19｜什么是AI知识库？把一堆文件丢进去并不等于知识库",
+      "link": "/tutorials/ai-basics-19-ai-knowledge-base"
+    },
+    "next": {
+      "text": "AI入门21｜什么是Subagent？它和多个Agent有什么区别？",
+      "link": "/tutorials/ai-basics-21-subagent"
+    }
+  },
+  "/tutorials/ai-basics-21-subagent": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 21,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门20｜知识库、搜索、上下文和记忆，到底有什么区别？",
+      "link": "/tutorials/ai-basics-20-kb-search-context-memory"
+    },
+    "next": {
+      "text": "AI入门22｜什么是Multi-Agent？为什么要让多个Agent一起工作？",
+      "link": "/tutorials/ai-basics-22-multi-agent"
+    }
+  },
+  "/tutorials/ai-basics-22-multi-agent": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 22,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门21｜什么是Subagent？它和多个Agent有什么区别？",
+      "link": "/tutorials/ai-basics-21-subagent"
+    },
+    "next": {
+      "text": "AI入门23｜Skill是什么？它和Prompt、Agent有什么区别？",
+      "link": "/tutorials/ai-basics-23-skill"
+    }
+  },
+  "/tutorials/ai-basics-23-skill": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 23,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门22｜什么是Multi-Agent？为什么要让多个Agent一起工作？",
+      "link": "/tutorials/ai-basics-22-multi-agent"
+    },
+    "next": {
+      "text": "AI入门24｜什么是AI记忆？它和聊天记录、上下文、知识库有什么区别？",
+      "link": "/tutorials/ai-basics-24-ai-memory"
+    }
+  },
+  "/tutorials/ai-basics-24-ai-memory": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 24,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门23｜Skill是什么？它和Prompt、Agent有什么区别？",
+      "link": "/tutorials/ai-basics-23-skill"
+    },
+    "next": {
+      "text": "AI入门25｜Embedding是什么？为什么AI能找到“意思相近”的内容？",
+      "link": "/tutorials/ai-basics-25-embedding"
+    }
+  },
+  "/tutorials/ai-basics-25-embedding": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 25,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门24｜什么是AI记忆？它和聊天记录、上下文、知识库有什么区别？",
+      "link": "/tutorials/ai-basics-24-ai-memory"
+    },
+    "next": {
+      "text": "AI入门26｜RAG是什么？为什么AI回答前要先找资料？",
+      "link": "/tutorials/ai-basics-26-rag"
+    }
+  },
+  "/tutorials/ai-basics-26-rag": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 26,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门25｜Embedding是什么？为什么AI能找到“意思相近”的内容？",
+      "link": "/tutorials/ai-basics-25-embedding"
+    },
+    "next": {
+      "text": "AI入门27｜Fine-tuning微调是什么？它和RAG、知识库有什么区别？",
+      "link": "/tutorials/ai-basics-27-fine-tuning"
+    }
+  },
+  "/tutorials/ai-basics-27-fine-tuning": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 27,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门26｜RAG是什么？为什么AI回答前要先找资料？",
+      "link": "/tutorials/ai-basics-26-rag"
+    },
+    "next": {
+      "text": "AI入门28｜API是什么？为什么同一个大模型可以出现在很多产品里？",
+      "link": "/tutorials/ai-basics-28-api"
+    }
+  },
+  "/tutorials/ai-basics-28-api": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 28,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门27｜Fine-tuning微调是什么？它和RAG、知识库有什么区别？",
+      "link": "/tutorials/ai-basics-27-fine-tuning"
+    },
+    "next": {
+      "text": "AI入门29｜开源模型、本地模型和云端模型有什么区别？",
+      "link": "/tutorials/ai-basics-29-open-local-cloud-models"
+    }
+  },
+  "/tutorials/ai-basics-29-open-local-cloud-models": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 29,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门28｜API是什么？为什么同一个大模型可以出现在很多产品里？",
+      "link": "/tutorials/ai-basics-28-api"
+    },
+    "next": {
+      "text": "AI入门30｜最终篇：从大模型到Agent，把今天的AI世界重新拼起来",
+      "link": "/tutorials/ai-basics-30-finale"
+    }
+  },
+  "/tutorials/ai-basics-30-finale": {
+    "title": "AI入门：从大模型到智能体",
+    "index": 30,
+    "total": 30,
+    "parent": "/series/ai-basics/",
+    "prev": {
+      "text": "AI入门29｜开源模型、本地模型和云端模型有什么区别？",
+      "link": "/tutorials/ai-basics-29-open-local-cloud-models"
+    },
+    "next": false
+  },
+  "/tutorials/ai-infra-01-subscribe-top-model": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 1,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": false,
+    "next": {
+      "text": "AI基建的第二步：为大模型配一个好用的智能体",
+      "link": "/tutorials/ai-infra-02-choose-mature-agent"
+    }
+  },
+  "/tutorials/ai-infra-02-choose-mature-agent": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 2,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第一步：花钱订阅一个顶级的大模型大脑",
+      "link": "/tutorials/ai-infra-01-subscribe-top-model"
+    },
+    "next": {
+      "text": "AI基建的第三步：不是广告，但 Apple 电脑真的比 Windows 好用",
+      "link": "/tutorials/ai-infra-03-apple-over-windows"
+    }
+  },
+  "/tutorials/ai-infra-03-apple-over-windows": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 3,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第二步：为大模型配一个好用的智能体",
+      "link": "/tutorials/ai-infra-02-choose-mature-agent"
+    },
+    "next": {
+      "text": "AI基建的第四步：给智能体配好 MCP，律师尤其不能只靠模型“凭记忆回答”",
+      "link": "/tutorials/ai-infra-04-lawyer-mcp"
+    }
+  },
+  "/tutorials/ai-infra-04-lawyer-mcp": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 4,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第三步：不是广告，但 Apple 电脑真的比 Windows 好用",
+      "link": "/tutorials/ai-infra-03-apple-over-windows"
+    },
+    "next": {
+      "text": "AI基建的第五步：注册一个 GitHub 账号，并真正把它用起来",
+      "link": "/tutorials/ai-infra-05-github-in-practice"
+    }
+  },
+  "/tutorials/ai-infra-05-github-in-practice": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 5,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第四步：给智能体配好 MCP，律师尤其不能只靠模型“凭记忆回答”",
+      "link": "/tutorials/ai-infra-04-lawyer-mcp"
+    },
+    "next": {
+      "text": "AI基建的第六步：搭一个远程工作环境，让AI可以一直干活",
+      "link": "/tutorials/ai-infra-06-remote-work-env"
+    }
+  },
+  "/tutorials/ai-infra-06-remote-work-env": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 6,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第五步：注册一个 GitHub 账号，并真正把它用起来",
+      "link": "/tutorials/ai-infra-05-github-in-practice"
+    },
+    "next": {
+      "text": "AI基建的第七步：进阶到 VPS——没有一台长期在线的 Mac mini，也可以给 AI 准备一台“永不关机的电脑”",
+      "link": "/tutorials/ai-infra-07-vps"
+    }
+  },
+  "/tutorials/ai-infra-07-vps": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 7,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第六步：搭一个远程工作环境，让AI可以一直干活",
+      "link": "/tutorials/ai-infra-06-remote-work-env"
+    },
+    "next": {
+      "text": "AI基建的第八步（进阶）：要不要部署本地大模型？",
+      "link": "/tutorials/ai-infra-08-local-model"
+    }
+  },
+  "/tutorials/ai-infra-08-local-model": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 8,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第七步：进阶到 VPS——没有一台长期在线的 Mac mini，也可以给 AI 准备一台“永不关机的电脑”",
+      "link": "/tutorials/ai-infra-07-vps"
+    },
+    "next": {
+      "text": "AI基建的第九步：做好备份，别让你的AI工作系统一夜归零",
+      "link": "/tutorials/ai-infra-09-backup"
+    }
+  },
+  "/tutorials/ai-infra-09-backup": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 9,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第八步（进阶）：要不要部署本地大模型？",
+      "link": "/tutorials/ai-infra-08-local-model"
+    },
+    "next": {
+      "text": "AI基建的第十步：别再继续搭了，让它自己跑起来",
+      "link": "/tutorials/ai-infra-10-let-it-run"
+    }
+  },
+  "/tutorials/ai-infra-10-let-it-run": {
+    "title": "AI基建十步：把AI变成日常工作的基础设施",
+    "index": 10,
+    "total": 10,
+    "parent": "/series/ai-infra/",
+    "prev": {
+      "text": "AI基建的第九步：做好备份，别让你的AI工作系统一夜归零",
+      "link": "/tutorials/ai-infra-09-backup"
+    },
+    "next": false
+  },
+  "/tutorials/agent-practice-series-overview": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 1,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": false,
+    "next": {
+      "text": "AI实战01｜别再一句一句问AI：把一项完整工作直接交给Agent",
+      "link": "/tutorials/agent-practice-01-delegate-complete-work"
+    }
+  },
+  "/tutorials/agent-practice-01-delegate-complete-work": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 2,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "《AI实战：把真实工作交给Agent》前50篇（最终版）",
+      "link": "/tutorials/agent-practice-series-overview"
+    },
+    "next": {
+      "text": "AI实战02｜一次处理几十个文件：不要再一份一份上传给AI",
+      "link": "/tutorials/agent-practice-02-batch-file-processing"
+    }
+  },
+  "/tutorials/agent-practice-02-batch-file-processing": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 3,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战01｜别再一句一句问AI：把一项完整工作直接交给Agent",
+      "link": "/tutorials/agent-practice-01-delegate-complete-work"
+    },
+    "next": {
+      "text": "AI实战03｜让Agent做网络研究：不要只让它“搜一下”",
+      "link": "/tutorials/agent-practice-03-web-research"
+    }
+  },
+  "/tutorials/agent-practice-03-web-research": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 4,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战02｜一次处理几十个文件：不要再一份一份上传给AI",
+      "link": "/tutorials/agent-practice-02-batch-file-processing"
+    },
+    "next": {
+      "text": "AI实战04｜别让AI只在聊天框里写：直接让Agent生成和修改Word文件",
+      "link": "/tutorials/agent-practice-04-word-files"
+    }
+  },
+  "/tutorials/agent-practice-04-word-files": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 5,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战03｜让Agent做网络研究：不要只让它“搜一下”",
+      "link": "/tutorials/agent-practice-03-web-research"
+    },
+    "next": {
+      "text": "AI实战05｜让Agent直接处理Excel：不要只让AI给你一张Markdown表格",
+      "link": "/tutorials/agent-practice-05-excel-files"
+    }
+  },
+  "/tutorials/agent-practice-05-excel-files": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 6,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战04｜别让AI只在聊天框里写：直接让Agent生成和修改Word文件",
+      "link": "/tutorials/agent-practice-04-word-files"
+    },
+    "next": {
+      "text": "AI实战06｜两份文件到底改了什么？让Agent直接做版本比对",
+      "link": "/tutorials/agent-practice-06-version-diff"
+    }
+  },
+  "/tutorials/agent-practice-06-version-diff": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 7,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战05｜让Agent直接处理Excel：不要只让AI给你一张Markdown表格",
+      "link": "/tutorials/agent-practice-05-excel-files"
+    },
+    "next": {
+      "text": "AI实战07｜一堆扫描PDF怎么处理？让Agent先识别，再整理，再提取",
+      "link": "/tutorials/agent-practice-07-scanned-pdfs"
+    }
+  },
+  "/tutorials/agent-practice-07-scanned-pdfs": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 8,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战06｜两份文件到底改了什么？让Agent直接做版本比对",
+      "link": "/tutorials/agent-practice-06-version-diff"
+    },
+    "next": {
+      "text": "AI实战08｜邮件和附件太乱？让Agent先整理成一个项目资料包",
+      "link": "/tutorials/agent-practice-08-email-to-project-pack"
+    }
+  },
+  "/tutorials/agent-practice-08-email-to-project-pack": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 9,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战07｜一堆扫描PDF怎么处理？让Agent先识别，再整理，再提取",
+      "link": "/tutorials/agent-practice-07-scanned-pdfs"
+    },
+    "next": {
+      "text": "AI实战09｜开完会别自己整理：让Agent直接生成纪要和待办清单",
+      "link": "/tutorials/agent-practice-09-meeting-minutes"
+    }
+  },
+  "/tutorials/agent-practice-09-meeting-minutes": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 10,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战08｜邮件和附件太乱？让Agent先整理成一个项目资料包",
+      "link": "/tutorials/agent-practice-08-email-to-project-pack"
+    },
+    "next": {
+      "text": "AI实战10｜别再手工复制网页：让Agent把公开信息直接整理成Excel",
+      "link": "/tutorials/agent-practice-10-public-info-to-excel"
+    }
+  },
+  "/tutorials/agent-practice-10-public-info-to-excel": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 11,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战09｜开完会别自己整理：让Agent直接生成纪要和待办清单",
+      "link": "/tutorials/agent-practice-09-meeting-minutes"
+    },
+    "next": {
+      "text": "AI实战11｜几十份证据怎么整理？让Agent先做证据目录和时间线",
+      "link": "/tutorials/agent-practice-11-evidence-index-timeline"
+    }
+  },
+  "/tutorials/agent-practice-11-evidence-index-timeline": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 12,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战10｜别再手工复制网页：让Agent把公开信息直接整理成Excel",
+      "link": "/tutorials/agent-practice-10-public-info-to-excel"
+    },
+    "next": {
+      "text": "AI实战12｜尽调材料太多？先让Agent做资料盘点和缺失清单",
+      "link": "/tutorials/agent-practice-12-dd-inventory-gaps"
+    }
+  },
+  "/tutorials/agent-practice-12-dd-inventory-gaps": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 13,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战11｜几十份证据怎么整理？让Agent先做证据目录和时间线",
+      "link": "/tutorials/agent-practice-11-evidence-index-timeline"
+    },
+    "next": {
+      "text": "AI实战13｜别手工建尽调目录：让Agent按尽调清单序号直接生成文件夹",
+      "link": "/tutorials/agent-practice-13-dd-folder-structure"
+    }
+  },
+  "/tutorials/agent-practice-13-dd-folder-structure": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 14,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战12｜尽调材料太多？先让Agent做资料盘点和缺失清单",
+      "link": "/tutorials/agent-practice-12-dd-inventory-gaps"
+    },
+    "next": {
+      "text": "AI实战14｜尽调目录建好了，再让Agent按清单自动归类客户材料",
+      "link": "/tutorials/agent-practice-14-auto-classify-materials"
+    }
+  },
+  "/tutorials/agent-practice-14-auto-classify-materials": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 15,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战13｜别手工建尽调目录：让Agent按尽调清单序号直接生成文件夹",
+      "link": "/tutorials/agent-practice-13-dd-folder-structure"
+    },
+    "next": {
+      "text": "AI实战15｜别让Agent一次写完整份尽调报告：一章一章改，写完一章就核一章",
+      "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter"
+    }
+  },
+  "/tutorials/agent-practice-15-dd-report-chapter-by-chapter": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 16,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战14｜尽调目录建好了，再让Agent按清单自动归类客户材料",
+      "link": "/tutorials/agent-practice-14-auto-classify-materials"
+    },
+    "next": {
+      "text": "AI实战16｜尽调报告写出一稿后，让Agent反向生成补充尽调清单",
+      "link": "/tutorials/agent-practice-16-reverse-dd-checklist"
+    }
+  },
+  "/tutorials/agent-practice-16-reverse-dd-checklist": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 17,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战15｜别让Agent一次写完整份尽调报告：一章一章改，写完一章就核一章",
+      "link": "/tutorials/agent-practice-15-dd-report-chapter-by-chapter"
+    },
+    "next": {
+      "text": "AI实战17｜客户补资料回来后，不要重做报告：只更新受影响的章节",
+      "link": "/tutorials/agent-practice-17-update-affected-sections"
+    }
+  },
+  "/tutorials/agent-practice-17-update-affected-sections": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 18,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战16｜尽调报告写出一稿后，让Agent反向生成补充尽调清单",
+      "link": "/tutorials/agent-practice-16-reverse-dd-checklist"
+    },
+    "next": {
+      "text": "AI实战18｜尽调报告写完别急着发：先让Agent做一次全文交叉核对",
+      "link": "/tutorials/agent-practice-18-full-cross-check"
+    }
+  },
+  "/tutorials/agent-practice-18-full-cross-check": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 19,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战17｜客户补资料回来后，不要重做报告：只更新受影响的章节",
+      "link": "/tutorials/agent-practice-17-update-affected-sections"
+    },
+    "next": {
+      "text": "AI实战19｜100页尽调报告怎么看？让Agent提炼重大问题清单",
+      "link": "/tutorials/agent-practice-19-major-issues-list"
+    }
+  },
+  "/tutorials/agent-practice-19-major-issues-list": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 20,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战18｜尽调报告写完别急着发：先让Agent做一次全文交叉核对",
+      "link": "/tutorials/agent-practice-18-full-cross-check"
+    },
+    "next": {
+      "text": "AI实战20｜尽调发现问题后，让Agent直接转成交易文件修改建议",
+      "link": "/tutorials/agent-practice-20-findings-to-contract-edits"
+    }
+  },
+  "/tutorials/agent-practice-20-findings-to-contract-edits": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 21,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战19｜100页尽调报告怎么看？让Agent提炼重大问题清单",
+      "link": "/tutorials/agent-practice-19-major-issues-list"
+    },
+    "next": {
+      "text": "AI实战21｜别只靠模型记忆：让Agent先查知识库，再回答专业问题",
+      "link": "/tutorials/agent-practice-21-kb-first-answers"
+    }
+  },
+  "/tutorials/agent-practice-21-kb-first-answers": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 22,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战20｜尽调发现问题后，让Agent直接转成交易文件修改建议",
+      "link": "/tutorials/agent-practice-20-findings-to-contract-edits"
+    },
+    "next": {
+      "text": "AI实战22｜客户给了案情和底稿，让Agent通过法律数据库MCP直接做类案检索报告",
+      "link": "/tutorials/agent-practice-22-mcp-case-research"
+    }
+  },
+  "/tutorials/agent-practice-22-mcp-case-research": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 23,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战21｜别只靠模型记忆：让Agent先查知识库，再回答专业问题",
+      "link": "/tutorials/agent-practice-21-kb-first-answers"
+    },
+    "next": {
+      "text": "AI实战23｜IPO遇到特殊法律问题？让Agent去证券数据库里找审核案例",
+      "link": "/tutorials/agent-practice-23-securities-case-search"
+    }
+  },
+  "/tutorials/agent-practice-23-securities-case-search": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 24,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战22｜客户给了案情和底稿，让Agent通过法律数据库MCP直接做类案检索报告",
+      "link": "/tutorials/agent-practice-22-mcp-case-research"
+    },
+    "next": {
+      "text": "AI实战24｜法律文件里的法条别靠AI记：让Agent逐条核验是否最新有效",
+      "link": "/tutorials/agent-practice-24-verify-law-currency"
+    }
+  },
+  "/tutorials/agent-practice-24-verify-law-currency": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 25,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战23｜IPO遇到特殊法律问题？让Agent去证券数据库里找审核案例",
+      "link": "/tutorials/agent-practice-23-securities-case-search"
+    },
+    "next": {
+      "text": "AI实战25｜案件发生在旧法时期怎么办？让Agent自动做新旧法和法条沿革对比",
+      "link": "/tutorials/agent-practice-25-law-evolution-diff"
+    }
+  },
+  "/tutorials/agent-practice-25-law-evolution-diff": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 26,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战24｜法律文件里的法条别靠AI记：让Agent逐条核验是否最新有效",
+      "link": "/tutorials/agent-practice-24-verify-law-currency"
+    },
+    "next": {
+      "text": "AI实战26｜客户抛来一个复杂法律问题，让Agent直接做一份专项法律研究报告",
+      "link": "/tutorials/agent-practice-26-legal-research-report"
+    }
+  },
+  "/tutorials/agent-practice-26-legal-research-report": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 27,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战25｜案件发生在旧法时期怎么办？让Agent自动做新旧法和法条沿革对比",
+      "link": "/tutorials/agent-practice-25-law-evolution-diff"
+    },
+    "next": {
+      "text": "AI实战27｜IPO问询来了，先让Agent把整份问询函拆成核查任务清单",
+      "link": "/tutorials/agent-practice-27-inquiry-to-task-list"
+    }
+  },
+  "/tutorials/agent-practice-27-inquiry-to-task-list": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 28,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战26｜客户抛来一个复杂法律问题，让Agent直接做一份专项法律研究报告",
+      "link": "/tutorials/agent-practice-26-legal-research-report"
+    },
+    "next": {
+      "text": "AI实战28｜监管问询怎么回复？先让Agent查历史审核案例，再搭当前项目的回复框架",
+      "link": "/tutorials/agent-practice-28-inquiry-reply-framework"
+    }
+  },
+  "/tutorials/agent-practice-28-inquiry-reply-framework": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 29,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战27｜IPO问询来了，先让Agent把整份问询函拆成核查任务清单",
+      "link": "/tutorials/agent-practice-27-inquiry-to-task-list"
+    },
+    "next": {
+      "text": "AI实战29｜问询回复写完后，换一个Agent逐题检查漏答、答非所问和明确意见",
+      "link": "/tutorials/agent-practice-29-inquiry-reply-review"
+    }
+  },
+  "/tutorials/agent-practice-29-inquiry-reply-review": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 30,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战28｜监管问询怎么回复？先让Agent查历史审核案例，再搭当前项目的回复框架",
+      "link": "/tutorials/agent-practice-28-inquiry-reply-framework"
+    },
+    "next": {
+      "text": "AI实战30｜多家中介文件别各写各的：让Agent做一次跨文件一致性核对",
+      "link": "/tutorials/agent-practice-30-cross-document-consistency"
+    }
+  },
+  "/tutorials/agent-practice-30-cross-document-consistency": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 31,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战29｜问询回复写完后，换一个Agent逐题检查漏答、答非所问和明确意见",
+      "link": "/tutorials/agent-practice-29-inquiry-reply-review"
+    },
+    "next": {
+      "text": "AI实战31｜报告期要更新了，先让Agent生成一份补充尽调清单",
+      "link": "/tutorials/agent-practice-31-period-update-dd-list"
+    }
+  },
+  "/tutorials/agent-practice-31-period-update-dd-list": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 32,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战30｜多家中介文件别各写各的：让Agent做一次跨文件一致性核对",
+      "link": "/tutorials/agent-practice-30-cross-document-consistency"
+    },
+    "next": {
+      "text": "AI实战32｜企业补完更新资料后，让Agent先做增量核查，再更新法律文件",
+      "link": "/tutorials/agent-practice-32-incremental-verification"
+    }
+  },
+  "/tutorials/agent-practice-32-incremental-verification": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 33,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战31｜报告期要更新了，先让Agent生成一份补充尽调清单",
+      "link": "/tutorials/agent-practice-31-period-update-dd-list"
+    },
+    "next": {
+      "text": "AI实战33｜拿到一个新案件后，先让Agent查类案，再做一份诉讼案件分析报告",
+      "link": "/tutorials/agent-practice-33-litigation-analysis-report"
+    }
+  },
+  "/tutorials/agent-practice-33-litigation-analysis-report": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 34,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战32｜企业补完更新资料后，让Agent先做增量核查，再更新法律文件",
+      "link": "/tutorials/agent-practice-32-incremental-verification"
+    },
+    "next": {
+      "text": "AI实战34｜案件研究完成后，让Agent把证据整理成“事实—证据—争议焦点”对应表",
+      "link": "/tutorials/agent-practice-34-fact-evidence-issue-map"
+    }
+  },
+  "/tutorials/agent-practice-34-fact-evidence-issue-map": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 35,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战33｜拿到一个新案件后，先让Agent查类案，再做一份诉讼案件分析报告",
+      "link": "/tutorials/agent-practice-33-litigation-analysis-report"
+    },
+    "next": {
+      "text": "AI实战35｜起诉前先站到对方一边：让Agent模拟“质量问题”答辩和攻击路径",
+      "link": "/tutorials/agent-practice-35-simulate-defense-attacks"
+    }
+  },
+  "/tutorials/agent-practice-35-simulate-defense-attacks": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 36,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战34｜案件研究完成后，让Agent把证据整理成“事实—证据—争议焦点”对应表",
+      "link": "/tutorials/agent-practice-34-fact-evidence-issue-map"
+    },
+    "next": {
+      "text": "AI实战36｜起诉状不要从零写：把历史优质模板交给Agent直接改成新案件",
+      "link": "/tutorials/agent-practice-36-complaint-from-template"
+    }
+  },
+  "/tutorials/agent-practice-36-complaint-from-template": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 37,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战35｜起诉前先站到对方一边：让Agent模拟“质量问题”答辩和攻击路径",
+      "link": "/tutorials/agent-practice-35-simulate-defense-attacks"
+    },
+    "next": {
+      "text": "AI实战37｜起诉状写完别急着提交：让另一个Agent从被告和法官两个角度复核",
+      "link": "/tutorials/agent-practice-37-complaint-review"
+    }
+  },
+  "/tutorials/agent-practice-37-complaint-review": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 38,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战36｜起诉状不要从零写：把历史优质模板交给Agent直接改成新案件",
+      "link": "/tutorials/agent-practice-36-complaint-from-template"
+    },
+    "next": {
+      "text": "AI实战38｜如果你代理被告，怎样让Agent起草一份真正能用的答辩状",
+      "link": "/tutorials/agent-practice-38-defense-statement"
+    }
+  },
+  "/tutorials/agent-practice-38-defense-statement": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 39,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战37｜起诉状写完别急着提交：让另一个Agent从被告和法官两个角度复核",
+      "link": "/tutorials/agent-practice-37-complaint-review"
+    },
+    "next": {
+      "text": "AI实战39｜收到被告答辩状后，让Agent把真实答辩和之前的攻击路径逐项对照",
+      "link": "/tutorials/agent-practice-39-defense-vs-attack-map"
+    }
+  },
+  "/tutorials/agent-practice-39-defense-vs-attack-map": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 40,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战38｜如果你代理被告，怎样让Agent起草一份真正能用的答辩状",
+      "link": "/tutorials/agent-practice-38-defense-statement"
+    },
+    "next": {
+      "text": "AI实战40｜对方证据来了，先让Agent逐份做质证底稿，再形成正式质证意见",
+      "link": "/tutorials/agent-practice-40-evidence-examination"
+    }
+  },
+  "/tutorials/agent-practice-40-evidence-examination": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 41,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战39｜收到被告答辩状后，让Agent把真实答辩和之前的攻击路径逐项对照",
+      "link": "/tutorials/agent-practice-39-defense-vs-attack-map"
+    },
+    "next": {
+      "text": "AI实战41｜开庭前，让Agent把整个案件整理成一份庭审提纲",
+      "link": "/tutorials/agent-practice-41-trial-outline"
+    }
+  },
+  "/tutorials/agent-practice-41-trial-outline": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 42,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战40｜对方证据来了，先让Agent逐份做质证底稿，再形成正式质证意见",
+      "link": "/tutorials/agent-practice-40-evidence-examination"
+    },
+    "next": {
+      "text": "AI实战42｜庭审结束后，让Agent根据庭审笔录起草代理词",
+      "link": "/tutorials/agent-practice-42-closing-argument"
+    }
+  },
+  "/tutorials/agent-practice-42-closing-argument": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 43,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战41｜开庭前，让Agent把整个案件整理成一份庭审提纲",
+      "link": "/tutorials/agent-practice-41-trial-outline"
+    },
+    "next": {
+      "text": "AI实战43｜判决下来以后，让Agent拆解法院理由，再判断要不要上诉",
+      "link": "/tutorials/agent-practice-43-judgment-analysis-appeal"
+    }
+  },
+  "/tutorials/agent-practice-43-judgment-analysis-appeal": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 44,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战42｜庭审结束后，让Agent根据庭审笔录起草代理词",
+      "link": "/tutorials/agent-practice-42-closing-argument"
+    },
+    "next": {
+      "text": "AI实战44｜决定上诉后，让Agent围绕“能改变结果的点”起草上诉状",
+      "link": "/tutorials/agent-practice-44-appeal-drafting"
+    }
+  },
+  "/tutorials/agent-practice-44-appeal-drafting": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 45,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战43｜判决下来以后，让Agent拆解法院理由，再判断要不要上诉",
+      "link": "/tutorials/agent-practice-43-judgment-analysis-appeal"
+    },
+    "next": {
+      "text": "AI实战45｜标准化法律文书别每次重写：把旧模板交给Agent，直接生成新案件文件",
+      "link": "/tutorials/agent-practice-45-templates-to-new-docs"
+    }
+  },
+  "/tutorials/agent-practice-45-templates-to-new-docs": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 46,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战44｜决定上诉后，让Agent围绕“能改变结果的点”起草上诉状",
+      "link": "/tutorials/agent-practice-44-appeal-drafting"
+    },
+    "next": {
+      "text": "AI实战46｜诉讼专题最终篇：律师的上限，就是AI的上限",
+      "link": "/tutorials/agent-practice-46-litigation-finale"
+    }
+  },
+  "/tutorials/agent-practice-46-litigation-finale": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 47,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战45｜标准化法律文书别每次重写：把旧模板交给Agent，直接生成新案件文件",
+      "link": "/tutorials/agent-practice-45-templates-to-new-docs"
+    },
+    "next": {
+      "text": "AI实战47｜别再每天自己刷法律资讯：让Agent定时生成专业法律简报",
+      "link": "/tutorials/agent-practice-47-scheduled-legal-briefing"
+    }
+  },
+  "/tutorials/agent-practice-47-scheduled-legal-briefing": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 48,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战46｜诉讼专题最终篇：律师的上限，就是AI的上限",
+      "link": "/tutorials/agent-practice-46-litigation-finale"
+    },
+    "next": {
+      "text": "AI实战48｜项目不用天天自己盯：让Agent每周自动做一次项目巡检",
+      "link": "/tutorials/agent-practice-48-weekly-project-inspection"
+    }
+  },
+  "/tutorials/agent-practice-48-weekly-project-inspection": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 49,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战47｜别再每天自己刷法律资讯：让Agent定时生成专业法律简报",
+      "link": "/tutorials/agent-practice-47-scheduled-legal-briefing"
+    },
+    "next": {
+      "text": "AI实战49｜没变化别来打扰我：让Agent持续监控诉讼、处罚、监管和项目变化",
+      "link": "/tutorials/agent-practice-49-continuous-monitoring"
+    }
+  },
+  "/tutorials/agent-practice-49-continuous-monitoring": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 50,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战48｜项目不用天天自己盯：让Agent每周自动做一次项目巡检",
+      "link": "/tutorials/agent-practice-48-weekly-project-inspection"
+    },
+    "next": {
+      "text": "AI实战50｜每天早上，让Agent自动生成一份“律师工作晨报”",
+      "link": "/tutorials/agent-practice-50-daily-morning-brief"
+    }
+  },
+  "/tutorials/agent-practice-50-daily-morning-brief": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 51,
+    "total": 51,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战49｜没变化别来打扰我：让Agent持续监控诉讼、处罚、监管和项目变化",
+      "link": "/tutorials/agent-practice-49-continuous-monitoring"
+    },
+    "next": false
+  },
+  "/tutorials/ai-priority-series-intro": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 1,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": false,
+    "next": {
+      "text": "AI优先｜做任何工作前，先问一句：这个事能用AI完成吗？",
+      "link": "/tutorials/ai-first-workflow"
+    }
+  },
+  "/tutorials/ai-first-workflow": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 2,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜开篇：建立自己的AI工作系统",
+      "link": "/tutorials/ai-priority-series-intro"
+    },
+    "next": {
+      "text": "AI优先｜5%的时间设计，90%的时间等待，5%的时间复核",
+      "link": "/tutorials/ai-workflow-5-90-5"
+    }
+  },
+  "/tutorials/ai-workflow-5-90-5": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 3,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜做任何工作前，先问一句：这个事能用AI完成吗？",
+      "link": "/tutorials/ai-first-workflow"
+    },
+    "next": {
+      "text": "AI优先｜养好一个AI智能体：经常用、持续用，让它越来越懂你",
+      "link": "/tutorials/ai-agent-cultivation"
+    }
+  },
+  "/tutorials/ai-agent-cultivation": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 4,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜5%的时间设计，90%的时间等待，5%的时间复核",
+      "link": "/tutorials/ai-workflow-5-90-5"
+    },
+    "next": {
+      "text": "AI优先｜不要频繁换Agent：你的AI记忆本身就是数字资产",
+      "link": "/tutorials/ai-memory-digital-asset"
+    }
+  },
+  "/tutorials/ai-memory-digital-asset": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 5,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜养好一个AI智能体：经常用、持续用，让它越来越懂你",
+      "link": "/tutorials/ai-agent-cultivation"
+    },
+    "next": {
+      "text": "AI优先｜把零散的AI工具，组织成一套工作系统",
+      "link": "/tutorials/build-ai-work-system"
+    }
+  },
+  "/tutorials/build-ai-work-system": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 6,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜不要频繁换Agent：你的AI记忆本身就是数字资产",
+      "link": "/tutorials/ai-memory-digital-asset"
+    },
+    "next": {
+      "text": "AI优先｜不要陪AI工作：学会把完整任务一次性交出去",
+      "link": "/tutorials/delegate-complete-tasks-to-agent"
+    }
+  },
+  "/tutorials/delegate-complete-tasks-to-agent": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 7,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜把零散的AI工具，组织成一套工作系统",
+      "link": "/tutorials/build-ai-work-system"
+    },
+    "next": {
+      "text": "AI优先｜复杂任务不要自己拆：先让AI做任务规划",
+      "link": "/tutorials/ai-task-planning-first"
+    }
+  },
+  "/tutorials/ai-task-planning-first": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 8,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜不要陪AI工作：学会把完整任务一次性交出去",
+      "link": "/tutorials/delegate-complete-tasks-to-agent"
+    },
+    "next": {
+      "text": "AI优先｜一个AI不够：建立自己的多Agent工作体系",
+      "link": "/tutorials/multi-agent-work-system"
+    }
+  },
+  "/tutorials/multi-agent-work-system": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 9,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜复杂任务不要自己拆：先让AI做任务规划",
+      "link": "/tutorials/ai-task-planning-first"
+    },
+    "next": {
+      "text": "AI优先｜善用Subagent：让一个主Agent同时调度多个子代理",
+      "link": "/tutorials/subagent-orchestration"
+    }
+  },
+  "/tutorials/subagent-orchestration": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 10,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜一个AI不够：建立自己的多Agent工作体系",
+      "link": "/tutorials/multi-agent-work-system"
+    },
+    "next": {
+      "text": "AI优先｜不要把所有信息都塞给AI：学会上下文隔离",
+      "link": "/tutorials/context-isolation-guide"
+    }
+  },
+  "/tutorials/context-isolation-guide": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 11,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜善用Subagent：让一个主Agent同时调度多个子代理",
+      "link": "/tutorials/subagent-orchestration"
+    },
+    "next": {
+      "text": "AI优先｜重复三次的工作，就应该考虑做成Skill",
+      "link": "/tutorials/skill-from-repeated-work"
+    }
+  },
+  "/tutorials/skill-from-repeated-work": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 12,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜不要把所有信息都塞给AI：学会上下文隔离",
+      "link": "/tutorials/context-isolation-guide"
+    },
+    "next": {
+      "text": "AI优先｜提示词、全局指令、项目指令、Skill，到底怎么分工？",
+      "link": "/tutorials/prompt-layers-division"
+    }
+  },
+  "/tutorials/prompt-layers-division": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 13,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜重复三次的工作，就应该考虑做成Skill",
+      "link": "/tutorials/skill-from-repeated-work"
+    },
+    "next": {
+      "text": "AI优先｜不要只做知识库：建立AI真正能用的项目文件系统",
+      "link": "/tutorials/ai-project-file-system"
+    }
+  },
+  "/tutorials/ai-project-file-system": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 14,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜提示词、全局指令、项目指令、Skill，到底怎么分工？",
+      "link": "/tutorials/prompt-layers-division"
+    },
+    "next": {
+      "text": "AI优先｜AI知识库不是越大越好：先解决质量、时效和可追溯性",
+      "link": "/tutorials/ai-knowledge-base-quality"
+    }
+  },
+  "/tutorials/ai-knowledge-base-quality": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 15,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜不要只做知识库：建立AI真正能用的项目文件系统",
+      "link": "/tutorials/ai-project-file-system"
+    },
+    "next": {
+      "text": "AI优先｜给AI接工具：为什么MCP比单纯提示词更重要",
+      "link": "/tutorials/mcp-over-prompts"
+    }
+  },
+  "/tutorials/mcp-over-prompts": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 16,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜AI知识库不是越大越好：先解决质量、时效和可追溯性",
+      "link": "/tutorials/ai-knowledge-base-quality"
+    },
+    "next": {
+      "text": "AI优先｜从提示词到自动化：一个AI任务应该怎样一步步进化",
+      "link": "/tutorials/prompt-to-automation-evolution"
+    }
+  },
+  "/tutorials/prompt-to-automation-evolution": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 17,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜给AI接工具：为什么MCP比单纯提示词更重要",
+      "link": "/tutorials/mcp-over-prompts"
+    },
+    "next": {
+      "text": "AI优先｜能定时运行的AI，才真正开始像“数字员工”",
+      "link": "/tutorials/scheduled-ai-digital-employee"
+    }
+  },
+  "/tutorials/scheduled-ai-digital-employee": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 18,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜从提示词到自动化：一个AI任务应该怎样一步步进化",
+      "link": "/tutorials/prompt-to-automation-evolution"
+    },
+    "next": {
+      "text": "AI优先｜不要让AI自动化失控：给Agent设计权限、审批和兜底机制",
+      "link": "/tutorials/agent-permissions-guardrails"
+    }
+  },
+  "/tutorials/agent-permissions-guardrails": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 19,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜能定时运行的AI，才真正开始像“数字员工”",
+      "link": "/tutorials/scheduled-ai-digital-employee"
+    },
+    "next": {
+      "text": "AI优先｜AI工作系统一定要能复盘：别让AI重复犯同样的错",
+      "link": "/tutorials/ai-system-retrospective"
+    }
+  },
+  "/tutorials/ai-system-retrospective": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 20,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜不要让AI自动化失控：给Agent设计权限、审批和兜底机制",
+      "link": "/tutorials/agent-permissions-guardrails"
+    },
+    "next": {
+      "text": "AI优先｜给AI设验收标准：不要只说“做完”，要定义什么叫“做好”",
+      "link": "/tutorials/ai-acceptance-criteria"
+    }
+  },
+  "/tutorials/ai-acceptance-criteria": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 21,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜AI工作系统一定要能复盘：别让AI重复犯同样的错",
+      "link": "/tutorials/ai-system-retrospective"
+    },
+    "next": {
+      "text": "AI优先｜先定义输出，再让AI开始工作",
+      "link": "/tutorials/define-output-before-work"
+    }
+  },
+  "/tutorials/define-output-before-work": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 22,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜给AI设验收标准：不要只说“做完”，要定义什么叫“做好”",
+      "link": "/tutorials/ai-acceptance-criteria"
+    },
+    "next": {
+      "text": "AI优先｜不要只让AI给结论：重要工作必须可追溯",
+      "link": "/tutorials/ai-traceability-requirements"
+    }
+  },
+  "/tutorials/ai-traceability-requirements": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 23,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜先定义输出，再让AI开始工作",
+      "link": "/tutorials/define-output-before-work"
+    },
+    "next": {
+      "text": "AI优先｜不要让AI替你做最终判断：把执行交给AI，把责任留给人",
+      "link": "/tutorials/human-final-judgment"
+    }
+  },
+  "/tutorials/human-final-judgment": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 24,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜不要只让AI给结论：重要工作必须可追溯",
+      "link": "/tutorials/ai-traceability-requirements"
+    },
+    "next": {
+      "text": "AI优先｜以后我不再只学习怎么用AI，而要学习怎么管理AI",
+      "link": "/tutorials/from-using-ai-to-managing-ai"
+    }
+  },
+  "/tutorials/from-using-ai-to-managing-ai": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 25,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜不要让AI替你做最终判断：把执行交给AI，把责任留给人",
+      "link": "/tutorials/human-final-judgment"
+    },
+    "next": {
+      "text": "AI优先｜最终篇：真正的AI能力，不是会用AI，而是建立自己的AI工作方式",
+      "link": "/tutorials/ai-work-method-finale"
+    }
+  },
+  "/tutorials/ai-work-method-finale": {
+    "title": "AI优先：建立自己的AI工作系统",
+    "index": 26,
+    "total": 26,
+    "parent": "/series/ai-priority/",
+    "prev": {
+      "text": "AI优先｜以后我不再只学习怎么用AI，而要学习怎么管理AI",
+      "link": "/tutorials/from-using-ai-to-managing-ai"
+    },
+    "next": false
+  },
+  "/tutorials/civil-litigation-series-overview": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 1,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": false,
+    "next": {
+      "text": "诉讼 AI 工作总则",
+      "link": "/tutorials/civil-litigation-principles"
+    }
+  },
+  "/tutorials/civil-litigation-principles": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 2,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "民事诉讼 AI 实战系列",
+      "link": "/tutorials/civil-litigation-series-overview"
+    },
+    "next": {
+      "text": "诉前评估与诉讼策略",
+      "link": "/tutorials/civil-litigation-pretrial-assessment"
+    }
+  },
+  "/tutorials/civil-litigation-pretrial-assessment": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 3,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "诉讼 AI 工作总则",
+      "link": "/tutorials/civil-litigation-principles"
+    },
+    "next": {
+      "text": "证据整理与证据目录",
+      "link": "/tutorials/civil-litigation-evidence-organization"
+    }
+  },
+  "/tutorials/civil-litigation-evidence-organization": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 4,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "诉前评估与诉讼策略",
+      "link": "/tutorials/civil-litigation-pretrial-assessment"
+    },
+    "next": {
+      "text": "起诉状、答辩状与上诉状起草",
+      "link": "/tutorials/civil-litigation-pleadings-drafting"
+    }
+  },
+  "/tutorials/civil-litigation-pleadings-drafting": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 5,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "证据整理与证据目录",
+      "link": "/tutorials/civil-litigation-evidence-organization"
+    },
+    "next": {
+      "text": "庭审举证与质证",
+      "link": "/tutorials/civil-litigation-trial-evidence"
+    }
+  },
+  "/tutorials/civil-litigation-trial-evidence": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 6,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "起诉状、答辩状与上诉状起草",
+      "link": "/tutorials/civil-litigation-pleadings-drafting"
+    },
+    "next": {
+      "text": "庭前对抗演练与庭审提纲",
+      "link": "/tutorials/civil-litigation-moot-court"
+    }
+  },
+  "/tutorials/civil-litigation-moot-court": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 7,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "庭审举证与质证",
+      "link": "/tutorials/civil-litigation-trial-evidence"
+    },
+    "next": {
+      "text": "代理词撰写",
+      "link": "/tutorials/civil-litigation-closing-argument"
+    }
+  },
+  "/tutorials/civil-litigation-closing-argument": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 8,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "庭前对抗演练与庭审提纲",
+      "link": "/tutorials/civil-litigation-moot-court"
+    },
+    "next": {
+      "text": "庭后复盘与裁判文书深读",
+      "link": "/tutorials/civil-litigation-post-trial-review"
+    }
+  },
+  "/tutorials/civil-litigation-post-trial-review": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 9,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "代理词撰写",
+      "link": "/tutorials/civil-litigation-closing-argument"
+    },
+    "next": {
+      "text": "强制执行与财产线索",
+      "link": "/tutorials/civil-litigation-enforcement"
+    }
+  },
+  "/tutorials/civil-litigation-enforcement": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 10,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "庭后复盘与裁判文书深读",
+      "link": "/tutorials/civil-litigation-post-trial-review"
+    },
+    "next": {
+      "text": "结案归档与知识沉淀",
+      "link": "/tutorials/civil-litigation-closing-archive"
+    }
+  },
+  "/tutorials/civil-litigation-closing-archive": {
+    "title": "民事诉讼 AI 实战系列",
+    "index": 11,
+    "total": 11,
+    "parent": "/series/civil-litigation/",
+    "prev": {
+      "text": "强制执行与财产线索",
+      "link": "/tutorials/civil-litigation-enforcement"
+    },
+    "next": false
+  }
 }
