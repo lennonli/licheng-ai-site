@@ -41,16 +41,19 @@ jobs:
           tutorials_sha=$(git ls-remote https://github.com/lennonli/licheng-AI-tutorials.git refs/heads/main | cut -f1)
           kbmono_sha=$(git ls-remote https://github.com/lennonli/ipo-inquiry-kb.git refs/heads/main | cut -f1)
           ma2026_sha=$(git ls-remote https://github.com/lennonli/ma-restructuring-kb-2026.git refs/heads/main | cut -f1)
+          ma2025_sha=$(git ls-remote https://github.com/lennonli/ma-restructuring-kb-2025.git refs/heads/main | cut -f1)
           test -n "$agents_sha"
           test -n "$skills_sha"
           test -n "$tutorials_sha"
           test -n "$kbmono_sha"
           test -n "$ma2026_sha"
+          test -n "$ma2025_sha"
           echo "SOURCE_AGENTS_SHA=$agents_sha" >> "$GITHUB_ENV"
           echo "SOURCE_SKILLS_SHA=$skills_sha" >> "$GITHUB_ENV"
           echo "SOURCE_TUTORIALS_SHA=$tutorials_sha" >> "$GITHUB_ENV"
           echo "SOURCE_KBMONO_SHA=$kbmono_sha" >> "$GITHUB_ENV"
           echo "SOURCE_MA2026_SHA=$ma2026_sha" >> "$GITHUB_ENV"
+          echo "SOURCE_MA2025_SHA=$ma2025_sha" >> "$GITHUB_ENV"
 
       - name: Build and test site
         run: npm test
@@ -183,6 +186,7 @@ jobs:
               && curl --fail --silent --show-error https://ai.licheng.uk/tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1 >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/ma2026/ >/dev/null \
+              && curl --fail --silent --show-error https://ai.licheng.uk/ma2025/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb2025/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb2024/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb2023/ >/dev/null; then

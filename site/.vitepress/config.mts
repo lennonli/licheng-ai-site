@@ -10,7 +10,7 @@ function canonicalUrl(page: string) {
   return new URL(route || '/', siteOrigin).href
 }
 
-const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2026/']
+const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2026/', '/ma2025/']
 
 function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
   if (/__analytics-|\/dashboard\//.test(env.path || '')) return ''
@@ -147,7 +147,9 @@ export default defineConfig({
       ] },
       { text: '并购重组案例', items: [
         { text: '2026 年度案例库', link: '/ma2026/' },
-        { text: '2026 年度总结', link: '/ma2026/2026年度总结' }
+        { text: '2026 年度总结', link: '/ma2026/2026年度总结' },
+        { text: '2025 年度案例库', link: '/ma2025/' },
+        { text: '2025 年度总结', link: '/ma2025/2025年度总结' }
       ] },
       { text: '实用工具', items: [
         { text: '工具总览', link: '/tools/' },
