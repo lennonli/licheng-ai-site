@@ -53,7 +53,13 @@ jobs:
           echo "SOURCE_TUTORIALS_SHA=$tutorials_sha" >> "$GITHUB_ENV"
           echo "SOURCE_KBMONO_SHA=$kbmono_sha" >> "$GITHUB_ENV"
           echo "SOURCE_MA2026_SHA=$ma2026_sha" >> "$GITHUB_ENV"
-          echo "SOURCE_MA2025_SHA=$ma2025_sha" >> "$GITHUB_ENV"
+          echo "SOURCE_MA2025_SHA=$ma2025_sha
+          ma2023_sha=$(git ls-remote https://github.com/lennonli/ma-restructuring-kb-2023.git refs/heads/main | cut -f1)
+          test -n "$ma2023_sha"
+          echo "SOURCE_MA2023_SHA=$ma2023_sha" >> "$GITHUB_ENV"
+          ma2024_sha=$(git ls-remote https://github.com/lennonli/ma-restructuring-kb-2024.git refs/heads/main | cut -f1)
+          test -n "$ma2024_sha"
+          echo "SOURCE_MA2024_SHA=$ma2024_sha" >> "$GITHUB_ENV"" >> "$GITHUB_ENV"
 
       - name: Build and test site
         run: npm test
@@ -189,7 +195,7 @@ jobs:
               && curl --fail --silent --show-error https://ai.licheng.uk/ma2025/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb2025/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb2024/ >/dev/null \
-              && curl --fail --silent --show-error https://ai.licheng.uk/kb2023/ >/dev/null; then
+              && curl --fail --silent --show-error https://ai.licheng.uk/ma2024/ >/dev/null; then
               exit 0
             fi
             sleep 10

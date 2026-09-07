@@ -56,6 +56,18 @@ const sources = [
     name: '并购重组案例 2025',
     repo: 'https://github.com/lennonli/ma-restructuring-kb-2025.git',
     localRepo: path.resolve(root, '..', '26-并购重组案例知识库-2025')
+  },
+  {
+    key: 'ma2024',
+    name: '并购重组案例 2024',
+    repo: 'https://github.com/lennonli/ma-restructuring-kb-2024.git',
+    localRepo: path.resolve(root, '..', '28-并购重组案例知识库-2024')
+  },
+  {
+    key: 'ma2023',
+    name: '并购重组案例 2023',
+    repo: 'https://github.com/lennonli/ma-restructuring-kb-2023.git',
+    localRepo: path.resolve(root, '..', '27-并购重组案例知识库-2023')
   }
 ]
 
@@ -75,6 +87,8 @@ const sourceWebUrls = {
   kb2023: 'https://github.com/lennonli/ipo-inquiry-kb',
   ma2026: 'https://github.com/lennonli/ma-restructuring-kb-2026',
   ma2025: 'https://github.com/lennonli/ma-restructuring-kb-2025',
+  ma2024: 'https://github.com/lennonli/ma-restructuring-kb-2024',
+  ma2023: 'https://github.com/lennonli/ma-restructuring-kb-2023',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -821,6 +835,16 @@ function writeGeneratedSidebar() {
       destDir: ma2025Dest
     }),
     ...buildSectionSidebar({
+      section: 'ma2024',
+      indexText: '并购重组案例库·2024',
+      destDir: ma2024Dest
+    }),
+    ...buildSectionSidebar({
+      section: 'ma2023',
+      indexText: '并购重组案例库·2023',
+      destDir: ma2023Dest
+    }),
+    ...buildSectionSidebar({
       section: 'kb2024',
       indexText: 'IPO与挂牌问询案例库·2024',
       destDir: kb2024Dest
@@ -1511,6 +1535,32 @@ const ma2025Dest = buildKbYear({
   annualFile: '2025年度总结.md',
   annualTitle: '📊 2025 年度总结报告',
   sourceDir: ma2025Src
+})
+const ma2024Src = path.join(cacheDir, 'ma2024')
+const ma2024IndexPath = path.join(ma2024Src, 'scripts', 'index.json')
+const ma2024Entries = existsSync(ma2024IndexPath) ? JSON.parse(readFileSync(ma2024IndexPath, 'utf8')) : []
+const ma2024Dest = buildKbYear({
+  key: 'ma2024',
+  base: '/ma2024',
+  title: '并购重组审核案例库 · 2024年度',
+  lead: '2024 年注册生效重大资产重组 11 单（发行股份购买资产/重组上市/吸收合并），一案一文。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: ma2024Entries,
+  annualFile: '2024年度总结.md',
+  annualTitle: '📊 2024 年度总结报告',
+  sourceDir: ma2024Src
+})
+const ma2023Src = path.join(cacheDir, 'ma2023')
+const ma2023IndexPath = path.join(ma2023Src, 'scripts', 'index.json')
+const ma2023Entries = existsSync(ma2023IndexPath) ? JSON.parse(readFileSync(ma2023IndexPath, 'utf8')) : []
+const ma2023Dest = buildKbYear({
+  key: 'ma2023',
+  base: '/ma2023',
+  title: '并购重组审核案例库 · 2023年度',
+  lead: '2023 年注册生效重大资产重组 7 单（发行股份购买资产/重组上市/吸收合并），一案一文。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: ma2023Entries,
+  annualFile: '2023年度总结.md',
+  annualTitle: '📊 2023 年度总结报告',
+  sourceDir: ma2023Src
 })
 
 // 2024 年度库（/kb2024/）

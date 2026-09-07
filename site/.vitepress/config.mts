@@ -10,7 +10,7 @@ function canonicalUrl(page: string) {
   return new URL(route || '/', siteOrigin).href
 }
 
-const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2026/', '/ma2025/']
+const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2026/', '/ma2025/', '/ma2024/', '/ma2023/']
 
 function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
   if (/__analytics-|\/dashboard\//.test(env.path || '')) return ''
