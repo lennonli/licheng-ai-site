@@ -70,22 +70,32 @@
     <span class="home-card-desc">2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/ma2025/">
-    <span class="home-card-index">09 / MA Cases 2025</span>
+    <span class="home-card-index">10 / MA Cases 2025</span>
     <span class="home-card-title">并购重组案例库 · 2025年度</span>
-    <span class="home-card-desc">2025 年注册生效重大资产重组 19 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
+    <span class="home-card-desc">2025 年注册生效重大资产重组 35 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
+  </a>
+  <a class="home-card" href="/ma2024/">
+    <span class="home-card-index">11 / MA Cases 2024</span>
+    <span class="home-card-title">并购重组案例库 · 2024年度</span>
+    <span class="home-card-desc">2024 年注册生效重大资产重组 11 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
+  </a>
+  <a class="home-card" href="/ma2023/">
+    <span class="home-card-index">12 / MA Cases 2023</span>
+    <span class="home-card-title">并购重组案例库 · 2023年度</span>
+    <span class="home-card-desc">2023 年注册生效重大资产重组 7 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">09 / Cases 2024</span>
+    <span class="home-card-index">13 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">10 / Cases 2023</span>
+    <span class="home-card-index">14 / Cases 2023</span>
     <span class="home-card-title">问询案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">11 / Directory</span>
+    <span class="home-card-index">15 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>

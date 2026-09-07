@@ -962,22 +962,32 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-desc">2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/ma2025/">
-    <span class="home-card-index">09 / MA Cases 2025</span>
+    <span class="home-card-index">10 / MA Cases 2025</span>
     <span class="home-card-title">并购重组案例库 · 2025年度</span>
-    <span class="home-card-desc">2025 年注册生效重大资产重组 19 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
+    <span class="home-card-desc">2025 年注册生效重大资产重组 35 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
+  </a>
+  <a class="home-card" href="/ma2024/">
+    <span class="home-card-index">11 / MA Cases 2024</span>
+    <span class="home-card-title">并购重组案例库 · 2024年度</span>
+    <span class="home-card-desc">2024 年注册生效重大资产重组 11 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
+  </a>
+  <a class="home-card" href="/ma2023/">
+    <span class="home-card-index">12 / MA Cases 2023</span>
+    <span class="home-card-title">并购重组案例库 · 2023年度</span>
+    <span class="home-card-desc">2023 年注册生效重大资产重组 7 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">09 / Cases 2024</span>
+    <span class="home-card-index">13 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">10 / Cases 2023</span>
+    <span class="home-card-index">14 / Cases 2023</span>
     <span class="home-card-title">问询案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">11 / Directory</span>
+    <span class="home-card-index">15 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
@@ -1339,7 +1349,7 @@ ${latestArticleList(latestArticles)}
 const kbBoardOrder = ['北交所', '科创板', '深市创业板', '沪市主板', '深市主板', '新三板']
 
 function aiTutorialSection(base, repoUrl, exampleCase) {
-  const isMa = base === '/ma2026' || base === '/ma2025'
+  const isMa = ['/ma2026', '/ma2025', '/ma2024', '/ma2023'].includes(base)
   const libraryType = isMa ? '并购重组审核法律问题案例库' : 'IPO/挂牌审核问询法律问题案例库'
   const exampleTopics = isMa ? '“业绩承诺与补偿”与“支付方式与发股定价”' : '“股权代持”与“特殊投资条款”'
   const institutionLabel = isMa ? '上市公司与' : '发行人与'
@@ -1393,7 +1403,7 @@ function normalizePlainUrls(markdown) {
 }
 
 function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle, sourceDir = null }) {
-  const isMa = key === 'ma2026' || key === 'ma2025'
+  const isMa = ['ma2026', 'ma2025', 'ma2024', 'ma2023'].includes(key)
   const dest = path.join(siteDir, key)
   const src = sourceDir || kbYearCacheSrc(key)
   ensureDir(dest)
@@ -1439,11 +1449,22 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
   }
 
   const sourceLine = `<p class="source-link">来源仓库：${sourceWebUrls[key].replace('https://github.com/', '')}（共 ${entries.length} 份案例）｜<a href="${base}/${annualFile.replace(/\.md$/, '')}">${annualTitle}</a></p>`
-  const tutorialExample = key === 'kb' ? '920079-乔路铭' : key === 'kb2025' ? '920116-星图测控' : key === 'ma2026' ? '000100-TCL科技' : key === 'ma2025' ? '000561-烽火电子' : key === 'kb2023' ? '920950-迅安科技' : '920002-万达轴承'
+  const tutorialExamples = {
+    kb: '920079-乔路铭',
+    kb2025: '920116-星图测控',
+    kb2024: '920002-万达轴承',
+    kb2023: '920950-迅安科技',
+    ma2026: '000100-TCL科技',
+    ma2025: '000561-烽火电子',
+    ma2024: '000657-中钨高新',
+    ma2023: '688201-北京信安世纪'
+  }
+  const tutorialExample = tutorialExamples[key] || '920002-万达轴承'
   const legacyHead = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n${sourceLine}\n\n${aiTutorialSection(base, sourceWebUrls[key], tutorialExample)}\n\n`
 
   const yearLinks = isMa
-    ? `<a href="/ma2026/"${key === 'ma2026' ? ' aria-current="page"' : ''}>并购重组 2026 年</a> · <a href="/ma2025/"${key === 'ma2025' ? ' aria-current="page"' : ''}>并购重组 2025 年</a>`
+    ? [['ma2026', '2026'], ['ma2025', '2025'], ['ma2024', '2024'], ['ma2023', '2023']]
+      .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>并购重组 ${year} 年</a>`).join(' · ')
     : [['kb', '2026'], ['kb2025', '2025'], ['kb2024', '2024'], ['kb2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>${year} 年</a>`).join(' · ')
   let indexMd = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n<nav aria-label="案例库年度">${yearLinks}</nav>\n\n${sourceLine}\n\n[安装知识库技能与 MCP 使用教程](/kbskill/)\n\n<CaseFilter />\n\n<div class="case-directory">\n\n`
@@ -1530,7 +1551,7 @@ const ma2025Dest = buildKbYear({
   key: 'ma2025',
   base: '/ma2025',
   title: '并购重组审核案例库 · 2025年度',
-  lead: '2025 年注册生效重大资产重组 19 单（发行股份购买资产/重组上市/吸收合并），一案一文，沉淀交易方案、支付方式、交易金额、问询要点与律师核查结论。可用站内搜索按公司简称、代码、交易类型、支付方式或法律问题关键词检索。',
+  lead: '2025 年注册生效重大资产重组 35 单（发行股份购买资产/重组上市/吸收合并），一案一文，沉淀交易方案、支付方式、交易金额、问询要点与律师核查结论。可用站内搜索按公司简称、代码、交易类型、支付方式或法律问题关键词检索。',
   entries: ma2025Entries,
   annualFile: '2025年度总结.md',
   annualTitle: '📊 2025 年度总结报告',

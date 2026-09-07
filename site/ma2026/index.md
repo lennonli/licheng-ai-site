@@ -4,7 +4,7 @@
 
 <p class="section-lead">2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），一案一文，沉淀交易方案、支付方式、交易金额、问询要点与律师核查结论。可用站内搜索按公司简称、代码、交易类型、支付方式或法律问题关键词检索。</p>
 
-<nav aria-label="案例库年度"><a href="/ma2026/" aria-current="page">并购重组 2026 年</a> · <a href="/ma2025/">并购重组 2025 年</a></nav>
+<nav aria-label="案例库年度"><a href="/ma2026/" aria-current="page">并购重组 2026 年</a> · <a href="/ma2025/">并购重组 2025 年</a> · <a href="/ma2024/">并购重组 2024 年</a> · <a href="/ma2023/">并购重组 2023 年</a></nav>
 
 <p class="source-link">来源仓库：lennonli/ma-restructuring-kb-2026（共 17 份案例）｜<a href="/ma2026/2026年度总结">📊 2026 年度总结报告</a></p>
 
