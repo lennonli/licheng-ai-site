@@ -90,6 +90,7 @@ const sourceWebUrls = {
   ma2024: 'https://github.com/lennonli/ma-restructuring-kb-2024',
   ma2023: 'https://github.com/lennonli/ma-restructuring-kb-2023',
   refi2025: 'https://github.com/lennonli/ipo-inquiry-kb',
+  refi2024: 'https://github.com/lennonli/ipo-inquiry-kb',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -851,6 +852,11 @@ function writeGeneratedSidebar() {
       destDir: refi2025Dest
     }),
     ...buildSectionSidebar({
+      section: 'refi2024',
+      indexText: '再融资案例库·2024',
+      destDir: refi2024Dest
+    }),
+    ...buildSectionSidebar({
       section: 'ma-tutorial',
       indexText: '知识库制作教程',
       destDir: maTutorialDest
@@ -891,7 +897,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'kb2024', 'kb2023', 'refi2025', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'kb2024', 'kb2023', 'refi2025', 'refi2024', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'series'), { recursive: true, force: true })
@@ -992,18 +998,23 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">再融资案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年度深市再融资审核问询案例 76 家（定向增发/可转债，69 家注册生效），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
   </a>
+  <a class="home-card" href="/refi2024/">
+    <span class="home-card-index">14 / Refi Cases 2024</span>
+    <span class="home-card-title">再融资案例库 · 2024年度</span>
+    <span class="home-card-desc">2024 年度深市再融资审核问询案例 33 家（24 家注册生效、8 家撤回、1 家被否后重报获准），覆盖募集资金用途、财务性投资、同业竞争等法律要点。</span>
+  </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">14 / Cases 2024</span>
+    <span class="home-card-index">16 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">15 / Cases 2023</span>
+    <span class="home-card-index">17 / Cases 2023</span>
     <span class="home-card-title">问询案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">16 / Directory</span>
+    <span class="home-card-index">18 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
@@ -1366,7 +1377,7 @@ const kbBoardOrder = ['北交所', '科创板', '深市创业板', '沪市主板
 
 function aiTutorialSection(base, repoUrl, exampleCase) {
   const isMa = ['/ma2026', '/ma2025', '/ma2024', '/ma2023'].includes(base)
-  const isRefi = base === '/refi2025'
+  const isRefi = base.startsWith('/refi')
   const libraryType = isRefi ? '上市公司再融资审核问询法律问题案例库' : isMa ? '并购重组审核法律问题案例库' : 'IPO/挂牌审核问询法律问题案例库'
   const exampleTopics = isRefi ? '“财务性投资认定与扣除”与“募集资金用途与补流比例”' : isMa ? '“业绩承诺与补偿”与“支付方式与发股定价”' : '“股权代持”与“特殊投资条款”'
   const institutionLabel = isMa ? '上市公司与' : '发行人与'
@@ -1477,7 +1488,8 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
     ma2025: '000561-烽火电子',
     ma2024: '000657-中钨高新',
     ma2023: '688201-北京信安世纪',
-    refi2025: '001301-石家庄尚太科'
+    refi2025: '001301-石家庄尚太科',
+    refi2024: '002600-领益智造'
   }
   const tutorialExample = tutorialExamples[key] || '920002-万达轴承'
   const legacyHead = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n${sourceLine}\n\n${aiTutorialSection(base, sourceWebUrls[key], tutorialExample)}\n\n`
@@ -1485,8 +1497,9 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
   const yearLinks = isMa
     ? [['ma2026', '2026'], ['ma2025', '2025'], ['ma2024', '2024'], ['ma2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>并购重组 ${year} 年</a>`).join(' · ')
-    : key === 'refi2025'
-    ? `<a href="/refi2025/" aria-current="page">再融资 2025 年</a>`
+    : key.startsWith('refi')
+    ? [['refi2025', '2025'], ['refi2024', '2024']]
+      .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>再融资 ${year} 年</a>`).join(' · ')
     : [['kb', '2026'], ['kb2025', '2025'], ['kb2024', '2024'], ['kb2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>${year} 年</a>`).join(' · ')
   let indexMd = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n<nav aria-label="案例库年度">${yearLinks}</nav>\n\n${sourceLine}\n\n[安装知识库技能与 MCP 使用教程](/kbskill/)\n\n<CaseFilter />\n\n<div class="case-directory">\n\n`
@@ -1505,7 +1518,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
         ? `注册生效 ${entry.registered_date || '待核验'}`
         : (entry.listing_date ? `｜${board === '新三板' ? '挂牌' : '上市'} ${entry.listing_date}` : '')
       const amount = entry.deal_amount === '' || entry.deal_amount == null ? '待核验' : entry.deal_amount
-      const summary = key === 'refi2025'
+      const summary = key.startsWith('refi')
         ? `${entry.refi_type || '再融资'}｜募资上限 ${amount} 万元｜${entry.status_short || '审核状态待核验'}｜${entry.lawyer || '律所未载明'}`
         : isMa
         ? `${entry.lawyer || '律所未载明'}｜${dateLabel}｜${entry.pay_method || '支付方式待核验'}｜交易金额 ${amount} 万元`
@@ -1621,6 +1634,21 @@ const refi2025Dest = buildKbYear({
   annualFile: '2025年度总结.md',
   annualTitle: '📊 2025 年度总结报告',
   sourceDir: refi2025Src
+})
+
+// 2024 年再融资年度库（/refi2024/）
+const refi2024Src = path.join(cacheDir, 'kbmono', 'refi2024')
+const refi2024IndexPath = path.join(refi2024Src, 'scripts', 'index.json')
+const refi2024Entries = existsSync(refi2024IndexPath) ? JSON.parse(readFileSync(refi2024IndexPath, 'utf8')) : []
+const refi2024Dest = buildKbYear({
+  key: 'refi2024',
+  base: '/refi2024',
+  title: '再融资审核案例库 · 2024年度',
+  lead: '2024 年度深市再融资（定向增发/可转债）审核问询案例 33 家（24 家注册生效、8 家撤回、1 家被上市委否决后重新申报获准），一案一文，沉淀募集资金用途、财务性投资、前次募集资金、发行对象与定价等问询要点与律师核查结论。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: refi2024Entries,
+  annualFile: '2024年度总结.md',
+  annualTitle: '📊 2024 年度总结报告',
+  sourceDir: refi2024Src
 })
 
 // 教程页
