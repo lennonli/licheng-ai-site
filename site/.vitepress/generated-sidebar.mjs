@@ -60120,6 +60120,12 @@ export const generatedSidebar = {
       "link": "/ma2023/"
     }
   ],
+  "/ma-tutorial/": [
+    {
+      "text": "知识库制作教程",
+      "link": "/ma-tutorial/"
+    }
+  ],
   "/kb2024/001277-速达股份": [
     {
       "text": "返回栏目列表",

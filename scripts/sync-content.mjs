@@ -845,6 +845,11 @@ function writeGeneratedSidebar() {
       destDir: ma2023Dest
     }),
     ...buildSectionSidebar({
+      section: 'ma-tutorial',
+      indexText: '知识库制作教程',
+      destDir: maTutorialDest
+    }),
+    ...buildSectionSidebar({
       section: 'kb2024',
       indexText: 'IPO与挂牌问询案例库·2024',
       destDir: kb2024Dest
@@ -1583,6 +1588,12 @@ const ma2023Dest = buildKbYear({
   annualTitle: '📊 2023 年度总结报告',
   sourceDir: ma2023Src
 })
+
+// 教程页
+const maTutorialSrc = path.join(cacheDir, 'ma2023')
+const maTutorialDest = path.join(siteDir, 'ma-tutorial')
+ensureDir(maTutorialDest)
+
 
 // 2024 年度库（/kb2024/）
 const kb2024Src = kbYearCacheSrc('kb2024')
