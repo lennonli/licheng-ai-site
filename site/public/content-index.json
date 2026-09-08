@@ -1,5 +1,41 @@
 [
   {
+    "href": "/tutorials/并购重组案例知识库制作教程",
+    "title": "并购重组审核问询案例知识库制作教程",
+    "summary": "按步骤执行即可从零构建一个年度的并购重组（重组委审核+证监会注册）案例知识库，并同步上线至网站和 MCP。全程约 4-5 个工作日。；本教程以 2026 年度（17 家）为范例，其他年度替换年份与数据源路径即可。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-notes-05-ai-scales-human-labor",
+    "title": "AI札记05｜AI其实是在大规模复制人力",
+    "summary": "AI带来的变化，不只是“让一个人做得更快”。；它开始让一部分脑力劳动可以被大规模复制。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-notes-01-agent-project-navigation",
+    "title": "AI札记01｜别指望一个Agent一次做完一个大项目",
+    "summary": "复杂项目，不应该幻想靠一个Agent、一条提示词，一次性从头做到尾。；刚开始用AI的时候，很容易有这种期待：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-notes-02-agent-first-workday",
+    "title": "AI札记02｜早上打开电脑第一件事，不再是打开Office，而是打开AI智能体",
+    "summary": "我发现自己的工作习惯正在发生一个很明显的变化。；以前早上打开电脑，第一件事通常是打开：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-notes-03-office-software-as-mcp",
+    "title": "AI札记03｜未来的办公软件，可能都会变成Agent背后的MCP",
+    "summary": "早上打开电脑第一件事，可能不再是打开Office，而是打开AI智能体。；以后我们今天熟悉的大量办公软件，可能都会慢慢退到Agent后面。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-notes-04-ai-file-search",
+    "title": "AI札记04｜我连Finder都越来越少用了：找文件这件事，也开始交给AI",
+    "summary": "我最近发现一个很具体、但也很能说明问题的变化：；以前在Mac上工作，找文件几乎是每天最频繁的动作之一。",
+    "section": "AI 教程"
+  },
+  {
     "href": "/tutorials/ai-infra-01-subscribe-top-model",
     "title": "AI基建的第一步：花钱订阅一个顶级的大模型大脑",
     "summary": "很多人开始搭建自己的 AI 工作系统时，第一反应是研究提示词、MCP、知识库、Agent，甚至先买服务器。；但如果让我重新从零开始搭一套 AI 工作系统，我做的第一件事其实非常简单：",

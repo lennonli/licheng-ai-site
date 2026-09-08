@@ -84,18 +84,23 @@
     <span class="home-card-title">并购重组案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年注册生效重大资产重组 7 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
+  <a class="home-card" href="/refi2025/">
+    <span class="home-card-index">13 / Refi Cases 2025</span>
+    <span class="home-card-title">再融资案例库 · 2025年度</span>
+    <span class="home-card-desc">2025 年度深市再融资审核问询案例 76 家（定向增发/可转债，69 家注册生效），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
+  </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">13 / Cases 2024</span>
+    <span class="home-card-index">14 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">14 / Cases 2023</span>
+    <span class="home-card-index">15 / Cases 2023</span>
     <span class="home-card-title">问询案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">15 / Directory</span>
+    <span class="home-card-index">16 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
