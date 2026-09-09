@@ -94,18 +94,23 @@
     <span class="home-card-title">再融资案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年度深市再融资审核问询案例 33 家（24 家注册生效、8 家撤回、1 家被否后重报获准），覆盖募集资金用途、财务性投资、同业竞争等法律要点。</span>
   </a>
+  <a class="home-card" href="/refi2023/">
+    <span class="home-card-index">15 / Refi Cases 2023</span>
+    <span class="home-card-title">再融资案例库 · 2023年度</span>
+    <span class="home-card-desc">2023 年度沪深再融资审核问询案例 390 家（313 家注册生效、68 家终止），全面注册制首年与 827 新规撤回潮全景样本。</span>
+  </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">16 / Cases 2024</span>
+    <span class="home-card-index">17 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">17 / Cases 2023</span>
+    <span class="home-card-index">18 / Cases 2023</span>
     <span class="home-card-title">问询案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">18 / Directory</span>
+    <span class="home-card-index">19 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>

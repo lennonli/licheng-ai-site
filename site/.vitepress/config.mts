@@ -10,7 +10,7 @@ function canonicalUrl(page: string) {
   return new URL(route || '/', siteOrigin).href
 }
 
-const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2026/', '/ma2025/', '/ma2024/', '/ma2023/', '/refi2025/', '/refi2024/']
+const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2026/', '/ma2025/', '/ma2024/', '/ma2023/', '/refi2025/', '/refi2024/', '/refi2023/']
 
 function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
   if (/__analytics-|\/dashboard\//.test(env.path || '')) return ''
@@ -159,7 +159,9 @@ export default defineConfig({
         { text: '2025 年度案例库', link: '/refi2025/' },
         { text: '2025 年度总结', link: '/refi2025/2025年度总结' },
         { text: '2024 年度案例库', link: '/refi2024/' },
-        { text: '2024 年度总结', link: '/refi2024/2024年度总结' }
+        { text: '2024 年度总结', link: '/refi2024/2024年度总结' },
+        { text: '2023 年度案例库', link: '/refi2023/' },
+        { text: '2023 年度总结', link: '/refi2023/2023年度总结' }
       ] },
       { text: '实用工具', items: [
         { text: '工具总览', link: '/tools/' },

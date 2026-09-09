@@ -91,6 +91,7 @@ const sourceWebUrls = {
   ma2023: 'https://github.com/lennonli/ma-restructuring-kb-2023',
   refi2025: 'https://github.com/lennonli/ipo-inquiry-kb',
   refi2024: 'https://github.com/lennonli/ipo-inquiry-kb',
+  refi2023: 'https://github.com/lennonli/ipo-inquiry-kb',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -857,6 +858,11 @@ function writeGeneratedSidebar() {
       destDir: refi2024Dest
     }),
     ...buildSectionSidebar({
+      section: 'refi2023',
+      indexText: '再融资案例库·2023',
+      destDir: refi2023Dest
+    }),
+    ...buildSectionSidebar({
       section: 'ma-tutorial',
       indexText: '知识库制作教程',
       destDir: maTutorialDest
@@ -897,7 +903,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'kb2024', 'kb2023', 'refi2025', 'refi2024', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'kb2024', 'kb2023', 'refi2025', 'refi2024', 'refi2023', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'series'), { recursive: true, force: true })
@@ -1003,18 +1009,23 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">再融资案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年度深市再融资审核问询案例 33 家（24 家注册生效、8 家撤回、1 家被否后重报获准），覆盖募集资金用途、财务性投资、同业竞争等法律要点。</span>
   </a>
+  <a class="home-card" href="/refi2023/">
+    <span class="home-card-index">15 / Refi Cases 2023</span>
+    <span class="home-card-title">再融资案例库 · 2023年度</span>
+    <span class="home-card-desc">2023 年度沪深再融资审核问询案例 390 家（313 家注册生效、68 家终止），全面注册制首年与 827 新规撤回潮全景样本。</span>
+  </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">16 / Cases 2024</span>
+    <span class="home-card-index">17 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">17 / Cases 2023</span>
+    <span class="home-card-index">18 / Cases 2023</span>
     <span class="home-card-title">问询案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">18 / Directory</span>
+    <span class="home-card-index">19 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
@@ -1449,7 +1460,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
       if (normalized !== markdown) writeFileSync(file, normalized)
     }
   }
-  if (key === 'kb2023') {
+  if (key === 'kb2023' || key.startsWith('refi')) {
     for (const name of readDirSafe(dest).filter((entry) => entry.endsWith('.md'))) {
       const file = path.join(dest, name)
       const markdown = readFileSync(file, 'utf8')
@@ -1489,7 +1500,8 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
     ma2024: '000657-中钨高新',
     ma2023: '688201-北京信安世纪',
     refi2025: '001301-石家庄尚太科',
-    refi2024: '002600-领益智造'
+    refi2024: '002600-领益智造',
+    refi2023: '000034-神州数码'
   }
   const tutorialExample = tutorialExamples[key] || '920002-万达轴承'
   const legacyHead = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n${sourceLine}\n\n${aiTutorialSection(base, sourceWebUrls[key], tutorialExample)}\n\n`
@@ -1498,7 +1510,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
     ? [['ma2026', '2026'], ['ma2025', '2025'], ['ma2024', '2024'], ['ma2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>并购重组 ${year} 年</a>`).join(' · ')
     : key.startsWith('refi')
-    ? [['refi2025', '2025'], ['refi2024', '2024']]
+    ? [['refi2025', '2025'], ['refi2024', '2024'], ['refi2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>再融资 ${year} 年</a>`).join(' · ')
     : [['kb', '2026'], ['kb2025', '2025'], ['kb2024', '2024'], ['kb2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>${year} 年</a>`).join(' · ')
@@ -1649,6 +1661,21 @@ const refi2024Dest = buildKbYear({
   annualFile: '2024年度总结.md',
   annualTitle: '📊 2024 年度总结报告',
   sourceDir: refi2024Src
+})
+
+// 2023 年再融资年度库（/refi2023/）
+const refi2023Src = path.join(cacheDir, 'kbmono', 'refi2023')
+const refi2023IndexPath = path.join(refi2023Src, 'scripts', 'index.json')
+const refi2023Entries = existsSync(refi2023IndexPath) ? JSON.parse(readFileSync(refi2023IndexPath, 'utf8')) : []
+const refi2023Dest = buildKbYear({
+  key: 'refi2023',
+  base: '/refi2023',
+  title: '再融资审核案例库 · 2023年度',
+  lead: '2023 年度沪深再融资（定向增发/可转债/配股）审核问询案例 390 家（313 家注册生效、68 家终止、9 家审核中），全面注册制首年与 827 新规撤回潮的全景样本，一案一文，沉淀募集资金用途、财务性投资、前次募集资金、发行对象与定价等问询要点与律师核查结论。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: refi2023Entries,
+  annualFile: '2023年度总结.md',
+  annualTitle: '📊 2023 年度总结报告',
+  sourceDir: refi2023Src
 })
 
 // 教程页
