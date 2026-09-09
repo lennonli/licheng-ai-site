@@ -1,5 +1,11 @@
 [
   {
+    "href": "/tutorials/agent-practice-51-client-data-security",
+    "title": "AI实战51｜客户资料能不能交给Agent？先把保密、脱敏和数据出境这几关过了",
+    "summary": "律师用AI以后，有一个问题迟早都会遇到：；客户资料到底能不能直接交给Agent？",
+    "section": "AI 教程"
+  },
+  {
     "href": "/tutorials/并购重组案例知识库制作教程",
     "title": "并购重组审核问询案例知识库制作教程",
     "summary": "按步骤执行即可从零构建一个年度的并购重组（重组委审核+证监会注册）案例知识库，并同步上线至网站和 MCP。全程约 4-5 个工作日。；本教程以 2026 年度（17 家）为范例，其他年度替换年份与数据源路径即可。",
@@ -34,6 +40,12 @@
     "title": "AI札记04｜我连Finder都越来越少用了：找文件这件事，也开始交给AI",
     "summary": "我最近发现一个很具体、但也很能说明问题的变化：；以前在Mac上工作，找文件几乎是每天最频繁的动作之一。",
     "section": "AI 教程"
+  },
+  {
+    "href": "/skills/ipo-kb",
+    "title": "IPO问询案例库检索",
+    "summary": "纯 Markdown 知识库，本地克隆 + 按年度子目录（与 GitHub 主仓 lennonli/ipo-inquiry-kb；同源，一司一文），网页版 https://ai.licheng.uk/kb/。",
+    "section": "法律业务 Skill"
   },
   {
     "href": "/tutorials/ai-infra-01-subscribe-top-model",
@@ -94,6 +106,18 @@
     "title": "AI基建的第十步：别再继续搭了，让它自己跑起来",
     "summary": "前面已经搭了模型、Agent、Mac、MCP、GitHub、远程环境、VPS、本地模型和备份。；做到这里以后，我觉得最重要的反而不是继续装新东西，而是：",
     "section": "AI 教程"
+  },
+  {
+    "href": "/skills/contract-review",
+    "title": "合同审查",
+    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/agents/为什么这些规则要写进全局指令",
+    "title": "为什么这些规则要写进全局指令",
+    "summary": "本文先列出通用指令的条款原文，再说明这一条为什么写在全局指令里，而不是放在项目指令里、或者每次对话时口头交代。；对应版本：V3。文中客户信息一律以【】占位。",
+    "section": "智能体指令"
   },
   {
     "href": "/tutorials/agent-practice-01-delegate-complete-work",
@@ -406,6 +430,12 @@
     "title": "让 AI 直接帮我搭建第二个网站",
     "summary": "请你作为网站项目负责人，按照我现有网站 ai.licheng.uk 的基本方式，直接帮我搭建一个全新网站。；我不会写代码，也不希望自己安装软件、修改配置文件或敲命令。除非必须登录、授权或输入密码，其他工作请你直接完成。",
     "section": "AI 教程"
+  },
+  {
+    "href": "/skills/company-preliminary-analysis",
+    "title": "委托前公司初步分析报告",
+    "summary": "用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。",
+    "section": "法律业务 Skill"
   },
   {
     "href": "/tutorials/gzh-template-with-ai",
@@ -774,6 +804,12 @@
     "section": "AI 教程"
   },
   {
+    "href": "/agents/法律业务通用指令",
+    "title": "法律业务通用指令",
+    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
+    "section": "智能体指令"
+  },
+  {
     "href": "/tutorials/civil-litigation-evidence-organization",
     "title": "证据整理与证据目录",
     "summary": "民事诉讼 AI 实战系列·第二篇｜2026-08-27；本篇默认你已读过《诉讼 AI 工作总则》——能力边界、保密分级、本地 OCR 工具链、反编造纪律、模板复用四步法都在那里，本篇不再重复。",
@@ -903,12 +939,6 @@
     "href": "/agents/AI-Agent辅助IPO股东穿透实操教程",
     "title": "AI Agent辅助IPO股东穿透核查与底稿归档实操教程",
     "summary": "以某新三板挂牌公司北交所IPO项目为样本 · AI工具：ZCode Agent ＋ 案牍AnduAI穿透报告 · 2026年8月；本教程按实际操作的时间顺序，复盘用AI Agent完成股东穿透底稿归档与资料跟踪的全流程，共十一个步骤。每……",
-    "section": "智能体指令"
-  },
-  {
-    "href": "/agents/法律业务通用指令",
-    "title": "法律业务通用指令",
-    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
     "section": "智能体指令"
   },
   {

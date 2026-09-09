@@ -62,7 +62,7 @@
   {
     "id": "ai-practice",
     "title": "AI实战：把真实工作交给Agent",
-    "description": "50篇可直接落地的法律AI实战：文件与日常事务、尽职调查全流程、法律研究与IPO问询、诉讼专题（以买卖合同质量纠纷为贯穿示例）与定时任务，每篇均附可直接复制的实战提示词。",
+    "description": "51篇可直接落地的法律AI实战：文件与日常事务、尽职调查全流程、法律研究与IPO问询、诉讼专题（以买卖合同质量纠纷为贯穿示例）、定时任务，以及客户资料交给Agent前的保密、脱敏与数据出境分级合规，每篇均附可直接复制的实战提示词。",
     "slugs": [
       "agent-practice-series-overview",
       "agent-practice-01-delegate-complete-work",
@@ -114,7 +114,8 @@
       "agent-practice-47-scheduled-legal-briefing",
       "agent-practice-48-weekly-project-inspection",
       "agent-practice-49-continuous-monitoring",
-      "agent-practice-50-daily-morning-brief"
+      "agent-practice-50-daily-morning-brief",
+      "agent-practice-51-client-data-security"
     ]
   },
   {

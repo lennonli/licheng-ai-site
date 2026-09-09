@@ -615,6 +615,101 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/agents/为什么这些规则要写进全局指令": [
+    {
+      "text": "返回栏目列表",
+      "link": "/agents/"
+    },
+    {
+      "text": "为什么这些规则要写进全局指令",
+      "link": "/agents/为什么这些规则要写进全局指令"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "——《法律业务通用指令》逐条说明",
+          "link": "/agents/为什么这些规则要写进全局指令#——《法律业务通用指令》逐条说明"
+        },
+        {
+          "text": "开篇：指令分三层，怎么分",
+          "link": "/agents/为什么这些规则要写进全局指令#开篇-指令分三层-怎么分"
+        },
+        {
+          "text": "第〇章 指令效力与冲突解决",
+          "link": "/agents/为什么这些规则要写进全局指令#第〇章-指令效力与冲突解决"
+        },
+        {
+          "text": "第一章 角色定位与利益立场",
+          "link": "/agents/为什么这些规则要写进全局指令#第一章-角色定位与利益立场"
+        },
+        {
+          "text": "第二章 保密与脱敏红线",
+          "link": "/agents/为什么这些规则要写进全局指令#第二章-保密与脱敏红线"
+        },
+        {
+          "text": "第三章 事实与法律依据核验（反编造红线）",
+          "link": "/agents/为什么这些规则要写进全局指令#第三章-事实与法律依据核验-反编造红线"
+        },
+        {
+          "text": "第四章 任务分流与执行流程",
+          "link": "/agents/为什么这些规则要写进全局指令#第四章-任务分流与执行流程"
+        },
+        {
+          "text": "第五章 不确定性表述与风险分级",
+          "link": "/agents/为什么这些规则要写进全局指令#第五章-不确定性表述与风险分级"
+        },
+        {
+          "text": "第六章 起草与修订规则",
+          "link": "/agents/为什么这些规则要写进全局指令#第六章-起草与修订规则"
+        },
+        {
+          "text": "第七章 引用与出处格式",
+          "link": "/agents/为什么这些规则要写进全局指令#第七章-引用与出处格式"
+        },
+        {
+          "text": "第八章 Word 文档格式规范",
+          "link": "/agents/为什么这些规则要写进全局指令#第八章-word-文档格式规范"
+        },
+        {
+          "text": "第九章 文件命名、版本与交付",
+          "link": "/agents/为什么这些规则要写进全局指令#第九章-文件命名、版本与交付"
+        },
+        {
+          "text": "第十章 律所名称与署名",
+          "link": "/agents/为什么这些规则要写进全局指令#第十章-律所名称与署名"
+        },
+        {
+          "text": "第十一章 跨境与外国法事项",
+          "link": "/agents/为什么这些规则要写进全局指令#第十一章-跨境与外国法事项"
+        },
+        {
+          "text": "第十二章 专业语气要求",
+          "link": "/agents/为什么这些规则要写进全局指令#第十二章-专业语气要求"
+        },
+        {
+          "text": "第十三章 多 Agent 协作规则",
+          "link": "/agents/为什么这些规则要写进全局指令#第十三章-多-agent-协作规则"
+        },
+        {
+          "text": "第十四章 交付前自检清单",
+          "link": "/agents/为什么这些规则要写进全局指令#第十四章-交付前自检清单"
+        },
+        {
+          "text": "附录 A 权威核验来源清单",
+          "link": "/agents/为什么这些规则要写进全局指令#附录-a-权威核验来源清单"
+        },
+        {
+          "text": "附录 B 本机文件处理与 OCR 工具",
+          "link": "/agents/为什么这些规则要写进全局指令#附录-b-本机文件处理与-ocr-工具"
+        },
+        {
+          "text": "结尾：什么不该写进全局",
+          "link": "/agents/为什么这些规则要写进全局指令#结尾-什么不该写进全局"
+        }
+      ]
+    }
+  ],
   "/agents/元典企业信息库股东穿透核查提示词": [
     {
       "text": "返回栏目列表",
@@ -1123,36 +1218,104 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、角色定位与默认立场",
-          "link": "/agents/法律业务通用指令#一、角色定位与默认立场"
+          "text": "〇、指令效力与冲突解决",
+          "link": "/agents/法律业务通用指令#〇、指令效力与冲突解决"
         },
         {
-          "text": "二、保密与信息安全",
-          "link": "/agents/法律业务通用指令#二、保密与信息安全"
+          "text": "一、角色定位与利益立场",
+          "link": "/agents/法律业务通用指令#一、角色定位与利益立场"
         },
         {
-          "text": "三、语言、法域与法律依据核验",
-          "link": "/agents/法律业务通用指令#三、语言、法域与法律依据核验"
+          "text": "二、保密与脱敏红线",
+          "link": "/agents/法律业务通用指令#二、保密与脱敏红线"
         },
         {
-          "text": "四、反编造红线",
-          "link": "/agents/法律业务通用指令#四、反编造红线"
+          "text": "三、事实与法律依据核验（反编造红线）",
+          "link": "/agents/法律业务通用指令#三、事实与法律依据核验-反编造红线",
+          "items": [
+            {
+              "text": "（一）绝对禁止",
+              "link": "/agents/法律业务通用指令#一-绝对禁止"
+            },
+            {
+              "text": "（二）核验触发条件（满足其一即须检索）",
+              "link": "/agents/法律业务通用指令#二-核验触发条件-满足其一即须检索"
+            },
+            {
+              "text": "（三）核验路径与降级顺序",
+              "link": "/agents/法律业务通用指令#三-核验路径与降级顺序"
+            },
+            {
+              "text": "（四）法域与语言",
+              "link": "/agents/法律业务通用指令#四-法域与语言"
+            }
+          ]
         },
         {
-          "text": "五、执行流程",
-          "link": "/agents/法律业务通用指令#五、执行流程"
+          "text": "四、任务分流与执行流程",
+          "link": "/agents/法律业务通用指令#四、任务分流与执行流程",
+          "items": [
+            {
+              "text": "（一）通用流程",
+              "link": "/agents/法律业务通用指令#一-通用流程"
+            },
+            {
+              "text": "（二）按任务类型分流",
+              "link": "/agents/法律业务通用指令#二-按任务类型分流"
+            },
+            {
+              "text": "（三）停止并询问的条件",
+              "link": "/agents/法律业务通用指令#三-停止并询问的条件"
+            },
+            {
+              "text": "（四）修正与反馈处理",
+              "link": "/agents/法律业务通用指令#四-修正与反馈处理"
+            }
+          ]
         },
         {
-          "text": "六、文档修订模式",
-          "link": "/agents/法律业务通用指令#六、文档修订模式"
+          "text": "五、不确定性表述与风险分级",
+          "link": "/agents/法律业务通用指令#五、不确定性表述与风险分级",
+          "items": [
+            {
+              "text": "（一）确定性分级（法律结论必须择一标注）",
+              "link": "/agents/法律业务通用指令#一-确定性分级-法律结论必须择一标注"
+            },
+            {
+              "text": "（二）风险分级（合同审查、尽调、合规核查必须标注）",
+              "link": "/agents/法律业务通用指令#二-风险分级-合同审查、尽调、合规核查必须标注"
+            }
+          ]
         },
         {
-          "text": "七、起草默认值",
-          "link": "/agents/法律业务通用指令#七、起草默认值"
+          "text": "六、起草与修订规则",
+          "link": "/agents/法律业务通用指令#六、起草与修订规则",
+          "items": [
+            {
+              "text": "（一）起草默认值",
+              "link": "/agents/法律业务通用指令#一-起草默认值"
+            },
+            {
+              "text": "（二）合同条款编号规则（合同起草优先指令）",
+              "link": "/agents/法律业务通用指令#二-合同条款编号规则-合同起草优先指令"
+            },
+            {
+              "text": "（三）修订模式",
+              "link": "/agents/法律业务通用指令#三-修订模式"
+            },
+            {
+              "text": "（四）一致性校验（起草与修订完成后必须执行）",
+              "link": "/agents/法律业务通用指令#四-一致性校验-起草与修订完成后必须执行"
+            }
+          ]
         },
         {
-          "text": "八、Word 文档格式要求",
-          "link": "/agents/法律业务通用指令#八、word-文档格式要求",
+          "text": "七、引用与出处格式",
+          "link": "/agents/法律业务通用指令#七、引用与出处格式"
+        },
+        {
+          "text": "八、Word 文档格式规范",
+          "link": "/agents/法律业务通用指令#八、word-文档格式规范",
           "items": [
             {
               "text": "（一）正文与标题",
@@ -1163,18 +1326,18 @@ export const generatedSidebar = {
               "link": "/agents/法律业务通用指令#二-表格"
             },
             {
-              "text": "（三）其他格式",
-              "link": "/agents/法律业务通用指令#三-其他格式"
+              "text": "（三）页面与其他",
+              "link": "/agents/法律业务通用指令#三-页面与其他"
             }
           ]
         },
         {
-          "text": "九、律所名称与署名",
-          "link": "/agents/法律业务通用指令#九、律所名称与署名"
+          "text": "九、文件命名、版本与交付",
+          "link": "/agents/法律业务通用指令#九、文件命名、版本与交付"
         },
         {
-          "text": "十、法律分析与引证",
-          "link": "/agents/法律业务通用指令#十、法律分析与引证"
+          "text": "十、律所名称与署名",
+          "link": "/agents/法律业务通用指令#十、律所名称与署名"
         },
         {
           "text": "十一、跨境与外国法事项",
@@ -1185,12 +1348,34 @@ export const generatedSidebar = {
           "link": "/agents/法律业务通用指令#十二、专业语气要求"
         },
         {
-          "text": "十三、法律业务多 Agent 核心规则",
-          "link": "/agents/法律业务通用指令#十三、法律业务多-agent-核心规则"
+          "text": "十三、多 Agent 协作规则",
+          "link": "/agents/法律业务通用指令#十三、多-agent-协作规则"
         },
         {
-          "text": "十五、本机 OCR 工具使用",
-          "link": "/agents/法律业务通用指令#十五、本机-ocr-工具使用"
+          "text": "十四、交付前自检清单",
+          "link": "/agents/法律业务通用指令#十四、交付前自检清单"
+        },
+        {
+          "text": "附录 A：权威核验来源清单",
+          "link": "/agents/法律业务通用指令#附录-a-权威核验来源清单",
+          "items": [
+            {
+              "text": "（一）法律法规与效力状态",
+              "link": "/agents/法律业务通用指令#一-法律法规与效力状态"
+            },
+            {
+              "text": "（二）司法与案例",
+              "link": "/agents/法律业务通用指令#二-司法与案例"
+            },
+            {
+              "text": "（三）主体与监管",
+              "link": "/agents/法律业务通用指令#三-主体与监管"
+            }
+          ]
+        },
+        {
+          "text": "附录 B：本机文件处理与 OCR 工具",
+          "link": "/agents/法律业务通用指令#附录-b-本机文件处理与-ocr-工具"
         }
       ]
     }
@@ -1762,6 +1947,129 @@ export const generatedSidebar = {
         {
           "text": "失败运行经验",
           "link": "/skills/cnipa-trademark-evidence-archive#lessons-from-failed-runs"
+        }
+      ]
+    }
+  ],
+  "/skills/company-preliminary-analysis": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "委托前公司初步分析报告",
+      "link": "/skills/company-preliminary-analysis"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "第〇步：场景路由（先判断，再动手）",
+          "link": "/skills/company-preliminary-analysis#第〇步-场景路由-先判断-再动手"
+        },
+        {
+          "text": "第一步：信息采集",
+          "link": "/skills/company-preliminary-analysis#第一步-信息采集"
+        },
+        {
+          "text": "第二步：法规与案例核验（反编造红线）",
+          "link": "/skills/company-preliminary-analysis#第二步-法规与案例核验-反编造红线"
+        },
+        {
+          "text": "第三步：法律风险排查",
+          "link": "/skills/company-preliminary-analysis#第三步-法律风险排查"
+        },
+        {
+          "text": "第四步：章节组装",
+          "link": "/skills/company-preliminary-analysis#第四步-章节组装"
+        },
+        {
+          "text": "第五步：生成 docx 并自检",
+          "link": "/skills/company-preliminary-analysis#第五步-生成-docx-并自检"
+        }
+      ]
+    }
+  ],
+  "/skills/contract-review": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "合同审查",
+      "link": "/skills/contract-review"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "角色定位与默认立场",
+          "link": "/skills/contract-review#角色定位与默认立场"
+        },
+        {
+          "text": "一、合同审查工作流",
+          "link": "/skills/contract-review#一、合同审查工作流",
+          "items": [
+            {
+              "text": "（一）先概述协议主要内容",
+              "link": "/skills/contract-review#一-先概述协议主要内容"
+            },
+            {
+              "text": "（二）再按风险等级进行审查",
+              "link": "/skills/contract-review#二-再按风险等级进行审查"
+            },
+            {
+              "text": "（三）补充缺失条款及完善建议",
+              "link": "/skills/contract-review#三-补充缺失条款及完善建议"
+            },
+            {
+              "text": "（四）同步进行文字、逻辑、格式及序号校对",
+              "link": "/skills/contract-review#四-同步进行文字、逻辑、格式及序号校对"
+            },
+            {
+              "text": "（五）最后提供给客户的简短汇报",
+              "link": "/skills/contract-review#五-最后提供给客户的简短汇报"
+            }
+          ]
+        },
+        {
+          "text": "文档修订模式",
+          "link": "/skills/contract-review#文档修订模式"
+        },
+        {
+          "text": "二、法律文件起草要求",
+          "link": "/skills/contract-review#二、法律文件起草要求"
+        },
+        {
+          "text": "三、Word 文档操作方式（不自带脚本）",
+          "link": "/skills/contract-review#三、word-文档操作方式-不自带脚本"
+        }
+      ]
+    }
+  ],
+  "/skills/ipo-kb": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "IPO问询案例库检索",
+      "link": "/skills/ipo-kb"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "检索方法（首选本地脚本 kbsearch.py，无需 MCP）",
+          "link": "/skills/ipo-kb#检索方法-首选本地脚本-kb-search-py-无需-mcp"
+        },
+        {
+          "text": "输出要求",
+          "link": "/skills/ipo-kb#输出要求"
+        },
+        {
+          "text": "纪律",
+          "link": "/skills/ipo-kb#纪律"
         }
       ]
     }
@@ -6018,6 +6326,69 @@ export const generatedSidebar = {
         {
           "text": "最后记住一句话",
           "link": "/tutorials/agent-practice-50-daily-morning-brief#最后记住一句话"
+        }
+      ]
+    }
+  ],
+  "/tutorials/agent-practice-51-client-data-security": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI实战51｜客户资料能不能交给Agent？先把保密、脱敏和数据出境这几关过了",
+      "link": "/tutorials/agent-practice-51-client-data-security"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、第一步：先把“用于模型训练和优化”关掉",
+          "link": "/tutorials/agent-practice-51-client-data-security#一、第一步-先把-用于模型训练和优化-关掉"
+        },
+        {
+          "text": "二、普通客户资料，也不要习惯性“整包上传”",
+          "link": "/tutorials/agent-practice-51-client-data-security#二、普通客户资料-也不要习惯性-整包上传"
+        },
+        {
+          "text": "三、客户明确要求“不得上传网络”，不要直接把原文件交给云端AI",
+          "link": "/tutorials/agent-practice-51-client-data-security#三、客户明确要求-不得上传网络-不要直接把原文件交给云端ai"
+        },
+        {
+          "text": "四、一个很好用的思路：先在本地脱敏，再交给Agent",
+          "link": "/tutorials/agent-practice-51-client-data-security#四、一个很好用的思路-先在本地脱敏-再交给agent"
+        },
+        {
+          "text": "五、本地脱敏可以直接用现成的GitHub项目",
+          "link": "/tutorials/agent-practice-51-client-data-security#五、本地脱敏可以直接用现成的github项目"
+        },
+        {
+          "text": "六、再进一步：有些材料干脆不要上传，直接让模型在本地跑",
+          "link": "/tutorials/agent-practice-51-client-data-security#六、再进一步-有些材料干脆不要上传-直接让模型在本地跑"
+        },
+        {
+          "text": "七、但有一个边界必须特别强调：国家秘密不是“装个本地模型”就解决了",
+          "link": "/tutorials/agent-practice-51-client-data-security#七、但有一个边界必须特别强调-国家秘密不是-装个本地模型-就解决了"
+        },
+        {
+          "text": "八、另外一个经常被忽视的问题：数据出境",
+          "link": "/tutorials/agent-practice-51-client-data-security#八、另外一个经常被忽视的问题-数据出境"
+        },
+        {
+          "text": "九、所以律师日常工作，我更倾向于优先考虑国内模型",
+          "link": "/tutorials/agent-practice-51-client-data-security#九、所以律师日常工作-我更倾向于优先考虑国内模型"
+        },
+        {
+          "text": "十、最后可以把律师AI资料分成四档",
+          "link": "/tutorials/agent-practice-51-client-data-security#十、最后可以把律师ai资料分成四档"
+        },
+        {
+          "text": "直接复制的实战提示词",
+          "link": "/tutorials/agent-practice-51-client-data-security#直接复制的实战提示词"
+        },
+        {
+          "text": "最后记住一句话",
+          "link": "/tutorials/agent-practice-51-client-data-security#最后记住一句话"
         }
       ]
     }
@@ -158453,7 +158824,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-series-overview": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 1,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": false,
     "next": {
@@ -158464,7 +158835,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-01-delegate-complete-work": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 2,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "《AI实战：把真实工作交给Agent》前50篇（最终版）",
@@ -158478,7 +158849,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-02-batch-file-processing": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 3,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战01｜别再一句一句问AI：把一项完整工作直接交给Agent",
@@ -158492,7 +158863,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-03-web-research": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 4,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战02｜一次处理几十个文件：不要再一份一份上传给AI",
@@ -158506,7 +158877,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-04-word-files": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 5,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战03｜让Agent做网络研究：不要只让它“搜一下”",
@@ -158520,7 +158891,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-05-excel-files": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 6,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战04｜别让AI只在聊天框里写：直接让Agent生成和修改Word文件",
@@ -158534,7 +158905,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-06-version-diff": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 7,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战05｜让Agent直接处理Excel：不要只让AI给你一张Markdown表格",
@@ -158548,7 +158919,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-07-scanned-pdfs": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 8,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战06｜两份文件到底改了什么？让Agent直接做版本比对",
@@ -158562,7 +158933,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-08-email-to-project-pack": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 9,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战07｜一堆扫描PDF怎么处理？让Agent先识别，再整理，再提取",
@@ -158576,7 +158947,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-09-meeting-minutes": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 10,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战08｜邮件和附件太乱？让Agent先整理成一个项目资料包",
@@ -158590,7 +158961,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-10-public-info-to-excel": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 11,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战09｜开完会别自己整理：让Agent直接生成纪要和待办清单",
@@ -158604,7 +158975,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-11-evidence-index-timeline": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 12,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战10｜别再手工复制网页：让Agent把公开信息直接整理成Excel",
@@ -158618,7 +158989,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-12-dd-inventory-gaps": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 13,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战11｜几十份证据怎么整理？让Agent先做证据目录和时间线",
@@ -158632,7 +159003,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-13-dd-folder-structure": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 14,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战12｜尽调材料太多？先让Agent做资料盘点和缺失清单",
@@ -158646,7 +159017,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-14-auto-classify-materials": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 15,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战13｜别手工建尽调目录：让Agent按尽调清单序号直接生成文件夹",
@@ -158660,7 +159031,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-15-dd-report-chapter-by-chapter": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 16,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战14｜尽调目录建好了，再让Agent按清单自动归类客户材料",
@@ -158674,7 +159045,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-16-reverse-dd-checklist": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 17,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战15｜别让Agent一次写完整份尽调报告：一章一章改，写完一章就核一章",
@@ -158688,7 +159059,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-17-update-affected-sections": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 18,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战16｜尽调报告写出一稿后，让Agent反向生成补充尽调清单",
@@ -158702,7 +159073,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-18-full-cross-check": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 19,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战17｜客户补资料回来后，不要重做报告：只更新受影响的章节",
@@ -158716,7 +159087,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-19-major-issues-list": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 20,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战18｜尽调报告写完别急着发：先让Agent做一次全文交叉核对",
@@ -158730,7 +159101,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-20-findings-to-contract-edits": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 21,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战19｜100页尽调报告怎么看？让Agent提炼重大问题清单",
@@ -158744,7 +159115,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-21-kb-first-answers": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 22,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战20｜尽调发现问题后，让Agent直接转成交易文件修改建议",
@@ -158758,7 +159129,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-22-mcp-case-research": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 23,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战21｜别只靠模型记忆：让Agent先查知识库，再回答专业问题",
@@ -158772,7 +159143,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-23-securities-case-search": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 24,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战22｜客户给了案情和底稿，让Agent通过法律数据库MCP直接做类案检索报告",
@@ -158786,7 +159157,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-24-verify-law-currency": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 25,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战23｜IPO遇到特殊法律问题？让Agent去证券数据库里找审核案例",
@@ -158800,7 +159171,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-25-law-evolution-diff": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 26,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战24｜法律文件里的法条别靠AI记：让Agent逐条核验是否最新有效",
@@ -158814,7 +159185,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-26-legal-research-report": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 27,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战25｜案件发生在旧法时期怎么办？让Agent自动做新旧法和法条沿革对比",
@@ -158828,7 +159199,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-27-inquiry-to-task-list": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 28,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战26｜客户抛来一个复杂法律问题，让Agent直接做一份专项法律研究报告",
@@ -158842,7 +159213,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-28-inquiry-reply-framework": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 29,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战27｜IPO问询来了，先让Agent把整份问询函拆成核查任务清单",
@@ -158856,7 +159227,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-29-inquiry-reply-review": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 30,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战28｜监管问询怎么回复？先让Agent查历史审核案例，再搭当前项目的回复框架",
@@ -158870,7 +159241,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-30-cross-document-consistency": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 31,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战29｜问询回复写完后，换一个Agent逐题检查漏答、答非所问和明确意见",
@@ -158884,7 +159255,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-31-period-update-dd-list": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 32,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战30｜多家中介文件别各写各的：让Agent做一次跨文件一致性核对",
@@ -158898,7 +159269,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-32-incremental-verification": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 33,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战31｜报告期要更新了，先让Agent生成一份补充尽调清单",
@@ -158912,7 +159283,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-33-litigation-analysis-report": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 34,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战32｜企业补完更新资料后，让Agent先做增量核查，再更新法律文件",
@@ -158926,7 +159297,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-34-fact-evidence-issue-map": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 35,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战33｜拿到一个新案件后，先让Agent查类案，再做一份诉讼案件分析报告",
@@ -158940,7 +159311,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-35-simulate-defense-attacks": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 36,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战34｜案件研究完成后，让Agent把证据整理成“事实—证据—争议焦点”对应表",
@@ -158954,7 +159325,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-36-complaint-from-template": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 37,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战35｜起诉前先站到对方一边：让Agent模拟“质量问题”答辩和攻击路径",
@@ -158968,7 +159339,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-37-complaint-review": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 38,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战36｜起诉状不要从零写：把历史优质模板交给Agent直接改成新案件",
@@ -158982,7 +159353,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-38-defense-statement": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 39,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战37｜起诉状写完别急着提交：让另一个Agent从被告和法官两个角度复核",
@@ -158996,7 +159367,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-39-defense-vs-attack-map": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 40,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战38｜如果你代理被告，怎样让Agent起草一份真正能用的答辩状",
@@ -159010,7 +159381,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-40-evidence-examination": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 41,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战39｜收到被告答辩状后，让Agent把真实答辩和之前的攻击路径逐项对照",
@@ -159024,7 +159395,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-41-trial-outline": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 42,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战40｜对方证据来了，先让Agent逐份做质证底稿，再形成正式质证意见",
@@ -159038,7 +159409,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-42-closing-argument": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 43,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战41｜开庭前，让Agent把整个案件整理成一份庭审提纲",
@@ -159052,7 +159423,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-43-judgment-analysis-appeal": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 44,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战42｜庭审结束后，让Agent根据庭审笔录起草代理词",
@@ -159066,7 +159437,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-44-appeal-drafting": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 45,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战43｜判决下来以后，让Agent拆解法院理由，再判断要不要上诉",
@@ -159080,7 +159451,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-45-templates-to-new-docs": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 46,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战44｜决定上诉后，让Agent围绕“能改变结果的点”起草上诉状",
@@ -159094,7 +159465,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-46-litigation-finale": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 47,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战45｜标准化法律文书别每次重写：把旧模板交给Agent，直接生成新案件文件",
@@ -159108,7 +159479,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-47-scheduled-legal-briefing": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 48,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战46｜诉讼专题最终篇：律师的上限，就是AI的上限",
@@ -159122,7 +159493,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-48-weekly-project-inspection": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 49,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战47｜别再每天自己刷法律资讯：让Agent定时生成专业法律简报",
@@ -159136,7 +159507,7 @@ export const generatedReading = {
   "/tutorials/agent-practice-49-continuous-monitoring": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 50,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战48｜项目不用天天自己盯：让Agent每周自动做一次项目巡检",
@@ -159150,11 +159521,25 @@ export const generatedReading = {
   "/tutorials/agent-practice-50-daily-morning-brief": {
     "title": "AI实战：把真实工作交给Agent",
     "index": 51,
-    "total": 51,
+    "total": 52,
     "parent": "/series/ai-practice/",
     "prev": {
       "text": "AI实战49｜没变化别来打扰我：让Agent持续监控诉讼、处罚、监管和项目变化",
       "link": "/tutorials/agent-practice-49-continuous-monitoring"
+    },
+    "next": {
+      "text": "AI实战51｜客户资料能不能交给Agent？先把保密、脱敏和数据出境这几关过了",
+      "link": "/tutorials/agent-practice-51-client-data-security"
+    }
+  },
+  "/tutorials/agent-practice-51-client-data-security": {
+    "title": "AI实战：把真实工作交给Agent",
+    "index": 52,
+    "total": 52,
+    "parent": "/series/ai-practice/",
+    "prev": {
+      "text": "AI实战50｜每天早上，让Agent自动生成一份“律师工作晨报”",
+      "link": "/tutorials/agent-practice-50-daily-morning-brief"
     },
     "next": false
   },

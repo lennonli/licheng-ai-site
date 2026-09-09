@@ -86,7 +86,7 @@ if (!seriesIndexFile || !aiBasicsSeriesFile || !aiInfraSeriesFile || !aiPractice
   const seriesTocExpectations = [
     [aiBasicsSeriesFile, 30, 'AI basics series'],
     [aiInfraSeriesFile, 10, 'AI infra series'],
-    [aiPracticeSeriesFile, 51, 'AI practice series'],
+    [aiPracticeSeriesFile, 52, 'AI practice series'],
     [aiPrioritySeriesFile, 26, 'AI priority series'],
     [civilLitigationSeriesFile, 11, 'Civil litigation series']
   ]

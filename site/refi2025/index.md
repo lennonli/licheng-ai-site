@@ -4,7 +4,7 @@
 
 <p class="section-lead">2025 年度深市再融资（定向增发/可转债）审核问询案例 76 家（69 家注册生效），一案一文，沉淀募集资金用途、财务性投资、前次募集资金、发行对象与定价等问询要点与律师核查结论。可用站内搜索按公司简称、代码或法律问题关键词检索。</p>
 
-<nav aria-label="案例库年度"><a href="/refi2025/" aria-current="page">再融资 2025 年</a> · <a href="/refi2024/">再融资 2024 年</a></nav>
+<nav aria-label="案例库年度"><a href="/refi2025/" aria-current="page">再融资 2025 年</a> · <a href="/refi2024/">再融资 2024 年</a> · <a href="/refi2023/">再融资 2023 年</a></nav>
 
 <p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 186 份案例）｜<a href="/refi2025/2025年度总结">📊 2025 年度总结报告</a></p>
 
