@@ -4,12 +4,12 @@
 <div class="lc-course-hero">
   <a class="lc-hero-ppt-btn" href="/tools/course-ppt/" target="_blank" rel="noopener">课程PPT<span aria-hidden="true"> ↗</span></a>
   <span class="lc-course-kicker">Legal AI Training Program</span>
-  <h1 class="lc-course-title">法律业务 AI 培训课程表 · 2026年8月</h1>
+  <h1 class="lc-course-title">法律业务 AI 培训课程表 · 2026年9月</h1>
   <p class="lc-course-subtitle">面向法律业务场景的 AI 工具配置、自动化核查、合同审查、诉讼文书、台账监测、模板化成稿与交付边界培训。每门课均标注本站配套资料，课后可对照复练；课程与示例同步更新于本站 AGENTS 指令库与 AI 教程栏目。</p>
   <div class="lc-course-stats">
-    <div class="lc-course-stat"><b>27</b><span>门课程</span></div>
+    <div class="lc-course-stat"><b>33</b><span>门课程</span></div>
     <div class="lc-course-stat"><b>180</b><span>分钟左右 · 节奏弹性</span></div>
-    <div class="lc-course-stat"><b>5</b><span>大模块 · 可拆半场</span></div>
+    <div class="lc-course-stat"><b>6</b><span>大模块 · 可拆半场</span></div>
   </div>
 </div>
 
@@ -59,7 +59,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/lawyer-mcp-setup">律师 MCP 搭建实用教程</a><a class="lc-course-link" href="/agents/元典企业信息库股东穿透核查提示词">元典股东穿透核查提示词</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">04</span><p class="lc-course-name">AI 定时任务与关键期限预警</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">04</span><p class="lc-course-name">AI 定时任务与关键期限预警</p></div>
     <ul class="lc-course-points">
       <li>ZCode 定时任务入门：每日项目情报简报的搭建实践（公告检索 + IPO 审核状态 + 风险比对 → 邮件推送）</li>
       <li>诉讼日历自动化：开庭日期、举证期限、上诉期（15 日）、再审申请期、诉讼保全续行（查封不动产 3 年）节点台账 + 定时提醒</li>
@@ -109,7 +109,7 @@
   <div class="lc-course-module-head"><span class="lc-course-part">PART 3</span><h3>诉讼实战</h3></div>
   <ul class="lc-course-list">
     <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">08</span><p class="lc-course-name">诉讼 AI 工作总则</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">08</span><p class="lc-course-name">诉讼 AI 工作总则</p></div>
     <ul class="lc-course-points">
       <li>能力边界三档分工表：AI 负责穷尽和排列（找依据、对数据、核条款），律师负责判断和承担（策略取舍、定性表述、最终签发）</li>
       <li>保密分级与脱敏纪律：材料按敏感度分档处理，涉密卷宗全程本地化操作，沉淀公开教程前完成客户信息零残留检查</li>
@@ -120,7 +120,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-principles">诉讼 AI 工作总则教程</a><a class="lc-course-link" href="/tutorials/civil-litigation-series-overview">系列总览导航</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">09</span><p class="lc-course-name">诉前评估与诉讼策略</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">09</span><p class="lc-course-name">诉前评估与诉讼策略</p></div>
     <ul class="lc-course-points">
       <li>请求权基础梳理：可选请求权清单、构成要件—事实—证据对应表、诉讼时效起算与剩余期间测算</li>
       <li>类案裁判倾向分析：按意向法院及上级法院检索同类案件，统计各争议焦点支持率、败诉失分点与赔偿数额档位（样本不足时如实说明，禁止编造数据）</li>
@@ -131,7 +131,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-pretrial-assessment">诉前评估与诉讼策略教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">10</span><p class="lc-course-name">诉讼证据整理与证据目录制作</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">10</span><p class="lc-course-name">诉讼证据整理与证据目录制作</p></div>
     <ul class="lc-course-points">
       <li>材料清点预分类：五大证据组（主体资格/法律关系/履行/违约催告/损失）+ 待人工分类池，杜绝硬分错放</li>
       <li>本地 OCR 要素登记：金额、日期、主体名称逐字回原图核对；多页合同标注签署页、金额条款、管辖条款页码</li>
@@ -142,7 +142,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-evidence-organization">证据整理与证据目录教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">11</span><p class="lc-course-name">起诉状、答辩状与上诉状起草</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">11</span><p class="lc-course-name">起诉状、答辩状与上诉状起草</p></div>
     <ul class="lc-course-points">
       <li>事实要素提取：合同签订—履行—违约—催告—损失完整时间轴，每项绑定证据编号；主体信息经企业信息库核对登记现状</li>
       <li>诉请金额试算：本金构成、利息分段计算过程、违约金司法调减风险评估，算式完整列出备查，无法确定的参数用【】占位并说明口径</li>
@@ -153,7 +153,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-pleadings-drafting">起诉状答辩状与上诉状起草教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">庭审举证与质证</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">12</span><p class="lc-course-name">庭审举证与质证</p></div>
     <ul class="lc-course-points">
       <li>庭上举证实操：每组证据当庭说明话术、出示顺序与节奏控制、原件与扫描件切换演示要点</li>
       <li>对方证据逐份质证表：真实性（待核原件）、合法性（取证瑕疵界定不滥提）、关联性（待证距离）分栏意见 + 证明力评价</li>
@@ -164,7 +164,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-trial-evidence">庭审举证与质证教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">庭前对抗演练与庭审提纲</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">13</span><p class="lc-course-name">庭前对抗演练与庭审提纲</p></div>
     <ul class="lc-course-points">
       <li>投喂全部案卷后由子代理分别扮演对方律师与承办法官，进行法庭调查—举证质证—法庭辩论的完整模拟开庭对抗</li>
       <li>对方三套抗辩策略推演与升级攻击预案；我方薄弱点变化表逐轮更新</li>
@@ -175,7 +175,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-moot-court">庭前对抗演练与庭审提纲教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">代理词撰写</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">14</span><p class="lc-course-name">代理词撰写</p></div>
     <ul class="lc-course-points">
       <li>独立成篇方法论：举证质证是庭上的动作，代理词是合议庭能据以下判的文章——准备方式完全不同，拆开准备互不稀释</li>
       <li>"争议焦点—论点—在案证据（编号）—经核验法律依据—类案裁判口径"五联论证结构，每个论点至少绑定一个证据编号</li>
@@ -186,7 +186,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-closing-argument">代理词撰写教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">庭后复盘与裁判文书深读</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">15</span><p class="lc-course-name">庭后复盘与裁判文书深读</p></div>
     <ul class="lc-course-points">
       <li>庭审实录结构化：按阶段分节提取对方抗辩编号、法官发问归类、我方表达偏离点；录音转写关键表述回听核对</li>
       <li>判决书深读：查明事实逐项编号、"本院认为"说理链条（前提→依据→结论）拆解、证据认定差异表</li>
@@ -197,7 +197,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-post-trial-review">庭后复盘与裁判文书深读教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">强制执行与财产线索</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">16</span><p class="lc-course-name">强制执行与财产线索</p></div>
     <ul class="lc-course-points">
       <li>执行管辖确定规则与申请时机；被执行人全景画像（经营状态、既有被执行与终本记录、对外投资、关联混同线索）</li>
       <li>财产线索网核留痕：不动产/招投标中标价/股权变更多通道排查，《财产线索清单》标明查控方式与优先级；无法核实标"待法院查控"</li>
@@ -208,7 +208,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/civil-litigation-enforcement">强制执行与财产线索教程</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">结案归档与知识沉淀</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">17</span><p class="lc-course-name">结案归档与知识沉淀</p></div>
     <ul class="lc-course-points">
       <li>判决书本地 OCR 结构化登记：案号、裁判日期、结果、主文金额、利息口径</li>
       <li>按本所归档结构生成卷宗目录，电子卷逐份标注文件路径；履行期届满日推算并设定时提醒衔接执行阶段</li>
@@ -252,7 +252,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/IPO法律尽职调查报告全流程起草提示词">尽调报告全流程提示词</a><a class="lc-course-link" href="/agents/IPO股权历史沿革梳理与底稿归档提示词">股权历史沿革与底稿归档</a><a class="lc-course-link" href="/agents/董监高核心技术人员及直接股东调查表北交所口径更新提示词">调查表北交所口径更新</a><a class="lc-course-link" href="/agents/法律尽职调查清单起草与定稿">尽调清单起草与定稿</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">21</span><p class="lc-course-name">股东穿透核查与出资流水专班</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">21</span><p class="lc-course-name">股东穿透核查与出资流水专班</p></div>
     <ul class="lc-course-points">
       <li>从零穿透：元典接口逐层穿透、终止主体判定、国有属性向上传导、覆盖率自检</li>
       <li>报告已生成场景：1,600+ 节点归档体系批量创建、17 列跟踪表、身份证 OCR 三重验算</li>
@@ -270,7 +270,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/北交所三会文件批量起草提示词">三会文件批量起草</a><a class="lc-course-link" href="/agents/北交所上市各主体承诺文件起草与修订提示词">承诺函起草与修订</a><a class="lc-course-link" href="/agents/新三板转北交所查验计划更新提示词">查验计划更新</a><a class="lc-course-link" href="/agents/章程与制度体系深度审查提示词">章程制度深度审查</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">23</span><p class="lc-course-name">网络舆情监控与定时送达</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">23</span><p class="lc-course-name">网络舆情监控与定时送达</p></div>
     <ul class="lc-course-points">
       <li>定时任务监控：对目标公司设置周期性巡查（如每日/每周自动执行），无需人工盯守</li>
       <li>监控维度：新增诉讼与开庭公告、行政处罚、失信被执行等司法监管动态；审核进展与 IPO 相关负面舆情</li>
@@ -311,7 +311,7 @@
     <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/律师工作底稿更新与目录修订提示词">底稿更新与目录修订手册</a></div>
   </li>
   <li class="lc-course-item">
-    <div class="lc-course-row"><span class="lc-course-no">27</span><p class="lc-course-name">智能体调度与人机协作进阶</p><span class="lc-course-badge-new">新增</span></div>
+    <div class="lc-course-row"><span class="lc-course-no">27</span><p class="lc-course-name">智能体调度与人机协作进阶</p></div>
     <ul class="lc-course-points">
       <li>调度外部智能体干活：指定高级分析模型审修订、做清洁版定稿、检查链路可用性</li>
       <li>辅助对话的正确用法：不打断长任务问出处、只回忆不检索的红线、辅助对话不作底稿</li>
@@ -322,3 +322,70 @@
   </ul>
 </div>
 
+<h2>模块六 · 法律业务 Skill 技能包</h2>
+
+<div class="lc-course-module">
+  <div class="lc-course-module-head"><span class="lc-course-part">PART 6</span><h3>法律业务 Skill 技能包</h3><span class="lc-course-module-meta">6 门</span></div>
+  <ul class="lc-course-list">
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">28</span><p class="lc-course-name">商事核查类 Skill</p></div>
+    <ul class="lc-course-points">
+      <li>合同审查：条款抽取、风险分级、缺失条款提示、对方立场识别、修改建议文本自动生成</li>
+      <li>中国企业网络核查：主体资质、行政处罚、失信被执行、涉诉信息、舆情的自动检索与 PDF 留痕</li>
+      <li>天眼查商业查询：企业工商、股东穿透、关联关系、司法风险的 CLI 查询与报告生成</li>
+      <li>见微数据检索：A 股与新三板公告、IPO 问询回复、审核进程的按次计费检索与省费技巧</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/network-check-v3">网络核查 Skill</a><a class="lc-course-link" href="/tutorials/legal-business-skill-creation-guide">Skill 制作教程</a></div>
+  </li>
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">29</span><p class="lc-course-name">知识产权类 Skill</p></div>
+    <ul class="lc-course-points">
+      <li>CNIPA 商标证据归档：从商标网上检索系统归档商标详情页和流程页，按申请人和商标号整理</li>
+      <li>CNIPA 专利证据归档：从专利审查信息系统导出申请、费用、发文、质押、许可等页面证据</li>
+      <li>全球商标台账维护：定期更新商标状态与续展节点，异常自动提醒</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/cnipa-trademark-evidence-archive">商标归档 Skill</a><a class="lc-course-link" href="/skills/cnipa-patent-evidence-archive">专利归档 Skill</a></div>
+  </li>
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">30</span><p class="lc-course-name">IPO 与尽调类 Skill</p></div>
+    <ul class="lc-course-points">
+      <li>IPO 问询案例库检索：按板块、律所、代码、上市日期筛选问询要点、回复论证口径与执业提示</li>
+      <li>尽调报告知识库：检索同类项目的尽调报告案例、核查思路与历史项目处理口径</li>
+      <li>委托前公司初步分析：企查查资料包解析、公开信息交叉核验、法律风险分级与竞聘报告生成</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/tutorials/ipo-legal-advisor-company-profile-prompt">竞聘分析报告提示词</a></div>
+  </li>
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">31</span><p class="lc-course-name">舆情监控与跨境检索类 Skill</p></div>
+    <ul class="lc-course-points">
+      <li>公司舆情监控：诉讼、处罚、失信、IPO 负面舆情的定时检索、分级响应与邮件日报推送</li>
+      <li>美国判例检索：CourtListener 联邦/州法院判例、裁判意见书原文、引证核验</li>
+      <li>出海合规检索：全球 230+ 法域法律法规对比、数据保护合规（GDPR/CCPA）、安全框架映射</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/agents/法律业务通用指令">法律业务通用指令</a></div>
+  </li>
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">32</span><p class="lc-course-name">文档处理类 Skill</p></div>
+    <ul class="lc-course-points">
+      <li>PDF 处理：合并、拆分、旋转、水印、提取文本/表格、OCR 识别</li>
+      <li>PPT 制作：演示文稿创建、模板套用、图表嵌入、批量修改</li>
+      <li>Excel 处理：公式联动、条件格式、数据透视表、多表合并与拆分</li>
+      <li>Word 文档：创建、修订痕迹、批注、格式刷、目录自动生成、页眉页脚</li>
+      <li>公众号文章排版：法律文章的排版美化与格式适配</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/">Skill 栏目列表</a></div>
+  </li>
+  <li class="lc-course-item">
+    <div class="lc-course-row"><span class="lc-course-no">33</span><p class="lc-course-name">邮件自动化 Skill</p></div>
+    <ul class="lc-course-points">
+      <li>邮件收发与管理：通过 CLI 发送、回复、搜索邮件，附件下载与归档</li>
+      <li>定时邮件推送：与定时任务联动，将舆情简报、项目进展、期限提醒自动发送至指定邮箱</li>
+    </ul>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/">Skill 栏目列表</a></div>
+  </li>
+  </ul>
+</div>
+
+<div class="lc-course-note">
+  <strong>使用说明：</strong>① 全部课程可按模块多次安排，节奏弹性掌握；② 各课「配套资料」均为本站在线页面，培训后可直接对照演练；③ 诉讼类课程涉及法条与期限规则的，一律以现行有效法律法规为准并经主办律师复核，AI 输出不得直接进入对外文书；④ 课程内容持续迭代，最新版本以本页为准。另：本页法律工具清单持续建设中，将按实际使用频率与稳定性逐步补充收录。
+</div>
