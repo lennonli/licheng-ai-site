@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="搭建律师的AI工作台 · 课程PPT">
-  <meta name="twitter:title" content="搭建律师的AI工作台 · 课程PPT">
-  <meta property="og:description" content="律师 AI 入门培训演示文稿：从大模型原理到智能体工作台">
-  <title>搭建律师的AI工作台 · 课程PPT</title>
+  <meta property="og:title" content="搭建法律业务的AI基础设施和工作体系 · 课程PPT">
+  <meta name="twitter:title" content="搭建法律业务的AI基础设施和工作体系 · 课程PPT">
+  <meta property="og:description" content="法律业务 AI 培训演示文稿：搭建 AI 基础设施和工作体系">
+  <title>搭建法律业务的AI基础设施和工作体系 · 课程PPT</title>
   <link rel="canonical" href="https://ai.licheng.uk/tools/course-ppt/">
   <meta property="og:url" content="https://ai.licheng.uk/tools/course-ppt/">
   <style>
@@ -367,157 +367,16 @@
       <article class="slide cover active" aria-hidden="false">
         <div class="cover-content">
           <p class="kicker english">LEGAL AI TRAINING PROGRAM</p>
-          <h1 class="cover-title">搭建律师的<em>AI</em>工作台</h1>
+          <h1 class="cover-title">搭建法律业务的<em>AI</em>基础设施和工作体系</h1>
           <div class="cover-rule"></div>
           <div class="cover-meta">
             <div>讲课人<strong>李成律师</strong></div>
-            <div>时间<strong><span class="num">2026</span>年<span class="num">8</span>月</strong></div>
           </div>
         </div>
-        <div class="cover-mark"><span>LEGAL / WORKBENCH</span>从工具到工作系统</div>
+        <div class="cover-mark"><span>LEGAL / INFRASTRUCTURE</span>从业务执行者变为审核者和流程设计者</div>
       </article>
 
-      <article class="slide" aria-hidden="true">
-        <p class="eyebrow">第一讲 · 先理解原理</p>
-        <h2 class="page-title"><a href="https://claude.ai/code/artifact/f53316ec-5967-4608-a3fc-0ffc3c0e31d3?org=43b74232-c4dd-496a-8823-aa5337c0db7e" target="_blank" rel="noopener">大模型是怎么工作的</a></h2>
-        <p class="page-intro">把复杂的模型想成一个“语言接力”系统：它根据上下文不断判断，下一步最可能出现什么。</p>
-        <div class="diagram-wrap">
-          <svg viewBox="0 0 1160 320" role="img" aria-label="文字输入到按概率逐字输出下一个词的大模型工作原理示意图">
-            <defs>
-              <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F7D4F"></path></marker>
-              <marker id="arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#C9A227"></path></marker>
-            </defs>
-            <path class="connector" marker-end="url(#arrow-green)" d="M 240 160 H 300"></path>
-            <path class="connector" marker-end="url(#arrow-green)" d="M 540 160 H 600"></path>
-            <path class="connector-soft" marker-end="url(#arrow-gold)" d="M 840 160 H 900"></path>
-            <text class="arrow-label" x="270" y="136" text-anchor="middle">拆解</text>
-            <text class="arrow-label" x="570" y="136" text-anchor="middle">学习</text>
-            <text class="arrow-label" x="870" y="136" text-anchor="middle">预测</text>
-
-            <rect class="node" x="0" y="70" width="240" height="170" rx="24"></rect>
-            <circle cx="54" cy="120" r="22" fill="#DCEBD8"></circle>
-            <path d="M44 121 q10 -23 20 0 q-10 23 -20 0" fill="none" stroke="#2F7D4F" stroke-width="3"></path>
-            <text class="node-label" x="24" y="169">文字输入</text>
-            <text class="node-note" x="24" y="200">一句问题 / 一段指令</text>
-
-            <rect class="node" x="300" y="70" width="240" height="170" rx="24"></rect>
-            <g transform="translate(356 102)">
-              <rect x="0" y="0" width="42" height="42" rx="9" fill="#2F7D4F"></rect><text x="21" y="29" fill="#FFF" font-size="22" text-anchor="middle">词</text>
-              <rect x="53" y="0" width="42" height="42" rx="9" fill="#C9A227"></rect><text x="74" y="29" fill="#FFF" font-size="22" text-anchor="middle">元</text>
-              <rect x="106" y="0" width="42" height="42" rx="9" fill="#DCEBD8"></rect><text x="127" y="29" fill="#163A24" font-size="22" text-anchor="middle">化</text>
-            </g>
-            <text class="node-label" x="324" y="169">切成词元</text>
-            <text class="node-note" x="324" y="200">把文字变成可计算的片段</text>
-
-            <rect class="node-accent" x="600" y="50" width="240" height="210" rx="26"></rect>
-            <g transform="translate(644 86)" fill="none" stroke="#2F7D4F" stroke-width="3">
-              <circle cx="76" cy="48" r="42" opacity=".2"></circle>
-              <path d="M34 56 C50 28 67 78 86 44 S116 49 122 30"></path>
-              <circle cx="34" cy="56" r="6" fill="#C9A227" stroke="none"></circle><circle cx="86" cy="44" r="6" fill="#C9A227" stroke="none"></circle><circle cx="122" cy="30" r="6" fill="#C9A227" stroke="none"></circle>
-            </g>
-            <text class="node-label" x="624" y="180">学习语言规律</text>
-            <text class="node-note" x="624" y="211">从海量文本里找到上下文关系</text>
-
-            <rect class="node" x="900" y="60" width="240" height="190" rx="26"></rect>
-            <circle cx="940" cy="110" r="21" fill="#C9A227"></circle>
-            <path d="M931 110 l8 8 13 -19" fill="none" stroke="#FFF" stroke-width="4"></path>
-            <text class="node-label" x="924" y="167">按概率逐字输出</text>
-            <text class="node-label" x="924" y="197">下一个词</text>
-            <text class="node-note" x="924" y="227">每次生成一点点，直到完成回答</text>
-          </svg>
-        </div>
-        <p class="caption"><b>处理链路：</b>文字输入 → 切成词元 → 从海量文本中学习语言规律 → 按概率预测并逐字输出下一个词。<span class="caption-note">它不是在“查答案”，而是在当前上下文中持续预测最合适的下一个词。</span></p>
-      </article>
-
-      <article class="slide" aria-hidden="true">
-        <p class="eyebrow">第二讲 · 从模型到行动</p>
-        <h2 class="page-title"><a href="https://claude.ai/code/artifact/f03d2308-fda5-4bd3-aec0-6eaad4acfc32?org=43b74232-c4dd-496a-8823-aa5337c0db7e" target="_blank" rel="noopener">智能体是怎么工作的</a></h2>
-        <p class="page-intro">智能体把模型接上技能、资料和操作权限，让“会回答”进一步变成“能完成任务”。</p>
-        <div class="diagram-wrap agent-diagram">
-          <svg viewBox="0 0 1160 360" role="img" aria-label="智能体由Skill、MCP、底稿、指令、记忆输入大模型（大脑），输出生成文档、图片等资料并保存到电脑，发送到邮箱等下一步操作的示意图">
-            <defs>
-              <marker id="agent-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F7D4F"></path></marker>
-              <marker id="agent-arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#C9A227"></path></marker>
-            </defs>
-            <rect class="zone" x="0" y="24" width="330" height="300" rx="26"></rect>
-            <rect class="zone-brain" x="400" y="24" width="360" height="300" rx="30"></rect>
-            <rect class="zone" x="820" y="24" width="340" height="300" rx="26"></rect>
-            <text class="zone-title" x="24" y="52">输入区 / 资料与指令</text>
-            <text class="zone-title" x="424" y="52">处理区 / 理解与规划</text>
-            <text class="zone-title" x="844" y="52">输出区 / 生成与行动</text>
-
-            <path class="flow" marker-end="url(#agent-arrow)" d="M 330 174 H 394"></path>
-            <path class="flow-gold" marker-end="url(#agent-arrow-gold)" d="M 760 174 H 814"></path>
-            <text class="sub" x="362" y="151" text-anchor="middle">组合上下文</text>
-            <text class="sub" x="787" y="151" text-anchor="middle">执行与交付</text>
-
-            <g transform="translate(18 74)">
-              <rect class="tag" width="294" height="38" rx="11"></rect><circle cx="20" cy="19" r="7" fill="#2F7D4F"></circle><text class="tag-label" x="40" y="25">Skill</text><text class="sub" x="210" y="25">能力</text>
-              <rect class="tag" y="45" width="294" height="38" rx="11"></rect><circle cx="20" cy="64" r="7" fill="#C9A227"></circle><text class="tag-label" x="40" y="70">MCP</text><text class="sub" x="210" y="70">连接工具</text>
-              <rect class="tag" y="90" width="294" height="38" rx="11"></rect><circle cx="20" cy="109" r="7" fill="#2F7D4F"></circle><text class="tag-label" x="40" y="115">底稿</text><text class="sub" x="210" y="115">事实资料</text>
-              <rect class="tag" y="135" width="294" height="38" rx="11"></rect><circle cx="20" cy="154" r="7" fill="#C9A227"></circle><text class="tag-label" x="40" y="160">指令</text><text class="sub" x="210" y="160">任务目标</text>
-              <rect class="tag" y="180" width="294" height="38" rx="11"></rect><circle cx="20" cy="199" r="7" fill="#2F7D4F"></circle><text class="tag-label" x="40" y="205">记忆</text><text class="sub" x="210" y="205">工作偏好</text>
-            </g>
-
-            <g transform="translate(580 174)">
-              <circle class="brain-ring" r="106"></circle><circle class="brain-ring" r="82"></circle>
-              <circle cx="0" cy="0" r="64" fill="#163A24"></circle>
-              <path d="M-35 -6 C-54 -43 1 -65 13 -32 C44 -51 66 -19 44 2 C63 30 30 52 4 34 C-19 64 -55 42 -37 14 C-64 15 -64 -14 -35 -6Z" fill="none" stroke="#F6FBEF" stroke-width="3"></path>
-              <circle class="brain-node" cx="-84" cy="-52" r="6"></circle><circle class="brain-node" cx="82" cy="-58" r="6"></circle><circle class="brain-node" cx="94" cy="43" r="6"></circle><circle class="brain-node" cx="-88" cy="54" r="6"></circle>
-              <text x="0" y="92" text-anchor="middle" class="label">大模型（大脑）</text>
-              <text x="0" y="118" text-anchor="middle" class="sub">理解、推理、规划、调用</text>
-            </g>
-
-            <g transform="translate(838 74)">
-              <rect class="tag" width="304" height="84" rx="14"></rect><circle cx="22" cy="26" r="7" fill="#2F7D4F"></circle><text class="tag-label" x="42" y="32">生成文档、图片等资料并</text><text class="sub" x="42" y="58">保存到电脑</text><path d="M268 53 l12 0 0 -17" fill="none" stroke="#2F7D4F" stroke-width="2"></path>
-              <rect class="tag" y="100" width="304" height="84" rx="14"></rect><circle cx="22" cy="126" r="7" fill="#C9A227"></circle><text class="tag-label" x="42" y="132">发送到邮箱等</text><text class="tag-label" x="42" y="158">下一步操作</text><path d="M254 150 l18 -14 18 14" fill="none" stroke="#C9A227" stroke-width="2"></path>
-            </g>
-          </svg>
-        </div>
-        <p class="caption"><b>核心变化：</b>模型负责思考，智能体负责把思考接到真实的资料、工具与动作。</p>
-      </article>
-
-      <article class="slide" aria-hidden="true">
-        <p class="eyebrow">第三讲 · 把工作台放到桌面</p>
-        <h2 class="page-title">智能体桌面版 App 界面</h2>
-        <p class="page-intro">一个顺手的工作台，应当让资料、指令、模型和结果在同一张桌面上形成闭环。</p>
-        <div class="diagram-wrap app-diagram">
-          <svg viewBox="0 0 1160 370" role="img" aria-label="智能体桌面版App三区界面示意图">
-            <rect class="shell" x="0" y="4" width="1160" height="348" rx="18"></rect>
-            <rect class="topbar" x="0" y="4" width="1160" height="44" rx="18"></rect><rect class="topbar" x="0" y="26" width="1160" height="22"></rect>
-            <circle cx="28" cy="26" r="6" fill="#C9A227"></circle><circle cx="48" cy="26" r="6" fill="#F6FBEF"></circle><circle cx="68" cy="26" r="6" fill="#2F7D4F"></circle>
-            <text class="topbar-label" x="92" y="31" font-size="15" font-weight="700">律师 AI 工作台</text>
-            <text class="topbar-label" x="1132" y="31" font-size="13" text-anchor="end">任务空间</text>
-
-            <rect class="panel" x="16" y="62" width="328" height="274" rx="14"></rect>
-            <rect class="focus-panel" x="370" y="54" width="420" height="290" rx="16"></rect>
-            <rect class="panel" x="816" y="62" width="328" height="274" rx="14"></rect>
-            <text class="panel-title" x="34" y="91">打开的文件与改动</text><text class="panel-note" x="34" y="111">正在处理的材料</text>
-            <g transform="translate(34 128)">
-              <rect class="file" width="292" height="38" rx="10"></rect><path d="M14 12 h15 l6 6 v14 H14Z" fill="#2F7D4F"></path><text class="file-label" x="46" y="24">劳动合同.docx</text><text class="panel-note" x="244" y="24">已打开</text>
-              <rect x="0" y="46" width="292" height="38" rx="10" fill="#FFF8DE"></rect><path d="M14 58 h15 l6 6 v14 H14Z" fill="#C9A227"></path><text class="file-label" x="46" y="70">证据目录.pdf</text><text class="panel-note" x="244" y="70">已选中</text>
-              <rect x="0" y="92" width="292" height="38" rx="10" fill="#EEF5EA"></rect><path d="M14 104 h15 l6 6 v14 H14Z" fill="#2F7D4F"></path><text class="file-label" x="46" y="116">庭审提纲.docx</text><text class="panel-note" x="244" y="116">待处理</text>
-            </g>
-            <text class="ui-label" x="34" y="286">最近改动</text><line class="accent-line" x1="34" y1="304" x2="150" y2="304"></line><line class="line" x1="158" y1="304" x2="326" y2="304"></line>
-
-            <text class="panel-title" x="392" y="83">输入指令</text><text x="770" y="83" fill="#2F7D4F" font-size="13" font-weight="700" text-anchor="end">工作区核心</text>
-            <rect x="392" y="102" width="376" height="92" rx="12" fill="#FFF" stroke="#BCD3BA" stroke-width="1.5"></rect>
-            <text class="ui-text" x="414" y="128">请根据已打开的材料，</text><text class="ui-text" x="414" y="152">整理一份可直接用于庭审的提纲。</text><line class="gold-line" x1="414" y1="176" x2="530" y2="176"></line><text class="panel-note" x="542" y="181">输入清晰，结果可控</text>
-            <text class="ui-label" x="392" y="216">选择大模型</text>
-            <rect x="392" y="228" width="376" height="40" rx="12" fill="#163A24"></rect><circle cx="418" cy="248" r="9" fill="#C9A227"></circle><text x="445" y="255" fill="#F6FBEF" font-size="15" font-weight="700">通用大模型 · 深度思考</text><path d="M741 242 l8 8 8 -8" fill="none" stroke="#DCEBD8" stroke-width="2"></path>
-            <rect x="638" y="282" width="130" height="24" rx="12" fill="#2F7D4F"></rect><text class="button-label" x="703" y="298" font-size="13" font-weight="700" text-anchor="middle">开始执行 →</text>
-
-            <text class="panel-title" x="834" y="91">任务状态与结果预览</text><text class="panel-note" x="834" y="111">从执行到交付</text>
-            <circle class="status" cx="844" cy="150" r="6"></circle><text class="status-text" x="860" y="155">执行中 · 已完成大部分</text>
-            <line class="line" x1="834" y1="173" x2="1126" y2="173"></line><text class="ui-label" x="834" y="194">结果预览</text>
-            <rect x="834" y="208" width="292" height="64" rx="12" fill="#FFF"></rect><line class="accent-line" x1="854" y1="230" x2="974" y2="230"></line><line class="line" x1="854" y1="246" x2="1100" y2="246"></line><line class="line" x1="854" y1="260" x2="1060" y2="260"></line><line class="gold-line" x1="854" y1="272" x2="924" y2="272"></line>
-            <text class="panel-note" x="834" y="306">可保存 · 可继续修改 · 可发送</text>
-          </svg>
-        </div>
-        <p class="caption"><b>一个完整闭环：</b>打开文件 → 输入指令 → 选择模型 → 查看状态 → 预览并交付。</p>
-      </article>
-
-      <article class="slide big-quote-page quote-5" aria-hidden="true">
+                        <article class="slide big-quote-page quote-5" aria-hidden="true">
         <p class="quote-kicker">START WITH THE TASK</p>
         <div class="big-quote">做任何任务之前，想一下，AI能不能做，怎么做</div>
         <p class="quote-foot">先问一遍，工作方式就会多一个选项</p>
@@ -544,7 +403,7 @@
       <div class="hint">← → / 空格 翻页 · Home / End 跳转 · F 全屏</div>
       <nav class="nav" aria-label="翻页控制">
         <button class="nav-btn" data-action="prev" type="button" aria-label="上一页">上一页</button>
-        <span id="page" aria-live="polite"><span class="num">1</span> / <span class="num">8</span></span>
+        <span id="page" aria-live="polite"><span class="num">1</span> / <span class="num">5</span></span>
         <button class="nav-btn" data-action="next" type="button" aria-label="下一页">下一页</button>
       </nav>
     </section>
