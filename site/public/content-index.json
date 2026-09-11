@@ -42,10 +42,10 @@
     "section": "AI 教程"
   },
   {
-    "href": "/skills/ipo-kb",
-    "title": "IPO问询案例库检索",
-    "summary": "纯 Markdown 知识库，本地克隆 + 按年度子目录（与 GitHub 主仓 lennonli/ipo-inquiry-kb；同源，一司一文），网页版 https://ai.licheng.uk/kb/。",
-    "section": "法律业务 Skill"
+    "href": "/agents/法律业务通用指令",
+    "title": "法律业务通用指令",
+    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
+    "section": "智能体指令"
   },
   {
     "href": "/tutorials/ai-infra-01-subscribe-top-model",
@@ -106,12 +106,6 @@
     "title": "AI基建的第十步：别再继续搭了，让它自己跑起来",
     "summary": "前面已经搭了模型、Agent、Mac、MCP、GitHub、远程环境、VPS、本地模型和备份。；做到这里以后，我觉得最重要的反而不是继续装新东西，而是：",
     "section": "AI 教程"
-  },
-  {
-    "href": "/skills/contract-review",
-    "title": "合同审查",
-    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
-    "section": "法律业务 Skill"
   },
   {
     "href": "/agents/为什么这些规则要写进全局指令",
@@ -430,12 +424,6 @@
     "title": "让 AI 直接帮我搭建第二个网站",
     "summary": "请你作为网站项目负责人，按照我现有网站 ai.licheng.uk 的基本方式，直接帮我搭建一个全新网站。；我不会写代码，也不希望自己安装软件、修改配置文件或敲命令。除非必须登录、授权或输入密码，其他工作请你直接完成。",
     "section": "AI 教程"
-  },
-  {
-    "href": "/skills/company-preliminary-analysis",
-    "title": "委托前公司初步分析报告",
-    "summary": "用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。",
-    "section": "法律业务 Skill"
   },
   {
     "href": "/tutorials/gzh-template-with-ai",
@@ -802,12 +790,6 @@
     "title": "如何写一个规范的临时对话提示词",
     "summary": "对于已经配置好全局指令、Skill 和 MCP 的本地 Agent，临时对话提示词不需要很长。它的作用不是重复告诉 AI“你是谁、应遵守什么规则”，而是明确这一次具体任务的几个变量。；任务 + 输入 + 工作内容 + 输出 + 落地位置。",
     "section": "AI 教程"
-  },
-  {
-    "href": "/agents/法律业务通用指令",
-    "title": "法律业务通用指令",
-    "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
-    "section": "智能体指令"
   },
   {
     "href": "/tutorials/civil-litigation-evidence-organization",

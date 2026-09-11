@@ -25,8 +25,8 @@ function renderSearchSource(src: string, env: { path?: string }, md: { render: (
   const title = src.match(/^# .+$/m)?.[0] || ''
   const metadata = src.match(/^---\n([\s\S]*?)\n---/)?.[1] || ''
   const overview = src.match(/^## [^\n]*(?:法律问题总览|法律问题汇总|问询概览)[^\n]*\n([\s\S]*?)(?=^## |$(?![\s\S]))/m)?.[1] || ''
-  const headings = (src.match(/^#{2,4} .+$/gm) || []).join('\n\n')
-  return md.render(`${title}\n\n${metadata.replace(/^[^:]+:/gm, '')}\n\n${overview.slice(0, 14000)}\n\n${headings}`, env)
+  const headings = (src.match(/^#{2,3} .+$/gm) || []).join('\n\n')
+  return md.render(`${title}\n\n${metadata.replace(/^[^:]+:/gm, '')}\n\n${overview.slice(0, 3000)}\n\n${headings}`, env)
 }
 
 export default defineConfig({
