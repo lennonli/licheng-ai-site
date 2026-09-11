@@ -99,6 +99,11 @@
     <span class="home-card-title">再融资案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年度沪深再融资审核问询案例 390 家（313 家注册生效、68 家终止），全面注册制首年与 827 新规撤回潮全景样本。</span>
   </a>
+  <a class="home-card" href="/refi2026/">
+    <span class="home-card-index">16 / Refi Cases 2026</span>
+    <span class="home-card-title">再融资案例库 · 2026年度</span>
+    <span class="home-card-desc">2026 年度沪深再融资审核问询案例 192 家（146 家注册生效、25 家提交注册、20 家审核中），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
+  </a>
   <a class="home-card" href="/kb2024/">
     <span class="home-card-index">17 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>

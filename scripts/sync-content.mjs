@@ -92,6 +92,7 @@ const sourceWebUrls = {
   refi2025: 'https://github.com/lennonli/ipo-inquiry-kb',
   refi2024: 'https://github.com/lennonli/ipo-inquiry-kb',
   refi2023: 'https://github.com/lennonli/ipo-inquiry-kb',
+  refi2026: 'https://github.com/lennonli/ipo-inquiry-kb',
   site: 'https://github.com/lennonli/licheng-ai-site'
 }
 
@@ -863,6 +864,11 @@ function writeGeneratedSidebar() {
       destDir: refi2023Dest
     }),
     ...buildSectionSidebar({
+      section: 'refi2026',
+      indexText: '再融资案例库·2026',
+      destDir: refi2026Dest
+    }),
+    ...buildSectionSidebar({
       section: 'ma-tutorial',
       indexText: '知识库制作教程',
       destDir: maTutorialDest
@@ -903,7 +909,7 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'kb2024', 'kb2023', 'refi2025', 'refi2024', 'refi2023', 'assets']) {
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'kb2024', 'kb2023', 'refi2025', 'refi2024', 'refi2023', 'refi2026', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'series'), { recursive: true, force: true })
@@ -1013,6 +1019,11 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-index">15 / Refi Cases 2023</span>
     <span class="home-card-title">再融资案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年度沪深再融资审核问询案例 390 家（313 家注册生效、68 家终止），全面注册制首年与 827 新规撤回潮全景样本。</span>
+  </a>
+  <a class="home-card" href="/refi2026/">
+    <span class="home-card-index">16 / Refi Cases 2026</span>
+    <span class="home-card-title">再融资案例库 · 2026年度</span>
+    <span class="home-card-desc">2026 年度沪深再融资审核问询案例 192 家（146 家注册生效、25 家提交注册、20 家审核中），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
   </a>
   <a class="home-card" href="/kb2024/">
     <span class="home-card-index">17 / Cases 2024</span>
@@ -1501,7 +1512,8 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
     ma2023: '688201-北京信安世纪',
     refi2025: '001301-石家庄尚太科',
     refi2024: '002600-领益智造',
-    refi2023: '000034-神州数码'
+    refi2023: '000034-神州数码',
+    refi2026: '600569-安阳钢铁'
   }
   const tutorialExample = tutorialExamples[key] || '920002-万达轴承'
   const legacyHead = `${backButton('/')}# ${title}\n\n<p class="section-lead">${lead}</p>\n\n${sourceLine}\n\n${aiTutorialSection(base, sourceWebUrls[key], tutorialExample)}\n\n`
@@ -1510,7 +1522,7 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
     ? [['ma2026', '2026'], ['ma2025', '2025'], ['ma2024', '2024'], ['ma2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>并购重组 ${year} 年</a>`).join(' · ')
     : key.startsWith('refi')
-    ? [['refi2025', '2025'], ['refi2024', '2024'], ['refi2023', '2023']]
+    ? [['refi2025', '2025'], ['refi2024', '2024'], ['refi2023', '2023'], ['refi2026', '2026']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>再融资 ${year} 年</a>`).join(' · ')
     : [['kb', '2026'], ['kb2025', '2025'], ['kb2024', '2024'], ['kb2023', '2023']]
       .map(([section, year]) => `<a href="/${section}/"${section === key ? ' aria-current="page"' : ''}>${year} 年</a>`).join(' · ')
@@ -1676,6 +1688,21 @@ const refi2023Dest = buildKbYear({
   annualFile: '2023年度总结.md',
   annualTitle: '📊 2023 年度总结报告',
   sourceDir: refi2023Src
+})
+
+// 2026 年再融资年度库（/refi2026/）
+const refi2026Src = path.join(cacheDir, 'kbmono', 'refi2026')
+const refi2026IndexPath = path.join(refi2026Src, 'scripts', 'index.json')
+const refi2026Entries = existsSync(refi2026IndexPath) ? JSON.parse(readFileSync(refi2026IndexPath, 'utf8')) : []
+const refi2026Dest = buildKbYear({
+  key: 'refi2026',
+  base: '/refi2026',
+  title: '再融资审核案例库 · 2026年度',
+  lead: '2026 年度沪深再融资（定向增发/可转债）审核问询案例 192 家（146 家注册生效、25 家提交注册、20 家审核中、1 家终止），一案一文，沉淀募集资金用途、财务性投资、前次募集资金、发行对象与定价等问询要点与律师核查结论。可用站内搜索按公司简称、代码或法律问题关键词检索。',
+  entries: refi2026Entries,
+  annualFile: '2026年度总结.md',
+  annualTitle: '📊 2026 年度总结报告',
+  sourceDir: refi2026Src
 })
 
 // 教程页
