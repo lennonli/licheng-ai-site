@@ -139,6 +139,11 @@ function copyMarkdownFiles(src, dest) {
 }
 
 const tutorialRedirects = []
+// 手工重定向：教程整篇被替换（slug 变更）时，把旧公开地址 301 到新地址。
+for (const item of [
+  { from: '/tutorials/ai-basics-04-next-token-prediction', to: '/tutorials/ai-basics-04-params-thinking-context' },
+  { from: '/tutorial-views/ai-basics-04-next-token-prediction/', to: '/tutorial-views/ai-basics-04-params-thinking-context/' },
+]) tutorialRedirects.push(item)
 
 function cleanTutorialSlug(name) {
   return name.replace(/\.[^.]+$/, '').replace(/-ABL-\d{8}(-V(\d+))?$/, '')

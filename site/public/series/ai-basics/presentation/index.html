@@ -1817,21 +1817,23 @@
             },
             {
               id: 'ai-basics-04', page: 4, chapter: 'AI 入门第 04 讲', state: '演讲版',
-              titleLines: [{ text: '它像在', accent: false }, { text: '理解', accent: true }, { text: '但不能把流畅当正确', accent: false }],
-              lead: '大模型学到的不只是关键词，还包括语义、任务结构和因果模式；但语言上的理解感，不等于现实世界的验证。',
-              leadStrong: '表达自信 ≠ 事实正确。',
-              quoteLabel: '演讲提醒', quote: '先问：这个结论来自材料，还是来自猜测？',
-              visual: { kind: 'compare', title: '两种“理解”要分开', caption: '语言能力与事实核验', columns: [
-                { tag: 'LANGUAGE', title: '像理解', tone: 'lime', items: ['换一种说法仍能抓住意思', '能总结、翻译、模仿结构', '给定材料内通常更可控'] },
-                { tag: 'REAL WORLD', title: '仍需验证', tone: 'amber', items: ['最新法规与新闻', '真实案例与公司数据', '精确出处与关键数字'] }
+              titleLines: [{ text: '参数、思维强度、', accent: false }, { text: '上下文窗口', accent: true }, { text: '与 Flash / Pro', accent: false }],
+              lead: '7B、Thinking、High、100万上下文、Flash、Pro——模型名称看似复杂，其实在描述四件事：模型有多大、愿意思考多久、一次能处理多少内容，偏向速度还是能力。',
+              leadStrong: '数字越大不等于越聪明，合适的模型做合适的任务。',
+              quoteLabel: '演讲提醒', quote: '看模型名先问四件事：多大？想多久？装多少？为谁设计？',
+              visual: { kind: 'flow', title: '模型名的四个密码', caption: '从 7B 到 Pro 都在说什么', items: [
+                { title: '参数（7B / 70B）', detail: '模型规模；越大越吃显存算力，不绝对等于更强' },
+                { title: '思维强度（High）', detail: '本次回答允许投入多少推理计算，按任务选择' },
+                { title: '上下文窗口（100万）', detail: '一次能接收处理的 Token 总量，是容量上限' },
+                { title: '定位（Flash / Pro）', detail: '厂商在速度、成本与能力之间的取舍标签' }
               ] },
               takeaways: [
-                ['语言表现很强', '它能处理语义、结构和表达规律。'],
-                ['现实经验不同', '模型并不天然拥有人的生活经验和现场核验。'],
-                ['先看信息来源', '基于原始材料，还是依赖外部事实，决定复核方式。']
+                ['参数只是规模', '训练数据、架构与调校同样影响表现，看真实任务表现。'],
+                ['按任务选强度', '改写、翻译用低强度；审合同、调代码、做方案再调高。'],
+                ['装得进 ≠ 分析得准', '材料越多越要准确命名、标明优先级、拆阶段、要求标来源。']
               ],
-              sourceNote: '讲演主线：看起来懂了，和已经验证过，是两件事', source: '/tutorials/ai-basics-04-next-token-prediction',
-              notes: ['不要把讨论停在“AI 到底有没有意识”；先转向工作上的可靠性。', '举最新法规或案例编号的例子，说明事实类任务需要工具和来源。', '强调基于已提供材料的总结、比较，通常比凭空问外部事实更可控。'], duration: '2–3 分钟'
+              sourceNote: '讲演主线：让合适的模型，在合适的思维强度下，处理适合它的任务', source: '/tutorials/ai-basics-04-params-thinking-context',
+              notes: ['把 7B、100万上下文这些数字翻译成“多大、想多久、装多少”三问。', '提醒混合专家架构：总参数量大不等于每次都用，参数数字不能横向比较。', '强调大上下文只是容量上限，重要任务仍要靠命名、优先级和分阶段设计。'], duration: '2–3 分钟'
             },
             {
               id: 'ai-basics-05', page: 5, chapter: 'AI 入门第 05 讲', state: '演讲版',
