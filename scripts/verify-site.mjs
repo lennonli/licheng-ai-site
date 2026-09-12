@@ -90,7 +90,7 @@ if (!seriesIndexFile || !aiBasicsSeriesFile || !aiInfraSeriesFile || !aiPractice
     [aiPracticeSeriesFile, 52, 'AI practice series'],
     [aiPrioritySeriesFile, 26, 'AI priority series'],
     [civilLitigationSeriesFile, 11, 'Civil litigation series'],
-    [peReviewSeriesFile, 3, 'PE investment review series']
+    [peReviewSeriesFile, 4, 'PE investment review series']
   ]
   for (const [file, minLinks, label] of seriesTocExpectations) {
     const html = readFileSync(file, 'utf8')
