@@ -174,5 +174,15 @@
       "civil-litigation-enforcement",
       "civil-litigation-closing-archive"
     ]
+  },
+  {
+    "id": "pe-investment-review",
+    "title": "私募基金投资文件审核提示词",
+    "description": "把私募基金投资交易文件的 AI 审阅拆成三步：老股东不参与本轮投资时以前一轮文件为唯一基准审权益减损；新股东以己方模板为基准只审对方修改；再用蒸馏提示词从机构历史模板反向形成《机构标准条款及审阅规则库》，供日常审阅判断符合、等效或偏离。三篇提示词可直接复制使用。",
+    "slugs": [
+      "pe-investment-review-01-existing-holder",
+      "pe-investment-review-02-new-investor",
+      "pe-investment-review-03-distill-rulebase"
+    ]
   }
 ]
