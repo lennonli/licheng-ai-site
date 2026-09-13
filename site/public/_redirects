@@ -1,4 +1,6 @@
 # 旧教程 URL（含 -ABL-日期-版本 内部后缀或已被更新版本取代）301 跳转至清理后地址
+/tutorials/ai-basics-04-next-token-prediction /tutorials/ai-basics-04-params-thinking-context 301
+/tutorial-views/ai-basics-04-next-token-prediction/ /tutorial-views/ai-basics-04-params-thinking-context/ 301
 /tutorial-views/agent-instruction-tool-selection-training-ABL-20260708-V1/ /tutorial-views/agent-instruction-tool-selection-training/ 301
 /tutorials/agent-instruction-tool-selection-training-ABL-20260708-V1 /tutorials/agent-instruction-tool-selection-training 301
 /tutorial-views/proxy-clash-verge-full-guide-ABL-20260707-V2/ /tutorial-views/proxy-clash-verge-full-guide/ 301
@@ -66,7 +68,7 @@
 /tutorials/ai-basics-01-what-is-ai-ABL-20260831-V1 /tutorials/ai-basics-01-what-is-ai 301
 /tutorials/ai-basics-02-chatgpt-vs-llm-ABL-20260831-V1 /tutorials/ai-basics-02-chatgpt-vs-llm 301
 /tutorials/ai-basics-03-how-llm-learns-to-speak-ABL-20260831-V1 /tutorials/ai-basics-03-how-llm-learns-to-speak 301
-/tutorials/ai-basics-04-next-token-prediction-ABL-20260831-V1 /tutorials/ai-basics-04-next-token-prediction 301
+/tutorials/ai-basics-04-params-thinking-context-ABL-20260912-V1 /tutorials/ai-basics-04-params-thinking-context 301
 /tutorials/ai-basics-05-why-ai-hallucinates-ABL-20260831-V1 /tutorials/ai-basics-05-why-ai-hallucinates 301
 /tutorials/ai-basics-06-how-llm-is-trained-ABL-20260831-V1 /tutorials/ai-basics-06-how-llm-is-trained 301
 /tutorials/ai-basics-07-token-and-memory-limit-ABL-20260831-V1 /tutorials/ai-basics-07-token-and-memory-limit 301
@@ -112,6 +114,7 @@
 /tutorials/ai-notes-03-office-software-as-mcp-ABL-20260902-V1 /tutorials/ai-notes-03-office-software-as-mcp 301
 /tutorials/ai-notes-04-ai-file-search-ABL-20260902-V1 /tutorials/ai-notes-04-ai-file-search 301
 /tutorials/ai-notes-05-ai-scales-human-labor-ABL-20260905-V1 /tutorials/ai-notes-05-ai-scales-human-labor 301
+/tutorials/ai-notes-06-claude-without-official-account-ABL-20260913-V1 /tutorials/ai-notes-06-claude-without-official-account 301
 /tutorials/ai-priority-series-intro-ABL-20260831-V1 /tutorials/ai-priority-series-intro 301
 /tutorials/ai-project-file-system-ABL-20260831-V1 /tutorials/ai-project-file-system 301
 /tutorials/ai-system-retrospective-ABL-20260831-V1 /tutorials/ai-system-retrospective 301
@@ -152,6 +155,10 @@
 /tutorials/multi-agent-work-system-ABL-20260830-V1 /tutorials/multi-agent-work-system 301
 /tutorials/new-vps-opencode-web-ui-setup-ABL-20260709-V1 /tutorials/new-vps-opencode-web-ui-setup 301
 /tutorials/opencode-rescue-agent-guide-ABL-20260830-V1 /tutorials/opencode-rescue-agent-guide 301
+/tutorials/pe-investment-review-00-global-instruction-ABL-20260912-V2 /tutorials/pe-investment-review-00-global-instruction 301
+/tutorials/pe-investment-review-01-existing-holder-ABL-20260912-V1 /tutorials/pe-investment-review-01-existing-holder 301
+/tutorials/pe-investment-review-02-new-investor-ABL-20260912-V1 /tutorials/pe-investment-review-02-new-investor 301
+/tutorials/pe-investment-review-03-distill-rulebase-ABL-20260912-V1 /tutorials/pe-investment-review-03-distill-rulebase 301
 /tutorials/prompt-layers-division-ABL-20260831-V1 /tutorials/prompt-layers-division 301
 /tutorials/prompt-to-automation-evolution-ABL-20260831-V1 /tutorials/prompt-to-automation-evolution 301
 /tutorials/scheduled-ai-digital-employee-ABL-20260831-V1 /tutorials/scheduled-ai-digital-employee 301

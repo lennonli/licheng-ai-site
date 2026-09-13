@@ -1951,6 +1951,147 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/skills/company-preliminary-analysis": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "委托前公司初步分析报告",
+      "link": "/skills/company-preliminary-analysis"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "第〇步：场景路由（先判断，再动手）",
+          "link": "/skills/company-preliminary-analysis#第〇步-场景路由-先判断-再动手"
+        },
+        {
+          "text": "第一步：信息采集",
+          "link": "/skills/company-preliminary-analysis#第一步-信息采集"
+        },
+        {
+          "text": "第二步：法规与案例核验（反编造红线）",
+          "link": "/skills/company-preliminary-analysis#第二步-法规与案例核验-反编造红线"
+        },
+        {
+          "text": "第三步：法律风险排查",
+          "link": "/skills/company-preliminary-analysis#第三步-法律风险排查"
+        },
+        {
+          "text": "第四步：章节组装",
+          "link": "/skills/company-preliminary-analysis#第四步-章节组装"
+        },
+        {
+          "text": "第五步：生成 docx 并自检",
+          "link": "/skills/company-preliminary-analysis#第五步-生成-docx-并自检"
+        }
+      ]
+    }
+  ],
+  "/skills/contract-review": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "合同审查",
+      "link": "/skills/contract-review"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "角色定位与默认立场",
+          "link": "/skills/contract-review#角色定位与默认立场"
+        },
+        {
+          "text": "一、合同审查工作流",
+          "link": "/skills/contract-review#一、合同审查工作流",
+          "items": [
+            {
+              "text": "（一）先概述协议主要内容",
+              "link": "/skills/contract-review#一-先概述协议主要内容"
+            },
+            {
+              "text": "（二）再按风险等级进行审查",
+              "link": "/skills/contract-review#二-再按风险等级进行审查"
+            },
+            {
+              "text": "（三）补充缺失条款及完善建议",
+              "link": "/skills/contract-review#三-补充缺失条款及完善建议"
+            },
+            {
+              "text": "（四）同步进行文字、逻辑、格式及序号校对",
+              "link": "/skills/contract-review#四-同步进行文字、逻辑、格式及序号校对"
+            },
+            {
+              "text": "（五）最后提供给客户的简短汇报",
+              "link": "/skills/contract-review#五-最后提供给客户的简短汇报"
+            }
+          ]
+        },
+        {
+          "text": "文档修订模式",
+          "link": "/skills/contract-review#文档修订模式"
+        },
+        {
+          "text": "二、法律文件起草要求",
+          "link": "/skills/contract-review#二、法律文件起草要求"
+        },
+        {
+          "text": "三、Word 文档操作方式（不自带脚本）",
+          "link": "/skills/contract-review#三、word-文档操作方式-不自带脚本"
+        }
+      ]
+    }
+  ],
+  "/skills/ipo-kb": [
+    {
+      "text": "返回栏目列表",
+      "link": "/skills/"
+    },
+    {
+      "text": "证券业务法律问询案例和证券法规检索skill",
+      "link": "/skills/ipo-kb"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、知识库总览（kb 参数取值）",
+          "link": "/skills/ipo-kb#一、知识库总览-kb-参数取值",
+          "items": [
+            {
+              "text": "审核问询案例库（一司一文：问询要点—回复与核查要点—核查意见—执业提示）",
+              "link": "/skills/ipo-kb#审核问询案例库-一司一文-问询要点—回复与核查要点—核查意见—执业提示"
+            },
+            {
+              "text": "法规与底稿库",
+              "link": "/skills/ipo-kb#法规与底稿库"
+            }
+          ]
+        },
+        {
+          "text": "二、检索方法（按优先级）",
+          "link": "/skills/ipo-kb#二、检索方法-按优先级"
+        },
+        {
+          "text": "三、跨库检索建议",
+          "link": "/skills/ipo-kb#三、跨库检索建议"
+        },
+        {
+          "text": "四、输出要求",
+          "link": "/skills/ipo-kb#四、输出要求"
+        },
+        {
+          "text": "五、维护",
+          "link": "/skills/ipo-kb#五、维护"
+        }
+      ]
+    }
+  ],
   "/skills/network-check-v3": [
     {
       "text": "返回栏目列表",
@@ -6980,45 +7121,37 @@ export const generatedSidebar = {
       ]
     }
   ],
-  "/tutorials/ai-basics-04-next-token-prediction": [
+  "/tutorials/ai-basics-04-params-thinking-context": [
     {
       "text": "返回栏目列表",
       "link": "/tutorials/"
     },
     {
-      "text": "AI入门04｜AI是真的理解你，还是只是在预测下一个字？",
-      "link": "/tutorials/ai-basics-04-next-token-prediction"
+      "text": "AI入门04｜看懂大模型的参数、思维强度和上下文窗口",
+      "link": "/tutorials/ai-basics-04-params-thinking-context"
     },
     {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、为什么AI看起来很像“理解”了？",
-          "link": "/tutorials/ai-basics-04-next-token-prediction#一、为什么ai看起来很像-理解-了"
+          "text": "一、什么是大模型的\"参数\"？",
+          "link": "/tutorials/ai-basics-04-params-thinking-context#一、什么是大模型的-参数"
         },
         {
-          "text": "二、但它和人的理解仍然不是一回事",
-          "link": "/tutorials/ai-basics-04-next-token-prediction#二、但它和人的理解仍然不是一回事"
+          "text": "二、什么是\"思维强度\"？",
+          "link": "/tutorials/ai-basics-04-params-thinking-context#二、什么是-思维强度"
         },
         {
-          "text": "三、“说得像懂了”不代表结论正确",
-          "link": "/tutorials/ai-basics-04-next-token-prediction#三、-说得像懂了-不代表结论正确"
+          "text": "三、\"100万上下文窗口\"是什么意思？",
+          "link": "/tutorials/ai-basics-04-params-thinking-context#三、-100万上下文窗口-是什么意思"
         },
         {
-          "text": "四、什么任务通常更可靠？",
-          "link": "/tutorials/ai-basics-04-next-token-prediction#四、什么任务通常更可靠"
+          "text": "四、为什么有些模型叫Flash，有些叫Pro？",
+          "link": "/tutorials/ai-basics-04-params-thinking-context#四、为什么有些模型叫flash-有些叫pro"
         },
         {
-          "text": "五、律师尤其要注意这一点",
-          "link": "/tutorials/ai-basics-04-next-token-prediction#五、律师尤其要注意这一点"
-        },
-        {
-          "text": "六、一个非常实用的判断方法",
-          "link": "/tutorials/ai-basics-04-next-token-prediction#六、一个非常实用的判断方法"
-        },
-        {
-          "text": "七、这一篇只需要记住一句话",
-          "link": "/tutorials/ai-basics-04-next-token-prediction#七、这一篇只需要记住一句话"
+          "text": "五、选择模型时，应该看什么？",
+          "link": "/tutorials/ai-basics-04-params-thinking-context#五、选择模型时-应该看什么"
         }
       ]
     }
@@ -9346,6 +9479,57 @@ export const generatedSidebar = {
         {
           "text": "最后一句",
           "link": "/tutorials/ai-notes-05-ai-scales-human-labor#最后一句"
+        }
+      ]
+    }
+  ],
+  "/tutorials/ai-notes-06-claude-without-official-account": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "AI札记06｜想用Claude，不一定非要Claude官方账号",
+      "link": "/tutorials/ai-notes-06-claude-without-official-account"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "Claude.ai和Claude模型，其实是两回事",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#claude-ai和claude模型-其实是两回事"
+        },
+        {
+          "text": "OpenCode：Agent不换，模型可以随时换",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#opencode-agent不换-模型可以随时换"
+        },
+        {
+          "text": "Pi也是同一个思路",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#pi也是同一个思路"
+        },
+        {
+          "text": "OpenRouter不是Agent，更像一个“模型总插座”",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#openrouter不是agent-更像一个-模型总插座"
+        },
+        {
+          "text": "Command Code对国内用户有一个很现实的优势：支付",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#command-code对国内用户有一个很现实的优势-支付"
+        },
+        {
+          "text": "我反而不建议继续折腾共享号、Cookie和来路不明的OAuth",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#我反而不建议继续折腾共享号、cookie和来路不明的oauth"
+        },
+        {
+          "text": "真正需要解决的，其实只有三件事",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#真正需要解决的-其实只有三件事"
+        },
+        {
+          "text": "最后一句",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#最后一句"
+        },
+        {
+          "text": "相关官方页面",
+          "link": "/tutorials/ai-notes-06-claude-without-official-account#相关官方页面"
         }
       ]
     }
@@ -11930,6 +12114,248 @@ export const generatedSidebar = {
         {
           "text": "不一定每天用，但最好有一个",
           "link": "/tutorials/opencode-rescue-agent-guide#不一定每天用-但最好有一个"
+        }
+      ]
+    }
+  ],
+  "/tutorials/pe-investment-review-00-global-instruction": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "私募基金投资业务协议审阅全局指令",
+      "link": "/tutorials/pe-investment-review-00-global-instruction"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、角色与立场",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#一、角色与立场"
+        },
+        {
+          "text": "二、项目变量",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#二、项目变量"
+        },
+        {
+          "text": "三、审阅模式",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#三、审阅模式"
+        },
+        {
+          "text": "四、最低必查项",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#四、最低必查项"
+        },
+        {
+          "text": "五、合规底线",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#五、合规底线"
+        },
+        {
+          "text": "六、判断标准",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#六、判断标准"
+        },
+        {
+          "text": "七、重点审阅事项",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#七、重点审阅事项"
+        },
+        {
+          "text": "八、问题性质与风险分级",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#八、问题性质与风险分级"
+        },
+        {
+          "text": "九、确定性标记与核验",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#九、确定性标记与核验"
+        },
+        {
+          "text": "十、禁止过度审阅与默认静默",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#十、禁止过度审阅与默认静默"
+        },
+        {
+          "text": "十一、最终复核过滤",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#十一、最终复核过滤"
+        },
+        {
+          "text": "十二、修改原则与交叉检查",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#十二、修改原则与交叉检查"
+        },
+        {
+          "text": "十三、期限与信息不足",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#十三、期限与信息不足"
+        },
+        {
+          "text": "十四、输出与交付",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#十四、输出与交付"
+        },
+        {
+          "text": "十五、交付前自检",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#十五、交付前自检"
+        },
+        {
+          "text": "十六、最终目标",
+          "link": "/tutorials/pe-investment-review-00-global-instruction#十六、最终目标"
+        }
+      ]
+    }
+  ],
+  "/tutorials/pe-investment-review-01-existing-holder": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "私募基金投资文件审核提示词①：老股东不参与本轮投资的协议审阅",
+      "link": "/tutorials/pe-investment-review-01-existing-holder"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、最重要的审阅原则",
+          "link": "/tutorials/pe-investment-review-01-existing-holder#一、最重要的审阅原则"
+        },
+        {
+          "text": "二、重点比较事项",
+          "link": "/tutorials/pe-investment-review-01-existing-holder#二、重点比较事项",
+          "items": [
+            {
+              "text": "（一）我方既有权利是否被直接修改",
+              "link": "/tutorials/pe-investment-review-01-existing-holder#一-我方既有权利是否被直接修改"
+            },
+            {
+              "text": "（二）我方权利的顺位是否下降",
+              "link": "/tutorials/pe-investment-review-01-existing-holder#二-我方权利的顺位是否下降"
+            },
+            {
+              "text": "（三）我方权利是否被间接架空",
+              "link": "/tutorials/pe-investment-review-01-existing-holder#三-我方权利是否被间接架空"
+            },
+            {
+              "text": "（四）我方经济利益是否因新一轮权利安排受到额外减损",
+              "link": "/tutorials/pe-investment-review-01-existing-holder#四-我方经济利益是否因新一轮权利安排受到额外减损"
+            },
+            {
+              "text": "（五）新投资人特殊权利是否损害我方",
+              "link": "/tutorials/pe-investment-review-01-existing-holder#五-新投资人特殊权利是否损害我方"
+            },
+            {
+              "text": "（六）我方是否新增义务或责任",
+              "link": "/tutorials/pe-investment-review-01-existing-holder#六-我方是否新增义务或责任"
+            },
+            {
+              "text": "（七）我方原有权利是否因新协议生效而消灭",
+              "link": "/tutorials/pe-investment-review-01-existing-holder#七-我方原有权利是否因新协议生效而消灭"
+            }
+          ]
+        },
+        {
+          "text": "三、不要提出的修改",
+          "link": "/tutorials/pe-investment-review-01-existing-holder#三、不要提出的修改"
+        },
+        {
+          "text": "四、对发现问题的判断标准",
+          "link": "/tutorials/pe-investment-review-01-existing-holder#四、对发现问题的判断标准"
+        },
+        {
+          "text": "五、修改意见处理方式",
+          "link": "/tutorials/pe-investment-review-01-existing-holder#五、修改意见处理方式"
+        },
+        {
+          "text": "六、最终复核",
+          "link": "/tutorials/pe-investment-review-01-existing-holder#六、最终复核"
+        }
+      ]
+    }
+  ],
+  "/tutorials/pe-investment-review-02-new-investor": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "私募基金投资文件审核提示词②：新股东投资文件审核",
+      "link": "/tutorials/pe-investment-review-02-new-investor"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、审阅基本原则",
+          "link": "/tutorials/pe-investment-review-02-new-investor#一、审阅基本原则"
+        },
+        {
+          "text": "二、审阅立场",
+          "link": "/tutorials/pe-investment-review-02-new-investor#二、审阅立场"
+        },
+        {
+          "text": "三、对方修改的重点判断标准",
+          "link": "/tutorials/pe-investment-review-02-new-investor#三、对方修改的重点判断标准"
+        },
+        {
+          "text": "四、重点保护的投资方利益",
+          "link": "/tutorials/pe-investment-review-02-new-investor#四、重点保护的投资方利益"
+        },
+        {
+          "text": "五、控制过度审阅",
+          "link": "/tutorials/pe-investment-review-02-new-investor#五、控制过度审阅"
+        },
+        {
+          "text": "六、修改意见分级",
+          "link": "/tutorials/pe-investment-review-02-new-investor#六、修改意见分级"
+        },
+        {
+          "text": "七、审阅方法",
+          "link": "/tutorials/pe-investment-review-02-new-investor#七、审阅方法"
+        },
+        {
+          "text": "八、最终判断标准",
+          "link": "/tutorials/pe-investment-review-02-new-investor#八、最终判断标准"
+        }
+      ]
+    }
+  ],
+  "/tutorials/pe-investment-review-03-distill-rulebase": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "私募基金投资文件审核提示词③：蒸馏机构内部投资文件形成审阅规则库",
+      "link": "/tutorials/pe-investment-review-03-distill-rulebase"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、基本原则",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#一、基本原则"
+        },
+        {
+          "text": "二、对每一个重要事项进行规则化蒸馏",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#二、对每一个重要事项进行规则化蒸馏"
+        },
+        {
+          "text": "三、每项规则必须形成以下结构",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#三、每项规则必须形成以下结构"
+        },
+        {
+          "text": "四、特别区分“文字一致”与“实质一致”",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#四、特别区分-文字一致-与-实质一致"
+        },
+        {
+          "text": "五、识别“模板惯例”与“项目个案”",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#五、识别-模板惯例-与-项目个案"
+        },
+        {
+          "text": "六、处理模板之间的冲突",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#六、处理模板之间的冲突"
+        },
+        {
+          "text": "七、控制过度蒸馏",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#七、控制过度蒸馏"
+        },
+        {
+          "text": "八、最终输出",
+          "link": "/tutorials/pe-investment-review-03-distill-rulebase#八、最终输出"
         }
       ]
     }
@@ -172373,6 +172799,10 @@ export const generatedSidebar = {
     {
       "text": "民事诉讼 AI 实战系列",
       "link": "/series/civil-litigation/"
+    },
+    {
+      "text": "私募基金投资文件审核提示词",
+      "link": "/series/pe-investment-review/"
     }
   ],
   "/tools/": [
@@ -172430,11 +172860,11 @@ export const generatedReading = {
       "link": "/tutorials/ai-basics-02-chatgpt-vs-llm"
     },
     "next": {
-      "text": "AI入门04｜AI是真的理解你，还是只是在预测下一个字？",
-      "link": "/tutorials/ai-basics-04-next-token-prediction"
+      "text": "AI入门04｜看懂大模型的参数、思维强度和上下文窗口",
+      "link": "/tutorials/ai-basics-04-params-thinking-context"
     }
   },
-  "/tutorials/ai-basics-04-next-token-prediction": {
+  "/tutorials/ai-basics-04-params-thinking-context": {
     "title": "AI入门：从大模型到智能体",
     "index": 4,
     "total": 30,
@@ -172454,8 +172884,8 @@ export const generatedReading = {
     "total": 30,
     "parent": "/series/ai-basics/",
     "prev": {
-      "text": "AI入门04｜AI是真的理解你，还是只是在预测下一个字？",
-      "link": "/tutorials/ai-basics-04-next-token-prediction"
+      "text": "AI入门04｜看懂大模型的参数、思维强度和上下文窗口",
+      "link": "/tutorials/ai-basics-04-params-thinking-context"
     },
     "next": {
       "text": "AI入门06｜一个大模型，到底是怎么训练出来的？",
@@ -174168,6 +174598,56 @@ export const generatedReading = {
     "prev": {
       "text": "强制执行与财产线索",
       "link": "/tutorials/civil-litigation-enforcement"
+    },
+    "next": false
+  },
+  "/tutorials/pe-investment-review-00-global-instruction": {
+    "title": "私募基金投资文件审核提示词",
+    "index": 1,
+    "total": 4,
+    "parent": "/series/pe-investment-review/",
+    "prev": false,
+    "next": {
+      "text": "私募基金投资文件审核提示词①：老股东不参与本轮投资的协议审阅",
+      "link": "/tutorials/pe-investment-review-01-existing-holder"
+    }
+  },
+  "/tutorials/pe-investment-review-01-existing-holder": {
+    "title": "私募基金投资文件审核提示词",
+    "index": 2,
+    "total": 4,
+    "parent": "/series/pe-investment-review/",
+    "prev": {
+      "text": "私募基金投资业务协议审阅全局指令",
+      "link": "/tutorials/pe-investment-review-00-global-instruction"
+    },
+    "next": {
+      "text": "私募基金投资文件审核提示词②：新股东投资文件审核",
+      "link": "/tutorials/pe-investment-review-02-new-investor"
+    }
+  },
+  "/tutorials/pe-investment-review-02-new-investor": {
+    "title": "私募基金投资文件审核提示词",
+    "index": 3,
+    "total": 4,
+    "parent": "/series/pe-investment-review/",
+    "prev": {
+      "text": "私募基金投资文件审核提示词①：老股东不参与本轮投资的协议审阅",
+      "link": "/tutorials/pe-investment-review-01-existing-holder"
+    },
+    "next": {
+      "text": "私募基金投资文件审核提示词③：蒸馏机构内部投资文件形成审阅规则库",
+      "link": "/tutorials/pe-investment-review-03-distill-rulebase"
+    }
+  },
+  "/tutorials/pe-investment-review-03-distill-rulebase": {
+    "title": "私募基金投资文件审核提示词",
+    "index": 4,
+    "total": 4,
+    "parent": "/series/pe-investment-review/",
+    "prev": {
+      "text": "私募基金投资文件审核提示词②：新股东投资文件审核",
+      "link": "/tutorials/pe-investment-review-02-new-investor"
     },
     "next": false
   }
