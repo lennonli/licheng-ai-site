@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "vitepress": "1.6.4",
-    "wrangler": "4.123.0"
+    "wrangler": "4.129.0"
   },
   "overrides": {
     "vite": "6.4.3"
