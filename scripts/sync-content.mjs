@@ -12,6 +12,30 @@ import {
 } from 'node:fs'
 import path from 'node:path'
 import { sanitizePublicText, sanitizePublicTree } from './public-content.mjs'
+import {
+  articleTools,
+  backButton,
+  cleanSummaryText,
+  cleanTutorialSlug,
+  decodeHtmlText,
+  encodeGitHubPath,
+  escapeHtml,
+  escapeXml,
+  enrichHtmlImages,
+  firstHeading,
+  formatDate,
+  htmlTitle,
+  htmlToCopyText,
+  normalizePlainUrls,
+  pngDimensionsFromBuffer,
+  pageTitleFromFilename,
+  removeLeadingH1,
+  stripHtmlTags,
+  stripYamlFrontmatter,
+  tutorialVersionRank,
+  withArticleChrome,
+  withSeoFrontmatter
+} from './sync-text.mjs'
 import { createMarkdownRenderer } from 'vitepress'
 
 const root = process.cwd()
@@ -138,22 +162,11 @@ function copyMarkdownFiles(src, dest) {
   }
 }
 
-const tutorialRedirects = []
-// 手工重定向：教程整篇被替换（slug 变更）时，把旧公开地址 301 到新地址。
-for (const item of [
+const tutorialRedirects = [
+  // 手工重定向：教程整篇被替换（slug 变更）时，把旧公开地址 301 到新地址。
   { from: '/tutorials/ai-basics-04-next-token-prediction', to: '/tutorials/ai-basics-04-params-thinking-context' },
-  { from: '/tutorial-views/ai-basics-04-next-token-prediction/', to: '/tutorial-views/ai-basics-04-params-thinking-context/' },
-]) tutorialRedirects.push(item)
-
-function cleanTutorialSlug(name) {
-  return name.replace(/\.[^.]+$/, '').replace(/-ABL-\d{8}(-V(\d+))?$/, '')
-}
-
-function tutorialVersionRank(name) {
-  const version = Number(name.match(/-V(\d+)(?=\.[^.]+$)/)?.[1] || 0)
-  const date = Number(name.match(/-ABL-(\d{8})(?=-V\d+$|(?=\.[^.]+$))/)?.[1] || 0)
-  return date * 1000 + version
-}
+  { from: '/tutorial-views/ai-basics-04-next-token-prediction/', to: '/tutorial-views/ai-basics-04-params-thinking-context/' }
+]
 
 function copyTutorialHtmlFiles(src, dest) {
   const copied = []
@@ -181,44 +194,6 @@ function copyTutorialHtmlFiles(src, dest) {
   return copied
 }
 
-function pngDimensionsFromBuffer(data) {
-  if (data.length < 24 || data.toString('ascii', 1, 4) !== 'PNG') return null
-  return { width: data.readUInt32BE(16), height: data.readUInt32BE(20) }
-}
-
-function enrichHtmlImages(html) {
-  return html.replace(/<img\b([^>]*?)>/gi, (match, attributes) => {
-    const source = attributes.match(/\bsrc=(['"])(.*?)\1/i)?.[2] || ''
-    let dimensions = null
-    const dataMatch = source.match(/^data:image\/png;base64,(.+)$/i)
-    if (dataMatch) {
-      try {
-        dimensions = pngDimensionsFromBuffer(Buffer.from(dataMatch[1], 'base64'))
-      } catch {
-        dimensions = null
-      }
-    }
-
-    const loading = /\bloading=/i.test(attributes) ? '' : ' loading="lazy"'
-    const decoding = /\bdecoding=/i.test(attributes) ? '' : ' decoding="async"'
-    const width = dimensions && !/\bwidth=/i.test(attributes) ? ` width="${dimensions.width}"` : ''
-    const height = dimensions && !/\bheight=/i.test(attributes) ? ` height="${dimensions.height}"` : ''
-    return `<img${attributes}${loading}${decoding}${width}${height}>`
-  })
-}
-
-function backButton(fallback) {
-  return `<BackButton fallback="${fallback}" />\n\n`
-}
-
-function encodeGitHubPath(relativePath) {
-  return relativePath
-    .split('/')
-    .filter(Boolean)
-    .map((part) => encodeURIComponent(part))
-    .join('/')
-}
-
 function writeCopySource(repoDir, relativePath, section, slug) {
   const sourcePath = path.join(repoDir, relativePath)
   if (!existsSync(sourcePath)) {
@@ -234,58 +209,6 @@ function writeCopySource(repoDir, relativePath, section, slug) {
 
 function githubBlobUrl(repoWebUrl, relativePath) {
   return `${repoWebUrl}/blob/main/${encodeGitHubPath(relativePath)}`
-}
-
-function articleTools(githubUrl, updatedAt = '', immersiveUrl = '', copyUrl = '') {
-  const updated = updatedAt ? ` updated-at="${formatDate(updatedAt)}"` : ''
-  const immersive = immersiveUrl ? ` immersive-url="${immersiveUrl}"` : ''
-  const copy = copyUrl ? ` copy-url="${copyUrl}"` : ''
-  return `<ArticleTools github-url="${githubUrl}"${updated}${immersive}${copy} />\n\n`
-}
-
-function withBackButton(markdown, fallback) {
-  if (markdown.includes('<BackButton ')) return markdown
-  if (!markdown.startsWith('---\n')) return `${backButton(fallback)}${markdown}`
-
-  const end = markdown.indexOf('\n---', 4)
-  if (end === -1) return `${backButton(fallback)}${markdown}`
-  const frontmatterEnd = end + 4
-  return `${markdown.slice(0, frontmatterEnd)}\n\n${backButton(fallback)}${markdown.slice(frontmatterEnd).trimStart()}`
-}
-
-function withArticleTools(markdown, githubUrl, updatedAt = '', immersiveUrl = '', copyUrl = '') {
-  if (markdown.includes('<ArticleTools ')) return markdown
-
-  const backButtonMatch = markdown.match(/<BackButton [^\n]+\/>\n*/)
-  if (backButtonMatch && backButtonMatch.index !== undefined) {
-    const insertAt = backButtonMatch.index + backButtonMatch[0].length
-    return `${markdown.slice(0, insertAt)}\n${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown.slice(insertAt).trimStart()}`
-  }
-
-  if (!markdown.startsWith('---\n')) return `${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown}`
-
-  const end = markdown.indexOf('\n---', 4)
-  if (end === -1) return `${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown}`
-  const frontmatterEnd = end + 4
-  return `${markdown.slice(0, frontmatterEnd)}\n\n${articleTools(githubUrl, updatedAt, immersiveUrl, copyUrl)}${markdown.slice(frontmatterEnd).trimStart()}`
-}
-
-function withArticleChrome(markdown, fallback, githubUrl, updatedAt = '', immersiveUrl = '', copyUrl = '') {
-  return withArticleTools(withBackButton(markdown, fallback), githubUrl, updatedAt, immersiveUrl, copyUrl)
-}
-
-function withSeoFrontmatter(markdown, description, updatedAt) {
-  const lines = []
-  const summary = String(description || '').replace(/\s+/g, ' ').trim()
-  if (summary) lines.push(`description: ${JSON.stringify(summary)}`)
-  if (updatedAt) lines.push(`lastUpdated: ${new Date(updatedAt).toISOString()}`)
-  if (!lines.length) return markdown
-  if (markdown.startsWith('---\n')) {
-    const end = markdown.indexOf('\n---', 4)
-    if (end === -1) return markdown
-    return `${markdown.slice(0, end + 1)}${lines.join('\n')}\n${markdown.slice(end + 1)}`
-  }
-  return `---\n${lines.join('\n')}\n---\n\n${markdown}`
 }
 
 function addArticleChromeToMarkdownFiles(
@@ -341,13 +264,6 @@ function listSkillDirs(src) {
       )
     })
     .sort()
-}
-
-function stripYamlFrontmatter(markdown) {
-  if (!markdown.startsWith('---\n')) return markdown
-  const end = markdown.indexOf('\n---', 4)
-  if (end === -1) return markdown
-  return markdown.slice(end + 4).trimStart()
 }
 
 const titleOverrides = new Map([
@@ -412,46 +328,11 @@ const headingTitleOverrides = new Map([
   ['Safety And Evidence Handling', '安全与证据处理']
 ])
 
-function pageTitleFromFilename(name) {
-  return name
-    .replace(/-ABL-\d{8}-V\d+\.(md|html)$/, '')
-    .replace(/\.(md|html)$/, '')
-    .replace(/-/g, ' ')
-}
-
-function firstHeading(markdown) {
-  return markdown
-    .split('\n')
-    .map((line) => line.match(/^#\s+(.+)$/)?.[1]?.trim())
-    .find(Boolean)
-}
-
-function removeLeadingH1(markdown) {
-  return markdown.replace(/^#\s+.+\n+/, '')
-}
-
 function displayTitle(key, fallbackName, markdown = '') {
   if (titleOverrides.has(key)) return titleOverrides.get(key)
   const heading = firstHeading(stripYamlFrontmatter(markdown))
   if (heading && !/^[a-z0-9._+\-\s/]+$/i.test(heading)) return heading
   return pageTitleFromFilename(fallbackName)
-}
-
-function cleanSummaryText(text) {
-  return text
-    .replace(/`([^`]+)`/g, '$1')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-    .replace(/[*_>#|]/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
-}
-
-function escapeHtml(text) {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
 }
 
 function summarizeMarkdown(key, markdown) {
@@ -477,48 +358,6 @@ function summarizeMarkdown(key, markdown) {
   const summary = candidates.join('；')
   if (!summary) return '汇总该主题下的关键规则、使用场景和操作步骤，便于进入正文前快速判断是否适用。'
   return summary.length > 120 ? `${summary.slice(0, 118)}……` : summary
-}
-
-function stripHtmlTags(html) {
-  return html
-    .replace(/<script[\s\S]*?<\/script>/gi, '')
-    .replace(/<style[\s\S]*?<\/style>/gi, '')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim()
-}
-
-function htmlToCopyText(html) {
-  return html
-    .replace(/<(script|style|noscript|svg)\b[\s\S]*?<\/\1>/gi, '')
-    .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<\/(h[1-6]|p|li|tr|div|section|article|header|footer|figure|figcaption|blockquote)>/gi, '\n')
-    .replace(/<\/(th|td)>/gi, '\t')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&#x27;/g, "'")
-    .replace(/<\/?[a-z][^>]*>/gi, ' ')
-    .replace(/[ \t]+\n/g, '\n')
-    .replace(/\n[ \t]+/g, '\n')
-    .replace(/[ \t]{2,}/g, ' ')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim()
-}
-
-function htmlTitle(html) {
-  const match = html.match(/<title>([\s\S]*?)<\/title>/i)
-  if (!match) return ''
-  return stripHtmlTags(match[1]).replace(/\s*\|\s*李成律师法律AI工作站$/, '').trim()
 }
 
 function displayHtmlTitle(key, fallbackName, html = '') {
@@ -586,25 +425,6 @@ function enrichMarkdownImages(dir) {
     })
     if (enriched !== markdown) writeFileSync(file, enriched)
   }
-}
-
-function headingText(markdownHeading) {
-  return cleanSummaryText(
-    markdownHeading
-      .replace(/#+$/, '')
-      .replace(/<[^>]+>/g, '')
-      .replace(/\{#[^}]+}/g, '')
-  )
-}
-
-function decodeHtmlText(value) {
-  return value
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&#x27;/g, "'")
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&amp;/g, '&')
-    .replace(/&ZeroWidthSpace;|&#8203;/g, '')
 }
 
 function pageHeadings(markdown, pageLink) {
@@ -719,24 +539,6 @@ function gitLastUpdated(repoDir, relativePath) {
   } catch {
     return new Date().toISOString()
   }
-}
-
-function formatDate(isoDate) {
-  return new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'Asia/Shanghai',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit'
-  }).format(new Date(isoDate))
-}
-
-function escapeXml(value) {
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;')
 }
 
 function rssFeed(items) {
@@ -926,7 +728,8 @@ for (const source of sources) {
   syncSourceRepo(source)
 }
 
-for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'kb2024', 'kb2023', 'refi2025', 'refi2024', 'refi2023', 'refi2026', 'assets']) {
+// 同步前清空由本脚本生成的板块目录，避免上游已删除的案例页残留在站点里
+for (const dir of ['agents', 'skills', 'tutorials', 'kb', 'kb2025', 'ma2026', 'ma2025', 'ma2024', 'ma2023', 'kb2024', 'kb2023', 'refi2025', 'refi2024', 'refi2023', 'refi2026', 'assets']) {
   rmSync(path.join(siteDir, dir), { recursive: true, force: true })
 }
 rmSync(path.join(siteDir, 'series'), { recursive: true, force: true })
@@ -1464,13 +1267,6 @@ function aiTutorialSection(base, repoUrl, exampleCase) {
 `
 }
 
-function normalizePlainUrls(markdown) {
-  return markdown.replace(
-    /(?<![<(])https?:\/\/[A-Za-z0-9._~:/?#\[\]@!$&'*+,;=%-]+/g,
-    (url) => `<${url}>`
-  )
-}
-
 function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle, sourceDir = null }) {
   const isMa = ['ma2026', 'ma2025', 'ma2024', 'ma2023'].includes(key)
   const dest = path.join(siteDir, key)
@@ -1722,8 +1518,7 @@ const refi2026Dest = buildKbYear({
   sourceDir: refi2026Src
 })
 
-// 教程页
-const maTutorialSrc = path.join(cacheDir, 'ma2023')
+// 知识库制作教程：静态手写页（site/ma-tutorial/），不入同步目录，仅生成其侧边栏
 const maTutorialDest = path.join(siteDir, 'ma-tutorial')
 ensureDir(maTutorialDest)
 

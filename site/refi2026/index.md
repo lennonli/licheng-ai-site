@@ -6,7 +6,7 @@
 
 <nav aria-label="案例库年度"><a href="/refi2025/">再融资 2025 年</a> · <a href="/refi2024/">再融资 2024 年</a> · <a href="/refi2023/">再融资 2023 年</a> · <a href="/refi2026/" aria-current="page">再融资 2026 年</a></nav>
 
-<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 192 份案例）｜<a href="/refi2026/2026年度总结">📊 2026 年度总结报告</a></p>
+<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 210 份案例）｜<a href="/refi2026/2026年度总结">📊 2026 年度总结报告</a></p>
 
 [安装知识库技能与 MCP 使用教程](/kbskill/)
 
@@ -14,7 +14,7 @@
 
 <div class="case-directory">
 
-## 科创板（34）
+## 科创板（35）
 
 <div class="index-card-list">
   <a class="index-card" href="/refi2026/688047-龙芯中科">
@@ -153,9 +153,13 @@
     <span class="index-card-title">珠海冠宇电池股份有限公司（688772）</span>
     <span class="index-card-desc">定向增发｜募资上限 289500.00 万元｜注册生效｜北京市中伦律师事务所</span>
   </a>
+  <a class="index-card" href="/refi2026/688233-神工股份">
+    <span class="index-card-title">锦州神工半导体股份有限公司（688233）</span>
+    <span class="index-card-desc">定向增发｜募资上限 100000 万元｜审核中｜北京市中伦律师事务所</span>
+  </a>
 </div>
 
-## 深市创业板（62）
+## 深市创业板（68）
 
 <div class="index-card-list">
   <a class="index-card" href="/refi2026/300005-探路者">
@@ -406,9 +410,33 @@
     <span class="index-card-title">深圳市强达电路股份有限公司（301628）</span>
     <span class="index-card-desc">可转债｜募资上限 55000.00 万元｜注册生效｜广东信达律师事务所</span>
   </a>
+  <a class="index-card" href="/refi2026/300051-琏升科技">
+    <span class="index-card-title">琏升科技股份有限公司（300051）</span>
+    <span class="index-card-desc">定向增发（提前确定发行对象）｜募资上限 47000 万元｜审核中｜北京市中伦律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/300302-同有科技">
+    <span class="index-card-title">北京同有飞骥科技股份有限公司（300302）</span>
+    <span class="index-card-desc">定向增发｜募资上限 99983.5 万元｜审核中｜北京植德律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/300962-中金辐照">
+    <span class="index-card-title">中金辐照股份有限公司（300962）</span>
+    <span class="index-card-desc">定向增发｜募资上限 80000 万元｜审核中｜待核验</span>
+  </a>
+  <a class="index-card" href="/refi2026/301305-朗坤科技">
+    <span class="index-card-title">深圳市朗坤科技股份有限公司（301305）</span>
+    <span class="index-card-desc">可转债｜募资上限 59000 万元｜审核中｜北京德恒律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/300736-百邦科技">
+    <span class="index-card-title">北京百华悦邦科技股份有限公司（300736）</span>
+    <span class="index-card-desc">定向增发（提前确定发行对象）｜募资上限 39893.99 万元｜审核中｜待核验</span>
+  </a>
+  <a class="index-card" href="/refi2026/300634-彩讯股份">
+    <span class="index-card-title">彩讯科技股份有限公司（300634）</span>
+    <span class="index-card-desc">可转债｜募资上限 127000 万元｜审核中｜北京市金杜律师事务所</span>
+  </a>
 </div>
 
-## 沪市主板（48）
+## 沪市主板（51）
 
 <div class="index-card-list">
   <a class="index-card" href="/refi2026/600029-南方航空">
@@ -603,9 +631,21 @@
     <span class="index-card-title">济南圣泉集团股份有限公司（605589）</span>
     <span class="index-card-desc">可转债｜募资上限 250000.00 万元｜注册生效｜律所未载明</span>
   </a>
+  <a class="index-card" href="/refi2026/603061-金海通">
+    <span class="index-card-title">天津金海通半导体设备股份有限公司（603061）</span>
+    <span class="index-card-desc">可转债｜募资上限 85000 万元｜审核中｜待核验</span>
+  </a>
+  <a class="index-card" href="/refi2026/603186-华正新材">
+    <span class="index-card-title">浙江华正新材料股份有限公司（603186）</span>
+    <span class="index-card-desc">定向增发｜募资上限 120000 万元｜审核中｜浙江天册律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/601991-大唐发电">
+    <span class="index-card-title">大唐国际发电股份有限公司（601991）</span>
+    <span class="index-card-desc">定向增发｜募资上限 800000 万元｜审核中｜北京市京都律师事务所</span>
+  </a>
 </div>
 
-## 深市主板（48）
+## 深市主板（56）
 
 <div class="index-card-list">
   <a class="index-card" href="/refi2026/000422-湖北宜化">
@@ -799,6 +839,38 @@
   <a class="index-card" href="/refi2026/003033-征和工业">
     <span class="index-card-title">青岛征和工业股份有限公司（003033）</span>
     <span class="index-card-desc">定向增发｜募资上限 70363.45 万元｜提交注册｜北京市金杜律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/002975-博杰股份">
+    <span class="index-card-title">珠海博杰电子股份有限公司（002975）</span>
+    <span class="index-card-desc">定向增发｜募资上限 150301.14 万元｜审核中｜北京德恒律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/002752-昇兴股份">
+    <span class="index-card-title">昇兴集团股份有限公司（002752）</span>
+    <span class="index-card-desc">定向增发｜募资上限 115700 万元｜审核中｜福建至理律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/002866-传艺科技">
+    <span class="index-card-title">江苏传艺科技股份有限公司（002866）</span>
+    <span class="index-card-desc">定向增发｜募资上限 87051.36 万元｜审核中｜江苏世纪同仁律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/002392-北京利尔">
+    <span class="index-card-title">北京利尔高温材料股份有限公司（002392）</span>
+    <span class="index-card-desc">定向增发｜募资上限 102543.56 万元｜审核中｜北京市君致律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/002240-盛新锂能">
+    <span class="index-card-title">盛新锂能集团股份有限公司（002240）</span>
+    <span class="index-card-desc">定向增发｜募资上限 530000 万元｜审核中｜北京市中伦律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/001339-智微智能">
+    <span class="index-card-title">深圳市智微智能科技股份有限公司（001339）</span>
+    <span class="index-card-desc">定向增发｜募资上限 220000 万元｜审核中｜北京志霖律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/000890-法尔胜">
+    <span class="index-card-title">江苏法尔胜股份有限公司（000890）</span>
+    <span class="index-card-desc">定向增发｜募资上限 15000 万元｜审核中｜北京德恒律师事务所</span>
+  </a>
+  <a class="index-card" href="/refi2026/002272-川润股份">
+    <span class="index-card-title">四川川润股份有限公司（002272）</span>
+    <span class="index-card-desc">定向增发｜募资上限 95000 万元｜审核中｜北京市中伦律师事务所</span>
   </a>
 </div>
 

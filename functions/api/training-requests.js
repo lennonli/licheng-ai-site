@@ -1,4 +1,5 @@
 const MAX_ITEMS = 800
+const KV_GET_BATCH = 50
 const MAX_BODY_BYTES = 2048
 const MIN_CONTENT = 6
 const MAX_CONTENT = 500
@@ -16,8 +17,12 @@ function json(body, status = 200, extra = {}) {
 }
 
 async function readJsonBody(request) {
+  // 先看声明的 Content-Length，超限直接拒绝，避免为超大请求体缓冲内存
+  const declaredLength = Number(request.headers.get('content-length') || 0)
+  if (declaredLength > MAX_BODY_BYTES) return { tooLarge: true, data: {} }
   const raw = await request.text()
-  if (raw.length > MAX_BODY_BYTES) return { tooLarge: true, data: {} }
+  // 按字节而非字符数计：中文内容一个字符占 3 个 UTF-8 字节
+  if (new TextEncoder().encode(raw).byteLength > MAX_BODY_BYTES) return { tooLarge: true, data: {} }
   try {
     const data = JSON.parse(raw)
     return { tooLarge: false, data: data && typeof data === 'object' && !Array.isArray(data) ? data : {} }
@@ -61,13 +66,17 @@ async function onRequest(context) {
   if (request.method === 'GET') {
     const ids = await readIndex(kv)
     const items = []
-    for (const id of ids.slice(0, MAX_ITEMS)) {
-      const raw = await kv.get(`req:${id}`)
-      if (!raw) continue
-      try {
-        const row = JSON.parse(raw)
-        items.push({ id: row.id, t: row.t, c: row.c })
-      } catch { /* skip malformed row */ }
+    // 分批并行读取，避免条目多时逐条串行 await 拖慢响应、逼近子请求时限
+    const wanted = ids.slice(0, MAX_ITEMS)
+    for (let offset = 0; offset < wanted.length; offset += KV_GET_BATCH) {
+      const rows = await Promise.all(wanted.slice(offset, offset + KV_GET_BATCH).map((id) => kv.get(`req:${id}`)))
+      for (const raw of rows) {
+        if (!raw) continue
+        try {
+          const row = JSON.parse(raw)
+          items.push({ id: row.id, t: row.t, c: row.c })
+        } catch { /* skip malformed row */ }
+      }
     }
     return json({ configured: true, total: ids.length, items })
   }

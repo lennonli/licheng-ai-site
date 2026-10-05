@@ -2,7 +2,6 @@ const DEFAULT_HOST = 'ai.licheng.uk'
 // Cloudflare's adaptive HTTP analytics endpoint exposes a rolling historical
 // window. Keep the public ranking on the largest reliable window for this API.
 const HISTORICAL_DAYS = 30
-const MAX_HOURS = 24
 const RANGE_OPTIONS = new Set([1, 6, 12, 24])
 const MAX_FAILED_ATTEMPTS = 5
 const ATTEMPT_WINDOW_MS = 5 * 60 * 1000
@@ -302,6 +301,11 @@ function missingConfig(env, { requireAccessKey = true } = {}) {
 
 async function readJsonBody(request) {
   try {
+    // 先看声明的 Content-Length，超限直接拒绝，避免为超大请求体缓冲内存
+    const declaredLength = Number(request.headers.get('content-length') || 0)
+    if (declaredLength > MAX_BODY_BYTES) {
+      return { data: {}, tooLarge: true }
+    }
     const text = await request.text()
     if (new TextEncoder().encode(text).byteLength > MAX_BODY_BYTES) {
       return { data: {}, tooLarge: true }

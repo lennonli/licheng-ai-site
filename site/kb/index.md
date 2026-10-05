@@ -6,7 +6,7 @@
 
 <nav aria-label="案例库年度"><a href="/kb/" aria-current="page">2026 年</a> · <a href="/kb2025/">2025 年</a> · <a href="/kb2024/">2024 年</a> · <a href="/kb2023/">2023 年</a></nav>
 
-<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 250 份案例）｜<a href="/kb/2026年度总结">📊 2026 年度总结报告</a></p>
+<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 264 份案例）｜<a href="/kb/2026年度总结">📊 2026 年度总结报告</a></p>
 
 [安装知识库技能与 MCP 使用教程](/kbskill/)
 
@@ -14,9 +14,25 @@
 
 <div class="case-directory">
 
-## 北交所（53）
+## 北交所（57）
 
 <div class="index-card-list">
+  <a class="index-card" href="/kb/920268-百迈科">
+    <span class="index-card-title">海南百迈科医疗科技股份有限公司（920268）</span>
+    <span class="index-card-desc">北京市康达律师事务所｜上市 2026-09-09｜9.4 申报会计师核查 / 《1 号指引》股东信息核查 / 不良事件与召回 / 产业政策类保荐机构核查 / 产品质量 / 信息披露</span>
+  </a>
+  <a class="index-card" href="/kb/920269-杰锋动力">
+    <span class="index-card-title">杰锋汽车动力系统股份有限公司（920269）</span>
+    <span class="index-card-desc">北京市竞天公诚律师事务所｜上市 2026-09-07｜历史沿革与股权变动 / 历史股权转让公允性 / 同业竞争 / 国资监管 / 土地房产与租赁 / 境外架构与外汇</span>
+  </a>
+  <a class="index-card" href="/kb/920289-华汇智能">
+    <span class="index-card-title">广东华汇智能装备股份有限公司（920289）</span>
+    <span class="index-card-desc">北京市环球律师事务所｜上市 2026-09-04｜公司治理与内控 / 关联交易与关联方 / 劳动与社会保障 / 危废处置 / 历史沿革与股权变动 / 土地房产与租赁</span>
+  </a>
+  <a class="index-card" href="/kb/920071-金钛股份">
+    <span class="index-card-title">朝阳金达钛业股份有限公司（920071）</span>
+    <span class="index-card-desc">北京市君致律师事务所｜上市 2026-09-03｜危化品监管定性 / 合作研发 / 同行业可比口径 / 土地房产与租赁 / 外采技术 / 控制权稳定性</span>
+  </a>
   <a class="index-card" href="/kb/920288-华大海天">
     <span class="index-card-title">杭州华大海天科技股份有限公司（920288）</span>
     <span class="index-card-desc">北京市天元律师事务所｜上市 2026-08-28｜上市公司持续监管 / 信息披露 / 历史沿革与股权变动 / 国资监管 / 审计类 / 承诺事项</span>
@@ -231,9 +247,13 @@
   </a>
 </div>
 
-## 科创板（16）
+## 科创板（17）
 
 <div class="index-card-list">
+  <a class="index-card" href="/kb/688801-燧原科技">
+    <span class="index-card-title">上海燧原科技股份有限公司（688801）</span>
+    <span class="index-card-desc">北京市中伦律师事务所｜上市 2026-09-11｜依赖 / 信息披露 / 关联交易与关联方 / 募集资金运用 / 实控人认定 / 客户开拓核查</span>
+  </a>
   <a class="index-card" href="/kb/688836-宇树科技">
     <span class="index-card-title">宇树科技股份有限公司（688836）</span>
     <span class="index-card-desc">北京德恒律师事务所｜上市 2026-08-19｜信息披露 / 关联交易与关联方 / 劳动与社会保障 / 土地房产与租赁 / 实控人认定 / 控制权稳定性</span>
@@ -300,9 +320,17 @@
   </a>
 </div>
 
-## 深市创业板（14）
+## 深市创业板（16）
 
 <div class="index-card-list">
+  <a class="index-card" href="/kb/301689-思仪科技">
+    <span class="index-card-title">中电科思仪科技股份有限公司（301689）</span>
+    <span class="index-card-desc">上海市锦天城律师事务所｜上市 2026-09-10｜关联交易与关联方 / 决策程序 / 同业竞争 / 国资监管 / 技术类 / 独立性</span>
+  </a>
+  <a class="index-card" href="/kb/301699-洛轴股份">
+    <span class="index-card-title">洛阳轴承集团股份有限公司（301699）</span>
+    <span class="index-card-desc">北京市康达律师事务所｜上市 2026-09-09｜关联交易与关联方 / 历史沿革与股权变动 / 国资监管 / 技术类仅保荐人核查 / 混改程序与外部投资者 / 申报会计师核查</span>
+  </a>
   <a class="index-card" href="/kb/301655-绿控传动">
     <span class="index-card-title">苏州绿控传动科技股份有限公司（301655）</span>
     <span class="index-card-desc">北京德恒律师事务所｜上市 2026-08-20｜仅要求保荐人 / 关联交易与关联方 / 历史沿革与股权变动 / 申报会计师发表意见 / 股份支付 / 股权激励</span>
@@ -361,9 +389,17 @@
   </a>
 </div>
 
-## 沪市主板（9）
+## 沪市主板（11）
 
 <div class="index-card-list">
+  <a class="index-card" href="/kb/603448-天博智能">
+    <span class="index-card-title">天博智能科技（603448）</span>
+    <span class="index-card-desc">上海市广发律师事务所｜上市 2026-09-07｜以外包规避派遣 / 公司治理与内控 / 关联交易与关联方 / 劳动与社会保障 / 司法冻结与持续经营 / 安全生产三同时</span>
+  </a>
+  <a class="index-card" href="/kb/601123-马矿股份">
+    <span class="index-card-title">福建马坑矿业股份有限公司（601123）</span>
+    <span class="index-card-desc">福建至理律师事务所｜上市 2026-09-01｜井巷工程招投标程序 / 储量管理报告与评审备案程序完备性 / 储量评审备案程序 / 关联交易与关联方 / 办证法律障碍 / 劳动与社会保障</span>
+  </a>
   <a class="index-card" href="/kb/603468-津富士达">
     <span class="index-card-title">天津富士达自行车工业股份有限公司（603468）</span>
     <span class="index-card-desc">上海市锦天城律师事务所｜上市 2026-08-06｜关联交易与关联方 / 分红能力 / 历史沿革与股权变动 / 境外架构与外汇 / 子公司注销处置 / 定价公允</span>
@@ -443,9 +479,29 @@
   </a>
 </div>
 
-## 新三板（149）
+## 新三板（154）
 
 <div class="index-card-list">
+  <a class="index-card" href="/kb/875236-汇联股份">
+    <span class="index-card-title">江苏汇联活动地板股份有限公司（875236）</span>
+    <span class="index-card-desc">德恒上海律师事务所｜挂牌 2026-09-11｜信息披露 / 关联交易与关联方 / 内部制度 / 减资程序 / 前次 IPO 撤回 / 国资监管</span>
+  </a>
+  <a class="index-card" href="/kb/874983-欧思科">
+    <span class="index-card-title">广东欧思科科技股份有限公司（874983）</span>
+    <span class="index-card-desc">广东信达律师事务所｜挂牌 2026-09-09｜关联交易与关联方 / 历史沿革与股权变动 / 境外架构与外汇 / 实控人认定 / 对赌与特殊权利条款 / 新增股东</span>
+  </a>
+  <a class="index-card" href="/kb/875228-贝普医疗">
+    <span class="index-card-title">贝普医疗科技股份有限公司（875228）</span>
+    <span class="index-card-desc">德恒上海律师事务所｜挂牌 2026-09-09｜ODI 发改 / 仅要求主办券商及会计师核查 / 关联交易与关联方 / 内部制度 / 分红合规 / 前次创业板撤回</span>
+  </a>
+  <a class="index-card" href="/kb/874933-台泉科技">
+    <span class="index-card-title">广东台泉科技股份有限公司（874933）</span>
+    <span class="index-card-desc">北京市中伦（广州）律师事务所｜挂牌 2026-09-08｜关联交易与关联方 / 历史沿革与股权变动 / 同业竞争 / 境外架构与外汇 / 实控人认定 / 独立性</span>
+  </a>
+  <a class="index-card" href="/kb/875188-华晶股份">
+    <span class="index-card-title">山东华晶冷链科技股份有限公司（875188）</span>
+    <span class="index-card-desc">上海市锦天城律师事务所｜挂牌 2026-09-08｜关联交易与关联方 / 分红 / 历史沿革与股权变动 / 同业竞争 / 境外架构与外汇 / 独立性</span>
+  </a>
   <a class="index-card" href="/kb/875015-同心智医">
     <span class="index-card-title">同心智医科技（875015）</span>
     <span class="index-card-desc">挂牌申请人律师北京市中伦律师事务所｜挂牌 2026-08-31｜AI 医疗器械注册监管 / 互联网诊疗监管 / 公司治理与内控 / 公司赎回义务自始无效确认 / 内部监督机构设置 / 医疗器械广告</span>
