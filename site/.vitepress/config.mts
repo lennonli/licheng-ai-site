@@ -45,6 +45,9 @@ export default defineConfig({
   transformPageData(pageData) {
     const route = '/' + pageData.relativePath.replace(/index\.md$/, '').replace(/\.md$/, '')
     const section = '/' + pageData.relativePath.split('/')[0] + '/'
+    // 案例库栏目（各库均有专用检索）不进全站本地搜索索引：单文件超 Cloudflare Pages 25MiB 上限
+    const searchExcludedSections = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2023/', '/ma2024/', '/ma2025/', '/ma2026/', '/refi2023/', '/refi2024/', '/refi2025/', '/refi2026/']
+    if (searchExcludedSections.includes(section)) pageData.frontmatter.search = false
     // Keep each page's outline in its own chunk, never serialise every page into @siteData.
     pageData.frontmatter.pageSidebar = generatedSidebar[route] || generatedSidebar[section] || []
     const reading = generatedReading[route]
