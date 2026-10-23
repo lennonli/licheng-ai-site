@@ -1,4 +1,4 @@
-# 旧教程 URL（含 -ABL-日期-版本 内部后缀或已被更新版本取代）301 跳转至清理后地址
+# 旧教程及迁移页面 URL 301 跳转至当前地址
 /tutorials/ai-basics-04-next-token-prediction /tutorials/ai-basics-04-params-thinking-context 301
 /tutorial-views/ai-basics-04-next-token-prediction/ /tutorial-views/ai-basics-04-params-thinking-context/ 301
 /tutorial-views/agent-instruction-tool-selection-training-ABL-20260708-V1/ /tutorial-views/agent-instruction-tool-selection-training/ 301
@@ -169,3 +169,5 @@
 /tutorials/wechat-api-draft-ABL-20260831-V1 /tutorials/wechat-api-draft 301
 /tutorials/windows-codex-legal-workflow-setup-ABL-20260707-V1 /tutorials/windows-codex-legal-workflow-setup 301
 /tutorials/并购重组案例知识库制作教程-ABL-20260907-V1 /tutorials/并购重组案例知识库制作教程 301
+/tools/legal-tools /training/ 301
+/tools/legal-tools/ /training/ 301

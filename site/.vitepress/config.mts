@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generatedSidebar, generatedReading } from './generated-sidebar.mjs'
+import { renderSearchSource } from '../../scripts/search-content.mjs'
 
 const siteOrigin = 'https://ai.licheng.uk'
 
@@ -8,29 +9,6 @@ function canonicalUrl(page: string) {
   route = route === 'index' ? '' : route.replace(/\/index$/, '/')
   if (route && !route.startsWith('/')) route = `/${route}`
   return new URL(route || '/', siteOrigin).href
-}
-
-const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/kb2026/', '/ma2026/', '/ma2025/', '/ma2024/', '/ma2023/', '/refi2025/', '/refi2024/', '/refi2023/', '/refi2026/']
-
-function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
-  if (/__analytics-|\/dashboard\//.test(env.path || '')) return ''
-  const pagePath = env.path ?? ''
-  const isKbCasePage = KB_CASE_SECTIONS.some((section) => pagePath.includes(section))
-  if (!isKbCasePage) {
-    // 防御性截断：非案例页单页只索引前 80,000 字符，防止搜索索引 chunk 超过 Cloudflare Pages 单文件 25MiB 上限
-    const capped = src.length > 80_000 ? src.slice(0, 80_000) : src
-    return md.render(capped, env)
-  }
-
-  const fileName = pagePath.split('/').pop() || ''
-  if (fileName === 'index.md' || /年度总结\.md$/.test(fileName)) return md.render(src, env)
-
-  // Index the metadata and legal issue overview, not only company names.
-  const title = src.match(/^# .+$/m)?.[0] || ''
-  const metadata = src.match(/^---\n([\s\S]*?)\n---/)?.[1] || ''
-  const overview = src.match(/^## [^\n]*(?:法律问题总览|法律问题汇总|问询概览)[^\n]*\n([\s\S]*?)(?=^## |$(?![\s\S]))/m)?.[1] || ''
-  const headings = (src.match(/^#{2,3} .+$/gm) || []).join('\n\n')
-  return md.render(`${title}\n\n${metadata.replace(/^[^:]+:/gm, '')}\n\n${overview.slice(0, 3000)}\n\n${headings}`, env)
 }
 
 export default defineConfig({

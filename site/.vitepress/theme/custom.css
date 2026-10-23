@@ -2448,7 +2448,7 @@ body {
 }
 
 /* ============================================================
-   法律 AI 培训课程表（/tools/legal-tools）
+   法律 AI 培训课程表（/training/）
    ============================================================ */
 
 .lc-course-hero {
@@ -2938,8 +2938,11 @@ body {
   color: #f6fbef;
 }
 @media (max-width: 720px) {
+  .vp-doc a.lc-hero-ppt-btn,
   .lc-hero-ppt-btn {
     position: static;
+    display: flex;
+    width: fit-content;
     margin-bottom: 14px;
   }
 }

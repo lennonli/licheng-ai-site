@@ -42,6 +42,11 @@ function fail(message) {
 
 if (!existsSync(dist)) throw new Error('Build output is missing')
 const files = walk(dist)
+for (const file of files) {
+  if (statSync(file).size > 25 * 1024 * 1024) {
+    fail(`${path.relative(dist, file)} exceeds the Cloudflare Pages 25 MiB file limit`)
+  }
+}
 const htmlFiles = files.filter((file) => file.endsWith('.html'))
 if (htmlFiles.length < 20) fail(`Expected at least 20 HTML pages, found ${htmlFiles.length}`)
 
@@ -62,7 +67,7 @@ for (const file of files.filter((file) => /\.(?:md|html|txt|json|js)$/.test(file
 for (const required of ['wechat-contact', '联系李成律师', '/wechat-li-cheng.jpg', '扫码添加微信']) {
   if (!homeHtml.includes(required)) fail(`Homepage WeChat contact section is missing ${required}`)
 }
-for (const required of ['/tools/', '06 / Training', '07 / Tools', '04 / Series', '实用工具']) {
+for (const required of ['href="/training/"', '/tools/', '06 / Training', '07 / Tools', '04 / Series', '实用工具']) {
   if (!homeHtml.includes(required)) fail(`Homepage tools entry is missing ${required}`)
 }
 
@@ -143,6 +148,13 @@ if (!toolsIndexFile || !legalToolsFile || !networkSitesFile || !aiDirectoryFile)
   }
   const trainingModuleCount = (legalToolsHtml.match(/<div class="lc-course-module">/g) || []).length
   if (trainingModuleCount !== 6) fail(`Training page expected 6 modules, found ${trainingModuleCount}`)
+  const trainingCourseCount = (legalToolsHtml.match(/class="lc-course-item"/g) || []).length
+  if (trainingCourseCount !== 33) fail(`Training page expected 33 courses, found ${trainingCourseCount}`)
+  const redirectsFile = path.join(dist, '_redirects')
+  const redirects = existsSync(redirectsFile) ? readFileSync(redirectsFile, 'utf8').split('\n') : []
+  for (const oldPath of ['/tools/legal-tools', '/tools/legal-tools/']) {
+    if (!redirects.includes(`${oldPath} /training/ 301`)) fail(`Training redirect missing for ${oldPath}`)
+  }
   const aiDirectoryHtml = readFileSync(aiDirectoryFile, 'utf8')
   for (const required of ['/training/', '/tools/network-check-sites', 'AI 网站导航']) {
     if (!toolsIndexHtml.includes(required)) fail(`Tools index is missing ${required}`)

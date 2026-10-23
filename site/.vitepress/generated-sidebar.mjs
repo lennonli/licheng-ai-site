@@ -174975,7 +174975,7 @@ export const generatedSidebar = {
     },
     {
       "text": "培训课程表",
-      "link": "/tools/legal-tools"
+      "link": "/training/"
     },
     {
       "text": "网核网站",
@@ -174985,6 +174985,10 @@ export const generatedSidebar = {
       "text": "AI 网站导航",
       "link": "/tools/ai-directory"
     }
+  ],
+  "/training/": [
+    { "text": "培训课程表", "link": "/training/" },
+    { "text": "实用工具", "link": "/tools/" }
   ]
 }
 export const generatedReading = {

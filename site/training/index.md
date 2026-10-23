@@ -1,4 +1,8 @@
-
+---
+title: 法律业务 AI 培训课程表
+description: 法律业务 AI 培训课程表：6 大模块、33 门课程，覆盖工具配置、合同审查、诉讼实战、文书成稿与人机分工，附配套资料及培训需求入口。
+sidebar: false
+---
 <BackButton fallback="/" />
 
 <div class="lc-course-hero">
