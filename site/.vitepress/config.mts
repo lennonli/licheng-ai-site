@@ -10,13 +10,17 @@ function canonicalUrl(page: string) {
   return new URL(route || '/', siteOrigin).href
 }
 
-const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/ma2026/', '/ma2025/', '/ma2024/', '/ma2023/', '/refi2025/', '/refi2024/', '/refi2023/', '/refi2026/']
+const KB_CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/kb2026/', '/ma2026/', '/ma2025/', '/ma2024/', '/ma2023/', '/refi2025/', '/refi2024/', '/refi2023/', '/refi2026/']
 
 function renderSearchSource(src: string, env: { path?: string }, md: { render: (source: string, env: unknown) => string }) {
   if (/__analytics-|\/dashboard\//.test(env.path || '')) return ''
   const pagePath = env.path ?? ''
   const isKbCasePage = KB_CASE_SECTIONS.some((section) => pagePath.includes(section))
-  if (!isKbCasePage) return md.render(src, env)
+  if (!isKbCasePage) {
+    // 防御性截断：非案例页单页只索引前 80,000 字符，防止搜索索引 chunk 超过 Cloudflare Pages 单文件 25MiB 上限
+    const capped = src.length > 80_000 ? src.slice(0, 80_000) : src
+    return md.render(capped, env)
+  }
 
   const fileName = pagePath.split('/').pop() || ''
   if (fileName === 'index.md' || /年度总结\.md$/.test(fileName)) return md.render(src, env)
