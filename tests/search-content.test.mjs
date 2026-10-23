@@ -1,5 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+import { readFileSync } from 'node:fs'
 import { createMarkdownRenderer } from 'vitepress'
 import { renderSearchSource } from '../scripts/search-content.mjs'
 
@@ -40,4 +41,11 @@ test('section indexes, annual summaries and training keep their searchable secti
 test('private pages stay out of search', () => {
   assert.equal(renderSearchSource(source, { path: '/repo/site/dashboard/index.md' }, md), '')
   assert.equal(renderSearchSource(source, { path: '/repo/site/__analytics-private.md' }, md), '')
+})
+
+test('the standalone training overview exposes an anchored search section', () => {
+  const source = readFileSync(new URL('../site/training/index.md', import.meta.url), 'utf8')
+  const html = renderSearchSource(source, { path: '/repo/site/training/index.md' }, md)
+  assert.match(html, /<h1\b[^>]*id="training-program"[^>]*>法律业务 AI 培训课程表[^<]*<a[^>]*href="#training-program"/)
+  assert.ok(html.includes('合同审查、起草修订与 OA 流程自动审查'))
 })
