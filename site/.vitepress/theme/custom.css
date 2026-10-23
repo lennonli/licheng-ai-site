@@ -2198,10 +2198,30 @@ body {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1050px) {
+@media (min-width: 960px) and (max-width: 1439px) {
   .VPNavBarTitle .title span {
     display: none;
   }
+}
+
+@media (min-width: 960px) and (max-width: 1279px) {
+  .VPNavBarMenu > .VPNavBarMenuLink,
+  .VPNavBarMenuGroup > .button {
+    padding-inline: 5px;
+  }
+
+  .VPNavBarSearch { padding-left: 8px; }
+  .DocSearch-Button .DocSearch-Button-Placeholder,
+  .DocSearch-Button .DocSearch-Button-Keys { display: none; }
+  .DocSearch-Button { width: 40px; padding: 0; justify-content: center; }
+  .DocSearch-Button .DocSearch-Search-Icon { margin-right: 0; }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .VPNavBarMenu,
+  .VPNavBarExtra { display: none !important; }
+  .VPNavBarHamburger { display: flex !important; }
+  .VPNavScreen { display: block !important; }
 }
 
 @media (max-width: 640px) {

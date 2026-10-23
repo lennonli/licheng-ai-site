@@ -67,9 +67,14 @@ for (const file of files.filter((file) => /\.(?:md|html|txt|json|js)$/.test(file
 for (const required of ['wechat-contact', '联系李成律师', '/wechat-li-cheng.jpg', '扫码添加微信']) {
   if (!homeHtml.includes(required)) fail(`Homepage WeChat contact section is missing ${required}`)
 }
-for (const required of ['href="/training/"', '/tools/', '06 / Training', '07 / Tools', '04 / Series', '实用工具']) {
+for (const required of ['href="/training/"', '/tools/', '03 / Training', '07 / Tools', '05 / Series', '实用工具']) {
   if (!homeHtml.includes(required)) fail(`Homepage tools entry is missing ${required}`)
 }
+
+const homeCardLinks = [...homeHtml.matchAll(/<a class="home-card" href="([^"]+)"/g)].map((match) => match[1])
+if (homeCardLinks[2] !== '/training/') fail('Training entry must be the third homepage card')
+const trainingNavLink = [...homeHtml.matchAll(/<a\b[^>]*>/g)].some(([tag]) => tag.includes('VPNavBarMenuLink') && tag.includes('href="/training/"'))
+if (!trainingNavLink) fail('Training must have a top-level navigation link')
 
 const seriesIndexFile = targetFile('/series/')
 const aiBasicsSeriesFile = targetFile('/series/ai-basics/')

@@ -779,25 +779,25 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">法律业务技能</span>
     <span class="home-card-desc">汇总合同审查、网络核查、知识产权证据归档等可复用技能。</span>
   </a>
+  <a class="home-card" href="/training/">
+    <span class="home-card-index">03 / Training</span>
+    <span class="home-card-title">法律业务 AI 培训课程表</span>
+    <span class="home-card-desc">6 大模块 33 门课程：工具配置、合同审查、诉讼实战、文书成稿与人机分工，附全套配套资料。</span>
+  </a>
   <a class="home-card" href="/tutorials/">
-    <span class="home-card-index">03 / Tutorials</span>
+    <span class="home-card-index">04 / Tutorials</span>
     <span class="home-card-title">AI 工具教程</span>
     <span class="home-card-desc">覆盖 Codex 环境搭建、系统依赖、代理配置与日常使用技巧。</span>
   </a>
   <a class="home-card" href="/series/">
-    <span class="home-card-index">04 / Series</span>
+    <span class="home-card-index">05 / Series</span>
     <span class="home-card-title">系列文章</span>
     <span class="home-card-desc">同一主题按阅读顺序成系列，从系列目录进入逐篇学习。</span>
   </a>
   <a class="home-card" href="/latest/">
-    <span class="home-card-index">05 / Updates</span>
+    <span class="home-card-index">06 / Updates</span>
     <span class="home-card-title">最新文章</span>
     <span class="home-card-desc">按更新日期倒序展示已经上传或更新的文章，直接跳转到具体页面。</span>
-  </a>
-  <a class="home-card" href="/training/">
-    <span class="home-card-index">06 / Training</span>
-    <span class="home-card-title">法律业务 AI 培训课程表</span>
-    <span class="home-card-desc">6 大模块 33 门课程：工具配置、合同审查、诉讼实战、文书成稿与人机分工，附全套配套资料。</span>
   </a>
   <a class="home-card" href="/tools/">
     <span class="home-card-index">07 / Tools</span>

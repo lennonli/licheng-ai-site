@@ -113,6 +113,7 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
+      { text: '培训课程表', link: '/training/' },
       { text: '最新文章', link: '/latest/' },
       { text: '系列文章', link: '/series/' },
       { text: '指令与技能', items: [
@@ -148,7 +149,6 @@ export default defineConfig({
         { text: '2026 年度总结', link: '/refi2026/2026年度总结' }
       ] },
       { text: '实用工具', items: [
-        { text: '培训课程表', link: '/training/' },
         { text: '工具总览', link: '/tools/' },
         { text: 'AI 网站导航', link: '/tools/ai-directory' },
         { text: '企业网核网站', link: '/tools/network-check-sites' }
