@@ -1,5 +1,5 @@
 
-<BackButton fallback="/tools/" />
+<BackButton fallback="/" />
 
 <div class="lc-course-hero">
   <a class="lc-hero-ppt-btn" href="/tools/course-ppt/" target="_blank" rel="noopener">课程PPT<span aria-hidden="true"> ↗</span></a>

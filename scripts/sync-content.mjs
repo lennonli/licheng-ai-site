@@ -709,9 +709,13 @@ function writeGeneratedSidebar() {
     ],
     '/tools/': [
       { text: '实用工具', link: '/tools/' },
-      { text: '培训课程表', link: '/tools/legal-tools' },
+      { text: '培训课程表', link: '/training/' },
       { text: '网核网站', link: '/tools/network-check-sites' },
       { text: 'AI 网站导航', link: '/tools/ai-directory' }
+    ],
+    '/training/': [
+      { text: '培训课程表', link: '/training/' },
+      { text: '实用工具', link: '/tools/' }
     ]
   }
 
@@ -790,73 +794,78 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">最新文章</span>
     <span class="home-card-desc">按更新日期倒序展示已经上传或更新的文章，直接跳转到具体页面。</span>
   </a>
+  <a class="home-card" href="/training/">
+    <span class="home-card-index">06 / Training</span>
+    <span class="home-card-title">法律业务 AI 培训课程表</span>
+    <span class="home-card-desc">6 大模块 33 门课程：工具配置、合同审查、诉讼实战、文书成稿与人机分工，附全套配套资料。</span>
+  </a>
   <a class="home-card" href="/tools/">
-    <span class="home-card-index">06 / Tools</span>
+    <span class="home-card-index">07 / Tools</span>
     <span class="home-card-title">实用工具</span>
     <span class="home-card-desc">集中整理可直接使用的法律工具和企业网络核查网站。</span>
   </a>
   <a class="home-card" href="/kb/">
-    <span class="home-card-index">07 / Cases 2026</span>
+    <span class="home-card-index">08 / Cases 2026</span>
     <span class="home-card-title">问询案例库 · 2026年度</span>
     <span class="home-card-desc">2026 年审核问询案例，按问询要点、回复口径与执业提示沉淀。</span>
   </a>
   <a class="home-card" href="/kb2025/">
-    <span class="home-card-index">08 / Cases 2025</span>
+    <span class="home-card-index">09 / Cases 2025</span>
     <span class="home-card-title">问询案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/ma2026/">
-    <span class="home-card-index">09 / MA Cases 2026</span>
+    <span class="home-card-index">10 / MA Cases 2026</span>
     <span class="home-card-title">并购重组案例库 · 2026年度</span>
     <span class="home-card-desc">2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/ma2025/">
-    <span class="home-card-index">10 / MA Cases 2025</span>
+    <span class="home-card-index">11 / MA Cases 2025</span>
     <span class="home-card-title">并购重组案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年注册生效重大资产重组 35 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/ma2024/">
-    <span class="home-card-index">11 / MA Cases 2024</span>
+    <span class="home-card-index">12 / MA Cases 2024</span>
     <span class="home-card-title">并购重组案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年注册生效重大资产重组 11 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/ma2023/">
-    <span class="home-card-index">12 / MA Cases 2023</span>
+    <span class="home-card-index">13 / MA Cases 2023</span>
     <span class="home-card-title">并购重组案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年注册生效重大资产重组 7 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
   </a>
   <a class="home-card" href="/refi2025/">
-    <span class="home-card-index">13 / Refi Cases 2025</span>
+    <span class="home-card-index">14 / Refi Cases 2025</span>
     <span class="home-card-title">再融资案例库 · 2025年度</span>
     <span class="home-card-desc">2025 年度深市再融资审核问询案例 76 家（定向增发/可转债，69 家注册生效），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
   </a>
   <a class="home-card" href="/refi2024/">
-    <span class="home-card-index">14 / Refi Cases 2024</span>
+    <span class="home-card-index">15 / Refi Cases 2024</span>
     <span class="home-card-title">再融资案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年度深市再融资审核问询案例 33 家（24 家注册生效、8 家撤回、1 家被否后重报获准），覆盖募集资金用途、财务性投资、同业竞争等法律要点。</span>
   </a>
   <a class="home-card" href="/refi2023/">
-    <span class="home-card-index">15 / Refi Cases 2023</span>
+    <span class="home-card-index">16 / Refi Cases 2023</span>
     <span class="home-card-title">再融资案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年度沪深再融资审核问询案例 390 家（313 家注册生效、68 家终止），全面注册制首年与 827 新规撤回潮全景样本。</span>
   </a>
   <a class="home-card" href="/refi2026/">
-    <span class="home-card-index">16 / Refi Cases 2026</span>
+    <span class="home-card-index">17 / Refi Cases 2026</span>
     <span class="home-card-title">再融资案例库 · 2026年度</span>
     <span class="home-card-desc">2026 年度沪深再融资审核问询案例 192 家（146 家注册生效、25 家提交注册、20 家审核中），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
   </a>
   <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">17 / Cases 2024</span>
+    <span class="home-card-index">18 / Cases 2024</span>
     <span class="home-card-title">问询案例库 · 2024年度</span>
     <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">18 / Cases 2023</span>
+    <span class="home-card-index">19 / Cases 2023</span>
     <span class="home-card-title">问询案例库 · 2023年度</span>
     <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
   </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">19 / Directory</span>
+    <span class="home-card-index">20 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>
@@ -1184,12 +1193,20 @@ ${toc}
   }
 }
 
-if (tutorialRedirects.length) {
+// 页面迁移的固定重定向（非教程类）：页面换地址后旧公开 URL 301 到新地址。
+const pageRedirects = [
+  { from: '/tools/legal-tools', to: '/training/' },
+  { from: '/tools/legal-tools/', to: '/training/' }
+]
+
+const redirectLines = [
+  ...tutorialRedirects.map((item) => `${item.from} ${item.to} 301`),
+  ...pageRedirects.map((item) => `${item.from} ${item.to} 301`)
+]
+if (redirectLines.length) {
   writeFileSync(
     path.join(siteDir, 'public', '_redirects'),
-    `# 旧教程 URL（含 -ABL-日期-版本 内部后缀或已被更新版本取代）301 跳转至清理后地址\n${tutorialRedirects
-      .map((item) => `${item.from} ${item.to} 301`)
-      .join('\n')}\n`
+    `# 旧 URL（教程 -ABL-日期-版本 变体、被取代教程或已迁移页面）301 跳转至新地址\n${redirectLines.join('\n')}\n`
   )
 }
 

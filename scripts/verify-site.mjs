@@ -126,7 +126,7 @@ if (!seriesIndexFile || !aiBasicsSeriesFile || !aiInfraSeriesFile || !aiPractice
 }
 
 const toolsIndexFile = targetFile('/tools/')
-const legalToolsFile = targetFile('/tools/legal-tools')
+const legalToolsFile = targetFile('/training/')
 const networkSitesFile = targetFile('/tools/network-check-sites')
 const aiDirectoryFile = targetFile('/tools/ai-directory')
 if (!toolsIndexFile || !legalToolsFile || !networkSitesFile || !aiDirectoryFile) {
@@ -135,11 +135,16 @@ if (!toolsIndexFile || !legalToolsFile || !networkSitesFile || !aiDirectoryFile)
   const toolsIndexHtml = readFileSync(toolsIndexFile, 'utf8')
   const legalToolsHtml = readFileSync(legalToolsFile, 'utf8')
   const networkSitesHtml = readFileSync(networkSitesFile, 'utf8')
-  for (const required of ['/tools/legal-tools', '/tools/network-check-sites', '法律工具', '网核网站']) {
+  for (const required of ['/training/', '/tools/network-check-sites', '法律工具', '网核网站']) {
     if (!toolsIndexHtml.includes(required)) fail(`Tools index is missing ${required}`)
   }
+  for (const required of ['法律业务 AI 培训课程表', 'lc-course-module', '/tools/training-request/']) {
+    if (!legalToolsHtml.includes(required)) fail(`Training page is missing ${required}`)
+  }
+  const trainingModuleCount = (legalToolsHtml.match(/<div class="lc-course-module">/g) || []).length
+  if (trainingModuleCount !== 6) fail(`Training page expected 6 modules, found ${trainingModuleCount}`)
   const aiDirectoryHtml = readFileSync(aiDirectoryFile, 'utf8')
-  for (const required of ['/tools/legal-tools', '/tools/network-check-sites', 'AI 网站导航']) {
+  for (const required of ['/training/', '/tools/network-check-sites', 'AI 网站导航']) {
     if (!toolsIndexHtml.includes(required)) fail(`Tools index is missing ${required}`)
   }
   for (const required of ['ChatGPT', '北大法宝', '国家法律法规数据库', '域名与安全核验重点', '维护建议']) {

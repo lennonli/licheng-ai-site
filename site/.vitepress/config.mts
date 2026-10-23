@@ -166,6 +166,7 @@ export default defineConfig({
         { text: '2026 年度总结', link: '/refi2026/2026年度总结' }
       ] },
       { text: '实用工具', items: [
+        { text: '培训课程表', link: '/training/' },
         { text: '工具总览', link: '/tools/' },
         { text: 'AI 网站导航', link: '/tools/ai-directory' },
         { text: '企业网核网站', link: '/tools/network-check-sites' }
