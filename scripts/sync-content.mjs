@@ -1193,6 +1193,44 @@ ${toc}
   }
 }
 
+// 案例库全文页体量过大，注入 search:false 排除出 VitePress 本地搜索索引——
+// localSearch 会把全部页面打进单文件 @localSearchIndexroot chunk，超过 Cloudflare
+// Pages 单文件 25MiB 硬上限会导致整个站点无法部署（2026-10-23 实测）。
+const searchExcludedDirs = [
+  'kb', 'kb2023', 'kb2024', 'kb2025', 'kb2026',
+  'ma2026', 'ma2025', 'ma2024', 'ma2023',
+  'refi2026', 'refi2025', 'refi2024', 'refi2023'
+]
+let searchExcludedCount = 0
+for (const dir of searchExcludedDirs) {
+  const root = path.join(siteDir, dir)
+  if (!existsSync(root)) continue
+  const stack = [root]
+  while (stack.length) {
+    const current = stack.pop()
+    for (const name of readDirSafe(current)) {
+      const full = path.join(current, name)
+      if (statSync(full).isDirectory()) {
+        stack.push(full)
+        continue
+      }
+      if (!name.endsWith('.md')) continue
+      let text = readFileSync(full, 'utf8')
+      if (text.startsWith('---')) {
+        const end = text.indexOf('\n---', 3)
+        if (end === -1) continue
+        if (/^search:\s*false$/m.test(text.slice(0, end))) continue
+        text = text.slice(0, end) + '\nsearch: false' + text.slice(end)
+      } else {
+        text = `---\nsearch: false\n---\n\n${text}`
+      }
+      writeFileSync(full, text)
+      searchExcludedCount += 1
+    }
+  }
+}
+console.log(`[sync] search:false injected into ${searchExcludedCount} archive pages`)
+
 // 页面迁移的固定重定向（非教程类）：页面换地址后旧公开 URL 301 到新地址。
 const pageRedirects = [
   { from: '/tools/legal-tools', to: '/training/' },
