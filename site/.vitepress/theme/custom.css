@@ -866,8 +866,30 @@ body {
 
 .vp-doc .home-search {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin: 0 auto 34px;
+}
+
+.vp-doc .home-search-hint {
+  margin: 10px 8px 0;
+  font-size: 13px;
+  color: var(--lc-c-muted);
+  text-align: center;
+}
+
+.VPLocalSearchBox .results:empty::before {
+  content: "输入关键词搜索指令、技能、教程与课程";
+  display: block;
+  padding: 24px 16px;
+  color: var(--lc-c-muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.VPLocalSearchBox .shell:has(.search-input:not(:placeholder-shown)) .results:empty::before {
+  content: "正在准备搜索，请稍候…";
 }
 
 .vp-doc .home-search-button {

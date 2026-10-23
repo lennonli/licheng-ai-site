@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import path from 'node:path'
+import { pathToFileURL } from 'node:url'
 
 const root = process.cwd()
 const dist = path.join(root, 'site', '.vitepress', 'dist')
@@ -45,6 +46,18 @@ const files = walk(dist)
 for (const file of files) {
   if (statSync(file).size > 25 * 1024 * 1024) {
     fail(`${path.relative(dist, file)} exceeds the Cloudflare Pages 25 MiB file limit`)
+  }
+}
+const searchIndexes = files.filter((file) => /@localSearchIndex[^/]+\.js$/.test(file))
+if (!searchIndexes.length) fail('Local search index is missing')
+for (const file of searchIndexes) {
+  if (statSync(file).size > 2 * 1024 * 1024) fail('Global search index exceeds the 2 MiB performance budget')
+  const { default: json } = await import(pathToFileURL(file).href)
+  const index = JSON.parse(json)
+  for (const id of Object.values(index.documentIds || {})) {
+    if (/^\/(?:kb(?:\d{4})?|ma\d{4}|refi\d{4})\//.test(id) && id.split('#')[0].split('/').filter(Boolean).length > 1) {
+      fail(`Case content must not enter global search: ${id}`)
+    }
   }
 }
 const htmlFiles = files.filter((file) => file.endsWith('.html'))

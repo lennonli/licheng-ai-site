@@ -88,6 +88,11 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
+        disableDetailedView: true,
+        disableQueryPersistence: true,
+        miniSearch: {
+          searchOptions: { fuzzy: false, prefix: true, combineWith: 'AND' }
+        },
         translations: {
           button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
           modal: {

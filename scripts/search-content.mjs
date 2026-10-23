@@ -1,24 +1,47 @@
-const CASE_SECTIONS = ['/kb/', '/kb2023/', '/kb2024/', '/kb2025/', '/kb2026/', '/ma2026/', '/ma2025/', '/ma2024/', '/ma2023/', '/refi2025/', '/refi2024/', '/refi2023/', '/refi2026/']
+const CASE_SECTION = /^(?:kb(?:\d{4})?|ma\d{4}|refi\d{4})\//
+
+function plainText(html) {
+  return html
+    .replace(/<(script|style|pre)\b[^>]*>[\s\S]*?<\/\1>/gi, ' ')
+    .replace(/<a\b[^>]*class="header-anchor"[^>]*>[\s\S]*?<\/a>/g, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&(?:#\d+|#x[\da-f]+|\w+);/gi, ' ')
+    .replace(/\s+/g, ' ').trim()
+}
+
+function escapeHtml(text) {
+  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
 
 export function renderSearchSource(src, env, md) {
-  const pagePath = (env.path || '').replaceAll('\\', '/')
-  if (/__analytics-|\/dashboard\//.test(pagePath)) return ''
-  if (!CASE_SECTIONS.some((section) => pagePath.includes(section))) {
-    return md.render(src.slice(0, 80_000), env)
+  const pagePath = (env.relativePath || env.path || '')
+    .replaceAll('\\', '/')
+    .replace(/^.*\/site\//, '')
+    .replace(/^\/+/, '')
+  if (/__analytics-|^dashboard\//.test(pagePath)) return ''
+  if (CASE_SECTION.test(pagePath)) {
+    // Keep library entry points discoverable without shipping thousands of
+    // cases, annual reports, or company-directory cards to every search user.
+    if (!/^[^/]+\/index\.md$/.test(pagePath)) return ''
+    const title = src.match(/^# .+$/m)?.[0] || '# 案例库'
+    const lead = src.match(/<p class="section-lead">([\s\S]*?)<\/p>/)?.[1] || ''
+    return md.render(`${title}\n\n${lead.slice(0, 800)}`, env)
   }
 
-  const fileName = pagePath.split('/').pop() || ''
-  if (fileName === 'index.md' || /年度总结\.md$/.test(fileName)) return md.render(src, env)
-
-  const title = src.match(/^# .+$/m)?.[0] || ''
-  const metadata = src.match(/^---\n([\s\S]*?)\n---/)?.[1] || ''
-  const overview = src.match(/^## [^\n]*(?:法律问题总览|法律问题汇总|问询概览)[^\n]*\n([\s\S]*?)(?=^## |$(?![\s\S]))/m)?.[1] || ''
-  const headings = (src.match(/^#{2,3} .+$/gm) || []).join('\n\n')
-
-  // One search document per case: retain issue keywords without duplicating
-  // the company title and ancestor headings in a document for every heading.
-  // This changes only search excerpts; the complete case page is untouched.
-  const excerpt = `${metadata.replace(/^[^:]+:/gm, '')}\n\n${overview.slice(0, 3000)}\n\n${headings}`
-    .replace(/^#{1,6}\s+/gm, '')
-  return md.render(`${title}\n\n${excerpt}`, env)
+  const html = md.render(src.slice(0, 80_000), env)
+  if (env.frontmatter?.search === false) return ''
+  // One compact discovery result per article. Keep section keywords even when
+  // their full text is beyond the summary, without indexing long code samples.
+  const heading = html.match(/<h1\b[^>]*>[\s\S]*?<\/h1>/i)?.[0]
+  if (!heading) return ''
+  const sections = [...html.matchAll(/<h([2-6])\b[^>]*>([\s\S]*?)<\/h\1>/g)]
+    .map((match) => plainText(match[2])).join('\n')
+  const courseNames = [...html.matchAll(/<p\b[^>]*class="lc-course-name"[^>]*>([\s\S]*?)<\/p>/g)]
+    .map((match) => plainText(match[1])).join('\n')
+  const summary = plainText(html).slice(0, 800)
+  const description = String(env.frontmatter?.description || '').slice(0, 300)
+  const searchableHeading = /<a\b[^>]*href="#/.test(heading)
+    ? heading
+    : heading.replace('</h1>', '<a href="#"></a></h1>')
+  return `${searchableHeading}\n<p>${escapeHtml(`${description}\n${sections}\n${courseNames}\n${summary}`)}</p>`
 }

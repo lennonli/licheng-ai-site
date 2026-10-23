@@ -65,6 +65,6 @@ onBeforeUnmount(() => window.removeEventListener('popstate', restore))
     </label>
     <button type="button" @click="reset">清除筛选</button>
     <p v-if="ready" role="status" aria-live="polite">找到 {{ count }} 份案例<span v-if="!count">，请减少关键词或选择其他板块。</span></p>
-    <p class="case-filter-hint">这里筛选案例信息；查找具体法律问题，请使用顶部站内搜索。</p>
+    <p class="case-filter-hint">全站搜索收录指令、技能、教程与课程。案例可在本页筛选公司信息、直接打开阅读，或参阅<a href="/kbskill/">知识库使用教程</a>交由 AI 检索。</p>
   </section>
 </template>
