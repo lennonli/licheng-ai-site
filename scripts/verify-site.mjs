@@ -62,7 +62,7 @@ for (const file of files.filter((file) => /\.(?:md|html|txt|json|js)$/.test(file
 for (const required of ['wechat-contact', '联系李成律师', '/wechat-li-cheng.jpg', '扫码添加微信']) {
   if (!homeHtml.includes(required)) fail(`Homepage WeChat contact section is missing ${required}`)
 }
-for (const required of ['/tools/', '06 / Tools', '04 / Series', '实用工具']) {
+for (const required of ['/tools/', '06 / Training', '07 / Tools', '04 / Series', '实用工具']) {
   if (!homeHtml.includes(required)) fail(`Homepage tools entry is missing ${required}`)
 }
 
