@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="李成律师 · 个人能力与 AI 实践全景">
+  <meta name="twitter:title" content="李成律师 · 个人能力与 AI 实践全景">
+  <meta property="og:description" content="资本市场执业律师 × AI 工程化实践者：8 年非诉经验、5 单 IPO 签字、8 个 WorkBuddy 公开技能、80+ GitHub 开源仓库，95% 工作由 AI 完成的律师生产力样本。">
+  <meta name="description" content="李成律师个人能力与 AI 实践全景：资本市场 8 年、5 单 IPO 签字、AI 法律工作体系、WorkBuddy 公开技能、GitHub 开源。">
+  <title>李成律师 · 个人能力与 AI 实践全景</title>
+  <link rel="canonical" href="https://ai.licheng.uk/tools/capability/">
+  <meta property="og:url" content="https://ai.licheng.uk/tools/capability/">
+  <style>
+    :root {
+      --paper: #F6FBEF;
+      --ink: #163A24;
+      --green: #2F7D4F;
+      --gold: #C9A227;
+      --sage: #DCEBD8;
+      --mint: #E9F3E5;
+      --line: #BCD3BA;
+      --muted: #66806B;
+      --deep: #0D2918;
+      --lime: #9fe870;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      background:
+        radial-gradient(900px 420px at 85% -10%, rgba(159, 232, 112, .16), transparent 60%),
+        linear-gradient(160deg, var(--deep) 0%, #14351f 62%, var(--ink) 100%);
+      color: #F2F7EC;
+      padding: 72px 0 0;
+      border-bottom: 6px solid var(--gold);
+    }
+    .hero .kicker {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 13px; letter-spacing: .22em; color: var(--lime);
+      border: 1px solid rgba(159,232,112,.35); border-radius: 999px;
+      padding: 6px 16px; margin-bottom: 22px;
+    }
+    .hero .kicker::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--lime); }
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      letter-spacing: .06em; font-weight: 800; line-height: 1.18;
+    }
+    .hero h1 small {
+      display: block; margin-top: 14px;
+      font-size: clamp(15px, 2.2vw, 20px); font-weight: 500;
+      color: #CDE3C4; letter-spacing: .08em;
+    }
+    .hero .thesis {
+      margin-top: 26px; max-width: 720px;
+      font-size: clamp(15px, 2vw, 18px); color: #E8F2DF;
+    }
+    .hero .thesis b { color: var(--lime); font-weight: 700; }
+    .hero .thesis .ratio {
+      display: inline-flex; align-items: baseline; gap: 2px; font-weight: 800;
+    }
+    .hero .thesis .ratio b { font-size: 1.35em; }
+    .statbar {
+      margin-top: 46px;
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      border-top: 1px solid rgba(188,211,186,.28);
+    }
+    .statbar .cell { padding: 20px 18px 26px; border-right: 1px solid rgba(188,211,186,.18); }
+    .statbar .cell:last-child { border-right: none; }
+    .statbar .num {
+      font-size: clamp(22px, 3.4vw, 34px); font-weight: 800; color: #fff;
+      font-variant-numeric: tabular-nums; line-height: 1.2;
+    }
+    .statbar .num i { font-style: normal; color: var(--lime); }
+    .statbar .lab { font-size: 12.5px; color: #A9C4A0; margin-top: 4px; letter-spacing: .04em; }
+
+    /* ---------- SECTION ---------- */
+    section.blk { padding: 66px 0 8px; }
+    .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; }
+    .sec-no {
+      font-size: 15px; font-weight: 800; color: var(--gold);
+      letter-spacing: .14em; font-variant-numeric: tabular-nums; white-space: nowrap;
+    }
+    .sec-head h2 {
+      font-size: clamp(23px, 3.4vw, 30px); font-weight: 800; letter-spacing: .04em;
+    }
+    .sec-sub { color: var(--muted); font-size: 14.5px; margin-bottom: 30px; max-width: 760px; }
+    .rule { height: 3px; width: 64px; background: var(--gold); border-radius: 2px; margin: 14px 0 10px; }
+
+    /* ---------- 01 履历 ---------- */
+    .bio-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 22px; }
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: 14px;
+      padding: 26px 28px; box-shadow: 0 2px 10px rgba(22,58,36,.05);
+    }
+    .card h3 { font-size: 17px; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 9px; }
+    .card h3 .dot { width: 9px; height: 9px; border-radius: 3px; background: var(--green); flex: none; }
+    .edu { display: flex; gap: 14px; padding: 11px 0; border-bottom: 1px dashed var(--line); }
+    .edu:last-of-type { border-bottom: none; }
+    .edu .deg { font-weight: 700; font-size: 15px; }
+    .edu .sch { color: var(--muted); font-size: 13.5px; }
+    .lines { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 18px; }
+    .lines .li {
+      display: flex; gap: 9px; font-size: 14.5px; align-items: flex-start;
+      background: var(--mint); border-radius: 9px; padding: 9px 13px;
+    }
+    .lines .li::before { content: "◆"; color: var(--green); font-size: 10px; margin-top: 6px; }
+    .deal { padding: 12px 0; border-bottom: 1px dashed var(--line); }
+    .deal:last-child { border-bottom: none; }
+    .deal .t { font-weight: 700; font-size: 15px; }
+    .deal .d { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+    .deal .tag {
+      display: inline-block; font-size: 11.5px; font-weight: 700; color: var(--deep);
+      background: var(--gold); border-radius: 5px; padding: 1px 8px; margin-left: 8px;
+      vertical-align: 2px;
+    }
+    .tag.g { background: var(--sage); color: var(--green); }
+
+    /* ---------- 02 体系 ---------- */
+    .method {
+      background: linear-gradient(140deg, var(--deep), #1C4A2C);
+      color: #EDF6E6; border-radius: 16px; padding: 30px 32px;
+      display: grid; grid-template-columns: 1fr auto; gap: 26px; align-items: center;
+    }
+    .method .big { font-size: clamp(17px, 2.4vw, 21px); font-weight: 700; line-height: 1.85; }
+    .method .big em { font-style: normal; color: var(--lime); }
+    .method .note { font-size: 13px; color: #A9C4A0; margin-top: 10px; font-weight: 400; }
+    .dial { text-align: center; flex: none; }
+    .dial .pct { font-size: 44px; font-weight: 800; color: var(--lime); line-height: 1; font-variant-numeric: tabular-nums; }
+    .dial .pct.dim { color: #fff; }
+    .dial .cap { font-size: 12px; color: #A9C4A0; margin-top: 8px; max-width: 120px; }
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 22px; }
+    .metric {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px;
+      padding: 18px 18px 15px;
+    }
+    .metric .n { font-size: 25px; font-weight: 800; color: var(--green); font-variant-numeric: tabular-nums; line-height: 1.25; }
+    .metric .n small { font-size: 14px; font-weight: 700; }
+    .metric .k { font-size: 13px; color: var(--muted); margin-top: 5px; line-height: 1.55; }
+
+    /* ---------- 证据展示 ---------- */
+    .shot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 22px; }
+    .shot {
+      background: #fff; border: 1px solid var(--line); border-radius: 16px;
+      overflow: hidden; box-shadow: 0 3px 14px rgba(22,58,36,.07);
+      display: flex; flex-direction: column;
+    }
+    .shot .frame { padding: 12px; background: #EDF4E7; border-bottom: 1px solid var(--line); }
+    .shot img {
+      width: 100%; height: auto; display: block; border-radius: 10px;
+      border: 1px solid #c9d8c3; box-shadow: 0 2px 8px rgba(13,41,24,.10);
+    }
+    .shot .cap { padding: 15px 17px 17px; font-size: 13.5px; }
+    .shot .cap b { display: block; font-size: 14.5px; margin-bottom: 5px; }
+    .shot .cap span { color: var(--muted); line-height: 1.65; display: block; }
+    .shot.wide { grid-column: 1 / -1; }
+    .shot.wide .frame { background: #fff; padding: 14px 14px 0; }
+
+    .quote-card {
+      background: var(--sage); border-left: 5px solid var(--green);
+      border-radius: 0 14px 14px 0; padding: 22px 26px; margin-top: 20px;
+    }
+    .quote-card b { font-size: 15.5px; }
+    .quote-card p { font-size: 14px; color: #2c4a35; margin-top: 6px; }
+    .quote-card .src { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+
+    .badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .badge {
+      background: #fff; border: 1px solid var(--line); border-radius: 999px;
+      font-size: 13px; padding: 7px 15px; font-weight: 600;
+    }
+    .badge b { color: var(--green); }
+
+    /* ---------- WorkBuddy ---------- */
+    .skill-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; margin-top: 18px; }
+    .skill {
+      display: flex; align-items: center; gap: 10px;
+      background: #fff; border: 1px solid var(--line); border-radius: 10px;
+      padding: 11px 15px; font-size: 14px;
+    }
+    .skill .st { font-size: 11px; font-weight: 800; border-radius: 5px; padding: 2px 8px; flex: none; }
+    .st.pub { background: var(--green); color: #fff; }
+    .st.rev { background: var(--gold); color: var(--deep); }
+    .st.dev { background: var(--sage); color: var(--green); }
+
+    /* ---------- GitHub ---------- */
+    .gh-head {
+      display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+      background: #0D1117; color: #E6EDF3; border-radius: 14px; padding: 22px 26px;
+    }
+    .gh-head .u { font-size: 20px; font-weight: 800; }
+    .gh-head .u a { color: #9fe870; }
+    .gh-head .meta { display: flex; gap: 18px; flex-wrap: wrap; margin-left: auto; }
+    .gh-head .m { text-align: center; }
+    .gh-head .m b { display: block; font-size: 21px; font-variant-numeric: tabular-nums; }
+    .gh-head .m span { font-size: 12px; color: #8B949E; }
+    .repo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+    .repo {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 17px 19px;
+    }
+    .repo .rn { font-weight: 800; font-size: 14.5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .repo .rn a { color: var(--ink); }
+    .repo .rd { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.6; }
+    .repo .rs { font-size: 12.5px; color: var(--gold); margin-top: 9px; font-weight: 700; }
+
+    /* ---------- wechat ---------- */
+    .wechat-contact {
+      margin: 70px 0 26px;
+      background: linear-gradient(135deg, var(--mint), #fff);
+      border: 1px solid var(--line); border-radius: 18px;
+      display: flex; align-items: center; gap: 28px; padding: 30px 34px; flex-wrap: wrap;
+    }
+    .wechat-contact-copy { flex: 1 1 260px; }
+    .wechat-contact-copy h2 { font-size: 22px; font-weight: 800; }
+    .wechat-contact-copy p { color: var(--muted); font-size: 14.5px; margin-top: 8px; }
+    .wechat-contact-qr-link {
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 700; color: var(--green);
+    }
+    .wechat-contact-qr-link img {
+      width: 120px; height: auto; border-radius: 10px; border: 1px solid var(--line);
+    }
+    .backhome { text-align: center; padding: 18px 0 8px; font-size: 14px; }
+    footer {
+      border-top: 1px solid var(--line); margin-top: 40px; padding: 26px 0 40px;
+      color: var(--muted); font-size: 13px; text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .statbar { grid-template-columns: repeat(3, 1fr); }
+      .bio-grid { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      .method { grid-template-columns: 1fr; }
+      .repo-grid { grid-template-columns: 1fr 1fr; }
+      .skill-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .statbar { grid-template-columns: repeat(2, 1fr); }
+      .repo-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 54px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">CAPABILITY PORTFOLIO · 2026</div>
+    <h1>李成<small>执业律师 · 上海市锦天城（深圳）律师事务所 · AI 工程化实践者</small></h1>
+    <p class="thesis">
+      深耕资本市场非诉业务 8 年，同时把 AI 编织进尽调、申报、审查、写作的每一道工序——
+      对外口径是：<span class="ratio"><b>95%</b><i>的工作由 AI 完成，剩下</i><b>5%</b></span>
+      由我复核与签字。律师从内容输出者，转变为质量的终审者。
+    </p>
+    <div class="statbar">
+      <div class="cell"><div class="num"><i>8</i> 年+</div><div class="lab">资本市场非诉执业</div></div>
+      <div class="cell"><div class="num"><i>5</i> 单</div><div class="lab">IPO / 挂牌签字项目</div></div>
+      <div class="cell"><div class="num"><i>8</i> 个</div><div class="lab">WorkBuddy 公开技能</div></div>
+      <div class="cell"><div class="num"><i>80</i>+</div><div class="lab">GitHub 开源仓库</div></div>
+      <div class="cell"><div class="num"><i>4</i> 家</div><div class="lab">主流大模型全付费订阅</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 01 履历 -->
+  <section class="blk" id="career">
+    <div class="sec-head"><span class="sec-no">01 / 07</span><h2>职业履历</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">工科训练出身的法律人：先学会拆解机器与系统，再学会拆解交易与风险。自 2017 年起从事资本市场法律业务，覆盖六条非诉业务线。</p>
+    <div class="bio-grid">
+      <div class="card">
+        <h3><span class="dot"></span>教育与执业背景</h3>
+        <div class="edu">
+          <div>
+            <div class="deg">法律硕士 · 厦门大学</div>
+            <div class="sch">工科思维 × 法学训练的复合背景，擅长把业务流程工程化</div>
+          </div>
+        </div>
+        <div class="edu">
+          <div>
+            <div class="deg">工学学士 · 南昌大学 机械设计制造及其自动化</div>
+            <div class="sch">制造业与硬科技产业的尽调底色</div>
+          </div>
+        </div>
+        <h3 style="margin-top:18px"><span class="dot"></span>六条非诉业务线</h3>
+        <div class="lines">
+          <div class="li">A 股 IPO</div>
+          <div class="li">再融资</div>
+          <div class="li">境外上市</div>
+          <div class="li">并购重组</div>
+          <div class="li">投融资与基金</div>
+          <div class="li">股权激励</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3><span class="dot"></span>代表项目（均已公告公开）</h3>
+        <div class="deal">
+          <div class="t">派能科技 <span class="tag">科创板 688063</span></div>
+          <div class="d">IPO 签字律师 · 储能电池</div>
+        </div>
+        <div class="deal">
+          <div class="t">路维光电 <span class="tag">科创板 688401</span></div>
+          <div class="d">IPO 签字律师 · 掩膜版</div>
+        </div>
+        <div class="deal">
+          <div class="t">逸豪新材 <span class="tag">创业板 301176</span></div>
+          <div class="d">IPO 签字律师 · 铜箔</div>
+        </div>
+        <div class="deal">
+          <div class="t">威易发 <span class="tag g">北交所</span></div>
+          <div class="d">挂牌签字律师 · 摩擦焊</div>
+        </div>
+        <div class="deal">
+          <div class="t">A+H 股项目 <span class="tag g">进行中</span></div>
+          <div class="d">IPO 签字律师（项目信息以公告为准）</div>
+        </div>
+        <div class="deal">
+          <div class="t">华润三九收购昆药集团 <span class="tag g">并购重组</span></div>
+          <div class="d">29 亿元重大资产重组 · 主办律师</div>
+        </div>
+        <div class="deal">
+          <div class="t">佑驾创新 <span class="tag g">境外上市</span></div>
+          <div class="d">H 股上市项目 · 智能驾驶</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 AI 体系 -->
+  <section class="blk" id="ai-system">
+    <div class="sec-head"><span class="sec-no">02 / 07</span><h2>AI 法律工作体系</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">不是「用 AI 工具」，而是围绕本所业务自建指令（AGENTS）、技能（Skills）、知识库（KB）与多 Agent 流水线，把律师经验固化为可复用的生产线。</p>
+    <div class="method">
+      <div>
+        <div class="big">尽调报告、申报文件、审查意见、问询回复的<em>初稿由 AI 生产线产出</em>，律师专注于交叉核验、风险判断与签字把关——这是我在团队内实际运行的作业方式。</div>
+        <div class="note">配套方法论沉淀于本站《AGENTS 指令》《法律业务技能》《AI 工具教程》三个专栏，均已公开。</div>
+      </div>
+      <div class="dial">
+        <div class="pct">95%</div>
+        <div class="cap">AI 产出（初稿·检索·核验）</div>
+        <div class="pct dim" style="margin-top:14px">5%</div>
+        <div class="cap">律师复核与签字</div>
+      </div>
+    </div>
+    <div class="metrics">
+      <div class="metric"><div class="n">812<small> 万+</small></div><div class="k">上市公司公告库全量检索（见微数据），问询与回复原文直达</div></div>
+      <div class="metric"><div class="n">1,636<small> 份</small></div><div class="k">问询类文书沉淀，其中补充法律意见书 824 份，构成问询知识库</div></div>
+      <div class="metric"><div class="n">1,634<small> 节点</small></div><div class="k">单项目股东穿透核查：8 层 1,664 行股权结构表的自动化生成</div></div>
+      <div class="metric"><div class="n">152<small> 张</small></div><div class="k">出口运单 OCR 抽取，16 个 Agent 并行完成金额与日期勾稽</div></div>
+      <div class="metric"><div class="n">21<small> 份</small></div><div class="k">外文单据翻译与要素化归档，双语对照回溯原文</div></div>
+      <div class="metric"><div class="n">39<small> 份</small></div><div class="k">AI 生产线辅助产出的尽调报告 / 申报文件初稿</div></div>
+      <div class="metric"><div class="n">27<small> 门</small></div><div class="k">自建培训课程，455 条知识导航，覆盖法条到工作流</div></div>
+      <div class="metric"><div class="n">4<small> 家</small></div><div class="k">Claude · GPT · 智谱 · Kimi 全付费订阅，主力模型全时可用</div></div>
+    </div>
+  </section>
+
+  <!-- 03 内训与写作 -->
+  <section class="blk" id="sharing">
+    <div class="sec-head"><span class="sec-no">03 / 07</span><h2>律所内训 · 研究 · 公众写作</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">从所内讲台到公开写作，把个人方法论输出为团队与行业资产。</p>
+    <div class="shot-grid">
+      <div class="shot">
+        <div class="frame"><img src="lecture-01-contract.jpg" alt="锦天城深圳 AI 赋能系列分享第一讲现场" width="720" height="1563" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>「AI 赋能 · 律师实务进阶」系列 第一讲</b><span>《AI 赋能合同审查与起草实践》主讲人 · 锦天城深圳律师事务所 · 2025 年 8 月</span></div>
+      </div>
+      <div class="shot">
+        <div class="frame"><img src="lecture-04-agent.jpg" alt="锦天城深圳 AI 赋能系列分享第四讲现场" width="720" height="1563" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>「AI 赋能 · 律师实务进阶」系列 第四讲</b><span>《AI Agent：下一代律师工作范式——由内容输出者转变为审核者》· 锦天城深圳律师事务所</span></div>
+      </div>
+      <div class="shot">
+        <div class="frame"><img src="research-rwa.jpg" alt="稳定币与RWA研究系列文章第六篇" width="720" height="1563" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>前沿法律研究</b><span>《稳定币与 RWA 发行法律监管及交易架构研究（六）：中国视角》原创署名文章 · 锦天城深圳公众号系列</span></div>
+      </div>
+      <div class="shot">
+        <div class="frame"><img src="gzh-series.jpg" alt="李成与AI公众号 AI入门系列文章" width="720" height="1563" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>「李成与AI」公众号</b><span>AI 入门系列连载，面向法律人的大模型原理科普（训练、推理、上下文）</span></div>
+      </div>
+      <div class="shot">
+        <div class="frame"><img src="wx-class.jpg" alt="成哥AI小课堂微信群" width="1000" height="1015" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>「成哥 AI 小课堂」</b><span>微信搜索直达的三期内测课堂，第 1 期 10 人、第 2 期 28 人、第 3 期 10 人，小班实战带练</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 平台认可 -->
+  <section class="blk" id="recognition">
+    <div class="sec-head"><span class="sec-no">04 / 07</span><h2>平台认可</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">来自 AI 工具厂商、法律科技公司与行业协会的邀请与入选记录。</p>
+    <div class="shot-grid">
+      <div class="shot">
+        <div class="frame"><img src="zcode-invite.jpg" alt="ZCode Talent体验官计划官方邀请短信" width="720" height="1558" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>ZCode Talent 体验官</b><span>收到官方短信邀请，加入 Talent 体验官计划参与办公场景共创</span></div>
+      </div>
+      <div class="shot">
+        <div class="frame"><img src="zcode-feishu.jpg" alt="ZCode Talent 办公场景共创飞书群" width="720" height="1558" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>「ZCode Talent · 办公场景共创」</b><span>官方共创飞书群成员，群内 849 位来自各行业的创作者</span></div>
+      </div>
+    </div>
+    <div class="quote-card">
+      <b>获案牍（Andoo）邀请，参与律师专家咨询合作项目</b>
+      <p>法律科技头部产品案牍的商业化负责人主动发出合作邀请，就律师专家咨询项目按周交付开展合作。</p>
+      <div class="src">来源：商务沟通记录（应对方要求，合作细节不公开展示）</div>
+    </div>
+    <div class="quote-card">
+      <b>入选深圳律协「星火训练营」</b>
+      <p>经遴选入选深圳律师协会青年律师培养项目，2025 年 10 月 31 日开班。</p>
+      <div class="src">来源：协会班级群通知（成员名单不公开展示）</div>
+    </div>
+  </section>
+
+  <!-- 05 WorkBuddy -->
+  <section class="blk" id="workbuddy">
+    <div class="sec-head"><span class="sec-no">05 / 07</span><h2>WorkBuddy 公开技能与专家智能体</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">把自己的执业经验封装成平台上任何人可复用的律师技能——8 个技能 + 2 个公开专家智能体，全部以本人名义创建发布。</p>
+    <div class="shot wide">
+      <div class="frame"><img src="workbuddy-skills.jpg" alt="WorkBuddy技能列表页，8个技能均由李成创建" width="1100" height="505" loading="lazy" decoding="async"></div>
+      <div class="cap"><b>技能列表 · 均由「李成」创建</b><span>覆盖委托前分析、网络核查存证、专利商标证据归档、询证函、合同审查起草、董监高调查表复核与问询知识库检索</span></div>
+    </div>
+    <div class="skill-list">
+      <div class="skill"><span class="st pub">已发布</span>律师版询证函生成</div>
+      <div class="skill"><span class="st pub">已发布</span>合同审查和起草 · 李成律师版本 v3.0.1</div>
+      <div class="skill"><span class="st pub">已发布</span>董监高调查表复核</div>
+      <div class="skill"><span class="st pub">已发布</span>证券业务问询案例和证券法规</div>
+      <div class="skill"><span class="st pub">已发布</span>IPO 问询案例知识库检索</div>
+      <div class="skill"><span class="st rev">审核中</span>专利商标证据归档 · 李成律师版</div>
+      <div class="skill"><span class="st dev">待发布</span>法律服务委托前分析报告 v1.1.0</div>
+      <div class="skill"><span class="st dev">待发布</span>企业网络核查存证 · 李成律师版 v1.1.0</div>
+    </div>
+    <div class="shot wide" style="margin-top:22px">
+      <div class="frame"><img src="workbuddy-experts.jpg" alt="WorkBuddy发布管理专家页，2个公开专家智能体" width="1100" height="446" loading="lazy" decoding="async"></div>
+      <div class="cap"><b>公开专家智能体 × 2</b><span>IPO 审核问询案例与证券法规（v1.0.0）· 公司舆情与法律风险监控分析（v1.0.0）——面向全平台公开可用</span></div>
+    </div>
+  </section>
+
+  <!-- 06 GitHub -->
+  <section class="blk" id="github">
+    <div class="sec-head"><span class="sec-no">06 / 07</span><h2>GitHub 开源</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">本站与全部技能、知识库、工具均以代码仓库形式开源维护——律师的生产资料，用工程师的方式管理。</p>
+    <div class="gh-head">
+      <div class="u"><a href="https://github.com/lennonli" target="_blank" rel="noopener">github.com/lennonli</a></div>
+      <div class="meta">
+        <div class="m"><b>80</b><span>repositories</span></div>
+        <div class="m"><b>32</b><span>stars</span></div>
+        <div class="m"><b>2</b><span>achievements</span></div>
+      </div>
+    </div>
+    <div class="shot wide" style="margin-top:16px">
+      <div class="frame"><img src="github-profile.jpg" alt="GitHub lennonli 账号主页" width="1100" height="586" loading="lazy" decoding="async"></div>
+      <div class="cap"><b>账号主页</b><span>Popular repositories 一览：法律 AI 工具与知识库构成主力仓库</span></div>
+    </div>
+    <div class="repo-grid">
+      <div class="repo"><div class="rn"><a href="https://github.com/lennonli/contract-review-site" target="_blank" rel="noopener">contract-review-site</a></div><div class="rd">合同审查站点 · 在线版审查工具</div><div class="rs">★ 5</div></div>
+      <div class="repo"><div class="rn"><a href="https://github.com/lennonli/legal-dd-reviewer" target="_blank" rel="noopener">legal-dd-reviewer</a></div><div class="rd">尽调报告与底稿复核 Agent</div><div class="rs">法律尽调</div></div>
+      <div class="repo"><div class="rn"><a href="https://github.com/lennonli/cross-document-auditor" target="_blank" rel="noopener">cross-document-auditor</a></div><div class="rd">跨文档交叉审计 · 报告与底稿一致性</div><div class="rs">文档审计</div></div>
+      <div class="repo"><div class="rn"><a href="https://github.com/lennonli/licheng-skills" target="_blank" rel="noopener">licheng-skills</a></div><div class="rd">法律业务技能库 · 本站「技能」专栏源仓库</div><div class="rs">技能库</div></div>
+      <div class="repo"><div class="rn"><a href="https://github.com/lennonli/ipo-inquiry-kb" target="_blank" rel="noopener">ipo-inquiry-kb</a></div><div class="rd">IPO 问询案例与证券法规知识库</div><div class="rs">知识库</div></div>
+      <div class="repo"><div class="rn"><a href="https://github.com/lennonli/compare-docs" target="_blank" rel="noopener">compare-docs</a></div><div class="rd">多版本文件差异比对工具</div><div class="rs">文档比对</div></div>
+    </div>
+  </section>
+
+  <!-- 07 站点 -->
+  <section class="blk" id="site">
+    <div class="sec-head"><span class="sec-no">07 / 07</span><h2>这个网站本身就是证明</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">您正在浏览的 ai.licheng.uk 即由我本人以代码仓库 + 自动化部署方式独立维护：指令库、技能库、教程、法律知识库、案例库与实用工具，持续更新。</p>
+    <div class="shot-grid">
+      <div class="shot">
+        <div class="frame"><img src="site-mobile.jpg" alt="ai.licheng.uk 手机端页面" width="720" height="1563" loading="lazy" decoding="async"></div>
+        <div class="cap"><b>ai.licheng.uk 移动端</b><span>法律 AI 工作站 · 培训课程表、知识库、工具中心均在此站运行</span></div>
+      </div>
+      <div class="card" style="align-self:start">
+        <h3><span class="dot"></span>站点能力地图</h3>
+        <div class="badge-row" style="margin-top:4px">
+          <span class="badge"><b>27 门</b> 培训课程</span>
+          <span class="badge"><b>AGENTS</b> 律师工作指令</span>
+          <span class="badge"><b>技能库</b> 尽调·审查·归档</span>
+          <span class="badge"><b>教程</b> AI 工具实操</span>
+          <span class="badge"><b>KB</b> 证券法规知识库</span>
+          <span class="badge"><b>案例库</b> 并购重组 / 再融资</span>
+          <span class="badge"><b>工具</b> PPT 生成 · 需求收集</span>
+        </div>
+        <p style="margin-top:16px;font-size:13.5px;color:var(--muted)">从需求到上线：文案、代码、部署流水线全部由本人 + AI 协作完成，正是「95% + 5%」工作方式的自证。</p>
+        <p style="margin-top:10px;font-size:14px"><a href="/">← 返回站点首页</a>　<a href="/training/">课程表</a>　<a href="/skills/">技能库</a>　<a href="/kb/">知识库</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wechat-contact" id="contact">
+    <div class="wechat-contact-copy">
+      <h2>联系李成律师</h2>
+      <p>扫描二维码添加微信，沟通法律 AI 培训、IPO / 并购等资本市场业务及合作事项。</p>
+    </div>
+    <a class="wechat-contact-qr-link" href="/wechat-li-cheng.jpg" target="_blank" rel="noopener" aria-label="扫码添加微信，查看李成律师微信二维码原图">
+      <img src="/wechat-li-cheng.jpg" alt="李成律师微信二维码" width="120" loading="lazy" decoding="async">
+      扫码添加微信
+    </a>
+  </section>
+
+  <div class="backhome"><a href="/">ai.licheng.uk</a> · 李成律师法律 AI 工作站</div>
+</main>
+
+<footer>
+  <div class="wrap">本页所涉已公告项目信息均来源于上市公司公告；技能、仓库与邀请记录截至 2026 年 10 月。Copyright © 李成律师</div>
+</footer>
+
+</body>
+</html>

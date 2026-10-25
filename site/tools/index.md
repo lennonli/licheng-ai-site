@@ -25,4 +25,9 @@ description: 集中整理律师日常工作可以直接使用的法律工具和�
     <span class="utility-card-title">AI 网站导航</span>
     <span class="utility-card-desc">30 类精选 AI 领域官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP、编程与多媒体生成。</span>
   </a>
+  <a class="utility-card" href="/tools/capability/">
+    <span class="utility-card-index">04 / Capability</span>
+    <span class="utility-card-title">个人能力全景</span>
+    <span class="utility-card-desc">李成律师能力与 AI 实践全景页：职业履历、AI 法律工作体系、WorkBuddy 公开技能与 GitHub 开源仓库。</span>
+  </a>
 </section>
