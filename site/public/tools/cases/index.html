@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="李成律师 · AI 法律案例展示">
   <meta name="twitter:title" content="李成律师 · AI 法律案例展示">
-  <meta property="og:description" content="按「案例真实 / 业务判断 / 方案设计 / 成果交付」四维度展开的 AI 法律工作真实案例：北交所申报股东穿透生产线、问询知识库、合同三层审查、批量单据识别与外文单据原位翻译。">
-  <meta name="description" content="李成律师 AI 法律案例展示：股东穿透核查生产线、IPO 问询知识库、投资协议三层审查、批量单据识别、外文单据原位翻译，全部案例脱敏并标注数据口径。">
+  <meta property="og:description" content="主案例：一份法律尽职调查报告从委托到定稿的完整 AI 生产线（双层指令 → 委托前初析 → 清单与访谈 → 初稿与滚动完善 → 知识库法律分析 → 格式定稿），按「案例真实 / 业务判断 / 方案设计 / 成果交付」四维度拆解；另有股东穿透、问询知识库、合同三层审查、非结构化底稿批处理四个专项工作流。">
+  <meta name="description" content="李成律师 AI 法律案例展示：法律尽调报告全流程 AI 生产线（指令 + Skill + MCP），以及股东穿透核查、IPO 问询知识库、投资协议三层审查、批量单据识别与外文单据原位翻译，全部脱敏并标注数据口径。">
   <title>李成律师 · AI 法律案例展示</title>
   <link rel="canonical" href="https://ai.licheng.uk/tools/cases/">
   <meta property="og:url" content="https://ai.licheng.uk/tools/cases/">
@@ -73,9 +73,9 @@
 
     /* ---------- SECTION ---------- */
     section.blk { padding: 64px 0 6px; }
-    .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; }
+    .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; flex-wrap: wrap; }
     .sec-no { font-size: 15px; font-weight: 800; color: var(--gold); letter-spacing: .14em; white-space: nowrap; }
-    .sec-head h2 { font-size: clamp(23px, 3.4vw, 30px); font-weight: 800; letter-spacing: .04em; }
+    .sec-head h2 { font-size: clamp(22px, 3.2vw, 29px); font-weight: 800; letter-spacing: .04em; }
     .rule { height: 3px; width: 64px; background: var(--gold); border-radius: 2px; margin: 14px 0 10px; }
     .sec-sub { color: var(--muted); font-size: 14.5px; margin-bottom: 28px; max-width: 820px; }
 
@@ -103,6 +103,31 @@
     .ch-stat b small { font-size: 13px; font-weight: 700; }
     .ch-stat span { font-size: 12px; color: #A9C4A0; }
 
+    /* ---------- 六阶段时间线 ---------- */
+    .tl { margin-top: 26px; }
+    .tl-item { display: grid; grid-template-columns: 56px 1fr; gap: 0 18px; position: relative; padding-bottom: 20px; }
+    .tl-item::before { content: ""; position: absolute; left: 27px; top: 56px; bottom: 0; width: 2px; background: var(--line); }
+    .tl-item:last-child::before { display: none; }
+    .tl-no {
+      width: 56px; height: 56px; border-radius: 50%; background: var(--deep); color: var(--lime);
+      font-weight: 800; font-size: 20px; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 0 4px var(--paper), 0 0 0 6px var(--line); font-variant-numeric: tabular-nums;
+    }
+    .tl-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px 16px; }
+    .tl-card h3 { font-size: 16.5px; font-weight: 800; display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+    .tl-tag { font-size: 11.5px; font-weight: 800; color: var(--green); background: var(--sage); border-radius: 5px; padding: 1px 8px; }
+    .tl-tag.i { color: var(--deep); background: var(--gold); }
+    .tl-card .sc { font-size: 13.5px; color: var(--muted); margin-top: 5px; }
+    .tl-card .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 12px; }
+    .tl-card .ai, .tl-card .hu { font-size: 13.5px; line-height: 1.72; border-radius: 10px; padding: 11px 13px; }
+    .tl-card .ai { background: var(--mint); }
+    .tl-card .hu { background: #FBF6E6; }
+    .tl-card .ai b, .tl-card .hu b { display: block; font-size: 11.5px; letter-spacing: .14em; font-weight: 800; margin-bottom: 4px; }
+    .tl-card .ai b { color: var(--green); }
+    .tl-card .hu b { color: #9a7a14; }
+    .tl-card .tl-links { margin-top: 11px; padding-top: 9px; border-top: 1px dashed var(--line); font-size: 13px; line-height: 1.8; }
+    .tl-card .tl-links .lk { font-size: 11px; font-weight: 800; color: var(--gold); letter-spacing: .1em; margin-right: 6px; }
+
     /* ---------- 四维度卡 ---------- */
     .dim { display: grid; grid-template-columns: 92px 1fr; gap: 0; margin-top: 22px; }
     .dim .rail {
@@ -127,7 +152,7 @@
     .vs .side .lb { font-size: 12px; font-weight: 800; letter-spacing: .1em; }
     .vs .before .lb { color: #7a8272; }
     .vs .after .lb { color: var(--green); }
-    .vs .side .vl { font-size: 17px; font-weight: 800; margin-top: 6px; line-height: 1.6; }
+    .vs .side .vl { font-size: 16.5px; font-weight: 800; margin-top: 6px; line-height: 1.6; }
     .vs .after .vl { color: var(--deep); }
 
     /* 外部印证（选择器带 .dim .body 前缀以压过 .dim .body li 的 ◆ 规则） */
@@ -140,21 +165,6 @@
       width: 20px; height: 20px; border-radius: 50%; background: var(--deep); color: var(--lime);
       font-size: 11px; font-weight: 800; line-height: 20px; text-align: center;
     }
-
-    /* ---------- 生产线流程条 ---------- */
-    .pipeline {
-      display: grid; grid-template-columns: 1fr 26px 1fr 26px 1fr 26px 1fr; gap: 0;
-      align-items: stretch; margin-top: 24px;
-    }
-    .pipe-step {
-      background: #fff; border: 1px solid var(--line); border-radius: 12px;
-      padding: 18px 18px 16px; display: flex; flex-direction: column;
-    }
-    .pipe-step .pn { font-size: 12px; font-weight: 800; color: var(--gold); letter-spacing: .12em; }
-    .pipe-step .pt { font-size: 15.5px; font-weight: 800; margin-top: 4px; }
-    .pipe-step .pd { font-size: 12.5px; color: var(--muted); margin-top: 6px; line-height: 1.65; flex: 1; }
-    .pipe-step .pl { font-size: 12.5px; margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; line-height: 1.7; }
-    .pipe-arr { display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 20px; font-weight: 800; }
 
     /* ---------- 更多案例 ---------- */
     .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -196,9 +206,7 @@
       border: 1px solid var(--line); border-radius: 16px; padding: 24px 28px;
       display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
     }
-    .motto-card .q {
-      font-size: clamp(16px, 2.2vw, 20px); font-weight: 800; color: var(--deep); flex: 1 1 320px;
-    }
+    .motto-card .q { font-size: clamp(16px, 2.2vw, 20px); font-weight: 800; color: var(--deep); flex: 1 1 320px; }
     .motto-card .q b { color: var(--green); }
     .motto-card .a { font-size: 13px; color: var(--muted); max-width: 320px; }
 
@@ -236,8 +244,7 @@
       .case-hero { grid-template-columns: 1fr; }
       .dim { grid-template-columns: 64px 1fr; }
       .dim .rail .dname { writing-mode: horizontal-tb; letter-spacing: .18em; margin-top: 6px; }
-      .pipeline { grid-template-columns: 1fr; }
-      .pipe-arr { transform: rotate(90deg); padding: 4px 0; }
+      .tl-card .row { grid-template-columns: 1fr; }
       .case-grid, .faq { grid-template-columns: 1fr; }
       .pillars { grid-template-columns: repeat(2, 1fr); }
       .vs { grid-template-columns: 1fr; }
@@ -246,6 +253,9 @@
       .dimbar { grid-template-columns: 1fr 1fr; }
       .pillars { grid-template-columns: 1fr; }
       .hero { padding-top: 54px; }
+      .tl-item { grid-template-columns: 44px 1fr; gap: 0 12px; }
+      .tl-no { width: 44px; height: 44px; font-size: 17px; }
+      .tl-item::before { left: 21px; top: 44px; }
     }
   </style>
 </head>
@@ -254,7 +264,7 @@
 <header class="hero">
   <div class="wrap">
     <div class="kicker">CASE PORTFOLIO · 2026</div>
-    <h1>案例展示<small>AI 落地法律服务交付的真实案例 · 一个主案例深度拆解 + 四个工作流全景</small></h1>
+    <h1>案例展示<small>一份法律尽调报告的完整 AI 生产线 · 四维度深度拆解 + 四个专项工作流</small></h1>
     <p class="motto">
       好的 AI 落地案例，经得起四个追问：<b>真实吗？为什么做？为什么这样做？结果怎么量？</b><br>
       本页每个案例按此四维度展开——每个数字可回溯至底稿计数或公开发布物，每处基线标明<b>实测还是估算</b>。
@@ -263,7 +273,7 @@
       <a href="#dim-1"><span class="no">01</span><div class="tt">案例真实</div><div class="dd">客户 · 过程 · 数据 · 外部证据相互印证</div></a>
       <a href="#dim-2"><span class="no">02</span><div class="tt">业务判断</div><div class="dd">原始流程与真实问题 · 为何优先 · 砍掉了什么</div></a>
       <a href="#dim-3"><span class="no">03</span><div class="tt">方案设计</div><div class="dd">为什么用 AI · 架构 · 关键取舍与真实约束</div></a>
-      <a href="#dim-4"><span class="no">04</span><div class="tt">成果交付</div><div class="dd">基线 · 结果 · 口径 · 复用</div></a>
+      <a href="#dim-4"><span class="no">04</span><div class="tt">成果交付</div><div class="dd">基线 · 结果 · 口径 · 产品化</div></a>
     </div>
   </div>
 </header>
@@ -272,23 +282,104 @@
 
   <!-- ================= 01 主案例 ================= -->
   <section class="blk" id="main-case">
-    <div class="sec-head"><span class="sec-no">CASE 01 / 主案例</span><h2>北交所申报：股东穿透核查 AI 生产线</h2></div>
+    <div class="sec-head"><span class="sec-no">CASE 01 / 主案例</span><h2>法律尽职调查报告：从委托到定稿的 AI 生产线</h2></div>
     <div class="rule"></div>
-    <p class="sec-sub">尽调与申报里最耗人日的「必答题」。以此为核心切片，后续调查表更新、出资流水核验、问询比对复用同一张穿透表——这就是「生产线」的含义。</p>
+    <p class="sec-sub">律师业务量最大、结构最规整的交付物。六个阶段把「指令 · 技能 · 数据接口」三层基础设施串成一条线——也因此，它可以封装为一个实际交付的 AI 产品。</p>
 
     <div class="case-hero">
       <div>
-        <div class="ch-title">某新三板挂牌公司 · 北交所申报准备阶段</div>
+        <div class="ch-title">投融资项目法律尽职调查 · 从接受委托到报告定稿</div>
         <p class="ch-sub">
-          业务场景：申报前股东穿透核查与股东信息披露专项核查，出具《股东信息披露意见》《证监会系统离职人员专项说明》等申报文件。实施时间：2026 年 8 月。<br>
-          客户名称按保密义务不公开；过程截图与底稿不在公开页面呈现，路演现场可展示脱敏底稿。
+          业务场景：为交易一方对目标公司开展法律尽职调查，出具《法律尽职调查报告》及历次更新稿。本生产线于 2026 年在多个尽调项目中实际运行。<br>
+          客户信息按保密义务不公开；报告与底稿截图不在公开页面呈现，路演现场可展示脱敏版本。
         </p>
       </div>
       <div class="ch-stats">
-        <div class="ch-stat"><b>30 <small>名</small></b><span>一级股东（其中 10 家机构股东）</span></div>
-        <div class="ch-stat"><b>1,634</b><span>穿透节点（底稿计数）</span></div>
-        <div class="ch-stat"><b>8 <small>层</small></b><span>穿透最深层数</span></div>
-        <div class="ch-stat"><b>1,664 <small>行</small></b><span>跟踪表行数 × 17 列</span></div>
+        <div class="ch-stat"><b>6 <small>阶段</small></b><span>从双层指令到格式定稿</span></div>
+        <div class="ch-stat"><b>14 <small>库</small></b><span>证券问询案例与法规知识库</span></div>
+        <div class="ch-stat"><b>1,636 <small>家</small></b><span>IPO 问询案例（2023–2026）</span></div>
+        <div class="ch-stat"><b>39 <small>份</small></b><span>脱敏历史尽调报告可检索</span></div>
+      </div>
+    </div>
+
+    <!-- 六阶段时间线 -->
+    <div class="tl">
+      <div class="tl-item">
+        <div class="tl-no">1</div>
+        <div class="tl-card">
+          <h3>先立规矩：全局指令 + 项目指令 <span class="tl-tag i">指令</span></h3>
+          <div class="sc">开工前先把「怎么干」写清楚——两层指令叠加，AI 才知道边界在哪。</div>
+          <div class="row">
+            <div class="ai"><b>AI 做什么</b>按全局指令执行起草格式、反编造红线、五级确定性分级与多智能体协作规则；按项目指令掌握尽调背景、交易结构、客户关注点、保密边界与底稿路径命名。</div>
+            <div class="hu"><b>律师做什么</b>撰写项目指令：这单尽调为谁做、看什么、哪些信息不能出所、报告面向谁——这是把律师经验「写成规则」的第一步。</div>
+          </div>
+          <div class="tl-links"><span class="lk">工件</span><a href="/agents/%E6%B3%95%E5%BE%8B%E4%B8%9A%E5%8A%A1%E9%80%9A%E7%94%A8%E6%8C%87%E4%BB%A4">《法律业务通用指令》</a>（全局指令，公开） · <a href="/agents/">指令库总览</a></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-no">2</div>
+        <div class="tl-card">
+          <h3>进场前摸底：委托前初步分析 <span class="tl-tag">Skill</span></h3>
+          <div class="sc">还没去现场，先凭公开信息把公司底数和法律问题预判出来。</div>
+          <div class="row">
+            <div class="ai"><b>AI 做什么</b>调用「委托前公司初步分析」技能：解析企业信用报告资料包，经企查查 / 天眼查 / 元典 / 见微多源在线检索股权、涉诉、处罚、经营异常，输出 Word 版《公司基本情况及法律问题初步分析报告》。</div>
+            <div class="hu"><b>律师做什么</b>读报告、定重点：哪些风险假设要在现场重点核、访谈时问谁、清单要加什么。</div>
+          </div>
+          <div class="tl-links"><span class="lk">工件</span><a href="/skills/company-preliminary-analysis">委托前公司初步分析报告 · Skill</a> · <a href="/agents/%E6%8B%9F%E4%B8%8A%E5%B8%82%E3%80%81%E6%8C%82%E7%89%8C%E4%BC%81%E4%B8%9A%E5%85%AC%E5%8F%B8%E5%9F%BA%E6%9C%AC%E6%83%85%E5%86%B5%E5%8F%8A%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%EF%BC%88%E7%AB%9E%E8%81%98%E6%B3%95%E5%BE%8B%E9%A1%BE%E9%97%AE%E7%94%A8%EF%BC%89%E6%8F%90%E7%A4%BA%E8%AF%8D">初步分析报告提示词</a> · WorkBuddy 技能「法律服务委托前分析报告」</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-no">3</div>
+        <div class="tl-card">
+          <h3>定制清单与访谈：接上企查查 / 天眼查 MCP <span class="tl-tag">MCP</span></h3>
+          <div class="sc">清单不再是改模板——按这家公司的真实数据定制；访谈笔录从扫描件到可核验的 Word 定稿。</div>
+          <div class="row">
+            <div class="ai"><b>AI 做什么</b>以清单母版为骨架，结合 MCP 直连拉取的主体、股权、历史沿革、涉诉与处罚数据，生成覆盖三年一期的定制尽调清单与自然人股东、董监高调查表；按人员名单生成访谈提纲；访谈后将扫描件笔录转为 Word 定稿并与申报文件交叉核验。</div>
+            <div class="hu"><b>律师做什么</b>现场访谈与追问，判断清单哪些项可以删、哪些必须加；笔录中的事实冲突由律师裁定。</div>
+          </div>
+          <div class="tl-links"><span class="lk">工件</span><a href="/agents/%E6%B3%95%E5%BE%8B%E5%B0%BD%E8%81%8C%E8%B0%83%E6%9F%A5%E6%B8%85%E5%8D%95%E8%B5%B7%E8%8D%89%E4%B8%8E%E5%AE%9A%E7%A8%BF">《法律尽职调查清单起草与定稿》</a> · <a href="/agents/%E8%91%A3%E7%9B%91%E9%AB%98%E8%AE%BF%E8%B0%88%E7%AC%94%E5%BD%95Word%E5%AE%9A%E7%A8%BF%E4%B8%8E%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">《董监高访谈笔录 Word 定稿与核查》</a> · <a href="/tutorials/lawyer-mcp-setup">《律师 MCP 搭建教程》</a></div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-no">4</div>
+        <div class="tl-card">
+          <h3>先出初稿，再滚动完善：底稿驱动的版本迭代 <span class="tl-tag i">指令</span></h3>
+          <div class="sc">不等底稿齐——先据公开数据把框架初稿写出来；之后每收一批底稿，更新对应章节、出一个新版本。</div>
+          <div class="row">
+            <div class="ai"><b>AI 做什么</b>据企业信用报告与经核验的公开信息起草报告框架初稿，不确定处一律【】占位，不据单份报告推断关联、控制关系或实控人对外任职；此后每批底稿到达即逐章更新，V1 → V2 → V3 逐版留痕，并把证据缺口显式列出。</div>
+            <div class="hu"><b>律师做什么</b>只看「变化的章节」与「缺口清单」：确认事实、补要底稿、决定哪些问题进报告正文、哪些以批注提示。</div>
+          </div>
+          <div class="tl-links"><span class="lk">工件</span><a href="/agents/%E6%A0%B9%E6%8D%AE%E5%85%AC%E5%BC%80%E6%95%B0%E6%8D%AE%E8%B5%B7%E8%8D%89%E5%B0%BD%E8%B0%83%E6%8A%A5%E5%91%8A%E5%88%9D%E7%A8%BF">《根据公开数据起草尽调报告初稿》</a> · <a href="/agents/%E6%B3%95%E5%BE%8B%E5%B0%BD%E8%B0%83%E6%8A%A5%E5%91%8A%E6%8F%90%E7%A4%BA%E8%AF%8D">《法律尽调报告提示词》</a>（9 项核心章节 · 分版本撰写规范）</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-no">5</div>
+        <div class="tl-card">
+          <h3>法律分析有出处：证券知识库 + 法规库 <span class="tl-tag">Skill</span></h3>
+          <div class="sc">每个法律问题的分析，都要能回答「监管怎么看、同类项目怎么处理、依据哪一条」。</div>
+          <div class="row">
+            <div class="ai"><b>AI 做什么</b>调用「证券业务问询案例与证券法规检索」技能（14 个库：IPO 问询四年度 1,636 家、再融资 875 家、并购重组 74 家、补充法律意见书 824 份、投行法规库），语义检索同类问题的监管关注点与回复口径；法规条文回官方来源核验现行有效；按「核查程序 — 底稿 — 结论」三段式写入分析。</div>
+            <div class="hu"><b>律师做什么</b>下结论、定分级（明确 / 通说 / 存在争议 / 待核验 / 待公司确认），决定风险等级与应对建议。</div>
+          </div>
+          <div class="tl-links"><span class="lk">工件</span><a href="/skills/ipo-kb">证券业务问询案例与法规检索 · Skill</a> · <a href="/kb/">问询知识库</a> · WorkBuddy 已发布技能「证券业务问询案例和证券法规」「IPO 问询案例知识库检索」</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-no">6</div>
+        <div class="tl-card">
+          <h3>格式检查与定稿：成文规范 + 程序化核验 <span class="tl-tag i">指令</span></h3>
+          <div class="sc">定稿不是「看着差不多」——版式、编号、一致性都走程序检查，律师只做最后签发。</div>
+          <div class="row">
+            <div class="ai"><b>AI 做什么</b>按 Word 成文规范排版（标题层级与自动编号、表格列宽三重落实、跨页表头、页码与签署页）；运行几何检查（文字越界、竖排折行、页数偏差）与一致性校验（主体名称、金额大小写、日期、交叉引用、定义词）；不确定事项以批注附在对应句段。</div>
+            <div class="hu"><b>律师做什么</b>逐项复核批注、清理或保留，签字出具——这 5% 的终审责任始终在人。</div>
+          </div>
+          <div class="tl-links"><span class="lk">工件</span><a href="/agents/%E6%B3%95%E5%BE%8B%E4%B8%9A%E5%8A%A1%E9%80%9A%E7%94%A8%E6%8C%87%E4%BB%A4">《法律业务通用指令》</a>第六章「一致性校验」、第八章「Word 文档格式规范」、第十四章「交付前自检清单」</div>
+        </div>
       </div>
     </div>
 
@@ -298,17 +389,16 @@
       <div class="body">
         <h3>客户、过程、数据，均可回溯</h3>
         <ul>
-          <li><b>客户与行业背景：</b>某新三板挂牌公司，处于北交所申报准备阶段。基金、合伙企业多层嵌套持股，是制造业拟上市企业的典型股权形态。</li>
-          <li><b>过程：</b>对 30 名一级股东中的 10 家机构股东逐层穿透至自然人、国资或上市公司等终局主体；同步逐份核验证件信息，生成资料跟踪表并按版本迭代至 V9。</li>
-          <li><b>数据：</b>1,634 个穿透节点、最深 8 层、跟踪表 1,664 行 × 17 列（30 名直接股东 + 1,634 个节点），均为底稿实际计数，非测算值。</li>
-          <li><b>交叉验证：</b>另用元典企业信息库接口对持股集中的机构股东独立穿透一轮：1,829 行、1,524 个主体、最深 10 层，与主表逐行比对。</li>
+          <li><b>客户与场景：</b>法律尽职调查是投融资交易的必经工序；本生产线于 2026 年在多个尽调项目中实际运行，覆盖 IPO、并购与投融资场景。客户名称、目标公司与报告内容按保密义务不公开。</li>
+          <li><b>过程：</b>上方六阶段，每一阶段产出一个可核验工件——初步分析报告、定制清单与调查表、访谈笔录定稿、报告 V1 至 Vn、带出处的法律分析、经格式核验的定稿。</li>
+          <li><b>数据：</b>39 份脱敏历史尽调报告入库，可按问题类型检索历史处理口径；证券知识库 14 库（IPO 问询 1,636 家 / 再融资 875 家 / 并购重组 74 家 / 补充法律意见书 824 份）；一份 107 行的尽调清单可自动生成一级 15 类、二级 38 类的三级底稿目录——均为实际运行记录，非测算值。</li>
         </ul>
         <div class="ev">
           <div class="ev-t">外部证据（可点击核验）</div>
           <ol>
-            <li>工作流脱敏后公开为 <a href="/agents/AI-Agent%E8%BE%85%E5%8A%A9IPO%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E5%AE%9E%E6%93%8D%E6%95%99%E7%A8%8B">《AI-Agent 辅助 IPO 股东穿透实操教程》</a>（十一步流程 + 提示词模板，本站指令库）</li>
-            <li>交叉验证方法论公开为 <a href="/agents/%E5%85%83%E5%85%B8%E4%BC%81%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%BA%93%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">《元典企业信息库股东穿透核查提示词》</a>（本站 + <a href="https://github.com/lennonli/licheng-AGENTS.md" target="_blank" rel="noopener">GitHub 指令仓库</a>）</li>
-            <li>申报文件为项目实际交付物（股东信息披露意见、离职人员专项说明等）；路演现场可出示脱敏底稿与穿透表</li>
+            <li>六阶段每一环的指令与技能均已脱敏公开于本站——时间线共 11 个页面链接（2 个 Skill、6 个指令页、1 篇 MCP 搭建教程，另含知识库与指令库总览），评审可逐条点开与本页描述比对</li>
+            <li>多源数据接入方法公开为 <a href="/tutorials/lawyer-mcp-setup">《律师 MCP 搭建教程》</a>；证券知识库源仓库 <a href="https://github.com/lennonli/ipo-inquiry-kb" target="_blank" rel="noopener">ipo-inquiry-kb</a>，尽调报告复核仓库 <a href="https://github.com/lennonli/legal-dd-reviewer" target="_blank" rel="noopener">legal-dd-reviewer</a>（GitHub 公开）</li>
+            <li>委托前分析、董监高调查表复核、证券知识库检索等技能已上架 WorkBuddy 平台，以本人名义发布，全平台可查</li>
           </ol>
         </div>
       </div>
@@ -320,10 +410,10 @@
       <div class="body">
         <h3>先讲原始流程有多痛，再讲为什么值得优先做</h3>
         <ul>
-          <li><b>原始流程：</b>律师/助理逐个股东查工商信息 → 手工录入 Excel → 对机构股东再查下一层 → 证件号肉眼核对。一层看漏，整支基金全部重来；数周人日耗在「查询-誊抄-核对」的循环里。</li>
-          <li><b>真实问题：</b>①数据量大但结构高度重复——典型的可工序化场景；②不同基金树里存在同名自然人，人工极易误合并；③证件号 OCR 错位是申报文件的硬伤，错一位就是补正；④商用数据库导出通常只到一层，越往深层越依赖人工。</li>
-          <li><b>为什么优先做：</b>股东穿透是北交所申报的「必答题」，也是尽调中最耗人日的工序；穿透表一旦建准，调查表批量更新、出资流水核验、离职人员专项说明全部复用同一数据底座——做一件事，盘活四道工序。</li>
-          <li><b>砍掉了什么：</b>不做「一键全自动出表」。终局节点的属性判断（国资 / 上市公司 / 境外主体 / 自然人）、每处数据冲突的取舍，一律保留给律师——AI 只产工序，不产结论。</li>
+          <li><b>原始流程：</b>清单拿旧模板改、工商与涉诉信息人工逐家查、访谈笔录手工整理、报告初稿逐章从零写、每收一批底稿改一轮、格式靠肉眼调——每一环都是搬运式重复劳动，却又都要求准确、可溯源。</li>
+          <li><b>真实问题：</b>①一份报告几十项问题，每项都要「核查程序 + 底稿证据 + 结论」三件套，写作时间大部分花在搬运而非判断；②底稿分批到达、报告反复改版，版本极易串；③跨项目经验散落在个人脑中，新人无法复用历史口径。</li>
+          <li><b>为什么优先做：</b>尽调是非诉业务的入口与基座——IPO、并购、投融资都从它开始；流程规整、模板成熟，是 AI 工序化回报最高的场景；这条线建成，问询回复、合同审查等工序都能接在后面。</li>
+          <li><b>砍掉了什么：</b>AI 不下最终法律结论——每项问题的结论口径、风险分级、访谈现场的追问与判断，一律留给律师；AI 不直接向客户发问、不自行调取或上传底稿，材料流转由人组织。</li>
         </ul>
       </div>
     </div>
@@ -334,16 +424,16 @@
       <div class="body">
         <h3>为什么用 AI，而不是更简单的方案</h3>
         <ul>
-          <li><b>替代方案为何不行：</b>商用数据库导出只给一层，Excel 公式解不了「递归查询 + 语义归并」；外包人力保证不了证件号与同名识别的准确率，且底稿依保密义务不能出所。</li>
-          <li><b>架构（双引擎交叉）：</b>①引擎 A：穿透报告归档 → AI 逐份解析节点、层级、比例、证件信息写入跟踪表；②引擎 B：元典企业信息库接口脚本化独立穿透（约 1,000 次调用）；③两套结果交叉比对，输出 254 行差异明细，逐条由律师裁定——不对账就签字，等于把风险留给自己。</li>
+          <li><b>替代方案为何不行：</b>模板加宏解决不了「读懂底稿再改对应章节」；外包初稿守不住保密与口径一致；通用聊天机器人没有数据源、没有版本纪律，也不会主动说「这项我没有底稿」。只有把律师的判断规则写进指令、把检索与核验接到数据源，产出才能既快又可溯源。</li>
+          <li><b>架构（三层基础设施 × 六阶段调度）：</b>指令层——全局指令与项目指令双层叠加；技能层——委托前分析、清单起草、访谈笔录定稿、报告起草与迭代、证券知识库检索；数据层——企查查、天眼查、元典、见微等经 MCP 直连。主代理按六阶段调度，子代理各管一段，结果汇入同一份版本化报告。</li>
         </ul>
-        <h4>关键取舍与真实约束（踩过的坑如实写进指令）</h4>
+        <h4>关键取舍与真实约束（写进指令，不靠自觉）</h4>
         <ul>
-          <li>证件号<b>三重验算</b>：校验位 + 出生日期 + 省份前缀，不通过即标黄预警，绝不自动改写。</li>
-          <li><b>同名不同人</b>按基金树隔离回填：宁可多一行，不许错合并。</li>
-          <li>数据库出资比例字段小数/百分数混用，一律按「认缴额 ÷ 注册资本」重算后再比对。</li>
-          <li>接口限流须退避重试；三支重点基金交叉覆盖率 <b>97.4% / 98.7% / 80.4%</b>——未覆盖部分如实标注，不以估算填充。</li>
-          <li>全部底稿本地处理，不上传任何第三方平台。</li>
+          <li><b>事实只能来自公司资料与经核验的公开信息</b>：AI 不得凭记忆填写企业信息，不得据单份报告推断关联、控制关系或实控人对外任职——不确定处一律【】占位。</li>
+          <li>每项事实标注底稿来源（文件名 + 页码 / 条款号）；未取得底稿的问题写「待补充」，不推测。</li>
+          <li>法律结论<b>五级分级</b>（明确 / 通说 / 存在争议 / 待核验 / 待公司确认）；成文正文不内联标注，以批注提示，保持对外文件流畅。</li>
+          <li><b>版本纪律</b>：始终以最后确认版为唯一底稿，每阶段出一个版本号，不覆盖前版；文件按统一规范命名。</li>
+          <li>敏感材料本地处理（OCR、文件解析不经第三方上传）；对外交付前关键词检索逐一核验脱敏。</li>
         </ul>
       </div>
     </div>
@@ -356,65 +446,53 @@
         <div class="vs">
           <div class="side before">
             <div class="lb">基线 · BEFORE</div>
-            <div class="vl">人工穿透同等规模机构股东：数周<span class="tag-note">经验估算</span></div>
-            <p class="muted" style="margin-top:6px">逐层查询、手工誊抄、肉眼核对，且返工频繁。</p>
+            <div class="vl">初稿以人日计，每批底稿到达后手工定位改动章节<span class="tag-note">经验描述</span></div>
+            <p class="muted" style="margin-top:6px">清单改模板、信息人工查、笔录手工整、格式肉眼调；历史口径靠记忆。</p>
           </div>
           <div class="side after">
             <div class="lb">结果 · AFTER</div>
-            <div class="vl">数日：1,664 行跟踪表（V9）+ 独立交叉验证表<span class="tag-note">底稿计数</span></div>
-            <p class="muted" style="margin-top:6px">含 254 行交叉比对明细与 4 处实质差异清单，律师逐条裁定后定稿。</p>
+            <div class="vl">初稿、历次更新稿与法律分析由生产线产出，律师逐项复核签发<span class="tag-note">实际运行</span></div>
+            <p class="muted" style="margin-top:6px">每阶段一个可核验工件；缺口清单显式列出；39 份历史报告口径可检索复用。</p>
           </div>
         </div>
         <ul style="margin-top:14px">
-          <li><b>交付物：</b>《股东信息披露意见》《证监会系统离职人员专项说明》等申报文件成稿，穿透附表直接嵌入申报文件。</li>
-          <li><b>口径声明：</b>节点 / 层数 / 行数 = 底稿实际计数；覆盖率 = 交叉验证实测；「数周」为经验估算基线，已在页面标注，不与实测混用。</li>
-          <li><b>复用：</b>同一张穿透表继续支撑调查表批量更新与出资流水核验——单点投入，全流程受益。</li>
+          <li><b>交付物：</b>《法律尽职调查报告》及历次更新稿、定制尽调清单与调查表、访谈笔录定稿、带出处的法律分析——即「95% 工序由 AI 完成，5% 判断与签字在律师」的落地形态。</li>
+          <li><b>口径声明：</b>知识库容量 = 实际入库计数；底稿目录数字 = 实际生成结果；<b>耗时对比暂不给出具体数值</b>——本页只写能回溯的数字，不以估算冒充实测。</li>
+          <li><b>产品化：</b>全流程已封装为「双层指令模板 + 技能 + MCP 配置」，任何律师团队可按本站公开材料复现——这正是它能成为一个实际交付的 AI 产品的原因。</li>
         </ul>
       </div>
     </div>
-
-    <!-- 生产线全景 -->
-    <div class="pipeline">
-      <div class="pipe-step">
-        <div class="pn">STEP 1</div>
-        <div class="pt">股东穿透</div>
-        <div class="pd">双引擎穿透 + 交叉比对，产出全层级穿透表与差异清单。</div>
-        <div class="pl"><a href="/agents/AI-Agent%E8%BE%85%E5%8A%A9IPO%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E5%AE%9E%E6%93%8D%E6%95%99%E7%A8%8B">实操教程</a> · <a href="/agents/%E5%85%83%E5%85%B8%E4%BC%81%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%BA%93%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">元典核查指令</a></div>
-      </div>
-      <div class="pipe-arr">→</div>
-      <div class="pipe-step">
-        <div class="pn">STEP 2</div>
-        <div class="pt">出资流水核验</div>
-        <div class="pd">银行流水 OCR 提取 + 出资前后异常交易扫描 + 底稿归档。</div>
-        <div class="pl"><a href="/agents/IPO%E8%82%A1%E4%B8%9C%E5%87%BA%E8%B5%84%E6%B5%81%E6%B0%B4%E5%8F%8A%E5%BA%95%E7%A8%BF%E5%BD%92%E6%A1%A3%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">出资流水核查指令</a></div>
-      </div>
-      <div class="pipe-arr">→</div>
-      <div class="pipe-step">
-        <div class="pn">STEP 3</div>
-        <div class="pt">调查表批量更新</div>
-        <div class="pd">董监高、直接/间接股东调查表按最新工商数据批量复核更新，本地规则校验 + 公开数据交叉比对。</div>
-        <div class="pl"><a href="/agents/%E8%91%A3%E7%9B%91%E9%AB%98%E8%82%A1%E4%B8%9C%E8%B0%83%E6%9F%A5%E8%A1%A8%E5%A4%8D%E6%A0%B8%E6%8F%90%E7%A4%BA%E8%AF%8D">调查表复核指令</a> · <a href="/agents/IPO%E8%91%A3%E7%9B%91%E9%AB%98%E5%8F%8A%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E8%B0%83%E6%9F%A5%E8%A1%A8%E6%9B%B4%E6%96%B0%E6%8F%90%E7%A4%BA%E8%AF%8D">更新指令</a></div>
-      </div>
-      <div class="pipe-arr">→</div>
-      <div class="pipe-step">
-        <div class="pn">STEP 4</div>
-        <div class="pt">问询比对</div>
-        <div class="pd">1,636 份问询文书知识库类案比对，为审核问询回复提供论证口径。</div>
-        <div class="pl"><a href="/kb/">问询知识库</a> · WorkBuddy 专家智能体「IPO 审核问询案例与证券法规」</div>
-      </div>
-    </div>
-    <p class="muted" style="margin-top:12px">四道工序的指令均已脱敏公开于本站指令库与 GitHub 指令仓库——评审可逐条点开核对，与本页描述一致。</p>
   </section>
 
   <!-- ================= 02 更多案例 ================= -->
   <section class="blk" id="more-cases">
-    <div class="sec-head"><span class="sec-no">CASE 02–05 / 更多案例</span><h2>四个已跑通的工作流</h2></div>
+    <div class="sec-head"><span class="sec-no">CASE 02–05 / 专项工作流</span><h2>接在生产线上的四个专项工序</h2></div>
     <div class="rule"></div>
-    <p class="sec-sub">同一方法在不同工序上的复制：知识沉淀、审查、批量识别、翻译归档。每张卡片按「痛点 → 做法 → 效果 → 口径与印证」组织。</p>
+    <p class="sec-sub">同一方法在不同工序上的复制：穿透核查、知识沉淀、合同审查、非结构化底稿批处理。每张卡片按「痛点 → 做法 → 效果 → 口径与印证」组织。</p>
 
     <div class="case-grid">
       <div class="case-card">
-        <div class="cc-top"><span class="cc-idx">CASE 02</span><span class="cc-scope">知识库 / 检索</span></div>
+        <div class="cc-top"><span class="cc-idx">CASE 02</span><span class="cc-scope">尽调 / 股东穿透</span></div>
+        <h3>北交所申报：股东穿透核查双引擎</h3>
+        <dl>
+          <dt>痛点</dt>
+          <dd>某新三板挂牌公司北交所申报：30 名一级股东中 10 家机构股东多层嵌套，人工逐层查、手工录、肉眼核；一层看漏，整支基金重来。</dd>
+          <dt>做法</dt>
+          <dd><b>双引擎交叉</b>：穿透报告归档后由 AI 逐份解析写入跟踪表；另以元典企业信息库接口脚本化独立穿透（约 1,000 次调用，1,829 行、最深 10 层），两套结果比对出 254 行差异由律师逐条裁定。证件号三重验算、同名自然人按基金树隔离。</dd>
+          <dt>效果</dt>
+          <dd><b>1,634 个节点、8 层、1,664 行 × 17 列</b>跟踪表；人工数周 → 数日（估算口径）；三支重点基金交叉覆盖率 97.4% / 98.7% / 80.4%，未覆盖部分如实标注。</dd>
+          <dt>口径与印证</dt>
+          <dd>节点 / 行数为底稿计数。工作流公开为 <a href="/agents/AI-Agent%E8%BE%85%E5%8A%A9IPO%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E5%AE%9E%E6%93%8D%E6%95%99%E7%A8%8B">《AI-Agent 辅助 IPO 股东穿透实操教程》</a>与 <a href="/agents/%E5%85%83%E5%85%B8%E4%BC%81%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%BA%93%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">《元典企业信息库股东穿透核查提示词》</a>。</dd>
+        </dl>
+        <div class="cc-kpi">
+          <span class="kpi"><b>1,634</b> 节点</span>
+          <span class="kpi"><b>8</b> 层穿透</span>
+          <span class="kpi"><b>1,664</b> 行跟踪表</span>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="cc-top"><span class="cc-idx">CASE 03</span><span class="cc-scope">知识库 / 检索</span></div>
         <h3>IPO 问询回复知识库与检索工作流</h3>
         <dl>
           <dt>痛点</dt>
@@ -424,7 +502,7 @@
           <dt>效果</dt>
           <dd>类案检索：数小时 → 约 10 分钟（估算口径）；问询回复文书初稿约 95% 由 AI 辅助产出。</dd>
           <dt>口径与印证</dt>
-          <dd>库容量为实际入库计数。知识库经本站 <a href="/kb/">/kb/</a> 提供检索，源仓库 <a href="https://github.com/lennonli/ipo-inquiry-kb" target="_blank" rel="noopener">ipo-inquiry-kb</a> 与 WorkBuddy 公开专家智能体「IPO 审核问询案例与证券法规」均可核验。</dd>
+          <dd>库容量为实际入库计数。本站 <a href="/kb/">/kb/</a> 提供检索，源仓库 <a href="https://github.com/lennonli/ipo-inquiry-kb" target="_blank" rel="noopener">ipo-inquiry-kb</a>；WorkBuddy 公开专家智能体「IPO 审核问询案例与证券法规」。</dd>
         </dl>
         <div class="cc-kpi">
           <span class="kpi"><b>1,636</b> 份问询文书</span>
@@ -434,7 +512,7 @@
       </div>
 
       <div class="case-card">
-        <div class="cc-top"><span class="cc-idx">CASE 03</span><span class="cc-scope">合同 / 审查</span></div>
+        <div class="cc-top"><span class="cc-idx">CASE 04</span><span class="cc-scope">合同 / 审查</span></div>
         <h3>投资协议与合同三层审查工作流</h3>
         <dl>
           <dt>痛点</dt>
@@ -444,7 +522,7 @@
           <dt>效果</dt>
           <dd>一份投资协议审阅：1 个工作日 → 1 小时内（估算口径），且隐蔽条款变动不再依赖运气。</dd>
           <dt>口径与印证</dt>
-          <dd>方法论公开为 <a href="/agents/%E7%A7%81%E5%8B%9F%E5%9F%BA%E9%87%91%E6%8A%95%E8%B5%84%E4%B8%9A%E5%8A%A1%E5%8D%8F%E8%AE%AE%E5%AE%A1%E9%98%85%E5%85%A8%E5%B1%80%E6%8C%87%E4%BB%A4">《私募基金投资业务协议审阅全局指令》</a>与<a href="/agents/%E5%90%88%E5%90%8C%E5%AE%A1%E6%9F%A5%E5%92%8C%E8%B5%B7%E8%8D%89">《合同审查和起草》</a>；已发布为 WorkBuddy 技能「合同审查和起草 · 李成律师版本 v3.0.1」。</dd>
+          <dd>方法论公开为 <a href="/agents/%E7%A7%81%E5%8B%9F%E5%9F%BA%E9%87%91%E6%8A%95%E8%B5%84%E4%B8%9A%E5%8A%A1%E5%8D%8F%E8%AE%AE%E5%AE%A1%E9%98%85%E5%85%A8%E5%B1%80%E6%8C%87%E4%BB%A4">《私募基金投资业务协议审阅全局指令》</a>与 <a href="/skills/contract-review">合同审查 · Skill</a>；已发布为 WorkBuddy 技能「合同审查和起草 · 李成律师版本 v3.0.1」。</dd>
         </dl>
         <div class="cc-kpi">
           <span class="kpi"><b>A/B/C</b> 三级过滤</span>
@@ -454,42 +532,21 @@
       </div>
 
       <div class="case-card">
-        <div class="cc-top"><span class="cc-idx">CASE 04</span><span class="cc-scope">批量识别 / OCR</span></div>
-        <h3>批量单据识别流水线</h3>
+        <div class="cc-top"><span class="cc-idx">CASE 05</span><span class="cc-scope">底稿 / 批处理</span></div>
+        <h3>非结构化底稿批处理：批量识别与原位翻译</h3>
         <dl>
           <dt>痛点</dt>
-          <dd>152 张手机拍摄的货运单据：手写日期、倾斜、重复拍摄件混杂，人工誊录成台账要一整个工作日且错漏难免。</dd>
+          <dd>152 张手机拍摄的货运单据（手写日期、倾斜、重复拍摄）要出结构化台账；21 份英文贸易单据（含盖章扫描页）要交中文译文，但<b>原件一个字节不能改</b>。</dd>
           <dt>做法</dt>
-          <dd>152 张 ÷ 每批 10 张 = <b>16 个图像识别子智能体</b>，分 3 批并行（6+6+4），每张抽取 19 个字段并标注存疑；主代理合并去重 → 工商库核验收货方全称（多智能体识读分歧以登记为准）→ 日期规范化（手写收货日期 &gt; 拍摄水印 &gt; 预抵日期）→ 排序重命名 → 自动出台账。</dd>
+          <dd>识别：152 张 ÷ 10 = <b>16 个图像识别子智能体</b>分 3 批并行，每张抽 19 个字段并标注存疑，主代理合并去重、工商库核验收货方、日期规范化、自动出台账。翻译：自研 PDF 英→中<b>覆盖式翻译</b>，输出「原件页在前 + 译文页在后」，页面级拼接并程序化校验原件字节一致。</dd>
           <dt>效果</dt>
-          <dd>全程约 <b>40 分钟</b>（实测），含内容、渲染、合计复算三轮验收。</dd>
+          <dd>152 张全程约 <b>40 分钟</b>（实测，含三轮验收）；21 份全部交付、<b>原件零改动</b>（程序校验）。</dd>
           <dt>口径与印证</dt>
-          <dd>耗时为实测值；「1 个工作日」为经验估算基线。子智能体并行调度模式沉淀于本站指令库的多智能体协作规则（<a href="/agents/%E6%B3%95%E5%BE%8B%E4%B8%9A%E5%8A%A1%E9%80%9A%E7%94%A8%E6%8C%87%E4%BB%A4">《法律业务通用指令》</a>）。</dd>
+          <dd>耗时为实测、文件数为实际交付；多智能体并行调度规则见 <a href="/agents/%E6%B3%95%E5%BE%8B%E4%B8%9A%E5%8A%A1%E9%80%9A%E7%94%A8%E6%8C%87%E4%BB%A4">《法律业务通用指令》</a>第十三章。</dd>
         </dl>
         <div class="cc-kpi">
-          <span class="kpi"><b>152</b> 张单据</span>
-          <span class="kpi"><b>16</b> 个子智能体并行</span>
-          <span class="kpi"><b>约 40 分钟</b> 实测</span>
-        </div>
-      </div>
-
-      <div class="case-card">
-        <div class="cc-top"><span class="cc-idx">CASE 05</span><span class="cc-scope">翻译 / 归档</span></div>
-        <h3>外文单据原位翻译流水线</h3>
-        <dl>
-          <dt>痛点</dt>
-          <dd>21 份英文贸易单据（含盖章扫描页）需要提交中文译文，但<b>原件一个字节都不能改</b>——常规「重排版翻译」直接出局。</dd>
-          <dt>做法</dt>
-          <dd>自研 PDF 英→中<b>覆盖式翻译</b>流水线：有文字层按块/行擦写、自动换行缩字号；扫描件 OCR 定位加白底贴片；输出「原件页在前 + 译文页在后」合并归档；合并采用页面级拼接，并程序化校验原件页内容字节一致。</dd>
-          <dt>效果</dt>
-          <dd>21 份全部交付，<b>原件零改动</b>（程序校验，含盖章页）；地址、人名、料号、海关编码、贸易术语保留不译，保证与原件可逐项勾稽。</dd>
-          <dt>口径与印证</dt>
-          <dd>文件数为实际交付数；「原件零改动」有程序化校验记录支撑。</dd>
-        </dl>
-        <div class="cc-kpi">
-          <span class="kpi"><b>21</b> 份外文单据</span>
-          <span class="kpi"><b>零字节改动</b> 程序校验</span>
-          <span class="kpi"><b>译排一体</b> 覆盖式翻译</span>
+          <span class="kpi"><b>152</b> 张 · 16 Agent · 40 分钟</span>
+          <span class="kpi"><b>21</b> 份 · 原件零改动</span>
         </div>
       </div>
     </div>
@@ -516,7 +573,7 @@
       <div class="pillar">
         <div class="pi">🔌</div>
         <h3>数据接口 · MCP</h3>
-        <p>企查查、元典、北大法宝、见微、SEC EDGAR 等十余个数据源统一接入，一问即查、查必有源。</p>
+        <p>企查查、天眼查、元典、北大法宝、见微、SEC EDGAR 等十余个数据源统一接入，一问即查、查必有源。</p>
         <a class="plink" href="/tutorials/lawyer-mcp-setup">《律师 MCP 搭建教程》→</a>
       </div>
       <div class="pillar">
@@ -540,19 +597,19 @@
     <div class="faq">
       <div class="card">
         <h3>客户数据保密怎么处理？</h3>
-        <p>敏感环节（OCR、文件处理）<b>完全本地运行</b>，不经第三方上传；境外模型只接触脱敏后的结构化字段与公开信息；对外产出前以关键词检索逐一核验脱敏效果——本页即按该流程交付。</p>
+        <p>敏感环节（OCR、文件解析）<b>完全本地运行</b>，不经第三方上传；境外模型只接触脱敏后的结构化字段与公开信息；对外产出前以关键词检索逐一核验脱敏效果——本页即按该流程交付。</p>
       </div>
       <div class="card">
         <h3>AI 幻觉怎么控制？</h3>
-        <p>法条、案号、企业信息一律回官方来源核验；法律结论实行<b>五级确定性分级</b>（明确 / 通说 / 存在争议 / 待核验 / 待公司确认）；无法核验的如实标注「待核验」，不以推测填充。</p>
+        <p>法条、案号、企业信息一律回官方来源或 MCP 直连数据源核验，<b>不得凭记忆填写</b>；法律结论实行<b>五级确定性分级</b>；无法核验的如实标注「待核验」或以【】占位，不以推测填充。</p>
       </div>
       <div class="card">
         <h3>「95% 由 AI 完成」的边界在哪？</h3>
-        <p>95% 指<b>工序产出</b>（初稿、检索、核验、格式）；签字、事实与法律判断、与客户和监管的沟通、冲突取舍——这 5% 始终在律师。页面所有「95%」口径均为此义。</p>
+        <p>95% 指<b>工序产出</b>（初稿、检索、核验、格式）；签字、事实与法律判断、访谈追问、与客户和监管的沟通、冲突取舍——这 5% 始终在律师。页面所有「95%」口径均为此义。</p>
       </div>
       <div class="card">
         <h3>为什么不用更简单的方案？</h3>
-        <p>都试过：商用数据库导出只有一层；Excel 解不了递归穿透与语义归并；外包人力保证不了准确率且底稿不能出所。<b>工具造不出来，就只能回到数周人日</b>——所以律师为自己造工具。</p>
+        <p>都试过：模板加宏改不了「读懂底稿再改对应章节」；外包初稿守不住保密与口径一致；通用聊天机器人没有数据源也没有版本纪律。<b>工具造不出来，就只能回到人日堆砌</b>——所以律师为自己造工具。</p>
       </div>
     </div>
   </section>
@@ -572,7 +629,7 @@
 </main>
 
 <footer>
-  <div class="wrap">本页案例均已脱敏：不含客户名称、股东名称、持股比例与底稿截图；数据为底稿实际计数，耗时基线为经验估算并逐处标注。截至 2026 年 10 月。Copyright © 李成律师</div>
+  <div class="wrap">本页案例均已脱敏：不含客户名称、目标公司、股东名称、持股比例与底稿截图；数据为实际运行记录或入库计数，耗时基线凡属估算均已逐处标注。截至 2026 年 10 月。Copyright © 李成律师</div>
 </footer>
 
 </body>

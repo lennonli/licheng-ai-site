@@ -33,6 +33,6 @@ description: 集中整理律师日常工作可以直接使用的法律工具和�
   <a class="utility-card" href="/tools/cases/">
     <span class="utility-card-index">05 / Cases</span>
     <span class="utility-card-title">AI 法律案例展示</span>
-    <span class="utility-card-desc">按「案例真实 / 业务判断 / 方案设计 / 成果交付」四维度展开的真实案例：北交所申报股东穿透生产线、问询知识库、合同三层审查、批量单据识别与外文单据原位翻译。</span>
+    <span class="utility-card-desc">按「案例真实 / 业务判断 / 方案设计 / 成果交付」四维度展开：法律尽调报告从委托到定稿的 AI 生产线（主案例），以及股东穿透核查、问询知识库、合同三层审查、非结构化底稿批处理四个专项工作流。</span>
   </a>
 </section>
