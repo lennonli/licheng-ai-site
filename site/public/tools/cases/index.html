@@ -130,15 +130,15 @@
     .vs .side .vl { font-size: 17px; font-weight: 800; margin-top: 6px; line-height: 1.6; }
     .vs .after .vl { color: var(--deep); }
 
-    /* 外部印证 */
+    /* 外部印证（选择器带 .dim .body 前缀以压过 .dim .body li 的 ◆ 规则） */
     .ev { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 14px; }
     .ev .ev-t { font-size: 13px; font-weight: 800; color: var(--gold); letter-spacing: .08em; margin-bottom: 8px; }
     .ev ol { list-style: none; counter-reset: evc; }
-    .ev li { counter-increment: evc; position: relative; padding-left: 30px; font-size: 14px; margin: 7px 0; }
-    .ev li::before {
+    .dim .body .ev li { counter-increment: evc; position: relative; padding-left: 32px; font-size: 14px; margin: 7px 0; }
+    .dim .body .ev li::before {
       content: counter(evc); position: absolute; left: 0; top: 3px;
       width: 20px; height: 20px; border-radius: 50%; background: var(--deep); color: var(--lime);
-      font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 800; line-height: 20px; text-align: center;
     }
 
     /* ---------- 生产线流程条 ---------- */
