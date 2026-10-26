@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="李成律师 · AI 法律案例展示">
+  <meta name="twitter:title" content="李成律师 · AI 法律案例展示">
+  <meta property="og:description" content="按「案例真实 / 业务判断 / 方案设计 / 成果交付」四维度展开的 AI 法律工作真实案例：北交所申报股东穿透生产线、问询知识库、合同三层审查、批量单据识别与外文单据原位翻译。">
+  <meta name="description" content="李成律师 AI 法律案例展示：股东穿透核查生产线、IPO 问询知识库、投资协议三层审查、批量单据识别、外文单据原位翻译，全部案例脱敏并标注数据口径。">
+  <title>李成律师 · AI 法律案例展示</title>
+  <link rel="canonical" href="https://ai.licheng.uk/tools/cases/">
+  <meta property="og:url" content="https://ai.licheng.uk/tools/cases/">
+  <style>
+    :root {
+      --paper: #F6FBEF;
+      --ink: #163A24;
+      --green: #2F7D4F;
+      --gold: #C9A227;
+      --sage: #DCEBD8;
+      --mint: #E9F3E5;
+      --line: #BCD3BA;
+      --muted: #66806B;
+      --deep: #0D2918;
+      --lime: #9fe870;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--paper); color: var(--ink); line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      background:
+        radial-gradient(900px 420px at 85% -10%, rgba(159, 232, 112, .16), transparent 60%),
+        linear-gradient(160deg, var(--deep) 0%, #14351f 62%, var(--ink) 100%);
+      color: #F2F7EC; padding: 72px 0 0; border-bottom: 6px solid var(--gold);
+    }
+    .hero .kicker {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 13px; letter-spacing: .22em; color: var(--lime);
+      border: 1px solid rgba(159,232,112,.35); border-radius: 999px;
+      padding: 6px 16px; margin-bottom: 22px;
+    }
+    .hero .kicker::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--lime); }
+    .hero h1 { font-size: clamp(36px, 6vw, 58px); letter-spacing: .06em; font-weight: 800; line-height: 1.18; }
+    .hero h1 small {
+      display: block; margin-top: 14px; font-size: clamp(14px, 2.1vw, 19px);
+      font-weight: 500; color: #CDE3C4; letter-spacing: .08em;
+    }
+    .hero .motto {
+      margin-top: 24px; max-width: 760px; font-size: clamp(15px, 2vw, 18px); color: #E8F2DF;
+      border-left: 3px solid var(--gold); padding-left: 16px;
+    }
+    .hero .motto b { color: var(--lime); }
+    .dimbar {
+      margin-top: 44px; display: grid; grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid rgba(188,211,186,.28);
+    }
+    .dimbar a {
+      display: block; padding: 20px 18px 26px; border-right: 1px solid rgba(188,211,186,.18);
+      color: #F2F7EC;
+    }
+    .dimbar a:last-child { border-right: none; }
+    .dimbar .no { font-size: 13px; font-weight: 800; color: var(--gold); letter-spacing: .12em; }
+    .dimbar .tt { font-size: 16.5px; font-weight: 700; margin-top: 4px; }
+    .dimbar .dd { font-size: 12.5px; color: #A9C4A0; margin-top: 3px; line-height: 1.55; }
+
+    /* ---------- SECTION ---------- */
+    section.blk { padding: 64px 0 6px; }
+    .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; }
+    .sec-no { font-size: 15px; font-weight: 800; color: var(--gold); letter-spacing: .14em; white-space: nowrap; }
+    .sec-head h2 { font-size: clamp(23px, 3.4vw, 30px); font-weight: 800; letter-spacing: .04em; }
+    .rule { height: 3px; width: 64px; background: var(--gold); border-radius: 2px; margin: 14px 0 10px; }
+    .sec-sub { color: var(--muted); font-size: 14.5px; margin-bottom: 28px; max-width: 820px; }
+
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: 14px;
+      padding: 26px 28px; box-shadow: 0 2px 10px rgba(22,58,36,.05);
+    }
+    .muted { color: var(--muted); font-size: 13px; }
+    .tag-note {
+      display: inline-block; font-size: 12px; font-weight: 700; border-radius: 6px;
+      padding: 2px 9px; background: var(--mint); color: var(--green); margin-left: 8px; vertical-align: 2px;
+    }
+
+    /* ---------- 主案例概览 ---------- */
+    .case-hero {
+      background: linear-gradient(140deg, var(--deep), #1C4A2C); color: #EDF6E6;
+      border-radius: 16px; padding: 30px 32px; display: grid;
+      grid-template-columns: 1.5fr 1fr; gap: 26px;
+    }
+    .case-hero .ch-title { font-size: clamp(19px, 2.6vw, 24px); font-weight: 800; color: #fff; }
+    .case-hero .ch-sub { font-size: 14px; color: #CDE3C4; margin-top: 8px; line-height: 1.8; }
+    .ch-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-content: start; }
+    .ch-stat { background: rgba(255,255,255,.06); border: 1px solid rgba(188,211,186,.25); border-radius: 10px; padding: 12px 14px; }
+    .ch-stat b { display: block; font-size: 22px; font-weight: 800; color: var(--lime); font-variant-numeric: tabular-nums; }
+    .ch-stat b small { font-size: 13px; font-weight: 700; }
+    .ch-stat span { font-size: 12px; color: #A9C4A0; }
+
+    /* ---------- 四维度卡 ---------- */
+    .dim { display: grid; grid-template-columns: 92px 1fr; gap: 0; margin-top: 22px; }
+    .dim .rail {
+      background: var(--mint); border: 1px solid var(--line); border-right: none;
+      border-radius: 14px 0 0 14px; padding: 22px 12px; text-align: center;
+    }
+    .dim .rail .dno { font-size: 24px; font-weight: 800; color: var(--gold); font-variant-numeric: tabular-nums; }
+    .dim .rail .dname { writing-mode: vertical-lr; letter-spacing: .3em; font-size: 14px; font-weight: 700; color: var(--green); margin: 10px auto 0; }
+    .dim .body { background: #fff; border: 1px solid var(--line); border-radius: 0 14px 14px 0; padding: 24px 28px; }
+    .dim .body h3 { font-size: 16.5px; font-weight: 800; margin-bottom: 12px; }
+    .dim .body h4 { font-size: 14.5px; font-weight: 700; color: var(--green); margin: 14px 0 4px; }
+    .dim .body ul { list-style: none; }
+    .dim .body li { position: relative; padding-left: 18px; margin: 6px 0; font-size: 14.5px; }
+    .dim .body li::before { content: "◆"; position: absolute; left: 0; top: 2px; color: var(--gold); font-size: 9px; }
+    .dim .body li b { font-weight: 700; }
+
+    /* 基线 vs 结果 */
+    .vs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+    .vs .side { border-radius: 12px; padding: 16px 18px; }
+    .vs .before { background: #F0F2EC; border: 1px dashed #b9c0b2; }
+    .vs .after { background: var(--mint); border: 1px solid var(--green); }
+    .vs .side .lb { font-size: 12px; font-weight: 800; letter-spacing: .1em; }
+    .vs .before .lb { color: #7a8272; }
+    .vs .after .lb { color: var(--green); }
+    .vs .side .vl { font-size: 17px; font-weight: 800; margin-top: 6px; line-height: 1.6; }
+    .vs .after .vl { color: var(--deep); }
+
+    /* 外部印证 */
+    .ev { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 14px; }
+    .ev .ev-t { font-size: 13px; font-weight: 800; color: var(--gold); letter-spacing: .08em; margin-bottom: 8px; }
+    .ev ol { list-style: none; counter-reset: evc; }
+    .ev li { counter-increment: evc; position: relative; padding-left: 30px; font-size: 14px; margin: 7px 0; }
+    .ev li::before {
+      content: counter(evc); position: absolute; left: 0; top: 3px;
+      width: 20px; height: 20px; border-radius: 50%; background: var(--deep); color: var(--lime);
+      font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ---------- 生产线流程条 ---------- */
+    .pipeline {
+      display: grid; grid-template-columns: 1fr 26px 1fr 26px 1fr 26px 1fr; gap: 0;
+      align-items: stretch; margin-top: 24px;
+    }
+    .pipe-step {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px;
+      padding: 18px 18px 16px; display: flex; flex-direction: column;
+    }
+    .pipe-step .pn { font-size: 12px; font-weight: 800; color: var(--gold); letter-spacing: .12em; }
+    .pipe-step .pt { font-size: 15.5px; font-weight: 800; margin-top: 4px; }
+    .pipe-step .pd { font-size: 12.5px; color: var(--muted); margin-top: 6px; line-height: 1.65; flex: 1; }
+    .pipe-step .pl { font-size: 12.5px; margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; line-height: 1.7; }
+    .pipe-arr { display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 20px; font-weight: 800; }
+
+    /* ---------- 更多案例 ---------- */
+    .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .case-card {
+      background: #fff; border: 1px solid var(--line); border-radius: 16px;
+      padding: 24px 26px; box-shadow: 0 2px 10px rgba(22,58,36,.05);
+      display: flex; flex-direction: column;
+    }
+    .case-card .cc-top { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .case-card .cc-idx {
+      font-size: 12px; font-weight: 800; color: var(--deep); background: var(--gold);
+      border-radius: 6px; padding: 2px 9px; letter-spacing: .06em;
+    }
+    .case-card .cc-scope { font-size: 12px; font-weight: 700; color: var(--green); background: var(--sage); border-radius: 6px; padding: 2px 9px; }
+    .case-card h3 { font-size: 17px; font-weight: 800; }
+    .case-card dl { margin-top: 10px; flex: 1; }
+    .case-card dt { font-size: 12.5px; font-weight: 800; color: var(--gold); letter-spacing: .14em; margin-top: 12px; }
+    .case-card dd { font-size: 13.8px; line-height: 1.75; margin: 3px 0 0; }
+    .case-card dd b { font-weight: 700; }
+    .case-card .cc-kpi {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;
+      border-top: 1px dashed var(--line); padding-top: 12px;
+    }
+    .kpi { background: var(--mint); border-radius: 8px; padding: 6px 12px; font-size: 12.5px; font-weight: 700; color: var(--deep); }
+    .kpi b { color: var(--green); font-size: 15px; }
+
+    /* ---------- 方法论 ---------- */
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .pillar {
+      background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 18px;
+      border-top: 4px solid var(--green);
+    }
+    .pillar .pi { font-size: 20px; }
+    .pillar h3 { font-size: 15.5px; font-weight: 800; margin-top: 8px; }
+    .pillar p { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.7; }
+    .pillar .plink { font-size: 13px; margin-top: 10px; display: block; }
+    .motto-card {
+      margin-top: 20px; background: linear-gradient(135deg, var(--mint), #fff);
+      border: 1px solid var(--line); border-radius: 16px; padding: 24px 28px;
+      display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+    }
+    .motto-card .q {
+      font-size: clamp(16px, 2.2vw, 20px); font-weight: 800; color: var(--deep); flex: 1 1 320px;
+    }
+    .motto-card .q b { color: var(--green); }
+    .motto-card .a { font-size: 13px; color: var(--muted); max-width: 320px; }
+
+    /* ---------- 边界 FAQ ---------- */
+    .faq { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .faq .card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 8px; }
+    .faq .card h3::before { content: "Q"; display: inline-block; width: 22px; height: 22px; border-radius: 6px; background: var(--deep); color: var(--lime); font-size: 13px; text-align: center; line-height: 22px; margin-right: 9px; }
+    .faq .card p { font-size: 13.8px; line-height: 1.8; }
+    .faq .card p b { font-weight: 700; color: var(--green); }
+
+    /* ---------- wechat ---------- */
+    .wechat-contact {
+      margin: 70px 0 26px;
+      background: linear-gradient(135deg, var(--mint), #fff);
+      border: 1px solid var(--line); border-radius: 18px;
+      display: flex; align-items: center; gap: 28px; padding: 30px 34px; flex-wrap: wrap;
+    }
+    .wechat-contact-copy { flex: 1 1 260px; }
+    .wechat-contact-copy h2 { font-size: 22px; font-weight: 800; }
+    .wechat-contact-copy p { color: var(--muted); font-size: 14.5px; margin-top: 8px; }
+    .wechat-contact-qr-link {
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 700; color: var(--green);
+    }
+    .wechat-contact-qr-link img { width: 120px; height: auto; border-radius: 10px; border: 1px solid var(--line); }
+    .backhome { text-align: center; padding: 18px 0 8px; font-size: 14px; }
+    footer {
+      border-top: 1px solid var(--line); margin-top: 40px; padding: 26px 0 40px;
+      color: var(--muted); font-size: 13px; text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .dimbar { grid-template-columns: repeat(2, 1fr); }
+      .dimbar a { border-bottom: 1px solid rgba(188,211,186,.18); }
+      .case-hero { grid-template-columns: 1fr; }
+      .dim { grid-template-columns: 64px 1fr; }
+      .dim .rail .dname { writing-mode: horizontal-tb; letter-spacing: .18em; margin-top: 6px; }
+      .pipeline { grid-template-columns: 1fr; }
+      .pipe-arr { transform: rotate(90deg); padding: 4px 0; }
+      .case-grid, .faq { grid-template-columns: 1fr; }
+      .pillars { grid-template-columns: repeat(2, 1fr); }
+      .vs { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .dimbar { grid-template-columns: 1fr 1fr; }
+      .pillars { grid-template-columns: 1fr; }
+      .hero { padding-top: 54px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">CASE PORTFOLIO · 2026</div>
+    <h1>案例展示<small>AI 落地法律服务交付的真实案例 · 一个主案例深度拆解 + 四个工作流全景</small></h1>
+    <p class="motto">
+      好的 AI 落地案例，经得起四个追问：<b>真实吗？为什么做？为什么这样做？结果怎么量？</b><br>
+      本页每个案例按此四维度展开——每个数字可回溯至底稿计数或公开发布物，每处基线标明<b>实测还是估算</b>。
+    </p>
+    <div class="dimbar">
+      <a href="#dim-1"><span class="no">01</span><div class="tt">案例真实</div><div class="dd">客户 · 过程 · 数据 · 外部证据相互印证</div></a>
+      <a href="#dim-2"><span class="no">02</span><div class="tt">业务判断</div><div class="dd">原始流程与真实问题 · 为何优先 · 砍掉了什么</div></a>
+      <a href="#dim-3"><span class="no">03</span><div class="tt">方案设计</div><div class="dd">为什么用 AI · 架构 · 关键取舍与真实约束</div></a>
+      <a href="#dim-4"><span class="no">04</span><div class="tt">成果交付</div><div class="dd">基线 · 结果 · 口径 · 复用</div></a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ================= 01 主案例 ================= -->
+  <section class="blk" id="main-case">
+    <div class="sec-head"><span class="sec-no">CASE 01 / 主案例</span><h2>北交所申报：股东穿透核查 AI 生产线</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">尽调与申报里最耗人日的「必答题」。以此为核心切片，后续调查表更新、出资流水核验、问询比对复用同一张穿透表——这就是「生产线」的含义。</p>
+
+    <div class="case-hero">
+      <div>
+        <div class="ch-title">某新三板挂牌公司 · 北交所申报准备阶段</div>
+        <p class="ch-sub">
+          业务场景：申报前股东穿透核查与股东信息披露专项核查，出具《股东信息披露意见》《证监会系统离职人员专项说明》等申报文件。实施时间：2026 年 8 月。<br>
+          客户名称按保密义务不公开；过程截图与底稿不在公开页面呈现，路演现场可展示脱敏底稿。
+        </p>
+      </div>
+      <div class="ch-stats">
+        <div class="ch-stat"><b>30 <small>名</small></b><span>一级股东（其中 10 家机构股东）</span></div>
+        <div class="ch-stat"><b>1,634</b><span>穿透节点（底稿计数）</span></div>
+        <div class="ch-stat"><b>8 <small>层</small></b><span>穿透最深层数</span></div>
+        <div class="ch-stat"><b>1,664 <small>行</small></b><span>跟踪表行数 × 17 列</span></div>
+      </div>
+    </div>
+
+    <!-- 维度1 -->
+    <div class="dim" id="dim-1">
+      <div class="rail"><div class="dno">01</div><div class="dname">案例真实</div></div>
+      <div class="body">
+        <h3>客户、过程、数据，均可回溯</h3>
+        <ul>
+          <li><b>客户与行业背景：</b>某新三板挂牌公司，处于北交所申报准备阶段。基金、合伙企业多层嵌套持股，是制造业拟上市企业的典型股权形态。</li>
+          <li><b>过程：</b>对 30 名一级股东中的 10 家机构股东逐层穿透至自然人、国资或上市公司等终局主体；同步逐份核验证件信息，生成资料跟踪表并按版本迭代至 V9。</li>
+          <li><b>数据：</b>1,634 个穿透节点、最深 8 层、跟踪表 1,664 行 × 17 列（30 名直接股东 + 1,634 个节点），均为底稿实际计数，非测算值。</li>
+          <li><b>交叉验证：</b>另用元典企业信息库接口对持股集中的机构股东独立穿透一轮：1,829 行、1,524 个主体、最深 10 层，与主表逐行比对。</li>
+        </ul>
+        <div class="ev">
+          <div class="ev-t">外部证据（可点击核验）</div>
+          <ol>
+            <li>工作流脱敏后公开为 <a href="/agents/AI-Agent%E8%BE%85%E5%8A%A9IPO%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E5%AE%9E%E6%93%8D%E6%95%99%E7%A8%8B">《AI-Agent 辅助 IPO 股东穿透实操教程》</a>（十一步流程 + 提示词模板，本站指令库）</li>
+            <li>交叉验证方法论公开为 <a href="/agents/%E5%85%83%E5%85%B8%E4%BC%81%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%BA%93%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">《元典企业信息库股东穿透核查提示词》</a>（本站 + <a href="https://github.com/lennonli/licheng-AGENTS.md" target="_blank" rel="noopener">GitHub 指令仓库</a>）</li>
+            <li>申报文件为项目实际交付物（股东信息披露意见、离职人员专项说明等）；路演现场可出示脱敏底稿与穿透表</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- 维度2 -->
+    <div class="dim" id="dim-2">
+      <div class="rail"><div class="dno">02</div><div class="dname">业务判断</div></div>
+      <div class="body">
+        <h3>先讲原始流程有多痛，再讲为什么值得优先做</h3>
+        <ul>
+          <li><b>原始流程：</b>律师/助理逐个股东查工商信息 → 手工录入 Excel → 对机构股东再查下一层 → 证件号肉眼核对。一层看漏，整支基金全部重来；数周人日耗在「查询-誊抄-核对」的循环里。</li>
+          <li><b>真实问题：</b>①数据量大但结构高度重复——典型的可工序化场景；②不同基金树里存在同名自然人，人工极易误合并；③证件号 OCR 错位是申报文件的硬伤，错一位就是补正；④商用数据库导出通常只到一层，越往深层越依赖人工。</li>
+          <li><b>为什么优先做：</b>股东穿透是北交所申报的「必答题」，也是尽调中最耗人日的工序；穿透表一旦建准，调查表批量更新、出资流水核验、离职人员专项说明全部复用同一数据底座——做一件事，盘活四道工序。</li>
+          <li><b>砍掉了什么：</b>不做「一键全自动出表」。终局节点的属性判断（国资 / 上市公司 / 境外主体 / 自然人）、每处数据冲突的取舍，一律保留给律师——AI 只产工序，不产结论。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 维度3 -->
+    <div class="dim" id="dim-3">
+      <div class="rail"><div class="dno">03</div><div class="dname">方案设计</div></div>
+      <div class="body">
+        <h3>为什么用 AI，而不是更简单的方案</h3>
+        <ul>
+          <li><b>替代方案为何不行：</b>商用数据库导出只给一层，Excel 公式解不了「递归查询 + 语义归并」；外包人力保证不了证件号与同名识别的准确率，且底稿依保密义务不能出所。</li>
+          <li><b>架构（双引擎交叉）：</b>①引擎 A：穿透报告归档 → AI 逐份解析节点、层级、比例、证件信息写入跟踪表；②引擎 B：元典企业信息库接口脚本化独立穿透（约 1,000 次调用）；③两套结果交叉比对，输出 254 行差异明细，逐条由律师裁定——不对账就签字，等于把风险留给自己。</li>
+        </ul>
+        <h4>关键取舍与真实约束（踩过的坑如实写进指令）</h4>
+        <ul>
+          <li>证件号<b>三重验算</b>：校验位 + 出生日期 + 省份前缀，不通过即标黄预警，绝不自动改写。</li>
+          <li><b>同名不同人</b>按基金树隔离回填：宁可多一行，不许错合并。</li>
+          <li>数据库出资比例字段小数/百分数混用，一律按「认缴额 ÷ 注册资本」重算后再比对。</li>
+          <li>接口限流须退避重试；三支重点基金交叉覆盖率 <b>97.4% / 98.7% / 80.4%</b>——未覆盖部分如实标注，不以估算填充。</li>
+          <li>全部底稿本地处理，不上传任何第三方平台。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 维度4 -->
+    <div class="dim" id="dim-4">
+      <div class="rail"><div class="dno">04</div><div class="dname">成果交付</div></div>
+      <div class="body">
+        <h3>基线、结果、口径，一次讲清</h3>
+        <div class="vs">
+          <div class="side before">
+            <div class="lb">基线 · BEFORE</div>
+            <div class="vl">人工穿透同等规模机构股东：数周<span class="tag-note">经验估算</span></div>
+            <p class="muted" style="margin-top:6px">逐层查询、手工誊抄、肉眼核对，且返工频繁。</p>
+          </div>
+          <div class="side after">
+            <div class="lb">结果 · AFTER</div>
+            <div class="vl">数日：1,664 行跟踪表（V9）+ 独立交叉验证表<span class="tag-note">底稿计数</span></div>
+            <p class="muted" style="margin-top:6px">含 254 行交叉比对明细与 4 处实质差异清单，律师逐条裁定后定稿。</p>
+          </div>
+        </div>
+        <ul style="margin-top:14px">
+          <li><b>交付物：</b>《股东信息披露意见》《证监会系统离职人员专项说明》等申报文件成稿，穿透附表直接嵌入申报文件。</li>
+          <li><b>口径声明：</b>节点 / 层数 / 行数 = 底稿实际计数；覆盖率 = 交叉验证实测；「数周」为经验估算基线，已在页面标注，不与实测混用。</li>
+          <li><b>复用：</b>同一张穿透表继续支撑调查表批量更新与出资流水核验——单点投入，全流程受益。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 生产线全景 -->
+    <div class="pipeline">
+      <div class="pipe-step">
+        <div class="pn">STEP 1</div>
+        <div class="pt">股东穿透</div>
+        <div class="pd">双引擎穿透 + 交叉比对，产出全层级穿透表与差异清单。</div>
+        <div class="pl"><a href="/agents/AI-Agent%E8%BE%85%E5%8A%A9IPO%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E5%AE%9E%E6%93%8D%E6%95%99%E7%A8%8B">实操教程</a> · <a href="/agents/%E5%85%83%E5%85%B8%E4%BC%81%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%BA%93%E8%82%A1%E4%B8%9C%E7%A9%BF%E9%80%8F%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">元典核查指令</a></div>
+      </div>
+      <div class="pipe-arr">→</div>
+      <div class="pipe-step">
+        <div class="pn">STEP 2</div>
+        <div class="pt">出资流水核验</div>
+        <div class="pd">银行流水 OCR 提取 + 出资前后异常交易扫描 + 底稿归档。</div>
+        <div class="pl"><a href="/agents/IPO%E8%82%A1%E4%B8%9C%E5%87%BA%E8%B5%84%E6%B5%81%E6%B0%B4%E5%8F%8A%E5%BA%95%E7%A8%BF%E5%BD%92%E6%A1%A3%E6%A0%B8%E6%9F%A5%E6%8F%90%E7%A4%BA%E8%AF%8D">出资流水核查指令</a></div>
+      </div>
+      <div class="pipe-arr">→</div>
+      <div class="pipe-step">
+        <div class="pn">STEP 3</div>
+        <div class="pt">调查表批量更新</div>
+        <div class="pd">董监高、直接/间接股东调查表按最新工商数据批量复核更新，本地规则校验 + 公开数据交叉比对。</div>
+        <div class="pl"><a href="/agents/%E8%91%A3%E7%9B%91%E9%AB%98%E8%82%A1%E4%B8%9C%E8%B0%83%E6%9F%A5%E8%A1%A8%E5%A4%8D%E6%A0%B8%E6%8F%90%E7%A4%BA%E8%AF%8D">调查表复核指令</a> · <a href="/agents/IPO%E8%91%A3%E7%9B%91%E9%AB%98%E5%8F%8A%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E8%B0%83%E6%9F%A5%E8%A1%A8%E6%9B%B4%E6%96%B0%E6%8F%90%E7%A4%BA%E8%AF%8D">更新指令</a></div>
+      </div>
+      <div class="pipe-arr">→</div>
+      <div class="pipe-step">
+        <div class="pn">STEP 4</div>
+        <div class="pt">问询比对</div>
+        <div class="pd">1,636 份问询文书知识库类案比对，为审核问询回复提供论证口径。</div>
+        <div class="pl"><a href="/kb/">问询知识库</a> · WorkBuddy 专家智能体「IPO 审核问询案例与证券法规」</div>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:12px">四道工序的指令均已脱敏公开于本站指令库与 GitHub 指令仓库——评审可逐条点开核对，与本页描述一致。</p>
+  </section>
+
+  <!-- ================= 02 更多案例 ================= -->
+  <section class="blk" id="more-cases">
+    <div class="sec-head"><span class="sec-no">CASE 02–05 / 更多案例</span><h2>四个已跑通的工作流</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">同一方法在不同工序上的复制：知识沉淀、审查、批量识别、翻译归档。每张卡片按「痛点 → 做法 → 效果 → 口径与印证」组织。</p>
+
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="cc-top"><span class="cc-idx">CASE 02</span><span class="cc-scope">知识库 / 检索</span></div>
+        <h3>IPO 问询回复知识库与检索工作流</h3>
+        <dl>
+          <dt>痛点</dt>
+          <dd>写问询回复要找同类项目的论证口径，在公告网站逐家翻检，一个口径查证动辄数小时。</dd>
+          <dt>做法</dt>
+          <dd>沉淀 <b>1,636 份</b>问询类文书（含补充法律意见书 824 份），按年度与板块分类建库；见微数据 <b>812 万+</b>条公告经 MCP 接口直达原文，类案口径即查即得。</dd>
+          <dt>效果</dt>
+          <dd>类案检索：数小时 → 约 10 分钟（估算口径）；问询回复文书初稿约 95% 由 AI 辅助产出。</dd>
+          <dt>口径与印证</dt>
+          <dd>库容量为实际入库计数。知识库经本站 <a href="/kb/">/kb/</a> 提供检索，源仓库 <a href="https://github.com/lennonli/ipo-inquiry-kb" target="_blank" rel="noopener">ipo-inquiry-kb</a> 与 WorkBuddy 公开专家智能体「IPO 审核问询案例与证券法规」均可核验。</dd>
+        </dl>
+        <div class="cc-kpi">
+          <span class="kpi"><b>1,636</b> 份问询文书</span>
+          <span class="kpi"><b>824</b> 份补充法律意见书</span>
+          <span class="kpi"><b>812 万+</b> 条公告直达</span>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="cc-top"><span class="cc-idx">CASE 03</span><span class="cc-scope">合同 / 审查</span></div>
+        <h3>投资协议与合同三层审查工作流</h3>
+        <dl>
+          <dt>痛点</dt>
+          <dd>对方回传的版本改了近百处，哪几处是实质变动？「否决权条款静默失效」这类隐蔽改动，肉眼逐条比对极易漏网。</dd>
+          <dt>做法</dt>
+          <dd>以我方基准版本为对照，<b>只审偏离</b>：A/B/C 三级过滤（A 实质权利义务变动 / B 需协商 / C 文字性）+ 缺失条款补全 + 校对层；输出 Word 修订痕迹，修订人署名与时间戳按规范分布。</dd>
+          <dt>效果</dt>
+          <dd>一份投资协议审阅：1 个工作日 → 1 小时内（估算口径），且隐蔽条款变动不再依赖运气。</dd>
+          <dt>口径与印证</dt>
+          <dd>方法论公开为 <a href="/agents/%E7%A7%81%E5%8B%9F%E5%9F%BA%E9%87%91%E6%8A%95%E8%B5%84%E4%B8%9A%E5%8A%A1%E5%8D%8F%E8%AE%AE%E5%AE%A1%E9%98%85%E5%85%A8%E5%B1%80%E6%8C%87%E4%BB%A4">《私募基金投资业务协议审阅全局指令》</a>与<a href="/agents/%E5%90%88%E5%90%8C%E5%AE%A1%E6%9F%A5%E5%92%8C%E8%B5%B7%E8%8D%89">《合同审查和起草》</a>；已发布为 WorkBuddy 技能「合同审查和起草 · 李成律师版本 v3.0.1」。</dd>
+        </dl>
+        <div class="cc-kpi">
+          <span class="kpi"><b>A/B/C</b> 三级过滤</span>
+          <span class="kpi"><b>修订痕迹</b> 自动生成</span>
+          <span class="kpi"><b>1 小时内</b> 单份审阅</span>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="cc-top"><span class="cc-idx">CASE 04</span><span class="cc-scope">批量识别 / OCR</span></div>
+        <h3>批量单据识别流水线</h3>
+        <dl>
+          <dt>痛点</dt>
+          <dd>152 张手机拍摄的货运单据：手写日期、倾斜、重复拍摄件混杂，人工誊录成台账要一整个工作日且错漏难免。</dd>
+          <dt>做法</dt>
+          <dd>152 张 ÷ 每批 10 张 = <b>16 个图像识别子智能体</b>，分 3 批并行（6+6+4），每张抽取 19 个字段并标注存疑；主代理合并去重 → 工商库核验收货方全称（多智能体识读分歧以登记为准）→ 日期规范化（手写收货日期 &gt; 拍摄水印 &gt; 预抵日期）→ 排序重命名 → 自动出台账。</dd>
+          <dt>效果</dt>
+          <dd>全程约 <b>40 分钟</b>（实测），含内容、渲染、合计复算三轮验收。</dd>
+          <dt>口径与印证</dt>
+          <dd>耗时为实测值；「1 个工作日」为经验估算基线。子智能体并行调度模式沉淀于本站指令库的多智能体协作规则（<a href="/agents/%E6%B3%95%E5%BE%8B%E4%B8%9A%E5%8A%A1%E9%80%9A%E7%94%A8%E6%8C%87%E4%BB%A4">《法律业务通用指令》</a>）。</dd>
+        </dl>
+        <div class="cc-kpi">
+          <span class="kpi"><b>152</b> 张单据</span>
+          <span class="kpi"><b>16</b> 个子智能体并行</span>
+          <span class="kpi"><b>约 40 分钟</b> 实测</span>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="cc-top"><span class="cc-idx">CASE 05</span><span class="cc-scope">翻译 / 归档</span></div>
+        <h3>外文单据原位翻译流水线</h3>
+        <dl>
+          <dt>痛点</dt>
+          <dd>21 份英文贸易单据（含盖章扫描页）需要提交中文译文，但<b>原件一个字节都不能改</b>——常规「重排版翻译」直接出局。</dd>
+          <dt>做法</dt>
+          <dd>自研 PDF 英→中<b>覆盖式翻译</b>流水线：有文字层按块/行擦写、自动换行缩字号；扫描件 OCR 定位加白底贴片；输出「原件页在前 + 译文页在后」合并归档；合并采用页面级拼接，并程序化校验原件页内容字节一致。</dd>
+          <dt>效果</dt>
+          <dd>21 份全部交付，<b>原件零改动</b>（程序校验，含盖章页）；地址、人名、料号、海关编码、贸易术语保留不译，保证与原件可逐项勾稽。</dd>
+          <dt>口径与印证</dt>
+          <dd>文件数为实际交付数；「原件零改动」有程序化校验记录支撑。</dd>
+        </dl>
+        <div class="cc-kpi">
+          <span class="kpi"><b>21</b> 份外文单据</span>
+          <span class="kpi"><b>零字节改动</b> 程序校验</span>
+          <span class="kpi"><b>译排一体</b> 覆盖式翻译</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 03 方法论 ================= -->
+  <section class="blk" id="method">
+    <div class="sec-head"><span class="sec-no">METHOD / 可复制</span><h2>为什么这不是「一个人的运气」</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">案例背后是四层可复制的基础设施——任何律师按此路径搭建，都能逼近同样的人效。</p>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pi">📜</div>
+        <h3>指令 · AGENTS</h3>
+        <p>起草格式、反编造红线、五级确定性分级、多智能体协作规则的整套通用指令，全部公开。</p>
+        <a class="plink" href="/agents/%E6%B3%95%E5%BE%8B%E4%B8%9A%E5%8A%A1%E9%80%9A%E7%94%A8%E6%8C%87%E4%BB%A4">《法律业务通用指令》→</a>
+      </div>
+      <div class="pillar">
+        <div class="pi">🧩</div>
+        <h3>技能 · Skills</h3>
+        <p>20 余个法律业务技能、10 余个专业子智能体；其中 8 个技能已上架 WorkBuddy 公开可复用。</p>
+        <a class="plink" href="/skills/">技能库 →</a>
+      </div>
+      <div class="pillar">
+        <div class="pi">🔌</div>
+        <h3>数据接口 · MCP</h3>
+        <p>企查查、元典、北大法宝、见微、SEC EDGAR 等十余个数据源统一接入，一问即查、查必有源。</p>
+        <a class="plink" href="/tutorials/lawyer-mcp-setup">《律师 MCP 搭建教程》→</a>
+      </div>
+      <div class="pillar">
+        <div class="pi">🛡️</div>
+        <h3>纪律 · Discipline</h3>
+        <p>AI 初筛 + 原件回看双重验证；敏感环节本地运行；对外产出前关键词检索逐一核验脱敏。</p>
+        <a class="plink" href="/agents/">指令库总览 →</a>
+      </div>
+    </div>
+    <div class="motto-card">
+      <div class="q">「AI 出活，我出判断——<b>工序给它，责任在我</b>。」</div>
+      <div class="a">这是 95% / 5% 分工的另一半表述：产出占比可以很高，签字与终审责任从不转移。</div>
+    </div>
+  </section>
+
+  <!-- ================= 04 边界 ================= -->
+  <section class="blk" id="boundaries">
+    <div class="sec-head"><span class="sec-no">BOUNDARY / 边界</span><h2>真实约束：这些事不交给 AI</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">展示成果的同时把边界讲清楚，才是可审计的 AI 落地。</p>
+    <div class="faq">
+      <div class="card">
+        <h3>客户数据保密怎么处理？</h3>
+        <p>敏感环节（OCR、文件处理）<b>完全本地运行</b>，不经第三方上传；境外模型只接触脱敏后的结构化字段与公开信息；对外产出前以关键词检索逐一核验脱敏效果——本页即按该流程交付。</p>
+      </div>
+      <div class="card">
+        <h3>AI 幻觉怎么控制？</h3>
+        <p>法条、案号、企业信息一律回官方来源核验；法律结论实行<b>五级确定性分级</b>（明确 / 通说 / 存在争议 / 待核验 / 待公司确认）；无法核验的如实标注「待核验」，不以推测填充。</p>
+      </div>
+      <div class="card">
+        <h3>「95% 由 AI 完成」的边界在哪？</h3>
+        <p>95% 指<b>工序产出</b>（初稿、检索、核验、格式）；签字、事实与法律判断、与客户和监管的沟通、冲突取舍——这 5% 始终在律师。页面所有「95%」口径均为此义。</p>
+      </div>
+      <div class="card">
+        <h3>为什么不用更简单的方案？</h3>
+        <p>都试过：商用数据库导出只有一层；Excel 解不了递归穿透与语义归并；外包人力保证不了准确率且底稿不能出所。<b>工具造不出来，就只能回到数周人日</b>——所以律师为自己造工具。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wechat-contact" id="contact">
+    <div class="wechat-contact-copy">
+      <h2>联系李成律师</h2>
+      <p>扫描二维码添加微信，沟通法律 AI 培训、IPO / 并购等资本市场业务及合作事项。个人能力与背景见 <a href="/tools/capability/">能力全景页</a>。</p>
+    </div>
+    <a class="wechat-contact-qr-link" href="/wechat-li-cheng.jpg" target="_blank" rel="noopener" aria-label="扫码添加微信，查看李成律师微信二维码原图">
+      <img src="/wechat-li-cheng.jpg" alt="李成律师微信二维码" width="120" loading="lazy" decoding="async">
+      扫码添加微信
+    </a>
+  </section>
+
+  <div class="backhome"><a href="/">ai.licheng.uk</a> · 李成律师法律 AI 工作站 · <a href="/tools/capability/">能力全景</a> · <a href="/agents/">指令库</a> · <a href="/skills/">技能库</a></div>
+</main>
+
+<footer>
+  <div class="wrap">本页案例均已脱敏：不含客户名称、股东名称、持股比例与底稿截图；数据为底稿实际计数，耗时基线为经验估算并逐处标注。截至 2026 年 10 月。Copyright © 李成律师</div>
+</footer>
+
+</body>
+</html>

@@ -30,4 +30,9 @@ description: 集中整理律师日常工作可以直接使用的法律工具和�
     <span class="utility-card-title">个人能力全景</span>
     <span class="utility-card-desc">李成律师能力与 AI 实践全景页：职业履历、AI 法律工作体系、WorkBuddy 公开技能与 GitHub 开源仓库。</span>
   </a>
+  <a class="utility-card" href="/tools/cases/">
+    <span class="utility-card-index">05 / Cases</span>
+    <span class="utility-card-title">AI 法律案例展示</span>
+    <span class="utility-card-desc">按「案例真实 / 业务判断 / 方案设计 / 成果交付」四维度展开的真实案例：北交所申报股东穿透生产线、问询知识库、合同三层审查、批量单据识别与外文单据原位翻译。</span>
+  </a>
 </section>
