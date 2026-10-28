@@ -210,6 +210,40 @@
     .motto-card .q b { color: var(--green); }
     .motto-card .a { font-size: 13px; color: var(--muted); max-width: 320px; }
 
+    /* ---------- 价值与商业验证 ---------- */
+    .value-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 22px; }
+    .vb {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px;
+      border-left: 4px solid var(--green);
+    }
+    .vb b { display: block; font-size: 15px; font-weight: 800; }
+    .vb span { font-size: 13px; color: var(--muted); line-height: 1.65; display: block; margin-top: 4px; }
+    .vq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .vq-grid .card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+    .vq-grid .card h3 .qno {
+      flex: none; width: 30px; height: 22px; border-radius: 6px; background: var(--deep); color: var(--lime);
+      font-size: 12px; font-weight: 800; text-align: center; line-height: 22px; letter-spacing: .02em;
+    }
+    .vq-grid .card p { font-size: 13.8px; line-height: 1.8; }
+    .vq-grid .card p b { font-weight: 700; color: var(--green); }
+    .price-card {
+      grid-column: 1 / -1;
+      background: linear-gradient(140deg, var(--deep), #1C4A2C); color: #EDF6E6;
+      border-radius: 16px; padding: 26px 30px;
+      display: grid; grid-template-columns: auto 1fr 1fr; gap: 26px; align-items: center;
+    }
+    .price-card .pc-q { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; font-size: 15.5px; font-weight: 800; margin: -8px 0 2px; }
+    .price-card .pc-q .qno {
+      flex: none; width: 30px; height: 22px; border-radius: 6px; background: var(--gold); color: var(--deep);
+      font-size: 12px; font-weight: 800; text-align: center; line-height: 22px;
+    }
+    .price-card .pc-amount b { display: block; font-size: 40px; font-weight: 800; color: var(--lime); line-height: 1.05; font-variant-numeric: tabular-nums; }
+    .price-card .pc-amount span { font-size: 13px; color: #CDE3C4; display: block; margin-top: 6px; max-width: 200px; }
+    .price-card .pc-mid { font-size: 14px; line-height: 1.8; }
+    .price-card .pc-mid b { color: var(--lime); }
+    .price-card .pc-deliv { font-size: 13.5px; line-height: 1.8; border-left: 1px solid rgba(188,211,186,.3); padding-left: 24px; }
+    .price-card .pc-deliv b { display: block; font-size: 12px; letter-spacing: .14em; color: var(--gold); margin-bottom: 5px; }
+
     /* ---------- 边界 FAQ ---------- */
     .faq { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .faq .card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 8px; }
@@ -245,7 +279,10 @@
       .dim { grid-template-columns: 64px 1fr; }
       .dim .rail .dname { writing-mode: horizontal-tb; letter-spacing: .18em; margin-top: 6px; }
       .tl-card .row { grid-template-columns: 1fr; }
-      .case-grid, .faq { grid-template-columns: 1fr; }
+      .case-grid, .faq, .vq-grid { grid-template-columns: 1fr; }
+      .value-bar { grid-template-columns: 1fr; }
+      .price-card { grid-template-columns: 1fr; }
+      .price-card .pc-deliv { border-left: none; padding-left: 0; border-top: 1px solid rgba(188,211,186,.3); padding-top: 14px; }
       .pillars { grid-template-columns: repeat(2, 1fr); }
       .vs { grid-template-columns: 1fr; }
     }
@@ -458,8 +495,52 @@
         <ul style="margin-top:14px">
           <li><b>交付物：</b>《法律尽职调查报告》及历次更新稿、定制尽调清单与调查表、访谈笔录定稿、带出处的法律分析——即「95% 工序由 AI 完成，5% 判断与签字在律师」的落地形态。</li>
           <li><b>口径声明：</b>知识库容量 = 实际入库计数；底稿目录数字 = 实际生成结果；<b>耗时对比暂不给出具体数值</b>——本页只写能回溯的数字，不以估算冒充实测。</li>
-          <li><b>产品化：</b>全流程已封装为「双层指令模板 + 技能 + MCP 配置」，任何律师团队可按本站公开材料复现——这正是它能成为一个实际交付的 AI 产品的原因。</li>
+          <li><b>产品化：</b>全流程已封装为「双层指令模板 + 技能 + MCP 配置」，任何律师团队可按本站公开材料复现——这正是它能成为一个实际交付的 AI 产品的原因；商业验证见下方「价值与商业验证」。</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 价值与商业验证 ================= -->
+  <section class="blk" id="value">
+    <div class="sec-head"><span class="sec-no">VALUE / 价值</span><h2>项目价值与商业验证</h2></div>
+    <div class="rule"></div>
+    <p class="sec-sub">流程与结果之外，一个案例还必须回答：给组织带来多大提效与变化？值多少钱？客户为什么买单？离开 AI 还成不成立？——以下按最常见的六个问题逐一作答。</p>
+
+    <div class="value-bar">
+      <div class="vb"><b>人效结构</b><span>初稿、更新与核验由生产线产出，律师时间回到风险判断与客户沟通。</span></div>
+      <div class="vb"><b>质量一致性</b><span>溯源与反编造纪律写进指令，产出质量不依赖个人自觉。</span></div>
+      <div class="vb"><b>经验资产化</b><span>39 份脱敏报告、14 库问询案例、全套指令与技能，从个人经验变为团队可复用资产。</span></div>
+    </div>
+
+    <div class="vq-grid">
+      <div class="card">
+        <h3><span class="qno">Q1</span>这个需求是怎么来的？为什么先做它？</h3>
+        <p>不是来自某一次布置，而是所里<b>每个尽调项目反复出现的最高频痛点</b>：清单改模板、信息人工查、初稿逐章写、底稿到了改一轮。它同时满足两个条件——<b>值钱</b>（尽调是非诉业务入口，业务量最大）且<b>好做</b>（流程最规整、模板最成熟，是 AI 工序化回报最高的场景）。这条线建成，问询回复、合同审查都能接在后面。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">Q2</span>AI 之前人工也能做，区别在哪？</h3>
+        <p>都能做——过去几十年律师就是这么做的。区别在<b>成本结构与确定性</b>：人工是线性成本，每个项目重新花一遍人日；生产线一次搭建、边际成本极低地复用。人工质量靠个人经验与自觉，生产线把纪律<b>写进指令</b>（事实必须可溯源、不确定必须占位、版本必须留痕）。「核查程序—底稿—结论」三件套一个不少，省掉的是搬运时间。</p>
+      </div>
+
+      <div class="price-card">
+        <div class="pc-q"><span class="qno">Q3</span>报价是多少？钱怎么算出来的？</div>
+        <div class="pc-amount"><b>¥5,000</b><span>／场 · 律所团队 AI 法律业务培训专场</span></div>
+        <div class="pc-mid">定价逻辑：资深律师小时费率 <b>2,500 元</b> × 约 <b>2 小时</b>——以一位资深律师两小时的对价，换一支团队上手「AI + 法律业务」的完整生产线。</div>
+        <div class="pc-deliv"><b>交付内容</b>尽调报告撰写全流程六阶段方法论 · 指令 / 技能 / MCP 配置实操 · 团队带练，可按业务线定制</div>
+      </div>
+
+      <div class="card">
+        <h3><span class="qno">Q4</span>这一单怎么拿到的？客户为什么选你？</h3>
+        <p>来自我在事务所讲授的 AI 课程（连续两年：AI 合同审查与起草、AI Agent 工作范式）——课后团队形成共识：有必要把 AI 系统引入日常业务。选我的原因：<b>自己用得真好</b>（本页案例全部是我本人项目的真实运行记录）、<b>工具链熟练</b>（模型、智能体、MCP、知识库全链路）、<b>项目做得多</b>（8 年资本市场、5 单 IPO 签字，知道业务真正的痛点在哪）。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">Q5</span>为什么以个人身份申报，不以公司名义？</h3>
+        <p>这条生产线及其全部资产——指令库、技能、知识库、代码仓库、本站——都是以<b>我个人名义搭建、维护并公开</b>的（站点与 GitHub 均为个人账号，WorkBuddy 技能以本人名义发布）。律所是平台与客户，工具体系是<b>个人作品</b>；以个人身份申报，资产与责任都清晰。</p>
+      </div>
+      <div class="card">
+        <h3><span class="qno">Q6</span>把 AI 拿掉，这件事还能不能成？</h3>
+        <p>能做，但完全不是同一件事：培训还能讲，只是从「可复制的工作方式」退化为经验分享；尽调报告还能出，只是回到人日堆砌、版本靠肉眼、口径靠记忆。AI 拿掉后，变化的不是「能不能」，而是<b>成本结构与可复制性</b>——这正是本案例的价值所在：把一个人的产能和经验，变成一支团队可复用的基础设施。</p>
       </div>
     </div>
   </section>
