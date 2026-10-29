@@ -119,6 +119,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '培训课程表', link: '/training/' },
+      { text: '法律尽调报告专项', link: '/legal-dd-report/' },
       { text: '最新文章', link: '/latest/' },
       { text: '系列文章', link: '/series/' },
       { text: '指令与技能', items: [
@@ -126,33 +127,7 @@ export default defineConfig({
         { text: '法律业务技能', link: '/skills/' },
         { text: 'AI 工具教程', link: '/tutorials/' }
       ] },
-      { text: '法律知识库', items: [
-        { text: '2026 年案例库', link: '/kb/' },
-        { text: '2025 年案例库', link: '/kb2025/' },
-        { text: '2024 年案例库', link: '/kb2024/' },
-        { text: '2023 年案例库', link: '/kb2023/' },
-        { text: '知识库使用教程', link: '/kbskill/' }
-      ] },
-      { text: '并购重组案例', items: [
-        { text: '2026 年度案例库', link: '/ma2026/' },
-        { text: '2026 年度总结', link: '/ma2026/2026年度总结' },
-        { text: '2025 年度案例库', link: '/ma2025/' },
-        { text: '2025 年度总结', link: '/ma2025/2025年度总结' },
-        { text: '2024 年度案例库', link: '/ma2024/' },
-        { text: '2024 年度总结', link: '/ma2024/2024年度总结' },
-        { text: '2023 年度案例库', link: '/ma2023/' },
-        { text: '2023 年度总结', link: '/ma2023/2023年度总结' }
-      ] },
-      { text: '再融资案例', items: [
-        { text: '2025 年度案例库', link: '/refi2025/' },
-        { text: '2025 年度总结', link: '/refi2025/2025年度总结' },
-        { text: '2024 年度案例库', link: '/refi2024/' },
-        { text: '2024 年度总结', link: '/refi2024/2024年度总结' },
-        { text: '2023 年度案例库', link: '/refi2023/' },
-        { text: '2023 年度总结', link: '/refi2023/2023年度总结' },
-        { text: '2026 年度案例库', link: '/refi2026/' },
-        { text: '2026 年度总结', link: '/refi2026/2026年度总结' }
-      ] },
+      { text: '案例库', link: '/cases/' },
       { text: '实用工具', items: [
         { text: '工具总览', link: '/tools/' },
         { text: 'AI 网站导航', link: '/tools/ai-directory' },

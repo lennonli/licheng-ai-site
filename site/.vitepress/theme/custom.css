@@ -3079,6 +3079,7 @@ body {
 .vp-doc nav[aria-label="案例库年度"] { display:flex; flex-wrap:wrap; gap:12px; }
 .vp-doc nav [aria-current="page"] { font-weight:700; text-decoration:underline; }
 .case-filter :focus-visible,.reading-context a:focus-visible { outline:2px solid var(--vp-c-brand-1); outline-offset:3px; }
+.vp-doc .case-library-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 @media(max-width:640px) {
  .vp-doc .home-hero-copy { min-height:0; }
  .vp-doc .home-hero-panel { display:none; }
@@ -3086,4 +3087,5 @@ body {
  .reading-context { margin-top:12px; }
  .case-filter { padding:14px; }
  .case-filter label { flex-basis:100%; }
+ .vp-doc .case-library-grid { grid-template-columns:1fr; }
 }

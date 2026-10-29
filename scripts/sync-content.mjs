@@ -804,68 +804,8 @@ writeFileSync(path.join(siteDir, 'index.md'), `<section class="home-hero">
     <span class="home-card-title">实用工具</span>
     <span class="home-card-desc">集中整理可直接使用的法律工具和企业网络核查网站。</span>
   </a>
-  <a class="home-card" href="/kb/">
-    <span class="home-card-index">08 / Cases 2026</span>
-    <span class="home-card-title">问询案例库 · 2026年度</span>
-    <span class="home-card-desc">2026 年审核问询案例，按问询要点、回复口径与执业提示沉淀。</span>
-  </a>
-  <a class="home-card" href="/kb2025/">
-    <span class="home-card-index">09 / Cases 2025</span>
-    <span class="home-card-title">问询案例库 · 2025年度</span>
-    <span class="home-card-desc">2025 年审核问询案例，附年度总结报告。</span>
-  </a>
-  <a class="home-card" href="/ma2026/">
-    <span class="home-card-index">10 / MA Cases 2026</span>
-    <span class="home-card-title">并购重组案例库 · 2026年度</span>
-    <span class="home-card-desc">2026 年注册生效重大资产重组 17 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
-  </a>
-  <a class="home-card" href="/ma2025/">
-    <span class="home-card-index">11 / MA Cases 2025</span>
-    <span class="home-card-title">并购重组案例库 · 2025年度</span>
-    <span class="home-card-desc">2025 年注册生效重大资产重组 35 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
-  </a>
-  <a class="home-card" href="/ma2024/">
-    <span class="home-card-index">12 / MA Cases 2024</span>
-    <span class="home-card-title">并购重组案例库 · 2024年度</span>
-    <span class="home-card-desc">2024 年注册生效重大资产重组 11 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
-  </a>
-  <a class="home-card" href="/ma2023/">
-    <span class="home-card-index">13 / MA Cases 2023</span>
-    <span class="home-card-title">并购重组案例库 · 2023年度</span>
-    <span class="home-card-desc">2023 年注册生效重大资产重组 7 单（发行股份购买资产/重组上市/吸收合并），附交易结构、支付方式、交易金额和问询要点。</span>
-  </a>
-  <a class="home-card" href="/refi2025/">
-    <span class="home-card-index">14 / Refi Cases 2025</span>
-    <span class="home-card-title">再融资案例库 · 2025年度</span>
-    <span class="home-card-desc">2025 年度深市再融资审核问询案例 76 家（定向增发/可转债，69 家注册生效），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
-  </a>
-  <a class="home-card" href="/refi2024/">
-    <span class="home-card-index">15 / Refi Cases 2024</span>
-    <span class="home-card-title">再融资案例库 · 2024年度</span>
-    <span class="home-card-desc">2024 年度深市再融资审核问询案例 33 家（24 家注册生效、8 家撤回、1 家被否后重报获准），覆盖募集资金用途、财务性投资、同业竞争等法律要点。</span>
-  </a>
-  <a class="home-card" href="/refi2023/">
-    <span class="home-card-index">16 / Refi Cases 2023</span>
-    <span class="home-card-title">再融资案例库 · 2023年度</span>
-    <span class="home-card-desc">2023 年度沪深再融资审核问询案例 390 家（313 家注册生效、68 家终止），全面注册制首年与 827 新规撤回潮全景样本。</span>
-  </a>
-  <a class="home-card" href="/refi2026/">
-    <span class="home-card-index">17 / Refi Cases 2026</span>
-    <span class="home-card-title">再融资案例库 · 2026年度</span>
-    <span class="home-card-desc">2026 年度沪深再融资审核问询案例 192 家（146 家注册生效、25 家提交注册、20 家审核中），覆盖募集资金用途、财务性投资、发行对象与定价等法律要点。</span>
-  </a>
-  <a class="home-card" href="/kb2024/">
-    <span class="home-card-index">18 / Cases 2024</span>
-    <span class="home-card-title">问询案例库 · 2024年度</span>
-    <span class="home-card-desc">2024 年审核问询案例，附年度总结报告。</span>
-  </a>
-  <a class="home-card" href="/kb2023/">
-    <span class="home-card-index">19 / Cases 2023</span>
-    <span class="home-card-title">问询案例库 · 2023年度</span>
-    <span class="home-card-desc">2023 年审核问询案例，附年度总结报告。</span>
-  </a>
   <a class="home-card" href="/tools/ai-directory">
-    <span class="home-card-index">20 / Directory</span>
+    <span class="home-card-index">08 / Directory</span>
     <span class="home-card-title">AI 网站导航</span>
     <span class="home-card-desc">30 类精选 AI 官方入口：通用助手、大模型、法律 AI 与权威核验数据源、Agent 与 MCP。</span>
   </a>

@@ -5,7 +5,7 @@
       <span class="home-search-text">搜索指令、技能、教程与课程</span>
       <span class="home-search-action">搜索</span>
     </button>
-    <p class="home-search-hint">按标题、章节与摘要搜索。案例请进入各年度案例库筛选，或交由 AI 定向检索。</p>
+    <p class="home-search-hint">按标题、章节与摘要搜索。案例可在案例库页面按年度筛选，或交由 AI 定向检索。</p>
   </section>
 </template>
 
