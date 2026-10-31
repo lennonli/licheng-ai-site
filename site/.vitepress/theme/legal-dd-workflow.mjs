@@ -279,7 +279,3 @@ export const phases = [
 ]
 
 export const allSteps = phases.flatMap((phase) => phase.steps)
-
-export function stepPrompt(step) {
-  return `请协助完成法律尽调报告工作中的「${step.title}」。\n\n项目公司：【公司名称】\n项目与报告期：【项目背景、报告期】\n本次底稿或基准版本：【文件或目录】\n输出位置：【输出目录】\n\n准备资料：${step.input}\n\n本次任务：${step.ai}\n\n需律师核对或决定：${step.review}\n\n交付成果：${step.output.join('；')}。\n\n请先完整读取指定材料，仅处理本次任务；事实注明文件名、页码或条款号，法律依据核对原文及效力。资料缺失或冲突时具体列明，不推测、不补造。遵循指定模板与项目保密要求，保留原件和人工修改，生成新版本，并完成与本次修改相应的检查。`
-}
