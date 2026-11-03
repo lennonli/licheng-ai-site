@@ -64,6 +64,18 @@ jobs:
       - name: Build and test site
         run: npm test
 
+      - name: Debug failing agents md
+        if: failure()
+        run: |
+          echo "=== file head ==="
+          sed -n '1,16p' site/agents/法律业务通用指令.md
+          echo "=== raw chars 0-600 ==="
+          node -e "const s=require('fs').readFileSync('site/agents/法律业务通用指令.md','utf8');console.log(JSON.stringify(s.slice(0,600)))"
+          echo "=== compiler versions ==="
+          node -e "console.log('compiler-sfc', require('@vue/compiler-sfc/package.json').version)"
+          node -e "console.log('vitepress', require('vitepress/package.json').version)"
+          node -v
+
       - name: Validate deploy configuration
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
