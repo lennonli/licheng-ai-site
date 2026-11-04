@@ -15,11 +15,11 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-11-02">
     <span class="index-card-title">IPO问询法律日报（2026-11-02）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-11-01">
     <span class="index-card-title">IPO问询法律日报（2026-11-01）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
 </div>
 
@@ -28,7 +28,7 @@
 <div class="index-card-list">
   <a class="index-card" href="/digest/ipo-inquiry/2026-10-31">
     <span class="index-card-title">IPO问询法律日报（2026-10-31）</span>
-    <span class="index-card-desc">今日新增 13 件（超 8 份，其中会计师专项 5 份），按规则详提法律问题最集中的 2 份，其余列示/简要。</span>
+    <span class="index-card-desc">补记（2026-11-04）：应用户反馈的摘要偷懒问题，本期（陌桑高科、英派瑞）与 11-03 期（东吉联医疗）已补做详细提炼并重新分发 PDF。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-10-30">
     <span class="index-card-title">IPO问询法律日报（2026-10-30）</span>
@@ -68,11 +68,11 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-10-19">
     <span class="index-card-title">IPO问询法律日报（2026-10-19）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-10-18">
     <span class="index-card-title">IPO问询法律日报（2026-10-18）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-10-17">
     <span class="index-card-title">IPO问询法律日报（2026-10-17）</span>
@@ -92,7 +92,7 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-10-13">
     <span class="index-card-title">IPO问询法律日报（2026-10-13）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-10-12">
     <span class="index-card-title">IPO问询法律日报（2026-10-12）</span>
@@ -117,7 +117,7 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-21">
     <span class="index-card-title">IPO问询法律日报（2026-09-21）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-20">
     <span class="index-card-title">IPO问询法律日报（2026-09-20）</span>
@@ -145,11 +145,11 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-13">
     <span class="index-card-title">IPO问询法律日报（2026-09-13）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-12">
     <span class="index-card-title">IPO问询法律日报（2026-09-12）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-11">
     <span class="index-card-title">IPO问询法律日报（2026-09-11）</span>
@@ -173,11 +173,11 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-04">
     <span class="index-card-title">IPO问询法律日报（2026-09-04）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-03">
     <span class="index-card-title">IPO问询法律日报（2026-09-03）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-09-02">
     <span class="index-card-title">IPO问询法律日报（2026-09-02）</span>
@@ -198,7 +198,7 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-08-30">
     <span class="index-card-title">IPO问询法律日报（2026-08-30）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-08-29">
     <span class="index-card-title">IPO问询法律日报（2026-08-29）</span>
@@ -218,7 +218,7 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-08-25">
     <span class="index-card-title">IPO问询法律日报（2026-08-25）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-08-24">
     <span class="index-card-title">IPO问询法律日报（2026-08-24）</span>
@@ -226,11 +226,11 @@
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-08-23">
     <span class="index-card-title">IPO问询法律日报（2026-08-23）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-08-22">
     <span class="index-card-title">IPO问询法律日报（2026-08-22）</span>
-    <span class="index-card-desc">IPO/挂牌审核问询回复法律部分每日摘要</span>
+    <span class="index-card-desc">今日无新增问询回复。</span>
   </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-08-21-V2%E8%AF%95%E8%BF%90%E8%A1%8C-%E5%8A%A0%E6%B7%B1%E6%B3%95%E5%BE%8B%E6%8F%90%E7%82%BC">
     <span class="index-card-title">IPO/挂牌审核问询回复·法律部分日报（2026-08-21，V2 试运行·加深版）</span>
