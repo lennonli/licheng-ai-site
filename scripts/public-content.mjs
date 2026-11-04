@@ -24,7 +24,14 @@ export function sanitizePublicTree(root) {
     for (const name of readdirSync(dir)) {
       if (name.startsWith('.')) continue
       const file = path.join(dir, name)
-      if (statSync(file).isDirectory()) { visit(file); continue }
+      let st
+      try {
+        st = statSync(file)
+      } catch (err) {
+        if (err.code === 'ENOENT') continue // 瞬时竞态（遍历期间条目被重建/扫描占用），跳过
+        throw err
+      }
+      if (st.isDirectory()) { visit(file); continue }
       if (!/\.(md|html|txt|json|js)$/i.test(name)) continue
       const relative = path.relative(root, file).replaceAll(path.sep, '/')
       const original = readFileSync(file, 'utf8')
