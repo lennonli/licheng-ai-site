@@ -122,6 +122,9 @@ export default defineConfig({
       { text: '法律尽调报告专项', link: '/legal-dd-report/' },
       { text: '最新文章', link: '/latest/' },
       { text: '系列文章', link: '/series/' },
+      { text: '日报文章', items: [
+        { text: 'IPO 法律问询摘要', link: '/digest/ipo-inquiry/' }
+      ] },
       { text: '指令与技能', items: [
         { text: 'AGENTS 指令', link: '/agents/' },
         { text: '法律业务技能', link: '/skills/' },
