@@ -1,4 +1,7 @@
 const CASE_SECTION = /^(?:kb(?:\d{4})?|ma\d{4}|refi\d{4})\//
+// Listing-inquiry company detail pages are individually large; keep only the
+// per-year index entry points in the global search, same policy as case pages.
+const LISTING_COMPANY_SECTION = /^digest\/listing-inquiry\/companies\/\d{4}\//
 
 function plainText(html) {
   return html
@@ -19,6 +22,7 @@ export function renderSearchSource(src, env, md) {
     .replace(/^.*\/site\//, '')
     .replace(/^\/+/, '')
   if (/__analytics-|^dashboard\//.test(pagePath)) return ''
+  if (LISTING_COMPANY_SECTION.test(pagePath) && !/^[^/]+\/index\.md$/.test(pagePath)) return ''
   if (CASE_SECTION.test(pagePath)) {
     // Keep library entry points discoverable without shipping thousands of
     // cases, annual reports, or company-directory cards to every search user.

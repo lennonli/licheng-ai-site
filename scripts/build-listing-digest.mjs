@@ -90,6 +90,8 @@ for (const { year, dir, label } of YEARS) {
     const nq = (md.match(/^### /gm) || []).length;
     const summary = `${board || '审核问询'}${ldate ? ` · ${ldate} 上市/挂牌` : ''} · 详述法律问题 ${nq} 项`;
     md = md.replace(/^# .+\n/, '');
+    // 裸URL后紧跟全角标点会被 linkify 吞进 href（verify 判 malformed URL），包尖括号 autolink 隔离
+    md = md.replace(/(?<!\]\()(https?:\/\/[^\s<>（）【】，。；、"'（）]+)/g, '<$1>');
     md = md.replace(/本文由自动化系统基于[^*]*公开披露文件整理生成，仅供律师内部参考。/g,
       '*本文由 AI 辅助系统基于交易所与全国股转系统公开披露文件整理生成，供执业研究参考。*');
     const slug = cleanSlug(f.replace(/\.md$/, ''));
