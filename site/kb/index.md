@@ -6,7 +6,7 @@
 
 <nav aria-label="案例库年度"><a href="/kb/" aria-current="page">2026 年</a> · <a href="/kb2025/">2025 年</a> · <a href="/kb2024/">2024 年</a> · <a href="/kb2023/">2023 年</a></nav>
 
-<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 277 份案例）｜<a href="/kb/2026年度总结">📊 2026 年度总结报告</a></p>
+<p class="source-link">来源仓库：lennonli/ipo-inquiry-kb（共 264 份案例）｜<a href="/kb/2026年度总结">📊 2026 年度总结报告</a></p>
 
 [安装知识库技能与 MCP 使用教程](/kbskill/)
 
@@ -14,29 +14,9 @@
 
 <div class="case-directory">
 
-## 北交所（62）
+## 北交所（57）
 
 <div class="index-card-list">
-  <a class="index-card" href="/kb/920306-天元重工">
-    <span class="index-card-title">德阳天元重工股份有限公司（920306）</span>
-    <span class="index-card-desc">北京市中伦律师事务所｜上市 2026-10-29｜业务合规 / 劳动与社会保障 / 对赌与特殊权利条款 / 股权代持 / 关联交易与关联方 / 行政处罚</span>
-  </a>
-  <a class="index-card" href="/kb/920285-远大健科">
-    <span class="index-card-title">远大健康科技（天津）股份有限公司（920285）</span>
-    <span class="index-card-desc">北京德和衡律师事务所｜上市 2026-10-23｜业务合规 / 公司治理与内控 / 劳动与社会保障 / 同业竞争 / 关联交易与关联方 / 境外架构与外汇</span>
-  </a>
-  <a class="index-card" href="/kb/920296-文峰光电">
-    <span class="index-card-title">淮南文峰光电科技股份有限公司（920296）</span>
-    <span class="index-card-desc">安徽天禾律师事务所｜上市 2026-10-21｜实控人认定 / 股权代持 / 控制权稳定性 / 公司治理与内控 / 股权激励 / 业务合规</span>
-  </a>
-  <a class="index-card" href="/kb/920196-南方乳业">
-    <span class="index-card-title">贵州南方乳业股份有限公司（920196）</span>
-    <span class="index-card-desc">北京德恒律师事务所｜上市 2026-10-14｜关联交易与关联方 / 资质许可 / 行政处罚 / 劳动与社会保障 / 土地房产与租赁 / 国资监管</span>
-  </a>
-  <a class="index-card" href="/kb/920157-宇特光电">
-    <span class="index-card-title">江苏宇特光电科技股份有限公司（920157）</span>
-    <span class="index-card-desc">江苏世纪同仁律师事务所｜上市 2026-10-09｜信息披露 / 关联交易与关联方 / 公司治理与内控 / 承诺事项 / 环保合规 / 知识产权</span>
-  </a>
   <a class="index-card" href="/kb/920268-百迈科">
     <span class="index-card-title">海南百迈科医疗科技股份有限公司（920268）</span>
     <span class="index-card-desc">北京市康达律师事务所｜上市 2026-09-09｜9.4 申报会计师核查 / 《1 号指引》股东信息核查 / 不良事件与召回 / 产业政策类保荐机构核查 / 产品质量 / 信息披露</span>
@@ -267,13 +247,9 @@
   </a>
 </div>
 
-## 科创板（18）
+## 科创板（17）
 
 <div class="index-card-list">
-  <a class="index-card" href="/kb/688837-信诺维">
-    <span class="index-card-title">苏州信诺维医药科技股份有限公司（688837）</span>
-    <span class="index-card-desc">北京市中伦律师事务所｜上市 2026-09-15｜对赌与特殊权利条款 / 公司治理与内控 / 关联交易与关联方 / 劳动与社会保障 / 历史沿革与股权变动 / 同业竞争</span>
-  </a>
   <a class="index-card" href="/kb/688801-燧原科技">
     <span class="index-card-title">上海燧原科技股份有限公司（688801）</span>
     <span class="index-card-desc">北京市中伦律师事务所｜上市 2026-09-11｜依赖 / 信息披露 / 关联交易与关联方 / 募集资金运用 / 实控人认定 / 客户开拓核查</span>
@@ -344,29 +320,9 @@
   </a>
 </div>
 
-## 深市创业板（21）
+## 深市创业板（16）
 
 <div class="index-card-list">
-  <a class="index-card" href="/kb/301718-通则康威">
-    <span class="index-card-title">广州通则康威科技股份有限公司（301718）</span>
-    <span class="index-card-desc">北京国枫律师事务所｜上市 2026-10-22｜股权激励 / 股权代持 / 历史沿革与股权变动 / 关联交易与关联方 / 同业竞争 / 土地房产与租赁</span>
-  </a>
-  <a class="index-card" href="/kb/301569-联亚药业">
-    <span class="index-card-title">南通联亚药业股份有限公司（301569）</span>
-    <span class="index-card-desc">北京市君合律师事务所｜上市 2026-10-15｜信息披露 / 公司治理与内控 / 关联交易与关联方 / 劳动与社会保障 / 募集资金运用 / 国资监管</span>
-  </a>
-  <a class="index-card" href="/kb/301660-粤芯半导体">
-    <span class="index-card-title">粤芯半导体技术股份有限公司（301660）</span>
-    <span class="index-card-desc">北京市康达律师事务所｜上市 2026-10-13｜实控人认定 / 控制权稳定性 / 股权激励 / 信息披露 / 承诺事项 / 在建工程</span>
-  </a>
-  <a class="index-card" href="/kb/301716-鸿富诚">
-    <span class="index-card-title">深圳市鸿富诚新材料股份有限公司（301716）</span>
-    <span class="index-card-desc">广东华商律师事务所｜上市 2026-09-28｜历史沿革与股权变动 / 关联交易与关联方 / 公司治理与内控 / 股权激励 / 对赌与特殊权利条款 / 控制权稳定性</span>
-  </a>
-  <a class="index-card" href="/kb/301686-中塑股份">
-    <span class="index-card-title">广东中塑新材料股份有限公司（301686）</span>
-    <span class="index-card-desc">广东信达律师事务所｜上市 2026-09-21｜知识产权 / 独立性 / 实控人认定 / 同业竞争 / 关联交易与关联方 / 土地房产与租赁</span>
-  </a>
   <a class="index-card" href="/kb/301689-思仪科技">
     <span class="index-card-title">中电科思仪科技股份有限公司（301689）</span>
     <span class="index-card-desc">上海市锦天城律师事务所｜上市 2026-09-10｜关联交易与关联方 / 决策程序 / 同业竞争 / 国资监管 / 技术类 / 独立性</span>
@@ -433,13 +389,9 @@
   </a>
 </div>
 
-## 沪市主板（12）
+## 沪市主板（11）
 
 <div class="index-card-list">
-  <a class="index-card" href="/kb/601091-沈鼓集团">
-    <span class="index-card-title">沈鼓集团股份有限公司（601091）</span>
-    <span class="index-card-desc">北京市嘉源律师事务所｜上市 2026-09-16｜国资监管 / 历史沿革与股权变动 / 关联交易与关联方 / 独立性 / 资质许可 / 土地房产与租赁</span>
-  </a>
   <a class="index-card" href="/kb/603448-天博智能">
     <span class="index-card-title">天博智能科技（603448）</span>
     <span class="index-card-desc">上海市广发律师事务所｜上市 2026-09-07｜以外包规避派遣 / 公司治理与内控 / 关联交易与关联方 / 劳动与社会保障 / 司法冻结与持续经营 / 安全生产三同时</span>
@@ -486,13 +438,9 @@
   </a>
 </div>
 
-## 深市主板（10）
+## 深市主板（9）
 
 <div class="index-card-list">
-  <a class="index-card" href="/kb/001246-力勤资源">
-    <span class="index-card-title">宁波力勤资源科技股份有限公司（001246）</span>
-    <span class="index-card-desc">浙江天册律师事务所｜上市 2026-09-30｜境外架构与外汇 / 税务合规 / 关联交易与关联方 / 同业竞争 / 环保合规 / 行政处罚</span>
-  </a>
   <a class="index-card" href="/kb/001232-嘉立创">
     <span class="index-card-title">深圳嘉立创科技集团股份有限公司（001232）</span>
     <span class="index-card-desc">广东信达律师事务所｜上市 2026-08-04｜5-14 信息系统专项核查 / 主营业务变化 / 共同控制 / 关联交易与关联方 / 危化品 / 历史沿革与股权变动</span>

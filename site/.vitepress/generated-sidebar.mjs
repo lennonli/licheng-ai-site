@@ -1104,6 +1104,57 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/agents/新三板挂牌章程及制度复核与交叉核验提示词": [
+    {
+      "text": "返回栏目列表",
+      "link": "/agents/"
+    },
+    {
+      "text": "新三板挂牌公司章程及制度复核与交叉核验提示词（复用版）",
+      "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、使用说明",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#一、使用说明"
+        },
+        {
+          "text": "二、新三板监管基线清单（2026-10核验版，直接引用前仍须复核有无更新）",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#二、新三板监管基线清单-2026-10核验版-直接引用前仍须复核有无更新"
+        },
+        {
+          "text": "三、阶段一：全套逐条复核提示词",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#三、阶段一-全套逐条复核提示词"
+        },
+        {
+          "text": "四、阶段二：可比案例对照再复核提示词",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#四、阶段二-可比案例对照再复核提示词"
+        },
+        {
+          "text": "五、阶段三：修改执行技术规范",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#五、阶段三-修改执行技术规范"
+        },
+        {
+          "text": "六、阶段四：全套交叉核验矩阵",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#六、阶段四-全套交叉核验矩阵"
+        },
+        {
+          "text": "七、质量校验管线（每轮修改后必跑）",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#七、质量校验管线-每轮修改后必跑"
+        },
+        {
+          "text": "八、本项目实战发现索引（供快速对照）",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#八、本项目实战发现索引-供快速对照"
+        },
+        {
+          "text": "九、踩坑记录",
+          "link": "/agents/新三板挂牌章程及制度复核与交叉核验提示词#九、踩坑记录"
+        }
+      ]
+    }
+  ],
   "/agents/新三板转北交所查验计划更新提示词": [
     {
       "text": "返回栏目列表",
@@ -1372,6 +1423,44 @@ export const generatedSidebar = {
         {
           "text": "附录 B：本机文件处理与 OCR 工具",
           "link": "/agents/法律业务通用指令#附录-b-本机文件处理与-ocr-工具"
+        },
+        {
+          "text": "多智能体共享记忆与工具调用规则（强制）",
+          "link": "/agents/法律业务通用指令#多智能体共享记忆与工具调用规则-强制"
+        },
+        {
+          "text": "律师经验自我学习闭环（修订回溯与经验沉淀）（强制）",
+          "link": "/agents/法律业务通用指令#律师经验自我学习闭环-修订回溯与经验沉淀-强制",
+          "items": [
+            {
+              "text": "（一）目的与效力",
+              "link": "/agents/法律业务通用指令#一-目的与效力"
+            },
+            {
+              "text": "（二）触发条件（满足其一即启动回溯流程）",
+              "link": "/agents/法律业务通用指令#二-触发条件-满足其一即启动回溯流程"
+            },
+            {
+              "text": "（三）差异比对程序",
+              "link": "/agents/法律业务通用指令#三-差异比对程序"
+            },
+            {
+              "text": "（四）经验萃取与抽象化",
+              "link": "/agents/法律业务通用指令#四-经验萃取与抽象化"
+            },
+            {
+              "text": "（五）经验库结构与存取（全局库）",
+              "link": "/agents/法律业务通用指令#五-经验库结构与存取-全局库"
+            },
+            {
+              "text": "（六）冲突、升级与维护",
+              "link": "/agents/法律业务通用指令#六-冲突、升级与维护"
+            },
+            {
+              "text": "（七）回报格式（每次回溯完成后必出；均在当次交付完成之后输出，不插入交付过程）",
+              "link": "/agents/法律业务通用指令#七-回报格式-每次回溯完成后必出-均在当次交付完成之后输出-不插入交付过程"
+            }
+          ]
         }
       ]
     }
@@ -2432,65 +2521,6 @@ export const generatedSidebar = {
         {
           "text": "安全与证据处理",
           "link": "/skills/network-check-v3#safety-and-evidence-handling"
-        }
-      ]
-    }
-  ],
-  "/skills/survey-form-review": [
-    {
-      "text": "返回栏目列表",
-      "link": "/skills/"
-    },
-    {
-      "text": "董监高股东调查表复核",
-      "link": "/skills/survey-form-review"
-    },
-    {
-      "text": "本页目录",
-      "items": [
-        {
-          "text": "第〇步：确认口径",
-          "link": "/skills/survey-form-review#第〇步-确认口径"
-        },
-        {
-          "text": "第一步：本地规则校验（脚本）",
-          "link": "/skills/survey-form-review#第一步-本地规则校验-脚本"
-        },
-        {
-          "text": "第二步：MCP公开信息核查",
-          "link": "/skills/survey-form-review#第二步-mcp公开信息核查",
-          "items": [
-            {
-              "text": "2.1 单位名称全称",
-              "link": "/skills/survey-form-review#_2-1-单位名称全称"
-            },
-            {
-              "text": "2.2 本人对外任职投资双向差异",
-              "link": "/skills/survey-form-review#_2-2-本人对外任职投资双向差异"
-            },
-            {
-              "text": "2.3 控制企业穿透",
-              "link": "/skills/survey-form-review#_2-3-控制企业穿透"
-            },
-            {
-              "text": "2.4 入股情况勾稽",
-              "link": "/skills/survey-form-review#_2-4-入股情况勾稽"
-            }
-          ]
-        },
-        {
-          "text": "第三步：汇总输出",
-          "link": "/skills/survey-form-review#第三步-汇总输出",
-          "items": [
-            {
-              "text": "判定口径速查",
-              "link": "/skills/survey-form-review#判定口径速查"
-            }
-          ]
-        },
-        {
-          "text": "常见坑",
-          "link": "/skills/survey-form-review#常见坑"
         }
       ]
     }
@@ -9126,28 +9156,28 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、模型能力，决定了 AI 工作的上限",
-          "link": "/tutorials/ai-infra-01-subscribe-top-model#一、模型能力-决定了-ai-工作的上限"
+          "text": "一、模型能力决定上限",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#一、模型能力决定上限"
         },
         {
           "text": "二、法律工作尤其吃模型能力",
           "link": "/tutorials/ai-infra-01-subscribe-top-model#二、法律工作尤其吃模型能力"
         },
         {
-          "text": "三、专业工作里，模型贵一点其实是最便宜的",
-          "link": "/tutorials/ai-infra-01-subscribe-top-model#三、专业工作里-模型贵一点其实是最便宜的"
+          "text": "三、贵一点的模型，其实最便宜",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#三、贵一点的模型-其实最便宜"
         },
         {
-          "text": "四、不要一开始就想着“一个便宜模型解决所有问题”",
-          "link": "/tutorials/ai-infra-01-subscribe-top-model#四、不要一开始就想着-一个便宜模型解决所有问题"
+          "text": "四、别一上来就找\"便宜模型包打天下\"",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#四、别一上来就找-便宜模型包打天下"
         },
         {
-          "text": "五、我的做法：主力模型一定要舍得花钱",
-          "link": "/tutorials/ai-infra-01-subscribe-top-model#五、我的做法-主力模型一定要舍得花钱"
+          "text": "五、主力模型，一定舍得花钱",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#五、主力模型-一定舍得花钱"
         },
         {
-          "text": "六、AI基建，不要从工具开始，要从“大脑”开始",
-          "link": "/tutorials/ai-infra-01-subscribe-top-model#六、ai基建-不要从工具开始-要从-大脑-开始"
+          "text": "六、AI基建从\"大脑\"开始，不从工具开始",
+          "link": "/tutorials/ai-infra-01-subscribe-top-model#六、ai基建从-大脑-开始-不从工具开始"
         }
       ]
     }
@@ -9165,32 +9195,28 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、大模型和智能体不是一回事",
-          "link": "/tutorials/ai-infra-02-choose-mature-agent#一、大模型和智能体不是一回事"
+          "text": "一、大模型负责想，智能体负责干",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#一、大模型负责想-智能体负责干"
         },
         {
-          "text": "二、为什么我越来越倾向于选择“用的人多的”",
-          "link": "/tutorials/ai-infra-02-choose-mature-agent#二、为什么我越来越倾向于选择-用的人多的"
+          "text": "二、用户量就是筛选机制",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#二、用户量就是筛选机制"
         },
         {
-          "text": "三、用的人多，最大的优势不是“流行”，而是生态",
-          "link": "/tutorials/ai-infra-02-choose-mature-agent#三、用的人多-最大的优势不是-流行-而是生态"
+          "text": "三、法律工作要稳定，不要新奇",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#三、法律工作要稳定-不要新奇"
         },
         {
-          "text": "四、法律工作尤其应该优先考虑“稳定”，而不是“新奇”",
-          "link": "/tutorials/ai-infra-02-choose-mature-agent#四、法律工作尤其应该优先考虑-稳定-而不是-新奇"
+          "text": "四、不要频繁换智能体",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#四、不要频繁换智能体"
         },
         {
-          "text": "五、不要频繁换智能体",
-          "link": "/tutorials/ai-infra-02-choose-mature-agent#五、不要频繁换智能体"
+          "text": "五、我会怎么选",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#五、我会怎么选"
         },
         {
-          "text": "六、我会怎么选",
-          "link": "/tutorials/ai-infra-02-choose-mature-agent#六、我会怎么选"
-        },
-        {
-          "text": "七、不要追求“最强智能体”，先找到自己的主力智能体",
-          "link": "/tutorials/ai-infra-02-choose-mature-agent#七、不要追求-最强智能体-先找到自己的主力智能体"
+          "text": "六、模型可以换，智能体尽量稳定",
+          "link": "/tutorials/ai-infra-02-choose-mature-agent#六、模型可以换-智能体尽量稳定"
         }
       ]
     }
@@ -9208,36 +9234,36 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、以前选电脑看软件，现在选电脑还要看 AI",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#一、以前选电脑看软件-现在选电脑还要看-ai"
+          "text": "一、现在选电脑，要看 AI",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#一、现在选电脑-要看-ai"
         },
         {
-          "text": "二、Mac 最舒服的地方，是“开箱就是一个很好用的开发环境”",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#二、mac-最舒服的地方-是-开箱就是一个很好用的开发环境"
+          "text": "二、Mac 开箱就是好用的开发环境",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#二、mac-开箱就是好用的开发环境"
         },
         {
-          "text": "三、很多 AI 工具，本身就天然偏向 Mac/Linux 生态",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#三、很多-ai-工具-本身就天然偏向-mac-linux-生态"
+          "text": "三、AI 工具天然偏向 Mac/Linux",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#三、ai-工具天然偏向-mac-linux"
         },
         {
-          "text": "四、Mac 特别适合“不会编程，但敢让 AI 编程”的人",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#四、mac-特别适合-不会编程-但敢让-ai-编程-的人"
+          "text": "四、适合\"不会编程，但敢让 AI 编程\"的人",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#四、适合-不会编程-但敢让-ai-编程-的人"
         },
         {
-          "text": "五、对于律师，内存和硬盘尽量买大一点",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#五、对于律师-内存和硬盘尽量买大一点"
+          "text": "五、内存和硬盘，往大了买",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#五、内存和硬盘-往大了买"
         },
         {
-          "text": "六、Mac mini其实特别适合做一台“AI常驻主机”",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#六、mac-mini其实特别适合做一台-ai常驻主机"
+          "text": "六、Mac mini 适合做 AI 常驻主机",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#六、mac-mini-适合做-ai-常驻主机"
         },
         {
-          "text": "七、当然，Windows并不是不能用",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#七、当然-windows并不是不能用"
+          "text": "七、Windows 不是不能用",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#七、windows-不是不能用"
         },
         {
-          "text": "八、电脑不是最重要的，但它决定你每天折不折腾",
-          "link": "/tutorials/ai-infra-03-apple-over-windows#八、电脑不是最重要的-但它决定你每天折不折腾"
+          "text": "八、电脑决定你每天折不折腾",
+          "link": "/tutorials/ai-infra-03-apple-over-windows#八、电脑决定你每天折不折腾"
         }
       ]
     }
@@ -9255,44 +9281,44 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、为什么模型再强，也不能只靠“大脑里的知识”",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#一、为什么模型再强-也不能只靠-大脑里的知识"
+          "text": "一、模型再强，也不能只靠记忆",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#一、模型再强-也不能只靠记忆"
         },
         {
-          "text": "二、MCP可以简单理解成：给AI接上专业数据库",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#二、mcp可以简单理解成-给ai接上专业数据库"
+          "text": "二、MCP 就是给 AI 接上专业数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#二、mcp-就是给-ai-接上专业数据库"
         },
         {
-          "text": "三、律师第一个必配的：法律法规数据库",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#三、律师第一个必配的-法律法规数据库"
+          "text": "三、第一个必配：法律法规数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#三、第一个必配-法律法规数据库"
         },
         {
-          "text": "四、第二个必配的：案例数据库",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#四、第二个必配的-案例数据库"
+          "text": "四、第二个必配：案例数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#四、第二个必配-案例数据库"
         },
         {
-          "text": "五、做证券业务的律师，还需要一套证券业务数据库",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#五、做证券业务的律师-还需要一套证券业务数据库"
+          "text": "五、做证券业务，还要一套证券业务数据库",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#五、做证券业务-还要一套证券业务数据库"
         },
         {
-          "text": "六、这也是为什么我一直想把自己的资料做成 MCP",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#六、这也是为什么我一直想把自己的资料做成-mcp"
+          "text": "六、把自己的资料也做成 MCP",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#六、把自己的资料也做成-mcp"
         },
         {
-          "text": "七、MCP真正解决的，不是“让AI知道更多”，而是“让AI有依据”",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#七、mcp真正解决的-不是-让ai知道更多-而是-让ai有依据"
+          "text": "七、MCP 解决的是\"有依据\"，不是\"知道更多\"",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#七、mcp-解决的是-有依据-不是-知道更多"
         },
         {
-          "text": "八、接了MCP也不代表AI就不会幻觉",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#八、接了mcp也不代表ai就不会幻觉"
+          "text": "八、接了 MCP，照样会幻觉",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#八、接了-mcp-照样会幻觉"
         },
         {
-          "text": "九、我的律师Agent，至少会准备这几类“外部大脑”",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#九、我的律师agent-至少会准备这几类-外部大脑"
+          "text": "九、律师 Agent 至少要这几类\"外部大脑\"",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#九、律师-agent-至少要这几类-外部大脑"
         },
         {
-          "text": "十、第四步的核心：不要让AI闭着眼睛回答专业问题",
-          "link": "/tutorials/ai-infra-04-lawyer-mcp#十、第四步的核心-不要让ai闭着眼睛回答专业问题"
+          "text": "十、别让 AI 闭着眼睛回答专业问题",
+          "link": "/tutorials/ai-infra-04-lawyer-mcp#十、别让-ai-闭着眼睛回答专业问题"
         }
       ]
     }
@@ -9310,56 +9336,52 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先讲清楚：GitHub 到底是什么？",
-          "link": "/tutorials/ai-infra-05-github-in-practice#一、先讲清楚-github-到底是什么"
+          "text": "一、GitHub 是什么",
+          "link": "/tutorials/ai-infra-05-github-in-practice#一、github-是什么"
         },
         {
-          "text": "二、为什么 AI 时代，GitHub 不再只是程序员的东西",
-          "link": "/tutorials/ai-infra-05-github-in-practice#二、为什么-ai-时代-github-不再只是程序员的东西"
+          "text": "二、为什么它不再只是程序员的东西",
+          "link": "/tutorials/ai-infra-05-github-in-practice#二、为什么它不再只是程序员的东西"
         },
         {
-          "text": "三、对我来说，GitHub 第一个重要用途：管理 Skill",
-          "link": "/tutorials/ai-infra-05-github-in-practice#三、对我来说-github-第一个重要用途-管理-skill"
+          "text": "三、第一个用途：管理 Skill",
+          "link": "/tutorials/ai-infra-05-github-in-practice#三、第一个用途-管理-skill"
         },
         {
-          "text": "四、第二个重要用途：建立自己的知识库",
-          "link": "/tutorials/ai-infra-05-github-in-practice#四、第二个重要用途-建立自己的知识库"
+          "text": "四、第二个用途：建自己的知识库",
+          "link": "/tutorials/ai-infra-05-github-in-practice#四、第二个用途-建自己的知识库"
         },
         {
-          "text": "五、而且知识库可以不断更新",
-          "link": "/tutorials/ai-infra-05-github-in-practice#五、而且知识库可以不断更新"
+          "text": "五、多台电脑同步",
+          "link": "/tutorials/ai-infra-05-github-in-practice#五、多台电脑同步"
         },
         {
-          "text": "六、GitHub 还有一个特别重要的功能：多台电脑同步",
-          "link": "/tutorials/ai-infra-05-github-in-practice#六、github-还有一个特别重要的功能-多台电脑同步"
+          "text": "六、AI 的“基础设施配置”也放进去",
+          "link": "/tutorials/ai-infra-05-github-in-practice#六、ai-的-基础设施配置-也放进去"
         },
         {
-          "text": "七、GitHub 还可以保存很多 AI 的“基础设施配置”",
-          "link": "/tutorials/ai-infra-05-github-in-practice#七、github-还可以保存很多-ai-的-基础设施配置"
+          "text": "七、很多 AI 工具首发在 GitHub",
+          "link": "/tutorials/ai-infra-05-github-in-practice#七、很多-ai-工具首发在-github"
         },
         {
-          "text": "八、以后很多 AI 工具，本身也是从 GitHub 开始的",
-          "link": "/tutorials/ai-infra-05-github-in-practice#八、以后很多-ai-工具-本身也是从-github-开始的"
+          "text": "八、让 GitHub 自动干活",
+          "link": "/tutorials/ai-infra-05-github-in-practice#八、让-github-自动干活"
         },
         {
-          "text": "九、以后甚至可以让 GitHub 自动帮你干活",
-          "link": "/tutorials/ai-infra-05-github-in-practice#九、以后甚至可以让-github-自动帮你干活"
+          "text": "九、律师必须注意：保密",
+          "link": "/tutorials/ai-infra-05-github-in-practice#九、律师必须注意-保密"
         },
         {
-          "text": "十、律师使用 GitHub，有一个问题必须特别注意：保密",
-          "link": "/tutorials/ai-infra-05-github-in-practice#十、律师使用-github-有一个问题必须特别注意-保密"
+          "text": "十、它不是另一个网盘",
+          "link": "/tutorials/ai-infra-05-github-in-practice#十、它不是另一个网盘"
         },
         {
-          "text": "十一、不要把 GitHub 理解成另外一个网盘",
-          "link": "/tutorials/ai-infra-05-github-in-practice#十一、不要把-github-理解成另外一个网盘"
+          "text": "十一、个人 AI 系统的“中央仓库”",
+          "link": "/tutorials/ai-infra-05-github-in-practice#十一、个人-ai-系统的-中央仓库"
         },
         {
-          "text": "十二、GitHub 可能会成为个人 AI 系统的“中央仓库”",
-          "link": "/tutorials/ai-infra-05-github-in-practice#十二、github-可能会成为个人-ai-系统的-中央仓库"
-        },
-        {
-          "text": "十三、所以第五步不是“学编程”，只是先注册一个账号",
-          "link": "/tutorials/ai-infra-05-github-in-practice#十三、所以第五步不是-学编程-只是先注册一个账号"
+          "text": "十二、第五步不是学编程，先注册账号",
+          "link": "/tutorials/ai-infra-05-github-in-practice#十二、第五步不是学编程-先注册账号"
         }
       ]
     }
@@ -9377,52 +9399,52 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、AI工作和以前最大的区别：很多任务不是几分钟能完成的",
-          "link": "/tutorials/ai-infra-06-remote-work-env#一、ai工作和以前最大的区别-很多任务不是几分钟能完成的"
+          "text": "一、Agent 的活，往往不是几分钟的事",
+          "link": "/tutorials/ai-infra-06-remote-work-env#一、agent-的活-往往不是几分钟的事"
         },
         {
-          "text": "二、Agent时代，一个非常重要的工作习惯：任务丢给AI，人先走",
-          "link": "/tutorials/ai-infra-06-remote-work-env#二、agent时代-一个非常重要的工作习惯-任务丢给ai-人先走"
+          "text": "二、任务丢给 AI，人先走",
+          "link": "/tutorials/ai-infra-06-remote-work-env#二、任务丢给-ai-人先走"
         },
         {
-          "text": "三、你不在电脑旁边，怎么知道AI干到哪里了？",
-          "link": "/tutorials/ai-infra-06-remote-work-env#三、你不在电脑旁边-怎么知道ai干到哪里了"
+          "text": "三、人不在，怎么知道 AI 干到哪了",
+          "link": "/tutorials/ai-infra-06-remote-work-env#三、人不在-怎么知道-ai-干到哪了"
         },
         {
-          "text": "四、手机开始变成“AI监工”",
-          "link": "/tutorials/ai-infra-06-remote-work-env#四、手机开始变成-ai监工"
+          "text": "四、手机是“AI 监工”",
+          "link": "/tutorials/ai-infra-06-remote-work-env#四、手机是-ai-监工"
         },
         {
-          "text": "五、为什么我会比较推荐UU远程",
-          "link": "/tutorials/ai-infra-06-remote-work-env#五、为什么我会比较推荐uu远程"
+          "text": "五、为什么我推荐 UU远程",
+          "link": "/tutorials/ai-infra-06-remote-work-env#五、为什么我推荐-uu远程"
         },
         {
-          "text": "六、远程控制真正重要的不是“远程办公”，而是“远程管理Agent”",
-          "link": "/tutorials/ai-infra-06-remote-work-env#六、远程控制真正重要的不是-远程办公-而是-远程管理agent"
+          "text": "六、远程控制的新用途：管理 Agent",
+          "link": "/tutorials/ai-infra-06-remote-work-env#六、远程控制的新用途-管理-agent"
         },
         {
-          "text": "七、这也是为什么我前面会推荐Mac mini",
-          "link": "/tutorials/ai-infra-06-remote-work-env#七、这也是为什么我前面会推荐mac-mini"
+          "text": "七、这也是我推荐 Mac mini 的原因",
+          "link": "/tutorials/ai-infra-06-remote-work-env#七、这也是我推荐-mac-mini-的原因"
         },
         {
-          "text": "八、对于律师来说，这种模式其实特别合适",
-          "link": "/tutorials/ai-infra-06-remote-work-env#八、对于律师来说-这种模式其实特别合适"
+          "text": "八、律师特别适合这种模式",
+          "link": "/tutorials/ai-infra-06-remote-work-env#八、律师特别适合这种模式"
         },
         {
-          "text": "九、真正需要解决的是“电脑不要轻易停下来”",
-          "link": "/tutorials/ai-infra-06-remote-work-env#九、真正需要解决的是-电脑不要轻易停下来"
+          "text": "九、关键是别让电脑停下来",
+          "link": "/tutorials/ai-infra-06-remote-work-env#九、关键是别让电脑停下来"
         },
         {
-          "text": "十、如果再进一步，可以把远程桌面和Tailscale配合起来",
-          "link": "/tutorials/ai-infra-06-remote-work-env#十、如果再进一步-可以把远程桌面和tailscale配合起来"
+          "text": "十、再进一步：配上 Tailscale",
+          "link": "/tutorials/ai-infra-06-remote-work-env#十、再进一步-配上-tailscale"
         },
         {
-          "text": "十一、远程控制也要注意安全",
-          "link": "/tutorials/ai-infra-06-remote-work-env#十一、远程控制也要注意安全"
+          "text": "十一、远程控制也要讲安全",
+          "link": "/tutorials/ai-infra-06-remote-work-env#十一、远程控制也要讲安全"
         },
         {
-          "text": "十二、AI基建真正的目标，是让“机器时间”和“人的时间”分离",
-          "link": "/tutorials/ai-infra-06-remote-work-env#十二、ai基建真正的目标-是让-机器时间-和-人的时间-分离"
+          "text": "十二、目标：机器时间和人的时间分开",
+          "link": "/tutorials/ai-infra-06-remote-work-env#十二、目标-机器时间和人的时间分开"
         }
       ]
     }
@@ -9440,68 +9462,56 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、先解释一下：VPS到底是什么？",
-          "link": "/tutorials/ai-infra-07-vps#一、先解释一下-vps到底是什么"
+          "text": "一、VPS是什么",
+          "link": "/tutorials/ai-infra-07-vps#一、vps是什么"
         },
         {
-          "text": "二、为什么Agent时代，VPS开始变得有价值",
-          "link": "/tutorials/ai-infra-07-vps#二、为什么agent时代-vps开始变得有价值"
+          "text": "二、为什么Agent时代VPS有价值",
+          "link": "/tutorials/ai-infra-07-vps#二、为什么agent时代vps有价值"
         },
         {
-          "text": "三、如果没有长期放Mac mini的环境，VPS尤其合适",
-          "link": "/tutorials/ai-infra-07-vps#三、如果没有长期放mac-mini的环境-vps尤其合适"
+          "text": "三、没地方长期放Mac mini，VPS尤其合适",
+          "link": "/tutorials/ai-infra-07-vps#三、没地方长期放mac-mini-vps尤其合适"
         },
         {
-          "text": "四、VPS最大的优势：24小时在线",
-          "link": "/tutorials/ai-infra-07-vps#四、vps最大的优势-24小时在线"
+          "text": "四、VPS的几个优势",
+          "link": "/tutorials/ai-infra-07-vps#四、vps的几个优势"
         },
         {
-          "text": "五、第二个优势：你在哪里都可以访问",
-          "link": "/tutorials/ai-infra-07-vps#五、第二个优势-你在哪里都可以访问"
+          "text": "五、最大的问题：它不是你的电脑",
+          "link": "/tutorials/ai-infra-07-vps#五、最大的问题-它不是你的电脑"
         },
         {
-          "text": "六、第三个优势：非常适合运行“服务型”的东西",
-          "link": "/tutorials/ai-infra-07-vps#六、第三个优势-非常适合运行-服务型-的东西"
+          "text": "六、千万不要把重要资料“唯一一份”放在VPS上",
+          "link": "/tutorials/ai-infra-07-vps#六、千万不要把重要资料-唯一一份-放在vps上"
         },
         {
-          "text": "七、VPS还有一个好处：便宜",
-          "link": "/tutorials/ai-infra-07-vps#七、vps还有一个好处-便宜"
+          "text": "七、安全不能忽略",
+          "link": "/tutorials/ai-infra-07-vps#七、安全不能忽略"
         },
         {
-          "text": "八、但是VPS有一个很大的问题：它不是你的电脑",
-          "link": "/tutorials/ai-infra-07-vps#八、但是vps有一个很大的问题-它不是你的电脑"
+          "text": "八、律师还要额外考虑客户数据",
+          "link": "/tutorials/ai-infra-07-vps#八、律师还要额外考虑客户数据"
         },
         {
-          "text": "九、千万不要把重要资料“唯一一份”放在VPS上",
-          "link": "/tutorials/ai-infra-07-vps#九、千万不要把重要资料-唯一一份-放在vps上"
+          "text": "九、学习成本比Mac高",
+          "link": "/tutorials/ai-infra-07-vps#九、学习成本比mac高"
         },
         {
-          "text": "十、VPS最容易被忽略的另一个问题：安全",
-          "link": "/tutorials/ai-infra-07-vps#十、vps最容易被忽略的另一个问题-安全"
+          "text": "十、VPS和Mac mini怎么选",
+          "link": "/tutorials/ai-infra-07-vps#十、vps和mac-mini怎么选"
         },
         {
-          "text": "十一、律师使用VPS，还要额外考虑客户数据",
-          "link": "/tutorials/ai-infra-07-vps#十一、律师使用vps-还要额外考虑客户数据"
+          "text": "十一、我喜欢的架构：本地工作，云端运行",
+          "link": "/tutorials/ai-infra-07-vps#十一、我喜欢的架构-本地工作-云端运行"
         },
         {
-          "text": "十二、VPS还有一个缺点：学习成本比Mac高",
-          "link": "/tutorials/ai-infra-07-vps#十二、vps还有一个缺点-学习成本比mac高"
+          "text": "十二、服务器应该“无状态化”",
+          "link": "/tutorials/ai-infra-07-vps#十二、服务器应该-无状态化"
         },
         {
-          "text": "十三、VPS和Mac mini到底怎么选？",
-          "link": "/tutorials/ai-infra-07-vps#十三、vps和mac-mini到底怎么选"
-        },
-        {
-          "text": "十四、我比较喜欢的架构其实是“本地工作，云端运行”",
-          "link": "/tutorials/ai-infra-07-vps#十四、我比较喜欢的架构其实是-本地工作-云端运行"
-        },
-        {
-          "text": "十五、服务器真正应该“无状态化”",
-          "link": "/tutorials/ai-infra-07-vps#十五、服务器真正应该-无状态化"
-        },
-        {
-          "text": "十六、所以VPS是进阶选项，不是必修课",
-          "link": "/tutorials/ai-infra-07-vps#十六、所以vps是进阶选项-不是必修课"
+          "text": "十三、VPS是进阶选项，不是必修课",
+          "link": "/tutorials/ai-infra-07-vps#十三、vps是进阶选项-不是必修课"
         }
       ]
     }
@@ -9519,11 +9529,11 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、什么叫本地大模型？",
+          "text": "一、什么叫本地大模型",
           "link": "/tutorials/ai-infra-08-local-model#一、什么叫本地大模型"
         },
         {
-          "text": "二、律师为什么可能需要它？",
+          "text": "二、律师为什么可能需要它",
           "link": "/tutorials/ai-infra-08-local-model#二、律师为什么可能需要它"
         },
         {
@@ -9531,12 +9541,12 @@ export const generatedSidebar = {
           "link": "/tutorials/ai-infra-08-local-model#三、不要为了-本地-牺牲工作质量"
         },
         {
-          "text": "四、我反而更看好“本地知识库”",
-          "link": "/tutorials/ai-infra-08-local-model#四、我反而更看好-本地知识库"
+          "text": "四、我更看好“本地知识库”",
+          "link": "/tutorials/ai-infra-08-local-model#四、我更看好-本地知识库"
         },
         {
-          "text": "五、本地模型的代价也很明显",
-          "link": "/tutorials/ai-infra-08-local-model#五、本地模型的代价也很明显"
+          "text": "五、代价也很明显",
+          "link": "/tutorials/ai-infra-08-local-model#五、代价也很明显"
         },
         {
           "text": "六、本地运行也不等于绝对安全",
@@ -9562,40 +9572,40 @@ export const generatedSidebar = {
       "text": "本页目录",
       "items": [
         {
-          "text": "一、AI时代，最值钱的可能已经不是某一个文件",
-          "link": "/tutorials/ai-infra-09-backup#一、ai时代-最值钱的可能已经不是某一个文件"
+          "text": "一、要备份的是“生产能力”",
+          "link": "/tutorials/ai-infra-09-backup#一、要备份的是-生产能力"
         },
         {
-          "text": "二、GitHub特别适合备份Skill、脚本和配置",
-          "link": "/tutorials/ai-infra-09-backup#二、github特别适合备份skill、脚本和配置"
+          "text": "二、Skill、脚本和配置，放GitHub",
+          "link": "/tutorials/ai-infra-09-backup#二、skill、脚本和配置-放github"
         },
         {
-          "text": "三、客户文件不要因为方便就全部扔GitHub",
-          "link": "/tutorials/ai-infra-09-backup#三、客户文件不要因为方便就全部扔github"
+          "text": "三、客户文件别因为方便就扔GitHub",
+          "link": "/tutorials/ai-infra-09-backup#三、客户文件别因为方便就扔github"
         },
         {
-          "text": "四、Mac最简单的办法：把Time Machine用起来",
-          "link": "/tutorials/ai-infra-09-backup#四、mac最简单的办法-把time-machine用起来"
+          "text": "四、Mac：把Time Machine用起来",
+          "link": "/tutorials/ai-infra-09-backup#四、mac-把time-machine用起来"
         },
         {
-          "text": "五、VPS更不能当成“永久硬盘”",
-          "link": "/tutorials/ai-infra-09-backup#五、vps更不能当成-永久硬盘"
+          "text": "五、VPS不是“永久硬盘”",
+          "link": "/tutorials/ai-infra-09-backup#五、vps不是-永久硬盘"
         },
         {
-          "text": "六、我比较认可一个简单原则：重要内容至少有三份",
-          "link": "/tutorials/ai-infra-09-backup#六、我比较认可一个简单原则-重要内容至少有三份"
+          "text": "六、重要内容至少三份",
+          "link": "/tutorials/ai-infra-09-backup#六、重要内容至少三份"
         },
         {
-          "text": "七、还有一类很容易忘：账号和恢复信息",
-          "link": "/tutorials/ai-infra-09-backup#七、还有一类很容易忘-账号和恢复信息"
+          "text": "七、账号和恢复信息也别漏",
+          "link": "/tutorials/ai-infra-09-backup#七、账号和恢复信息也别漏"
         },
         {
-          "text": "八、最理想的状态：换一台电脑，也能快速恢复",
-          "link": "/tutorials/ai-infra-09-backup#八、最理想的状态-换一台电脑-也能快速恢复"
+          "text": "八、检验标准：换台电脑能不能快速恢复",
+          "link": "/tutorials/ai-infra-09-backup#八、检验标准-换台电脑能不能快速恢复"
         },
         {
-          "text": "九、备份不是为了防止电脑坏，而是保护你积累出来的AI能力",
-          "link": "/tutorials/ai-infra-09-backup#九、备份不是为了防止电脑坏-而是保护你积累出来的ai能力"
+          "text": "九、备份保护的是你积累的AI能力",
+          "link": "/tutorials/ai-infra-09-backup#九、备份保护的是你积累的ai能力"
         }
       ]
     }
@@ -11819,6 +11829,187 @@ export const generatedSidebar = {
       ]
     }
   ],
+  "/tutorials/ipo-complaint-special-verification-guide": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "举报专项核查意见通用教程（发行人律师）",
+      "link": "/tutorials/ipo-complaint-special-verification-guide"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、固定要求（每一轮都适用）",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#一、固定要求-每一轮都适用"
+        },
+        {
+          "text": "二、流程总览",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#二、流程总览"
+        },
+        {
+          "text": "三、阶段 0：接案",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#三、阶段-0-接案"
+        },
+        {
+          "text": "四、阶段 1–2：律师专项核查意见",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#四、阶段-1–2-律师专项核查意见",
+          "items": [
+            {
+              "text": "4.1 全文结构",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_4-1-全文结构"
+            },
+            {
+              "text": "4.2 释义表",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_4-2-释义表"
+            },
+            {
+              "text": "4.3 第一部分的写法",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_4-3-第一部分的写法"
+            },
+            {
+              "text": "4.4 第二部分的写法",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_4-4-第二部分的写法"
+            },
+            {
+              "text": "4.5 文风",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_4-5-文风"
+            }
+          ]
+        },
+        {
+          "text": "五、阶段 3：核查程序与底稿",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#五、阶段-3-核查程序与底稿",
+          "items": [
+            {
+              "text": "5.1 编号",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-1-编号"
+            },
+            {
+              "text": "5.2 底稿包结构",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-2-底稿包结构"
+            },
+            {
+              "text": "5.3 底稿索引及待补清单（xlsx，项目组内部用）",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-3-底稿索引及待补清单-xlsx-项目组内部用"
+            },
+            {
+              "text": "5.4 事实与底稿对照表",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-4-事实与底稿对照表"
+            },
+            {
+              "text": "5.5 公开渠道检索",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-5-公开渠道检索"
+            },
+            {
+              "text": "5.6 网络核查笔录",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-6-网络核查笔录"
+            },
+            {
+              "text": "5.7 访谈笔录",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-7-访谈笔录"
+            },
+            {
+              "text": "5.8 承诺函",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_5-8-承诺函"
+            }
+          ]
+        },
+        {
+          "text": "六、阶段 5–7：券商稿、新事实、内核批注",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#六、阶段-5–7-券商稿、新事实、内核批注",
+          "items": [
+            {
+              "text": "6.1 券商稿与律师稿的差异",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_6-1-券商稿与律师稿的差异"
+            },
+            {
+              "text": "6.2 收到券商稿的处理步骤",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_6-2-收到券商稿的处理步骤"
+            },
+            {
+              "text": "6.3 新事实进来时（裁决书、催告函等）",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_6-3-新事实进来时-裁决书、催告函等"
+            },
+            {
+              "text": "6.4 处理一轮批注的步骤",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_6-4-处理一轮批注的步骤"
+            },
+            {
+              "text": "6.5 冲突处理",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_6-5-冲突处理"
+            },
+            {
+              "text": "6.6 内核和券商常见批注（起草时就主动避免）",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_6-6-内核和券商常见批注-起草时就主动避免"
+            }
+          ]
+        },
+        {
+          "text": "七、阶段 4：律所内核文件",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#七、阶段-4-律所内核文件",
+          "items": [
+            {
+              "text": "7.1 共同规则",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_7-1-共同规则"
+            },
+            {
+              "text": "7.2 查验计划",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_7-2-查验计划"
+            },
+            {
+              "text": "7.3 底稿目录",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_7-3-底稿目录"
+            },
+            {
+              "text": "7.4 律师工作情况的说明",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_7-4-律师工作情况的说明"
+            },
+            {
+              "text": "7.5 内核会议纪要",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_7-5-内核会议纪要"
+            },
+            {
+              "text": "7.6 同步时机",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_7-6-同步时机"
+            }
+          ]
+        },
+        {
+          "text": "八、阶段 8：交付",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#八、阶段-8-交付",
+          "items": [
+            {
+              "text": "8.1 文件命名",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_8-1-文件命名"
+            },
+            {
+              "text": "8.2 回复用户的写法",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_8-2-回复用户的写法"
+            },
+            {
+              "text": "8.3 交付前自检",
+              "link": "/tutorials/ipo-complaint-special-verification-guide#_8-3-交付前自检"
+            }
+          ]
+        },
+        {
+          "text": "九、默认口径（用户另有指示的除外）",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#九、默认口径-用户另有指示的除外"
+        },
+        {
+          "text": "十、给用户的指令模板（按阶段粘贴，替换【 】）",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#十、给用户的指令模板-按阶段粘贴-替换【-】"
+        },
+        {
+          "text": "十一、AI 内部工作提示词",
+          "link": "/tutorials/ipo-complaint-special-verification-guide#十一、ai-内部工作提示词"
+        }
+      ]
+    }
+  ],
   "/tutorials/ipo-legal-advisor-company-profile-prompt": [
     {
       "text": "返回栏目列表",
@@ -13334,6 +13525,63 @@ export const generatedSidebar = {
         {
           "text": "18. 官方参考来源",
           "link": "/tutorials/windows-codex-legal-workflow-setup#_18-官方参考来源"
+        }
+      ]
+    }
+  ],
+  "/tutorials/尽调报告事实确认函制作教程": [
+    {
+      "text": "返回栏目列表",
+      "link": "/tutorials/"
+    },
+    {
+      "text": "尽调报告之后｜把需要公司确认的事实，做成一份签章确认函",
+      "link": "/tutorials/尽调报告事实确认函制作教程"
+    },
+    {
+      "text": "本页目录",
+      "items": [
+        {
+          "text": "一、为什么不能把尽调报告直接发给公司核对",
+          "link": "/tutorials/尽调报告事实确认函制作教程#一、为什么不能把尽调报告直接发给公司核对"
+        },
+        {
+          "text": "二、事实怎么筛：给Agent的三把筛子",
+          "link": "/tutorials/尽调报告事实确认函制作教程#二、事实怎么筛-给agent的三把筛子",
+          "items": [
+            {
+              "text": "筛子一：来源筛——只取\"公司提供资料或公司说明\"的事实",
+              "link": "/tutorials/尽调报告事实确认函制作教程#筛子一-来源筛——只取-公司提供资料或公司说明-的事实"
+            },
+            {
+              "text": "筛子二：公开筛——默认排除公开可查信息",
+              "link": "/tutorials/尽调报告事实确认函制作教程#筛子二-公开筛——默认排除公开可查信息"
+            },
+            {
+              "text": "筛子三：分寸筛——中性陈述，不追问",
+              "link": "/tutorials/尽调报告事实确认函制作教程#筛子三-分寸筛——中性陈述-不追问"
+            }
+          ]
+        },
+        {
+          "text": "三、清单类事实必须做成附件表格",
+          "link": "/tutorials/尽调报告事实确认函制作教程#三、清单类事实必须做成附件表格"
+        },
+        {
+          "text": "四、文件骨架",
+          "link": "/tutorials/尽调报告事实确认函制作教程#四、文件骨架"
+        },
+        {
+          "text": "五、直接复制的实战提示词",
+          "link": "/tutorials/尽调报告事实确认函制作教程#五、直接复制的实战提示词"
+        },
+        {
+          "text": "六、配套动作：发函与回收",
+          "link": "/tutorials/尽调报告事实确认函制作教程#六、配套动作-发函与回收"
+        },
+        {
+          "text": "最后记住一句话",
+          "link": "/tutorials/尽调报告事实确认函制作教程#最后记住一句话"
         }
       ]
     }
@@ -174987,8 +175235,14 @@ export const generatedSidebar = {
     }
   ],
   "/training/": [
-    { "text": "培训课程表", "link": "/training/" },
-    { "text": "实用工具", "link": "/tools/" }
+    {
+      "text": "培训课程表",
+      "link": "/training/"
+    },
+    {
+      "text": "实用工具",
+      "link": "/tools/"
+    }
   ]
 }
 export const generatedReading = {

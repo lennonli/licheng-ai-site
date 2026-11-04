@@ -123,7 +123,9 @@ export default defineConfig({
       { text: '最新文章', link: '/latest/' },
       { text: '系列文章', link: '/series/' },
       { text: '日报文章', items: [
-        { text: 'IPO 法律问询摘要', link: '/digest/ipo-inquiry/' }
+        { text: 'IPO 法律问询摘要', link: '/digest/ipo-inquiry/' },
+        { text: '上市挂牌问询法律回溯', link: '/digest/listing-inquiry/' },
+        { text: '并购重组法律问询摘要', link: '/digest/ma-inquiry/' }
       ] },
       { text: '指令与技能', items: [
         { text: 'AGENTS 指令', link: '/agents/' },

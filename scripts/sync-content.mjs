@@ -67,31 +67,31 @@ const sources = [
     key: 'kbmono',
     name: 'IPO 问询案例库（2023-2026）',
     repo: 'https://github.com/lennonli/ipo-inquiry-kb.git',
-    localRepo: path.resolve(root, '..', '19-IPO问询案例知识库')
+    localRepo: '/Users/licheng/Documents/Macbook-pro项目/19-IPO问询案例知识库'
   },
   {
     key: 'ma2026',
     name: '并购重组案例 2026',
     repo: 'https://github.com/lennonli/ma-restructuring-kb-2026.git',
-    localRepo: path.resolve(root, '..', '25-并购重组案例知识库-2026')
+    localRepo: '/Users/licheng/Documents/Macbook-pro项目/25-并购重组案例知识库-2026'
   },
   {
     key: 'ma2025',
     name: '并购重组案例 2025',
     repo: 'https://github.com/lennonli/ma-restructuring-kb-2025.git',
-    localRepo: path.resolve(root, '..', '26-并购重组案例知识库-2025')
+    localRepo: '/Users/licheng/Documents/Macbook-pro项目/26-并购重组案例知识库-2025'
   },
   {
     key: 'ma2024',
     name: '并购重组案例 2024',
     repo: 'https://github.com/lennonli/ma-restructuring-kb-2024.git',
-    localRepo: path.resolve(root, '..', '28-并购重组案例知识库-2024')
+    localRepo: '/Users/licheng/Documents/Macbook-pro项目/28-并购重组案例知识库-2024'
   },
   {
     key: 'ma2023',
     name: '并购重组案例 2023',
     repo: 'https://github.com/lennonli/ma-restructuring-kb-2023.git',
-    localRepo: path.resolve(root, '..', '27-并购重组案例知识库-2023')
+    localRepo: '/Users/licheng/Documents/Macbook-pro项目/27-并购重组案例知识库-2023'
   }
 ]
 

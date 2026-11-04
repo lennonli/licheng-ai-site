@@ -1,69 +1,105 @@
 [
   {
-    "href": "/tutorials/agent-practice-52-inline-comments-context-update",
-    "title": "AI实战52｜大文档更新别只在聊天框里说：直接把提示词批注到文档里",
-    "summary": "律师经常遇到一种特别适合Agent，但又特别容易翻车的任务：；这类任务如果只是把整个文件扔给AI，然后在聊天框里说一句：",
-    "section": "AI 教程"
-  },
-  {
     "href": "/agents/法律业务通用指令",
     "title": "法律业务通用指令",
     "summary": "沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。",
     "section": "智能体指令"
   },
   {
-    "href": "/skills/cnipa-patent-evidence-archive",
-    "title": "CNIPA 专利证据归档",
-    "summary": "用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。",
-    "section": "法律业务 Skill"
+    "href": "/tutorials/尽调报告事实确认函制作教程",
+    "title": "尽调报告之后｜把需要公司确认的事实，做成一份签章确认函",
+    "summary": "法律尽调报告写完以后，还有一件容易被跳过、但很关键的事：；报告里的大量事实，来源于公司提供的资料和公司的说明。",
+    "section": "AI 教程"
   },
   {
-    "href": "/skills/cnipa-trademark-evidence-archive",
-    "title": "CNIPA 商标证据归档",
-    "summary": "用于从 CNIPA 商标网上检索系统归档商标详情页和商标流程页，适合商标核查、知识产权尽调和证据留存。",
-    "section": "法律业务 Skill"
+    "href": "/agents/新三板挂牌章程及制度复核与交叉核验提示词",
+    "title": "新三板挂牌公司章程及制度复核与交叉核验提示词（复用版）",
+    "summary": "沉淀自某新三板挂牌项目全套定稿工作（2026-10，锦天城-李成）。与《章程与制度体系深度审查提示词》为姊妹篇：深度审查篇管\"逐条挑错\"，本篇管\"法规基线→案例对照→修改执行→全套交叉核验\"的四阶段闭环，适用于挂牌申报阶段章程（草案）（……",
+    "section": "智能体指令"
   },
   {
-    "href": "/skills/company-preliminary-analysis",
-    "title": "委托前公司初步分析报告",
-    "summary": "用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。",
-    "section": "法律业务 Skill"
+    "href": "/tutorials/ipo-complaint-special-verification-guide",
+    "title": "举报专项核查意见通用教程（发行人律师）",
+    "summary": "适用场景：交易所因举报向发行人下发《专项核查通知》，要求保荐机构、发行人律师核查并发表明确意见。本教程写给执行这项工作的 AI，也可以给人看。按阶段使用，不必一次读完。；署名：Word 修订人、批注回复人、文档最后修改人统一用用户指定的……",
+    "section": "AI 教程"
   },
   {
-    "href": "/skills/contract-review",
-    "title": "合同审查",
-    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
-    "section": "法律业务 Skill"
+    "href": "/tutorials/ai-infra-01-subscribe-top-model",
+    "title": "AI基建的第一步：花钱订阅一个顶级的大模型大脑",
+    "summary": "AI基建第一步：先花钱，订阅一个第一梯队的大模型。；不是提示词、MCP、知识库、Agent，更不是买服务器。后面搭多少东西，真正负责\"思考\"的始终是模型。",
+    "section": "AI 教程"
   },
   {
-    "href": "/skills/ipo-kb",
-    "title": "证券业务法律问询案例和证券法规检索skill",
-    "summary": "证券业务审核问询案例 12 库（IPO/再融资/并购重组四年度，2,585 家）＋投行法规库＋补充法律意见书库，共 14 个知识库；MCP 语义检索优先、本地克隆直查兜底，全库网页在线阅读。",
-    "section": "法律业务 Skill"
+    "href": "/tutorials/ai-infra-02-choose-mature-agent",
+    "title": "AI基建的第二步：为大模型配一个好用的智能体",
+    "summary": "大模型是大脑。想让 AI 真正干活，还得给它配上手脚，也就是智能体（Agent）。；不知道选哪个，就选用的人多、生态成熟、长期有人维护的。",
+    "section": "AI 教程"
   },
   {
-    "href": "/skills/network-check-v3",
-    "title": "中国企业网络核查",
-    "summary": "用于中国企业主体和风险网络核查，批量检索信用、处罚、失信、监管和公开网页信息，并保存可追溯的 PDF 证据文件。",
-    "section": "法律业务 Skill"
+    "href": "/tutorials/ai-infra-03-apple-over-windows",
+    "title": "AI基建的第三步：不是广告，但 Apple 电脑真的比 Windows 好用",
+    "summary": "第三步，说电脑。结论有点主观，但越折腾越确定：；准备长期把 AI 当生产力工具，尤其要用 Agent、MCP、GitHub、Python、Docker、Tailscale、本地脚本，我优先选 Mac。",
+    "section": "AI 教程"
   },
   {
-    "href": "/skills/survey-form-review",
-    "title": "董监高股东调查表复核",
-    "summary": "针对 IPO/新三板申报项目中的《自然人股东、董事、监事、高级管理人员及核心技术人员调查表》（docx，一人一份）做底稿级复核。核心原则：机械规则交给脚本，判断与核查交给模型，公开信息交给MCP，股权数据以底稿为准。同一批次多份表格一起……",
-    "section": "法律业务 Skill"
+    "href": "/tutorials/ai-infra-04-lawyer-mcp",
+    "title": "AI基建的第四步：给智能体配好 MCP，律师尤其不能只靠模型“凭记忆回答”",
+    "summary": "第四步，律师尤其不能省：给智能体配好必要的 MCP。；普通聊天，模型知道多少只是体验问题；法律工作里，引错一条法律、把失效规定当现行、编出一个不存在的案例，就是事故。所以别只问\"根据中国法律分析一下这个问题\"，要它先去：",
+    "section": "AI 教程"
   },
   {
-    "href": "/skills/wechat-gzh-format",
-    "title": "公众号文章排版",
-    "summary": "用于将文章内容排版为微信公众号 HTML 模板（法律AI工作站风格），并同步生成 120 字内文章摘要和 2.35:1 封面图，全内联样式一键复制粘贴进公众号编辑器。",
-    "section": "法律业务 Skill"
+    "href": "/tutorials/ai-infra-05-github-in-practice",
+    "title": "AI基建的第五步：注册一个 GitHub 账号，并真正把它用起来",
+    "summary": "第五步：注册一个 GitHub 账号，然后真正用起来。；别被名字吓住。我以前也以为它是程序员写代码的地方。现在我的看法是：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-06-remote-work-env",
+    "title": "AI基建的第六步：搭一个远程工作环境，让AI可以一直干活",
+    "summary": "第六步：给自己搭一个随时能远程访问的 AI 工作环境。；以前是人坐在电脑前，电脑才干活。Agent 时代不一样：",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-07-vps",
+    "title": "AI基建的第七步：进阶到 VPS——没有一台长期在线的 Mac mini，也可以给 AI 准备一台“永不关机的电脑”",
+    "summary": "VPS不是AI基建的必需品。 绝大多数人一台 MacBook 或 Mac mini 够用，别为了“显得专业”去折腾服务器。但确实需要一台长期联网、随时可访问、24小时运行的机器，VPS 是很有价值的补充。；我理想的配置是家里或办公室放一……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-08-local-model",
+    "title": "AI基建的第八步（进阶）：要不要部署本地大模型？",
+    "summary": "日常写作、合同审查、法律研究，直接用 ChatGPT、Claude 等顶级云端模型，效果一般更好，也更省事。；本地模型吸引我的不是“更强”，而是：有些资料可以不离开自己的电脑。",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-09-backup",
+    "title": "AI基建的第九步：做好备份，别让你的AI工作系统一夜归零",
+    "summary": "AI 工作系统搭到这一步，要备份的已经不只是工作文件了。；以前电脑坏了，担心的是 Word、PDF、照片。现在可能丢的，还有 Skill、Prompt、MCP 配置、知识库、脚本、Agent 配置、GitHub 项目、VPS 数据库，以……",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/ai-infra-10-let-it-run",
+    "title": "AI基建的第十步：别再继续搭了，让它自己跑起来",
+    "summary": "基建搭好了，下一步不是再装新东西，是开始自动化——重复工作让系统自己跑：；每天检查有没有新的 IPO 问询和回复；",
+    "section": "AI 教程"
+  },
+  {
+    "href": "/tutorials/agent-practice-52-inline-comments-context-update",
+    "title": "AI实战52｜大文档更新别只在聊天框里说：直接把提示词批注到文档里",
+    "summary": "律师经常遇到一种特别适合Agent，但又特别容易翻车的任务：；这类任务如果只是把整个文件扔给AI，然后在聊天框里说一句：",
+    "section": "AI 教程"
   },
   {
     "href": "/agents/董监高股东调查表复核提示词",
     "title": "董监高股东调查表复核提示词（附 check_survey.py 脚本全文）",
     "summary": "适用场景：IPO/新三板申报项目中《自然人股东、董事、监事、高级管理人员及核心技术人员调查表》（一人一份 docx）的批量复核。当用户要求复核、核对、批量核查调查表，或提到报告期改口、留空未填、身份证/学历/工作经历核查、单位全称核查、……",
     "section": "智能体指令"
+  },
+  {
+    "href": "/skills/ipo-kb",
+    "title": "证券业务法律问询案例和证券法规检索skill",
+    "summary": "证券业务审核问询案例 12 库（IPO/再融资/并购重组四年度，2,585 家）＋投行法规库＋补充法律意见书库，共 14 个知识库；MCP 语义检索优先、本地克隆直查兜底，全库网页在线阅读。",
+    "section": "法律业务 Skill"
   },
   {
     "href": "/tutorials/ai-notes-06-claude-without-official-account",
@@ -126,6 +162,12 @@
     "section": "智能体指令"
   },
   {
+    "href": "/skills/contract-review",
+    "title": "合同审查",
+    "summary": "用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。",
+    "section": "法律业务 Skill"
+  },
+  {
     "href": "/tutorials/agent-practice-51-client-data-security",
     "title": "AI实战51｜客户资料能不能交给Agent？先把保密、脱敏和数据出境这几关过了",
     "summary": "律师用AI以后，有一个问题迟早都会遇到：；客户资料到底能不能直接交给Agent？",
@@ -165,66 +207,6 @@
     "href": "/tutorials/ai-notes-04-ai-file-search",
     "title": "AI札记04｜我连Finder都越来越少用了：找文件这件事，也开始交给AI",
     "summary": "我最近发现一个很具体、但也很能说明问题的变化：；以前在Mac上工作，找文件几乎是每天最频繁的动作之一。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-01-subscribe-top-model",
-    "title": "AI基建的第一步：花钱订阅一个顶级的大模型大脑",
-    "summary": "很多人开始搭建自己的 AI 工作系统时，第一反应是研究提示词、MCP、知识库、Agent，甚至先买服务器。；但如果让我重新从零开始搭一套 AI 工作系统，我做的第一件事其实非常简单：",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-02-choose-mature-agent",
-    "title": "AI基建的第二步：为大模型配一个好用的智能体",
-    "summary": "上一篇讲的是，大模型是 AI 工作系统的“大脑”。；如果想让 AI 真正开始干活，还需要给这个大脑配上“手和脚”。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-03-apple-over-windows",
-    "title": "AI基建的第三步：不是广告，但 Apple 电脑真的比 Windows 好用",
-    "summary": "前两篇分别讲了两件事：第一，先给自己配一个足够强的大模型“大脑”；第二，再选一个成熟、稳定、用户多的智能体。；我的结论可能有一点主观，但这是我实际折腾各种 AI 工具之后越来越强烈的感受：",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-04-lawyer-mcp",
-    "title": "AI基建的第四步：给智能体配好 MCP，律师尤其不能只靠模型“凭记忆回答”",
-    "summary": "前三步解决的是三个问题：给自己准备一个足够强的大模型“大脑”；给这个大脑配一个稳定、成熟的智能体；准备一台适合 Agent 长期工作的电脑。；因为对于普通聊天，模型知道得多不多，也许只是体验问题。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-05-github-in-practice",
-    "title": "AI基建的第五步：注册一个 GitHub 账号，并真正把它用起来",
-    "summary": "前面几步，我们已经把 AI 工作系统最基础的东西搭起来了：大模型、智能体、电脑和 MCP。；到了第五步，我建议做一件很多非技术人员以前完全不会考虑的事情：",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-06-remote-work-env",
-    "title": "AI基建的第六步：搭一个远程工作环境，让AI可以一直干活",
-    "summary": "前面几步，我们已经把 AI 工作系统的大框架搭出来了：大模型、智能体、电脑、MCP、GitHub。；到了第六步，我越来越觉得还有一个东西非常重要：",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-07-vps",
-    "title": "AI基建的第七步：进阶到 VPS——没有一台长期在线的 Mac mini，也可以给 AI 准备一台“永不关机的电脑”",
-    "summary": "我的理想状态其实很简单：在家里或者办公室放一台 Mac mini，长期插电、长期联网，上面跑 Agent、MCP、脚本和各种自动化任务。人在外面的时候，用手机远程看看进度。；但现实中，并不是每个人都有这样的条件。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-08-local-model",
-    "title": "AI基建的第八步（进阶）：要不要部署本地大模型？",
-    "summary": "前面已经讲了大模型、Agent、Mac、MCP、GitHub、远程环境和 VPS。；绝大多数人其实不需要部署本地大模型。",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-09-backup",
-    "title": "AI基建的第九步：做好备份，别让你的AI工作系统一夜归零",
-    "summary": "前面几步，我们已经把一套 AI 工作环境慢慢搭起来了：大模型、Agent、Mac、MCP、GitHub、远程控制、VPS、本地大模型。；做到这里以后，其实会出现一个新的问题：",
-    "section": "AI 教程"
-  },
-  {
-    "href": "/tutorials/ai-infra-10-let-it-run",
-    "title": "AI基建的第十步：别再继续搭了，让它自己跑起来",
-    "summary": "前面已经搭了模型、Agent、Mac、MCP、GitHub、远程环境、VPS、本地模型和备份。；做到这里以后，我觉得最重要的反而不是继续装新东西，而是：",
     "section": "AI 教程"
   },
   {
@@ -546,6 +528,12 @@
     "section": "AI 教程"
   },
   {
+    "href": "/skills/company-preliminary-analysis",
+    "title": "委托前公司初步分析报告",
+    "summary": "用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。",
+    "section": "法律业务 Skill"
+  },
+  {
     "href": "/tutorials/gzh-template-with-ai",
     "title": "用AI做一个自己的公众号排版模板：四步搞定，附全部提示词",
     "summary": "我现在的公众号文章排版，基本不花时间。；不是我买了什么排版工具，而是我让AI给我做了一个专属排版模板：文章写完，转成Markdown丢进去，出来一个网页，点一下「复制」，粘贴进公众号编辑器，标题、配色、卡片、金句、二维码全部就位。",
@@ -556,6 +544,12 @@
     "title": "用微信API自动写公众号草稿：从凭证到入库，附完整代码",
     "summary": "上一篇讲了怎么用AI做排版模板，文章排好之后，还有最后一步：粘贴进公众号后台。；一篇还好，如果你也像我一样，一次写一个系列（我最近一口气写了25篇），一篇篇粘贴、传封面、填摘要，就是纯粹的体力活。",
     "section": "AI 教程"
+  },
+  {
+    "href": "/skills/wechat-gzh-format",
+    "title": "公众号文章排版",
+    "summary": "用于将文章内容排版为微信公众号 HTML 模板（法律AI工作站风格），并同步生成 120 字内文章摘要和 2.35:1 封面图，全内联样式一键复制粘贴进公众号编辑器。",
+    "section": "法律业务 Skill"
   },
   {
     "href": "/tutorials/ai-basics-01-what-is-ai",
@@ -1240,5 +1234,23 @@
     "title": "合同审查和起草指令",
     "summary": "规定合同审查、风险分级、缺失条款补充、法律文件起草、修订模式、签署页和版本命名等合同类任务的工作规则。",
     "section": "智能体指令"
+  },
+  {
+    "href": "/skills/network-check-v3",
+    "title": "中国企业网络核查",
+    "summary": "用于中国企业主体和风险网络核查，批量检索信用、处罚、失信、监管和公开网页信息，并保存可追溯的 PDF 证据文件。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/skills/cnipa-trademark-evidence-archive",
+    "title": "CNIPA 商标证据归档",
+    "summary": "用于从 CNIPA 商标网上检索系统归档商标详情页和商标流程页，适合商标核查、知识产权尽调和证据留存。",
+    "section": "法律业务 Skill"
+  },
+  {
+    "href": "/skills/cnipa-patent-evidence-archive",
+    "title": "CNIPA 专利证据归档",
+    "summary": "用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。",
+    "section": "法律业务 Skill"
   }
 ]
