@@ -4,11 +4,15 @@
 
 <p class="section-lead">每日自动追踪上交所科创板、深交所创业板、北交所、新三板四个板块新披露的审核问询回复，提炼其中法律相关问题（股权代持、出资瑕疵、实控人认定、对赌清理、诉讼合规等）的问询要点、回复与核查要点、中介机构核查程序，按日成篇。覆盖 2026 年 8 月 21 日至今。</p>
 
-<p class="source-link">共 54 篇 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露文件</p>
+<p class="source-link">共 55 篇 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露文件</p>
 
-## 2026 年 11 月（3 篇）
+## 2026 年 11 月（4 篇）
 
 <div class="index-card-list">
+  <a class="index-card" href="/digest/ipo-inquiry/2026-11-06">
+    <span class="index-card-title">IPO问询法律日报（2026-11-06）</span>
+    <span class="index-card-desc">今日新增 14 件（超 8 份，其中会计师专项 4 份、更新版 1 份），按规则详提法律问题最集中的 6 份，其余列示/简要。</span>
+  </a>
   <a class="index-card" href="/digest/ipo-inquiry/2026-11-03">
     <span class="index-card-title">IPO问询法律日报（2026-11-03）</span>
     <span class="index-card-desc">今日新增 12 件（超 8 份，其中会计师专项 3 份），按规则详提法律问题最集中的 3 份，其余列示/简要。</span>
