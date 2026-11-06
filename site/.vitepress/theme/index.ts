@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import { Fragment, h, defineComponent, computed, provide } from 'vue'
 import { dataSymbol, useData } from 'vitepress'
 import CaseFilter from './CaseFilter.vue'
+import CtlDealsSearch from './CtlDealsSearch.vue'
 import ArticleTools from './ArticleTools.vue'
 import BackButton from './BackButton.vue'
 import BackToTopButton from './BackToTopButton.vue'
@@ -31,6 +32,7 @@ export default {
   }),
   enhanceApp({ app }) {
     app.component('CaseFilter', CaseFilter)
+    app.component('CtlDealsSearch', CtlDealsSearch)
     app.component('ArticleTools', ArticleTools)
     app.component('BackButton', BackButton)
     app.component('HomeSearchBox', HomeSearchBox)

@@ -87,3 +87,13 @@ description: 集中进入 IPO 与挂牌审核问询、并购重组、再融资�
 </section>
 
 <p class="section-lead"><strong>年度总结：</strong><a href="/refi2026/2026年度总结">2026</a> · <a href="/refi2025/2025年度总结">2025</a> · <a href="/refi2024/2024年度总结">2024</a> · <a href="/refi2023/2023年度总结">2023</a></p>
+
+## 控制权变更
+
+<section class="home-grid case-library-grid" aria-label="控制权变更案例库">
+  <a class="home-card" href="/ctl-deals/">
+    <span class="home-card-index">CTL / Deals 2022–2026</span>
+    <span class="home-card-title">A股控制权变更案例库</span>
+    <span class="home-card-desc">2022–2026 年共 1,228 单控制权变更案例，核心是股份转让协议六大条款（付款节奏、先决条件、违约责任、陈述与保证、过渡期安排、税费承担）的原文抽取与引证，附公开检索入口。</span>
+  </a>
+</section>
