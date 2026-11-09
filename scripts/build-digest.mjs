@@ -1,6 +1,7 @@
 // 将 ipo-legal-digest / ma-legal-digest 的 summaries/*.md 转换为站点日报栏目页面
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { buildIpoCompilation } from './build-ipo-compilation.mjs';
 
 const WORKSPACE = '/Users/licheng/Documents/zhipu/.zcode/workspace/default';
 const SOURCES = [
@@ -157,4 +158,6 @@ const digestHome = [
 ].join('\n');
 writeFileSync(join(process.cwd(), 'site', 'digest', 'index.md'), digestHome, 'utf8');
 
+buildIpoCompilation();
 console.log(`TOTAL ${results.reduce((n, r) => n + r.entries.length, 0)} pages`);
+

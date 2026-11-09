@@ -1,4 +1,5 @@
 import { execFileSync } from 'node:child_process'
+import { buildIpoCompilation } from './build-ipo-compilation.mjs'
 import {
   cpSync,
   existsSync,
@@ -1514,7 +1515,9 @@ writeFileSync(
   `${JSON.stringify({ generatedAt: new Date().toISOString(), sources: Object.fromEntries(sourceRevisions) }, null, 2)}\n`
 )
 
+buildIpoCompilation()
 console.log(`Public content sanitised: ${sanitizePublicTree(siteDir)} files`)
 writeGeneratedSidebar()
 
 console.log('Content synced.')
+
