@@ -9,6 +9,10 @@
 ## 年度总报告
 
 <div class="index-card-list">
+  <a class="index-card" href="/digest/listing-inquiry/reports/2026-%E5%9B%9E%E6%BA%AF%E6%8A%A5%E5%91%8A-20261109-V7">
+    <span class="index-card-title">2026年度上市/挂牌公司审核问询法律问题回溯报告</span>
+    <span class="index-card-desc">数据截至 2026-11-09，覆盖 242 家公司、1,076 个法律问题</span>
+  </a>
   <a class="index-card" href="/digest/listing-inquiry/reports/2026-%E5%9B%9E%E6%BA%AF%E6%8A%A5%E5%91%8A-20261019-V6">
     <span class="index-card-title">2026年度上市/挂牌公司审核问询法律问题回溯报告</span>
     <span class="index-card-desc">数据截至 2026-10-19，覆盖 242 家公司、1,076 个法律问题</span>
@@ -55,8 +59,8 @@
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/">
-    <span class="index-card-title">2026 年度分公司明细（273 家）</span>
-    <span class="index-card-desc">科创板 18 / 沪市主板 12 / 深市主板 9 / 创业板 19 / 北京证券交易所 52 / 新三板挂牌 68 / 新三板基础层 45 / 新三板 27 / 新三板基础层挂牌 8 / 其他 7 / 新三板基础层公开转让 6 / 新三板基础层公开转让并定向发行 1 / 新三板创新层 1</span>
+    <span class="index-card-title">2026 年度分公司明细（280 家）</span>
+    <span class="index-card-desc">科创板 18 / 沪市主板 12 / 深市主板 10 / 创业板 19 / 北京证券交易所 53 / 新三板挂牌 68 / 新三板基础层 50 / 新三板 27 / 新三板基础层挂牌 8 / 其他 7 / 新三板基础层公开转让 6 / 新三板基础层公开转让并定向发行 1 / 新三板创新层 1</span>
   </a>
   <a class="index-card" href="/digest/listing-inquiry/companies/2025/">
     <span class="index-card-title">2025 年度分公司明细（430 家）</span>

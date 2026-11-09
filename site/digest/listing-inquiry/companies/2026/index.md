@@ -4,7 +4,7 @@
 
 <p class="section-lead">2026 年内完成 A 股上市及新三板挂牌的公司，逐家回溯其审核期间全部问询与回复，提炼需律师发表意见的法律问题：问询要点、回复与核查要点、中介核查程序与执业提示。覆盖上市/挂牌日 2026-01-01 起。</p>
 
-<p class="source-link">共 273 家 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露的问询回复与法律意见书</p>
+<p class="source-link">共 280 家 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露的问询回复与法律意见书</p>
 
 ## 科创板（18 家）
 
@@ -136,7 +136,7 @@
   </a>
 </div>
 
-## 深市主板（9 家）
+## 深市主板（10 家）
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E4%B8%96%E7%9B%9F%E8%82%A1%E4%BB%BD">
@@ -174,6 +174,10 @@
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%98%89%E7%AB%8B%E5%88%9B">
     <span class="index-card-title">深圳嘉立创科技集团股份有限公司（001232·深市主板）审核问询法律问题回溯</span>
     <span class="index-card-desc">深市主板 · 2026-08-04 上市/挂牌 · 详述法律问题 9 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E7%9A%87%E5%86%A0%E6%96%B0%E6%9D%90">
+    <span class="index-card-title">皇冠新材料科技股份有限公司（001381·深市主板）审核问询法律问题回溯</span>
+    <span class="index-card-desc">深市主板 · 2026-11-03 上市/挂牌 · 详述法律问题 5 项</span>
   </a>
 </div>
 
@@ -258,7 +262,7 @@
   </a>
 </div>
 
-## 北京证券交易所（52 家）
+## 北京证券交易所（53 家）
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%9B%BD%E4%BA%AE%E6%96%B0%E6%9D%90">
@@ -456,6 +460,10 @@
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E8%85%BE%E4%BF%A1%E7%B2%BE%E5%AF%86">
     <span class="index-card-title">东莞市腾信精密制造股份有限公司（920298·北交所）审核问询法律问题回溯</span>
     <span class="index-card-desc">北京证券交易所 · 2026-09-16 上市/挂牌 · 详述法律问题 7 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E6%A3%AE%E5%B3%B0%E6%BF%80%E5%85%89">
+    <span class="index-card-title">济南森峰激光科技股份有限公司（920085·北交所）审核问询法律问题回溯</span>
+    <span class="index-card-desc">北京证券交易所 · 2026-11-06 上市/挂牌 · 详述法律问题 6 项</span>
   </a>
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E6%96%B0%E6%81%92%E6%B3%B0">
     <span class="index-card-title">浙江新恒泰新材料股份有限公司（920028·北交所）审核问询法律问题回溯</span>
@@ -748,7 +756,7 @@
   </a>
 </div>
 
-## 新三板基础层（45 家）
+## 新三板基础层（50 家）
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%85%B5%E8%AE%BE%E9%9B%86%E5%9B%A2">
@@ -930,6 +938,26 @@
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E7%94%98%E9%9C%B2%E8%97%8F%E8%8D%AF">
     <span class="index-card-title">西藏甘露藏药股份有限公司（875185·新三板基础层）挂牌审核问询法律问题回溯</span>
     <span class="index-card-desc">新三板基础层 · 2026-09-17 上市/挂牌 · 详述法律问题 7 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%8D%9A%E5%88%9B%E6%99%BA%E8%83%BD">
+    <span class="index-card-title">博创智能装备股份有限公司（875282·新三板基础层）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板基础层 · 2026-11-03 上市/挂牌 · 详述法律问题 6 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%AE%8F%E5%86%A0%E7%A7%91%E6%8A%80">
+    <span class="index-card-title">浙江宏冠科技股份有限公司（875325·新三板基础层）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板基础层 · 2026-11-03 上市/挂牌 · 详述法律问题 7 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%8D%9A%E7%A0%9A%E7%94%B5%E5%AD%90">
+    <span class="index-card-title">江苏博砚电子科技股份有限公司（875328·新三板基础层）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板基础层 · 2026-11-04 上市/挂牌 · 详述法律问题 6 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E9%93%B6%E9%94%90%E6%99%BA%E8%83%BD">
+    <span class="index-card-title">安徽银锐智能科技股份有限公司（875289·新三板基础层）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板基础层 · 2026-11-05 上市/挂牌 · 详述法律问题 6 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%87%AF%E8%B4%A4%E7%A7%91%E6%8A%80">
+    <span class="index-card-title">上海凯贤科技股份有限公司（875138·新三板基础层）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板基础层 · 2026-11-06 上市/挂牌 · 详述法律问题 5 项</span>
   </a>
 </div>
 
