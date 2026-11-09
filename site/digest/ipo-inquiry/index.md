@@ -7,7 +7,7 @@
 
 当前版本：**V0.15** · 统计截止日：2026年11月9日。本汇编与下方每日日报分别维护，原始统计和待核实标记完整保留。
 
-[阅读完整汇编](/digest/ipo-inquiry/2026-compilation) · [下载 Markdown](/downloads/ipo-inquiry/2026/latest.md) · [历史版本归档](/digest/ipo-inquiry/2026-compilation-archive)
+[阅读完整汇编](/digest/ipo-inquiry/2026-compilation) · <a href="/downloads/ipo-inquiry/2026/latest.md" download>下载 Markdown</a> · [历史版本归档](/digest/ipo-inquiry/2026-compilation-archive)
 
 <!-- IPO-COMPILATION:END -->
 
