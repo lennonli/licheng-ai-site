@@ -5,7 +5,7 @@
 <!-- IPO-COMPILATION:START -->
 ## 2026年度上市及挂牌审核问询法律问题汇编
 
-当前版本：**V0.15** · 统计截止日：2026年11月9日。本汇编与下方每日日报分别维护，原始统计和待核实标记完整保留。
+当前版本：**V0.16** · 统计截止日：2026年11月16日。本汇编与下方每日日报分别维护，原始统计和待核实标记完整保留。
 
 [阅读完整汇编](/digest/ipo-inquiry/2026-compilation) · <a href="/downloads/ipo-inquiry/2026/latest.md" download>下载 Markdown</a> · [历史版本归档](/digest/ipo-inquiry/2026-compilation-archive)
 
@@ -254,4 +254,5 @@
     <span class="index-card-desc">本期为系统试运行样例：全量抓取已覆盖 2026-08-16 至 2026-08-21 四板块全部新增问询/反馈回复（共 25 件），其中 3 件已做法律部分详细提炼示范；自下一期起（每天 11:00 自动运行），当日新增文件将全部详细提炼。</span>
   </a>
 </div>
+
 
