@@ -109,6 +109,15 @@ export function decodeHtmlText(value) {
     .replace(/&ZeroWidthSpace;|&#8203;/g, '')
 }
 
+// 上游案例的“原文：URL；详情：URL）”为两个裸链接；显式分隔，避免
+// Markdown 自动识别把中文分隔词和第二个网址吞入第一个链接。已规范的链接不动。
+export function normalizePairedSourceUrls(markdown) {
+  return markdown.replace(
+    /(原文：)(https?:\/\/[^\s<>（）；]+)(；详情：)(https?:\/\/[^\s<>（）]+)(?=）)/g,
+    (_, label, source, separator, detail) => `${label}<${source}>${separator}<${detail}>`
+  )
+}
+
 // 只把"裸链接"包上 <…>；已被 <> 包裹或处于 Markdown 链接/HTML 属性中的 URL 不动
 export function normalizePlainUrls(markdown) {
   return markdown.replace(
@@ -231,3 +240,4 @@ export function escapeXml(value) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&apos;')
 }
+

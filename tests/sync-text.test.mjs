@@ -11,6 +11,7 @@ import {
   formatDate,
   htmlTitle,
   normalizePlainUrls,
+  normalizePairedSourceUrls,
   pageTitleFromFilename,
   pngDimensionsFromBuffer,
   removeLeadingH1,
@@ -102,6 +103,18 @@ test('PNG dimension parser reads IHDR and rejects junk', () => {
   assert.equal(pngDimensionsFromBuffer(Buffer.from('not a png buffer........', 'ascii')), null)
 })
 
+test('paired source URLs preserve both targets and do not swallow Chinese separators', () => {
+  const source = 'https://static.sse.com.cn/stock/disclosure/announcement/c/202607/002099_20260703_E23G.pdf'
+  const detail = 'https://www.jianweidata.com/FilingDetail?key=A+B/C==&sector=1&cm=%E9%97%AE&cs='
+  const input = `> 披露；原文：${source}；详情：${detail}）\n正文不变`
+  const expected = `> 披露；原文：<${source}>；详情：<${detail}>）\n正文不变`
+  assert.equal(normalizePairedSourceUrls(input), expected)
+  assert.equal(normalizePairedSourceUrls(expected), expected, 'idempotent')
+  const unchanged = `[原文](${source})；[详情](${detail})\n<${source}>\n普通中文原文不变`
+  assert.equal(normalizePairedSourceUrls(unchanged), unchanged)
+  assert.equal(normalizePairedSourceUrls(`原文：${source}；备注：不同说明）`), `原文：${source}；备注：不同说明）`)
+})
+
 test('enrichHtmlImages adds lazy/async and intrinsic sizes for embedded PNGs', () => {
   const png = Buffer.alloc(24)
   png.write('\x89PNG\r\n\x1a\n', 0, 'latin1')
@@ -130,3 +143,4 @@ test('encodeGitHubPath percent-encodes each path segment', () => {
   assert.equal(encodeGitHubPath('cases/920116-星图测控.md'), 'cases/920116-%E6%98%9F%E5%9B%BE%E6%B5%8B%E6%8E%A7.md')
   assert.equal(encodeGitHubPath('//a//b.md'), 'a/b.md')
 })
+

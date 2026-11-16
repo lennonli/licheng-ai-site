@@ -28,6 +28,7 @@ import {
   htmlTitle,
   htmlToCopyText,
   normalizePlainUrls,
+  normalizePairedSourceUrls,
   pngDimensionsFromBuffer,
   pageTitleFromFilename,
   removeLeadingH1,
@@ -1242,11 +1243,11 @@ function buildKbYear({ key, base, title, lead, entries, annualFile, annualTitle,
       if (normalized !== markdown) writeFileSync(file, normalized)
     }
   }
-  if (key === 'kb2023' || key.startsWith('refi')) {
+  if (key === 'kb' || key === 'kb2023' || key.startsWith('refi')) {
     for (const name of readDirSafe(dest).filter((entry) => entry.endsWith('.md'))) {
       const file = path.join(dest, name)
       const markdown = readFileSync(file, 'utf8')
-      const normalized = normalizePlainUrls(markdown)
+      const normalized = key === 'kb' ? normalizePairedSourceUrls(markdown) : normalizePlainUrls(markdown)
       if (normalized !== markdown) writeFileSync(file, normalized)
     }
   }
@@ -1520,4 +1521,5 @@ console.log(`Public content sanitised: ${sanitizePublicTree(siteDir)} files`)
 writeGeneratedSidebar()
 
 console.log('Content synced.')
+
 
