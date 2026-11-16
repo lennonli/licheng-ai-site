@@ -4,9 +4,9 @@
 
 <p class="section-lead">2026 年内完成 A 股上市及新三板挂牌的公司，逐家回溯其审核期间全部问询与回复，提炼需律师发表意见的法律问题：问询要点、回复与核查要点、中介核查程序与执业提示。覆盖上市/挂牌日 2026-01-01 起。</p>
 
-<p class="source-link">共 280 家 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露的问询回复与法律意见书</p>
+<p class="source-link">共 281 家 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露的问询回复与法律意见书</p>
 
-## 科创板（18 家）
+## 科创板（19 家）
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E6%81%92%E8%BF%90%E6%98%8C">
@@ -80,6 +80,10 @@
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E4%BF%A1%E8%AF%BA%E7%BB%B4">
     <span class="index-card-title">苏州信诺维医药科技股份有限公司（688837·科创板）审核问询法律问题回溯</span>
     <span class="index-card-desc">科创板 · 2026-09-16 上市/挂牌 · 详述法律问题 5 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E9%92%B6%E9%94%90%E9%94%B6">
+    <span class="index-card-title">广东钶锐锶数控技术股份有限公司（688827·科创板）审核问询法律问题回溯</span>
+    <span class="index-card-desc">科创板 · 2026-11-10 上市/挂牌 · 详述法律问题 8 项</span>
   </a>
 </div>
 
