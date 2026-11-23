@@ -6,6 +6,7 @@
 
 | 版本 | 统计截止日 | 原始 Markdown |
 |---|---|---|
+| V0.17 | 2026年11月23日 | <a href="/downloads/ipo-inquiry/2026/v0.17-2026-11-23.md" download>下载</a> |
 | V0.16 | 2026年11月16日 | <a href="/downloads/ipo-inquiry/2026/v0.16-2026-11-16.md" download>下载</a> |
 | V0.15 | 2026年11月9日 | <a href="/downloads/ipo-inquiry/2026/v0.15-2026-11-09.md" download>下载</a> |
 | V0.12 | 2026年10月19日 | <a href="/downloads/ipo-inquiry/2026/v0.12-2026-10-19.md" download>下载</a> |
