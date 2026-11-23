@@ -4,7 +4,7 @@
 
 <p class="section-lead">2026 年内完成 A 股上市及新三板挂牌的公司，逐家回溯其审核期间全部问询与回复，提炼需律师发表意见的法律问题：问询要点、回复与核查要点、中介核查程序与执业提示。覆盖上市/挂牌日 2026-01-01 起。</p>
 
-<p class="source-link">共 281 家 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露的问询回复与法律意见书</p>
+<p class="source-link">共 289 家 ｜ 数据来源：上交所、深交所、北交所、全国股转系统公开披露的问询回复与法律意见书</p>
 
 ## 科创板（19 家）
 
@@ -266,7 +266,7 @@
   </a>
 </div>
 
-## 北京证券交易所（53 家）
+## 北京证券交易所（55 家）
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%9B%BD%E4%BA%AE%E6%96%B0%E6%9D%90">
@@ -468,6 +468,14 @@
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E6%A3%AE%E5%B3%B0%E6%BF%80%E5%85%89">
     <span class="index-card-title">济南森峰激光科技股份有限公司（920085·北交所）审核问询法律问题回溯</span>
     <span class="index-card-desc">北京证券交易所 · 2026-11-06 上市/挂牌 · 详述法律问题 6 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E8%8F%8A%E4%B9%90%E8%82%A1%E4%BB%BD">
+    <span class="index-card-title">四川菊乐食品股份有限公司（920309·北交所）审核问询法律问题回溯</span>
+    <span class="index-card-desc">北京证券交易所 · 2026-11-17 上市/挂牌 · 详述法律问题 5 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%8D%8E%E6%99%9F">
+    <span class="index-card-title">青岛华晟智能装备股份有限公司（920067·北交所）审核问询法律问题回溯</span>
+    <span class="index-card-desc">北京证券交易所 · 2026-11-23 上市/挂牌 · 详述法律问题 6 项</span>
   </a>
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E6%96%B0%E6%81%92%E6%B3%B0">
     <span class="index-card-title">浙江新恒泰新材料股份有限公司（920028·北交所）审核问询法律问题回溯</span>
@@ -760,7 +768,7 @@
   </a>
 </div>
 
-## 新三板基础层（50 家）
+## 新三板基础层（51 家）
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%85%B5%E8%AE%BE%E9%9B%86%E5%9B%A2">
@@ -963,9 +971,13 @@
     <span class="index-card-title">上海凯贤科技股份有限公司（875138·新三板基础层）审核问询法律问题回溯</span>
     <span class="index-card-desc">新三板基础层 · 2026-11-06 上市/挂牌 · 详述法律问题 5 项</span>
   </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E4%BA%AE%E7%82%B9%E5%85%89%E7%94%B5">
+    <span class="index-card-title">江苏亮点光电科技股份有限公司（875263·新三板基础层）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板基础层 · 2026-11-19 上市/挂牌 · 详述法律问题 4 项</span>
+  </a>
 </div>
 
-## 新三板（27 家）
+## 新三板（32 家）
 
 <div class="index-card-list">
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E8%8B%B1%E8%99%8E%E6%9C%BA%E6%A2%B0">
@@ -1075,6 +1087,26 @@
   <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E4%BF%A1%E8%BF%9C%E7%A7%91%E6%8A%80">
     <span class="index-card-title">宁波信远材料科技股份有限公司（874905·新三板）审核问询法律问题回溯</span>
     <span class="index-card-desc">新三板 · 2026-03-19 上市/挂牌 · 详述法律问题 4 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E4%B8%AD%E8%BE%BE%E7%94%B5%E6%9C%BA">
+    <span class="index-card-title">中达电机股份有限公司（875308·新三板）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板 · 2026-11-16 上市/挂牌 · 详述法律问题 3 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%85%B4%E7%9B%9B%E5%BE%B7">
+    <span class="index-card-title">陕西兴盛德药业股份有限公司（874925·新三板）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板 · 2026-11-16 上市/挂牌 · 详述法律问题 5 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E7%AC%83%E6%AD%A3%E6%96%B0%E8%83%BD">
+    <span class="index-card-title">厦门笃正新能源股份有限公司（875299·新三板）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板 · 2026-11-17 上市/挂牌 · 详述法律问题 6 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E5%8D%8E%E7%BB%B4%E7%A7%91%E6%8A%80">
+    <span class="index-card-title">上海华维可控农业科技集团股份有限公司（875288·新三板）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板 · 2026-11-18 上市/挂牌 · 详述法律问题 6 项</span>
+  </a>
+  <a class="index-card" href="/digest/listing-inquiry/companies/2026/%E7%BB%B4%E5%8F%91%E8%82%A1%E4%BB%BD">
+    <span class="index-card-title">厦门维发股份有限公司（875252·新三板）审核问询法律问题回溯</span>
+    <span class="index-card-desc">新三板 · 2026-11-18 上市/挂牌 · 详述法律问题 5 项</span>
   </a>
 </div>
 
