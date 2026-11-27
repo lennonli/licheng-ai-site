@@ -136,7 +136,10 @@ export default defineConfig({
         { text: '资本市场案例库', link: '/cases/' },
         { text: '控制权变更案例库', link: '/ctl-deals/' }
       ] },
-      { text: 'FDE', link: '/fde/', target: '_self' },
+      { text: 'FDE', items: [
+        { text: 'FDE 总览', link: '/fde/' },
+        { text: 'AI驱动的定制化合同审查系统', link: '/fde/contract-review/', target: '_self' }
+      ] },
       { text: '实用工具', items: [
         { text: '工具总览', link: '/tools/' },
         { text: 'AI 网站导航', link: '/tools/ai-directory' },
