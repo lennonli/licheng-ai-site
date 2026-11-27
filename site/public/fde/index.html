@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI驱动的定制化合同审查系统 | 李成律师法律AI工作站</title>
+<meta name="description" content="由执业律师盘点企业真实合同、历史修订与争议记录，结合专属规则、程序化硬校验与分级风险审查，定制只懂贵司业务的合同审查系统。">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://ai.licheng.uk/fde/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI驱动的定制化合同审查系统 | 李成律师法律AI工作站">
+<meta property="og:description" content="由执业律师盘点企业真实合同、历史修订与争议记录，结合专属规则、程序化硬校验与分级风险审查，定制只懂贵司业务的合同审查系统。">
+<meta property="og:url" content="https://ai.licheng.uk/fde/">
+<meta property="og:image" content="https://ai.licheng.uk/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI驱动的定制化合同审查系统 | 李成律师法律AI工作站">
+<meta name="twitter:image" content="https://ai.licheng.uk/og-image.jpg">
+<style>
+  :root {
+    --bg: #f4f7ef;
+    --bg-warm: #e9f3dd;
+    --surface: #ffffff;
+    --surface-tint: #f7fbf2;
+    --green: #0e6f3f;
+    --green-deep: #0c351e;
+    --lime: #9fe870;
+    --lime-soft: #cdf4b0;
+    --ink: #132319;
+    --body: #2f3932;
+    --muted: #55685b;
+    --border: rgba(14, 111, 63, 0.14);
+    --border-strong: rgba(14, 111, 63, 0.26);
+    --shadow-sm: 0 4px 14px rgba(14, 111, 63, 0.06);
+    --shadow-md: 0 14px 36px rgba(14, 111, 63, 0.09);
+    --shadow-lg: 0 24px 56px rgba(12, 53, 30, 0.14);
+    --err: #b42318;
+    --err-bg: #fef3f2;
+    --warn: #9a5b00;
+    --warn-bg: #fffaeb;
+    --mono: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--body);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== Fullscreen Viewport + 1600x900 Proportional Stage ===== */
+  .viewport {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .viewport.is-cover {
+    background:
+      radial-gradient(900px 520px at 86% 16%, rgba(159, 232, 112, 0.34), transparent 72%),
+      radial-gradient(720px 440px at 8% 10%, rgba(196, 242, 160, 0.42), transparent 70%),
+      linear-gradient(168deg, #e5f3d3 0%, #eef6e5 48%, #f4f7ef 100%);
+  }
+
+  .stage {
+    position: relative;
+    width: 1600px;
+    height: 900px;
+    flex-shrink: 0;
+    transform-origin: center center;
+  }
+
+  /* ===== Top Progress Bar (Full Viewport Width) ===== */
+  .progress-track {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: rgba(14, 111, 63, 0.10);
+    z-index: 100;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(90deg, var(--green) 0%, var(--lime) 100%);
+    transition: width 0.28s ease;
+  }
+
+  /* ===== Slides Inside 1600x900 Stage ===== */
+  .slide {
+    position: absolute;
+    inset: 0;
+    width: 1600px;
+    height: 900px;
+    padding: 46px 68px 66px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(48px);
+    transition: opacity 0.26s ease, transform 0.30s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .slide.prev { transform: translateX(-48px); }
+  .slide.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+    z-index: 5;
+  }
+
+  /* Top bar inside slide */
+  .slide-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    flex-shrink: 0;
+  }
+  .brand-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid var(--border);
+    padding: 6px 16px;
+    border-radius: 999px;
+  }
+  .brand-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 3px rgba(159, 232, 112, 0.55);
+  }
+  .brand-pill span {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: var(--ink);
+  }
+  .chap-pill {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    color: var(--green);
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid var(--border);
+    padding: 6px 16px;
+    border-radius: 999px;
+  }
+
+  /* Slide Header */
+  .s-head {
+    flex-shrink: 0;
+    margin-bottom: 22px;
+  }
+  .s-kicker {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .s-title {
+    margin: 0 0 8px;
+    font-size: 40px;
+    line-height: 1.22;
+    color: var(--ink);
+    letter-spacing: -0.2px;
+  }
+  .s-sub {
+    margin: 0;
+    font-size: 18px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  /* Slide Content Body fills remaining vertical height cleanly! */
+  .s-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 0;
+    gap: 20px;
+  }
+
+  /* ===== Slide 1 · Cover ===== */
+  .cover-wrap {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1.06fr 0.94fr;
+    gap: 52px;
+    align-items: center;
+  }
+  .pill-lime {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--lime);
+    color: var(--green-deep);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+  }
+  .cover-h1 {
+    margin: 0 0 14px;
+    font-size: 52px;
+    line-height: 1.16;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+  }
+  .cover-h2 {
+    margin: 0 0 24px;
+    font-size: 32px;
+    line-height: 1.32;
+    font-weight: 800;
+    color: var(--green);
+  }
+  .cover-h2 .hl {
+    background: linear-gradient(transparent 60%, rgba(159, 232, 112, 0.70) 60%);
+    padding: 0 6px;
+  }
+  .cover-lead {
+    margin: 0 0 30px;
+    font-size: 20px;
+    line-height: 1.72;
+    color: #3a4c40;
+  }
+  .cover-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .cover-chip {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--ink);
+    box-shadow: var(--shadow-sm);
+  }
+  .cover-chip b { color: var(--green); font-family: var(--mono); margin-right: 7px; }
+  .cover-meta {
+    padding-top: 20px;
+    border-top: 1px solid rgba(14, 111, 63, 0.18);
+    font-size: 16px;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+  }
+  .cover-meta strong { color: var(--ink); }
+
+  /* Right Console Card on Cover */
+  .console-card {
+    background: var(--surface);
+    border: 1px solid rgba(14, 111, 63, 0.16);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+  .console-bar {
+    background: var(--green-deep);
+    color: #d9f3c7;
+    padding: 14px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+  .console-dots { display: flex; gap: 7px; }
+  .console-dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(159, 232, 112, 0.45); }
+  .console-dots span:first-child { background: #9fe870; }
+  .console-body { padding: 24px; }
+  .console-file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface-tint);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+  .console-time {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--green);
+    background: #e5f6dc;
+    padding: 3px 11px;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+  .alert-stack { display: flex; flex-direction: column; gap: 13px; }
+  .alert-row {
+    border-radius: 13px;
+    padding: 14px 16px;
+    font-size: 15px;
+    line-height: 1.58;
+  }
+  .alert-row.err { background: var(--err-bg); border-left: 4px solid var(--err); }
+  .alert-row.warn { background: var(--warn-bg); border-left: 4px solid #d97706; }
+  .alert-row.ok { background: #edf9e7; border-left: 4px solid var(--green); }
+  .alert-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 3px;
+    font-size: 15.5px;
+  }
+  .code-tag {
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 800;
+  }
+  .code-err { background: rgba(180, 35, 24, 0.13); color: var(--err); }
+  .code-warn { background: rgba(217, 119, 6, 0.15); color: var(--warn); }
+  .code-ok { background: rgba(14, 111, 63, 0.13); color: var(--green); }
+
+  /* ===== Grids & Cards (Stretch Full Canvas) ===== */
+  .grid-2 { flex: 1; display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .grid-3 { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 26px 28px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card.featured {
+    background: linear-gradient(180deg, #ffffff 0%, #eef9e6 100%);
+    border: 2.5px solid var(--green);
+    box-shadow: var(--shadow-md);
+  }
+  .badge-sm {
+    display: inline-block;
+    align-self: flex-start;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 800;
+    padding: 5px 12px;
+    border-radius: 9px;
+    background: var(--bg-warm);
+    color: var(--green);
+    margin-bottom: 12px;
+  }
+  .card.featured .badge-sm { background: var(--lime); color: var(--green-deep); }
+  .card h3 { margin: 0 0 10px; font-size: 22px; color: var(--ink); line-height: 1.34; }
+  .card p { margin: 0; font-size: 16.5px; color: var(--body); line-height: 1.7; }
+  .card-foot {
+    margin-top: 16px;
+    padding-top: 13px;
+    border-top: 1px dashed rgba(14, 111, 63, 0.22);
+    font-size: 15.5px;
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  .check-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 16.5px;
+  }
+  .check-list li { position: relative; padding-left: 22px; line-height: 1.62; }
+  .check-list li::before { content: "•"; position: absolute; left: 2px; color: #95a79b; font-weight: 900; }
+  .card.featured .check-list li::before { content: "✓"; color: var(--green); left: 0; }
+
+  .lime-bar {
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #9fe870 0%, #c4f2a0 100%);
+    border-radius: 16px;
+    padding: 20px 28px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--green-deep);
+    letter-spacing: 0.3px;
+  }
+
+  /* ===== Slide 4: KPI + Triage ===== */
+  .kpi-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 26px 24px;
+    box-shadow: var(--shadow-sm);
+  }
+  .kpi-num { font-family: var(--mono); font-size: 44px; font-weight: 800; color: var(--green); line-height: 1.1; }
+  .kpi-lbl { margin-top: 10px; font-size: 19px; font-weight: 700; color: var(--ink); }
+  .kpi-desc { margin-top: 8px; font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+  .triage-strip {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .triage-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 26px 26px;
+    border-top: 5px solid var(--green);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .triage-box.t2 { border-top-color: #d97706; }
+  .triage-box.t3 { border-top-color: var(--err); }
+  .triage-box h4 { margin: 0 0 12px; font-size: 22px; color: var(--ink); }
+  .triage-box p { margin: 0 0 10px; font-size: 16.5px; color: var(--body); line-height: 1.72; }
+  .triage-box p:last-child { margin-bottom: 0; }
+  .triage-act {
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: #eef6e8;
+    font-size: 16px;
+    line-height: 1.68;
+    color: var(--green-deep);
+  }
+  .triage-box.t2 .triage-act { background: #fef7e8; color: #7a4508; }
+  .triage-box.t3 .triage-act { background: #fdf0ef; color: #7a1c15; }
+  .alert-stack.stretch { gap: 16px; height: 100%; }
+  .alert-stack.stretch .alert-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px 22px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* ===== Interactive Demo Slides (Slides 5, 6, 7) ===== */
+  .demo-split {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1.04fr 0.96fr;
+    gap: 24px;
+    align-items: stretch;
+    min-height: 0;
+  }
+  .doc-stage {
+    background: #fcfdf9;
+    border: 1px solid rgba(14, 111, 63, 0.16);
+    border-radius: 20px;
+    padding: 26px 28px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .doc-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(14, 111, 63, 0.12);
+  }
+  .doc-title { font-size: 18px; font-weight: 700; color: var(--ink); }
+  .mode-switch {
+    display: inline-flex;
+    background: var(--bg-warm);
+    padding: 4px;
+    border-radius: 999px;
+    gap: 3px;
+  }
+  .mode-btn {
+    border: 0;
+    background: transparent;
+    padding: 6px 15px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .mode-btn.active { background: #ffffff; color: var(--green); box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+  .clause-view { display: none; font-size: 17.5px; line-height: 1.85; color: #243028; }
+  .clause-view.active { display: block; }
+  .clause-view del {
+    background: #fee4e2;
+    color: #b42318;
+    text-decoration: line-through;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  .clause-view ins {
+    background: #dcf7ce;
+    color: #0e5832;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  .clause-tip {
+    margin-top: 16px;
+    padding: 14px 18px;
+    background: #ecf5e4;
+    border-radius: 12px;
+    font-size: 15px;
+    color: var(--green-deep);
+    line-height: 1.65;
+  }
+
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .ladder-card {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px 22px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ladder-hdr {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--green);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .ladder-row {
+    display: grid;
+    grid-template-columns: 94px 1fr;
+    gap: 12px;
+    font-size: 15.5px;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(14, 111, 63, 0.16);
+    line-height: 1.6;
+  }
+  .ladder-row:last-child { border-bottom: 0; padding-bottom: 0; }
+  .ladder-k { font-weight: 800; color: var(--ink); }
+
+  /* Slide 7 Sub-tabs */
+  .sub-tabs { display: flex; gap: 12px; flex-shrink: 0; }
+  .sub-tab {
+    background: #ffffff;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    padding: 9px 22px;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .sub-tab.active { background: var(--green); color: #ffffff; border-color: var(--green); }
+  .sub-pane { display: none; flex: 1; min-height: 0; }
+  .sub-pane.active { display: grid; grid-template-columns: 1.04fr 0.96fr; gap: 24px; }
+
+  /* ===== Slide 9: Dark Security Band ===== */
+  .dark-band {
+    flex: 1;
+    background: var(--green-deep);
+    color: #e6f5dc;
+    border-radius: 22px;
+    padding: 28px 30px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .dark-band h3 {
+    margin: 0 0 18px;
+    font-family: var(--mono);
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    color: var(--lime);
+  }
+  .dark-grid { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .dark-item {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(159, 232, 112, 0.25);
+    border-radius: 16px;
+    padding: 22px 22px;
+    font-size: 16px;
+    line-height: 1.68;
+    color: #d2eac8;
+  }
+  .dark-item strong { color: #ffffff; display: block; margin-bottom: 8px; font-size: 19px; }
+
+  /* ===== Slide 10: Closing Card ===== */
+  .closing-box {
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #0e6f3f 0%, #0c4427 100%);
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 34px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    box-shadow: var(--shadow-lg);
+  }
+  .closing-box h2 { margin: 10px 0 10px; font-size: 30px; line-height: 1.32; }
+  .closing-box p { margin: 0; font-size: 17px; color: #d7f1cb; max-width: 760px; line-height: 1.65; }
+  .closing-right { display: flex; flex-direction: column; gap: 10px; min-width: 340px; }
+  .step-chip {
+    background: rgba(255, 255, 255, 0.11);
+    border: 1px solid rgba(159, 232, 112, 0.36);
+    border-radius: 13px;
+    padding: 12px 18px;
+    font-size: 15.5px;
+    font-weight: 700;
+  }
+  .step-chip b { color: var(--lime); font-family: var(--mono); margin-right: 10px; }
+
+  /* ===== Bottom Navigation HUD (Fixed to Real Viewport) ===== */
+  .hud {
+    position: fixed;
+    bottom: 14px;
+    left: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 80;
+    pointer-events: none;
+  }
+  .hud-hint {
+    font-size: 12px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.84);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    pointer-events: auto;
+  }
+  .hud-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+    padding: 5px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-md);
+    pointer-events: auto;
+  }
+  .hud-btn {
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    padding: 6px 13px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .hud-btn:hover { background: var(--bg-warm); color: var(--green); }
+  .hud-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+  .hud-btn.primary { background: var(--green); color: #ffffff; }
+  .hud-btn.primary:hover { background: var(--green-deep); color: var(--lime); }
+  .hud-counter {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    font-weight: 800;
+    color: var(--green);
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: var(--bg-warm);
+    cursor: pointer;
+    border: 0;
+  }
+  .hud-counter:hover { background: var(--lime); color: var(--green-deep); }
+
+  /* ===== Slide Grid Overview Modal (Press G) ===== */
+  .overview {
+    position: fixed;
+    inset: 0;
+    background: rgba(12, 53, 30, 0.88);
+    backdrop-filter: blur(10px);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 36px;
+  }
+  .overview.open { display: flex; }
+  .ov-box {
+    width: 100%;
+    max-width: 1080px;
+    background: var(--bg);
+    border-radius: 22px;
+    padding: 28px 30px;
+    box-shadow: var(--shadow-lg);
+  }
+  .ov-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+  .ov-head h3 { margin: 0; font-size: 19px; color: var(--ink); }
+  .ov-close {
+    border: 0;
+    background: var(--green-deep);
+    color: var(--lime);
+    border-radius: 999px;
+    padding: 7px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .ov-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+  .ov-item {
+    background: #ffffff;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: left;
+  }
+  .ov-item:hover, .ov-item.current { border-color: var(--green); background: #eef9e7; transform: translateY(-2px); }
+  .ov-num { font-family: var(--mono); font-size: 11px; font-weight: 800; color: var(--green); margin-bottom: 6px; }
+  .ov-name { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.4; }
+
+  @media print {
+    @page { size: 1600px 900px landscape; margin: 0; }
+    html, body { width: 1600px; height: auto; overflow: visible; background: var(--bg); }
+    .progress-track, .hud, .overview, .mode-switch, .sub-tabs { display: none !important; }
+    .viewport { position: static; display: block; background: transparent; }
+    .stage { transform: none !important; width: 1600px; height: auto; }
+    .slide {
+      position: relative !important;
+      opacity: 1 !important;
+      transform: none !important;
+      pointer-events: auto !important;
+      page-break-after: always;
+      break-after: page;
+    }
+    .sub-pane { display: grid !important; grid-template-columns: 1.04fr 0.96fr; gap: 24px; margin-bottom: 14px; }
+  }
+
+  .slide { padding: 48px 64px 74px !important; }
+  .s-head { margin-bottom: 24px !important; }
+  .cover-h1 { margin-top: 0 !important; }
+  .closing-box h2 { margin-top: 0 !important; }
+  .num-idx {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--green);
+    margin-right: 10px;
+  }
+  .col-sub {
+    margin: -4px 0 14px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--muted);
+  }
+  .card.featured .col-sub { color: var(--green); }
+
+  /* ===== V8: Compact Content-Hugging Cards & Larger Projection Typography (Zero Hollow Voids) ===== */
+  .slide { padding: 44px 64px 74px !important; }
+  .s-head { margin-bottom: 20px !important; }
+  .s-title { font-size: 44px !important; line-height: 1.2 !important; }
+  .s-sub { font-size: 19px !important; margin-top: 10px !important; }
+  .s-body {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 24px !important;
+  }
+
+  /* Stop forcing hollow vertical stretch inside grids & cards */
+  .grid-2 { flex: 0 0 auto !important; gap: 26px !important; }
+  .grid-3 { flex: 0 0 auto !important; gap: 24px !important; }
+  .grid-4 { flex: 0 0 auto !important; gap: 22px !important; }
+  .triage-strip { flex: 0 0 auto !important; gap: 22px !important; }
+  .dark-band { flex: 0 0 auto !important; padding: 30px 34px !important; }
+  .dark-grid { flex: 0 0 auto !important; gap: 22px !important; }
+  .demo-split { flex: 0 0 auto !important; align-items: stretch !important; }
+  .sub-pane.active { flex: 0 0 auto !important; align-items: stretch !important; }
+
+  .card {
+    padding: 30px 32px !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+  }
+  .card h3 { font-size: 24px !important; margin: 0 0 12px !important; line-height: 1.35 !important; }
+  .num-idx { font-size: 22px !important; margin-right: 10px !important; }
+  .col-sub { font-size: 17px !important; margin: -4px 0 16px !important; }
+  .card p { font-size: 18.5px !important; line-height: 1.72 !important; }
+  .card-foot {
+    margin-top: 4px !important;
+    padding-top: 16px !important;
+    font-size: 16.5px !important;
+    line-height: 1.5 !important;
+  }
+  .check-list { gap: 15px !important; font-size: 17.5px !important; margin-top: 6px !important; }
+  .check-list li { line-height: 1.62 !important; }
+  .lime-bar { padding: 22px 30px !important; font-size: 21px !important; }
+
+  /* Slide 4 KPI + Triage */
+  .kpi-card { padding: 28px 26px !important; }
+  .kpi-num { font-size: 48px !important; }
+  .kpi-lbl { font-size: 20px !important; margin-top: 10px !important; }
+  .kpi-desc { font-size: 16px !important; line-height: 1.62 !important; }
+  .triage-box { padding: 28px 28px !important; gap: 20px !important; }
+  .triage-box h4 { font-size: 23px !important; margin-bottom: 14px !important; }
+  .triage-box p { font-size: 18px !important; line-height: 1.7 !important; margin-bottom: 12px !important; }
+  .triage-act { padding: 18px 20px !important; font-size: 17px !important; line-height: 1.68 !important; }
+
+  /* Slides 5, 6, 7 Interactive Demos */
+  .doc-stage { padding: 30px 32px !important; gap: 24px !important; }
+  .doc-title { font-size: 19px !important; }
+  .clause-view { font-size: 18.5px !important; line-height: 1.85 !important; }
+  .clause-tip { margin-top: 4px !important; padding: 16px 20px !important; font-size: 16px !important; }
+  .alert-stack.stretch .alert-row { padding: 20px 24px !important; font-size: 16.5px !important; }
+  .alert-head { font-size: 17px !important; margin-bottom: 6px !important; }
+  .ladder-card { padding: 24px 26px !important; }
+  .ladder-row { font-size: 16.5px !important; padding: 12px 0 !important; }
+
+  /* Slide 9 Dark Band */
+  .dark-band h3 { font-size: 19px !important; letter-spacing: 0.5px !important; margin-bottom: 20px !important; font-family: var(--sans) !important; font-weight: 800 !important; }
+  .dark-item { padding: 26px 26px !important; font-size: 18px !important; line-height: 1.72 !important; }
+  .dark-item strong { font-size: 21px !important; margin-bottom: 10px !important; }
+
+  /* Slide 10 Closing CTA */
+  .closing-box { padding: 38px 44px !important; }
+  .closing-box h2 { font-size: 32px !important; margin: 0 0 14px !important; }
+  .closing-box p { font-size: 18.5px !important; line-height: 1.7 !important; }
+  .closing-right { gap: 12px !important; min-width: 360px !important; }
+  .step-chip { padding: 14px 20px !important; font-size: 16.5px !important; }
+
+
+  .hud-left { display: flex; align-items: center; gap: 10px; }
+  .hud-home {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(14, 111, 63, 0.22);
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--green);
+    box-shadow: var(--shadow-sm);
+    transition: all .15s;
+  }
+  .hud-home:hover { background: var(--green); color: #ffffff; border-color: var(--green); }
+  .wechat-box { max-width: 420px; text-align: center; padding: 28px 30px; }
+  .wechat-box h3 { margin: 0 0 8px; font-size: 22px; color: var(--ink); }
+  .wechat-box p { margin: 0 0 18px; font-size: 15px; color: var(--muted); line-height: 1.65; }
+  .wechat-qr-wrap {
+    display: inline-block;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+  .wechat-qr-wrap img { display: block; width: 220px; height: auto; border-radius: 10px; }
+  .wechat-note { margin-top: 14px !important; font-size: 13px !important; color: var(--muted); }
+
+</style>
+</head>
+<body>
+
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="viewport is-cover" id="viewport">
+  <main class="stage" id="stage">
+
+    <!-- ==================== SLIDE 01 · COVER ==================== -->
+    <section class="slide active" data-cover="1" data-title="封面：AI驱动的定制化合同审查系统" data-chapter="01">
+
+      <div class="cover-wrap">
+        <div>
+          <h1 class="cover-h1">AI驱动的定制化合同审查系统</h1>
+          <div class="cover-h2">一套<span class="hl">只懂您公司业务</span>的合同审查系统</div>
+          <p class="cover-lead">
+            由执业律师盘点企业过往 6 至 36 个月的真实合同、历史修订与争议记录，将贵司专属历史规则、程序化硬校验工具与执业律师核心/中等/低三级风险审查结合起来，让商务签约更快、法务把关更准、重大风险提前拦在用印前。
+          </p>
+          <div class="cover-chips">
+            <span class="cover-chip"><b>01</b>不改造现有 OA / ERP</span>
+            <span class="cover-chip"><b>02</b>客户数据本地私有隔离</span>
+            <span class="cover-chip"><b>03</b>执业律师全程把关兜底</span>
+          </div>
+          <div class="cover-meta">
+            <span>主讲机构：<strong>上海市锦天城（深圳）律师事务所</strong></span>
+            <span>主讲人：<strong>李成律师</strong></span>
+            <span>日期：<strong>2026年11月</strong></span>
+          </div>
+        </div>
+
+        <div class="console-card">
+          <div class="console-bar">
+            <div class="console-dots"><span></span><span></span><span></span></div>
+            <span>合同预检实测样本</span>
+          </div>
+          <div class="console-body">
+            <div class="console-file">
+              <strong>设备销售合同模板（商务改稿）.docx</strong>
+              <span class="console-time">耗时 0.8s</span>
+            </div>
+            <div class="alert-stack">
+              <div class="alert-row err">
+                <div class="alert-head"><span class="code-tag code-err">ERROR</span> 付款比例加总异常（30% + 95% + 5% = 130%）</div>
+                检出单笔与累计口径混用，建议规范为预付 30%、到货 65%（累计 95%）及质保金 5%。
+              </div>
+              <div class="alert-row err">
+                <div class="alert-head"><span class="code-tag code-err">ERROR</span> 质保金退还“自该日起”错锚至质保期起算日</div>
+                前段插入质保期定义导致指代错位，应显式改为“自质保期届满之日起 10 个工作日内”。
+              </div>
+              <div class="alert-row warn">
+                <div class="alert-head"><span class="code-tag code-warn">WARN</span> 残留旧版投运条款与企业已搬迁旧地址</div>
+                提示清除冲突残句、更新现行注册地址，外发前删除文档内 3 条内部批注。
+              </div>
+              <div class="alert-row ok">
+                <div class="alert-head"><span class="code-tag code-ok">READY</span> 同步生成 Word 修订痕迹版与分级谈判口径</div>
+                常规件 3 分钟出初稿，大客户来稿自动控制微创在 5～8 处以内。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 02 · FOUR PAINS ==================== -->
+    <section class="slide" data-title="痛点：纯人工与简单 AI 审合同的四大痛点" data-chapter="02">
+      <div class="s-head">
+        <h2 class="s-title">人工审不过来、简单 AI 用不起来：合同审查的四大痛点</h2>
+      </div>
+      <div class="s-body">
+        <div class="grid-2">
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">01</span>换人审就变口径，通用 AI 更是每次“审完就忘”</h3>
+              <p>资深法务或顾问律师谈妥的折中条款、公司惯用的付款和违约口径，全散落在旧邮件和个人脑子里；人员变动就重新踩坑，而简单通用 AI 每次都像陌生人，记不住贵司过往怎么改、红线与让步尺度在哪，用久了只觉得死板。</p>
+            </div>
+            <div class="card-foot">→ 定制解法：把贵司历史修订、成交口径与习惯固化入库，持续更新、越用越懂业务。</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">02</span>简单 AI 见条就改满篇标红，商务拿去谈直接碰壁</h3>
+              <p>通用 AI 分不清哪份是强势大客户模板、哪份是自用合同，动辄批出几十处教科书式修改，通篇标红；商务根本发不出去，最后干脆绕开审查流程直接签字，风控形同虚设。</p>
+            </div>
+            <div class="card-foot">→ 定制解法：按议价强弱分层过滤，大客户微创 5～8 处核心，中低风险入表备谈。</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">03</span>人工赶进度容易看走眼，大模型又天生不擅长算账</h3>
+              <p>月底冲业绩、投标截标前合同扎堆，人工连夜赶稿极易漏掉付款比例加总出错、条款跳号、指代错位、旧模板残词等机械硬伤；而简单用大模型审查，受限于概率生成，算术核验和长文跨段比对同样容易漏报。</p>
+            </div>
+            <div class="card-foot">→ 定制解法：机械核验写成确定性程序 1 秒扫清，律师与法务精力全花在实质谈判上。</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">04</span>不懂真实业务与交易结构，遇到高危合同没人兜底</h3>
+              <p>通用 AI 不了解贵司商业模式、核心技术资产与行业监管要求，遇到多份文件暗埋隐性兜底、单边失衡或资质合规红线时，只会照字面润色词句，既给不出谈判替代方案，出了事也没有执业律师承担把关责任。</p>
+            </div>
+            <div class="card-foot">→ 定制解法：结合贵司红线与执业律师三级风险审查，高危交易前置熔断并由律师主审。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 03 · 3-WAY COMPARE ==================== -->
+    <section class="slide" data-title="对比：传统人工 vs 通用AI vs 定制化审查系统" data-chapter="03">
+      <div class="s-head">
+        <h2 class="s-title">常规人工审稿、通用 AI 与定制化审查系统的本质差别</h2>
+      </div>
+      <div class="s-body">
+        <div class="grid-3">
+          <div class="card">
+            <div>
+              <h3>常规人工常法</h3>
+              <div class="col-sub">质量靠个人经验，难以复用</div>
+              <ul class="check-list">
+                <li><strong>旺季排队耗时：</strong>大量常规模板小错反复占用资深法务与顾问律师时间。</li>
+                <li><strong>机械硬错难防：</strong>赶进度审稿极易看漏比例算错、跳号、错锚与旧模板残词。</li>
+                <li><strong>经验难以留存：</strong>历次谈妥的折中条款散落在旧邮件里，换经办人就口径不一。</li>
+                <li><strong>难以跨团队复用：</strong>审核标准停留在个人脑中，业务部门用印前无法前置自检。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3>市面通用 AI 工具</h3>
+              <div class="col-sub">脱离企业业务，改完用不了</div>
+              <ul class="check-list">
+                <li><strong>抓小放大、漏掉真雷：</strong>不懂产品交付、回款节点与核心资产，常把行业惯例当大错乱改，却放过伤筋动骨的商业条款。</li>
+                <li><strong>不分强弱、把单子改黄：</strong>拿教科书式理想条款硬套强势大客户模板，通篇标红让商务发不出去，拖慢签约甚至谈崩。</li>
+                <li><strong>硬塞条款、反埋违约坑：</strong>不了解企业实际履约能力、开票质保与行业合规，套进通用条款落地不了，签完反倒己方违约。</li>
+                <li><strong>审完就忘、口径前后打架：</strong>记不住公司历史审核习惯与谈判让步尺度，每次审查从零开始，同类合同反复扯皮。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card featured">
+            <div>
+              <h3>AI驱动的定制化合同审查系统</h3>
+              <div class="col-sub">懂业务、有分寸、程序防漏</div>
+              <ul class="check-list">
+                <li><strong>历史规则＋律师分级双检：</strong>老问题按贵司真实案卷精准拦截，新条款按核心/中等/低三级风险逐条排查不漏审。</li>
+                <li><strong>程序硬校验零漏报：</strong>比例加总、锚点、旧址、友商残词、涉密词 1 秒扫清。</li>
+                <li><strong>三级分级人机分工：</strong>常规件三档全量出稿；大客户仅将核心风险控在 5～8 处微创修订，中低风险入表备谈；高危件律师把关。</li>
+                <li><strong>随业务持续更新：</strong>新模板与新成交口径经律师审核入库，老问题不复发。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lime-bar">商务送审前先清硬错误，法务谈判时自带让步口径，高风险项目由执业律师前置把关</div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 04 · EMPIRICAL BASELINE ==================== -->
+    <section class="slide" data-title="实证：某装备制造企业4年全量样本" data-chapter="04">
+      <div class="s-head">
+        <h2 class="s-title">某智能装备制造企业实测：4 年 150 份合同做成的三级分诊体系</h2>
+      </div>
+      <div class="s-body">
+        <div class="grid-4">
+          <div class="kpi-card">
+            <div class="kpi-num">150 份</div>
+            <div class="kpi-lbl">历史全量合同挖掘</div>
+            <div class="kpi-desc">涵盖央国企销售、自用模板、上游采购、委外加工、研发合作与债权重组。</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-num">2,238 条</div>
+            <div class="kpi-lbl">真实律师修订提炼</div>
+            <div class="kpi-desc">叠加 129 条实战批注与 37 份内部初审后由律师二次补漏的双层样本。</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-num">10 大类</div>
+            <div class="kpi-lbl">全业务合同分类</div>
+            <div class="kpi-desc">覆盖母公司与全部关联分子公司，按合同类别与对手强弱自动匹配规则。</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-num">18 / 18</div>
+            <div class="kpi-lbl">历史漏洞秒级命中</div>
+            <div class="kpi-desc">预检程序在 6 份经典历史真单上 1 秒全部命中预期风险，零漏报。</div>
+          </div>
+        </div>
+
+        <div class="triage-strip">
+          <div class="triage-box">
+            <div>
+              <h4>一级 · 常规质检与模板严审</h4>
+              <p><strong>适用范围：</strong>自用销售/采购模板、委外加工、房产租赁、代办保险、人事外包。</p>
+              <p><strong>审核目标：</strong>在商务外发与用印前，一次扫清比例、锚点、残词与跳号硬错。</p>
+            </div>
+            <div class="triage-act"><strong>执行动作：</strong>程序全量校验算术比例、起算锚点、残词、跳号与合规红线，3 分钟出审查初稿。</div>
+          </div>
+          <div class="triage-box t2">
+            <div>
+              <h4>二级 · 重点博弈与微创让步</h4>
+              <p><strong>适用范围：</strong>央国企大客户销售、上游本体大厂采购、产学研与渠道居间合作。</p>
+              <p><strong>审核目标：</strong>既保住核心软件 IP 与赔付封顶，又控制改动篇幅，便于商务谈成。</p>
+            </div>
+            <div class="triage-act"><strong>执行动作：</strong>分析覆盖核心/中等/低三档，外发修订只落 5～8 处核心风险与硬错，中低风险入表备谈并附三级让步话术。</div>
+          </div>
+          <div class="triage-box t3">
+            <div>
+              <h4>三级 · 高危非标专项熔断</h4>
+              <p><strong>适用范围：</strong>多方债权转让、关联债务承接、对外担保、电力持票挂靠、股权安排。</p>
+              <p><strong>审核目标：</strong>拦住隐性千万级兜底、违规对外披露与资质挂靠刑事风险。</p>
+            </div>
+            <div class="triage-act"><strong>执行动作：</strong>严禁直接改字眼，先出文件必要性与交易结构诊断，强制升级由执业律师主审把关。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 05 · LIVE DEMO 1 (SOE IP) ==================== -->
+    <section class="slide" data-title="演练①：央国企采购合同 IP 与源码攻防" data-chapter="05">
+      <div class="s-head">
+        <h2 class="s-title">实战演练 ①：央国企采购合同中的软件 IP 与源码攻防</h2>
+        <p class="s-sub">背景：某大型电力央企采购标准软硬件及实施服务，却套用技术开发格式模板。</p>
+      </div>
+      <div class="s-body">
+        <div class="demo-split">
+          <div class="doc-stage">
+            <div>
+              <div class="doc-head">
+                <span class="doc-title">某电力央企系统采购合同 · 第 17 条</span>
+                <div class="mode-switch">
+                  <button class="mode-btn active" data-target="s5-red">微创修订预览</button>
+                  <button class="mode-btn" data-target="s5-raw">对方原稿</button>
+                </div>
+              </div>
+              <div class="clause-view active" id="s5-red">
+                17.3 本合同项下全部<del>研究开发</del><ins>项目专用</ins>成果（<ins>不包含乙方背景知识产权及系统软件</ins>）归甲方所有。<ins>本合同项下系统软件（含定制开发部分）以可执行程序形式交付，著作权归乙方所有；甲方在附件一约定部署范围内取得永久、非独占、不可转让、不可分许可的使用许可。</ins><br><br>
+                17.5 甲方享有将本合同项下成果用于<del>批量产品生产制造、使用、销售的权利</del><ins>甲方自身业务范围内的批量使用权，但不得向第三方销售、许可、转让或提供用于复制、二次开发</ins>。
+              </div>
+              <div class="clause-view" id="s5-raw">
+                17.3 本合同项下全部研究开发成果及相关全部技术文档、软件均归甲方所有，乙方应当按甲方要求交付全部技术资料。<br><br>
+                17.5 甲方享有将本合同项下研究开发成果用于批量产品生产制造、使用、销售的权利，乙方不得向第三方主张任何权利。
+              </div>
+            </div>
+            <div class="clause-tip">
+              <strong>讲评要点：</strong>面对强势央企模板，全文严格控制在 6 处核心微创，叠加在公司法务既有修改之上，不激怒甲方，同时彻底封堵核心软件复制发行与源码交付风险。
+            </div>
+          </div>
+
+          <div class="right-col">
+            <div class="alert-stack">
+              <div class="alert-row err">
+                <div class="alert-head"><span class="code-tag code-err">ERROR</span> 命中高危词：源代码 / 批量产品生产制造</div>
+                对软件产品而言，批量生产制造与销售等同于复制和发行权失控，必须限定为甲方自身业务范围内使用。
+              </div>
+              <div class="alert-row warn">
+                <div class="alert-head"><span class="code-tag code-warn">WARN</span> 合同定性预警：套用“研究开发成果”用语</div>
+                改为“本合同项下成果”，并联动增加侵权免责三项除外，降低被整体认定为委托开发的风险。
+              </div>
+            </div>
+
+            <div class="ladder-card">
+              <div>
+                <div class="ladder-hdr">同步输出的商务谈判三级让步方案</div>
+                <div class="ladder-row"><span class="ladder-k">必须坚持</span><span>系统软件著作权归公司，只交付可执行程序，绝不交付源代码。</span></div>
+                <div class="ladder-row"><span class="ladder-k">优先争取</span><span>删去生产制造、销售字样，明确禁止向第三方提供或二次开发。</span></div>
+                <div class="ladder-row"><span class="ladder-k">置换条件</span><span>若重大项目确需让渡纯定制开发部分著作权，须同时换取永久免费跨项目复用许可、限本项目部署、仍不交源代码。</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 06 · LIVE DEMO 2 (TEMPLATES) ==================== -->
+    <section class="slide" data-title="演练②：自用模板 1 秒拦截比例与错锚" data-chapter="06">
+      <div class="s-head">
+        <h2 class="s-title">实战演练 ②：自用销售模板 1 秒拦截算术、错锚与残词</h2>
+      </div>
+      <div class="s-body">
+        <div class="demo-split">
+          <div class="doc-stage">
+            <div>
+              <div class="doc-head">
+                <span class="doc-title">企业自用销售合同双模板（商务改稿）</span>
+                <div class="mode-switch">
+                  <button class="mode-btn active" data-target="s6-red">微创修订预览</button>
+                  <button class="mode-btn" data-target="s6-raw">内部改后原稿</button>
+                </div>
+              </div>
+              <div class="clause-view active" id="s6-red">
+                1）预付款：合同生效后 10 日内支付合同金额的 <ins>30%</ins>；<br>
+                2）到货款：到货验收合格后 10 日内支付合同金额的 <del>95%</del><ins>65%（累计支付至合同金额的 95%）</ins>；<br>
+                3）质保金：质保期自验收款条件成就之日起 12 个月，需方不得以最终用户验收未出具拖延起算。自<del>该日</del><ins>质保期届满之日</ins>起 10 个工作日内支付 5% 质保金。<br>
+                4）争议解决：由<del>原告方</del><ins>供方</ins>所在地有管辖权的人民法院诉讼解决。
+              </div>
+              <div class="clause-view" id="s6-raw">
+                1）预付款：合同生效后 10 日内支付合同金额的 30%；<br>
+                2）到货款：到货验收合格后 10 日内支付合同金额的 95%；<br>
+                3）质保金：质保期自验收款条件成就之日起 12 个月……自该日起 10 个工作日内支付 5% 质保金。<br>
+                5）争议解决：由原告方所在地人民法院诉讼解决。
+              </div>
+            </div>
+            <div class="clause-tip">
+              <strong>讲评要点：</strong>这种 30%+95%+5%=130%、“自该日起”错指起算日、跳号、残留旧地址或外部同业公司名的问题，用确定性脚本核验比任何纯大模型都稳、比人工都快。
+            </div>
+          </div>
+
+          <div class="alert-stack stretch">
+            <div class="alert-row err">
+              <div class="alert-head"><span class="code-tag code-err">ERROR</span> 付款比例加总异常（30% + 95% + 5% = 130%）</div>
+              自动抽取各节点比例求和，加总不等于 100% 或预付款留空即标红拦截。
+            </div>
+            <div class="alert-row err">
+              <div class="alert-head"><span class="code-tag code-err">ERROR</span> 质保金错锚（“自该日起”）＋ 旧版“投运后”残句</div>
+              检测到新版验收兜底条款与旧版投运残句并存，以及质保金处使用模糊指代词，直接阻断发稿。
+            </div>
+            <div class="alert-row err">
+              <div class="alert-head"><span class="code-tag code-err">ERROR</span> 外部同业模板残词与已搬迁旧地址扫描</div>
+              历史实测曾在一份千段长合同中 1 秒扫出 13 处误留的他方公司名与内审邮箱，以及多份旧址残留。
+            </div>
+            <div class="alert-row warn">
+              <div class="alert-head"><span class="code-tag code-warn">WARN</span> 编号跳号（3) → 5)）＋ 管辖未统一 ＋ 残留内部批注</div>
+              提醒外发前清理内部沟通批注，避免把商务底牌直接发给交易对手。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 07 · LIVE DEMO 3 (BUYER + L3) ==================== -->
+    <section class="slide" data-title="演练③：上游采购与高危债转熔断" data-chapter="07">
+      <div class="s-head">
+        <h2 class="s-title">实战演练 ③：上游霸王采购条款与高危非标债转熔断</h2>
+      </div>
+      <div class="s-body">
+        <div class="sub-tabs">
+          <button class="sub-tab active" data-sub="sub-buy">场景 A · 上游核心设备采购（买方立场）</button>
+          <button class="sub-tab" data-sub="sub-l3">场景 B · 多方债权转让与对外隔离（三级熔断）</button>
+        </div>
+
+        <div class="sub-pane active" id="sub-buy">
+          <div class="doc-stage">
+            <div>
+              <div class="doc-head">
+                <span class="doc-title">上游核心设备订购合同（买来用于集成转售）</span>
+                <div class="mode-switch">
+                  <button class="mode-btn active" data-target="s7a-red">微创修订预览</button>
+                  <button class="mode-btn" data-target="s7a-raw">供应商原稿</button>
+                </div>
+              </div>
+              <div class="clause-view active" id="s7a-red">
+                知识产权：<del>甲方不得就产品技术申请专利，否则无条件无偿转让给乙方并付使用费。</del><ins>乙方保留产品原有知识产权。甲方基于本产品开展集成、改进、二次开发形成的衍生技术成果归甲方独立所有，且甲方有权正常转售或集成销售给最终用户。</ins><br><br>
+                违约责任：乙方逾期交货，<del>仅退还预付款不担其他责任</del><ins>按日万分之五付违约金，超 30 日甲方可解约索赔</ins>。品牌违约金由<del>100 万元</del>压降至<ins>合同总价的 20%</ins>。
+              </div>
+              <div class="clause-view" id="s7a-raw">
+                知识产权：甲方不得将乙方提供的产品软硬件相关技术及资料申请专利，否则应无条件将已授权及申请中专利无偿转让给乙方，并支付专利使用费。<br><br>
+                违约责任：乙方无法交货的，仅退还预付款，不承担其他任何法律责任。甲方损害乙方品牌声誉的，赔偿 50 万元并另付违约金 50 万元。
+              </div>
+            </div>
+            <div class="clause-tip"><strong>讲评要点：</strong>订单总价仅十余万元，对方却写了高达总价 7 倍的违约金与专利无偿转让条款。定制规则直接按我方“系统集成商”身份一键纠偏。</div>
+          </div>
+          <div class="alert-stack stretch">
+            <div class="alert-row err">
+              <div class="alert-head"><span class="code-tag code-err">ERROR</span> 检出霸王专利条款（“无偿转让给乙方”）</div>
+              拆分为三层权属：卖方原有归卖方、我方既有归我方、我方集成与二次开发衍生成果归我方独立所有。
+            </div>
+            <div class="alert-row err">
+              <div class="alert-head"><span class="code-tag code-err">ERROR</span> 缺失正常转售与系统集成授权 ＋ 卖方交货免责</div>
+              增补转售及集成权利句，删除不交货仅退预付款免责，补齐逾期交货违约金与解约权。
+            </div>
+            <div class="alert-row warn">
+              <div class="alert-head"><span class="code-tag code-warn">WARN</span> 违约金畸高且技术资料保密无期限</div>
+              违约金封顶于合同总价 20% 并前置限期纠正，保密期限定终止后 3 年并补四项公知除外。
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-pane" id="sub-l3">
+          <div class="doc-stage">
+            <div>
+              <div class="doc-head">
+                <span class="doc-title">多方债权转让及债务履行协议（高危专项）</span>
+                <div class="mode-switch">
+                  <button class="mode-btn active" data-target="s7b-red">三层隔离方案</button>
+                  <button class="mode-btn" data-target="s7b-raw">对方律师原稿</button>
+                </div>
+              </div>
+              <div class="clause-view active" id="s7b-red">
+                <strong>【前置结构处置】</strong>删并无益文本，拆分为“向业主出示的精简版《债权转让协议》（全文零出现内部采购合同）”与“双方内部《补充协议》”。<br><br>
+                核心条款：<ins>转让生效即在约定金额范围内消灭旧债，无论受让人能否向业主实际收回，均不得向我方追偿或主张差额补足。</ins><del>我方已完成竣工验收且不存在债务人抗辩事由。</del>
+              </div>
+              <div class="clause-view" id="s7b-raw">
+                对方律师将单一抵债拆成两份协议，约定“甲方债务不因转让消灭，以乙方实际收回金额为准；两年内未收回的差额仍由甲方支付”。同时在拟向业主出示的文本中直接写明内部采购合同与实际分包实施情况。
+              </div>
+            </div>
+            <div class="clause-tip"><strong>讲评要点：</strong>系统遇到“新债清偿/差额补足/独立担保/资质挂靠”直接触发三级熔断，绝不盲目改词，先由律师做结构诊断再定文本。</div>
+          </div>
+          <div class="alert-stack stretch">
+            <div class="alert-row err">
+              <div class="alert-head"><span class="code-tag code-err">L3 熔断</span> 拦截“新债清偿 ＋ 差额补足”千万级隐性兜底</div>
+              先问三题（是否需要、对谁有利、能否删并），改写为转让生效即时消灭旧债，删去过手项目不实陈述。
+            </div>
+            <div class="alert-row err">
+              <div class="alert-head"><span class="code-tag code-err">ERROR</span> 对外出示版隔离扫描检出内部敏感词</div>
+              检出「采购合同」「实际负责实施」，自动阻断外发，避免触发业主合同违约追责。
+            </div>
+            <div class="alert-row warn">
+              <div class="alert-head"><span class="code-tag code-warn">WARN</span> 同步提示债务人资信与破产撤销权风险</div>
+              提醒查验债务人被执行状态、标的债权无查封质押及企业破产法第三十二条六个月撤销期风险。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 08 · FOUR DELIVERABLES ==================== -->
+    <section class="slide" data-title="交付：企业拿到的四项具体成果" data-chapter="08">
+      <div class="s-head">
+        <h2 class="s-title">定制落地后，企业实际拿到手的四项成果</h2>
+      </div>
+      <div class="s-body">
+        <div class="grid-2">
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">01</span>《企业定制化合同审查标准手册》与商务参数确认单</h3>
+              <p>锦天城律师团队正式出具的成文标准手册，固化全业务合同分类、各类条款审核标准与三级让步口径，附可直接勾选盖章的《商务参数确认单》，统一管理层、法务、商务与律师口径。</p>
+            </div>
+            <div class="card-foot">形态：正式 Word 成文手册（含可直接替换的标准条款库）</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">02</span>企业专属合同审查技能（联动执业律师分级审查）</h3>
+              <p>封装贵司主体信息、产品特征、议价分层与历史规则，并结合执业律师“文件必要性→核心/中等/低三级风险→缺失条款→文字校对”标准流程，输出修订版 Word、分级审查表与 500 字以内简明汇报。</p>
+            </div>
+            <div class="card-foot">形态：私有运行技能（律所团队代运行，或按需授权企业法务使用）</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">03</span>确定性合同硬校验预检脚本</h3>
+              <p>专为贵司定制的自动化体检脚本，1 秒完成付款比例加总、质保锚点、旧注册地址、他方模板残词、跳号检查、对外文本隔离与高危交易自动熔断。</p>
+            </div>
+            <div class="card-foot">形态：本地运行程序，可按需封装为用印前一键自检红绿灯工具</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">04</span>黄金历史回归测试集与受控更新机制</h3>
+              <p>抽取贵司 10～20 份典型历史合同建立回归验证基准。后续新业务、新模板或盖章终稿提炼的新规则，须先过历史全量回测并经律师人工确认后升级，防止规则退化。</p>
+            </div>
+            <div class="card-foot">形态：随常年法律顾问服务按月维护更新，老风险永不回潮</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 09 · GOVERNANCE & SECURITY ==================== -->
+    <section class="slide" data-title="安全：受控更新与三大保障承诺" data-chapter="09">
+      <div class="s-head">
+        <h2 class="s-title">规则怎么持续更新？数据安全与责任归属怎么保障？</h2>
+      </div>
+      <div class="s-body">
+        <div class="grid-4">
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">01</span>捕获四类实战变更</h3>
+              <p>律师终审微调、大客户反改与盖章终稿、公司新模板、履约争议经验，审稿后自动进入分析队列。</p>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">02</span>个案让步不入通则</h3>
+              <p>差分程序提取实质改动并暂存候选池，单次项目的特殊商务妥协仅留案卷，不污染规则库。</p>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">03</span>红线与历史全量回测</h3>
+              <p>升级前必跑强制红线检查与历史合同 100% 回归测试，漏检 1 项旧问题即自动阻断。</p>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">04</span>全量经人工确认写入</h3>
+              <p>正常审稿交付优先，每条新规则须经执业律师明确批复后方可升级版本号并留痕。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dark-band">
+          <h3>企业管理层最关心的三个问题</h3>
+          <div class="dark-grid">
+            <div class="dark-item">
+              <strong>01 · 数据安不安全？</strong>
+              一企一库本地私有隔离运行，贵司历史合同、客户名单与价格条款绝不与其他客户混用，绝不上传公网模型参与训练。
+            </div>
+            <div class="dark-item">
+              <strong>02 · AI 会不会乱改规则？</strong>
+              软件源码、核心知识产权、财务合规、对外担保与重大监管红线全部冻结锁定，任何更新只允许加强、严禁放宽。
+            </div>
+            <div class="dark-item">
+              <strong>03 · 出了高风险谁兜底？</strong>
+              AI 负责提速与机械防漏，法律判断权始终归执业律师。大额博弈与高危非标交易自动升级由锦天城律师团队把关出具意见。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 10 · 3-WEEK ROADMAP & CTA ==================== -->
+    <section class="slide" data-title="落地：三周上线安排与免费诊断体验" data-chapter="10">
+      <div class="s-head">
+        <h2 class="s-title">不折腾 IT 部门，2～3 周即可为贵司定制上线</h2>
+      </div>
+      <div class="s-body">
+        <div class="grid-3">
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">第 1 周</span>全量读取历史合同</h3>
+              <p>收集贵司自用模板、大客户来稿、历史修订稿及争议函件，梳理业务分类、议价地位与常见疏漏。</p>
+            </div>
+            <div class="card-foot">产出：《合同分类表》＋历史风险体检简报</div>
+          </div>
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">第 2 周</span>编写规则库与预检脚本</h3>
+              <p>按业务类别编写审核标准与三级谈判让步口径，开发专属预检程序，并用贵司历史真单做全量回测。</p>
+            </div>
+            <div class="card-foot">产出：定制技能 V1 ＋ 硬校验脚本 ＋ 标准手册</div>
+          </div>
+          <div class="card">
+            <div>
+              <h3><span class="num-idx">第 3 周起</span>盖章定基线，投入日常</h3>
+              <p>管理层与法务盖章确认关键商务参数后正式启用，日常合同按三级机制流转，并随新终稿持续维护。</p>
+            </div>
+            <div class="card-foot">持续服务：日常极速审查 ＋ 高危兜底 ＋ 定期更新</div>
+          </div>
+        </div>
+
+        <div class="closing-box">
+          <div>
+            <h2>发来 3～5 份贵司常用合同，先做一次免费定制诊断演示</h2>
+            <p>无需先采购复杂软件。带几份贵司最头疼的大客户来稿或自用模板过来，我们用真实案例演示预检、微创修订与谈判让步方案，满意后再启动正式定制部署。</p>
+          </div>
+          <div class="closing-right">
+            <div class="step-chip"><b>01</b>精选 3～5 份贵司常用合同样本</div>
+            <div class="step-chip"><b>02</b>现场演示定制预检与微创修订</div>
+            <div class="step-chip"><b>03</b>2～3 周上线贵司专属合同审查系统</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Fixed Viewport Bottom Navigation HUD -->
+<div class="hud">
+  <div class="hud-left">
+    <a class="hud-home" href="/" title="返回李成律师法律AI工作站首页">← 返回工作站</a>
+    <div class="hud-hint">键盘 ← / → 或空格翻页 · 按 G 呼出目录 · 按 F 全屏演示</div>
+  </div>
+  <div class="hud-controls">
+    <button class="hud-btn" id="prevBtn">← 上一页</button>
+    <button class="hud-counter" id="counterBtn" title="点击查看全部页面（快捷键 G）">01 / 10</button>
+    <button class="hud-btn primary" id="nextBtn">下一页 →</button>
+    <button class="hud-btn" id="fsBtn" title="全屏演示（快捷键 F）">全屏</button>
+    <button class="hud-btn" id="contactBtn" title="扫码联系李成律师">联系律师</button>
+    <button class="hud-btn" onclick="window.print()" title="打印或导出每页一屏 PDF">导出 PDF</button>
+  </div>
+</div>
+
+<!-- WeChat Contact Modal -->
+<div class="modal wechat-contact" id="wechatModal" aria-hidden="true">
+  <div class="modal-box wechat-box">
+    <div class="modal-head" style="justify-content: flex-end; margin-bottom: 4px;">
+      <button class="hud-btn" id="closeWechatBtn">关闭</button>
+    </div>
+    <h3>联系李成律师</h3>
+    <p>上海市锦天城（深圳）律师事务所<br>扫码添加微信，预约企业定制化合同审查系统诊断演示</p>
+    <a class="wechat-qr-wrap" href="/wechat-li-cheng.jpg" target="_blank" rel="noopener">
+      <img src="/wechat-li-cheng.jpg" alt="李成律师微信二维码" width="888" height="1131" loading="lazy" decoding="async">
+    </a>
+    <p class="wechat-note">手机端可点击二维码查看原图并长按识别</p>
+  </div>
+</div>
+
+<!-- Slide Grid Overview Modal -->
+<div class="overview" id="overview">
+  <div class="ov-box">
+    <div class="ov-head">
+      <h3>全套课件目录（点击任意页直接跳转）</h3>
+      <button class="ov-close" id="ovClose">关闭 (ESC)</button>
+    </div>
+    <div class="ov-grid" id="ovGrid"></div>
+  </div>
+</div>
+
+<script>
+  const STAGE_W = 1600;
+  const STAGE_H = 900;
+  const viewport = document.getElementById('viewport');
+  const stage = document.getElementById('stage');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const total = slides.length;
+  let current = 0;
+
+  const progressFill = document.getElementById('progressFill');
+  const counterBtn = document.getElementById('counterBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const overview = document.getElementById('overview');
+  const ovGrid = document.getElementById('ovGrid');
+
+  function fitStage() {
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const scale = Math.min(vw / STAGE_W, vh / STAGE_H);
+    stage.style.transform = `scale(${scale})`;
+  }
+  window.addEventListener('resize', fitStage);
+  document.addEventListener('fullscreenchange', () => setTimeout(fitStage, 60));
+  fitStage();
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function renderOverview() {
+    ovGrid.innerHTML = '';
+    slides.forEach((s, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'ov-item' + (idx === current ? ' current' : '');
+      btn.innerHTML = `<div class="ov-num">SLIDE ${pad(idx + 1)}</div><div class="ov-name">${s.dataset.title || ''}</div>`;
+      btn.addEventListener('click', () => {
+        goTo(idx);
+        overview.classList.remove('open');
+      });
+      ovGrid.appendChild(btn);
+    });
+  }
+
+  function goTo(index) {
+    if (index < 0 || index >= total) return;
+    current = index;
+    slides.forEach((s, idx) => {
+      s.classList.remove('active', 'prev');
+      if (idx === current) s.classList.add('active');
+      else if (idx < current) s.classList.add('prev');
+    });
+    viewport.classList.toggle('is-cover', slides[current].dataset.cover === '1');
+    progressFill.style.width = `${((current + 1) / total) * 100}%`;
+    counterBtn.textContent = `${pad(current + 1)} / ${pad(total)}`;
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+    history.replaceState(null, '', `#slide-${current + 1}`);
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  counterBtn.addEventListener('click', () => {
+    renderOverview();
+    overview.classList.add('open');
+  });
+  document.getElementById('ovClose').addEventListener('click', () => overview.classList.remove('open'));
+  overview.addEventListener('click', e => { if (e.target === overview) overview.classList.remove('open'); });
+
+  document.getElementById('fsBtn').addEventListener('click', () => {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+    else document.exitFullscreen?.();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { overview.classList.remove('open'); return; }
+    if (e.key === 'g' || e.key === 'G') {
+      if (overview.classList.contains('open')) overview.classList.remove('open');
+      else { renderOverview(); overview.classList.add('open'); }
+      return;
+    }
+    if (overview.classList.contains('open')) return;
+    if (e.key === 'f' || e.key === 'F') document.getElementById('fsBtn').click();
+    else if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); goTo(current + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(current - 1); }
+    else if (e.key === 'Home') goTo(0);
+    else if (e.key === 'End') goTo(total - 1);
+  });
+
+  let touchX = null;
+  document.addEventListener('touchstart', e => { touchX = e.changedTouches[0].clientX; }, { passive: true });
+  document.addEventListener('touchend', e => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 55) { if (dx < 0) goTo(current + 1); else goTo(current - 1); }
+    touchX = null;
+  }, { passive: true });
+
+  document.querySelectorAll('.mode-switch').forEach(sw => {
+    const btns = sw.querySelectorAll('.mode-btn');
+    const st = sw.closest('.doc-stage');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        st.querySelectorAll('.clause-view').forEach(v => v.classList.remove('active'));
+        const t = document.getElementById(btn.dataset.target);
+        if (t) t.classList.add('active');
+      });
+    });
+  });
+
+  document.querySelectorAll('.sub-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const parent = tab.closest('.s-body');
+      parent.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+      parent.querySelectorAll('.sub-pane').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.sub);
+      if (target) target.classList.add('active');
+    });
+  });
+
+  const m = location.hash.match(/^#slide-(\d+)$/);
+  if (m) {
+    const n = parseInt(m[1], 10) - 1;
+    goTo(n >= 0 && n < total ? n : 0);
+  } else {
+    goTo(0);
+  }
+</script>
+
+<script>
+(() => {
+  const wechatModal = document.getElementById('wechatModal');
+  if (!wechatModal) return;
+  const openWechat = () => { wechatModal.classList.add('open'); wechatModal.setAttribute('aria-hidden', 'false'); };
+  const closeWechat = () => { wechatModal.classList.remove('open'); wechatModal.setAttribute('aria-hidden', 'true'); };
+  document.getElementById('contactBtn')?.addEventListener('click', openWechat);
+  document.getElementById('closeWechatBtn')?.addEventListener('click', closeWechat);
+  wechatModal.addEventListener('click', (e) => { if (e.target === wechatModal) closeWechat(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && wechatModal.classList.contains('open')) closeWechat(); });
+})();
+</script>
+</body>
+</html>

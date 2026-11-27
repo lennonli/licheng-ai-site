@@ -132,8 +132,11 @@ export default defineConfig({
         { text: '法律业务技能', link: '/skills/' },
         { text: 'AI 工具教程', link: '/tutorials/' }
       ] },
-      { text: '案例库', link: '/cases/' },
-      { text: '控制权变更案例库', link: '/ctl-deals/' },
+      { text: '案例库', items: [
+        { text: '资本市场案例库', link: '/cases/' },
+        { text: '控制权变更案例库', link: '/ctl-deals/' }
+      ] },
+      { text: 'FDE', link: '/fde/', target: '_self' },
       { text: '实用工具', items: [
         { text: '工具总览', link: '/tools/' },
         { text: 'AI 网站导航', link: '/tools/ai-directory' },
