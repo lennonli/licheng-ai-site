@@ -198,7 +198,8 @@ jobs:
               && curl --fail --silent --show-error https://ai.licheng.uk/kb2025/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/kb2024/ >/dev/null \
               && curl --fail --silent --show-error https://ai.licheng.uk/ma2024/ >/dev/null \
-              && curl --fail --silent --show-error https://ai.licheng.uk/ma2023/ >/dev/null; then
+              && curl --fail --silent --show-error https://ai.licheng.uk/ma2023/ >/dev/null \
+              && curl --fail --silent --show-error https://ai.licheng.uk/about/ >/dev/null; then
               exit 0
             fi
             sleep 10

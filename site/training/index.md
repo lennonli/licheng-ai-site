@@ -102,7 +102,7 @@ sidebar: false
       <li>商标台账字段：国家/地区、申请号、注册号、类别、权利人、状态、期限与续展节点</li>
       <li>公开数据库、代理机构报告与内部台账的定期更新与异常提醒</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/cnipa-trademark-evidence-archive">CNIPA 商标证据归档</a><a class="lc-course-link" href="/skills/cnipa-patent-evidence-archive">CNIPA 专利证据归档</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/cnipa-evidence-archive">CNIPA 商标与专利证据归档</a></div>
   </li>
   </ul>
 </div>
@@ -348,7 +348,7 @@ sidebar: false
       <li>CNIPA 专利证据归档：从专利审查信息系统导出申请、费用、发文、质押、许可等页面证据</li>
       <li>全球商标台账维护：定期更新商标状态与续展节点，异常自动提醒</li>
     </ul>
-    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/cnipa-trademark-evidence-archive">商标归档 Skill</a><a class="lc-course-link" href="/skills/cnipa-patent-evidence-archive">专利归档 Skill</a></div>
+    <div class="lc-course-links"><span class="lc-course-links-label">配套资料：</span><a class="lc-course-link" href="/skills/cnipa-evidence-archive">CNIPA 商标与专利归档 Skill</a></div>
   </li>
   <li class="lc-course-item">
     <div class="lc-course-row"><span class="lc-course-no">30</span><p class="lc-course-name">IPO 与尽调类 Skill</p></div>

@@ -209,13 +209,15 @@ for (const file of htmlFiles) {
   const isImmersive = route.startsWith('/tutorial-views/')
   const isPrivateUtility = route.startsWith('/__analytics-') || route.startsWith('/dashboard')
   const isPresentation = route.startsWith('/series/') && route.endsWith('/presentation/')
+  const isAboutPage = route === '/about/'
   const isNotFound = route === '/404'
   const noWechatContactRoutes = new Set(['/tools/course-ppt/'])
   if (!isImmersive && !isPrivateUtility) {
     const h1Count = (html.match(/<h1\b/g) || []).length
     if (!isNotFound && !isPresentation && h1Count !== 1) fail(`${route}: expected one H1, found ${h1Count}`)
     if (!isNotFound && !noWechatContactRoutes.has(route) && !isPresentation && !html.includes('wechat-contact')) fail(`${route}: WeChat contact section missing`)
-    if (!/<link rel="canonical" href="https:\/\/ai\.licheng\.uk\//.test(html)) fail(`${route}: canonical missing`)
+    const canonicalPattern = isAboutPage ? /<link rel="canonical" href="https:\/\/about\.licheng\.uk\/"/ : /<link rel="canonical" href="https:\/\/ai\.licheng\.uk\//
+    if (!canonicalPattern.test(html)) fail(`${route}: canonical missing`)
     if (!/<meta property="og:url"/.test(html)) fail(`${route}: og:url missing`)
   }
   if ((isImmersive || isPrivateUtility) && !/<meta name="robots" content="noindex/.test(html)) {
@@ -273,7 +275,21 @@ for (const file of htmlTutorialWrappers) {
   else if (readFileSync(copyFile, 'utf8').trim().length < 1000) fail(`${routeFor(file)}: HTML tutorial copy source is incomplete`)
 }
 
-for (const required of ['sitemap.xml', 'feed.xml', 'robots.txt', '_headers', 'source-manifest.json']) {
+for (const required of [
+  'sitemap.xml',
+  'feed.xml',
+  'robots.txt',
+  '_headers',
+  'source-manifest.json',
+  'about/index.html',
+  'about/style.css',
+  'about/site.js',
+  'about/robots.txt',
+  'about/assets/display.woff2',
+  'about/assets/mark.png',
+  'about/assets/share.jpg',
+  'about/assets/wechat-li-cheng.jpg'
+]) {
   if (!existsSync(path.join(dist, required))) fail(`Missing ${required}`)
 }
 

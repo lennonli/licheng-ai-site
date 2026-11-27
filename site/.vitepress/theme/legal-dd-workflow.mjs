@@ -108,7 +108,7 @@ export const phases = [
         ai: '分专题列示主体、金额、期限、履行状态及权利限制，核对台账与文本；将商标、专利等明细与正文分类汇总对应。',
         review: '确定重大合同筛选口径，判断业务所需资质、权属和担保风险，确认报告期末的实际状态。',
         output: ['合同、资产及资质核查表', '知识产权和借款担保明细'],
-        links: [skill('cnipa-trademark-evidence-archive', '商标证据归档'), skill('cnipa-patent-evidence-archive', '专利证据归档')]
+        links: [skill('cnipa-evidence-archive', 'CNIPA 商标与专利证据归档')]
       },
       {
         id: '12', title: '核查税务、用工与合规争议', brief: '每个专题形成独立核查结果。',

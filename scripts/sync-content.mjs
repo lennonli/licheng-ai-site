@@ -277,8 +277,7 @@ const titleOverrides = new Map([
   ['agents/合同审查和起草.md', '合同审查和起草指令'],
   ['agents/股改文件起草.md', '股改文件起草指令'],
   ['agents/法律PPT设计.md', '法律 PPT 设计指令'],
-  ['skills/cnipa-patent-evidence-archive', 'CNIPA 专利证据归档'],
-  ['skills/cnipa-trademark-evidence-archive', 'CNIPA 商标证据归档'],
+  ['skills/cnipa-evidence-archive', 'CNIPA 知识产权证据归档'],
   ['skills/company-preliminary-analysis', '委托前公司初步分析报告'],
   ['skills/contract-review', '合同审查'],
   ['skills/ipo-kb', '证券业务法律问询案例和证券法规检索skill'],
@@ -301,8 +300,7 @@ const summaryOverrides = new Map([
   ['agents/法律PPT设计.md', '规定法律培训、项目汇报和专业服务 PPT 的视觉风格、版式层级、字体字号、信息呈现方式以及既有 PPT 修改边界。'],
   ['agents/法律业务通用指令.md', '沉淀法律工作全局规则，包括默认客户立场、保密要求、法律依据核验、反编造红线、Word 格式、律所署名和交付方式。'],
   ['agents/法律尽调报告提示词.md', '沉淀法律尽职调查报告提示词，当前重点覆盖股权历史沿革章节，适合指导工商内档核查、股权变动底稿拆分、历史沿革初稿起草和补充材料清单整理。'],
-  ['skills/cnipa-patent-evidence-archive', '用于从 CNIPA 中国及多国专利审查信息查询系统导出专利申请信息、费用信息、发文信息、质押和许可备案等页面证据，并按申请人和专利号整理成本地底稿。'],
-  ['skills/cnipa-trademark-evidence-archive', '用于从 CNIPA 商标网上检索系统归档商标详情页和商标流程页，适合商标核查、知识产权尽调和证据留存。'],
+  ['skills/cnipa-evidence-archive', '用于从 CNIPA 中国及多国专利审查信息查询系统、中国商标网检索系统导出专利与商标申请、流程、费用及质押许可等官方 PDF 证据，并按权利人整理成本地底稿。'],
   ['skills/company-preliminary-analysis', '用于在委托建立前为潜在客户出具公司基本情况及法律问题初步分析报告，覆盖竞聘 IPO/挂牌/港股法律顾问、常法客户摸底和股权激励等专项业务前置三类场景。'],
   ['skills/contract-review', '用于合同、协议、订单、承诺函的审查与函件起草，按核心、中等、低风险分级逐条审查并给出可直接替换的修改文本。'],
   ['skills/ipo-kb', '证券业务审核问询案例 12 库（IPO/再融资/并购重组四年度，2,585 家）＋投行法规库＋补充法律意见书库，共 14 个知识库；MCP 语义检索优先、本地克隆直查兜底，全库网页在线阅读。'],
@@ -1138,7 +1136,9 @@ ${toc}
 // 页面迁移的固定重定向（非教程类）：页面换地址后旧公开 URL 301 到新地址。
 const pageRedirects = [
   { from: '/tools/legal-tools', to: '/training/' },
-  { from: '/tools/legal-tools/', to: '/training/' }
+  { from: '/tools/legal-tools/', to: '/training/' },
+  { from: '/skills/cnipa-patent-evidence-archive', to: '/skills/cnipa-evidence-archive' },
+  { from: '/skills/cnipa-trademark-evidence-archive', to: '/skills/cnipa-evidence-archive' }
 ]
 
 const redirectLines = [
