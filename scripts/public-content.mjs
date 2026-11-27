@@ -38,7 +38,7 @@ export function sanitizePublicTree(root) {
       if (/-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----/.test(original)) {
         throw new Error(`Private key material in public output: ${relative}`)
       }
-      const clean = sanitizePublicText(original, { publicCase: /^(?:public\/copy\/)?kb(?:202[345])?\//.test(relative) })
+      const clean = sanitizePublicText(original, { publicCase: /^(?:public\/copy\/)?kb(?:202[345])?\/|^public\/about\//.test(relative) })
       if (clean !== original) { writeFileSync(file, clean); changed++ }
     }
   }
